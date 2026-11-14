@@ -8,7 +8,7 @@
 //    repositorio en un solo commit; GitHub Pages actualiza el sitio solo.
 // =====================================================================
 (() => {
-    const REPO = 'Sorryfriend49/Mi-pagina-web-';
+    const REPO = 'Sorryfriend49/Sorryfriend49.github.io';
     const RAMA = 'main';
     const API = 'https://api.github.com';
     const CLAVE_TOKEN = 'frozenProject.githubToken';
@@ -140,7 +140,7 @@
     function mensajeDeError(error){
         if (error instanceof TypeError) return 'No se pudo conectar con GitHub. Revisa tu conexión e inténtalo de nuevo.';
         if (error.status === 401) return 'GitHub rechazó el token: no es válido o ya expiró. Toca "Desconectar este navegador" y conecta uno nuevo.';
-        if (error.status === 403 || error.status === 404) return 'El token no tiene permiso para escribir en Mi-pagina-web-. Revisa que tenga acceso a ese repositorio y el permiso "Contents: Read and write".';
+        if (error.status === 403 || error.status === 404) return `El token no tiene permiso para escribir en ${REPO.split('/')[1]}. Revisa que tenga acceso a ese repositorio y el permiso "Contents: Read and write".`;
         if (error.status === 413) return 'Una de las imágenes es demasiado pesada para subirla desde aquí.';
         return error.mensaje || ('Algo salió mal' + (error.detalle ? ': ' + error.detalle : '.'));
     }
