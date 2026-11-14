@@ -810,6 +810,149 @@ body.modo-admin .boton-eliminar{
 }
 
 /* ===================================
+   EDITAR Y ORGANIZAR (solo administrador)
+=================================== */
+.acciones-admin{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.boton-editar{
+    position: absolute;
+    top: 10px;
+    right: 52px;
+    z-index: 2;
+    width: 34px;
+    height: 34px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(230, 242, 248, 0.3);
+    background: rgba(3, 10, 19, 0.8);
+    color: var(--hielo);
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+body.modo-admin .boton-editar{
+    display: flex;
+}
+
+.boton-editar:hover,
+.boton-editar:focus-visible{
+    background: var(--acero);
+    border-color: transparent;
+    color: var(--fondo);
+    transform: scale(1.08);
+}
+
+.flechas-orden{
+    position: absolute;
+    left: 50%;
+    bottom: 12px;
+    z-index: 2;
+    display: none;
+    gap: 12px;
+    transform: translateX(-50%);
+}
+
+body.organizando .flechas-orden{
+    display: flex;
+}
+
+.flecha{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(230, 242, 248, 0.4);
+    background: rgba(3, 10, 19, 0.85);
+    color: var(--hielo);
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.flecha:hover,
+.flecha:focus-visible{
+    background: var(--acero);
+    color: var(--fondo);
+}
+
+/* La primera no puede ir más atrás ni la última más adelante */
+.gallery-item:first-child .flecha[data-direccion="-1"],
+.gallery-item:last-child .flecha[data-direccion="1"]{
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+/* Mientras se organiza: sin borrar/editar, sin etiqueta de descarga y sin abrir el visor */
+body.organizando .boton-eliminar,
+body.organizando .boton-editar,
+body.organizando .gallery-item::after{
+    display: none;
+}
+
+body.organizando .gallery-item{
+    cursor: default;
+    border-color: rgba(168, 198, 236, 0.35);
+}
+
+body.organizando .gallery-item:hover{
+    transform: none;
+}
+
+.barra-organizar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 18px;
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: 1px dashed rgba(168, 198, 236, 0.4);
+    background: rgba(168, 198, 236, 0.06);
+    color: var(--texto-suave);
+    font-size: 14px;
+}
+
+.barra-botones{
+    display: flex;
+    gap: 10px;
+}
+
+.barra-botones .boton-secundario,
+.barra-botones .boton-principal{
+    flex: none;
+    width: auto;
+    padding: 9px 18px;
+    font-size: 15px;
+}
+
+.confirmar-botones .boton-principal{
+    flex: 1;
+    width: auto;
+}
+
+/* Descripción de la imagen en el visor */
+.lightbox-descripcion{
+    max-width: 100%;
+    color: var(--texto-suave);
+    font-size: 14px;
+    line-height: 1.45;
+    text-align: center;
+    word-break: break-word;
+}
+
+.lightbox-descripcion:empty{
+    display: none;
+}
+
+/* ===================================
    SOLO CELULAR (pantallas de hasta 768px)
    Navegación más cómoda con el dedo y menos efectos pesados.
    En PC nada de esto aplica.
@@ -982,6 +1125,8 @@ body.modo-admin .boton-eliminar{
     .boton-secundario,
     .boton-peligro,
     .boton-eliminar,
+    .boton-editar,
+    .flecha,
     .enlace-discreto,
     .zona-archivos{
         touch-action: manipulation;
@@ -1001,4 +1146,26 @@ body.modo-admin .boton-eliminar{
     .boton-eliminar:hover{
         transform: none;
     }
+
+    .boton-editar{
+        width: 40px;
+        height: 40px;
+        right: 58px;
+    }
+
+    .boton-editar:hover{
+        transform: none;
+    }
+
+    .barra-organizar{
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* Cuando la galería queda en una sola columna (celular), las flechas de
+   Organizar apuntan arriba y abajo en vez de a los lados. La clase
+   "una-columna" la pone galeria.js al entrar a Organizar. */
+.gallery-grid.una-columna .flecha svg{
+    transform: rotate(90deg);
 }

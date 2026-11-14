@@ -138,8 +138,19 @@
         <section id="contenido" class="gallery oculta">
             <div class="gallery-header">
                 <h2>Galería</h2>
-                <!-- Solo aparece en el navegador donde conectaste tu token (?admin) -->
-                <button class="boton-agregar" id="botonAgregar" type="button" hidden>+ Agregar imagen</button>
+                <!-- Solo aparecen en el navegador donde conectaste tu token (?admin) -->
+                <div class="acciones-admin">
+                    <button class="boton-agregar" id="botonOrganizar" type="button" hidden>Organizar</button>
+                    <button class="boton-agregar" id="botonAgregar" type="button" hidden>+ Agregar imagen</button>
+                </div>
+            </div>
+            <!-- Modo "Organizar": mover las imágenes con flechas y guardar el orden -->
+            <div class="barra-organizar" id="barraOrganizar" hidden>
+                <span>Usa las flechas de cada imagen para moverla.</span>
+                <div class="barra-botones">
+                    <button class="boton-secundario" id="botonCancelarOrden" type="button">Cancelar</button>
+                    <button class="boton-principal" id="botonGuardarOrden" type="button">Guardar orden</button>
+                </div>
             </div>
             <!-- Las imágenes se cargan desde galeria.json (ver galeria.js) -->
             <div class="gallery-grid" id="galeriaGrid" data-estado="cargando"></div>
@@ -152,6 +163,7 @@
         <div class="lightbox-content">
             <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">&times;</button>
             <img id="lightboxImg" src="" alt="">
+            <p class="lightbox-descripcion" id="lightboxDescripcion"></p>
             <button id="lightboxDownload" class="lightbox-download" type="button">Descargar imagen</button>
         </div>
     </div>
@@ -197,6 +209,18 @@
             <button class="boton-peligro" id="botonConfirmarEliminar" type="button">Eliminar</button>
         </div>
         <p class="estado" id="estadoEliminar" role="status"></p>
+    </dialog>
+
+    <!-- EDITAR LA DESCRIPCIÓN DE UNA IMAGEN (solo administrador) -->
+    <dialog class="panel-subida panel-confirmar" id="panelEditar" aria-labelledby="tituloEditar">
+        <h3 id="tituloEditar">Editar descripción</h3>
+        <img class="confirmar-previa" id="previaEditar" src="" alt="">
+        <input class="campo" type="text" id="campoEditar" maxlength="120" placeholder="Describe la imagen" aria-label="Descripción de la imagen">
+        <div class="confirmar-botones">
+            <button class="boton-secundario" id="botonCancelarEditar" type="button">Cancelar</button>
+            <button class="boton-principal" id="botonGuardarEditar" type="button">Guardar</button>
+        </div>
+        <p class="estado" id="estadoEditar" role="status"></p>
     </dialog>
 
     <!-- AVISO FLOTANTE -->
@@ -330,6 +354,7 @@
             lightboxImg.alt = img.alt;
             currentImgUrl = img.src;
             currentImgName = img.dataset.nombre || img.src.split('/').pop();
+            document.getElementById('lightboxDescripcion').textContent = img.alt;
             lightbox.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
@@ -404,7 +429,9 @@
 
         // Un solo detector para toda la galería: funciona también con las imágenes agregadas después
         document.getElementById('galeriaGrid').addEventListener('click', (e) => {
-            if (e.target.closest('.boton-eliminar')) return;   // ese botón lo maneja galeria.js
+            // Los botones de administrador los maneja galeria.js; mientras se organiza no se abre el visor
+            if (e.target.closest('.boton-eliminar, .boton-editar, .flechas-orden')) return;
+            if (document.body.classList.contains('organizando')) return;
             const recuadro = e.target.closest('.gallery-item');
             if (recuadro) openLightbox(recuadro.querySelector('img'));
         });

@@ -1,11 +1,11 @@
 // =====================================================================
-//  GALERÍA + BOTÓN "AGREGAR IMAGEN"
+//  GALERÍA + HERRAMIENTAS DE ADMINISTRADOR
 //
 //  - La galería se arma a partir de galeria.json.
-//  - El botón para subir solo aparece en el navegador donde se conectó
-//    un token de GitHub (abriendo la página con ?admin al final).
-//  - Al publicar, las imágenes y el galeria.json actualizado se suben al
-//    repositorio en un solo commit; GitHub Pages actualiza el sitio solo.
+//  - Agregar, eliminar, editar descripciones y organizar solo aparecen en
+//    el navegador donde se conectó un token de GitHub (?admin al final).
+//  - Cada cambio se guarda en el repositorio en un solo commit (imágenes
+//    y/o galeria.json); GitHub Pages actualiza el sitio solo.
 // =====================================================================
 (() => {
     const REPO = 'Sorryfriend49/Sorryfriend49.github.io';
@@ -42,12 +42,29 @@
     const botonConfirmarEliminar = document.getElementById('botonConfirmarEliminar');
     const estadoEliminar = document.getElementById('estadoEliminar');
     const aviso = document.getElementById('aviso');
+    const botonOrganizar = document.getElementById('botonOrganizar');
+    const barraOrganizar = document.getElementById('barraOrganizar');
+    const botonCancelarOrden = document.getElementById('botonCancelarOrden');
+    const botonGuardarOrden = document.getElementById('botonGuardarOrden');
+    const panelEditar = document.getElementById('panelEditar');
+    const previaEditar = document.getElementById('previaEditar');
+    const campoEditar = document.getElementById('campoEditar');
+    const botonCancelarEditar = document.getElementById('botonCancelarEditar');
+    const botonGuardarEditar = document.getElementById('botonGuardarEditar');
+    const estadoEditar = document.getElementById('estadoEditar');
 
     let archivosElegidos = [];
     let urlsPrevias = [];
     let subiendo = false;
     let eliminando = false;
+    let guardando = false;              // guardando una descripción o el orden
     let recuadroPorEliminar = null;
+    let recuadroPorEditar = null;
+    let ordenAntesDeOrganizar = null;   // para "Cancelar" en el modo Organizar
+
+    const ICONO_LAPIZ = '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M4 20h4L19 9a2.8 2.8 0 0 0-4-4L4 16v4zM13.5 6.5l4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    const ICONO_IZQUIERDA = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    const ICONO_DERECHA = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
     const ICONO_BASURA = '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-12M9 7V4h6v3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
@@ -57,8 +74,10 @@
     function borrarToken(){ try { localStorage.removeItem(CLAVE_TOKEN); } catch {} }
 
     function activarModoAdmin(activo){
+        if (!activo && document.body.classList.contains('organizando')) salirDeOrganizar(true);
         document.body.classList.toggle('modo-admin', activo);
         botonAgregar.hidden = !activo;
+        botonOrganizar.hidden = !activo;
     }
 
     // ---------- Pintar la galería ----------
@@ -78,7 +97,23 @@
         borrar.setAttribute('aria-label', 'Eliminar imagen');
         borrar.title = 'Eliminar imagen';
         borrar.innerHTML = ICONO_BASURA;
-        recuadro.append(borrar);
+
+        // Botón de editar la descripción: también solo en modo administrador
+        const editar = document.createElement('button');
+        editar.type = 'button';
+        editar.className = 'boton-editar';
+        editar.setAttribute('aria-label', 'Editar descripción');
+        editar.title = 'Editar descripción';
+        editar.innerHTML = ICONO_LAPIZ;
+
+        // Flechas para mover la imagen: solo en el modo Organizar
+        const flechas = document.createElement('div');
+        flechas.className = 'flechas-orden';
+        flechas.innerHTML =
+            `<button type="button" class="flecha" data-direccion="-1" aria-label="Mover antes" title="Mover antes">${ICONO_IZQUIERDA}</button>` +
+            `<button type="button" class="flecha" data-direccion="1" aria-label="Mover después" title="Mover después">${ICONO_DERECHA}</button>`;
+
+        recuadro.append(borrar, editar, flechas);
 
         const img = document.createElement('img');
         img.src = datos.archivo;
@@ -346,7 +381,7 @@
     }
 
     function abrirConfirmarEliminar(recuadro){
-        if (subiendo || eliminando) return;
+        if (subiendo || eliminando || guardando) return;
         recuadroPorEliminar = recuadro;
         const img = recuadro.querySelector('img');
         previaEliminar.src = img.currentSrc || img.src;
@@ -375,6 +410,149 @@
         } finally {
             eliminando = false;
             botonCancelarEliminar.disabled = false;
+        }
+    }
+
+    // ---------- Guardar cambios que solo tocan galeria.json (descripciones u orden) ----------
+    // "transformar" recibe la lista actual de imágenes (la del repositorio) y devuelve la nueva.
+    async function guardarGaleria(transformar, mensaje){
+        for (let intento = 1; intento <= 3; intento++){
+            const ref = await gh('/git/ref/heads/' + RAMA);
+            const padre = ref.object.sha;
+            const commitPadre = await gh('/git/commits/' + padre);
+
+            let galeria;
+            try {
+                const actual = await gh('/contents/galeria.json?ref=' + padre);
+                galeria = JSON.parse(base64AUtf8(actual.content));
+            } catch (error){
+                if (error.status !== 404) throw error;
+                galeria = { imagenes: galeriaDesdeLaPagina() };
+            }
+            galeria.imagenes = transformar(galeria.imagenes || []);
+
+            const arbol = await gh('/git/trees', { method: 'POST', body: JSON.stringify({
+                base_tree: commitPadre.tree.sha,
+                tree: [{ path: 'galeria.json', mode: '100644', type: 'blob', content: JSON.stringify(galeria, null, 2) + '\n' }]
+            }) });
+            const commit = await gh('/git/commits', { method: 'POST', body: JSON.stringify({ message: mensaje, tree: arbol.sha, parents: [padre] }) });
+
+            try {
+                await gh('/git/refs/heads/' + RAMA, { method: 'PATCH', body: JSON.stringify({ sha: commit.sha, force: false }) });
+                return galeria.imagenes;
+            } catch (error){
+                if (error.status !== 422 || intento === 3) throw error;   // la rama cambió mientras tanto: reintenta
+            }
+        }
+    }
+
+    // ---------- Editar la descripción ----------
+    function abrirEditar(recuadro){
+        if (subiendo || eliminando || guardando) return;
+        recuadroPorEditar = recuadro;
+        const img = recuadro.querySelector('img');
+        previaEditar.src = img.currentSrc || img.src;
+        campoEditar.value = img.alt;
+        estado(estadoEditar, '');
+        botonGuardarEditar.disabled = false;
+        botonCancelarEditar.disabled = false;
+        panelEditar.showModal();
+        setTimeout(() => { campoEditar.focus(); campoEditar.select(); }, 50);
+    }
+
+    async function alGuardarEditar(){
+        if (!recuadroPorEditar || guardando) return;
+        const recuadro = recuadroPorEditar;
+        const img = recuadro.querySelector('img');
+        const texto = campoEditar.value.trim();
+        if (!texto){ estado(estadoEditar, 'Escribe una descripción.', 'error'); return; }
+        if (texto === img.alt){ panelEditar.close(); return; }
+
+        guardando = true;
+        botonGuardarEditar.disabled = true;
+        botonCancelarEditar.disabled = true;
+        estado(estadoEditar, 'Guardando…');
+        try {
+            await guardarGaleria(lista => {
+                if (!lista.some(i => i.archivo === recuadro.dataset.archivo)){
+                    throw Object.assign(new Error(), { mensaje: 'Esa imagen ya no está en la galería. Recarga la página.' });
+                }
+                return lista.map(i => i.archivo === recuadro.dataset.archivo ? { ...i, alt: texto } : i);
+            }, 'Edita la descripción de una imagen desde la página');
+            img.alt = texto;
+            panelEditar.close();
+            mostrarAviso('Descripción guardada. Para los demás visitantes se actualiza en 1 o 2 minutos.');
+        } catch (error){
+            estado(estadoEditar, mensajeDeError(error), 'error');
+            botonGuardarEditar.disabled = false;
+        } finally {
+            guardando = false;
+            botonCancelarEditar.disabled = false;
+        }
+    }
+
+    // ---------- Organizar: mover imágenes y guardar el orden de una vez ----------
+    function entrarAOrganizar(){
+        if (subiendo || eliminando || guardando || !document.body.classList.contains('modo-admin')) return;
+        ordenAntesDeOrganizar = [...grid.querySelectorAll('.gallery-item')];
+        document.body.classList.add('organizando');
+        barraOrganizar.hidden = false;
+        botonOrganizar.hidden = true;
+        botonAgregar.hidden = true;
+        revisarColumnas();
+    }
+
+    // Si la segunda imagen queda debajo de la primera, la galería está en una sola
+    // columna (celular): las flechas se giran para apuntar arriba y abajo.
+    function revisarColumnas(){
+        const recuadros = grid.querySelectorAll('.gallery-item');
+        const unaColumna = recuadros.length > 1 && recuadros[0].offsetLeft === recuadros[1].offsetLeft;
+        grid.classList.toggle('una-columna', unaColumna);
+    }
+
+    function salirDeOrganizar(restaurar){
+        if (restaurar && ordenAntesDeOrganizar) grid.append(...ordenAntesDeOrganizar);
+        ordenAntesDeOrganizar = null;
+        document.body.classList.remove('organizando');
+        barraOrganizar.hidden = true;
+        const admin = document.body.classList.contains('modo-admin');
+        botonOrganizar.hidden = !admin;
+        botonAgregar.hidden = !admin;
+    }
+
+    function mover(recuadro, direccion){
+        if (direccion < 0 && recuadro.previousElementSibling) grid.insertBefore(recuadro, recuadro.previousElementSibling);
+        if (direccion > 0 && recuadro.nextElementSibling) grid.insertBefore(recuadro.nextElementSibling, recuadro);
+        // El foco sigue en la misma flecha, para poder mover varias veces seguidas
+        recuadro.querySelector(`.flecha[data-direccion="${direccion}"]`).focus();
+    }
+
+    async function alGuardarOrden(){
+        if (guardando || !ordenAntesDeOrganizar) return;
+        const orden = [...grid.querySelectorAll('.gallery-item')].map(r => r.dataset.archivo);
+        const antes = ordenAntesDeOrganizar.map(r => r.dataset.archivo);
+        if (orden.join('|') === antes.join('|')){ salirDeOrganizar(false); return; }
+
+        guardando = true;
+        botonGuardarOrden.disabled = true;
+        botonCancelarOrden.disabled = true;
+        botonGuardarOrden.textContent = 'Guardando…';
+        try {
+            await guardarGaleria(lista => {
+                const posicion = new Map(orden.map((archivo, i) => [archivo, i]));
+                const ordenadas = lista.filter(i => posicion.has(i.archivo)).sort((a, b) => posicion.get(a.archivo) - posicion.get(b.archivo));
+                const otras = lista.filter(i => !posicion.has(i.archivo));   // agregadas desde otro lado mientras tanto
+                return [...ordenadas, ...otras];
+            }, 'Reordena la galería desde la página');
+            salirDeOrganizar(false);
+            mostrarAviso('Orden guardado. Para los demás visitantes se actualiza en 1 o 2 minutos.');
+        } catch (error){
+            mostrarAviso(mensajeDeError(error));
+        } finally {
+            guardando = false;
+            botonGuardarOrden.disabled = false;
+            botonCancelarOrden.disabled = false;
+            botonGuardarOrden.textContent = 'Guardar orden';
         }
     }
 
@@ -529,9 +707,26 @@
     zonaArchivos.addEventListener('drop', e => { e.preventDefault(); elegirArchivos(e.dataTransfer.files); });
 
     grid.addEventListener('click', e => {
-        const boton = e.target.closest('.boton-eliminar');
-        if (boton && document.body.classList.contains('modo-admin')) abrirConfirmarEliminar(boton.closest('.gallery-item'));
+        if (!document.body.classList.contains('modo-admin')) return;
+        const borrar = e.target.closest('.boton-eliminar');
+        if (borrar) return abrirConfirmarEliminar(borrar.closest('.gallery-item'));
+        const editar = e.target.closest('.boton-editar');
+        if (editar) return abrirEditar(editar.closest('.gallery-item'));
+        const flecha = e.target.closest('.flecha');
+        if (flecha && document.body.classList.contains('organizando')) mover(flecha.closest('.gallery-item'), Number(flecha.dataset.direccion));
     });
+
+    botonGuardarEditar.addEventListener('click', alGuardarEditar);
+    campoEditar.addEventListener('keydown', e => { if (e.key === 'Enter') alGuardarEditar(); });
+    campoEditar.addEventListener('input', () => { if (!guardando) estado(estadoEditar, ''); });
+    botonCancelarEditar.addEventListener('click', () => panelEditar.close());
+    panelEditar.addEventListener('cancel', e => { if (guardando) e.preventDefault(); });
+    panelEditar.addEventListener('click', e => { if (e.target === panelEditar && !guardando) panelEditar.close(); });
+
+    botonOrganizar.addEventListener('click', entrarAOrganizar);
+    botonCancelarOrden.addEventListener('click', () => { if (!guardando) salirDeOrganizar(true); });
+    botonGuardarOrden.addEventListener('click', alGuardarOrden);
+    window.addEventListener('resize', () => { if (document.body.classList.contains('organizando')) revisarColumnas(); });
     botonConfirmarEliminar.addEventListener('click', alConfirmarEliminar);
     botonCancelarEliminar.addEventListener('click', () => panelEliminar.close());
     panelEliminar.addEventListener('cancel', e => { if (eliminando) e.preventDefault(); });
