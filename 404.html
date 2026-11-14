@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada · Frozen Project</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="theme-color" content="#030a13">
+
+    <!-- ENLACES VIEJOS: la página antes vivía en /Mi-pagina-web-/.
+         Cualquier dirección vieja manda a la misma ruta en la dirección nueva,
+         conservando lo que venga después (por ejemplo ?admin). -->
+    <script>
+        (function () {
+            var resto = location.pathname.replace(/^\/mi-pagina-web-(\/|$)/i, '/');
+            if (resto !== location.pathname) location.replace(resto + location.search + location.hash);
+        })();
+    </script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            background: radial-gradient(circle at 50% 35%, #0b1a2b, #030a13 60%);
+            color: #a3b9d1;
+            font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+            text-align: center;
+        }
+
+        h1{
+            margin-bottom: 10px;
+            color: #e6f2f8;
+            font-size: clamp(26px, 7vw, 34px);
+            letter-spacing: 2px;
+            text-shadow: 0 0 18px rgba(230, 242, 248, 0.45), 0 0 40px rgba(124, 179, 234, 0.35);
+        }
+
+        p{
+            margin-bottom: 22px;
+        }
+
+        a{
+            display: inline-block;
+            padding: 10px 22px;
+            border-radius: 999px;
+            border: 1px solid rgba(230, 242, 248, 0.4);
+            background: linear-gradient(90deg, #24507d, #7cb3ea);
+            color: #e6f2f8;
+            font-weight: 700;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Frozen Project</h1>
+        <p>Esta página no existe.</p>
+        <a href="/">Volver al inicio</a>
+    </main>
+</body>
+
+</html>
