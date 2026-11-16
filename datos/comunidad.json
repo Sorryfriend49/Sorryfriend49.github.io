@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "metodo": "1.2",
-  "generado": "2026-11-16T19:42:16.131Z",
+  "generado": "2026-11-16T20:37:08.345Z",
   "fuentes": {
     "anilist": "2026-11-16",
     "kitsu": "2026-11-16",
@@ -169,10 +169,17 @@
         }
       ],
       "actividad": {
-        "semana": 1547,
+        "semana": 1558,
         "leyendo": 120830,
         "lectores": 0.0019,
         "dias": 7
+      },
+      "resumen": {
+        "texto": "Los lectores destacan la obra como una obra maestra atemporal, elogiando profundamente el arte, la historia y la construcción de personajes. A pesar del consenso positivo, algunos lectores han expresado insatisfacción con el desenlace de la serie. En general, la obra es considerada una pieza fundamental del manga.",
+        "resenas": 20,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-16"
       },
       "tendencia": {
         "lectores": 0.0019,
@@ -183,7 +190,7 @@
     "30013": {
       "puntaje": {
         "valor": 88.2,
-        "votos": 199708,
+        "votos": 199709,
         "confianza": "alta",
         "diferencia": 5.9,
         "comunidades": 3
@@ -195,7 +202,7 @@
         },
         "kitsu": {
           "puntaje": 85.1,
-          "votos": 95652
+          "votos": 95653
         },
         "mangaupdates": {
           "puntaje": 88.9,
@@ -335,10 +342,17 @@
         }
       ],
       "actividad": {
-        "semana": 5519,
+        "semana": 5559,
         "leyendo": 171806,
         "lectores": 0.002,
         "dias": 7
+      },
+      "resumen": {
+        "texto": "Los lectores destacan enormemente la calidad de los personajes, la historia y el arte de la obra. A pesar de la alta valoración general, algunos lectores señalan que el ritmo de la narrativa es un punto de crítica. La opinión general es muy positiva, aunque hay comentarios que cuestionan la extensión de la serie.",
+        "resenas": 21,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-16"
       },
       "tendencia": {
         "lectores": 0.002,
@@ -501,10 +515,17 @@
         }
       ],
       "actividad": {
-        "semana": 784,
+        "semana": 790,
         "leyendo": 50931,
         "lectores": 0.0017,
         "dias": 7
+      },
+      "resumen": {
+        "texto": "Los lectores destacan la obra como una obra maestra, elogiando profundamente el desarrollo de los personajes, la historia y la acción. A pesar de que todos los comentarios son positivos, algunos lectores mencionan que el ritmo de la narrativa es un aspecto a considerar. La serie es vista como una experiencia excepcional dentro del medio manga.",
+        "resenas": 16,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-16"
       },
       "tendencia": {
         "lectores": 0.0017,
@@ -665,10 +686,17 @@
         }
       ],
       "actividad": {
-        "semana": 1018,
+        "semana": 1027,
         "leyendo": 47383,
         "lectores": 0.0021,
         "dias": 7
+      },
+      "resumen": {
+        "texto": "Los lectores destacan consistentemente el arte como sobresaliente, describiéndolo como de los mejores de la historia del manga. Además, muchos aprecian la profundidad filosófica y psicológica que ofrece la obra. Aunque la mayoría es muy positiva, algunos lectores han expresado dudas sobre el desarrollo de la trama.",
+        "resenas": 18,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-16"
       },
       "tendencia": {
         "lectores": 0.0021,
@@ -831,10 +859,17 @@
         }
       ],
       "actividad": {
-        "semana": 658,
+        "semana": 662,
         "leyendo": 29969,
         "lectores": 0.0018,
         "dias": 7
+      },
+      "resumen": {
+        "texto": "Los lectores destacan la calidad artística y la profundidad psicológica de la obra, describiéndola como una experiencia impactante. Aunque muchos aprecian la historia y el romance, hay opiniones divididas, especialmente respecto al desenlace. Algunos lectores señalan que el final resulta particularmente cuestionable.",
+        "resenas": 42,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-16"
       },
       "tendencia": {
         "lectores": 0.0018,
@@ -845,7 +880,7 @@
     "53390": {
       "puntaje": {
         "valor": 84,
-        "votos": 203042,
+        "votos": 203043,
         "confianza": "alta",
         "diferencia": 0.3,
         "comunidades": 3
@@ -857,7 +892,7 @@
         },
         "kitsu": {
           "puntaje": 84.1,
-          "votos": 83602
+          "votos": 83603
         },
         "mangaupdates": {
           "puntaje": 83.8,
@@ -998,10 +1033,17 @@
         }
       ],
       "actividad": {
-        "semana": 396,
+        "semana": 403,
         "leyendo": 46401,
         "lectores": 0.001,
         "dias": 7
+      },
+      "resumen": {
+        "texto": "Los lectores destacan la historia y la acción de la obra, considerándola una obra maestra en varios puntos. Sin embargo, existe una división notable en las opiniones respecto al desenlace y el ritmo narrativo. Algunos lectores sienten que el final arruina la serie, mientras que otros consideran que concluye de manera satisfactoria.",
+        "resenas": 32,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-16"
       },
       "tendencia": {
         "lectores": 0.001,
@@ -1012,7 +1054,7 @@
     "63327": {
       "puntaje": {
         "valor": 84.4,
-        "votos": 178945,
+        "votos": 178946,
         "confianza": "alta",
         "diferencia": 2.3,
         "comunidades": 3
@@ -1024,7 +1066,7 @@
         },
         "kitsu": {
           "puntaje": 84.2,
-          "votos": 95090
+          "votos": 95091
         },
         "mangaupdates": {
           "puntaje": 82.7,
@@ -1162,10 +1204,17 @@
         }
       ],
       "actividad": {
-        "semana": 1032,
+        "semana": 1038,
         "leyendo": 30011,
         "lectores": 0.002,
         "dias": 7
+      },
+      "resumen": {
+        "texto": "Los lectores destacan la calidad de los personajes y la acción, calificando la obra como una de las mejores que han visto. Si bien hay opiniones positivas, otros señalan que la narrativa presenta problemas en su desarrollo. Particularmente, algunos lectores notaron que la historia se vuelve negativa hacia el final.",
+        "resenas": 8,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-16"
       },
       "tendencia": {
         "lectores": 0.002,
@@ -1312,10 +1361,17 @@
         }
       ],
       "actividad": {
-        "semana": 352,
+        "semana": 354,
         "leyendo": 29824,
         "lectores": 0.0011,
         "dias": 7
+      },
+      "resumen": {
+        "texto": "Los lectores destacan que la serie es un manga de romance muy entretenido, elogiando especialmente a los personajes principales por su desarrollo. Si bien muchos consideran que la historia es fantástica, algunos lectores señalan que la intensidad de la trama disminuye hacia el final. En general, el carisma de los protagonistas es lo más elogiado por la comunidad lectora.",
+        "resenas": 5,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-16"
       },
       "tendencia": {
         "lectores": 0.0011,
@@ -1472,11 +1528,12 @@
         }
       ],
       "actividad": {
-        "semana": 1364,
+        "semana": 1372,
         "leyendo": 106864,
         "lectores": 0.0012,
         "dias": 7
       },
+      "resumen": null,
       "tendencia": {
         "lectores": 0.0012,
         "puntaje": null,
@@ -1626,11 +1683,12 @@
         }
       ],
       "actividad": {
-        "semana": 586,
+        "semana": 594,
         "leyendo": 18633,
         "lectores": 0.0017,
         "dias": 7
       },
+      "resumen": null,
       "tendencia": {
         "lectores": 0.0017,
         "puntaje": null,
@@ -1786,10 +1844,17 @@
         }
       ],
       "actividad": {
-        "semana": 558,
+        "semana": 562,
         "leyendo": 48974,
         "lectores": 0.0012,
         "dias": 7
+      },
+      "resumen": {
+        "texto": "Los lectores destacan que la obra posee una narrativa excepcional y un desarrollo que mejora considerablemente con el avance de los capítulos. Algunos opinan que la historia es comparable a grandes obras del género, mientras que otros expresan que el inicio es muy lento o que la calidad de la escritura es deficiente. Se menciona que la obra mantiene al lector enganchado con sus giros argumentales.",
+        "resenas": 6,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-16"
       },
       "tendencia": {
         "lectores": 0.0012,
@@ -1950,10 +2015,17 @@
         }
       ],
       "actividad": {
-        "semana": 323,
+        "semana": 324,
         "leyendo": 83163,
         "lectores": 0.0009,
         "dias": 7
+      },
+      "resumen": {
+        "texto": "Los lectores destacan la calidad de los personajes, la acción y la historia, considerándolo un pilar del manga Shonen moderno. Aunque hay opiniones divididas, algunos sugieren que la serie merece más atención a pesar de la crítica negativa. Mencionan que es una lectura que engancha desde sus inicios.",
+        "resenas": 8,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-16"
       },
       "tendencia": {
         "lectores": 0.0009,
@@ -2115,6 +2187,7 @@
         "lectores": 0.0016,
         "dias": 7
       },
+      "resumen": null,
       "tendencia": {
         "lectores": 0.0016,
         "puntaje": null,
@@ -2270,11 +2343,12 @@
         }
       ],
       "actividad": {
-        "semana": 201,
+        "semana": 207,
         "leyendo": 13600,
         "lectores": 0.0017,
         "dias": 7
       },
+      "resumen": null,
       "tendencia": {
         "lectores": 0.0017,
         "puntaje": null,
@@ -2426,11 +2500,12 @@
         }
       ],
       "actividad": {
-        "semana": 623,
+        "semana": 627,
         "leyendo": 20210,
         "lectores": 0.0013,
         "dias": 7
       },
+      "resumen": null,
       "tendencia": {
         "lectores": 0.0013,
         "puntaje": null,
@@ -2586,11 +2661,12 @@
         }
       ],
       "actividad": {
-        "semana": 1714,
+        "semana": 1722,
         "leyendo": 25458,
         "lectores": 0.0026,
         "dias": 7
       },
+      "resumen": null,
       "tendencia": {
         "lectores": 0.0026,
         "puntaje": null,
@@ -2746,10 +2822,17 @@
         }
       ],
       "actividad": {
-        "semana": 117,
+        "semana": 118,
         "leyendo": 5227,
         "lectores": 0.0012,
         "dias": 7
+      },
+      "resumen": {
+        "texto": "Los lectores destacan que esta obra es un excelente ejemplo de un thriller psicológico, manteniendo al lector en vilo con su atmósfera intensa. Mencionan la calidad narrativa y el desarrollo de personajes, especialmente la dinámica familiar. La obra es calificada como muy creativa y cautivadora.",
+        "resenas": 7,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-16"
       },
       "tendencia": {
         "lectores": 0.0012,
@@ -2888,10 +2971,17 @@
         }
       ],
       "actividad": {
-        "semana": 341,
+        "semana": 342,
         "leyendo": 36324,
         "lectores": 0.0013,
         "dias": 7
+      },
+      "resumen": {
+        "texto": "Los lectores destacan la calidad del arte y el desarrollo de los personajes en la obra. Sin embargo, existe una división de opiniones respecto a la historia, ya que algunos consideran que el ritmo y la trama son débiles. Algunos lectores señalan que el éxito se debe más a la adaptación animada que al manga en sí.",
+        "resenas": 21,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-16"
       },
       "tendencia": {
         "lectores": 0.0013,
@@ -3054,10 +3144,17 @@
         }
       ],
       "actividad": {
-        "semana": 271,
+        "semana": 273,
         "leyendo": 26653,
         "lectores": 0.0013,
         "dias": 7
+      },
+      "resumen": {
+        "texto": "Los lectores destacan la calidad de los personajes y la acción, describiendo el inicio como fascinante y lleno de tensión. Sin embargo, varias opiniones señalan que el final de la obra resulta decepcionante o apresurado. Existe una percepción de que la historia pierde fuerza después de ciertos puntos clave.",
+        "resenas": 11,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-16"
       },
       "tendencia": {
         "lectores": 0.0013,
@@ -3221,10 +3318,17 @@
         }
       ],
       "actividad": {
-        "semana": 156,
+        "semana": 157,
         "leyendo": 3391,
         "lectores": 0.0021,
         "dias": 7
+      },
+      "resumen": {
+        "texto": "Los lectores destacan la historia, el arte y los personajes, elogiando la construcción del mundo y la profundidad existencial de la obra. A pesar de las críticas, la mayoría considera que es una pieza impactante. Algunos lectores señalaron que la acción y el final no fueron tan satisfactorios.",
+        "resenas": 17,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-16"
       },
       "tendencia": {
         "lectores": 0.0021,
@@ -3371,11 +3475,12 @@
         }
       ],
       "actividad": {
-        "semana": 66,
+        "semana": 67,
         "leyendo": 4259,
         "lectores": 0.0011,
         "dias": 7
       },
+      "resumen": null,
       "tendencia": {
         "lectores": 0.0011,
         "puntaje": null,
@@ -3506,11 +3611,12 @@
         }
       ],
       "actividad": {
-        "semana": 191,
+        "semana": 193,
         "leyendo": 7012,
         "lectores": 0.0017,
         "dias": 7
       },
+      "resumen": null,
       "tendencia": {
         "lectores": 0.0017,
         "puntaje": null,
@@ -3673,10 +3779,17 @@
         }
       ],
       "actividad": {
-        "semana": 1023,
+        "semana": 1028,
         "leyendo": 113158,
         "lectores": 0.0016,
         "dias": 7
+      },
+      "resumen": {
+        "texto": "Los lectores destacan la acción y el arte de la obra, considerándola en ocasiones un shonen muy diferente a lo común. Sin embargo, hay opiniones divididas respecto a la historia y el ritmo, pues algunos señalan que la trama se vuelve débil o inconsistente. Varios lectores mencionan que el potencial inicial de la serie no se sostiene a lo largo de su desarrollo.",
+        "resenas": 16,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-16"
       },
       "tendencia": {
         "lectores": 0.0016,
@@ -3828,11 +3941,12 @@
         }
       ],
       "actividad": {
-        "semana": 596,
+        "semana": 601,
         "leyendo": 24386,
         "lectores": 0.0019,
         "dias": 7
       },
+      "resumen": null,
       "tendencia": {
         "lectores": 0.0019,
         "puntaje": null,
@@ -3996,10 +4110,17 @@
         }
       ],
       "actividad": {
-        "semana": 856,
+        "semana": 860,
         "leyendo": 84253,
         "lectores": 0.0016,
         "dias": 7
+      },
+      "resumen": {
+        "texto": "Los lectores destacan la calidad del arte y la acción dinámica del manhwa, considerándolo visualmente impresionante. Sin embargo, existe división de opiniones respecto a la narrativa, ya que algunos señalan que la historia y el desarrollo de personajes son débiles. Varios lectores mencionan que el mundo y su sistema se sienten poco profundos.",
+        "resenas": 30,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-16"
       },
       "tendencia": {
         "lectores": 0.0016,
@@ -4162,10 +4283,17 @@
         }
       ],
       "actividad": {
-        "semana": 1342,
+        "semana": 1351,
         "leyendo": 134931,
         "lectores": 0.0017,
         "dias": 7
+      },
+      "resumen": {
+        "texto": "Los lectores destacan la historia, la acción y el arte como elementos muy potentes de la obra. Aunque muchos elogian el concepto único y la intensidad, algunos lectores han expresado insatisfacción con el desarrollo general. Se señala que el final de la serie ha generado opiniones divididas entre los lectores.",
+        "resenas": 49,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-16"
       },
       "tendencia": {
         "lectores": 0.0017,
@@ -4317,10 +4445,17 @@
         }
       ],
       "actividad": {
-        "semana": 4475,
+        "semana": 4496,
         "leyendo": 76569,
         "lectores": 0.0024,
         "dias": 7
+      },
+      "resumen": {
+        "texto": "Los lectores destacan que la obra presenta una premisa intrigante y un estilo artístico sobresaliente, diferenciándose de los temas deportivos tradicionales. Aunque la mayoría la considera excelente, algunos lectores señalan que su intensidad puede resultar excesiva. Varios opinan que es una obra muy recomendable dentro del género deportivo.",
+        "resenas": 6,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-16"
       },
       "tendencia": {
         "lectores": 0.0024,
@@ -4467,11 +4602,12 @@
         }
       ],
       "actividad": {
-        "semana": 3407,
+        "semana": 3412,
         "leyendo": 29548,
         "lectores": 0.0036,
         "dias": 7
       },
+      "resumen": null,
       "tendencia": {
         "lectores": 0.0036,
         "puntaje": null,
@@ -4481,7 +4617,7 @@
     "108556": {
       "puntaje": {
         "valor": 84,
-        "votos": 62418,
+        "votos": 62419,
         "confianza": "alta",
         "diferencia": 2.3,
         "comunidades": 3
@@ -4493,7 +4629,7 @@
         },
         "kitsu": {
           "puntaje": 84.8,
-          "votos": 14984
+          "votos": 14985
         },
         "mangaupdates": {
           "puntaje": 85.3,
@@ -4627,10 +4763,17 @@
         }
       ],
       "actividad": {
-        "semana": 1353,
+        "semana": 1356,
         "leyendo": 91871,
         "lectores": 0.0012,
         "dias": 7
+      },
+      "resumen": {
+        "texto": "Los lectores destacan que la obra es una comedia de acción muy disfrutable y que la calidad mejora con el tiempo. Varios consideran que es una mezcla entretenida de géneros, logrando un gran impacto inicial. Sin embargo, un lector opina que la serie carece de sustancia y se siente como relleno.",
+        "resenas": 5,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-16"
       },
       "tendencia": {
         "lectores": 0.0012,
@@ -4788,6 +4931,7 @@
         "lectores": 0.0016,
         "dias": 7
       },
+      "resumen": null,
       "tendencia": {
         "lectores": 0.0016,
         "puntaje": null,
@@ -4922,11 +5066,12 @@
         }
       ],
       "actividad": {
-        "semana": 4373,
+        "semana": 4385,
         "leyendo": 18603,
         "lectores": 0.004,
         "dias": 7
       },
+      "resumen": null,
       "tendencia": {
         "lectores": 0.004,
         "puntaje": null,
@@ -5073,6 +5218,7 @@
         "lectores": 0.0021,
         "dias": 7
       },
+      "resumen": null,
       "tendencia": {
         "lectores": 0.0021,
         "puntaje": null,
@@ -5228,11 +5374,12 @@
         }
       ],
       "actividad": {
-        "semana": 1719,
+        "semana": 1738,
         "leyendo": 84112,
         "lectores": 0.0025,
         "dias": 7
       },
+      "resumen": null,
       "tendencia": {
         "lectores": 0.0025,
         "puntaje": null,
@@ -5378,11 +5525,12 @@
         }
       ],
       "actividad": {
-        "semana": 656,
+        "semana": 664,
         "leyendo": 18066,
         "lectores": 0.0033,
         "dias": 7
       },
+      "resumen": null,
       "tendencia": {
         "lectores": 0.0033,
         "puntaje": null,
@@ -5538,11 +5686,12 @@
         }
       ],
       "actividad": {
-        "semana": 5092,
+        "semana": 5115,
         "leyendo": 33796,
         "lectores": 0.0048,
         "dias": 7
       },
+      "resumen": null,
       "tendencia": {
         "lectores": 0.0048,
         "puntaje": null,
@@ -5688,11 +5837,12 @@
         }
       ],
       "actividad": {
-        "semana": 345,
+        "semana": 349,
         "leyendo": 37079,
         "lectores": 0.0021,
         "dias": 7
       },
+      "resumen": null,
       "tendencia": {
         "lectores": 0.0021,
         "puntaje": null,
@@ -5828,11 +5978,12 @@
         }
       ],
       "actividad": {
-        "semana": 4369,
+        "semana": 4390,
         "leyendo": 46952,
         "lectores": 0.004,
         "dias": 7
       },
+      "resumen": null,
       "tendencia": {
         "lectores": 0.004,
         "puntaje": null,
@@ -5963,11 +6114,12 @@
         }
       ],
       "actividad": {
-        "semana": 3313,
+        "semana": 3327,
         "leyendo": 36161,
         "lectores": 0.003,
         "dias": 7
       },
+      "resumen": null,
       "tendencia": {
         "lectores": 0.003,
         "puntaje": null,
@@ -6123,10 +6275,17 @@
         }
       ],
       "actividad": {
-        "semana": 2935,
+        "semana": 2958,
         "leyendo": 32186,
         "lectores": 0.0057,
         "dias": 7
+      },
+      "resumen": {
+        "texto": "Los lectores destacan que la obra se desvía de la fórmula típica de isekai, ofreciendo una experiencia fresca. Aprecian especialmente cómo se integra la ingeniería en la narrativa de aventura. Varios mencionan que el protagonista, a pesar de ser torpe, resulta muy atractivo.",
+        "resenas": 5,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-16"
       },
       "tendencia": {
         "lectores": 0.0057,
@@ -6273,11 +6432,12 @@
         }
       ],
       "actividad": {
-        "semana": 1582,
+        "semana": 1595,
         "leyendo": 10912,
         "lectores": 0.006,
         "dias": 7
       },
+      "resumen": null,
       "tendencia": {
         "lectores": 0.006,
         "puntaje": null,
