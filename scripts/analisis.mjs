@@ -359,7 +359,7 @@ export const MIN_VOTO_ETIQUETA = 60;
 export const MAX_ETIQUETAS = 10;
 
 export const slug = texto => String(texto || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    .replace(/['’`]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 
 export function prepararEtiquetas(tags){
     const sinTraducir = [];

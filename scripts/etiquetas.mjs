@@ -199,5 +199,31 @@ export const ETIQUETAS = {
     'Space': 'Espacio',
     'Boarding School': 'Internado',
     'College': 'Universidad',
-    'Magic School': 'Escuela de magia'
+    'Magic School': 'Escuela de magia',
+    'Konbini': 'Tiendas de conveniencia',
+    'Snowscape': 'Paisajes nevados',
+    'Virtual World': 'Mundo virtual',
+    'Ancient China': 'China antigua',
+
+    // Más temas (agregados al ampliar el catálogo)
+    'School Club': 'Club escolar',
+    'Ojou-sama': 'Ojou-sama',
+    'Motorcycles': 'Motos',
+    'Tokusatsu': 'Tokusatsu',
+    'Acting': 'Actuación',
+    'Otaku Culture': 'Cultura otaku',
+    'Cowboys': 'Vaqueros',
+    'Language Barrier': 'Barrera del idioma',
+    'Educational': 'Educativo',
+    'Filmmaking': 'Cine',
+    'Drawing': 'Dibujo',
+    'Badminton': 'Bádminton',
+    'Cohabitation': 'Convivencia',
+    'Estranged Family': 'Familia distanciada',
+    'Werewolf': 'Hombres lobo',
+    'VTuber': 'VTubers',
+    'Software Development': 'Programación',
+    'Dancing': 'Baile',
+    'Ballet': 'Ballet',
+    'Astronomy': 'Astronomía'
 };
