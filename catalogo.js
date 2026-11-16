@@ -424,6 +424,12 @@
         fila.append(explicacion);
         nodos.push(fila);
 
+        // Resumen de lo que dicen las reseñas, escrito por IA (Gemma 4) en la tarea semanal
+        if (c && c.resumen && c.resumen.texto){
+            nodos.push(crear('p', 'resumen-ia', c.resumen.texto),
+                crear('p', 'nota-ia', `Resumen hecho con IA (${c.resumen.modelo || 'Gemma 4'}, de Google) a partir de ${c.resumen.resenas} reseñas de AniList. Puede equivocarse.`));
+        }
+
         if (c){
             // Reparto de votos: cuántos le pusieron cada nota, del 1 al 10
             const d = c.distribucion;

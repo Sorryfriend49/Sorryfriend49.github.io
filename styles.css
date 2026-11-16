@@ -958,6 +958,21 @@ nav{
     padding-left: 22px;
 }
 
+/* Resumen de las reseñas (IA): el texto más fácil de leer de la ficha, con su aviso debajo */
+.resumen-ia{
+    max-width: 62ch;
+    margin-top: 16px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--texto-claro);
+}
+
+.nota-ia{
+    margin-top: 4px;
+    font-size: 12px;
+    color: var(--texto-suave);
+}
+
 /* Etiquetas votadas por los lectores: cada una filtra el catálogo */
 .etiquetas-votadas{
     list-style: none;

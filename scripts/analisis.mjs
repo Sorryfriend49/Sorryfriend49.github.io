@@ -162,6 +162,16 @@ export function limpiarTexto(texto){
         .replace(/[ \t]+/g, ' ');
 }
 
+// Texto de una reseña para resumirla: sin lo marcado como spoiler (~! ... !~), sin formato,
+// recortado en una palabra completa
+export function textoParaResumen(texto, maximo = 500){
+    const limpio = limpiarTexto(String(texto || '').replace(/~![\s\S]*?!~/g, ' '))
+        .replace(/\s+/g, ' ').trim();
+    if (limpio.length <= maximo) return limpio;
+    const corte = limpio.slice(0, maximo);
+    return corte.slice(0, Math.max(corte.lastIndexOf(' '), maximo * 0.8)).trim() + '…';
+}
+
 export function oraciones(texto){
     return texto.split(/[.!?¡¿;\n]+/).map(o => o.trim()).filter(o => o.length > 3);
 }

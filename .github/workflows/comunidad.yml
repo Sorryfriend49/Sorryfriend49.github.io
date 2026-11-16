@@ -1,9 +1,9 @@
 # Opinión de la comunidad: cada lunes junta puntajes, votos y reseñas de AniList,
 # Kitsu y MangaUpdates (y MyAnimeList si hay clave), además de las etiquetas, las
 # recomendaciones y la actividad de AniList; calcula los resultados con
-# scripts/comunidad.mjs (y el modelo de sentimiento de scripts/tono.mjs) y publica
-# datos/comunidad.json en la página. Es gratis: GitHub no cobra las tareas
-# automáticas de los repositorios públicos.
+# scripts/comunidad.mjs (y el modelo de sentimiento de scripts/tono.mjs), escribe
+# resúmenes con Gemma 4 (scripts/resumenes.mjs) y publica datos/comunidad.json en la
+# página. Es gratis: GitHub no cobra las tareas automáticas de los repositorios públicos.
 #
 # Para correrla a mano: pestaña Actions > "Opinión de la comunidad" > Run workflow.
 # Para sumar MyAnimeList (opcional y gratis): crea una clave en
@@ -33,7 +33,7 @@ concurrency:
 jobs:
   actualizar:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 75
     steps:
       - name: Descargar el repositorio
         uses: actions/checkout@v5
@@ -55,6 +55,32 @@ jobs:
           node scripts/comunidad.mjs
         env:
           MAL_CLIENT_ID: ${{ secrets.MAL_CLIENT_ID }}
+
+      # Resúmenes con Gemma 4 (modelo abierto de Google, licencia Apache 2.0) en esta misma
+      # máquina, con Ollama. Solo se instala si hay obras con reseñas nuevas; si algo falla,
+      # la tarea sigue y la página conserva los resúmenes anteriores.
+      - name: ¿Hay resúmenes por escribir?
+        id: pendientes
+        run: |
+          if [ -s .tmp/pendientes.json ]; then echo "hay=si" >> "$GITHUB_OUTPUT"; else echo "hay=no" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Instalar Gemma 4
+        if: steps.pendientes.outputs.hay == 'si'
+        continue-on-error: true
+        timeout-minutes: 15
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          if ! curl -sf http://127.0.0.1:11434/api/version > /dev/null; then
+            (ollama serve > /tmp/ollama.log 2>&1 &)
+          fi
+          for i in $(seq 1 30); do curl -sf http://127.0.0.1:11434/api/version && break; sleep 2; done
+          ollama pull gemma4:e4b
+
+      - name: Escribir los resúmenes
+        if: steps.pendientes.outputs.hay == 'si'
+        continue-on-error: true
+        timeout-minutes: 45
+        run: node scripts/resumenes.mjs
 
       - name: Guardar los resultados
         id: guardar

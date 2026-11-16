@@ -48,7 +48,7 @@
 
     <!-- El ?v= obliga a los navegadores a bajar la versión nueva tras cada cambio.
          Si editas styles.css, sitio.js o catalogo.js, sube ese número (v=3, v=4...). -->
-    <link rel="stylesheet" href="styles.css?v=5">
+    <link rel="stylesheet" href="styles.css?v=6">
 </head>
 
 <body>
@@ -165,13 +165,14 @@
                     <li>La confianza es alta cuando hay muchos votos y las comunidades coinciden, y baja cuando hay pocos o no coinciden.</li>
                     <li>El reparto de votos muestra cuánta gente le puso cada nota en AniList y si las opiniones están divididas.</li>
                     <li>De las reseñas de AniList (hasta 50, las que sus lectores marcaron como más útiles) se cuenta cuántas son positivas. Para saber qué temas se elogian o critican, un modelo de lenguaje gratuito que entiende español e inglés lee cada frase que habla de un tema (el arte, la historia, el ritmo…) y dice si lo elogia o lo critica. Un tema solo aparece si varias reseñas coinciden, y con menos de 8 reseñas no se sacan temas. No se guarda el texto de las reseñas ni quién las escribió.</li>
+                    <li>Si la obra tiene 5 reseñas o más, Gemma 4 (el modelo abierto de Google) lee las 8 más útiles, sin las partes marcadas como spoiler, y escribe un resumen corto de lo que opinan. Corre dentro de la misma tarea de GitHub, así que las reseñas no se mandan a ningún otro servicio. El resumen se rehace cuando llegan reseñas nuevas, y en la ficha siempre se avisa que lo hizo una IA.</li>
                     <li>La tendencia usa el registro diario de AniList: cuántos lectores sumó la obra en los últimos 7 días, cuántos la están leyendo y cuánta actividad tuvo (gente que la agrega o avanza capítulos). “En tendencia esta semana” ordena por esa actividad.</li>
                     <li>Las etiquetas y las recomendaciones (“si te gustó…”) también las votan los lectores de AniList. El porcentaje de cada etiqueta es qué tan de acuerdo están con ella. No se muestran etiquetas que cuentan la historia, ni recomendaciones de novelas u obras para adultos.</li>
                 </ol>
                 <p class="nota-datos" id="fechaDatos"></p>
 
                 <h3>Créditos</h3>
-                <p>Datos: AniList, Kitsu y MangaUpdates. Portadas: AniList. Modelo de sentimiento: BERT multilingüe de NLP Town (licencia MIT). Fondo animado: Blind Angel, de MoeWalls.</p>
+                <p>Datos: AniList, Kitsu y MangaUpdates. Portadas: AniList. Modelo de sentimiento: BERT multilingüe de NLP Town (licencia MIT). Resúmenes: Gemma 4 de Google (licencia Apache 2.0). Fondo animado: Blind Angel, de MoeWalls.</p>
             </div>
         </section>
 
@@ -208,7 +209,7 @@
     </dialog>
 
     <script src="sitio.js?v=3" defer></script>
-    <script src="catalogo.js?v=4" defer></script>
+    <script src="catalogo.js?v=5" defer></script>
 
 </body>
 

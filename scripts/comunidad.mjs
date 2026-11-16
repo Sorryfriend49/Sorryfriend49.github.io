@@ -13,15 +13,16 @@
    Para probarlo en tu PC: node scripts/comunidad.mjs   (necesita Node 18 o más nuevo;
    para usar el modelo, antes: npm ci --prefix scripts --ignore-scripts)
 =================================== */
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, rm } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import {
     METODO, combinarPuntajes, analizarDistribucion, analizarResenas, calcularTendencia, coincidencia, elegirSerie,
     normalizarTitulo, redondear, frasesConTemas, tonosConPalabras, evaluarTono, sumarEvaluaciones, aciertoEquilibrado,
-    analizarActividad, prepararEtiquetas, prepararRecomendaciones
+    analizarActividad, prepararEtiquetas, prepararRecomendaciones, textoParaResumen
 } from './analisis.mjs';
 import { crearClasificador } from './tono.mjs';
+import { necesitaResumen, VERSION_RESUMEN, MIN_RESENAS_RESUMEN, RESENAS_EN_RESUMEN, CARACTERES_POR_RESENA } from './resumenes.mjs';
 
 const AGENTE = 'FrozenProject/1.0 (+https://sorryfriend49.github.io)';
 const ANILIST = 'https://graphql.anilist.co';
@@ -116,7 +117,7 @@ const CONSULTA_DETALLES = `query ($id: Int, $p: Int, $detalles: Boolean!) {
         trends(sort: DATE_DESC, perPage: 10) { nodes { date trending popularity inProgress } }
     }
     Page(page: $p, perPage: 25) { pageInfo { hasNextPage }
-        reviews(mediaId: $id, sort: RATING_DESC) { score rating ratingAmount body } } }`;
+        reviews(mediaId: $id, sort: RATING_DESC) { id summary score rating ratingAmount body } } }`;
 
 async function traerDetalles(pedir, id){
     const resenas = [];
@@ -214,6 +215,7 @@ export async function ejecutar({
     let evaluacionModelo = { positivas: { aciertos: 0, total: 0 }, negativas: { aciertos: 0, total: 0 } };
     let evaluacionPalabras = evaluacionModelo;
     const sinTraducir = new Set();
+    const pendientes = [];          // obras que necesitan un resumen nuevo (los escribe resumenes.mjs)
 
     const catalogo = await leerJSON(ruta('obras.json'));
     const obras = (catalogo.obras || []).filter(o => o.ids && o.ids.anilist);
@@ -291,6 +293,7 @@ export async function ejecutar({
         let etiquetas = previo.etiquetas || [];
         let recomendaciones = previo.recomendaciones || [];
         let actividad = previo.actividad || null;
+        let resumen = previo.resumen && previo.resumen.version === VERSION_RESUMEN ? previo.resumen : null;
         try {
             const detalles = await traerDetalles(pedir, obra.ids.anilist);
             const frases = frasesConTemas(detalles.resenas);
@@ -312,6 +315,21 @@ export async function ejecutar({
                 recomendaciones = prepararRecomendaciones(detalles.media.recommendations && detalles.media.recommendations.nodes);
                 actividad = analizarActividad(detalles.media.trends && detalles.media.trends.nodes);
             }
+
+            // Resumen: si hace falta uno nuevo, se dejan listas sus reseñas más útiles (sin spoilers)
+            if (necesitaResumen(resenas, resumen, fecha)){
+                pendientes.push({
+                    id: obra.ids.anilist,
+                    titulo: obra.titulo,
+                    tipo: obra.tipo,
+                    datos: { n: resenas.n, positivas: resenas.positivas, negativas: resenas.negativas, mixtas: resenas.mixtas, elogian: resenas.elogian, critican: resenas.critican },
+                    resenas: detalles.resenas.filter(r => r && Number.isFinite(r.score)).slice(0, RESENAS_EN_RESUMEN).map(r => ({
+                        nota: r.score,
+                        resumen: textoParaResumen(r.summary, 200),
+                        texto: textoParaResumen(r.body, CARACTERES_POR_RESENA)
+                    }))
+                });
+            }
         } catch (error){
             registro(`  ${obra.titulo}: reseñas y detalles fallaron (${error.message}); se usa el dato anterior`);
         }
@@ -326,7 +344,8 @@ export async function ejecutar({
             favoritos: m.favourites || null,
             etiquetas,
             recomendaciones,
-            actividad
+            actividad,
+            resumen: (resenas.n || 0) >= MIN_RESENAS_RESUMEN ? resumen : null
         };
         const p = resultado[id].puntaje;
         registro(`  ${obra.titulo}: ${p ? (p.valor / 10).toFixed(1) : '?'} (${Object.keys(fuentes).join(', ')}), ${resenas.n || 0} reseñas`);
@@ -377,6 +396,11 @@ export async function ejecutar({
     });
     await escribirJSON(ruta('datos/ids.json'), ids);
     await escribirJSON(ruta('datos/historial.json'), { semanas: semanas.slice(-SEMANAS_DE_HISTORIAL) });
+    // Reseñas para los resúmenes: archivo temporal que nunca se sube (ver .gitignore y resumenes.mjs)
+    const carpetaTemporal = ruta('.tmp');
+    await rm(carpetaTemporal, { recursive: true, force: true });
+    if (pendientes.length) await escribirJSON(join(carpetaTemporal, 'pendientes.json'), pendientes);
+    registro(`Resúmenes por escribir: ${pendientes.length}.`);
     registro(`Listo: ${Object.keys(resultado).length} obras en datos/comunidad.json.`);
     return resultado;
 }
