@@ -1,7 +1,7 @@
 {
   "esquema": 1,
-  "metodo": "1.0",
-  "generado": "2026-11-16T16:16:47.596Z",
+  "metodo": "1.1",
+  "generado": "2026-11-16T19:06:16.412Z",
   "fuentes": {
     "anilist": "2026-11-16",
     "kitsu": "2026-11-16",
@@ -71,7 +71,7 @@
     "30013": {
       "puntaje": {
         "valor": 88.2,
-        "votos": 199705,
+        "votos": 199708,
         "confianza": "alta",
         "diferencia": 5.9,
         "comunidades": 3
@@ -83,7 +83,7 @@
         },
         "kitsu": {
           "puntaje": 85.1,
-          "votos": 95649
+          "votos": 95652
         },
         "mangaupdates": {
           "puntaje": 88.9,
@@ -121,8 +121,7 @@
           "arte"
         ],
         "critican": [
-          "humor",
-          "ritmo"
+          "humor"
         ]
       },
       "popularidad": 237223,
@@ -181,9 +180,7 @@
           "historia",
           "accion"
         ],
-        "critican": [
-          "ritmo"
-        ]
+        "critican": []
       },
       "popularidad": 140853,
       "favoritos": 18363,
@@ -308,7 +305,7 @@
     "53390": {
       "puntaje": {
         "valor": 84,
-        "votos": 203039,
+        "votos": 203042,
         "confianza": "alta",
         "diferencia": 0.3,
         "comunidades": 3
@@ -320,7 +317,7 @@
         },
         "kitsu": {
           "puntaje": 84.1,
-          "votos": 83599
+          "votos": 83602
         },
         "mangaupdates": {
           "puntaje": 83.8,
@@ -369,7 +366,7 @@
     "63327": {
       "puntaje": {
         "valor": 84.4,
-        "votos": 178944,
+        "votos": 178945,
         "confianza": "alta",
         "diferencia": 2.3,
         "comunidades": 3
@@ -381,7 +378,7 @@
         },
         "kitsu": {
           "puntaje": 84.2,
-          "votos": 95089
+          "votos": 95090
         },
         "mangaupdates": {
           "puntaje": 82.7,
@@ -481,7 +478,7 @@
     "74347": {
       "puntaje": {
         "valor": 85.2,
-        "votos": 136346,
+        "votos": 136347,
         "confianza": "alta",
         "diferencia": 3,
         "comunidades": 3
@@ -493,7 +490,7 @@
         },
         "kitsu": {
           "puntaje": 84.7,
-          "votos": 74051
+          "votos": 74052
         },
         "mangaupdates": {
           "puntaje": 87.7,
@@ -637,7 +634,7 @@
     "85486": {
       "puntaje": {
         "valor": 80.7,
-        "votos": 175502,
+        "votos": 175503,
         "confianza": "alta",
         "diferencia": 7.6,
         "comunidades": 3
@@ -649,7 +646,7 @@
         },
         "kitsu": {
           "puntaje": 84.6,
-          "votos": 105004
+          "votos": 105005
         },
         "mangaupdates": {
           "puntaje": 78.7,
@@ -748,10 +745,10 @@
     },
     "85850": {
       "puntaje": {
-        "valor": 83.9,
-        "votos": 12080,
-        "confianza": "baja",
-        "diferencia": 15.3,
+        "valor": 84.1,
+        "votos": 12777,
+        "confianza": "alta",
+        "diferencia": 4.5,
         "comunidades": 3
       },
       "fuentes": {
@@ -764,8 +761,8 @@
           "votos": 5151
         },
         "mangaupdates": {
-          "puntaje": 69.7,
-          "votos": 8
+          "puntaje": 87,
+          "votos": 705
         }
       },
       "distribucion": {
@@ -906,11 +903,11 @@
     },
     "86964": {
       "puntaje": {
-        "valor": 82.8,
-        "votos": 37410,
+        "valor": 82.9,
+        "votos": 38124,
         "confianza": "alta",
-        "diferencia": 0.5,
-        "comunidades": 2
+        "diferencia": 2.6,
+        "comunidades": 3
       },
       "fuentes": {
         "anilist": {
@@ -920,6 +917,10 @@
         "kitsu": {
           "puntaje": 82.5,
           "votos": 8054
+        },
+        "mangaupdates": {
+          "puntaje": 85.1,
+          "votos": 714
         }
       },
       "distribucion": {
@@ -957,7 +958,7 @@
     "87216": {
       "puntaje": {
         "valor": 81.7,
-        "votos": 161416,
+        "votos": 161417,
         "confianza": "alta",
         "diferencia": 5.5,
         "comunidades": 3
@@ -969,7 +970,7 @@
         },
         "kitsu": {
           "puntaje": 84.5,
-          "votos": 57925
+          "votos": 57926
         },
         "mangaupdates": {
           "puntaje": 80.5,
@@ -1124,9 +1125,7 @@
           "arte",
           "personajes"
         ],
-        "critican": [
-          "emocion"
-        ]
+        "critican": []
       },
       "popularidad": 65833,
       "favoritos": 4489,
@@ -1189,10 +1188,10 @@
     "100954": {
       "puntaje": {
         "valor": 82.1,
-        "votos": 24239,
+        "votos": 24589,
         "confianza": "alta",
-        "diferencia": 0.2,
-        "comunidades": 2
+        "diferencia": 0.4,
+        "comunidades": 3
       },
       "fuentes": {
         "anilist": {
@@ -1202,6 +1201,10 @@
         "kitsu": {
           "puntaje": 82.2,
           "votos": 3915
+        },
+        "mangaupdates": {
+          "puntaje": 82.4,
+          "votos": 350
         }
       },
       "distribucion": {
@@ -1290,8 +1293,7 @@
         ],
         "critican": [
           "ritmo",
-          "final",
-          "emocion"
+          "final"
         ]
       },
       "popularidad": 257188,
@@ -1638,7 +1640,7 @@
         "valor": 87.8,
         "votos": 3739,
         "confianza": "media",
-        "diferencia": 8.4,
+        "diferencia": 0,
         "comunidades": 2
       },
       "fuentes": {
