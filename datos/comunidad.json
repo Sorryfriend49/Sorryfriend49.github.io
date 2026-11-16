@@ -1,0 +1,2217 @@
+{
+  "esquema": 1,
+  "metodo": "1.0",
+  "generado": "2026-11-16T16:16:47.596Z",
+  "fuentes": {
+    "anilist": "2026-11-16",
+    "kitsu": "2026-11-16",
+    "mangaupdates": "2026-11-16",
+    "myanimelist": null
+  },
+  "mediaCatalogo": 83.2,
+  "obras": {
+    "30002": {
+      "puntaje": {
+        "valor": 88.7,
+        "votos": 116577,
+        "confianza": "alta",
+        "diferencia": 7.1,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 92,
+          "votos": 87134
+        },
+        "kitsu": {
+          "puntaje": 84.9,
+          "votos": 25712
+        },
+        "mangaupdates": {
+          "puntaje": 89.8,
+          "votos": 3731
+        }
+      },
+      "distribucion": {
+        "votos": 87134,
+        "gusta": 0.972,
+        "noGusta": 0.014,
+        "desviacion": 12.5,
+        "division": "coinciden",
+        "barras": [
+          0.8,
+          0.1,
+          0.2,
+          0.3,
+          0.5,
+          0.9,
+          3,
+          7.1,
+          24.5,
+          62.5
+        ]
+      },
+      "resenas": {
+        "n": 20,
+        "positivas": 17,
+        "negativas": 2,
+        "mixtas": 1,
+        "wilson": 0.686,
+        "elogian": [
+          "personajes",
+          "historia",
+          "arte"
+        ],
+        "critican": []
+      },
+      "popularidad": 249371,
+      "favoritos": 40987,
+      "tendencia": null
+    },
+    "30013": {
+      "puntaje": {
+        "valor": 88.2,
+        "votos": 199705,
+        "confianza": "alta",
+        "diferencia": 5.9,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 91,
+          "votos": 98684
+        },
+        "kitsu": {
+          "puntaje": 85.1,
+          "votos": 95649
+        },
+        "mangaupdates": {
+          "puntaje": 88.9,
+          "votos": 5372
+        }
+      },
+      "distribucion": {
+        "votos": 98684,
+        "gusta": 0.958,
+        "noGusta": 0.016,
+        "desviacion": 13.7,
+        "division": "coinciden",
+        "barras": [
+          0.7,
+          0.2,
+          0.2,
+          0.4,
+          1,
+          1.6,
+          4.6,
+          9.3,
+          24.9,
+          57.1
+        ]
+      },
+      "resenas": {
+        "n": 21,
+        "positivas": 18,
+        "negativas": 2,
+        "mixtas": 1,
+        "wilson": 0.699,
+        "elogian": [
+          "personajes",
+          "historia",
+          "arte"
+        ],
+        "critican": [
+          "humor",
+          "ritmo"
+        ]
+      },
+      "popularidad": 237223,
+      "favoritos": 48072,
+      "tendencia": null
+    },
+    "30642": {
+      "puntaje": {
+        "valor": 87.3,
+        "votos": 56442,
+        "confianza": "alta",
+        "diferencia": 6.2,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 90,
+          "votos": 46379
+        },
+        "kitsu": {
+          "puntaje": 83.8,
+          "votos": 7945
+        },
+        "mangaupdates": {
+          "puntaje": 87.7,
+          "votos": 2118
+        }
+      },
+      "distribucion": {
+        "votos": 46379,
+        "gusta": 0.967,
+        "noGusta": 0.014,
+        "desviacion": 12.7,
+        "division": "coinciden",
+        "barras": [
+          0.7,
+          0.1,
+          0.2,
+          0.3,
+          0.7,
+          1.2,
+          4.2,
+          11.8,
+          35.3,
+          45.4
+        ]
+      },
+      "resenas": {
+        "n": 16,
+        "positivas": 16,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.806,
+        "elogian": [
+          "personajes",
+          "historia",
+          "accion"
+        ],
+        "critican": [
+          "ritmo"
+        ]
+      },
+      "popularidad": 140853,
+      "favoritos": 18363,
+      "tendencia": null
+    },
+    "30656": {
+      "puntaje": {
+        "valor": 88.1,
+        "votos": 54867,
+        "confianza": "alta",
+        "diferencia": 6.7,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 91,
+          "votos": 44820
+        },
+        "kitsu": {
+          "puntaje": 84.3,
+          "votos": 8103
+        },
+        "mangaupdates": {
+          "puntaje": 89.6,
+          "votos": 1944
+        }
+      },
+      "distribucion": {
+        "votos": 44820,
+        "gusta": 0.971,
+        "noGusta": 0.013,
+        "desviacion": 12.7,
+        "division": "coinciden",
+        "barras": [
+          0.8,
+          0.1,
+          0.1,
+          0.2,
+          0.7,
+          1,
+          3.5,
+          9.2,
+          28.8,
+          55.6
+        ]
+      },
+      "resenas": {
+        "n": 18,
+        "positivas": 16,
+        "negativas": 1,
+        "mixtas": 1,
+        "wilson": 0.73,
+        "elogian": [
+          "historia",
+          "personajes",
+          "arte"
+        ],
+        "critican": []
+      },
+      "popularidad": 166075,
+      "favoritos": 20589,
+      "tendencia": null
+    },
+    "34632": {
+      "puntaje": {
+        "valor": 85.6,
+        "votos": 77204,
+        "confianza": "alta",
+        "diferencia": 4.9,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 88,
+          "votos": 62996
+        },
+        "kitsu": {
+          "puntaje": 83.1,
+          "votos": 12656
+        },
+        "mangaupdates": {
+          "puntaje": 86.6,
+          "votos": 1552
+        }
+      },
+      "distribucion": {
+        "votos": 62996,
+        "gusta": 0.935,
+        "noGusta": 0.026,
+        "desviacion": 15.3,
+        "division": "variadas",
+        "barras": [
+          0.8,
+          0.3,
+          0.6,
+          0.9,
+          1.5,
+          2.4,
+          6,
+          13,
+          30.1,
+          44.4
+        ]
+      },
+      "resenas": {
+        "n": 42,
+        "positivas": 35,
+        "negativas": 5,
+        "mixtas": 2,
+        "wilson": 0.739,
+        "elogian": [
+          "historia",
+          "personajes",
+          "final"
+        ],
+        "critican": []
+      },
+      "popularidad": 189229,
+      "favoritos": 21931,
+      "tendencia": null
+    },
+    "53390": {
+      "puntaje": {
+        "valor": 84,
+        "votos": 203039,
+        "confianza": "alta",
+        "diferencia": 0.3,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 84,
+          "votos": 116507
+        },
+        "kitsu": {
+          "puntaje": 84.1,
+          "votos": 83599
+        },
+        "mangaupdates": {
+          "puntaje": 83.8,
+          "votos": 2933
+        }
+      },
+      "distribucion": {
+        "votos": 116507,
+        "gusta": 0.906,
+        "noGusta": 0.038,
+        "desviacion": 17.1,
+        "division": "variadas",
+        "barras": [
+          1.1,
+          0.5,
+          0.8,
+          1.4,
+          2.1,
+          3.4,
+          8.4,
+          16.5,
+          31.1,
+          34.6
+        ]
+      },
+      "resenas": {
+        "n": 32,
+        "positivas": 19,
+        "negativas": 10,
+        "mixtas": 3,
+        "wilson": 0.473,
+        "elogian": [
+          "historia",
+          "personajes",
+          "final"
+        ],
+        "critican": [
+          "accion",
+          "ritmo"
+        ]
+      },
+      "popularidad": 229089,
+      "favoritos": 22648,
+      "tendencia": null
+    },
+    "63327": {
+      "puntaje": {
+        "valor": 84.4,
+        "votos": 178944,
+        "confianza": "alta",
+        "diferencia": 2.3,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 85,
+          "votos": 82070
+        },
+        "kitsu": {
+          "puntaje": 84.2,
+          "votos": 95089
+        },
+        "mangaupdates": {
+          "puntaje": 82.7,
+          "votos": 1785
+        }
+      },
+      "distribucion": {
+        "votos": 82070,
+        "gusta": 0.931,
+        "noGusta": 0.017,
+        "desviacion": 14.1,
+        "division": "coinciden",
+        "barras": [
+          0.4,
+          0.2,
+          0.4,
+          0.8,
+          1.8,
+          3.4,
+          9.8,
+          22.2,
+          33.6,
+          27.4
+        ]
+      },
+      "resenas": {
+        "n": 8,
+        "positivas": 6,
+        "negativas": 0,
+        "mixtas": 2,
+        "wilson": 0.61,
+        "elogian": [
+          "personajes",
+          "arte",
+          "accion"
+        ],
+        "critican": []
+      },
+      "popularidad": 200243,
+      "favoritos": 18811,
+      "tendencia": null
+    },
+    "72451": {
+      "puntaje": {
+        "valor": 83,
+        "votos": 64638,
+        "confianza": "alta",
+        "diferencia": 3.7,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 82,
+          "votos": 43230
+        },
+        "kitsu": {
+          "puntaje": 83.4,
+          "votos": 19338
+        },
+        "mangaupdates": {
+          "puntaje": 85.7,
+          "votos": 2070
+        }
+      },
+      "distribucion": {
+        "votos": 43230,
+        "gusta": 0.902,
+        "noGusta": 0.022,
+        "desviacion": 14.9,
+        "division": "coinciden",
+        "barras": [
+          0.4,
+          0.2,
+          0.5,
+          1.1,
+          2.6,
+          4.9,
+          12.8,
+          24.8,
+          29.6,
+          23
+        ]
+      },
+      "resenas": {
+        "n": 5,
+        "positivas": 4,
+        "negativas": 0,
+        "mixtas": 1,
+        "wilson": 0.51,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 124466,
+      "favoritos": 8952,
+      "tendencia": null
+    },
+    "74347": {
+      "puntaje": {
+        "valor": 85.2,
+        "votos": 136346,
+        "confianza": "alta",
+        "diferencia": 3,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 85,
+          "votos": 59756
+        },
+        "kitsu": {
+          "puntaje": 84.7,
+          "votos": 74051
+        },
+        "mangaupdates": {
+          "puntaje": 87.7,
+          "votos": 2539
+        }
+      },
+      "distribucion": {
+        "votos": 59756,
+        "gusta": 0.94,
+        "noGusta": 0.015,
+        "desviacion": 13.4,
+        "division": "coinciden",
+        "barras": [
+          0.4,
+          0.1,
+          0.3,
+          0.6,
+          1.6,
+          2.9,
+          9.5,
+          23,
+          37.4,
+          24.1
+        ]
+      },
+      "resenas": {
+        "n": 4,
+        "positivas": 3,
+        "negativas": 1,
+        "mixtas": 0,
+        "wilson": 0.301,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 175925,
+      "favoritos": 14288,
+      "tendencia": null
+    },
+    "85141": {
+      "puntaje": {
+        "valor": 76.4,
+        "votos": 18003,
+        "confianza": "alta",
+        "diferencia": 2.1,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 76,
+          "votos": 15245
+        },
+        "kitsu": {
+          "puntaje": 78.1,
+          "votos": 1965
+        },
+        "mangaupdates": {
+          "puntaje": 77.5,
+          "votos": 793
+        }
+      },
+      "distribucion": {
+        "votos": 15245,
+        "gusta": 0.81,
+        "noGusta": 0.056,
+        "desviacion": 18,
+        "division": "divididas",
+        "barras": [
+          0.9,
+          0.8,
+          1.5,
+          2.4,
+          5.2,
+          8.2,
+          18.7,
+          24,
+          22.9,
+          15.3
+        ]
+      },
+      "resenas": {
+        "n": 0
+      },
+      "popularidad": 55915,
+      "favoritos": 2759,
+      "tendencia": null
+    },
+    "85143": {
+      "puntaje": {
+        "valor": 82.5,
+        "votos": 35462,
+        "confianza": "alta",
+        "diferencia": 3.7,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 82,
+          "votos": 27592
+        },
+        "kitsu": {
+          "puntaje": 82,
+          "votos": 5435
+        },
+        "mangaupdates": {
+          "puntaje": 85.7,
+          "votos": 2435
+        }
+      },
+      "distribucion": {
+        "votos": 27592,
+        "gusta": 0.879,
+        "noGusta": 0.04,
+        "desviacion": 17.3,
+        "division": "variadas",
+        "barras": [
+          0.8,
+          0.8,
+          1.1,
+          1.4,
+          3.1,
+          4.9,
+          11.9,
+          20.8,
+          30,
+          25.2
+        ]
+      },
+      "resenas": {
+        "n": 6,
+        "positivas": 4,
+        "negativas": 2,
+        "mixtas": 0,
+        "wilson": 0.3,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 101322,
+      "favoritos": 7749,
+      "tendencia": null
+    },
+    "85486": {
+      "puntaje": {
+        "valor": 80.7,
+        "votos": 175502,
+        "confianza": "alta",
+        "diferencia": 7.6,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 77,
+          "votos": 69139
+        },
+        "kitsu": {
+          "puntaje": 84.6,
+          "votos": 105004
+        },
+        "mangaupdates": {
+          "puntaje": 78.7,
+          "votos": 1359
+        }
+      },
+      "distribucion": {
+        "votos": 69139,
+        "gusta": 0.845,
+        "noGusta": 0.04,
+        "desviacion": 16.6,
+        "division": "variadas",
+        "barras": [
+          0.8,
+          0.4,
+          1,
+          1.8,
+          4.2,
+          7.3,
+          17.2,
+          26.8,
+          25.7,
+          14.8
+        ]
+      },
+      "resenas": {
+        "n": 8,
+        "positivas": 6,
+        "negativas": 1,
+        "mixtas": 1,
+        "wilson": 0.487,
+        "elogian": [
+          "personajes",
+          "historia",
+          "accion"
+        ],
+        "critican": []
+      },
+      "popularidad": 179796,
+      "favoritos": 10956,
+      "tendencia": null
+    },
+    "85734": {
+      "puntaje": {
+        "valor": 82.2,
+        "votos": 13103,
+        "confianza": "alta",
+        "diferencia": 3.8,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 82,
+          "votos": 10115
+        },
+        "kitsu": {
+          "puntaje": 82.3,
+          "votos": 2409
+        },
+        "mangaupdates": {
+          "puntaje": 85.8,
+          "votos": 579
+        }
+      },
+      "distribucion": {
+        "votos": 10115,
+        "gusta": 0.917,
+        "noGusta": 0.018,
+        "desviacion": 14.4,
+        "division": "coinciden",
+        "barras": [
+          0.3,
+          0.4,
+          0.3,
+          0.8,
+          2.4,
+          4.2,
+          13.8,
+          24.1,
+          32,
+          21.7
+        ]
+      },
+      "resenas": {
+        "n": 1,
+        "positivas": 1,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.207,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 39241,
+      "favoritos": 2403,
+      "tendencia": null
+    },
+    "85850": {
+      "puntaje": {
+        "valor": 83.9,
+        "votos": 12080,
+        "confianza": "baja",
+        "diferencia": 15.3,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 85,
+          "votos": 6921
+        },
+        "kitsu": {
+          "puntaje": 82.5,
+          "votos": 5151
+        },
+        "mangaupdates": {
+          "puntaje": 69.7,
+          "votos": 8
+        }
+      },
+      "distribucion": {
+        "votos": 6921,
+        "gusta": 0.92,
+        "noGusta": 0.027,
+        "desviacion": 15.6,
+        "division": "variadas",
+        "barras": [
+          0.5,
+          0.5,
+          0.7,
+          1,
+          2.3,
+          3.1,
+          9.7,
+          15.5,
+          33,
+          33.8
+        ]
+      },
+      "resenas": {
+        "n": 1,
+        "positivas": 0,
+        "negativas": 1,
+        "mixtas": 0,
+        "wilson": 0,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 26276,
+      "favoritos": 2589,
+      "tendencia": null
+    },
+    "86707": {
+      "puntaje": {
+        "valor": 77.2,
+        "votos": 9243,
+        "confianza": "alta",
+        "diferencia": 2.3,
+        "comunidades": 2
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 77,
+          "votos": 8584
+        },
+        "mangaupdates": {
+          "puntaje": 79.3,
+          "votos": 659
+        }
+      },
+      "distribucion": {
+        "votos": 8584,
+        "gusta": 0.827,
+        "noGusta": 0.055,
+        "desviacion": 18.2,
+        "division": "divididas",
+        "barras": [
+          1,
+          0.6,
+          1.5,
+          2.5,
+          5,
+          6.8,
+          16.5,
+          22.5,
+          25.6,
+          18
+        ]
+      },
+      "resenas": {
+        "n": 1,
+        "positivas": 0,
+        "negativas": 1,
+        "mixtas": 0,
+        "wilson": 0,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 32430,
+      "favoritos": 1917,
+      "tendencia": null
+    },
+    "86848": {
+      "puntaje": {
+        "valor": 78.5,
+        "votos": 14398,
+        "confianza": "alta",
+        "diferencia": 2.9,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 78,
+          "votos": 11924
+        },
+        "kitsu": {
+          "puntaje": 80.4,
+          "votos": 2010
+        },
+        "mangaupdates": {
+          "puntaje": 80.9,
+          "votos": 464
+        }
+      },
+      "distribucion": {
+        "votos": 11924,
+        "gusta": 0.829,
+        "noGusta": 0.055,
+        "desviacion": 18.7,
+        "division": "divididas",
+        "barras": [
+          1.2,
+          0.8,
+          1.4,
+          2,
+          4.6,
+          7,
+          15.1,
+          21.4,
+          25.9,
+          20.6
+        ]
+      },
+      "resenas": {
+        "n": 3,
+        "positivas": 3,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.438,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 47169,
+      "favoritos": 3077,
+      "tendencia": null
+    },
+    "86964": {
+      "puntaje": {
+        "valor": 82.8,
+        "votos": 37410,
+        "confianza": "alta",
+        "diferencia": 0.5,
+        "comunidades": 2
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 83,
+          "votos": 29356
+        },
+        "kitsu": {
+          "puntaje": 82.5,
+          "votos": 8054
+        }
+      },
+      "distribucion": {
+        "votos": 29356,
+        "gusta": 0.927,
+        "noGusta": 0.022,
+        "desviacion": 14.3,
+        "division": "coinciden",
+        "barras": [
+          0.4,
+          0.4,
+          0.6,
+          0.9,
+          1.7,
+          3.4,
+          11.1,
+          24.5,
+          35.4,
+          21.6
+        ]
+      },
+      "resenas": {
+        "n": 7,
+        "positivas": 7,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.646,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 78047,
+      "favoritos": 4527,
+      "tendencia": null
+    },
+    "87216": {
+      "puntaje": {
+        "valor": 81.7,
+        "votos": 161416,
+        "confianza": "alta",
+        "diferencia": 5.5,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 79,
+          "votos": 102455
+        },
+        "kitsu": {
+          "puntaje": 84.5,
+          "votos": 57925
+        },
+        "mangaupdates": {
+          "puntaje": 80.5,
+          "votos": 1036
+        }
+      },
+      "distribucion": {
+        "votos": 102455,
+        "gusta": 0.851,
+        "noGusta": 0.04,
+        "desviacion": 16.9,
+        "division": "variadas",
+        "barras": [
+          0.6,
+          0.4,
+          1.1,
+          1.8,
+          4,
+          6.9,
+          15.9,
+          23.9,
+          25.9,
+          19.3
+        ]
+      },
+      "resenas": {
+        "n": 21,
+        "positivas": 13,
+        "negativas": 6,
+        "mixtas": 2,
+        "wilson": 0.46,
+        "elogian": [
+          "personajes",
+          "accion",
+          "arte"
+        ],
+        "critican": [
+          "ritmo"
+        ]
+      },
+      "popularidad": 212827,
+      "favoritos": 14753,
+      "tendencia": null
+    },
+    "87423": {
+      "puntaje": {
+        "valor": 81.1,
+        "votos": 78944,
+        "confianza": "alta",
+        "diferencia": 4.4,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 79,
+          "votos": 52441
+        },
+        "kitsu": {
+          "puntaje": 83.4,
+          "votos": 25625
+        },
+        "mangaupdates": {
+          "puntaje": 79.4,
+          "votos": 878
+        }
+      },
+      "distribucion": {
+        "votos": 52441,
+        "gusta": 0.86,
+        "noGusta": 0.037,
+        "desviacion": 16.3,
+        "division": "variadas",
+        "barras": [
+          0.6,
+          0.3,
+          1,
+          1.8,
+          3.6,
+          6.7,
+          15.3,
+          25.4,
+          27.1,
+          18.2
+        ]
+      },
+      "resenas": {
+        "n": 11,
+        "positivas": 7,
+        "negativas": 0,
+        "mixtas": 4,
+        "wilson": 0.646,
+        "elogian": [
+          "personajes",
+          "historia",
+          "final"
+        ],
+        "critican": []
+      },
+      "popularidad": 135116,
+      "favoritos": 8603,
+      "tendencia": null
+    },
+    "100568": {
+      "puntaje": {
+        "valor": 84.6,
+        "votos": 27109,
+        "confianza": "alta",
+        "diferencia": 1.8,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 85,
+          "votos": 24619
+        },
+        "kitsu": {
+          "puntaje": 83.2,
+          "votos": 2203
+        },
+        "mangaupdates": {
+          "puntaje": 83.8,
+          "votos": 287
+        }
+      },
+      "distribucion": {
+        "votos": 24619,
+        "gusta": 0.931,
+        "noGusta": 0.02,
+        "desviacion": 14.5,
+        "division": "coinciden",
+        "barras": [
+          0.4,
+          0.4,
+          0.5,
+          0.7,
+          1.7,
+          3.1,
+          8.6,
+          20.5,
+          34.9,
+          29.2
+        ]
+      },
+      "resenas": {
+        "n": 17,
+        "positivas": 16,
+        "negativas": 1,
+        "mixtas": 0,
+        "wilson": 0.73,
+        "elogian": [
+          "historia",
+          "arte",
+          "personajes"
+        ],
+        "critican": [
+          "emocion"
+        ]
+      },
+      "popularidad": 65833,
+      "favoritos": 4489,
+      "tendencia": null
+    },
+    "100805": {
+      "puntaje": {
+        "valor": 85,
+        "votos": 15123,
+        "confianza": "alta",
+        "diferencia": 4,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 86,
+          "votos": 10598
+        },
+        "kitsu": {
+          "puntaje": 82.5,
+          "votos": 4054
+        },
+        "mangaupdates": {
+          "puntaje": 86.5,
+          "votos": 471
+        }
+      },
+      "distribucion": {
+        "votos": 10598,
+        "gusta": 0.933,
+        "noGusta": 0.021,
+        "desviacion": 14.8,
+        "division": "coinciden",
+        "barras": [
+          0.5,
+          0.4,
+          0.4,
+          0.8,
+          2,
+          2.6,
+          9.1,
+          18.8,
+          31,
+          34.5
+        ]
+      },
+      "resenas": {
+        "n": 1,
+        "positivas": 1,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.207,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 30753,
+      "favoritos": 2524,
+      "tendencia": null
+    },
+    "100954": {
+      "puntaje": {
+        "valor": 82.1,
+        "votos": 24239,
+        "confianza": "alta",
+        "diferencia": 0.2,
+        "comunidades": 2
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 82,
+          "votos": 20324
+        },
+        "kitsu": {
+          "puntaje": 82.2,
+          "votos": 3915
+        }
+      },
+      "distribucion": {
+        "votos": 20324,
+        "gusta": 0.911,
+        "noGusta": 0.022,
+        "desviacion": 14.6,
+        "division": "coinciden",
+        "barras": [
+          0.4,
+          0.4,
+          0.5,
+          0.9,
+          2.3,
+          4.4,
+          13.5,
+          26.4,
+          32.3,
+          18.8
+        ]
+      },
+      "resenas": {
+        "n": 2,
+        "positivas": 2,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.342,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 56796,
+      "favoritos": 3198,
+      "tendencia": null
+    },
+    "101517": {
+      "puntaje": {
+        "valor": 82,
+        "votos": 132776,
+        "confianza": "alta",
+        "diferencia": 8,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 80,
+          "votos": 97453
+        },
+        "kitsu": {
+          "puntaje": 84.5,
+          "votos": 34565
+        },
+        "mangaupdates": {
+          "puntaje": 76.5,
+          "votos": 758
+        }
+      },
+      "distribucion": {
+        "votos": 97453,
+        "gusta": 0.886,
+        "noGusta": 0.03,
+        "desviacion": 15.7,
+        "division": "variadas",
+        "barras": [
+          0.7,
+          0.3,
+          0.8,
+          1.3,
+          3.1,
+          5.4,
+          14.3,
+          24.8,
+          31.2,
+          18.3
+        ]
+      },
+      "resenas": {
+        "n": 16,
+        "positivas": 9,
+        "negativas": 2,
+        "mixtas": 5,
+        "wilson": 0.523,
+        "elogian": [
+          "personajes",
+          "historia",
+          "accion"
+        ],
+        "critican": [
+          "ritmo",
+          "final",
+          "emocion"
+        ]
+      },
+      "popularidad": 257188,
+      "favoritos": 24014,
+      "tendencia": null
+    },
+    "105393": {
+      "puntaje": {
+        "valor": 76.4,
+        "votos": 16985,
+        "confianza": "alta",
+        "diferencia": 1.9,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 76,
+          "votos": 14062
+        },
+        "kitsu": {
+          "puntaje": 77.9,
+          "votos": 2208
+        },
+        "mangaupdates": {
+          "puntaje": 76.4,
+          "votos": 715
+        }
+      },
+      "distribucion": {
+        "votos": 14062,
+        "gusta": 0.833,
+        "noGusta": 0.039,
+        "desviacion": 16,
+        "division": "variadas",
+        "barras": [
+          0.7,
+          0.4,
+          1.2,
+          1.6,
+          4.4,
+          8.4,
+          20.9,
+          28.6,
+          23.2,
+          10.6
+        ]
+      },
+      "resenas": {
+        "n": 2,
+        "positivas": 2,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.342,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 51207,
+      "favoritos": 1962,
+      "tendencia": null
+    },
+    "105398": {
+      "puntaje": {
+        "valor": 84.3,
+        "votos": 156519,
+        "confianza": "alta",
+        "diferencia": 0.7,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 84,
+          "votos": 124695
+        },
+        "kitsu": {
+          "puntaje": 84.5,
+          "votos": 29501
+        },
+        "mangaupdates": {
+          "puntaje": 84.7,
+          "votos": 2323
+        }
+      },
+      "distribucion": {
+        "votos": 124695,
+        "gusta": 0.904,
+        "noGusta": 0.033,
+        "desviacion": 16.6,
+        "division": "variadas",
+        "barras": [
+          0.8,
+          0.5,
+          0.8,
+          1.3,
+          2.4,
+          3.9,
+          10,
+          18,
+          30.1,
+          32.3
+        ]
+      },
+      "resenas": {
+        "n": 30,
+        "positivas": 18,
+        "negativas": 7,
+        "mixtas": 5,
+        "wilson": 0.524,
+        "elogian": [
+          "personajes",
+          "accion",
+          "arte"
+        ],
+        "critican": [
+          "mundo",
+          "ritmo"
+        ]
+      },
+      "popularidad": 289347,
+      "favoritos": 33052,
+      "tendencia": null
+    },
+    "105778": {
+      "puntaje": {
+        "valor": 84.2,
+        "votos": 179537,
+        "confianza": "alta",
+        "diferencia": 3.2,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 84,
+          "votos": 155226
+        },
+        "kitsu": {
+          "puntaje": 84.8,
+          "votos": 22971
+        },
+        "mangaupdates": {
+          "puntaje": 81.6,
+          "votos": 1340
+        }
+      },
+      "distribucion": {
+        "votos": 155226,
+        "gusta": 0.934,
+        "noGusta": 0.019,
+        "desviacion": 14.2,
+        "division": "coinciden",
+        "barras": [
+          0.5,
+          0.2,
+          0.4,
+          0.7,
+          1.7,
+          3,
+          9.3,
+          20.9,
+          36.5,
+          26.6
+        ]
+      },
+      "resenas": {
+        "n": 49,
+        "positivas": 35,
+        "negativas": 7,
+        "mixtas": 7,
+        "wilson": 0.694,
+        "elogian": [
+          "personajes",
+          "historia",
+          "accion"
+        ],
+        "critican": []
+      },
+      "popularidad": 337640,
+      "favoritos": 48404,
+      "tendencia": null
+    },
+    "106130": {
+      "puntaje": {
+        "valor": 82.1,
+        "votos": 42635,
+        "confianza": "alta",
+        "diferencia": 4.3,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 82,
+          "votos": 38615
+        },
+        "kitsu": {
+          "puntaje": 82.7,
+          "votos": 3724
+        },
+        "mangaupdates": {
+          "puntaje": 78.4,
+          "votos": 296
+        }
+      },
+      "distribucion": {
+        "votos": 38615,
+        "gusta": 0.903,
+        "noGusta": 0.031,
+        "desviacion": 15.8,
+        "division": "variadas",
+        "barras": [
+          0.8,
+          0.4,
+          0.8,
+          1.2,
+          2.5,
+          4.1,
+          11.6,
+          23.7,
+          32.8,
+          22.1
+        ]
+      },
+      "resenas": {
+        "n": 6,
+        "positivas": 5,
+        "negativas": 1,
+        "mixtas": 0,
+        "wilson": 0.436,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 127106,
+      "favoritos": 11268,
+      "tendencia": null
+    },
+    "106929": {
+      "puntaje": {
+        "valor": 84.7,
+        "votos": 13306,
+        "confianza": "alta",
+        "diferencia": 3.4,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 85,
+          "votos": 11331
+        },
+        "kitsu": {
+          "puntaje": 82.2,
+          "votos": 1511
+        },
+        "mangaupdates": {
+          "puntaje": 85.6,
+          "votos": 464
+        }
+      },
+      "distribucion": {
+        "votos": 11331,
+        "gusta": 0.921,
+        "noGusta": 0.031,
+        "desviacion": 16,
+        "division": "variadas",
+        "barras": [
+          0.8,
+          0.5,
+          0.8,
+          1.1,
+          2,
+          2.8,
+          8.7,
+          16.4,
+          34.7,
+          32.3
+        ]
+      },
+      "resenas": {
+        "n": 2,
+        "positivas": 2,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.342,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 47936,
+      "favoritos": 4251,
+      "tendencia": null
+    },
+    "108556": {
+      "puntaje": {
+        "valor": 84,
+        "votos": 62418,
+        "confianza": "alta",
+        "diferencia": 2.3,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 83,
+          "votos": 46462
+        },
+        "kitsu": {
+          "puntaje": 84.8,
+          "votos": 14984
+        },
+        "mangaupdates": {
+          "puntaje": 85.3,
+          "votos": 972
+        }
+      },
+      "distribucion": {
+        "votos": 46462,
+        "gusta": 0.928,
+        "noGusta": 0.015,
+        "desviacion": 13.6,
+        "division": "coinciden",
+        "barras": [
+          0.3,
+          0.1,
+          0.4,
+          0.6,
+          2.2,
+          3.5,
+          11.9,
+          25.7,
+          35.1,
+          20.2
+        ]
+      },
+      "resenas": {
+        "n": 5,
+        "positivas": 4,
+        "negativas": 1,
+        "mixtas": 0,
+        "wilson": 0.376,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 161469,
+      "favoritos": 12306,
+      "tendencia": null
+    },
+    "112275": {
+      "puntaje": {
+        "valor": 87.8,
+        "votos": 3739,
+        "confianza": "media",
+        "diferencia": 8.4,
+        "comunidades": 2
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 88,
+          "votos": 3672
+        },
+        "mangaupdates": {
+          "puntaje": 79.6,
+          "votos": 67
+        }
+      },
+      "distribucion": {
+        "votos": 3672,
+        "gusta": 0.939,
+        "noGusta": 0.03,
+        "desviacion": 16.2,
+        "division": "variadas",
+        "barras": [
+          1.4,
+          0.6,
+          0.4,
+          0.6,
+          1.2,
+          1.9,
+          5.8,
+          10.7,
+          33.5,
+          43.9
+        ]
+      },
+      "resenas": {
+        "n": 1,
+        "positivas": 1,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.207,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 20283,
+      "favoritos": 1869,
+      "tendencia": null
+    },
+    "116353": {
+      "puntaje": {
+        "valor": 81.7,
+        "votos": 7930,
+        "confianza": "alta",
+        "diferencia": 3.5,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 82,
+          "votos": 6425
+        },
+        "kitsu": {
+          "puntaje": 81.1,
+          "votos": 1186
+        },
+        "mangaupdates": {
+          "puntaje": 78.5,
+          "votos": 319
+        }
+      },
+      "distribucion": {
+        "votos": 6425,
+        "gusta": 0.882,
+        "noGusta": 0.043,
+        "desviacion": 17.7,
+        "division": "divididas",
+        "barras": [
+          1,
+          0.8,
+          1.1,
+          1.5,
+          3,
+          4.5,
+          10.9,
+          19.4,
+          28.8,
+          29.1
+        ]
+      },
+      "resenas": {
+        "n": 0
+      },
+      "popularidad": 28521,
+      "favoritos": 2111,
+      "tendencia": null
+    },
+    "117324": {
+      "puntaje": {
+        "valor": 84,
+        "votos": 6328,
+        "confianza": "alta",
+        "diferencia": 1.1,
+        "comunidades": 2
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 84,
+          "votos": 6104
+        },
+        "mangaupdates": {
+          "puntaje": 85.1,
+          "votos": 224
+        }
+      },
+      "distribucion": {
+        "votos": 6104,
+        "gusta": 0.929,
+        "noGusta": 0.024,
+        "desviacion": 14.6,
+        "division": "coinciden",
+        "barras": [
+          0.4,
+          0.3,
+          0.8,
+          1,
+          1.7,
+          3,
+          10.4,
+          23,
+          33.3,
+          26.3
+        ]
+      },
+      "resenas": {
+        "n": 2,
+        "positivas": 2,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.342,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 26132,
+      "favoritos": 1550,
+      "tendencia": null
+    },
+    "119257": {
+      "puntaje": {
+        "valor": 85.4,
+        "votos": 40896,
+        "confianza": "alta",
+        "diferencia": 4.4,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 86,
+          "votos": 34885
+        },
+        "kitsu": {
+          "puntaje": 83.8,
+          "votos": 5055
+        },
+        "mangaupdates": {
+          "puntaje": 88.2,
+          "votos": 956
+        }
+      },
+      "distribucion": {
+        "votos": 34885,
+        "gusta": 0.939,
+        "noGusta": 0.02,
+        "desviacion": 14.5,
+        "division": "coinciden",
+        "barras": [
+          0.6,
+          0.3,
+          0.5,
+          0.6,
+          1.6,
+          2.5,
+          8.3,
+          17.7,
+          33.8,
+          34.2
+        ]
+      },
+      "resenas": {
+        "n": 4,
+        "positivas": 4,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.51,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 135329,
+      "favoritos": 13739,
+      "tendencia": null
+    },
+    "119521": {
+      "puntaje": {
+        "valor": 85.8,
+        "votos": 15573,
+        "confianza": "alta",
+        "diferencia": 4.2,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 86,
+          "votos": 13297
+        },
+        "kitsu": {
+          "puntaje": 83.6,
+          "votos": 1657
+        },
+        "mangaupdates": {
+          "puntaje": 87.8,
+          "votos": 619
+        }
+      },
+      "distribucion": {
+        "votos": 13297,
+        "gusta": 0.94,
+        "noGusta": 0.02,
+        "desviacion": 14.1,
+        "division": "coinciden",
+        "barras": [
+          0.5,
+          0.3,
+          0.4,
+          0.9,
+          1.3,
+          2.7,
+          8.4,
+          19.8,
+          35.3,
+          30.5
+        ]
+      },
+      "resenas": {
+        "n": 1,
+        "positivas": 1,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.207,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 48131,
+      "favoritos": 3217,
+      "tendencia": null
+    },
+    "120980": {
+      "puntaje": {
+        "valor": 81,
+        "votos": 14456,
+        "confianza": "alta",
+        "diferencia": 1.1,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 81,
+          "votos": 12073
+        },
+        "kitsu": {
+          "puntaje": 81.3,
+          "votos": 1755
+        },
+        "mangaupdates": {
+          "puntaje": 80.2,
+          "votos": 628
+        }
+      },
+      "distribucion": {
+        "votos": 12073,
+        "gusta": 0.879,
+        "noGusta": 0.043,
+        "desviacion": 17.2,
+        "division": "variadas",
+        "barras": [
+          0.9,
+          0.7,
+          1,
+          1.7,
+          3.1,
+          4.7,
+          12.9,
+          22.7,
+          30.1,
+          22.1
+        ]
+      },
+      "resenas": {
+        "n": 2,
+        "positivas": 1,
+        "negativas": 1,
+        "mixtas": 0,
+        "wilson": 0.095,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 49833,
+      "favoritos": 3119,
+      "tendencia": null
+    },
+    "126297": {
+      "puntaje": {
+        "valor": 79.4,
+        "votos": 16745,
+        "confianza": "alta",
+        "diferencia": 2.8,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 79,
+          "votos": 14472
+        },
+        "kitsu": {
+          "puntaje": 81,
+          "votos": 1801
+        },
+        "mangaupdates": {
+          "puntaje": 81.8,
+          "votos": 472
+        }
+      },
+      "distribucion": {
+        "votos": 14472,
+        "gusta": 0.87,
+        "noGusta": 0.036,
+        "desviacion": 16.4,
+        "division": "variadas",
+        "barras": [
+          0.7,
+          0.6,
+          0.9,
+          1.4,
+          3.6,
+          5.9,
+          16.6,
+          25.6,
+          27.4,
+          17.4
+        ]
+      },
+      "resenas": {
+        "n": 1,
+        "positivas": 1,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.207,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 57575,
+      "favoritos": 3188,
+      "tendencia": null
+    },
+    "128067": {
+      "puntaje": {
+        "valor": 82.9,
+        "votos": 19875,
+        "confianza": "alta",
+        "diferencia": 0.9,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 83,
+          "votos": 17196
+        },
+        "kitsu": {
+          "puntaje": 82.2,
+          "votos": 1981
+        },
+        "mangaupdates": {
+          "puntaje": 83.1,
+          "votos": 698
+        }
+      },
+      "distribucion": {
+        "votos": 17196,
+        "gusta": 0.911,
+        "noGusta": 0.028,
+        "desviacion": 15.7,
+        "division": "variadas",
+        "barras": [
+          0.6,
+          0.5,
+          0.6,
+          1.1,
+          2.4,
+          3.8,
+          12,
+          21.9,
+          31.2,
+          25.9
+        ]
+      },
+      "resenas": {
+        "n": 1,
+        "positivas": 1,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.207,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 70925,
+      "favoritos": 4857,
+      "tendencia": null
+    },
+    "137280": {
+      "puntaje": {
+        "valor": 77.1,
+        "votos": 12007,
+        "confianza": "alta",
+        "diferencia": 3.6,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 77,
+          "votos": 10398
+        },
+        "kitsu": {
+          "puntaje": 78.7,
+          "votos": 1219
+        },
+        "mangaupdates": {
+          "puntaje": 75.1,
+          "votos": 390
+        }
+      },
+      "distribucion": {
+        "votos": 10398,
+        "gusta": 0.839,
+        "noGusta": 0.048,
+        "desviacion": 17.5,
+        "division": "variadas",
+        "barras": [
+          1.1,
+          0.7,
+          1.2,
+          1.9,
+          4.5,
+          6.7,
+          18.5,
+          25.4,
+          25.2,
+          14.8
+        ]
+      },
+      "resenas": {
+        "n": 1,
+        "positivas": 1,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.207,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 52267,
+      "favoritos": 2382,
+      "tendencia": null
+    },
+    "140407": {
+      "puntaje": {
+        "valor": 89.4,
+        "votos": 27193,
+        "confianza": "alta",
+        "diferencia": 5.5,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 90,
+          "votos": 23928
+        },
+        "kitsu": {
+          "puntaje": 85.8,
+          "votos": 2127
+        },
+        "mangaupdates": {
+          "puntaje": 91.3,
+          "votos": 1138
+        }
+      },
+      "distribucion": {
+        "votos": 23928,
+        "gusta": 0.965,
+        "noGusta": 0.015,
+        "desviacion": 13,
+        "division": "coinciden",
+        "barras": [
+          0.5,
+          0.2,
+          0.3,
+          0.4,
+          0.8,
+          1.3,
+          5,
+          11.9,
+          31.1,
+          48.6
+        ]
+      },
+      "resenas": {
+        "n": 5,
+        "positivas": 5,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.566,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 72519,
+      "favoritos": 8199,
+      "tendencia": null
+    },
+    "142287": {
+      "puntaje": {
+        "valor": 77.3,
+        "votos": 4195,
+        "confianza": "media",
+        "diferencia": 1.5,
+        "comunidades": 3
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 77,
+          "votos": 3431
+        },
+        "kitsu": {
+          "puntaje": 77.9,
+          "votos": 464
+        },
+        "mangaupdates": {
+          "puntaje": 78.5,
+          "votos": 300
+        }
+      },
+      "distribucion": {
+        "votos": 3431,
+        "gusta": 0.813,
+        "noGusta": 0.06,
+        "desviacion": 19,
+        "division": "divididas",
+        "barras": [
+          1.5,
+          0.6,
+          1.7,
+          2.2,
+          5,
+          7.7,
+          17,
+          21.6,
+          23.6,
+          19.1
+        ]
+      },
+      "resenas": {
+        "n": 2,
+        "positivas": 1,
+        "negativas": 1,
+        "mixtas": 0,
+        "wilson": 0.095,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 16340,
+      "favoritos": 830,
+      "tendencia": null
+    }
+  }
+}
