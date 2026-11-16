@@ -14,7 +14,8 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import {
-    METODO, combinarPuntajes, analizarDistribucion, analizarResenas, calcularTendencia, elegirSerie, redondear
+    METODO, combinarPuntajes, analizarDistribucion, analizarResenas, calcularTendencia, coincidencia, elegirSerie,
+    normalizarTitulo, redondear
 } from './analisis.mjs';
 
 const AGENTE = 'FrozenProject/1.0 (+https://sorryfriend49.github.io)';
@@ -28,6 +29,9 @@ const PAUSA = { 'graphql.anilist.co': 2200, 'kitsu.io': 400, 'api.mangaupdates.c
 const RESENAS_POR_OBRA = 50;            // las más útiles según los lectores de AniList
 const DIAS_PARA_REBUSCAR = 30;          // si una obra no apareció en MangaUpdates, se vuelve a buscar al mes
 const SEMANAS_DE_HISTORIAL = 12;
+// Versión de la forma de emparejar obras con MangaUpdates. Al subirla, todas las obras
+// se vuelven a buscar una vez con la regla nueva (la 2 evita antologías y extras).
+const EMPAREJADOR = 2;
 
 const dormir = ms => new Promise(r => setTimeout(r, ms));
 const hoy = fecha => fecha.toISOString().slice(0, 10);
@@ -144,19 +148,27 @@ function datosMangaUpdates(serie){
 async function traerMangaUpdates(pedir, obra, guardado, fecha){
     if (guardado && guardado.mangaupdates){
         const serie = await pedir(`${MANGAUPDATES}/series/${guardado.mangaupdates}`);
-        return { id: guardado.mangaupdates, datos: datosMangaUpdates(serie), buscado: guardado.buscado };
+        return { id: guardado.mangaupdates, titulo: serie.title || guardado.mangaupdatesTitulo, datos: datosMangaUpdates(serie), buscado: guardado.buscado };
     }
     if (guardado && guardado.buscado && diasEntre(guardado.buscado, fecha) < DIAS_PARA_REBUSCAR){
         return { id: null, datos: null, buscado: guardado.buscado };   // ya se buscó hace poco y no estaba
     }
-    const titulos = [...new Set([obra.titulos && obra.titulos.ingles, obra.titulo, obra.titulos && obra.titulos.romaji].filter(Boolean))];
+    // Se busca con el título en inglés, el principal, el romaji y hasta 3 sinónimos (p. ej. "19 Days"),
+    // se juntan los resultados y se elige el mejor; se para antes si aparece el mismo título principal.
+    const vistos = new Set();
+    const titulos = [obra.titulos && obra.titulos.ingles, obra.titulo, obra.titulos && obra.titulos.romaji, ...(obra.sinonimos || []).slice(0, 3)]
+        .filter(t => t && !vistos.has(normalizarTitulo(t)) && vistos.add(normalizarTitulo(t)));
+    const resultados = [];
     for (const titulo of titulos){
         const r = await pedir(`${MANGAUPDATES}/series/search`, {
             method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ search: titulo, perpage: 10 })
         });
-        const serie = elegirSerie(obra, r.results || []);
-        if (serie) return { id: serie.series_id, datos: datosMangaUpdates(serie), buscado: fecha };
+        resultados.push(...(r.results || []));
+        const mejor = elegirSerie(obra, resultados);
+        if (mejor && coincidencia(obra, mejor) === 3) break;
     }
+    const serie = elegirSerie(obra, resultados);
+    if (serie) return { id: serie.series_id, titulo: serie.title, nueva: true, votos: serie.rating_votes, anio: serie.year, datos: datosMangaUpdates(serie), buscado: fecha };
     return { id: null, datos: null, buscado: fecha };
 }
 
@@ -233,12 +245,18 @@ export async function ejecutar({
             if (kitsu.datos) fuentes.kitsu = kitsu.datos;
         } else if (previo.fuentes && previo.fuentes.kitsu) fuentes.kitsu = previo.fuentes.kitsu;
 
+        // Si la obra se emparejó con una regla vieja, se vuelve a buscar (y su dato anterior no se reusa)
+        const emparejadaAlDia = (guardado.emparejador || 1) >= EMPAREJADOR;
+        if (!emparejadaAlDia){ delete guardado.mangaupdates; delete guardado.mangaupdatesTitulo; delete guardado.buscado; }
         const mu = await intentar('mangaupdates', () => traerMangaUpdates(pedir, obra, guardado, fecha));
         if (mu){
-            if (mu.id) guardado.mangaupdates = mu.id;
+            if (mu.id){ guardado.mangaupdates = mu.id; guardado.mangaupdatesTitulo = mu.titulo; }
             guardado.buscado = mu.buscado;
+            guardado.emparejador = EMPAREJADOR;
             if (mu.datos) fuentes.mangaupdates = mu.datos;
-        } else if (previo.fuentes && previo.fuentes.mangaupdates) fuentes.mangaupdates = previo.fuentes.mangaupdates;
+            if (mu.nueva) registro(`  ${obra.titulo} → MangaUpdates: "${mu.titulo}" (${mu.anio || 'sin año'}, ${mu.votos || 0} votos)`);
+            else if (!mu.id && mu.buscado === fecha) registro(`  ${obra.titulo} → no está en MangaUpdates`);
+        } else if (emparejadaAlDia && previo.fuentes && previo.fuentes.mangaupdates) fuentes.mangaupdates = previo.fuentes.mangaupdates;
 
         if (claveMAL){
             const mal = await intentar('myanimelist', () => traerMAL(pedir, obra, claveMAL));

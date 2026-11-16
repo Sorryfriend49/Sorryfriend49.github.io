@@ -4,11 +4,15 @@
    Las usa scripts/comunidad.mjs, que es quien trae los datos de cada fuente.
 =================================== */
 
-export const METODO = '1.0';
+export const METODO = '1.1';
 
 // Ninguna comunidad cuenta más de 10.000 votos: así AniList (la más grande)
 // no tapa a Kitsu o MangaUpdates solo por tener más usuarios.
 export const TOPE_VOTOS = 10000;
+
+// Una comunidad con menos de 100 votos casi no pesa en el promedio, y tampoco
+// se usa para decidir si las comunidades coinciden (pocos votos = mucho azar).
+export const MIN_VOTOS_COMPARAR = 100;
 
 // Peso del "promedio del catálogo" en el promedio bayesiano: una obra con pocos
 // votos se acerca a ese promedio hasta que junte más opiniones.
@@ -38,12 +42,13 @@ export function combinarPuntajes(fuentes, mediaCatalogo){
         pesos += peso;
         votos += f.votos;
     }
-    const puntajes = validas.map(f => f.puntaje);
+    const comparables = validas.filter(f => f.votos >= MIN_VOTOS_COMPARAR);
+    const puntajes = (comparables.length ? comparables : validas).map(f => f.puntaje);
     const diferencia = Math.max(...puntajes) - Math.min(...puntajes);
 
     // Confianza: muchos votos y comunidades que coinciden
     let confianza = 'baja';
-    if (validas.length >= 2 && votos >= 5000 && diferencia <= 8) confianza = 'alta';
+    if (comparables.length >= 2 && votos >= 5000 && diferencia <= 8) confianza = 'alta';
     else if (votos >= 1000 && diferencia <= 15) confianza = 'media';
 
     return {
@@ -207,20 +212,24 @@ export function analizarResenas(resenas){
         }
         // Cada reseña cuenta una vez por tema: si en total lo elogia o lo critica
         for (const [t, b] of Object.entries(balance)){
-            const a = temas[t] || (temas[t] = { resenas: 0, a_favor: 0, en_contra: 0 });
+            const a = temas[t] || (temas[t] = { resenas: 0, a_favor: 0, en_contra: 0, resenasAFavor: 0, resenasEnContra: 0 });
             a.resenas++;
-            if (b > 0) a.a_favor += peso;
-            else if (b < 0) a.en_contra += peso;
+            if (b > 0){ a.a_favor += peso; a.resenasAFavor++; }
+            else if (b < 0){ a.en_contra += peso; a.resenasEnContra++; }
         }
     }
 
-    // Con menos de 8 reseñas los temas salen poco confiables (calibrado con reseñas reales): no se publican
+    // Con menos de 8 reseñas los temas salen poco confiables (calibrado con reseñas reales): no se publican.
+    // Además, un tema solo se publica si varias reseñas lo elogian o lo critican, no una sola
+    // (con datos reales, una reseña muy votada bastaba para marcar "lo emotivo" como criticado).
     const minimo = Math.max(3, Math.ceil(n * 0.2));
+    const minimoAFavor = Math.max(3, Math.ceil(n * 0.15));
+    const minimoEnContra = Math.max(2, Math.ceil(n * 0.1));
     const candidatos = n < MIN_RESENAS_TEMAS ? [] : Object.entries(temas)
         .filter(([, a]) => a.resenas >= minimo && a.a_favor + a.en_contra > 0)
         .sort((x, y) => y[1].resenas - x[1].resenas);
-    const elogian = candidatos.filter(([, a]) => a.a_favor / (a.a_favor + a.en_contra) >= 0.7).slice(0, 3).map(([t]) => t);
-    const critican = candidatos.filter(([, a]) => a.en_contra / (a.a_favor + a.en_contra) >= 0.4).slice(0, 3).map(([t]) => t);
+    const elogian = candidatos.filter(([, a]) => a.resenasAFavor >= minimoAFavor && a.a_favor / (a.a_favor + a.en_contra) >= 0.7).slice(0, 3).map(([t]) => t);
+    const critican = candidatos.filter(([, a]) => a.resenasEnContra >= minimoEnContra && a.en_contra / (a.a_favor + a.en_contra) >= 0.4).slice(0, 3).map(([t]) => t);
 
     return {
         n,
@@ -252,18 +261,41 @@ export function normalizarTitulo(titulo){
         .replace(/[’'`]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
 }
 
-export function elegirSerie(obra, resultados){
-    const nuestros = new Set([obra.titulo, obra.titulos && obra.titulos.romaji, obra.titulos && obra.titulos.ingles, ...(obra.sinonimos || [])]
-        .filter(Boolean).map(normalizarTitulo));
+// Antologías, guías y extras comparten nombre con la obra, pero no son la obra
+// (con datos reales, a "19 Days" le tocaba "19 Days Anthology", con 8 votos).
+const EXTRAS = /\b(anthology|fanbook|guidebook|guide book|artbook|art book|databook|data book|side stor(?:y|ies)|spin ?off|doujinshi|pilot|one ?shot|colou?red|full colou?r)\b/;
+
+const titulosDe = obra => new Set([obra.titulo, obra.titulos && obra.titulos.romaji, obra.titulos && obra.titulos.ingles, ...(obra.sinonimos || [])]
+    .filter(Boolean).map(normalizarTitulo));
+
+/* Qué tan bien coincide un resultado de MangaUpdates con la obra:
+   3 = mismo título principal; 2 = mismo título con una aclaración, como "Sweet Home (KIM Carnby)";
+   1 = coincide solo uno de sus otros nombres; 0 = no es la obra (otro año, otro tipo o un extra). */
+export function coincidencia(obra, resultado){
+    const registro = resultado.record || resultado;
+    const nuestros = titulosDe(obra);
     const anio = obra.inicio ? Number(obra.inicio.slice(0, 4)) : null;
+    const anioMU = Number(registro.year) || null;
+    if (anio && anioMU && Math.abs(anioMU - anio) > 1) return 0;
+    if (registro.type && registro.type.toLowerCase() !== obra.tipo) return 0;
+    const titulo = normalizarTitulo(registro.title);
+    const extra = titulo.match(EXTRAS);
+    if (extra && ![...nuestros].some(t => t.includes(extra[1]))) return 0;
+    if (nuestros.has(titulo)) return 3;
+    if (nuestros.has(normalizarTitulo(String(registro.title || '').replace(/\s*\([^)]*\)\s*$/, '')))) return 2;
+    if (resultado.hit_title && nuestros.has(normalizarTitulo(resultado.hit_title))) return 1;
+    return 0;
+}
+
+// La mejor coincidencia; si empatan, la que tiene más votos (la obra principal, no una versión aparte)
+export function elegirSerie(obra, resultados){
+    let mejor = null;
     for (const r of resultados || []){
+        const nivel = coincidencia(obra, r);
+        if (!nivel) continue;
         const registro = r.record || r;
-        const titulos = [registro.title, r.hit_title].filter(Boolean).map(normalizarTitulo);
-        if (!titulos.some(t => nuestros.has(t))) continue;
-        const anioMU = Number(registro.year) || null;
-        if (anio && anioMU && Math.abs(anioMU - anio) > 1) continue;
-        if (registro.type && registro.type.toLowerCase() !== obra.tipo) continue;
-        return registro;
+        const votos = Number(registro.rating_votes) || 0;
+        if (!mejor || nivel > mejor.nivel || (nivel === mejor.nivel && votos > mejor.votos)) mejor = { registro, nivel, votos };
     }
-    return null;
+    return mejor ? mejor.registro : null;
 }
