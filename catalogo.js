@@ -20,6 +20,7 @@
         'cancelado': 'Cancelada', 'proximamente': 'Por estrenar'
     };
     const IDIOMAS = { es: 'español', en: 'inglés' };
+    const IDIOMA_ORIGINAL = { manga: 'ja', manhwa: 'ko', manhua: 'zh' };
     const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
     const MESES_CORTOS = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sept', 'oct', 'nov', 'dic'];
 
@@ -49,6 +50,7 @@
     const selectOrden = $('orden');
     const ficha = $('ficha');
     const enlaceMenuCatalogo = document.querySelector('.nav-link[data-seccion="catalogo"]');
+    const botonExplorar = document.querySelector('.inicio-texto .boton-principal');
 
     let obras = [];
     let porId = new Map();
@@ -61,6 +63,7 @@
     let fichaAbierta = null;
     let ignorarCierre = false;
     let origenFicha = null;        // elemento que abrió la ficha, para devolverle el foco
+    let ultimaObra = null;         // obra de la última ficha abierta (por si no hay elemento de origen)
     let volviendo = false;         // la ficha se cerró con history.back() y el navegador aún no vuelve
     let cambioPendiente = null;    // filtro tocado justo en ese momento: se aplica al terminar de volver
     let esperaVolver = 0;
@@ -269,7 +272,7 @@
         li.append(crear('strong', null, `${quien} tiene todos esos géneros.`), crear('span', null, 'Quita algún género o cambia el tipo.'));
         const boton = crear('button', 'boton-secundario', 'Quitar géneros');
         boton.type = 'button';
-        boton.addEventListener('click', () => cambiarEstado({ generos: [] }));
+        boton.addEventListener('click', quitarTodosLosGeneros);
         li.append(document.createElement('br'), boton);
         return li;
     }
@@ -284,8 +287,20 @@
         pintarFiltros();
         pintarRejilla(lista);
         pintarConteo(lista.length);
-        // El menú vuelve al catálogo con los mismos filtros
+        // El menú y el botón del Inicio vuelven al catálogo con los mismos filtros
         enlaceMenuCatalogo.href = hashCatalogo();
+        botonExplorar.href = hashCatalogo();
+    }
+
+    // Quita los géneros elegidos. El botón que se usó desaparece, así que el foco
+    // pasa al primer género (o al título del catálogo) en vez de perderse
+    function quitarTodosLosGeneros(){
+        cambiarEstado({ generos: [] });
+        const activo = document.activeElement;
+        if (activo && activo !== document.body && activo.isConnected && activo.offsetParent !== null) return;
+        const chip = zonaGeneros.querySelector('.chip:not(:disabled)');
+        if (chip && chip.offsetParent !== null) chip.focus();
+        else $('tituloCatalogo').focus();
     }
 
     function pintarPopulares(){
@@ -317,7 +332,7 @@
             const enlace = crear('a', null, 'AniList');
             enlace.href = 'https://anilist.co';
             enlace.target = '_blank';
-            enlace.rel = 'noopener';
+            enlace.rel = 'noopener noreferrer';
             return [antes, enlace, `, ${texto}.`];
         };
         $('notaDatos').replaceChildren(...nota('Datos de '));
@@ -339,6 +354,7 @@
         }
         if (fichaAbierta === id && ficha.open) return;
         fichaAbierta = id;
+        ultimaObra = id;
 
         const portada = $('fichaPortada');
         portada.style.removeProperty('--color-placa');
@@ -349,11 +365,20 @@
         portada.replaceChildren(img);
 
         $('fichaTitulo').textContent = o.titulo;
-        const otros = [...new Set([o.titulos && o.titulos.romaji, o.titulos && o.titulos.nativo])]
-            .filter(t => t && t !== o.titulo);
+        // Otros títulos: el romanizado y el original (este marcado con su idioma, para los lectores de pantalla)
+        const igual = (a, b) => a.toLowerCase() === b.toLowerCase();
+        const romaji = o.titulos && o.titulos.romaji;
+        const nativo = o.titulos && o.titulos.nativo;
+        const partes = [];
+        if (romaji && !igual(romaji, o.titulo)) partes.push(document.createTextNode(romaji));
+        if (nativo && !igual(nativo, o.titulo) && !(romaji && igual(nativo, romaji))){
+            const original = crear('span', null, nativo);
+            original.lang = IDIOMA_ORIGINAL[o.tipo];
+            partes.push(original);
+        }
         const otrosTitulos = $('fichaOtrosTitulos');
-        otrosTitulos.textContent = otros.join(' / ');
-        otrosTitulos.hidden = otros.length === 0;
+        otrosTitulos.replaceChildren(...partes.flatMap((p, i) => i ? [' / ', p] : [p]));
+        otrosTitulos.hidden = partes.length === 0;
 
         const etiquetas = [etiquetaTipo(o.tipo)];
         if (ESTADOS[o.estado]) etiquetas.push(crear('span', 'etiqueta-estado', ESTADOS[o.estado]));
@@ -392,7 +417,7 @@
                 const a = crear('a', null, e.sitio);
                 a.href = e.url;
                 a.target = '_blank';
-                a.rel = 'noopener';
+                a.rel = 'noopener noreferrer';
                 if (IDIOMAS[e.idioma]) a.append(crear('span', 'idioma', `(${IDIOMAS[e.idioma]})`));
                 li.append(a);
                 lista.append(li);
@@ -422,14 +447,16 @@
         document.body.classList.remove('ficha-abierta');
     }
 
-    // La persona cerró la ficha (×, Esc o tocando afuera): la dirección vuelve a como estaba
+    // La persona cerró la ficha (×, Esc o tocando afuera): la dirección vuelve a como estaba.
+    // El aviso "close" llega un instante después; si para entonces la ficha ya se volvió
+    // a abrir (Atrás y Adelante muy rápido), no se toca nada.
     ficha.addEventListener('close', () => {
+        const porRuta = ignorarCierre;
+        ignorarCierre = false;
+        if (ficha.open) return;
         document.body.classList.remove('ficha-abierta');
         fichaAbierta = null;
-        if (ignorarCierre){
-            ignorarCierre = false;
-            return;
-        }
+        if (porRuta) return;
         if (!Frozen.ruta().params.has('obra')) return;
         if (history.state && history.state.ficha) volverAtras();
         else Frozen.navegar(hashCatalogo(), { reemplazar: true });
@@ -450,11 +477,15 @@
         } else {
             cerrarFichaPorRuta();
         }
-        // Al volver de una ficha, el foco regresa a la portada que la abrió
-        if (!ruta.params.get('obra') && origenFicha && origenFicha.isConnected){
-            const destino = origenFicha;
+        // Al cerrar una ficha, el foco regresa a la portada que la abrió (o, si llegaste
+        // directo a la ficha con un enlace, a esa misma obra en el catálogo)
+        if (!ruta.params.get('obra') && ultimaObra){
+            const visible = el => el && el.isConnected && el.offsetParent !== null;
+            const tarjeta = tarjetas.get(ultimaObra);
+            if (visible(origenFicha)) origenFicha.focus({ preventScroll: true });
+            else if (tarjeta && visible(tarjeta.a)) tarjeta.a.focus();
             origenFicha = null;
-            if (destino.offsetParent !== null) destino.focus({ preventScroll: true });
+            ultimaObra = null;
         }
         terminarDeVolver();
     }
@@ -490,7 +521,7 @@
         cambiarEstado({ generos });
     });
 
-    quitarGeneros.addEventListener('click', () => cambiarEstado({ generos: [] }));
+    quitarGeneros.addEventListener('click', quitarTodosLosGeneros);
 
     function abrirGeneros(abrir){
         filtros.classList.toggle('generos-abiertos', abrir);
