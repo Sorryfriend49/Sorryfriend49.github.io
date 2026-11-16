@@ -1,7 +1,9 @@
 # Opinión de la comunidad: cada lunes junta puntajes, votos y reseñas de AniList,
-# Kitsu y MangaUpdates (y MyAnimeList si hay clave), calcula los resultados con
-# scripts/comunidad.mjs y publica datos/comunidad.json en la página. Es gratis:
-# GitHub no cobra las tareas automáticas de los repositorios públicos.
+# Kitsu y MangaUpdates (y MyAnimeList si hay clave), además de las etiquetas, las
+# recomendaciones y la actividad de AniList; calcula los resultados con
+# scripts/comunidad.mjs (y el modelo de sentimiento de scripts/tono.mjs) y publica
+# datos/comunidad.json en la página. Es gratis: GitHub no cobra las tareas
+# automáticas de los repositorios públicos.
 #
 # Para correrla a mano: pestaña Actions > "Opinión de la comunidad" > Run workflow.
 # Para sumar MyAnimeList (opcional y gratis): crea una clave en
@@ -35,6 +37,17 @@ jobs:
     steps:
       - name: Descargar el repositorio
         uses: actions/checkout@v5
+
+      # Modelo de sentimiento (gratis, licencia MIT). --ignore-scripts evita bajar
+      # extras para tarjetas gráficas que aquí no se usan.
+      - name: Instalar el modelo de sentimiento
+        run: npm ci --prefix scripts --ignore-scripts --no-audit --no-fund
+
+      - name: Recordar el modelo entre ejecuciones
+        uses: actions/cache@v5
+        with:
+          path: .modelos
+          key: modelo-sentimiento-${{ hashFiles('scripts/package-lock.json') }}
 
       - name: Calcular la opinión de la comunidad
         run: |

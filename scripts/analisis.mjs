@@ -4,7 +4,9 @@
    Las usa scripts/comunidad.mjs, que es quien trae los datos de cada fuente.
 =================================== */
 
-export const METODO = '1.1';
+import { ETIQUETAS, CATEGORIAS_OCULTAS, ETIQUETAS_OCULTAS } from './etiquetas.mjs';
+
+export const METODO = '1.2';
 
 // Ninguna comunidad cuenta más de 10.000 votos: así AniList (la más grande)
 // no tapa a Kitsu o MangaUpdates solo por tener más usuarios.
@@ -186,32 +188,56 @@ export function temasEn(oracion){
     return PATRONES_TEMAS.filter(([, re]) => { re.lastIndex = 0; return re.test(oracion); }).map(([tema]) => tema);
 }
 
+const valida = r => r && Number.isFinite(r.score);
+
+/* Frases de las reseñas que hablan de algún tema: { resena (posición en la lista), texto, temas }.
+   Su tono lo pone el modelo de sentimiento (tono.mjs) o, si no está, las palabras clave. */
+export function frasesConTemas(resenas){
+    const frases = [];
+    (resenas || []).forEach((r, i) => {
+        if (!valida(r)) return;
+        for (const texto of oraciones(limpiarTexto(r.body))){
+            const temas = temasEn(texto);
+            if (temas.length) frases.push({ resena: i, texto, temas });
+        }
+    });
+    return frases;
+}
+
+export const tonosConPalabras = frases => frases.map(f => Math.sign(tonoDe(f.texto)));
+
+// Suma de tonos de las frases de cada reseña, tema por tema: { posición: { tema: balance } }
+function balancesPorResena(frases, tonos){
+    const balances = new Map();
+    frases.forEach((f, k) => {
+        const b = balances.get(f.resena) || {};
+        for (const t of f.temas) b[t] = (b[t] || 0) + Math.sign(tonos[k] || 0);
+        balances.set(f.resena, b);
+    });
+    return balances;
+}
+
 /* resenas: [{ score: 0-100, rating: votos de "útil", ratingAmount: votos totales, body }]
+   frases y tonos: opcionales (si faltan, se calculan con palabras clave).
    Devuelve cuántas son positivas y los temas que más se elogian o critican.
    No devuelve ni guarda el texto de las reseñas. */
-export function analizarResenas(resenas){
-    const lista = (resenas || []).filter(r => r && Number.isFinite(r.score));
+export function analizarResenas(resenas, frases = frasesConTemas(resenas), tonos = tonosConPalabras(frases)){
+    const lista = (resenas || []).map((r, i) => [r, i]).filter(([r]) => valida(r));
     const n = lista.length;
     if (!n) return { n: 0 };
 
+    const balances = balancesPorResena(frases, tonos);
     let positivas = 0;
     let negativas = 0;
     const temas = {};
-    for (const r of lista){
+    for (const [r, i] of lista){
         if (r.score >= 70) positivas++;
         else if (r.score <= 50) negativas++;
 
         // Las reseñas que los lectores marcaron como útiles pesan más
         const peso = ((r.rating || 0) + 1) / ((r.ratingAmount || 0) + 2);
-        const balance = {};
-        for (const o of oraciones(limpiarTexto(r.body))){
-            const encontrados = temasEn(o);
-            if (!encontrados.length) continue;
-            const tono = Math.sign(tonoDe(o));
-            for (const t of encontrados) balance[t] = (balance[t] || 0) + tono;
-        }
         // Cada reseña cuenta una vez por tema: si en total lo elogia o lo critica
-        for (const [t, b] of Object.entries(balance)){
+        for (const [t, b] of Object.entries(balances.get(i) || {})){
             const a = temas[t] || (temas[t] = { resenas: 0, a_favor: 0, en_contra: 0, resenasAFavor: 0, resenasEnContra: 0 });
             a.resenas++;
             if (b > 0){ a.a_favor += peso; a.resenasAFavor++; }
@@ -242,6 +268,40 @@ export function analizarResenas(resenas){
     };
 }
 
+/* ¿El tono de las frases coincide con el puntaje que puso quien escribió la reseña?
+   Sirve para medir si el modelo acierta más que las palabras clave. Se mide aparte en las
+   reseñas positivas (70 o más) y en las negativas (50 o menos), porque casi todas son positivas
+   y un método que siempre dijera "positiva" parecería bueno sin serlo. */
+export function evaluarTono(resenas, frases, tonos){
+    const balances = balancesPorResena(frases, tonos);
+    const resultado = { positivas: { aciertos: 0, total: 0 }, negativas: { aciertos: 0, total: 0 } };
+    (resenas || []).forEach((r, i) => {
+        if (!valida(r) || !balances.has(i)) return;
+        const esperado = r.score >= 70 ? 1 : r.score <= 50 ? -1 : 0;
+        if (!esperado) return;
+        const suma = Object.values(balances.get(i)).reduce((a, b) => a + b, 0);
+        const grupo = esperado > 0 ? resultado.positivas : resultado.negativas;
+        grupo.total++;
+        if (Math.sign(suma) === esperado) grupo.aciertos++;
+    });
+    return resultado;
+}
+
+export function sumarEvaluaciones(a, b){
+    return {
+        positivas: { aciertos: a.positivas.aciertos + b.positivas.aciertos, total: a.positivas.total + b.positivas.total },
+        negativas: { aciertos: a.negativas.aciertos + b.negativas.aciertos, total: a.negativas.total + b.negativas.total }
+    };
+}
+
+// Acierto equilibrado: el promedio entre lo que acierta en positivas y en negativas
+export function aciertoEquilibrado(e){
+    const p = e.positivas.total ? e.positivas.aciertos / e.positivas.total : null;
+    const q = e.negativas.total ? e.negativas.aciertos / e.negativas.total : null;
+    if (p === null || q === null) return null;
+    return redondear((p + q) / 2, 3);
+}
+
 /* ---------- Tendencia: cambio frente a la medición de hace una semana o más ---------- */
 export function calcularTendencia(actual, anterior, dias){
     if (!anterior || !Number.isFinite(dias) || dias < 5) return null;
@@ -255,9 +315,87 @@ export function calcularTendencia(actual, anterior, dias){
     return { lectores, puntaje, dias };
 }
 
+/* ---------- Actividad diaria de AniList ----------
+   AniList guarda, día por día, cuánta actividad tuvo cada obra (gente que la agrega o avanza
+   capítulos), cuántos la tienen en su lista y cuántos la están leyendo.
+   nodos: [{ date (segundos), trending, popularity, inProgress }] */
+const DIA = 86400;
+export function analizarActividad(nodos){
+    const dias = (nodos || []).filter(n => n && Number.isFinite(n.date)).sort((a, b) => b.date - a.date);
+    if (!dias.length) return null;
+    const ultimo = dias[0].date;
+    const semana = dias.filter(n => n.date > ultimo - 7 * DIA)
+        .reduce((a, n) => a + (Number.isFinite(n.trending) ? n.trending : 0), 0);
+    const leyendo = (dias.find(n => Number.isFinite(n.inProgress) && n.inProgress > 0) || {}).inProgress || null;
+
+    // Lectores: el último dato contra el de hace una semana (el más cercano a 7 días, entre 6 y 9)
+    const conLectores = dias.filter(n => Number.isFinite(n.popularity) && n.popularity > 0);
+    const hoy = conLectores[0];
+    const distancia = n => Math.abs(hoy.date - n.date - 7 * DIA);
+    const antes = hoy && conLectores
+        .filter(n => hoy.date - n.date >= 6 * DIA && hoy.date - n.date <= 9 * DIA)
+        .sort((a, b) => distancia(a) - distancia(b))[0];
+    return {
+        semana,
+        leyendo,
+        lectores: antes ? redondear((hoy.popularity - antes.popularity) / antes.popularity, 4) : null,
+        dias: antes ? Math.round((hoy.date - antes.date) / DIA) : null
+    };
+}
+
+/* ---------- Etiquetas votadas por los lectores de AniList ----------
+   Solo las que no son spoiler, con 60 % de acuerdo o más; como mucho 10 por obra. */
+export const MIN_VOTO_ETIQUETA = 60;
+export const MAX_ETIQUETAS = 10;
+
+export const slug = texto => String(texto || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+
+export function prepararEtiquetas(tags){
+    const sinTraducir = [];
+    const etiquetas = (tags || [])
+        .filter(t => t && t.name && Number.isFinite(t.rank) && t.rank >= MIN_VOTO_ETIQUETA
+            && !t.isMediaSpoiler && !t.isGeneralSpoiler
+            && !CATEGORIAS_OCULTAS.has(t.category) && !ETIQUETAS_OCULTAS.has(t.name))
+        .sort((a, b) => b.rank - a.rank)
+        .slice(0, MAX_ETIQUETAS)
+        .map(t => {
+            const nombre = ETIQUETAS[t.name];
+            if (nombre) return { id: slug(nombre), nombre, voto: t.rank };
+            sinTraducir.push(t.name);
+            return { id: slug(t.name), nombre: t.name, voto: t.rank, en: true };
+        });
+    return { etiquetas, sinTraducir };
+}
+
+/* ---------- Recomendaciones de los lectores de AniList ("si te gustó…") ----------
+   nodos: [{ rating (votos a favor menos en contra), mediaRecommendation }].
+   Solo manga, manhwa y manhua (no novelas ni obras para adultos), con 3 votos o más. */
+export const MAX_RECOMENDACIONES = 6;
+export const MIN_VOTOS_RECOMENDACION = 3;
+const TIPO_POR_PAIS = { JP: 'manga', KR: 'manhwa', CN: 'manhua', TW: 'manhua', HK: 'manhua' };
+
+export function prepararRecomendaciones(nodos){
+    const vistas = new Set();
+    return (nodos || [])
+        .filter(n => n && n.mediaRecommendation && Number.isFinite(n.rating) && n.rating >= MIN_VOTOS_RECOMENDACION)
+        .filter(({ mediaRecommendation: m }) => m.type === 'MANGA' && ['MANGA', 'ONE_SHOT'].includes(m.format)
+            && !m.isAdult && !vistas.has(m.id) && vistas.add(m.id))
+        .sort((a, b) => b.rating - a.rating)
+        .slice(0, MAX_RECOMENDACIONES)
+        .map(({ rating, mediaRecommendation: m }) => ({
+            anilist: m.id,
+            titulo: (m.title && (m.title.english || m.title.romaji)) || '',
+            tipo: TIPO_POR_PAIS[m.countryOfOrigin] || 'manga',
+            votos: rating,
+            portada: (m.coverImage && m.coverImage.medium) || null
+        }))
+        .filter(r => r.titulo);
+}
+
 /* ---------- Encontrar la obra en MangaUpdates (que no tiene el ID de AniList) ---------- */
 export function normalizarTitulo(titulo){
-    return String(titulo || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
+    return String(titulo || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
         .replace(/[’'`]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
 }
 

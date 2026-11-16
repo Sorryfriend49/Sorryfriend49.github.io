@@ -958,6 +958,101 @@ nav{
     padding-left: 22px;
 }
 
+/* Etiquetas votadas por los lectores: cada una filtra el catálogo */
+.etiquetas-votadas{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.etiquetas-votadas a{
+    display: inline-flex;
+    align-items: baseline;
+    gap: 6px;
+    min-height: 30px;
+    padding: 4px 10px;
+    border: 1px solid var(--vidrio-borde);
+    border-radius: 999px;
+    color: var(--texto-claro);
+    font-size: 13px;
+    line-height: 1.4;
+    text-decoration: none;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.etiquetas-votadas a:hover{
+    border-color: var(--acero);
+    background: rgba(124, 179, 234, 0.1);
+}
+
+.etiquetas-votadas .voto{
+    font-size: 12px;
+    color: var(--texto-suave);
+}
+
+/* La etiqueta elegida, encima del catálogo */
+.filtro-etiqueta{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 10px;
+    width: fit-content;
+    max-width: 100%;
+    margin-top: 12px;
+    padding: 2px 14px;
+    border: 1px solid var(--acero);
+    border-radius: 18px;
+    background: rgba(124, 179, 234, 0.12);
+    font-size: 14px;
+    color: var(--texto-claro);
+}
+
+.filtro-etiqueta strong{
+    color: var(--hielo);
+}
+
+/* En pantallas muy angostas el botón baja a otra línea, alineado con el texto */
+.filtro-etiqueta .quitar-generos{
+    min-height: 32px;
+    padding: 0;
+}
+
+/* Si te gustó…: las del catálogo abren su ficha; las demás, AniList */
+.recomendadas{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 14px 18px;
+    margin-top: 12px;
+}
+
+.recomendadas .mini-obra{
+    grid-template-columns: 46px 1fr;
+    gap: 12px;
+}
+
+.recomendadas .mini-portada{
+    width: 46px;
+}
+
+.recomendadas .mini-titulo{
+    font-size: 14px;
+    text-shadow: none;
+}
+
+/* (el Inicio oculta estos datos en celular; aquí sí se muestran) */
+.recomendadas .mini-datos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 8px;
+    font-size: 12px;
+}
+
+.mini-datos .fuera{
+    color: var(--cristal);
+}
+
 .donde-leer{
     list-style: none;
     display: flex;

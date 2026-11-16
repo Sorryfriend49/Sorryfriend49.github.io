@@ -1,0 +1,10 @@
+{
+  "name": "frozen-project-comunidad",
+  "private": true,
+  "description": "Tarea semanal de Frozen Project: lo que opina la comunidad. Solo hace falta para el modelo de sentimiento (tono.mjs).",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@huggingface/transformers": "4.3.2"
+  }
+}

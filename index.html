@@ -48,7 +48,7 @@
 
     <!-- El ?v= obliga a los navegadores a bajar la versión nueva tras cada cambio.
          Si editas styles.css, sitio.js o catalogo.js, sube ese número (v=3, v=4...). -->
-    <link rel="stylesheet" href="styles.css?v=3">
+    <link rel="stylesheet" href="styles.css?v=4">
 </head>
 
 <body>
@@ -111,6 +111,7 @@
                         <select id="orden">
                             <option value="populares">Más populares</option>
                             <option value="valorados">Mejor valorados</option>
+                            <option value="tendencia">En tendencia esta semana</option>
                             <optgroup label="Fecha de salida">
                                 <option value="fecha-desc">Más recientes</option>
                                 <option value="fecha-asc">Más antiguas</option>
@@ -127,6 +128,12 @@
 
                 <div class="generos-zona" id="zonaGeneros" role="group" aria-label="Géneros">
                     <button class="quitar-generos" id="quitarGeneros" type="button" hidden>Quitar géneros</button>
+                </div>
+
+                <!-- Etiqueta elegida desde la ficha de una obra (las votan los lectores de AniList) -->
+                <div class="filtro-etiqueta" id="filtroEtiqueta" hidden>
+                    <span>Etiqueta: <strong id="nombreEtiqueta"></strong></span>
+                    <button class="quitar-generos" id="quitarEtiqueta" type="button">Quitar etiqueta</button>
                 </div>
             </div>
 
@@ -157,13 +164,14 @@
                     <li>El puntaje combinado pesa a cada comunidad según sus votos, con un tope de 10.000 para que ninguna tape a las demás. Las obras con pocos votos se acercan al promedio del catálogo hasta reunir más opiniones.</li>
                     <li>La confianza es alta cuando hay muchos votos y las comunidades coinciden, y baja cuando hay pocos o no coinciden.</li>
                     <li>El reparto de votos muestra cuánta gente le puso cada nota en AniList y si las opiniones están divididas.</li>
-                    <li>De las reseñas de AniList (hasta 50, las que sus lectores marcaron como más útiles) se cuenta cuántas son positivas y se buscan palabras clave para ver qué temas se elogian o critican. Un tema solo aparece si varias reseñas coinciden, y con menos de 8 reseñas no se sacan temas. No se guarda el texto de las reseñas ni quién las escribió.</li>
-                    <li>La tendencia compara los lectores con la medición de la semana anterior.</li>
+                    <li>De las reseñas de AniList (hasta 50, las que sus lectores marcaron como más útiles) se cuenta cuántas son positivas. Para saber qué temas se elogian o critican, un modelo de lenguaje gratuito que entiende español e inglés lee cada frase que habla de un tema (el arte, la historia, el ritmo…) y dice si lo elogia o lo critica. Un tema solo aparece si varias reseñas coinciden, y con menos de 8 reseñas no se sacan temas. No se guarda el texto de las reseñas ni quién las escribió.</li>
+                    <li>La tendencia usa el registro diario de AniList: cuántos lectores sumó la obra en los últimos 7 días, cuántos la están leyendo y cuánta actividad tuvo (gente que la agrega o avanza capítulos). “En tendencia esta semana” ordena por esa actividad.</li>
+                    <li>Las etiquetas y las recomendaciones (“si te gustó…”) también las votan los lectores de AniList. El porcentaje de cada etiqueta es qué tan de acuerdo están con ella. No se muestran etiquetas que cuentan la historia, ni recomendaciones de novelas u obras para adultos.</li>
                 </ol>
                 <p class="nota-datos" id="fechaDatos"></p>
 
                 <h3>Créditos</h3>
-                <p>Datos: AniList, Kitsu y MangaUpdates. Portadas: AniList. Fondo animado: Blind Angel, de MoeWalls.</p>
+                <p>Datos: AniList, Kitsu y MangaUpdates. Portadas: AniList. Modelo de sentimiento: BERT multilingüe de NLP Town (licencia MIT). Fondo animado: Blind Angel, de MoeWalls.</p>
             </div>
         </section>
 
@@ -189,13 +197,18 @@
                 <h3>Dónde leer</h3>
                 <div id="fichaDondeLeer"></div>
 
+                <div id="bloqueRecomendadas" hidden>
+                    <h3>Si te gustó, los lectores recomiendan</h3>
+                    <ul class="recomendadas" id="fichaRecomendadas"></ul>
+                </div>
+
                 <p class="ficha-fuente">Datos y portada de <a id="fichaAniList" href="https://anilist.co" target="_blank" rel="noopener noreferrer">esta obra en AniList</a>.</p>
             </div>
         </div>
     </dialog>
 
     <script src="sitio.js?v=3" defer></script>
-    <script src="catalogo.js?v=3" defer></script>
+    <script src="catalogo.js?v=4" defer></script>
 
 </body>
 

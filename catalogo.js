@@ -53,10 +53,14 @@
         return (o.comunidad && o.comunidad.anilist && o.comunidad.anilist.puntaje) || null;
     };
     const claveFecha = o => o.inicio ? (o.inicio + '-00-00').slice(0, 10) : '0000-00-00';
+    // Actividad de la semana en AniList (gente que la agrega o avanza capítulos) y cuántos la leen ahora
+    const actividad = o => { const c = deComunidad(o); return (c && c.actividad) || {}; };
+    const etiquetasDe = o => { const c = deComunidad(o); return (c && Array.isArray(c.etiquetas)) ? c.etiquetas : []; };
 
     const ORDENES = {
         'populares': (a, b) => popularidad(b) - popularidad(a),
         'valorados': (a, b) => (puntaje(b) || 0) - (puntaje(a) || 0) || popularidad(b) - popularidad(a),
+        'tendencia': (a, b) => (actividad(b).semana || 0) - (actividad(a).semana || 0) || popularidad(b) - popularidad(a),
         'fecha-desc': (a, b) => claveFecha(b).localeCompare(claveFecha(a)) || popularidad(b) - popularidad(a),
         'fecha-asc': (a, b) => claveFecha(a).localeCompare(claveFecha(b)) || popularidad(b) - popularidad(a)
     };
@@ -80,9 +84,11 @@
 
     let obras = [];
     let porId = new Map();
+    let porAniList = new Map();    // ID de AniList -> obra del catálogo (para las recomendaciones)
+    let etiquetasConocidas = new Map();   // id -> { nombre, en }
     let puestoPopularidad = new Map();
     let datosListos = false;
-    let estado = { tipo: '', generos: [], orden: ORDEN_INICIAL };
+    let estado = { tipo: '', generos: [], orden: ORDEN_INICIAL, etiqueta: '' };
     let tarjetas = new Map();      // id -> { li, a, datos }
     let chips = new Map();         // género -> { boton, cuenta }
     let ordenPintado = '';         // ids en pantalla, para no mover tarjetas sin necesidad
@@ -164,13 +170,15 @@
         const tipo = Object.prototype.hasOwnProperty.call(TIPOS, params.get('tipo')) ? params.get('tipo') : '';
         const generos = [...new Set((params.get('generos') || '').split(',').filter(g => Object.prototype.hasOwnProperty.call(GENEROS, g)))];
         const orden = Object.prototype.hasOwnProperty.call(ORDENES, params.get('orden')) ? params.get('orden') : ORDEN_INICIAL;
-        return { tipo, generos, orden };
+        const etiqueta = etiquetasConocidas.has(params.get('etiqueta')) ? params.get('etiqueta') : '';
+        return { tipo, generos, orden, etiqueta };
     }
 
     function hashCatalogo(e = estado, obra = null){
         const partes = [];
         if (e.tipo) partes.push('tipo=' + e.tipo);
         if (e.generos.length) partes.push('generos=' + e.generos.join(','));
+        if (e.etiqueta) partes.push('etiqueta=' + e.etiqueta);
         if (e.orden !== ORDEN_INICIAL) partes.push('orden=' + e.orden);
         if (obra) partes.push('obra=' + encodeURIComponent(obra));
         return '#catalogo' + (partes.length ? '?' + partes.join('&') : '');
@@ -206,10 +214,11 @@
     // ---------- Filtrar y ordenar ----------
     const cumpleTipo = (o, tipo) => !tipo || o.tipo === tipo;
     const tieneGeneros = (o, generos) => generos.every(g => o.generos.includes(g));
+    const tieneEtiqueta = (o, etiqueta) => !etiqueta || etiquetasDe(o).some(e => e.id === etiqueta);
 
     function resultados(){
         return obras
-            .filter(o => cumpleTipo(o, estado.tipo) && tieneGeneros(o, estado.generos))
+            .filter(o => cumpleTipo(o, estado.tipo) && tieneGeneros(o, estado.generos) && tieneEtiqueta(o, estado.etiqueta))
             .sort((a, b) => ORDENES[estado.orden](a, b) || a.titulo.localeCompare(b.titulo, 'es'));
     }
 
@@ -251,7 +260,7 @@
         selectOrden.value = estado.orden;
 
         // Cada género dice cuántas obras quedarían si lo sumas a lo que ya elegiste
-        const base = obras.filter(o => cumpleTipo(o, estado.tipo) && tieneGeneros(o, estado.generos));
+        const base = obras.filter(o => cumpleTipo(o, estado.tipo) && tieneGeneros(o, estado.generos) && tieneEtiqueta(o, estado.etiqueta));
         chips.forEach(({ boton, cuenta }, g) => {
             const activo = estado.generos.includes(g);
             boton.setAttribute('aria-pressed', String(activo));
@@ -266,6 +275,14 @@
         });
         quitarGeneros.hidden = estado.generos.length === 0;
         cuentaGeneros.textContent = estado.generos.length ? `(${estado.generos.length})` : '';
+
+        const etiqueta = etiquetasConocidas.get(estado.etiqueta);
+        $('filtroEtiqueta').hidden = !etiqueta;
+        if (etiqueta){
+            const nombre = $('nombreEtiqueta');
+            nombre.textContent = etiqueta.nombre;
+            if (etiqueta.en) nombre.lang = 'en'; else nombre.removeAttribute('lang');
+        }
     }
 
     function pintarRejilla(lista){
@@ -281,6 +298,7 @@
             if (estado.orden === 'fecha-desc' || estado.orden === 'fecha-asc') datos.push(crear('span', null, textoFechaCorta(o.inicio)));
             else datos.push(crear('span', null, o.inicio ? o.inicio.slice(0, 4) : ''));
             if (estado.orden === 'populares') datos.push(crear('span', null, textoLectores(popularidad(o))));
+            else if (estado.orden === 'tendencia' && actividad(o).leyendo) datos.push(crear('span', null, `${formatoLectores.format(actividad(o).leyendo)} leyendo`));
             else { const p = datoPuntaje(o); if (p) datos.push(p); }
             t.datos.replaceChildren(...datos);
         });
@@ -295,10 +313,12 @@
     function estadoVacio(){
         const li = crear('li', 'estado-lista');
         const quien = estado.tipo ? `Ningún ${TIPOS[estado.tipo].toLowerCase()}` : 'Ninguna obra';
-        li.append(crear('strong', null, `${quien} tiene todos esos géneros.`), crear('span', null, 'Quita algún género o cambia el tipo.'));
-        const boton = crear('button', 'boton-secundario', 'Quitar géneros');
+        const conEtiqueta = Boolean(estado.etiqueta) && estado.generos.length === 0;
+        if (conEtiqueta) li.append(crear('strong', null, `${quien} tiene esa etiqueta.`), crear('span', null, 'Quita la etiqueta o cambia el tipo.'));
+        else li.append(crear('strong', null, `${quien} tiene todos esos géneros.`), crear('span', null, 'Quita algún género o cambia el tipo.'));
+        const boton = crear('button', 'boton-secundario', conEtiqueta ? 'Quitar etiqueta' : 'Quitar géneros');
         boton.type = 'button';
-        boton.addEventListener('click', quitarTodosLosGeneros);
+        boton.addEventListener('click', conEtiqueta ? quitarEtiqueta : quitarTodosLosGeneros);
         li.append(document.createElement('br'), boton);
         return li;
     }
@@ -327,6 +347,12 @@
         const chip = zonaGeneros.querySelector('.chip:not(:disabled)');
         if (chip && chip.offsetParent !== null) chip.focus();
         else $('tituloCatalogo').focus();
+    }
+
+    // Quita la etiqueta; como su botón desaparece, el foco pasa al título del catálogo
+    function quitarEtiqueta(){
+        cambiarEstado({ etiqueta: '' });
+        $('tituloCatalogo').focus();
     }
 
     function pintarPopulares(){
@@ -358,7 +384,11 @@
             const nombres = Object.entries(comunidad.fuentes || {}).filter(([, f]) => f).map(([n]) => NOMBRES_FUENTES[n]).filter(Boolean);
             texto += ` Opinión de la comunidad (${enumerar(nombres)}) actualizada el ${textoFecha(comunidad.generado.slice(0, 10))}; se renueva cada lunes.`;
         }
-        $('fechaDatos').textContent = texto;
+        const tono = comunidad && comunidad.tono;
+        const acierto = tono && tono.metodo === 'modelo' && Number.isFinite(tono.acierto)
+            ? ` Comparado con el puntaje que puso cada autor, el modelo acierta si una reseña es positiva o negativa en el ${Math.round(tono.acierto * 100)} % de los casos (promediando positivas y negativas).`
+            : '';
+        $('fechaDatos').textContent = texto + acierto;
         const enlace = crear('a', null, 'Cómo se calcula');
         enlace.href = '#sobre';
         $('notaDatos').replaceChildren(texto + ' ', enlace);
@@ -387,8 +417,10 @@
         } else {
             explicacion.append(p == null ? 'Todavía no tiene puntaje.' : 'Promedio de los lectores de AniList.');
         }
+        const leyendoAhora = actividad(o).leyendo;
         explicacion.append(document.createElement('br'),
-            `${formatoLectores.format(popularidad(o))} la tienen en su lista de AniList (puesto ${puestoPopularidad.get(o.id)} de ${obras.length} en popularidad).`);
+            `${formatoLectores.format(popularidad(o))} la tienen en su lista de AniList (puesto ${puestoPopularidad.get(o.id)} de ${obras.length} en popularidad)` +
+            (leyendoAhora ? ` y ${formatoLectores.format(leyendoAhora)} la están leyendo.` : '.'));
         fila.append(explicacion);
         nodos.push(fila);
 
@@ -425,12 +457,13 @@
                 if (r.critican && r.critican.length) nodos.push(crear('p', 'dato-opinion', `Lo más criticado: ${enumerar(r.critican.map(t => NOMBRES_TEMAS[t] || t))}.`));
             }
 
-            // Tendencia frente a la semana anterior
+            // Tendencia: lectores ganados (o perdidos) en los últimos días
             if (c.tendencia && Number.isFinite(c.tendencia.lectores)){
                 const v = c.tendencia.lectores;
+                const dias = Number.isFinite(c.tendencia.dias) ? c.tendencia.dias : 7;
                 nodos.push(crear('p', 'dato-opinion', Math.abs(v) < 0.0005
-                    ? 'Los mismos lectores que la semana pasada.'
-                    : `${v > 0 ? '+' : '−'}${formatoPorcentaje.format(Math.abs(v))} de lectores frente a la semana pasada.`));
+                    ? `Los mismos lectores que hace ${dias} días.`
+                    : `${v > 0 ? '+' : '−'}${formatoPorcentaje.format(Math.abs(v))} de lectores en los últimos ${dias} días.`));
             }
 
             // Puntaje en cada comunidad
@@ -453,6 +486,41 @@
             }
         }
         $('fichaComunidad').replaceChildren(...nodos);
+    }
+
+    // ---------- Recomendaciones de los lectores ("si te gustó…") ----------
+    function pintarRecomendadas(o){
+        const c = deComunidad(o);
+        const recs = (c && Array.isArray(c.recomendaciones)) ? c.recomendaciones : [];
+        const lista = $('fichaRecomendadas');
+        $('bloqueRecomendadas').hidden = recs.length === 0;
+        lista.replaceChildren(...recs.map(r => {
+            const propia = porAniList.get(r.anilist);      // si está en el catálogo, abre su ficha
+            const li = document.createElement('li');
+            const a = crear('a', 'mini-obra');
+            const portada = crear('span', 'mini-portada');
+            const datos = crear('span', 'mini-datos');
+            const texto = crear('span', 'mini-texto');
+            if (propia){
+                a.href = hashCatalogo(estado, propia.id);
+                a.dataset.obra = propia.id;
+                colorDePlaca(portada, propia);
+                portada.append(imagenPortada(propia, '54px'));
+                texto.append(crear('span', 'mini-titulo', propia.titulo), datos);
+                datos.append(etiquetaTipo(propia.tipo), crear('span', null, `${formatoLectores.format(r.votos)} votos`));
+            } else {
+                a.href = `https://anilist.co/manga/${r.anilist}`;
+                a.target = '_blank';
+                a.rel = 'noopener noreferrer';
+                if (r.portada) portada.append(imagenPortada({ portada: r.portada }, '54px'));
+                texto.append(crear('span', 'mini-titulo', r.titulo), datos);
+                datos.append(etiquetaTipo(r.tipo), crear('span', null, `${formatoLectores.format(r.votos)} votos`),
+                    crear('span', 'fuera', 'en AniList'));
+            }
+            a.append(portada, texto);
+            li.append(a);
+            return li;
+        }));
     }
 
     async function cargarComunidad(){
@@ -519,6 +587,25 @@
         fila(dl, 'Tomos', o.tomos);
         fila(dl, 'Géneros', o.generos.map(g => GENEROS[g]).filter(Boolean).join(', '));
 
+        // Etiquetas votadas por los lectores: cada una lleva al catálogo filtrado por ella
+        const etiquetasObra = etiquetasDe(o).slice(0, 8);
+        if (etiquetasObra.length){
+            const lista = crear('ul', 'etiquetas-votadas');
+            etiquetasObra.forEach(e => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = hashCatalogo({ tipo: '', generos: [], orden: estado.orden, etiqueta: e.id });
+                const nombre = crear('span', null, e.nombre);
+                if (e.en) nombre.lang = 'en';
+                a.append(nombre, crear('span', 'voto', `${e.voto} %`));
+                li.append(a);
+                lista.append(li);
+            });
+            const dd = document.createElement('dd');
+            dd.append(lista);
+            dl.append(crear('dt', null, 'Etiquetas'), dd);
+        }
+
         pintarComunidad(o);
 
         const dondeLeer = $('fichaDondeLeer');
@@ -538,6 +625,8 @@
         } else {
             dondeLeer.replaceChildren(crear('p', 'sin-enlaces', 'No encontramos dónde leerla oficialmente en español o inglés.'));
         }
+
+        pintarRecomendadas(o);
 
         $('fichaAniList').href = `https://anilist.co/manga/${o.ids.anilist}`;
 
@@ -615,6 +704,8 @@
     }
     rejilla.addEventListener('click', alTocarObra);
     $('listaPopulares').addEventListener('click', alTocarObra);
+    $('fichaRecomendadas').addEventListener('click', alTocarObra);
+    $('quitarEtiqueta').addEventListener('click', quitarEtiqueta);
 
     // ---------- Controles ----------
     $('filtroTipo').addEventListener('change', e => {
@@ -662,6 +753,8 @@
             comunidad = datosComunidad;
             obras = (datos.obras || []).filter(o => o && o.id && o.titulo && o.portada && TIPOS[o.tipo] && Array.isArray(o.generos));
             porId = new Map(obras.map(o => [o.id, o]));
+            porAniList = new Map(obras.filter(o => o.ids && o.ids.anilist).map(o => [o.ids.anilist, o]));
+            etiquetasConocidas = new Map(obras.flatMap(etiquetasDe).map(e => [e.id, { nombre: e.nombre, en: Boolean(e.en) }]));
             puestoPopularidad = new Map([...obras].sort(ORDENES.populares).map((o, i) => [o.id, i + 1]));
             construirTarjetas();
             construirChips();

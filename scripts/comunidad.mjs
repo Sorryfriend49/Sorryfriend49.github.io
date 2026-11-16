@@ -3,20 +3,25 @@
    Lo corre GitHub cada lunes (.github/workflows/comunidad.yml), gratis.
    1. Lee el catálogo (obras.json).
    2. Trae puntajes y votos de AniList, Kitsu y MangaUpdates (y MyAnimeList si hay
-      una clave en el secreto MAL_CLIENT_ID), el reparto de votos y las reseñas de AniList.
+      una clave en el secreto MAL_CLIENT_ID); de AniList, además, el reparto de votos,
+      las reseñas, las etiquetas votadas, las recomendaciones y la actividad diaria.
    3. Calcula el puntaje combinado, qué tanto coincide la gente, qué elogian o critican
-      las reseñas y cómo cambió frente a la semana anterior (ver analisis.mjs).
+      las reseñas (con el modelo de sentimiento de tono.mjs) y cómo cambió en la última
+      semana (ver analisis.mjs).
    4. Guarda datos/comunidad.json (lo lee la página), datos/ids.json y datos/historial.json.
    No guarda texto de reseñas ni nombres de usuario: solo números y temas.
-   Para probarlo en tu PC: node scripts/comunidad.mjs   (necesita Node 18 o más nuevo)
+   Para probarlo en tu PC: node scripts/comunidad.mjs   (necesita Node 18 o más nuevo;
+   para usar el modelo, antes: npm ci --prefix scripts --ignore-scripts)
 =================================== */
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import {
     METODO, combinarPuntajes, analizarDistribucion, analizarResenas, calcularTendencia, coincidencia, elegirSerie,
-    normalizarTitulo, redondear
+    normalizarTitulo, redondear, frasesConTemas, tonosConPalabras, evaluarTono, sumarEvaluaciones, aciertoEquilibrado,
+    analizarActividad, prepararEtiquetas, prepararRecomendaciones
 } from './analisis.mjs';
+import { crearClasificador } from './tono.mjs';
 
 const AGENTE = 'FrozenProject/1.0 (+https://sorryfriend49.github.io)';
 const ANILIST = 'https://graphql.anilist.co';
@@ -101,16 +106,28 @@ async function traerAniList(pedir, ids){
     return porId;
 }
 
-async function traerResenas(pedir, id){
-    const query = `query ($id: Int, $p: Int) { Page(page: $p, perPage: 25) { pageInfo { hasNextPage }
+/* Reseñas (las más útiles primero) y, en la misma consulta de la primera página, las etiquetas
+   votadas, las recomendaciones "si te gustó…" y la actividad diaria de la obra */
+const CONSULTA_DETALLES = `query ($id: Int, $p: Int, $detalles: Boolean!) {
+    Media(id: $id) @include(if: $detalles) {
+        tags { name rank category isMediaSpoiler isGeneralSpoiler }
+        recommendations(sort: RATING_DESC, perPage: 12) { nodes { rating mediaRecommendation {
+            id type format countryOfOrigin isAdult title { romaji english } coverImage { medium } } } }
+        trends(sort: DATE_DESC, perPage: 10) { nodes { date trending popularity inProgress } }
+    }
+    Page(page: $p, perPage: 25) { pageInfo { hasNextPage }
         reviews(mediaId: $id, sort: RATING_DESC) { score rating ratingAmount body } } }`;
+
+async function traerDetalles(pedir, id){
     const resenas = [];
+    let media = null;
     for (let p = 1; resenas.length < RESENAS_POR_OBRA; p++){
-        const data = await graphql(pedir, query, { id, p });
+        const data = await graphql(pedir, CONSULTA_DETALLES, { id, p, detalles: p === 1 });
+        if (p === 1) media = data.Media || null;
         resenas.push(...data.Page.reviews);
         if (!data.Page.pageInfo.hasNextPage) break;
     }
-    return resenas.slice(0, RESENAS_POR_OBRA);
+    return { resenas: resenas.slice(0, RESENAS_POR_OBRA), media };
 }
 
 /* ---------- Kitsu (se encuentra con el ID de AniList o el de MyAnimeList) ---------- */
@@ -187,11 +204,16 @@ export async function ejecutar({
     ahora = new Date(),
     esperar = dormir,
     registro = console.log,
-    claveMAL = process.env.MAL_CLIENT_ID || ''
+    claveMAL = process.env.MAL_CLIENT_ID || '',
+    clasificador = null            // tono de las frases; si no se pasa, se carga el modelo (tono.mjs)
 } = {}){
     const fecha = hoy(ahora);
     const pedir = crearCliente({ fetch, esperar, registro });
     const ruta = nombre => join(raiz, nombre);
+    if (!clasificador) clasificador = await crearClasificador({ carpeta: ruta('.modelos'), registro });
+    let evaluacionModelo = { positivas: { aciertos: 0, total: 0 }, negativas: { aciertos: 0, total: 0 } };
+    let evaluacionPalabras = evaluacionModelo;
+    const sinTraducir = new Set();
 
     const catalogo = await leerJSON(ruta('obras.json'));
     const obras = (catalogo.obras || []).filter(o => o.ids && o.ids.anilist);
@@ -264,9 +286,35 @@ export async function ejecutar({
             else if (mal === undefined && previo.fuentes && previo.fuentes.myanimelist) fuentes.myanimelist = previo.fuentes.myanimelist;
         }
 
+        // Reseñas, etiquetas, recomendaciones y actividad (si fallan, se conserva lo anterior)
         let resenas = previo.resenas || { n: 0 };
-        try { resenas = analizarResenas(await traerResenas(pedir, obra.ids.anilist)); }
-        catch (error){ registro(`  ${obra.titulo}: reseñas fallaron (${error.message}); se usa el dato anterior`); }
+        let etiquetas = previo.etiquetas || [];
+        let recomendaciones = previo.recomendaciones || [];
+        let actividad = previo.actividad || null;
+        try {
+            const detalles = await traerDetalles(pedir, obra.ids.anilist);
+            const frases = frasesConTemas(detalles.resenas);
+            const textos = frases.map(f => f.texto);
+            const tonosPalabras = tonosConPalabras(frases);
+            let tonos = tonosPalabras;
+            if (clasificador.nombre !== 'palabras'){
+                try { tonos = await clasificador.tonos(textos); }
+                catch (error){ registro(`  ${obra.titulo}: el modelo falló (${error.message}); se usan palabras clave`); }
+            }
+            resenas = analizarResenas(detalles.resenas, frases, tonos);
+            evaluacionModelo = sumarEvaluaciones(evaluacionModelo, evaluarTono(detalles.resenas, frases, tonos));
+            evaluacionPalabras = sumarEvaluaciones(evaluacionPalabras, evaluarTono(detalles.resenas, frases, tonosPalabras));
+
+            if (detalles.media){
+                const e = prepararEtiquetas(detalles.media.tags);
+                etiquetas = e.etiquetas;
+                e.sinTraducir.forEach(t => sinTraducir.add(t));
+                recomendaciones = prepararRecomendaciones(detalles.media.recommendations && detalles.media.recommendations.nodes);
+                actividad = analizarActividad(detalles.media.trends && detalles.media.trends.nodes);
+            }
+        } catch (error){
+            registro(`  ${obra.titulo}: reseñas y detalles fallaron (${error.message}); se usa el dato anterior`);
+        }
 
         ids.obras[id] = guardado;
         resultado[id] = {
@@ -275,21 +323,38 @@ export async function ejecutar({
             distribucion,
             resenas,
             popularidad: m.popularity || null,
-            favoritos: m.favourites || null
+            favoritos: m.favourites || null,
+            etiquetas,
+            recomendaciones,
+            actividad
         };
         const p = resultado[id].puntaje;
         registro(`  ${obra.titulo}: ${p ? (p.valor / 10).toFixed(1) : '?'} (${Object.keys(fuentes).join(', ')}), ${resenas.n || 0} reseñas`);
     }
 
-    // 2. Tendencia frente a la medición de hace 5 días o más
+    // 2. Tendencia: con el registro diario de AniList (lectores de hace 7 días); si no lo hay,
+    //    contra la medición propia de hace 5 días o más
     const semanas = (historial.semanas || []).filter(s => s && s.fecha && s.obras);
     const referencia = [...semanas].reverse().find(s => diasEntre(s.fecha, fecha) >= 5);
     for (const [id, r] of Object.entries(resultado)){
+        if (r.actividad && Number.isFinite(r.actividad.lectores)){
+            r.tendencia = { lectores: r.actividad.lectores, puntaje: null, dias: r.actividad.dias };
+            continue;
+        }
         const antes = referencia && referencia.obras[id];
         r.tendencia = antes
             ? calcularTendencia({ popularidad: r.popularidad, puntaje: r.puntaje && r.puntaje.valor }, { popularidad: antes[0], puntaje: antes[1] }, diasEntre(referencia.fecha, fecha))
             : null;
     }
+
+    // Qué tan seguido el tono de las frases coincide con el puntaje de cada reseña
+    const porcentaje = e => {
+        const a = aciertoEquilibrado(e);
+        return a === null ? 'sin datos' : `${Math.round(a * 100)} % (positivas ${e.positivas.aciertos}/${e.positivas.total}, negativas ${e.negativas.aciertos}/${e.negativas.total})`;
+    };
+    registro(`Tono de las reseñas con ${clasificador.nombre === 'modelo' ? 'el modelo' : 'palabras clave'}: acierta ${porcentaje(evaluacionModelo)}.`);
+    if (clasificador.nombre === 'modelo') registro(`Con palabras clave habría acertado ${porcentaje(evaluacionPalabras)}.`);
+    if (sinTraducir.size) registro(`Etiquetas sin traducir (agrégalas en scripts/etiquetas.mjs): ${[...sinTraducir].join(', ')}`);
 
     // 3. Historial: una medición por semana (si se corre dos veces la misma semana, se reemplaza)
     const foto = { fecha, obras: Object.fromEntries(Object.entries(resultado).map(([id, r]) => [id, [r.popularidad, r.puntaje ? r.puntaje.valor : null]])) };
@@ -307,6 +372,7 @@ export async function ejecutar({
         generado: ahora.toISOString(),
         fuentes: fechasFuentes,
         mediaCatalogo: redondear(mediaCatalogo, 1),
+        tono: { metodo: clasificador.nombre, acierto: aciertoEquilibrado(evaluacionModelo) },
         obras: resultado
     });
     await escribirJSON(ruta('datos/ids.json'), ids);
