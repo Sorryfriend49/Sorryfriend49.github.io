@@ -18,7 +18,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import {
     METODO, combinarPuntajes, analizarDistribucion, analizarResenas, calcularTendencia, coincidencia, elegirSerie,
-    normalizarTitulo, redondear, frasesConTemas, tonosConPalabras, evaluarTono, sumarEvaluaciones, aciertoEquilibrado,
+    normalizarTitulo, redondear, capitulosDeMangaUpdates, frasesConTemas, tonosConPalabras, evaluarTono, sumarEvaluaciones, aciertoEquilibrado,
     analizarActividad, prepararEtiquetas, prepararRecomendaciones, textoParaResumen
 } from './analisis.mjs';
 import { crearClasificador } from './tono.mjs';
@@ -39,22 +39,22 @@ const SEMANAS_DE_HISTORIAL = 12;
 // se vuelven a buscar una vez con la regla nueva (la 2 evita antologías y extras).
 const EMPAREJADOR = 2;
 
-const dormir = ms => new Promise(r => setTimeout(r, ms));
+export const dormir = ms => new Promise(r => setTimeout(r, ms));
 const hoy = fecha => fecha.toISOString().slice(0, 10);
 const diasEntre = (a, b) => Math.round((new Date(b) - new Date(a)) / 86400000);
 
-async function leerJSON(ruta, siNoExiste){
+export async function leerJSON(ruta, siNoExiste){
     try { return JSON.parse(await readFile(ruta, 'utf8')); }
     catch (error){ if (error.code === 'ENOENT') return siNoExiste; throw error; }
 }
 
-async function escribirJSON(ruta, datos){
+export async function escribirJSON(ruta, datos){
     await mkdir(dirname(ruta), { recursive: true });
     await writeFile(ruta, JSON.stringify(datos, null, 2) + '\n');
 }
 
 // Pide JSON respetando la pausa de cada sitio; reintenta si el sitio está ocupado (429) o falla (5xx)
-function crearCliente({ fetch, esperar, registro }){
+export function crearCliente({ fetch, esperar, registro }){
     const ultimaVez = new Map();
     return async function pedir(url, opciones = {}, intentos = 4){
         const sitio = new URL(url).host;
@@ -166,7 +166,8 @@ function datosMangaUpdates(serie){
 async function traerMangaUpdates(pedir, obra, guardado, fecha){
     if (guardado && guardado.mangaupdates){
         const serie = await pedir(`${MANGAUPDATES}/series/${guardado.mangaupdates}`);
-        return { id: guardado.mangaupdates, titulo: serie.title || guardado.mangaupdatesTitulo, datos: datosMangaUpdates(serie), buscado: guardado.buscado };
+        return { id: guardado.mangaupdates, titulo: serie.title || guardado.mangaupdatesTitulo, datos: datosMangaUpdates(serie),
+            capitulos: capitulosDeMangaUpdates(serie), buscado: guardado.buscado };
     }
     if (guardado && guardado.buscado && diasEntre(guardado.buscado, fecha) < DIAS_PARA_REBUSCAR){
         return { id: null, datos: null, buscado: guardado.buscado };   // ya se buscó hace poco y no estaba
@@ -186,7 +187,13 @@ async function traerMangaUpdates(pedir, obra, guardado, fecha){
         if (mejor && coincidencia(obra, mejor) === 3) break;
     }
     const serie = elegirSerie(obra, resultados);
-    if (serie) return { id: serie.series_id, titulo: serie.title, nueva: true, votos: serie.rating_votes, anio: serie.year, datos: datosMangaUpdates(serie), buscado: fecha };
+    if (serie){
+        // La búsqueda no trae el estado ni el último capítulo: se piden los detalles de la serie elegida
+        let detalles = null;
+        try { detalles = await pedir(`${MANGAUPDATES}/series/${serie.series_id}`); } catch { detalles = null; }
+        return { id: serie.series_id, titulo: serie.title, nueva: true, votos: serie.rating_votes, anio: serie.year,
+            datos: datosMangaUpdates(detalles || serie), capitulos: capitulosDeMangaUpdates(detalles || serie), buscado: fecha };
+    }
     return { id: null, datos: null, buscado: fecha };
 }
 
@@ -273,6 +280,9 @@ export async function ejecutar({
         const emparejadaAlDia = (guardado.emparejador || 1) >= EMPAREJADOR;
         if (!emparejadaAlDia){ delete guardado.mangaupdates; delete guardado.mangaupdatesTitulo; delete guardado.buscado; }
         const mu = await intentar('mangaupdates', () => traerMangaUpdates(pedir, obra, guardado, fecha));
+        // Capítulos y tomos publicados hasta ahora (AniList no los da mientras la obra sigue saliendo)
+        let capitulos = (emparejadaAlDia && previo.capitulos) || null;
+        if (mu) capitulos = mu.capitulos || (mu.id ? capitulos : null);
         if (mu){
             if (mu.id){ guardado.mangaupdates = mu.id; guardado.mangaupdatesTitulo = mu.titulo; }
             guardado.buscado = mu.buscado;
@@ -345,7 +355,8 @@ export async function ejecutar({
             etiquetas,
             recomendaciones,
             actividad,
-            resumen: (resenas.n || 0) >= MIN_RESENAS_RESUMEN ? resumen : null
+            resumen: (resenas.n || 0) >= MIN_RESENAS_RESUMEN ? resumen : null,
+            capitulos
         };
         const p = resultado[id].puntaje;
         registro(`  ${obra.titulo}: ${p ? (p.valor / 10).toFixed(1) : '?'} (${Object.keys(fuentes).join(', ')}), ${resenas.n || 0} reseñas`);

@@ -19,7 +19,14 @@
         'terminado': 'Terminada', 'en-publicacion': 'En publicación', 'pausado': 'En pausa',
         'cancelado': 'Cancelada', 'proximamente': 'Por estrenar'
     };
-    const IDIOMAS = { es: 'español', en: 'inglés' };
+    const IDIOMAS = { es: 'español', en: 'inglés', ja: 'japonés', ko: 'coreano', zh: 'chino' };
+    // Dónde leer, por grupos: primero en español, luego en inglés, los tomos y al final el idioma original
+    const GRUPOS_LECTURA = [
+        { titulo: 'En español', cumple: e => e.tipo === 'leer' && e.idioma === 'es', conIdioma: false },
+        { titulo: 'En inglés', cumple: e => e.tipo === 'leer' && e.idioma === 'en', conIdioma: false },
+        { titulo: 'Tomos impresos y digitales', cumple: e => e.tipo === 'tomos', conIdioma: true },
+        { titulo: 'En su idioma original', cumple: e => e.tipo === 'original', conIdioma: true }
+    ];
     const IDIOMA_ORIGINAL = { manga: 'ja', manhwa: 'ko', manhua: 'zh' };
     const NOMBRES_FUENTES = { anilist: 'AniList', kitsu: 'Kitsu', mangaupdates: 'MangaUpdates', myanimelist: 'MyAnimeList' };
     const NOMBRES_TEMAS = {
@@ -68,6 +75,7 @@
 
     const formatoLectores = new Intl.NumberFormat('es', { notation: 'compact' });   // 337640 -> "338 mil"
     const formatoPuntaje = new Intl.NumberFormat('es', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+    const formatoNumero = new Intl.NumberFormat('es');   // 1198 -> "1198"; 10500 -> "10.500"
 
     const $ = id => document.getElementById(id);
     const rejilla = $('rejilla');
@@ -589,8 +597,15 @@
         dl.replaceChildren();
         fila(dl, 'Salió', textoFecha(o.inicio));
         if (o.fin) fila(dl, 'Terminó', textoFecha(o.fin));
-        fila(dl, 'Capítulos', o.capitulos);
-        fila(dl, 'Tomos', o.tomos);
+        // Capítulos y tomos: los de AniList si ya terminó; si sigue saliendo, los publicados
+        // hasta ahora según MangaUpdates (los actualiza la tarea de cada lunes)
+        const publicados = (deComunidad(o) || {}).capitulos || {};
+        const hastaAhora = o.estado === 'terminado' ? '' : ' hasta ahora';
+        const numero = n => formatoNumero.format(n);
+        if (o.capitulos) fila(dl, 'Capítulos', numero(o.capitulos));
+        else if (publicados.ultimo) fila(dl, 'Capítulos', numero(publicados.ultimo) + hastaAhora);
+        if (o.tomos) fila(dl, 'Tomos', numero(o.tomos));
+        else if (publicados.tomos) fila(dl, 'Tomos', numero(publicados.tomos) + hastaAhora);
         fila(dl, 'Géneros', o.generos.map(g => GENEROS[g]).filter(Boolean).join(', '));
 
         // Etiquetas votadas por los lectores: cada una lleva al catálogo filtrado por ella
@@ -614,22 +629,36 @@
 
         pintarComunidad(o);
 
+        // Dónde leer: solo lugares oficiales, agrupados por idioma
         const dondeLeer = $('fichaDondeLeer');
-        if (o.enlaces && o.enlaces.length){
-            const lista = crear('ul', 'donde-leer');
-            o.enlaces.forEach(e => {
-                const li = document.createElement('li');
-                const a = crear('a', null, e.sitio);
-                a.href = e.url;
-                a.target = '_blank';
-                a.rel = 'noopener noreferrer';
-                if (IDIOMAS[e.idioma]) a.append(crear('span', 'idioma', `(${IDIOMAS[e.idioma]})`));
-                li.append(a);
-                lista.append(li);
-            });
-            dondeLeer.replaceChildren(lista);
+        const enlaces = (o.enlaces || []).map(e => ({ ...e, tipo: e.tipo || 'leer' }));
+        // El idioma original solo se muestra si no hay dónde leerla en español o en inglés
+        const hayTraduccion = enlaces.some(e => e.tipo === 'leer');
+        const grupos = GRUPOS_LECTURA.map(g => ({ ...g, enlaces: enlaces.filter(g.cumple) }))
+            .filter(g => g.enlaces.length && !(hayTraduccion && g.titulo === 'En su idioma original'));
+        if (grupos.length){
+            dondeLeer.replaceChildren(...grupos.map(g => {
+                const bloque = crear('div', 'grupo-lectura');
+                const lista = crear('ul', 'donde-leer');
+                g.enlaces.forEach(e => {
+                    const li = document.createElement('li');
+                    const a = crear('a', null, e.sitio);
+                    a.href = e.url;
+                    a.target = '_blank';
+                    a.rel = 'noopener noreferrer';
+                    if (g.conIdioma && IDIOMAS[e.idioma]) a.append(crear('span', 'idioma', `(${IDIOMAS[e.idioma]})`));
+                    li.append(a);
+                    lista.append(li);
+                });
+                bloque.append(crear('h4', null, g.titulo), lista);
+                return bloque;
+            }));
         } else {
-            dondeLeer.replaceChildren(crear('p', 'sin-enlaces', 'No encontramos dónde leerla oficialmente en español o inglés.'));
+            dondeLeer.replaceChildren(crear('p', 'sin-enlaces', 'No encontramos dónde leerla oficialmente.'));
+        }
+        // Si solo hay sitios en el idioma original, se avisa antes de mostrarlos
+        if (grupos.length && grupos.every(g => g.titulo === 'En su idioma original')){
+            dondeLeer.prepend(crear('p', 'sin-enlaces', 'No encontramos una edición oficial en español ni en inglés.'));
         }
 
         pintarRecomendadas(o);

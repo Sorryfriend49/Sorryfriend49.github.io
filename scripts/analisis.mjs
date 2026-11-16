@@ -447,3 +447,17 @@ export function elegirSerie(obra, resultados){
     }
     return mejor ? mejor.registro : null;
 }
+
+/* ---------- Capítulos y tomos publicados, según MangaUpdates ----------
+   "latest_chapter" es el último capítulo que salió; algunos webtoons lo cuentan por temporada,
+   así que también se leen los números de "N Chapters" y "N Volumes" de su estado
+   (por ejemplo "652 Chapters (Ongoing)") y se usa el mayor. */
+export function capitulosDeMangaUpdates(serie){
+    if (!serie) return null;
+    const estado = String(serie.status || '');
+    const numeros = patron => [...estado.matchAll(patron)].map(m => Number(m[1])).filter(n => Number.isFinite(n) && n > 0 && n < 100000);
+    const ultimo = Math.max(0, Number(serie.latest_chapter) || 0, ...numeros(/(\d+)\s+chapters?\b/gi));
+    const tomos = Math.max(0, ...numeros(/(\d+)\s+volumes?\b/gi));
+    if (!ultimo && !tomos) return null;
+    return { ultimo: ultimo || null, tomos: tomos || null };
+}

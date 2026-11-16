@@ -1076,6 +1076,21 @@ nav{
     margin-top: 10px;
 }
 
+/* Grupos de "Dónde leer": en español, en inglés, tomos e idioma original */
+.grupo-lectura{
+    margin-top: 14px;
+}
+
+.grupo-lectura h4{
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--texto-suave);
+}
+
+.grupo-lectura .donde-leer{
+    margin-top: 6px;
+}
+
 .donde-leer a{
     display: inline-flex;
     align-items: center;
