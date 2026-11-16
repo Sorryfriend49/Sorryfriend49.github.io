@@ -1,0 +1,66 @@
+# Opinión de la comunidad: cada lunes junta puntajes, votos y reseñas de AniList,
+# Kitsu y MangaUpdates (y MyAnimeList si hay clave), calcula los resultados con
+# scripts/comunidad.mjs y publica datos/comunidad.json en la página. Es gratis:
+# GitHub no cobra las tareas automáticas de los repositorios públicos.
+#
+# Para correrla a mano: pestaña Actions > "Opinión de la comunidad" > Run workflow.
+# Para sumar MyAnimeList (opcional y gratis): crea una clave en
+# https://myanimelist.net/apiconfig y guárdala en Settings > Secrets and variables >
+# Actions como MAL_CLIENT_ID.
+name: Opinión de la comunidad
+
+on:
+  schedule:
+    - cron: '17 9 * * 1'        # lunes 9:17 UTC (4:17 a. m. en Colombia)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:                      # también corre cuando cambia el catálogo o el algoritmo
+      - 'obras.json'
+      - 'scripts/**'
+      - '.github/workflows/comunidad.yml'
+
+permissions:
+  contents: write               # para guardar datos/ en el repositorio
+  pages: write                  # para pedir que se vuelva a publicar la página
+
+concurrency:
+  group: opinion-comunidad
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v5
+
+      - name: Calcular la opinión de la comunidad
+        run: |
+          node --version
+          node scripts/comunidad.mjs
+        env:
+          MAL_CLIENT_ID: ${{ secrets.MAL_CLIENT_ID }}
+
+      - name: Guardar los resultados
+        id: guardar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add datos/
+          if git diff --cached --quiet; then
+            echo "Sin cambios en los datos."
+            echo "cambios=no" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "Actualiza la opinión de la comunidad"
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "cambios=si" >> "$GITHUB_OUTPUT"
+
+      - name: Publicar la página con los datos nuevos
+        if: steps.guardar.outputs.cambios == 'si'
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || echo "No se pudo pedir la publicación; saldrá con el próximo cambio."
+        env:
+          GH_TOKEN: ${{ github.token }}
