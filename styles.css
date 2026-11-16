@@ -1000,9 +1000,9 @@ nav{
     width: fit-content;
     max-width: 100%;
     margin-top: 12px;
-    padding: 2px 14px;
+    padding: 8px 16px;
     border: 1px solid var(--acero);
-    border-radius: 18px;
+    border-radius: 22px;
     background: rgba(124, 179, 234, 0.12);
     font-size: 14px;
     color: var(--texto-claro);
@@ -1014,7 +1014,7 @@ nav{
 
 /* En pantallas muy angostas el botón baja a otra línea, alineado con el texto */
 .filtro-etiqueta .quitar-generos{
-    min-height: 32px;
+    min-height: 28px;
     padding: 0;
 }
 
