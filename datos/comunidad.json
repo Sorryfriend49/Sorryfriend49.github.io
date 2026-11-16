@@ -1,7 +1,7 @@
 {
   "esquema": 1,
-  "metodo": "1.1",
-  "generado": "2026-11-16T19:06:16.412Z",
+  "metodo": "1.2",
+  "generado": "2026-11-16T19:42:16.131Z",
   "fuentes": {
     "anilist": "2026-11-16",
     "kitsu": "2026-11-16",
@@ -9,6 +9,10 @@
     "myanimelist": null
   },
   "mediaCatalogo": 83.2,
+  "tono": {
+    "metodo": "modelo",
+    "acierto": 0.776
+  },
   "obras": {
     "30002": {
       "puntaje": {
@@ -62,11 +66,119 @@
           "historia",
           "arte"
         ],
-        "critican": []
+        "critican": [
+          "final"
+        ]
       },
       "popularidad": 249371,
       "favoritos": 40987,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "seinen",
+          "nombre": "Seinen",
+          "voto": 95
+        },
+        {
+          "id": "venganza",
+          "nombre": "Venganza",
+          "voto": 94
+        },
+        {
+          "id": "demonios",
+          "nombre": "Demonios",
+          "voto": 92
+        },
+        {
+          "id": "gore",
+          "nombre": "Gore",
+          "voto": 88
+        },
+        {
+          "id": "filosofia",
+          "nombre": "Filosofía",
+          "voto": 86
+        },
+        {
+          "id": "familia-elegida",
+          "nombre": "Familia elegida",
+          "voto": 85
+        },
+        {
+          "id": "antiheroe",
+          "nombre": "Antihéroe",
+          "voto": 83
+        },
+        {
+          "id": "viajes",
+          "nombre": "Viajes",
+          "voto": 83
+        },
+        {
+          "id": "espadas",
+          "nombre": "Espadas",
+          "voto": 82
+        },
+        {
+          "id": "supervivencia",
+          "nombre": "Supervivencia",
+          "voto": 82
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 30642,
+          "titulo": "Vinland Saga",
+          "tipo": "manga",
+          "votos": 1621,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30642-0mjRDkf4THpo.jpg"
+        },
+        {
+          "anilist": 30656,
+          "titulo": "Vagabond",
+          "tipo": "manga",
+          "votos": 1476,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30656-9mW113O7rDnA.png"
+        },
+        {
+          "anilist": 30583,
+          "titulo": "Claymore",
+          "tipo": "manga",
+          "votos": 601,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30583-Ysqwu8uryIUX.png"
+        },
+        {
+          "anilist": 46765,
+          "titulo": "Kingdom",
+          "tipo": "manga",
+          "votos": 420,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx46765-KPXir4sRqJBW.png"
+        },
+        {
+          "anilist": 31474,
+          "titulo": "Devilman",
+          "tipo": "manga",
+          "votos": 282,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx31474-R4x7qkjUfBw6.jpg"
+        },
+        {
+          "anilist": 87170,
+          "titulo": "Fire Punch",
+          "tipo": "manga",
+          "votos": 248,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx87170-nyuwcN7rU4pc.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 1547,
+        "leyendo": 120830,
+        "lectores": 0.0019,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0019,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "30013": {
       "puntaje": {
@@ -121,12 +233,118 @@
           "arte"
         ],
         "critican": [
-          "humor"
+          "ritmo"
         ]
       },
       "popularidad": 237223,
       "favoritos": 48072,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "piratas",
+          "nombre": "Piratas",
+          "voto": 96
+        },
+        {
+          "id": "viajes",
+          "nombre": "Viajes",
+          "voto": 96
+        },
+        {
+          "id": "familia-elegida",
+          "nombre": "Familia elegida",
+          "voto": 95
+        },
+        {
+          "id": "shonen",
+          "nombre": "Shōnen",
+          "voto": 92
+        },
+        {
+          "id": "reparto-coral",
+          "nombre": "Reparto coral",
+          "voto": 91
+        },
+        {
+          "id": "profecias",
+          "nombre": "Profecías",
+          "voto": 90
+        },
+        {
+          "id": "superpoderes",
+          "nombre": "Superpoderes",
+          "voto": 87
+        },
+        {
+          "id": "barcos",
+          "nombre": "Barcos",
+          "voto": 81
+        },
+        {
+          "id": "fugitivos",
+          "nombre": "Fugitivos",
+          "voto": 80
+        },
+        {
+          "id": "politica",
+          "nombre": "Política",
+          "voto": 80
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 30026,
+          "titulo": "Hunter x Hunter",
+          "tipo": "manga",
+          "votos": 700,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30026-uCvXMudMzmwI.jpg"
+        },
+        {
+          "anilist": 30042,
+          "titulo": "Dragon Ball",
+          "tipo": "manga",
+          "votos": 349,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30042-4SetGiEbGc9x.jpg"
+        },
+        {
+          "anilist": 30011,
+          "titulo": "Naruto",
+          "tipo": "manga",
+          "votos": 265,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx30011-9yUF1dXWgDOx.jpg"
+        },
+        {
+          "anilist": 30012,
+          "titulo": "Bleach",
+          "tipo": "manga",
+          "votos": 169,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30012-1epmVfTSv2rr.png"
+        },
+        {
+          "anilist": 86123,
+          "titulo": "Black Clover",
+          "tipo": "manga",
+          "votos": 133,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx86123-Ill8uBdtvWrR.png"
+        },
+        {
+          "anilist": 85486,
+          "titulo": "My Hero Academia",
+          "tipo": "manga",
+          "votos": 102,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx85486-INqnYx8gL3eX.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 5519,
+        "leyendo": 171806,
+        "lectores": 0.002,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.002,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "30642": {
       "puntaje": {
@@ -180,11 +398,119 @@
           "historia",
           "accion"
         ],
-        "critican": []
+        "critican": [
+          "ritmo"
+        ]
       },
       "popularidad": 140853,
       "favoritos": 18363,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "historico",
+          "nombre": "Histórico",
+          "voto": 95
+        },
+        {
+          "id": "paso-a-la-madurez",
+          "nombre": "Paso a la madurez",
+          "voto": 95
+        },
+        {
+          "id": "vikingos",
+          "nombre": "Vikingos",
+          "voto": 95
+        },
+        {
+          "id": "en-el-extranjero",
+          "nombre": "En el extranjero",
+          "voto": 93
+        },
+        {
+          "id": "filosofia",
+          "nombre": "Filosofía",
+          "voto": 92
+        },
+        {
+          "id": "seinen",
+          "nombre": "Seinen",
+          "voto": 91
+        },
+        {
+          "id": "guerra",
+          "nombre": "Guerra",
+          "voto": 89
+        },
+        {
+          "id": "venganza",
+          "nombre": "Venganza",
+          "voto": 86
+        },
+        {
+          "id": "viajes",
+          "nombre": "Viajes",
+          "voto": 84
+        },
+        {
+          "id": "familia-elegida",
+          "nombre": "Familia elegida",
+          "voto": 84
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 30002,
+          "titulo": "Berserk",
+          "tipo": "manga",
+          "votos": 1621,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30002-Cul4OeN7bYtn.jpg"
+        },
+        {
+          "anilist": 30656,
+          "titulo": "Vagabond",
+          "tipo": "manga",
+          "votos": 802,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30656-9mW113O7rDnA.png"
+        },
+        {
+          "anilist": 46765,
+          "titulo": "Kingdom",
+          "tipo": "manga",
+          "votos": 361,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx46765-KPXir4sRqJBW.png"
+        },
+        {
+          "anilist": 86559,
+          "titulo": "Golden Kamuy",
+          "tipo": "manga",
+          "votos": 217,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx86559-Y4xDmoz4ud43.jpg"
+        },
+        {
+          "anilist": 30022,
+          "titulo": "Rurouni Kenshin",
+          "tipo": "manga",
+          "votos": 112,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30022-jxTlViun1o10.jpg"
+        },
+        {
+          "anilist": 31706,
+          "titulo": "JoJo's Bizarre Adventure: Part 7–Steel Ball Run",
+          "tipo": "manga",
+          "votos": 92,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx31706-lRncu9VbcBB7.png"
+        }
+      ],
+      "actividad": {
+        "semana": 784,
+        "leyendo": 50931,
+        "lectores": 0.0017,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0017,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "30656": {
       "puntaje": {
@@ -242,7 +568,113 @@
       },
       "popularidad": 166075,
       "favoritos": 20589,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "samurais",
+          "nombre": "Samuráis",
+          "voto": 96
+        },
+        {
+          "id": "seinen",
+          "nombre": "Seinen",
+          "voto": 95
+        },
+        {
+          "id": "espadas",
+          "nombre": "Espadas",
+          "voto": 95
+        },
+        {
+          "id": "historico",
+          "nombre": "Histórico",
+          "voto": 94
+        },
+        {
+          "id": "filosofia",
+          "nombre": "Filosofía",
+          "voto": 93
+        },
+        {
+          "id": "viajes",
+          "nombre": "Viajes",
+          "voto": 90
+        },
+        {
+          "id": "paso-a-la-madurez",
+          "nombre": "Paso a la madurez",
+          "voto": 88
+        },
+        {
+          "id": "artes-marciales",
+          "nombre": "Artes marciales",
+          "voto": 82
+        },
+        {
+          "id": "supervivencia",
+          "nombre": "Supervivencia",
+          "voto": 76
+        },
+        {
+          "id": "discapacidad",
+          "nombre": "Discapacidad",
+          "voto": 75
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 30002,
+          "titulo": "Berserk",
+          "tipo": "manga",
+          "votos": 1476,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30002-Cul4OeN7bYtn.jpg"
+        },
+        {
+          "anilist": 30642,
+          "titulo": "Vinland Saga",
+          "tipo": "manga",
+          "votos": 802,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30642-0mjRDkf4THpo.jpg"
+        },
+        {
+          "anilist": 46765,
+          "titulo": "Kingdom",
+          "tipo": "manga",
+          "votos": 263,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx46765-KPXir4sRqJBW.png"
+        },
+        {
+          "anilist": 30657,
+          "titulo": "Real",
+          "tipo": "manga",
+          "votos": 199,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30657-AzyyUOWMJ6fd.png"
+        },
+        {
+          "anilist": 30022,
+          "titulo": "Rurouni Kenshin",
+          "tipo": "manga",
+          "votos": 179,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30022-jxTlViun1o10.jpg"
+        },
+        {
+          "anilist": 37375,
+          "titulo": "The Climber",
+          "tipo": "manga",
+          "votos": 172,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx37375-wkgev4kXhamw.png"
+        }
+      ],
+      "actividad": {
+        "semana": 1018,
+        "leyendo": 47383,
+        "lectores": 0.0021,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0021,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "34632": {
       "puntaje": {
@@ -293,14 +725,122 @@
         "wilson": 0.739,
         "elogian": [
           "historia",
-          "personajes",
-          "final"
+          "romance",
+          "arte"
         ],
-        "critican": []
+        "critican": [
+          "final"
+        ]
       },
       "popularidad": 189229,
       "favoritos": 21931,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "paso-a-la-madurez",
+          "nombre": "Paso a la madurez",
+          "voto": 98
+        },
+        {
+          "id": "seinen",
+          "nombre": "Seinen",
+          "voto": 92
+        },
+        {
+          "id": "filosofia",
+          "nombre": "Filosofía",
+          "voto": 88
+        },
+        {
+          "id": "denpa",
+          "nombre": "Denpa",
+          "voto": 87
+        },
+        {
+          "id": "urbano",
+          "nombre": "Urbano",
+          "voto": 79
+        },
+        {
+          "id": "antiheroe",
+          "nombre": "Antihéroe",
+          "voto": 76
+        },
+        {
+          "id": "comedia-absurda",
+          "nombre": "Comedia absurda",
+          "voto": 65
+        },
+        {
+          "id": "escuela",
+          "nombre": "Escuela",
+          "voto": 65
+        },
+        {
+          "id": "sectas",
+          "nombre": "Sectas",
+          "voto": 62
+        },
+        {
+          "id": "trabajo",
+          "nombre": "Trabajo",
+          "voto": 60
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 54705,
+          "titulo": "The Flowers of Evil",
+          "tipo": "manga",
+          "votos": 538,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx54705-78Th5SRaL0Ns.png"
+        },
+        {
+          "anilist": 98397,
+          "titulo": "Blood on the Tracks",
+          "tipo": "manga",
+          "votos": 295,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx98397-5b3kSYyw7ykd.jpg"
+        },
+        {
+          "anilist": 33731,
+          "titulo": "Solanin",
+          "tipo": "manga",
+          "votos": 271,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx33731-AnTmPqTS2W8C.jpg"
+        },
+        {
+          "anilist": 85316,
+          "titulo": "Dead Dead Demon's Dededede Destruction",
+          "tipo": "manga",
+          "votos": 195,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx85316-EGrSrwSMeOxd.jpg"
+        },
+        {
+          "anilist": 142568,
+          "titulo": "Takopi's Original Sin",
+          "tipo": "manga",
+          "votos": 189,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx142568-xPC5wQPxTV1s.jpg"
+        },
+        {
+          "anilist": 30936,
+          "titulo": "Homunculus",
+          "tipo": "manga",
+          "votos": 177,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30936-P55KMUW1sgLN.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 658,
+        "leyendo": 29969,
+        "lectores": 0.0018,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0018,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "53390": {
       "puntaje": {
@@ -352,16 +892,122 @@
         "elogian": [
           "historia",
           "personajes",
-          "final"
+          "accion"
         ],
         "critican": [
-          "accion",
+          "final",
           "ritmo"
         ]
       },
       "popularidad": 229089,
       "favoritos": 22648,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "distopia",
+          "nombre": "Distopía",
+          "voto": 94
+        },
+        {
+          "id": "filosofia",
+          "nombre": "Filosofía",
+          "voto": 90
+        },
+        {
+          "id": "supervivencia",
+          "nombre": "Supervivencia",
+          "voto": 89
+        },
+        {
+          "id": "militar",
+          "nombre": "Militar",
+          "voto": 89
+        },
+        {
+          "id": "cambiaformas",
+          "nombre": "Cambiaformas",
+          "voto": 86
+        },
+        {
+          "id": "kaijus",
+          "nombre": "Kaijus",
+          "voto": 86
+        },
+        {
+          "id": "politica",
+          "nombre": "Política",
+          "voto": 84
+        },
+        {
+          "id": "venganza",
+          "nombre": "Venganza",
+          "voto": 83
+        },
+        {
+          "id": "transformaciones",
+          "nombre": "Transformaciones",
+          "voto": 82
+        },
+        {
+          "id": "mitologia",
+          "nombre": "Mitología",
+          "voto": 79
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 87423,
+          "titulo": "The Promised Neverland",
+          "tipo": "manga",
+          "votos": 268,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx87423-gPNtu8QbGped.jpg"
+        },
+        {
+          "anilist": 120760,
+          "titulo": "Kaiju No.8",
+          "tipo": "manga",
+          "votos": 179,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx120760-MtXvMgujLBpe.jpg"
+        },
+        {
+          "anilist": 30002,
+          "titulo": "Berserk",
+          "tipo": "manga",
+          "votos": 132,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30002-Cul4OeN7bYtn.jpg"
+        },
+        {
+          "anilist": 30583,
+          "titulo": "Claymore",
+          "tipo": "manga",
+          "votos": 130,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30583-Ysqwu8uryIUX.png"
+        },
+        {
+          "anilist": 74489,
+          "titulo": "Land of the Lustrous",
+          "tipo": "manga",
+          "votos": 102,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx74489-5HtDCFfut8Be.jpg"
+        },
+        {
+          "anilist": 30642,
+          "titulo": "Vinland Saga",
+          "tipo": "manga",
+          "votos": 55,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30642-0mjRDkf4THpo.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 396,
+        "leyendo": 46401,
+        "lectores": 0.001,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.001,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "63327": {
       "puntaje": {
@@ -419,7 +1065,113 @@
       },
       "popularidad": 200243,
       "favoritos": 18811,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "canibalismo",
+          "nombre": "Canibalismo",
+          "voto": 88
+        },
+        {
+          "id": "fantasia-urbana",
+          "nombre": "Fantasía urbana",
+          "voto": 85
+        },
+        {
+          "id": "gore",
+          "nombre": "Gore",
+          "voto": 83
+        },
+        {
+          "id": "supervivencia",
+          "nombre": "Supervivencia",
+          "voto": 81
+        },
+        {
+          "id": "seinen",
+          "nombre": "Seinen",
+          "voto": 80
+        },
+        {
+          "id": "filosofia",
+          "nombre": "Filosofía",
+          "voto": 77
+        },
+        {
+          "id": "distopia",
+          "nombre": "Distopía",
+          "voto": 77
+        },
+        {
+          "id": "paso-a-la-madurez",
+          "nombre": "Paso a la madurez",
+          "voto": 76
+        },
+        {
+          "id": "cambiaformas",
+          "nombre": "Cambiaformas",
+          "voto": 75
+        },
+        {
+          "id": "horror-corporal",
+          "nombre": "Horror corporal",
+          "voto": 74
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 126693,
+          "titulo": "Choujin X",
+          "tipo": "manga",
+          "votos": 341,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx126693-hEqUWtBfUHyc.jpg"
+        },
+        {
+          "anilist": 79865,
+          "titulo": "Ajin: Demi-Human",
+          "tipo": "manga",
+          "votos": 226,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b79865-rwKmISrhJJyP.jpg"
+        },
+        {
+          "anilist": 105778,
+          "titulo": "Chainsaw Man",
+          "tipo": "manga",
+          "votos": 219,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx105778-euxXZEIfDY2u.png"
+        },
+        {
+          "anilist": 30401,
+          "titulo": "Parasyte",
+          "tipo": "manga",
+          "votos": 180,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30401-siY6wmwnHFi6.png"
+        },
+        {
+          "anilist": 120760,
+          "titulo": "Kaiju No.8",
+          "tipo": "manga",
+          "votos": 140,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx120760-MtXvMgujLBpe.jpg"
+        },
+        {
+          "anilist": 101517,
+          "titulo": "Jujutsu Kaisen",
+          "tipo": "manga",
+          "votos": 124,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx101517-H3TdM3g5ZUe9.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 1032,
+        "leyendo": 30011,
+        "lectores": 0.002,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.002,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "72451": {
       "puntaje": {
@@ -473,7 +1225,103 @@
       },
       "popularidad": 124466,
       "favoritos": 8952,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "protagonista-femenina",
+          "nombre": "Protagonista femenina",
+          "voto": 91
+        },
+        {
+          "id": "personajes-adolescentes",
+          "nombre": "Personajes adolescentes",
+          "voto": 89
+        },
+        {
+          "id": "escuela",
+          "nombre": "Escuela",
+          "voto": 85
+        },
+        {
+          "id": "vida-familiar",
+          "nombre": "Vida familiar",
+          "voto": 83
+        },
+        {
+          "id": "paso-a-la-madurez",
+          "nombre": "Paso a la madurez",
+          "voto": 82
+        },
+        {
+          "id": "reparto-coral",
+          "nombre": "Reparto coral",
+          "voto": 78
+        },
+        {
+          "id": "humor-fisico",
+          "nombre": "Humor físico",
+          "voto": 73
+        },
+        {
+          "id": "shonen",
+          "nombre": "Shōnen",
+          "voto": 73
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 86717,
+          "titulo": "Wotakoi: Love is Hard for Otaku",
+          "tipo": "manga",
+          "votos": 356,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx86717-S7z7uizfTfEu.png"
+        },
+        {
+          "anilist": 86635,
+          "titulo": "Kaguya-sama: Love is War",
+          "tipo": "manga",
+          "votos": 333,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx86635-EdaLQmsn86Fy.png"
+        },
+        {
+          "anilist": 101177,
+          "titulo": "Fly Me to the Moon",
+          "tipo": "manga",
+          "votos": 197,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx101177-FjjD5UWB3C3t.png"
+        },
+        {
+          "anilist": 140475,
+          "titulo": "The Fragrant Flower Blooms With Dignity",
+          "tipo": "manga",
+          "votos": 196,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx140475-QEGtrmdvbpOv.jpg"
+        },
+        {
+          "anilist": 107282,
+          "titulo": "Shikimori's Not Just a Cutie",
+          "tipo": "manga",
+          "votos": 121,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx107282-ZzzqzHRZShT6.png"
+        },
+        {
+          "anilist": 32921,
+          "titulo": "Maid-sama!",
+          "tipo": "manga",
+          "votos": 65,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx32921-joMcvusRyZV6.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 352,
+        "leyendo": 29824,
+        "lectores": 0.0011,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0011,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "74347": {
       "puntaje": {
@@ -527,7 +1375,113 @@
       },
       "popularidad": 175925,
       "favoritos": 14288,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "superpoderes",
+          "nombre": "Superpoderes",
+          "voto": 96
+        },
+        {
+          "id": "superheroes",
+          "nombre": "Superhéroes",
+          "voto": 96
+        },
+        {
+          "id": "fantasia-urbana",
+          "nombre": "Fantasía urbana",
+          "voto": 95
+        },
+        {
+          "id": "comedia-absurda",
+          "nombre": "Comedia absurda",
+          "voto": 91
+        },
+        {
+          "id": "parodia",
+          "nombre": "Parodia",
+          "voto": 91
+        },
+        {
+          "id": "kaijus",
+          "nombre": "Kaijus",
+          "voto": 85
+        },
+        {
+          "id": "satira",
+          "nombre": "Sátira",
+          "voto": 82
+        },
+        {
+          "id": "metaficcion",
+          "nombre": "Metaficción",
+          "voto": 78
+        },
+        {
+          "id": "personajes-adultos",
+          "nombre": "Personajes adultos",
+          "voto": 77
+        },
+        {
+          "id": "humor-fisico",
+          "nombre": "Humor físico",
+          "voto": 75
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 85189,
+          "titulo": "Mob Psycho 100",
+          "tipo": "manga",
+          "votos": 441,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx85189-06aXUBq5jwce.jpg"
+        },
+        {
+          "anilist": 114960,
+          "titulo": "Mashle: Magic and Muscles",
+          "tipo": "manga",
+          "votos": 396,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx114960-pivAwNQDdiBa.jpg"
+        },
+        {
+          "anilist": 85486,
+          "titulo": "My Hero Academia",
+          "tipo": "manga",
+          "votos": 149,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx85486-INqnYx8gL3eX.jpg"
+        },
+        {
+          "anilist": 127554,
+          "titulo": "Rooster Fighter",
+          "tipo": "manga",
+          "votos": 114,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx127554-qXczrBrFMXBM.jpg"
+        },
+        {
+          "anilist": 141261,
+          "titulo": "Ayashimon",
+          "tipo": "manga",
+          "votos": 94,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx141261-mt54KpSPn8zh.jpg"
+        },
+        {
+          "anilist": 67755,
+          "titulo": "Saiki Kusuo no Ψ-nan",
+          "tipo": "manga",
+          "votos": 89,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx67755-pP4eYGRHFzaM.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 1364,
+        "leyendo": 106864,
+        "lectores": 0.0012,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0012,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "85141": {
       "puntaje": {
@@ -575,7 +1529,113 @@
       },
       "popularidad": 55915,
       "favoritos": 2759,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "artes-marciales",
+          "nombre": "Artes marciales",
+          "voto": 97
+        },
+        {
+          "id": "superpoderes",
+          "nombre": "Superpoderes",
+          "voto": 95
+        },
+        {
+          "id": "dioses",
+          "nombre": "Dioses",
+          "voto": 89
+        },
+        {
+          "id": "mitologia",
+          "nombre": "Mitología",
+          "voto": 87
+        },
+        {
+          "id": "fantasia-urbana",
+          "nombre": "Fantasía urbana",
+          "voto": 85
+        },
+        {
+          "id": "guerra",
+          "nombre": "Guerra",
+          "voto": 85
+        },
+        {
+          "id": "reparto-coral",
+          "nombre": "Reparto coral",
+          "voto": 81
+        },
+        {
+          "id": "amnesia",
+          "nombre": "Amnesia",
+          "voto": 80
+        },
+        {
+          "id": "conspiracion",
+          "nombre": "Conspiración",
+          "voto": 80
+        },
+        {
+          "id": "venganza",
+          "nombre": "Venganza",
+          "voto": 80
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 85143,
+          "titulo": "Tower of God",
+          "tipo": "manhwa",
+          "votos": 137,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx85143-23oup3ETbFJk.jpg"
+        },
+        {
+          "anilist": 105398,
+          "titulo": "Solo Leveling",
+          "tipo": "manhwa",
+          "votos": 90,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx105398-b673Vt5ZSuz3.jpg"
+        },
+        {
+          "anilist": 119174,
+          "titulo": "The Boxer",
+          "tipo": "manhwa",
+          "votos": 45,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b119174-nFMZSHbrDDbt.png"
+        },
+        {
+          "anilist": 212291,
+          "titulo": "Mu Mu Mu",
+          "tipo": "manhwa",
+          "votos": 8,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx212291-JK6GK3WIlv8T.jpg"
+        },
+        {
+          "anilist": 85155,
+          "titulo": "The Gamer",
+          "tipo": "manhwa",
+          "votos": 5,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b85155-HtYBpaLAa9E7.jpg"
+        },
+        {
+          "anilist": 101134,
+          "titulo": "Hardcore Leveling Warrior",
+          "tipo": "manhwa",
+          "votos": 3,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx101134-RH16zHUBRyXL.png"
+        }
+      ],
+      "actividad": {
+        "semana": 586,
+        "leyendo": 18633,
+        "lectores": 0.0017,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0017,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "85143": {
       "puntaje": {
@@ -629,7 +1689,113 @@
       },
       "popularidad": 101322,
       "favoritos": 7749,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "superpoderes",
+          "nombre": "Superpoderes",
+          "voto": 95
+        },
+        {
+          "id": "reparto-coral",
+          "nombre": "Reparto coral",
+          "voto": 93
+        },
+        {
+          "id": "conspiracion",
+          "nombre": "Conspiración",
+          "voto": 87
+        },
+        {
+          "id": "magia",
+          "nombre": "Magia",
+          "voto": 82
+        },
+        {
+          "id": "cultivo",
+          "nombre": "Cultivo",
+          "voto": 79
+        },
+        {
+          "id": "viajes",
+          "nombre": "Viajes",
+          "voto": 78
+        },
+        {
+          "id": "politica",
+          "nombre": "Política",
+          "voto": 76
+        },
+        {
+          "id": "opera-espacial",
+          "nombre": "Ópera espacial",
+          "voto": 71
+        },
+        {
+          "id": "artes-marciales",
+          "nombre": "Artes marciales",
+          "voto": 70
+        },
+        {
+          "id": "antiheroe",
+          "nombre": "Antihéroe",
+          "voto": 70
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 105398,
+          "titulo": "Solo Leveling",
+          "tipo": "manhwa",
+          "votos": 775,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx105398-b673Vt5ZSuz3.jpg"
+        },
+        {
+          "anilist": 85141,
+          "titulo": "The God of High School",
+          "tipo": "manhwa",
+          "votos": 137,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx85141-qHR957V3FVco.png"
+        },
+        {
+          "anilist": 30026,
+          "titulo": "Hunter x Hunter",
+          "tipo": "manga",
+          "votos": 133,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30026-uCvXMudMzmwI.jpg"
+        },
+        {
+          "anilist": 30013,
+          "titulo": "One Piece",
+          "tipo": "manga",
+          "votos": 37,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30013-BeslEMqiPhlk.jpg"
+        },
+        {
+          "anilist": 72579,
+          "titulo": "Kubera",
+          "tipo": "manhwa",
+          "votos": 31,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx72579-wJ8bqp2Y1mHc.png"
+        },
+        {
+          "anilist": 59983,
+          "titulo": "Noblesse",
+          "tipo": "manhwa",
+          "votos": 30,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx59983-cfSjrRxuAlAD.png"
+        }
+      ],
+      "actividad": {
+        "semana": 558,
+        "leyendo": 48974,
+        "lectores": 0.0012,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0012,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "85486": {
       "puntaje": {
@@ -687,7 +1853,113 @@
       },
       "popularidad": 179796,
       "favoritos": 10956,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "superheroes",
+          "nombre": "Superhéroes",
+          "voto": 98
+        },
+        {
+          "id": "superpoderes",
+          "nombre": "Superpoderes",
+          "voto": 96
+        },
+        {
+          "id": "fantasia-urbana",
+          "nombre": "Fantasía urbana",
+          "voto": 96
+        },
+        {
+          "id": "shonen",
+          "nombre": "Shōnen",
+          "voto": 92
+        },
+        {
+          "id": "personajes-adolescentes",
+          "nombre": "Personajes adolescentes",
+          "voto": 86
+        },
+        {
+          "id": "internado",
+          "nombre": "Internado",
+          "voto": 85
+        },
+        {
+          "id": "reparto-coral",
+          "nombre": "Reparto coral",
+          "voto": 83
+        },
+        {
+          "id": "escuela",
+          "nombre": "Escuela",
+          "voto": 82
+        },
+        {
+          "id": "organizacion-criminal",
+          "nombre": "Organización criminal",
+          "voto": 82
+        },
+        {
+          "id": "conspiracion",
+          "nombre": "Conspiración",
+          "voto": 79
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 30011,
+          "titulo": "Naruto",
+          "tipo": "manga",
+          "votos": 197,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx30011-9yUF1dXWgDOx.jpg"
+        },
+        {
+          "anilist": 86123,
+          "titulo": "Black Clover",
+          "tipo": "manga",
+          "votos": 185,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx86123-Ill8uBdtvWrR.png"
+        },
+        {
+          "anilist": 74347,
+          "titulo": "One-Punch Man",
+          "tipo": "manga",
+          "votos": 149,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx74347-sZpmNJ5xLwRK.jpg"
+        },
+        {
+          "anilist": 30013,
+          "titulo": "One Piece",
+          "tipo": "manga",
+          "votos": 102,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30013-BeslEMqiPhlk.jpg"
+        },
+        {
+          "anilist": 110909,
+          "titulo": "Shy",
+          "tipo": "manga",
+          "votos": 81,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx110909-kpPCoGV3VdTE.jpg"
+        },
+        {
+          "anilist": 87216,
+          "titulo": "Demon Slayer: Kimetsu no Yaiba",
+          "tipo": "manga",
+          "votos": 73,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx87216-c9bSNVD10UuD.png"
+        }
+      ],
+      "actividad": {
+        "semana": 323,
+        "leyendo": 83163,
+        "lectores": 0.0009,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0009,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "85734": {
       "puntaje": {
@@ -741,7 +2013,113 @@
       },
       "popularidad": 39241,
       "favoritos": 2403,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "yuri",
+          "nombre": "Yuri",
+          "voto": 97
+        },
+        {
+          "id": "protagonista-femenina",
+          "nombre": "Protagonista femenina",
+          "voto": 94
+        },
+        {
+          "id": "temas-lgbtq",
+          "nombre": "Temas LGBTQ+",
+          "voto": 92
+        },
+        {
+          "id": "paso-a-la-madurez",
+          "nombre": "Paso a la madurez",
+          "voto": 85
+        },
+        {
+          "id": "humor-fisico",
+          "nombre": "Humor físico",
+          "voto": 83
+        },
+        {
+          "id": "escuela",
+          "nombre": "Escuela",
+          "voto": 82
+        },
+        {
+          "id": "iyashikei",
+          "nombre": "Iyashikei",
+          "voto": 79
+        },
+        {
+          "id": "chicas-adorables",
+          "nombre": "Chicas adorables",
+          "voto": 74
+        },
+        {
+          "id": "urbano",
+          "nombre": "Urbano",
+          "voto": 73
+        },
+        {
+          "id": "tomboy",
+          "nombre": "Tomboy",
+          "voto": 62
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 85850,
+          "titulo": "19 Tian",
+          "tipo": "manhua",
+          "votos": 218,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b85850-C9jxTZSRutBw.png"
+        },
+        {
+          "anilist": 117324,
+          "titulo": "Nan Hao Shang Feng",
+          "tipo": "manhua",
+          "votos": 120,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx117324-97mHyfJGwpBq.jpg"
+        },
+        {
+          "anilist": 112378,
+          "titulo": "She Is Also Cute Today",
+          "tipo": "manhua",
+          "votos": 117,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx112378-ufgyCtdJMXkw.png"
+        },
+        {
+          "anilist": 86231,
+          "titulo": "Magan he Danai",
+          "tipo": "manhua",
+          "votos": 34,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx86231-uRVvpP2f8M0V.png"
+        },
+        {
+          "anilist": 104728,
+          "titulo": "Lily",
+          "tipo": "manhua",
+          "votos": 32,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx104728-LPvCCO4K4lVL.png"
+        },
+        {
+          "anilist": 118269,
+          "titulo": "Soulmate",
+          "tipo": "manhua",
+          "votos": 32,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx118269-EDtI7KeGpewU.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 58,
+        "leyendo": 13578,
+        "lectores": 0.0016,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0016,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "85850": {
       "puntaje": {
@@ -795,7 +2173,113 @@
       },
       "popularidad": 26276,
       "favoritos": 2589,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "reparto-coral",
+          "nombre": "Reparto coral",
+          "voto": 96
+        },
+        {
+          "id": "humor-fisico",
+          "nombre": "Humor físico",
+          "voto": 89
+        },
+        {
+          "id": "escuela",
+          "nombre": "Escuela",
+          "voto": 88
+        },
+        {
+          "id": "paso-a-la-madurez",
+          "nombre": "Paso a la madurez",
+          "voto": 88
+        },
+        {
+          "id": "boys-love",
+          "nombre": "Boys' love",
+          "voto": 87
+        },
+        {
+          "id": "personajes-masculinos",
+          "nombre": "Personajes masculinos",
+          "voto": 84
+        },
+        {
+          "id": "personajes-adolescentes",
+          "nombre": "Personajes adolescentes",
+          "voto": 81
+        },
+        {
+          "id": "tsundere",
+          "nombre": "Tsundere",
+          "voto": 76
+        },
+        {
+          "id": "temas-lgbtq",
+          "nombre": "Temas LGBTQ+",
+          "voto": 74
+        },
+        {
+          "id": "delincuentes",
+          "nombre": "Delincuentes",
+          "voto": 74
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 85734,
+          "titulo": "Tamen De Gushi",
+          "tipo": "manhua",
+          "votos": 218,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx85734-yllpIVoPjADr.jpg"
+        },
+        {
+          "anilist": 117324,
+          "titulo": "Nan Hao Shang Feng",
+          "tipo": "manhua",
+          "votos": 170,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx117324-97mHyfJGwpBq.jpg"
+        },
+        {
+          "anilist": 100805,
+          "titulo": "Here U Are",
+          "tipo": "manhua",
+          "votos": 121,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx100805-3DCHMdZ5blWl.jpg"
+        },
+        {
+          "anilist": 100149,
+          "titulo": "Bromance",
+          "tipo": "manhua",
+          "votos": 45,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b100149-QTng4nDtArs9.jpg"
+        },
+        {
+          "anilist": 132954,
+          "titulo": "Salt Friend",
+          "tipo": "manhua",
+          "votos": 26,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx132954-BgvVmKUY2kq2.jpg"
+        },
+        {
+          "anilist": 113352,
+          "titulo": "Gu Shi Yu Ni: 300 Tian",
+          "tipo": "manhua",
+          "votos": 18,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx113352-Fm2aEfwFMDuA.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 201,
+        "leyendo": 13600,
+        "lectores": 0.0017,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0017,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "86707": {
       "puntaje": {
@@ -845,7 +2329,113 @@
       },
       "popularidad": 32430,
       "favoritos": 1917,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "wuxia",
+          "nombre": "Wuxia",
+          "voto": 92
+        },
+        {
+          "id": "cultivo",
+          "nombre": "Cultivo",
+          "voto": 91
+        },
+        {
+          "id": "regresion-de-edad",
+          "nombre": "Regresión de edad",
+          "voto": 90
+        },
+        {
+          "id": "artes-marciales",
+          "nombre": "Artes marciales",
+          "voto": 85
+        },
+        {
+          "id": "superpoderes",
+          "nombre": "Superpoderes",
+          "voto": 73
+        },
+        {
+          "id": "civilizacion-perdida",
+          "nombre": "Civilización perdida",
+          "voto": 73
+        },
+        {
+          "id": "politica",
+          "nombre": "Política",
+          "voto": 70
+        },
+        {
+          "id": "haren",
+          "nombre": "Harén",
+          "voto": 68
+        },
+        {
+          "id": "dioses",
+          "nombre": "Dioses",
+          "voto": 66
+        },
+        {
+          "id": "paso-a-la-madurez",
+          "nombre": "Paso a la madurez",
+          "voto": 66
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 104494,
+          "titulo": "Martial Peak",
+          "tipo": "manhua",
+          "votos": 111,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx104494-xmWuGEwxzbfB.jpg"
+        },
+        {
+          "anilist": 97884,
+          "titulo": "Astral Sutra",
+          "tipo": "manhua",
+          "votos": 88,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx97884-s7HZDAqPJNh8.jpg"
+        },
+        {
+          "anilist": 105398,
+          "titulo": "Solo Leveling",
+          "tipo": "manhwa",
+          "votos": 74,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx105398-b673Vt5ZSuz3.jpg"
+        },
+        {
+          "anilist": 101408,
+          "titulo": "Principles of Heavens: Zen’s Cultivation of Immortality",
+          "tipo": "manhua",
+          "votos": 67,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx101408-Ym79QPjdXk8F.jpg"
+        },
+        {
+          "anilist": 101418,
+          "titulo": "Hwasanjeonsaeng",
+          "tipo": "manhwa",
+          "votos": 39,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx101418-YMJ7vXuXyZ1q.png"
+        },
+        {
+          "anilist": 85453,
+          "titulo": "Battle Through the Heavens",
+          "tipo": "manhua",
+          "votos": 37,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx85453-LTk6GztEMFaK.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 623,
+        "leyendo": 20210,
+        "lectores": 0.0013,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0013,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "86848": {
       "puntaje": {
@@ -899,7 +2489,113 @@
       },
       "popularidad": 47169,
       "favoritos": 3077,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "pandillas",
+          "nombre": "Pandillas",
+          "voto": 95
+        },
+        {
+          "id": "delincuentes",
+          "nombre": "Delincuentes",
+          "voto": 93
+        },
+        {
+          "id": "artes-marciales",
+          "nombre": "Artes marciales",
+          "voto": 90
+        },
+        {
+          "id": "reparto-coral",
+          "nombre": "Reparto coral",
+          "voto": 88
+        },
+        {
+          "id": "paso-a-la-madurez",
+          "nombre": "Paso a la madurez",
+          "voto": 85
+        },
+        {
+          "id": "escuela",
+          "nombre": "Escuela",
+          "voto": 80
+        },
+        {
+          "id": "ejercicio",
+          "nombre": "Ejercicio",
+          "voto": 80
+        },
+        {
+          "id": "acoso-escolar",
+          "nombre": "Acoso escolar",
+          "voto": 79
+        },
+        {
+          "id": "comedia-absurda",
+          "nombre": "Comedia absurda",
+          "voto": 75
+        },
+        {
+          "id": "boxeo",
+          "nombre": "Boxeo",
+          "voto": 62
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 121991,
+          "titulo": "Viral Hit",
+          "tipo": "manhwa",
+          "votos": 98,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b121991-hwrVszteyodi.jpg"
+        },
+        {
+          "anilist": 113488,
+          "titulo": "Weak Hero",
+          "tipo": "manhwa",
+          "votos": 51,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx113488-0ghq0eEnftk0.jpg"
+        },
+        {
+          "anilist": 86099,
+          "titulo": "Wind Breaker",
+          "tipo": "manhwa",
+          "votos": 46,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx86099-lgjjEP3wqzB8.jpg"
+        },
+        {
+          "anilist": 126297,
+          "titulo": "Teenage Mercenary",
+          "tipo": "manhwa",
+          "votos": 20,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx126297-SPiM7QtUnJ4P.jpg"
+        },
+        {
+          "anilist": 141626,
+          "titulo": "Manager Kim",
+          "tipo": "manhwa",
+          "votos": 19,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx141626-2AQM2uUYS8wC.jpg"
+        },
+        {
+          "anilist": 110472,
+          "titulo": "Study Group",
+          "tipo": "manhwa",
+          "votos": 12,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx110472-jxJG7CZ3lf4d.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 1714,
+        "leyendo": 25458,
+        "lectores": 0.0026,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0026,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "86964": {
       "puntaje": {
@@ -953,7 +2649,113 @@
       },
       "popularidad": 78047,
       "favoritos": 4527,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "crimen",
+          "nombre": "Crimen",
+          "voto": 90
+        },
+        {
+          "id": "gore",
+          "nombre": "Gore",
+          "voto": 87
+        },
+        {
+          "id": "acoso-escolar",
+          "nombre": "Acoso escolar",
+          "voto": 86
+        },
+        {
+          "id": "antiheroe",
+          "nombre": "Antihéroe",
+          "voto": 85
+        },
+        {
+          "id": "paso-a-la-madurez",
+          "nombre": "Paso a la madurez",
+          "voto": 82
+        },
+        {
+          "id": "discapacidad",
+          "nombre": "Discapacidad",
+          "voto": 80
+        },
+        {
+          "id": "noir",
+          "nombre": "Noir",
+          "voto": 79
+        },
+        {
+          "id": "delincuentes",
+          "nombre": "Delincuentes",
+          "voto": 73
+        },
+        {
+          "id": "filosofia",
+          "nombre": "Filosofía",
+          "voto": 71
+        },
+        {
+          "id": "asesinos",
+          "nombre": "Asesinos",
+          "voto": 60
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 100954,
+          "titulo": "Sweet Home",
+          "tipo": "manhwa",
+          "votos": 323,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx100954-xY0Vw2sRRo8t.png"
+        },
+        {
+          "anilist": 130229,
+          "titulo": "Shotgun Boy",
+          "tipo": "manhwa",
+          "votos": 68,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx130229-w8eYyQnAaPh8.jpg"
+        },
+        {
+          "anilist": 108952,
+          "titulo": "PIGPEN",
+          "tipo": "manhwa",
+          "votos": 59,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx108952-wHZSxlOQxmxQ.jpg"
+        },
+        {
+          "anilist": 98397,
+          "titulo": "Blood on the Tracks",
+          "tipo": "manga",
+          "votos": 50,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx98397-5b3kSYyw7ykd.jpg"
+        },
+        {
+          "anilist": 139640,
+          "titulo": "Like Mother, Like Daughter",
+          "tipo": "manhwa",
+          "votos": 13,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx139640-06BwudBIp6JK.png"
+        },
+        {
+          "anilist": 98569,
+          "titulo": "An Uncomfortable Truth",
+          "tipo": "manhwa",
+          "votos": 12,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/98569-DHvGrt3RrRXH.png"
+        }
+      ],
+      "actividad": {
+        "semana": 117,
+        "leyendo": 5227,
+        "lectores": 0.0012,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0012,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "87216": {
       "puntaje": {
@@ -1008,12 +2810,94 @@
           "arte"
         ],
         "critican": [
+          "historia",
           "ritmo"
         ]
       },
       "popularidad": 212827,
       "favoritos": 14753,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "demonios",
+          "nombre": "Demonios",
+          "voto": 97
+        },
+        {
+          "id": "shonen",
+          "nombre": "Shōnen",
+          "voto": 93
+        },
+        {
+          "id": "espadas",
+          "nombre": "Espadas",
+          "voto": 92
+        },
+        {
+          "id": "venganza",
+          "nombre": "Venganza",
+          "voto": 76
+        },
+        {
+          "id": "historico",
+          "nombre": "Histórico",
+          "voto": 62
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 101517,
+          "titulo": "Jujutsu Kaisen",
+          "tipo": "manga",
+          "votos": 249,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx101517-H3TdM3g5ZUe9.jpg"
+        },
+        {
+          "anilist": 100994,
+          "titulo": "Hell’s Paradise: Jigokuraku",
+          "tipo": "manga",
+          "votos": 150,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx100994-f6CMjiQQNVeS.png"
+        },
+        {
+          "anilist": 30022,
+          "titulo": "Rurouni Kenshin",
+          "tipo": "manga",
+          "votos": 121,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30022-jxTlViun1o10.jpg"
+        },
+        {
+          "anilist": 30012,
+          "titulo": "Bleach",
+          "tipo": "manga",
+          "votos": 106,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30012-1epmVfTSv2rr.png"
+        },
+        {
+          "anilist": 169355,
+          "titulo": "Kagurabachi",
+          "tipo": "manga",
+          "votos": 106,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx169355-5pqzh1Wb4NOQ.png"
+        },
+        {
+          "anilist": 85486,
+          "titulo": "My Hero Academia",
+          "tipo": "manga",
+          "votos": 73,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx85486-INqnYx8gL3eX.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 341,
+        "leyendo": 36324,
+        "lectores": 0.0013,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0013,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "87423": {
       "puntaje": {
@@ -1065,13 +2949,121 @@
         "elogian": [
           "personajes",
           "historia",
-          "final"
+          "accion"
         ],
-        "critican": []
+        "critican": [
+          "final"
+        ]
       },
       "popularidad": 135116,
       "favoritos": 8603,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "personajes-infantiles",
+          "nombre": "Personajes infantiles",
+          "voto": 92
+        },
+        {
+          "id": "horror-corporal",
+          "nombre": "Horror corporal",
+          "voto": 91
+        },
+        {
+          "id": "familia-elegida",
+          "nombre": "Familia elegida",
+          "voto": 88
+        },
+        {
+          "id": "paso-a-la-madurez",
+          "nombre": "Paso a la madurez",
+          "voto": 80
+        },
+        {
+          "id": "protagonista-femenina",
+          "nombre": "Protagonista femenina",
+          "voto": 78
+        },
+        {
+          "id": "shonen",
+          "nombre": "Shōnen",
+          "voto": 76
+        },
+        {
+          "id": "viajes",
+          "nombre": "Viajes",
+          "voto": 76
+        },
+        {
+          "id": "reparto-coral",
+          "nombre": "Reparto coral",
+          "voto": 72
+        },
+        {
+          "id": "gore",
+          "nombre": "Gore",
+          "voto": 64
+        },
+        {
+          "id": "filosofia",
+          "nombre": "Filosofía",
+          "voto": 64
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 53390,
+          "titulo": "Attack on Titan",
+          "tipo": "manga",
+          "votos": 268,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx53390-1RsuABC34P9D.jpg"
+        },
+        {
+          "anilist": 86551,
+          "titulo": "Made in Abyss",
+          "tipo": "manga",
+          "votos": 208,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx86551-0EzmsMZiPSu9.jpg"
+        },
+        {
+          "anilist": 104063,
+          "titulo": "Shadows House",
+          "tipo": "manga",
+          "votos": 162,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx104063-Fdhg8NQ7IOG0.png"
+        },
+        {
+          "anilist": 101942,
+          "titulo": "Heavenly Delusion",
+          "tipo": "manga",
+          "votos": 97,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx101942-yjslDpT6XcpK.jpg"
+        },
+        {
+          "anilist": 30021,
+          "titulo": "Death Note",
+          "tipo": "manga",
+          "votos": 74,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30021-FE6kmrfpuKyb.jpg"
+        },
+        {
+          "anilist": 107265,
+          "titulo": "Soloist in a Cage",
+          "tipo": "manga",
+          "votos": 58,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx107265-vF38eopuaM5p.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 271,
+        "leyendo": 26653,
+        "lectores": 0.0013,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0013,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "100568": {
       "puntaje": {
@@ -1125,11 +3117,120 @@
           "arte",
           "personajes"
         ],
-        "critican": []
+        "critican": [
+          "accion",
+          "final"
+        ]
       },
       "popularidad": 65833,
       "favoritos": 4489,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "supervivencia",
+          "nombre": "Supervivencia",
+          "voto": 98
+        },
+        {
+          "id": "filosofia",
+          "nombre": "Filosofía",
+          "voto": 92
+        },
+        {
+          "id": "postapocaliptico",
+          "nombre": "Postapocalíptico",
+          "voto": 92
+        },
+        {
+          "id": "religion",
+          "nombre": "Religión",
+          "voto": 88
+        },
+        {
+          "id": "paso-a-la-madurez",
+          "nombre": "Paso a la madurez",
+          "voto": 82
+        },
+        {
+          "id": "personajes-infantiles",
+          "nombre": "Personajes infantiles",
+          "voto": 80
+        },
+        {
+          "id": "crimen",
+          "nombre": "Crimen",
+          "voto": 79
+        },
+        {
+          "id": "viajes",
+          "nombre": "Viajes",
+          "voto": 79
+        },
+        {
+          "id": "huerfanos",
+          "nombre": "Huérfanos",
+          "voto": 70
+        },
+        {
+          "id": "armas-de-fuego",
+          "nombre": "Armas de fuego",
+          "voto": 66
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 85412,
+          "titulo": "Girls' Last Tour",
+          "tipo": "manga",
+          "votos": 81,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx85412-wzZ2QFwbZJED.jpg"
+        },
+        {
+          "anilist": 34632,
+          "titulo": "Goodnight Punpun",
+          "tipo": "manga",
+          "votos": 40,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx34632-5xMDkx3pXsEh.png"
+        },
+        {
+          "anilist": 85879,
+          "titulo": "Distant Sky",
+          "tipo": "manhwa",
+          "votos": 27,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b85879-VEUOpQa0zd2q.jpg"
+        },
+        {
+          "anilist": 80027,
+          "titulo": "About Death",
+          "tipo": "manhwa",
+          "votos": 19,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx80027-RtAvQ2CGx3I9.jpg"
+        },
+        {
+          "anilist": 188768,
+          "titulo": "Footsteps in the Snow",
+          "tipo": "manhwa",
+          "votos": 12,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx188768-ymuDlEFS08vj.jpg"
+        },
+        {
+          "anilist": 100567,
+          "titulo": "Neoege Hago Sipeun Mal",
+          "tipo": "manhwa",
+          "votos": 11,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx100567-mxrcdpsBfBHA.png"
+        }
+      ],
+      "actividad": {
+        "semana": 156,
+        "leyendo": 3391,
+        "lectores": 0.0021,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0021,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "100805": {
       "puntaje": {
@@ -1183,7 +3284,103 @@
       },
       "popularidad": 30753,
       "favoritos": 2524,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "boys-love",
+          "nombre": "Boys' love",
+          "voto": 97
+        },
+        {
+          "id": "temas-lgbtq",
+          "nombre": "Temas LGBTQ+",
+          "voto": 90
+        },
+        {
+          "id": "personajes-masculinos",
+          "nombre": "Personajes masculinos",
+          "voto": 88
+        },
+        {
+          "id": "universidad",
+          "nombre": "Universidad",
+          "voto": 79
+        },
+        {
+          "id": "personajes-adultos",
+          "nombre": "Personajes adultos",
+          "voto": 79
+        },
+        {
+          "id": "personajes-bisexuales",
+          "nombre": "Personajes bisexuales",
+          "voto": 78
+        },
+        {
+          "id": "tsundere",
+          "nombre": "Tsundere",
+          "voto": 64
+        },
+        {
+          "id": "escuela",
+          "nombre": "Escuela",
+          "voto": 63
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 85850,
+          "titulo": "19 Tian",
+          "tipo": "manhua",
+          "votos": 121,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b85850-C9jxTZSRutBw.png"
+        },
+        {
+          "anilist": 87347,
+          "titulo": "Given",
+          "tipo": "manga",
+          "votos": 85,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx87347-GOCU76cl37dK.png"
+        },
+        {
+          "anilist": 109384,
+          "titulo": "Cong Huang Yan Kai Shi",
+          "tipo": "manhua",
+          "votos": 71,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx109384-GJHvD8YJSVDC.png"
+        },
+        {
+          "anilist": 113350,
+          "titulo": "Pirouette into My Heart",
+          "tipo": "manhua",
+          "votos": 49,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx113350-8dSb0i5DjScf.jpg"
+        },
+        {
+          "anilist": 98561,
+          "titulo": "Fools: Original",
+          "tipo": "manhwa",
+          "votos": 22,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx98561-GlIvLcXEJ64R.jpg"
+        },
+        {
+          "anilist": 124156,
+          "titulo": "Engraved on My Heart",
+          "tipo": "manhua",
+          "votos": 21,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b124156-JzgroDGautHq.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 66,
+        "leyendo": 4259,
+        "lectores": 0.0011,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0011,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "100954": {
       "puntaje": {
@@ -1237,7 +3434,88 @@
       },
       "popularidad": 56796,
       "favoritos": 3198,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "supervivencia",
+          "nombre": "Supervivencia",
+          "voto": 96
+        },
+        {
+          "id": "paso-a-la-madurez",
+          "nombre": "Paso a la madurez",
+          "voto": 85
+        },
+        {
+          "id": "gore",
+          "nombre": "Gore",
+          "voto": 79
+        },
+        {
+          "id": "filosofia",
+          "nombre": "Filosofía",
+          "voto": 79
+        },
+        {
+          "id": "hikikomori",
+          "nombre": "Hikikomori",
+          "voto": 63
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 86964,
+          "titulo": "Bastard",
+          "tipo": "manhwa",
+          "votos": 323,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b86964-vTdn1Esqw3va.jpg"
+        },
+        {
+          "anilist": 108952,
+          "titulo": "PIGPEN",
+          "tipo": "manhwa",
+          "votos": 55,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx108952-wHZSxlOQxmxQ.jpg"
+        },
+        {
+          "anilist": 85879,
+          "titulo": "Distant Sky",
+          "tipo": "manhwa",
+          "votos": 20,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b85879-VEUOpQa0zd2q.jpg"
+        },
+        {
+          "anilist": 128963,
+          "titulo": "Surviving Romance",
+          "tipo": "manhwa",
+          "votos": 20,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx128963-LbQG8jCTeBtj.jpg"
+        },
+        {
+          "anilist": 85143,
+          "titulo": "Tower of God",
+          "tipo": "manhwa",
+          "votos": 18,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx85143-23oup3ETbFJk.jpg"
+        },
+        {
+          "anilist": 126348,
+          "titulo": "All of Us Are Dead",
+          "tipo": "manhwa",
+          "votos": 9,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b126348-bB6q7AflI5Of.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 191,
+        "leyendo": 7012,
+        "lectores": 0.0017,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0017,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "101517": {
       "puntaje": {
@@ -1287,18 +3565,124 @@
         "mixtas": 5,
         "wilson": 0.523,
         "elogian": [
-          "personajes",
-          "historia",
-          "accion"
+          "accion",
+          "arte"
         ],
         "critican": [
-          "ritmo",
-          "final"
+          "personajes",
+          "historia",
+          "ritmo"
         ]
       },
       "popularidad": 257188,
       "favoritos": 24014,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "fantasia-urbana",
+          "nombre": "Fantasía urbana",
+          "voto": 97
+        },
+        {
+          "id": "demonios",
+          "nombre": "Demonios",
+          "voto": 93
+        },
+        {
+          "id": "superpoderes",
+          "nombre": "Superpoderes",
+          "voto": 93
+        },
+        {
+          "id": "shonen",
+          "nombre": "Shōnen",
+          "voto": 91
+        },
+        {
+          "id": "maldiciones",
+          "nombre": "Maldiciones",
+          "voto": 90
+        },
+        {
+          "id": "yokai",
+          "nombre": "Yōkai",
+          "voto": 87
+        },
+        {
+          "id": "chico-monstruo",
+          "nombre": "Chico monstruo",
+          "voto": 86
+        },
+        {
+          "id": "magia",
+          "nombre": "Magia",
+          "voto": 83
+        },
+        {
+          "id": "artes-marciales",
+          "nombre": "Artes marciales",
+          "voto": 79
+        },
+        {
+          "id": "horror-corporal",
+          "nombre": "Horror corporal",
+          "voto": 77
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 105778,
+          "titulo": "Chainsaw Man",
+          "tipo": "manga",
+          "votos": 3073,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx105778-euxXZEIfDY2u.png"
+        },
+        {
+          "anilist": 30012,
+          "titulo": "Bleach",
+          "tipo": "manga",
+          "votos": 554,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30012-1epmVfTSv2rr.png"
+        },
+        {
+          "anilist": 100994,
+          "titulo": "Hell’s Paradise: Jigokuraku",
+          "tipo": "manga",
+          "votos": 458,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx100994-f6CMjiQQNVeS.png"
+        },
+        {
+          "anilist": 30026,
+          "titulo": "Hunter x Hunter",
+          "tipo": "manga",
+          "votos": 319,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30026-uCvXMudMzmwI.jpg"
+        },
+        {
+          "anilist": 87216,
+          "titulo": "Demon Slayer: Kimetsu no Yaiba",
+          "tipo": "manga",
+          "votos": 249,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx87216-c9bSNVD10UuD.png"
+        },
+        {
+          "anilist": 30053,
+          "titulo": "Yu Yu Hakusho",
+          "tipo": "manga",
+          "votos": 146,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30053-wCR6xyGzeUYo.png"
+        }
+      ],
+      "actividad": {
+        "semana": 1023,
+        "leyendo": 113158,
+        "lectores": 0.0016,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0016,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "105393": {
       "puntaje": {
@@ -1352,7 +3736,108 @@
       },
       "popularidad": 51207,
       "favoritos": 1962,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "magia",
+          "nombre": "Magia",
+          "voto": 98
+        },
+        {
+          "id": "civilizacion-perdida",
+          "nombre": "Civilización perdida",
+          "voto": 96
+        },
+        {
+          "id": "regresion-de-edad",
+          "nombre": "Regresión de edad",
+          "voto": 85
+        },
+        {
+          "id": "escuela",
+          "nombre": "Escuela",
+          "voto": 80
+        },
+        {
+          "id": "guerra",
+          "nombre": "Guerra",
+          "voto": 80
+        },
+        {
+          "id": "espadas",
+          "nombre": "Espadas",
+          "voto": 79
+        },
+        {
+          "id": "demonios",
+          "nombre": "Demonios",
+          "voto": 76
+        },
+        {
+          "id": "historico",
+          "nombre": "Histórico",
+          "voto": 74
+        },
+        {
+          "id": "mazmorras",
+          "nombre": "Mazmorras",
+          "voto": 70
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 105398,
+          "titulo": "Solo Leveling",
+          "tipo": "manhwa",
+          "votos": 277,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx105398-b673Vt5ZSuz3.jpg"
+        },
+        {
+          "anilist": 119257,
+          "titulo": "Omniscient Reader",
+          "tipo": "manhwa",
+          "votos": 109,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx119257-Pi21aq3ey9GG.jpg"
+        },
+        {
+          "anilist": 118424,
+          "titulo": "The Archmage Returns After 4000 Years",
+          "tipo": "manhwa",
+          "votos": 78,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx118424-JbTApgnIP1ON.jpg"
+        },
+        {
+          "anilist": 114605,
+          "titulo": "Latna Saga: Survival of a Sword King",
+          "tipo": "manhwa",
+          "votos": 41,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx114605-MYUWMsdjry6m.jpg"
+        },
+        {
+          "anilist": 86707,
+          "titulo": "Tales of Demons and Gods",
+          "tipo": "manhua",
+          "votos": 15,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx86707-QD3UyAOHUEaT.jpg"
+        },
+        {
+          "anilist": 112197,
+          "titulo": "Medical Hwansaeng",
+          "tipo": "manhwa",
+          "votos": 12,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx112197-XU4bF5n9YW1e.png"
+        }
+      ],
+      "actividad": {
+        "semana": 596,
+        "leyendo": 24386,
+        "lectores": 0.0019,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0019,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "105398": {
       "puntaje": {
@@ -1402,18 +3887,125 @@
         "mixtas": 5,
         "wilson": 0.524,
         "elogian": [
-          "personajes",
           "accion",
-          "arte"
+          "arte",
+          "ritmo"
         ],
         "critican": [
-          "mundo",
-          "ritmo"
+          "historia",
+          "personajes",
+          "mundo"
         ]
       },
       "popularidad": 289347,
       "favoritos": 33052,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "mazmorras",
+          "nombre": "Mazmorras",
+          "voto": 95
+        },
+        {
+          "id": "superpoderes",
+          "nombre": "Superpoderes",
+          "voto": 92
+        },
+        {
+          "id": "nigromancia",
+          "nombre": "Nigromancia",
+          "voto": 87
+        },
+        {
+          "id": "magia",
+          "nombre": "Magia",
+          "voto": 86
+        },
+        {
+          "id": "fantasia-urbana",
+          "nombre": "Fantasía urbana",
+          "voto": 84
+        },
+        {
+          "id": "doma-de-criaturas",
+          "nombre": "Doma de criaturas",
+          "voto": 79
+        },
+        {
+          "id": "personajes-adultos",
+          "nombre": "Personajes adultos",
+          "voto": 68
+        },
+        {
+          "id": "politica",
+          "nombre": "Política",
+          "voto": 65
+        },
+        {
+          "id": "postapocaliptico",
+          "nombre": "Postapocalíptico",
+          "voto": 64
+        },
+        {
+          "id": "demonios",
+          "nombre": "Demonios",
+          "voto": 64
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 119257,
+          "titulo": "Omniscient Reader",
+          "tipo": "manhwa",
+          "votos": 1378,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx119257-Pi21aq3ey9GG.jpg"
+        },
+        {
+          "anilist": 85143,
+          "titulo": "Tower of God",
+          "tipo": "manhwa",
+          "votos": 775,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx85143-23oup3ETbFJk.jpg"
+        },
+        {
+          "anilist": 109957,
+          "titulo": "Second Life Ranker",
+          "tipo": "manhwa",
+          "votos": 382,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx109957-EgJWdR7l9TBG.jpg"
+        },
+        {
+          "anilist": 105393,
+          "titulo": "A Returner's Magic Should Be Special",
+          "tipo": "manhwa",
+          "votos": 277,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx105393-oiHumQoBGKG5.jpg"
+        },
+        {
+          "anilist": 128067,
+          "titulo": "SSS-Class Revival Hunter",
+          "tipo": "manhwa",
+          "votos": 211,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx128067-wnLBg6Cy1ncs.jpg"
+        },
+        {
+          "anilist": 110462,
+          "titulo": "Tomb Raider King",
+          "tipo": "manhwa",
+          "votos": 162,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx110462-okQFIoSFvb4L.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 856,
+        "leyendo": 84253,
+        "lectores": 0.0016,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0016,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "105778": {
       "puntaje": {
@@ -1463,15 +4055,123 @@
         "mixtas": 7,
         "wilson": 0.694,
         "elogian": [
-          "personajes",
           "historia",
-          "accion"
+          "accion",
+          "arte"
         ],
-        "critican": []
+        "critican": [
+          "final"
+        ]
       },
       "popularidad": 337640,
       "favoritos": 48404,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "demonios",
+          "nombre": "Demonios",
+          "voto": 96
+        },
+        {
+          "id": "fantasia-urbana",
+          "nombre": "Fantasía urbana",
+          "voto": 92
+        },
+        {
+          "id": "paso-a-la-madurez",
+          "nombre": "Paso a la madurez",
+          "voto": 90
+        },
+        {
+          "id": "gore",
+          "nombre": "Gore",
+          "voto": 88
+        },
+        {
+          "id": "horror-corporal",
+          "nombre": "Horror corporal",
+          "voto": 88
+        },
+        {
+          "id": "transformaciones",
+          "nombre": "Transformaciones",
+          "voto": 85
+        },
+        {
+          "id": "urbano",
+          "nombre": "Urbano",
+          "voto": 84
+        },
+        {
+          "id": "chico-monstruo",
+          "nombre": "Chico monstruo",
+          "voto": 84
+        },
+        {
+          "id": "familia-elegida",
+          "nombre": "Familia elegida",
+          "voto": 82
+        },
+        {
+          "id": "supervivencia",
+          "nombre": "Supervivencia",
+          "voto": 82
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 101517,
+          "titulo": "Jujutsu Kaisen",
+          "tipo": "manga",
+          "votos": 3073,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx101517-H3TdM3g5ZUe9.jpg"
+        },
+        {
+          "anilist": 87170,
+          "titulo": "Fire Punch",
+          "tipo": "manga",
+          "votos": 1607,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx87170-nyuwcN7rU4pc.jpg"
+        },
+        {
+          "anilist": 31133,
+          "titulo": "Dorohedoro",
+          "tipo": "manga",
+          "votos": 1309,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx31133-Jx6map3Oidz1.png"
+        },
+        {
+          "anilist": 132029,
+          "titulo": "Dandadan",
+          "tipo": "manga",
+          "votos": 834,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx132029-prGF4gePdSKv.jpg"
+        },
+        {
+          "anilist": 100994,
+          "titulo": "Hell’s Paradise: Jigokuraku",
+          "tipo": "manga",
+          "votos": 660,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx100994-f6CMjiQQNVeS.png"
+        },
+        {
+          "anilist": 120760,
+          "titulo": "Kaiju No.8",
+          "tipo": "manga",
+          "votos": 313,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx120760-MtXvMgujLBpe.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 1342,
+        "leyendo": 134931,
+        "lectores": 0.0017,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0017,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "106130": {
       "puntaje": {
@@ -1525,7 +4225,108 @@
       },
       "popularidad": 127106,
       "favoritos": 11268,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "atletismo",
+          "nombre": "Atletismo",
+          "voto": 92
+        },
+        {
+          "id": "battle-royale",
+          "nombre": "Battle royale",
+          "voto": 91
+        },
+        {
+          "id": "personajes-masculinos",
+          "nombre": "Personajes masculinos",
+          "voto": 90
+        },
+        {
+          "id": "personajes-adolescentes",
+          "nombre": "Personajes adolescentes",
+          "voto": 90
+        },
+        {
+          "id": "reparto-coral",
+          "nombre": "Reparto coral",
+          "voto": 85
+        },
+        {
+          "id": "shonen",
+          "nombre": "Shōnen",
+          "voto": 84
+        },
+        {
+          "id": "futbol",
+          "nombre": "Fútbol",
+          "voto": 80
+        },
+        {
+          "id": "ejercicio",
+          "nombre": "Ejercicio",
+          "voto": 73
+        },
+        {
+          "id": "antiheroe",
+          "nombre": "Antihéroe",
+          "voto": 72
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 65243,
+          "titulo": "Haikyu!!",
+          "tipo": "manga",
+          "votos": 158,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx65243-mR4MnJFmfaOF.png"
+        },
+        {
+          "anilist": 107279,
+          "titulo": "Aoashi",
+          "tipo": "manga",
+          "votos": 143,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx107279-R2vxyPQRqV0X.jpg"
+        },
+        {
+          "anilist": 41652,
+          "titulo": "Kuroko's Basketball",
+          "tipo": "manga",
+          "votos": 127,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx41652-GXnIbmI4lUoM.png"
+        },
+        {
+          "anilist": 85911,
+          "titulo": "Tomodachi Game",
+          "tipo": "manga",
+          "votos": 41,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx85911-Z6xE67IxevPA.jpg"
+        },
+        {
+          "anilist": 49315,
+          "titulo": "Inazuma Eleven",
+          "tipo": "manga",
+          "votos": 35,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx49315-2AqZShRMXyfx.png"
+        },
+        {
+          "anilist": 31789,
+          "titulo": "Captain Tsubasa",
+          "tipo": "manga",
+          "votos": 20,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx31789-qiNlHJDMJncz.png"
+        }
+      ],
+      "actividad": {
+        "semana": 4475,
+        "leyendo": 76569,
+        "lectores": 0.0024,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0024,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "106929": {
       "puntaje": {
@@ -1579,7 +4380,103 @@
       },
       "popularidad": 47936,
       "favoritos": 4251,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "fantasia-urbana",
+          "nombre": "Fantasía urbana",
+          "voto": 97
+        },
+        {
+          "id": "superpoderes",
+          "nombre": "Superpoderes",
+          "voto": 96
+        },
+        {
+          "id": "cultivo",
+          "nombre": "Cultivo",
+          "voto": 81
+        },
+        {
+          "id": "familia-elegida",
+          "nombre": "Familia elegida",
+          "voto": 79
+        },
+        {
+          "id": "personajes-masculinos",
+          "nombre": "Personajes masculinos",
+          "voto": 78
+        },
+        {
+          "id": "animales",
+          "nombre": "Animales",
+          "voto": 78
+        },
+        {
+          "id": "personajes-adolescentes",
+          "nombre": "Personajes adolescentes",
+          "voto": 76
+        },
+        {
+          "id": "humor-fisico",
+          "nombre": "Humor físico",
+          "voto": 68
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 59983,
+          "titulo": "Noblesse",
+          "tipo": "manhwa",
+          "votos": 53,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx59983-cfSjrRxuAlAD.png"
+        },
+        {
+          "anilist": 38586,
+          "titulo": "THE BREAKER",
+          "tipo": "manhwa",
+          "votos": 29,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx38586-F697FlJkHF9z.jpg"
+        },
+        {
+          "anilist": 105398,
+          "titulo": "Solo Leveling",
+          "tipo": "manhwa",
+          "votos": 28,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx105398-b673Vt5ZSuz3.jpg"
+        },
+        {
+          "anilist": 130149,
+          "titulo": "Villain to Kill",
+          "tipo": "manhwa",
+          "votos": 18,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b130149-y63hveWF28Sb.jpg"
+        },
+        {
+          "anilist": 126297,
+          "titulo": "Teenage Mercenary",
+          "tipo": "manhwa",
+          "votos": 18,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx126297-SPiM7QtUnJ4P.jpg"
+        },
+        {
+          "anilist": 75275,
+          "titulo": "Girls of the Wild's",
+          "tipo": "manhwa",
+          "votos": 8,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b75275-6sw70Ah3Y94V.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 3407,
+        "leyendo": 29548,
+        "lectores": 0.0036,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0036,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "108556": {
       "puntaje": {
@@ -1633,7 +4530,113 @@
       },
       "popularidad": 161469,
       "favoritos": 12306,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "vida-familiar",
+          "nombre": "Vida familiar",
+          "voto": 97
+        },
+        {
+          "id": "espionaje",
+          "nombre": "Espionaje",
+          "voto": 96
+        },
+        {
+          "id": "familia-elegida",
+          "nombre": "Familia elegida",
+          "voto": 91
+        },
+        {
+          "id": "guerra",
+          "nombre": "Guerra",
+          "voto": 86
+        },
+        {
+          "id": "asesinos",
+          "nombre": "Asesinos",
+          "voto": 83
+        },
+        {
+          "id": "protagonista-femenina",
+          "nombre": "Protagonista femenina",
+          "voto": 82
+        },
+        {
+          "id": "relacion-falsa",
+          "nombre": "Relación falsa",
+          "voto": 82
+        },
+        {
+          "id": "comedia-absurda",
+          "nombre": "Comedia absurda",
+          "voto": 82
+        },
+        {
+          "id": "adopcion",
+          "nombre": "Adopción",
+          "voto": 82
+        },
+        {
+          "id": "trabajo",
+          "nombre": "Trabajo",
+          "voto": 82
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 86635,
+          "titulo": "Kaguya-sama: Love is War",
+          "tipo": "manga",
+          "votos": 637,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx86635-EdaLQmsn86Fy.png"
+        },
+        {
+          "anilist": 101233,
+          "titulo": "The Way of the Househusband",
+          "tipo": "manga",
+          "votos": 355,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx101233-ipG2rYitNxyd.jpg"
+        },
+        {
+          "anilist": 125828,
+          "titulo": "Sakamoto Days",
+          "tipo": "manga",
+          "votos": 315,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx125828-p78Z8SflkfmO.jpg"
+        },
+        {
+          "anilist": 66413,
+          "titulo": "Hinamatsuri",
+          "tipo": "manga",
+          "votos": 188,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx66413-MHIcMzhhOCjd.jpg"
+        },
+        {
+          "anilist": 111149,
+          "titulo": "Mission: Yozakura Family",
+          "tipo": "manga",
+          "votos": 142,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx111149-cHYBsPbWIb3L.jpg"
+        },
+        {
+          "anilist": 99435,
+          "titulo": "Love of Kill",
+          "tipo": "manga",
+          "votos": 70,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx99435-2C3AHOj8beZq.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 1353,
+        "leyendo": 91871,
+        "lectores": 0.0012,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0012,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "112275": {
       "puntaje": {
@@ -1683,7 +4686,113 @@
       },
       "popularidad": 20283,
       "favoritos": 1869,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "dioses",
+          "nombre": "Dioses",
+          "voto": 93
+        },
+        {
+          "id": "boys-love",
+          "nombre": "Boys' love",
+          "voto": 90
+        },
+        {
+          "id": "historico",
+          "nombre": "Histórico",
+          "voto": 87
+        },
+        {
+          "id": "cultivo",
+          "nombre": "Cultivo",
+          "voto": 82
+        },
+        {
+          "id": "wuxia",
+          "nombre": "Wuxia",
+          "voto": 82
+        },
+        {
+          "id": "temas-lgbtq",
+          "nombre": "Temas LGBTQ+",
+          "voto": 81
+        },
+        {
+          "id": "demonios",
+          "nombre": "Demonios",
+          "voto": 80
+        },
+        {
+          "id": "fantasmas",
+          "nombre": "Fantasmas",
+          "voto": 78
+        },
+        {
+          "id": "personajes-masculinos",
+          "nombre": "Personajes masculinos",
+          "voto": 72
+        },
+        {
+          "id": "magia",
+          "nombre": "Magia",
+          "voto": 71
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 101563,
+          "titulo": "Grandmaster of Demonic Cultivation: Mo Dao Zu Shi",
+          "tipo": "manhua",
+          "votos": 176,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx101563-nTBq5IEYYWbX.png"
+        },
+        {
+          "anilist": 136652,
+          "titulo": "Erha He Tade Baimao Shizun",
+          "tipo": "manhua",
+          "votos": 38,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx136652-hDnqWIUGGVaY.jpg"
+        },
+        {
+          "anilist": 133859,
+          "titulo": "Chuan Shu Zijiu Zhinan",
+          "tipo": "manhua",
+          "votos": 10,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b133859-4xTXkJSE5IFa.jpg"
+        },
+        {
+          "anilist": 122389,
+          "titulo": "Saved the Public Enemy by Mistake",
+          "tipo": "manhua",
+          "votos": 9,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b122389-0lW6OKChxqMI.jpg"
+        },
+        {
+          "anilist": 113089,
+          "titulo": "Private Devil Puppy",
+          "tipo": "manhua",
+          "votos": 8,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b113089-i3cWodWilzpl.png"
+        },
+        {
+          "anilist": 126198,
+          "titulo": "The Tyrant Prince's Last Promise",
+          "tipo": "manhua",
+          "votos": 7,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx126198-Ud2QxAKj31Ev.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 50,
+        "leyendo": 6662,
+        "lectores": 0.0016,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0016,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "116353": {
       "puntaje": {
@@ -1731,7 +4840,98 @@
       },
       "popularidad": 28521,
       "favoritos": 2111,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "antiheroe",
+          "nombre": "Antihéroe",
+          "voto": 94
+        },
+        {
+          "id": "cultivo",
+          "nombre": "Cultivo",
+          "voto": 93
+        },
+        {
+          "id": "artes-marciales",
+          "nombre": "Artes marciales",
+          "voto": 83
+        },
+        {
+          "id": "wuxia",
+          "nombre": "Wuxia",
+          "voto": 80
+        },
+        {
+          "id": "venganza",
+          "nombre": "Venganza",
+          "voto": 70
+        },
+        {
+          "id": "magia",
+          "nombre": "Magia",
+          "voto": 61
+        },
+        {
+          "id": "viajes",
+          "nombre": "Viajes",
+          "voto": 60
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 142287,
+          "titulo": "I Am The Fated Villain",
+          "tipo": "manhua",
+          "votos": 75,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx142287-nlT7oSUzHnNv.jpg"
+        },
+        {
+          "anilist": 108050,
+          "titulo": "Reverend Insanity",
+          "tipo": "manhua",
+          "votos": 54,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b108050-ZGWnOokjiHG7.jpg"
+        },
+        {
+          "anilist": 138726,
+          "titulo": "Rebirth Of The Ultimate Master",
+          "tipo": "manhua",
+          "votos": 32,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx138726-ysRy6zaQMWT8.jpg"
+        },
+        {
+          "anilist": 116084,
+          "titulo": "Way To Be The Evil Emperor",
+          "tipo": "manhua",
+          "votos": 30,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b116084-TWyeefwV178N.png"
+        },
+        {
+          "anilist": 86707,
+          "titulo": "Tales of Demons and Gods",
+          "tipo": "manhua",
+          "votos": 19,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx86707-QD3UyAOHUEaT.jpg"
+        },
+        {
+          "anilist": 101408,
+          "titulo": "Principles of Heavens: Zen’s Cultivation of Immortality",
+          "tipo": "manhua",
+          "votos": 16,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx101408-Ym79QPjdXk8F.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 4373,
+        "leyendo": 18603,
+        "lectores": 0.004,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.004,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "117324": {
       "puntaje": {
@@ -1781,7 +4981,103 @@
       },
       "popularidad": 26132,
       "favoritos": 1550,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "comedia-absurda",
+          "nombre": "Comedia absurda",
+          "voto": 90
+        },
+        {
+          "id": "personajes-adolescentes",
+          "nombre": "Personajes adolescentes",
+          "voto": 80
+        },
+        {
+          "id": "humor-fisico",
+          "nombre": "Humor físico",
+          "voto": 80
+        },
+        {
+          "id": "metaficcion",
+          "nombre": "Metaficción",
+          "voto": 80
+        },
+        {
+          "id": "personajes-masculinos",
+          "nombre": "Personajes masculinos",
+          "voto": 78
+        },
+        {
+          "id": "escuela",
+          "nombre": "Escuela",
+          "voto": 75
+        },
+        {
+          "id": "parodia",
+          "nombre": "Parodia",
+          "voto": 72
+        },
+        {
+          "id": "delincuentes",
+          "nombre": "Delincuentes",
+          "voto": 68
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 85850,
+          "titulo": "19 Tian",
+          "tipo": "manhua",
+          "votos": 170,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b85850-C9jxTZSRutBw.png"
+        },
+        {
+          "anilist": 85734,
+          "titulo": "Tamen De Gushi",
+          "tipo": "manhua",
+          "votos": 120,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx85734-yllpIVoPjADr.jpg"
+        },
+        {
+          "anilist": 100149,
+          "titulo": "Bromance",
+          "tipo": "manhua",
+          "votos": 35,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b100149-QTng4nDtArs9.jpg"
+        },
+        {
+          "anilist": 56144,
+          "titulo": "The Daily Lives of High School Boys",
+          "tipo": "manga",
+          "votos": 30,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx56144-9XxJWQTZFoJW.jpg"
+        },
+        {
+          "anilist": 132954,
+          "titulo": "Salt Friend",
+          "tipo": "manhua",
+          "votos": 22,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx132954-BgvVmKUY2kq2.jpg"
+        },
+        {
+          "anilist": 98808,
+          "titulo": "Kuai Ba Wo Ge Dai Zou",
+          "tipo": "manhua",
+          "votos": 13,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx98808-LRkWvg3GReT1.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 122,
+        "leyendo": 15104,
+        "lectores": 0.0021,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0021,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "119257": {
       "puntaje": {
@@ -1835,7 +5131,113 @@
       },
       "popularidad": 135329,
       "favoritos": 13739,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "supervivencia",
+          "nombre": "Supervivencia",
+          "voto": 97
+        },
+        {
+          "id": "postapocaliptico",
+          "nombre": "Postapocalíptico",
+          "voto": 94
+        },
+        {
+          "id": "juego-mortal",
+          "nombre": "Juego mortal",
+          "voto": 88
+        },
+        {
+          "id": "bucle-temporal",
+          "nombre": "Bucle temporal",
+          "voto": 85
+        },
+        {
+          "id": "filosofia",
+          "nombre": "Filosofía",
+          "voto": 84
+        },
+        {
+          "id": "familia-elegida",
+          "nombre": "Familia elegida",
+          "voto": 79
+        },
+        {
+          "id": "horror-cosmico",
+          "nombre": "Horror cósmico",
+          "voto": 75
+        },
+        {
+          "id": "personajes-adultos",
+          "nombre": "Personajes adultos",
+          "voto": 65
+        },
+        {
+          "id": "historico",
+          "nombre": "Histórico",
+          "voto": 63
+        },
+        {
+          "id": "battle-royale",
+          "nombre": "Battle royale",
+          "voto": 62
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 105398,
+          "titulo": "Solo Leveling",
+          "tipo": "manhwa",
+          "votos": 1378,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx105398-b673Vt5ZSuz3.jpg"
+        },
+        {
+          "anilist": 128067,
+          "titulo": "SSS-Class Revival Hunter",
+          "tipo": "manhwa",
+          "votos": 250,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx128067-wnLBg6Cy1ncs.jpg"
+        },
+        {
+          "anilist": 123573,
+          "titulo": "Lout of Count’s Family",
+          "tipo": "manhwa",
+          "votos": 237,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx123573-LKoCKwRouEMW.png"
+        },
+        {
+          "anilist": 144957,
+          "titulo": "The World After the Fall",
+          "tipo": "manhwa",
+          "votos": 178,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx144957-h0qIwRwxOEdg.jpg"
+        },
+        {
+          "anilist": 105393,
+          "titulo": "A Returner's Magic Should Be Special",
+          "tipo": "manhwa",
+          "votos": 109,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx105393-oiHumQoBGKG5.jpg"
+        },
+        {
+          "anilist": 137280,
+          "titulo": "I’m the Max-Level Newbie",
+          "tipo": "manhwa",
+          "votos": 79,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx137280-juUL79K7f9s7.png"
+        }
+      ],
+      "actividad": {
+        "semana": 1719,
+        "leyendo": 84112,
+        "lectores": 0.0025,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0025,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "119521": {
       "puntaje": {
@@ -1889,7 +5291,103 @@
       },
       "popularidad": 48131,
       "favoritos": 3217,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "artes-marciales",
+          "nombre": "Artes marciales",
+          "voto": 95
+        },
+        {
+          "id": "venganza",
+          "nombre": "Venganza",
+          "voto": 91
+        },
+        {
+          "id": "espadas",
+          "nombre": "Espadas",
+          "voto": 86
+        },
+        {
+          "id": "gore",
+          "nombre": "Gore",
+          "voto": 79
+        },
+        {
+          "id": "wuxia",
+          "nombre": "Wuxia",
+          "voto": 68
+        },
+        {
+          "id": "politica",
+          "nombre": "Política",
+          "voto": 66
+        },
+        {
+          "id": "familia-elegida",
+          "nombre": "Familia elegida",
+          "voto": 66
+        },
+        {
+          "id": "guerra",
+          "nombre": "Guerra",
+          "voto": 64
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 132144,
+          "titulo": "Return of the Blossoming Blade",
+          "tipo": "manhwa",
+          "votos": 101,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx132144-i5B4VnG9sRgh.png"
+        },
+        {
+          "anilist": 107518,
+          "titulo": "Heavenly Demon Reborn!",
+          "tipo": "manhwa",
+          "votos": 76,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx107518-mIYnC1TQIe4P.png"
+        },
+        {
+          "anilist": 104271,
+          "titulo": "Father, Unrivaled",
+          "tipo": "manhwa",
+          "votos": 39,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx104271-x6qshziGKhGc.png"
+        },
+        {
+          "anilist": 120980,
+          "titulo": "Nano Machine",
+          "tipo": "manhwa",
+          "votos": 35,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx120980-RZ9WLd0o9hyo.jpg"
+        },
+        {
+          "anilist": 86640,
+          "titulo": "GOSU",
+          "tipo": "manhwa",
+          "votos": 14,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b86640-CkvGMkcKAoa3.png"
+        },
+        {
+          "anilist": 130210,
+          "titulo": "Hwasangwonma",
+          "tipo": "manhwa",
+          "votos": 13,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx130210-uTICEzqOLxFg.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 656,
+        "leyendo": 18066,
+        "lectores": 0.0033,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0033,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "120980": {
       "puntaje": {
@@ -1943,7 +5441,113 @@
       },
       "popularidad": 49833,
       "favoritos": 3119,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "artes-marciales",
+          "nombre": "Artes marciales",
+          "voto": 96
+        },
+        {
+          "id": "sectas",
+          "nombre": "Sectas",
+          "voto": 93
+        },
+        {
+          "id": "antiheroe",
+          "nombre": "Antihéroe",
+          "voto": 92
+        },
+        {
+          "id": "espadas",
+          "nombre": "Espadas",
+          "voto": 87
+        },
+        {
+          "id": "politica",
+          "nombre": "Política",
+          "voto": 82
+        },
+        {
+          "id": "gore",
+          "nombre": "Gore",
+          "voto": 81
+        },
+        {
+          "id": "venganza",
+          "nombre": "Venganza",
+          "voto": 80
+        },
+        {
+          "id": "inteligencia-artificial",
+          "nombre": "Inteligencia artificial",
+          "voto": 78
+        },
+        {
+          "id": "cultivo",
+          "nombre": "Cultivo",
+          "voto": 78
+        },
+        {
+          "id": "wuxia",
+          "nombre": "Wuxia",
+          "voto": 76
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 132144,
+          "titulo": "Return of the Blossoming Blade",
+          "tipo": "manhwa",
+          "votos": 101,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx132144-i5B4VnG9sRgh.png"
+        },
+        {
+          "anilist": 107518,
+          "titulo": "Heavenly Demon Reborn!",
+          "tipo": "manhwa",
+          "votos": 79,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx107518-mIYnC1TQIe4P.png"
+        },
+        {
+          "anilist": 105398,
+          "titulo": "Solo Leveling",
+          "tipo": "manhwa",
+          "votos": 77,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx105398-b673Vt5ZSuz3.jpg"
+        },
+        {
+          "anilist": 120385,
+          "titulo": "Log-in Murim",
+          "tipo": "manhwa",
+          "votos": 58,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx120385-4JYGuOR6cn72.jpg"
+        },
+        {
+          "anilist": 119521,
+          "titulo": "The Legend of the Northern Blade",
+          "tipo": "manhwa",
+          "votos": 35,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx119521-qYqxFvn0NnXo.png"
+        },
+        {
+          "anilist": 151460,
+          "titulo": "Absolute Sword Sense",
+          "tipo": "manhwa",
+          "votos": 22,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx151460-Cb2CXwN2ZElE.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 5092,
+        "leyendo": 33796,
+        "lectores": 0.0048,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0048,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "126297": {
       "puntaje": {
@@ -1997,7 +5601,103 @@
       },
       "popularidad": 57575,
       "favoritos": 3188,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "kuudere",
+          "nombre": "Kuudere",
+          "voto": 88
+        },
+        {
+          "id": "militar",
+          "nombre": "Militar",
+          "voto": 76
+        },
+        {
+          "id": "vida-familiar",
+          "nombre": "Vida familiar",
+          "voto": 76
+        },
+        {
+          "id": "escuela",
+          "nombre": "Escuela",
+          "voto": 73
+        },
+        {
+          "id": "armas-de-fuego",
+          "nombre": "Armas de fuego",
+          "voto": 71
+        },
+        {
+          "id": "asesinos",
+          "nombre": "Asesinos",
+          "voto": 70
+        },
+        {
+          "id": "artes-marciales",
+          "nombre": "Artes marciales",
+          "voto": 68
+        },
+        {
+          "id": "acoso-escolar",
+          "nombre": "Acoso escolar",
+          "voto": 64
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 118267,
+          "titulo": "God of Blackfield",
+          "tipo": "manhwa",
+          "votos": 137,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx118267-hfGEZNguWhiq.jpg"
+        },
+        {
+          "anilist": 105398,
+          "titulo": "Solo Leveling",
+          "tipo": "manhwa",
+          "votos": 98,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx105398-b673Vt5ZSuz3.jpg"
+        },
+        {
+          "anilist": 113488,
+          "titulo": "Weak Hero",
+          "tipo": "manhwa",
+          "votos": 52,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx113488-0ghq0eEnftk0.jpg"
+        },
+        {
+          "anilist": 110472,
+          "titulo": "Study Group",
+          "tipo": "manhwa",
+          "votos": 26,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx110472-jxJG7CZ3lf4d.jpg"
+        },
+        {
+          "anilist": 86848,
+          "titulo": "Lookism",
+          "tipo": "manhwa",
+          "votos": 20,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx86848-4CSItSclJUvi.jpg"
+        },
+        {
+          "anilist": 106929,
+          "titulo": "Eleceed",
+          "tipo": "manhwa",
+          "votos": 18,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx106929-flAUvHZDUz5v.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 345,
+        "leyendo": 37079,
+        "lectores": 0.0021,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0021,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "128067": {
       "puntaje": {
@@ -2051,7 +5751,93 @@
       },
       "popularidad": 70925,
       "favoritos": 4857,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "mazmorras",
+          "nombre": "Mazmorras",
+          "voto": 86
+        },
+        {
+          "id": "fantasia-urbana",
+          "nombre": "Fantasía urbana",
+          "voto": 86
+        },
+        {
+          "id": "fantasmas",
+          "nombre": "Fantasmas",
+          "voto": 83
+        },
+        {
+          "id": "personajes-adultos",
+          "nombre": "Personajes adultos",
+          "voto": 71
+        },
+        {
+          "id": "cultivo",
+          "nombre": "Cultivo",
+          "voto": 67
+        },
+        {
+          "id": "artes-marciales",
+          "nombre": "Artes marciales",
+          "voto": 60
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 119257,
+          "titulo": "Omniscient Reader",
+          "tipo": "manhwa",
+          "votos": 250,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx119257-Pi21aq3ey9GG.jpg"
+        },
+        {
+          "anilist": 105398,
+          "titulo": "Solo Leveling",
+          "tipo": "manhwa",
+          "votos": 211,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx105398-b673Vt5ZSuz3.jpg"
+        },
+        {
+          "anilist": 109957,
+          "titulo": "Second Life Ranker",
+          "tipo": "manhwa",
+          "votos": 92,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx109957-EgJWdR7l9TBG.jpg"
+        },
+        {
+          "anilist": 177706,
+          "titulo": "The Knight Only Lives Today",
+          "tipo": "manhwa",
+          "votos": 56,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx177706-3r8dnAr8Prjq.jpg"
+        },
+        {
+          "anilist": 137280,
+          "titulo": "I’m the Max-Level Newbie",
+          "tipo": "manhwa",
+          "votos": 30,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx137280-juUL79K7f9s7.png"
+        },
+        {
+          "anilist": 141958,
+          "titulo": "My S-Class Hunters",
+          "tipo": "manhwa",
+          "votos": 18,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx141958-y46ASozodVNW.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 4369,
+        "leyendo": 46952,
+        "lectores": 0.004,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.004,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "137280": {
       "puntaje": {
@@ -2105,7 +5891,88 @@
       },
       "popularidad": 52267,
       "favoritos": 2382,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "mazmorras",
+          "nombre": "Mazmorras",
+          "voto": 88
+        },
+        {
+          "id": "magia",
+          "nombre": "Magia",
+          "voto": 76
+        },
+        {
+          "id": "fantasia-urbana",
+          "nombre": "Fantasía urbana",
+          "voto": 65
+        },
+        {
+          "id": "antiheroe",
+          "nombre": "Antihéroe",
+          "voto": 62
+        },
+        {
+          "id": "demonios",
+          "nombre": "Demonios",
+          "voto": 60
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 105398,
+          "titulo": "Solo Leveling",
+          "tipo": "manhwa",
+          "votos": 124,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx105398-b673Vt5ZSuz3.jpg"
+        },
+        {
+          "anilist": 119257,
+          "titulo": "Omniscient Reader",
+          "tipo": "manhwa",
+          "votos": 79,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx119257-Pi21aq3ey9GG.jpg"
+        },
+        {
+          "anilist": 128067,
+          "titulo": "SSS-Class Revival Hunter",
+          "tipo": "manhwa",
+          "votos": 30,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx128067-wnLBg6Cy1ncs.jpg"
+        },
+        {
+          "anilist": 119276,
+          "titulo": "The Advanced Player of the Tutorial Tower",
+          "tipo": "manhwa",
+          "votos": 7,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx119276-wqzyyB3xuPVo.jpg"
+        },
+        {
+          "anilist": 175262,
+          "titulo": "The Reborn Young Lord is an Assassin",
+          "tipo": "manhwa",
+          "votos": 7,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx175262-shGEYbbfLHDD.jpg"
+        },
+        {
+          "anilist": 179445,
+          "titulo": "Solo Leveling: Ragnarok",
+          "tipo": "manhwa",
+          "votos": 7,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx179445-ho0nb7baJ1a5.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 3313,
+        "leyendo": 36161,
+        "lectores": 0.003,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.003,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "140407": {
       "puntaje": {
@@ -2159,7 +6026,113 @@
       },
       "popularidad": 72519,
       "favoritos": 8199,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "comedia-absurda",
+          "nombre": "Comedia absurda",
+          "voto": 96
+        },
+        {
+          "id": "anacronismo",
+          "nombre": "Anacronismo",
+          "voto": 94
+        },
+        {
+          "id": "economia",
+          "nombre": "Economía",
+          "voto": 93
+        },
+        {
+          "id": "gestion-de-reinos",
+          "nombre": "Gestión de reinos",
+          "voto": 90
+        },
+        {
+          "id": "isekai",
+          "nombre": "Isekai",
+          "voto": 89
+        },
+        {
+          "id": "antiheroe",
+          "nombre": "Antihéroe",
+          "voto": 80
+        },
+        {
+          "id": "humor-fisico",
+          "nombre": "Humor físico",
+          "voto": 80
+        },
+        {
+          "id": "intrigas-de-la-realeza",
+          "nombre": "Intrigas de la realeza",
+          "voto": 78
+        },
+        {
+          "id": "parodia",
+          "nombre": "Parodia",
+          "voto": 77
+        },
+        {
+          "id": "politica",
+          "nombre": "Política",
+          "voto": 71
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 123573,
+          "titulo": "Lout of Count’s Family",
+          "tipo": "manhwa",
+          "votos": 145,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx123573-LKoCKwRouEMW.png"
+        },
+        {
+          "anilist": 189051,
+          "titulo": "What a Bountiful Harvest, Demon Lord!",
+          "tipo": "manhwa",
+          "votos": 75,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx189051-ORxxDJZvMHxj.jpg"
+        },
+        {
+          "anilist": 132144,
+          "titulo": "Return of the Blossoming Blade",
+          "tipo": "manhwa",
+          "votos": 53,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx132144-i5B4VnG9sRgh.png"
+        },
+        {
+          "anilist": 172166,
+          "titulo": "The Apothecary Prince",
+          "tipo": "manhwa",
+          "votos": 43,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx172166-SJd5nvfqTuZA.jpg"
+        },
+        {
+          "anilist": 108152,
+          "titulo": "Release that Witch",
+          "tipo": "manhua",
+          "votos": 33,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b108152-QG8LtVNX5ox2.png"
+        },
+        {
+          "anilist": 173233,
+          "titulo": "A Flame Reborn",
+          "tipo": "manhwa",
+          "votos": 23,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx173233-sSWxsYy8oXFK.png"
+        }
+      ],
+      "actividad": {
+        "semana": 2935,
+        "leyendo": 32186,
+        "lectores": 0.0057,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.0057,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "142287": {
       "puntaje": {
@@ -2213,7 +6186,103 @@
       },
       "popularidad": 16340,
       "favoritos": 830,
-      "tendencia": null
+      "etiquetas": [
+        {
+          "id": "cultivo",
+          "nombre": "Cultivo",
+          "voto": 95
+        },
+        {
+          "id": "antiheroe",
+          "nombre": "Antihéroe",
+          "voto": 92
+        },
+        {
+          "id": "artes-marciales",
+          "nombre": "Artes marciales",
+          "voto": 92
+        },
+        {
+          "id": "haren",
+          "nombre": "Harén",
+          "voto": 87
+        },
+        {
+          "id": "wuxia",
+          "nombre": "Wuxia",
+          "voto": 86
+        },
+        {
+          "id": "magia",
+          "nombre": "Magia",
+          "voto": 70
+        },
+        {
+          "id": "isekai",
+          "nombre": "Isekai",
+          "voto": 68
+        },
+        {
+          "id": "villana",
+          "nombre": "Villana",
+          "voto": 64
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 116353,
+          "titulo": "The Devil Butler",
+          "tipo": "manhua",
+          "votos": 75,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx116353-DYuIigXuPwpZ.jpg"
+        },
+        {
+          "anilist": 139741,
+          "titulo": "I’m Really Not the Devil’s Lackey",
+          "tipo": "manhua",
+          "votos": 40,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx139741-mdZXMdlObZFy.png"
+        },
+        {
+          "anilist": 108050,
+          "titulo": "Reverend Insanity",
+          "tipo": "manhua",
+          "votos": 36,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b108050-ZGWnOokjiHG7.jpg"
+        },
+        {
+          "anilist": 169161,
+          "titulo": "Villain Cultivator’s Secret Return",
+          "tipo": "manhua",
+          "votos": 23,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx169161-eU8OyJtS56V2.jpg"
+        },
+        {
+          "anilist": 116084,
+          "titulo": "Way To Be The Evil Emperor",
+          "tipo": "manhua",
+          "votos": 16,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b116084-TWyeefwV178N.png"
+        },
+        {
+          "anilist": 141007,
+          "titulo": "How to Use a Returner",
+          "tipo": "manhwa",
+          "votos": 15,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx141007-mCfbMLgrCv1h.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 1582,
+        "leyendo": 10912,
+        "lectores": 0.006,
+        "dias": 7
+      },
+      "tendencia": {
+        "lectores": 0.006,
+        "puntaje": null,
+        "dias": 7
+      }
     }
   }
 }
