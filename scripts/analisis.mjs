@@ -14,6 +14,9 @@ export const TOPE_VOTOS = 10000;
 // votos se acerca a ese promedio hasta que junte más opiniones.
 export const PESO_PREVIO = 50;
 
+// Mínimo de reseñas para decir qué temas se elogian o critican
+export const MIN_RESENAS_TEMAS = 8;
+
 export const redondear = (n, decimales = 0) => {
     const f = 10 ** decimales;
     return Math.round(n * f) / f;
@@ -211,8 +214,9 @@ export function analizarResenas(resenas){
         }
     }
 
+    // Con menos de 8 reseñas los temas salen poco confiables (calibrado con reseñas reales): no se publican
     const minimo = Math.max(3, Math.ceil(n * 0.2));
-    const candidatos = Object.entries(temas)
+    const candidatos = n < MIN_RESENAS_TEMAS ? [] : Object.entries(temas)
         .filter(([, a]) => a.resenas >= minimo && a.a_favor + a.en_contra > 0)
         .sort((x, y) => y[1].resenas - x[1].resenas);
     const elogian = candidatos.filter(([, a]) => a.a_favor / (a.a_favor + a.en_contra) >= 0.7).slice(0, 3).map(([t]) => t);

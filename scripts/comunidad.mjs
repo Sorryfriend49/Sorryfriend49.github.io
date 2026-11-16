@@ -196,7 +196,8 @@ export async function ejecutar({
     const medias = [...anilist.values()].map(m => m.meanScore).filter(Number.isFinite);
     const mediaCatalogo = medias.length ? medias.reduce((a, b) => a + b, 0) / medias.length : 75;
 
-    const fuentesOk = { anilist: true, kitsu: true, mangaupdates: true, myanimelist: Boolean(claveMAL) };
+    // Una fuente queda con la fecha de hoy si aportó datos frescos a alguna obra
+    const fuentesUsadas = { anilist: true, kitsu: false, mangaupdates: false, myanimelist: false };
     const resultado = {};
 
     for (const obra of obras){
@@ -216,9 +217,11 @@ export async function ejecutar({
 
         // Cada fuente extra es opcional: si falla, se usa su último dato
         const intentar = async (nombre, tarea) => {
-            try { return await tarea(); }
-            catch (error){
-                fuentesOk[nombre] = false;
+            try {
+                const datos = await tarea();
+                fuentesUsadas[nombre] = true;
+                return datos;
+            } catch (error){
                 registro(`  ${obra.titulo}: ${nombre} falló (${error.message}); se usa el dato anterior`);
                 return undefined;
             }
@@ -276,8 +279,8 @@ export async function ejecutar({
     if (ultima && diasEntre(ultima.fecha, fecha) < 5) semanas[semanas.length - 1] = foto;
     else semanas.push(foto);
 
-    const fechasFuentes = Object.fromEntries(Object.entries(fuentesOk).map(([nombre, bien]) =>
-        [nombre, bien ? fecha : ((anterior.fuentes || {})[nombre] || null)]));
+    const fechasFuentes = Object.fromEntries(Object.entries(fuentesUsadas).map(([nombre, usada]) =>
+        [nombre, usada ? fecha : ((anterior.fuentes || {})[nombre] || null)]));
     if (!claveMAL) fechasFuentes.myanimelist = null;
 
     await escribirJSON(ruta('datos/comunidad.json'), {

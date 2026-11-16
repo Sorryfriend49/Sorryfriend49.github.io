@@ -21,11 +21,37 @@
     };
     const IDIOMAS = { es: 'español', en: 'inglés' };
     const IDIOMA_ORIGINAL = { manga: 'ja', manhwa: 'ko', manhua: 'zh' };
+    const NOMBRES_FUENTES = { anilist: 'AniList', kitsu: 'Kitsu', mangaupdates: 'MangaUpdates', myanimelist: 'MyAnimeList' };
+    const NOMBRES_TEMAS = {
+        arte: 'el arte', historia: 'la historia', personajes: 'los personajes', ritmo: 'el ritmo', final: 'el final',
+        accion: 'la acción', mundo: 'el mundo y su sistema', romance: 'el romance', humor: 'el humor', emocion: 'lo emotivo'
+    };
+    // Frase bajo el reparto de votos: cuántos la recomiendan y si las notas coinciden o chocan
+    const fraseReparto = d => {
+        const base = `Al ${Math.round(d.gusta * 100)} % le gusta (le pone 7/10 o más)`;
+        const noGusta = Math.round((d.noGusta || 0) * 100);
+        if (d.division === 'divididas' && noGusta >= 6) return `${base}, pero un ${noGusta} % le pone 4 o menos: hay opiniones muy opuestas.`;
+        if (d.division === 'divididas') return `${base}. Las notas están muy repartidas.`;
+        if (d.division === 'variadas') return `${base}. Las opiniones varían un poco.`;
+        return `${base}. La mayoría coincide.`;
+    };
+    const enumerar = lista => lista.length <= 1 ? (lista[0] || '') : lista.slice(0, -1).join(', ') + ' y ' + lista[lista.length - 1];
     const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
     const MESES_CORTOS = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sept', 'oct', 'nov', 'dic'];
 
-    const popularidad = o => (o.comunidad && o.comunidad.anilist && o.comunidad.anilist.popularidad) || 0;
-    const puntaje = o => (o.comunidad && o.comunidad.anilist && o.comunidad.anilist.puntaje) || null;
+    // Opinión de la comunidad: datos/comunidad.json, que genera cada lunes la tarea de GitHub
+    // (scripts/comunidad.mjs). Si todavía no existe o le falta una obra, se usa AniList de obras.json.
+    let comunidad = null;
+    const deComunidad = o => (comunidad && comunidad.obras && comunidad.obras[String(o.ids && o.ids.anilist)]) || null;
+    const popularidad = o => {
+        const c = deComunidad(o);
+        return (c && c.popularidad) || (o.comunidad && o.comunidad.anilist && o.comunidad.anilist.popularidad) || 0;
+    };
+    const puntaje = o => {
+        const c = deComunidad(o);
+        if (c && c.puntaje && Number.isFinite(c.puntaje.valor)) return c.puntaje.valor;
+        return (o.comunidad && o.comunidad.anilist && o.comunidad.anilist.puntaje) || null;
+    };
     const claveFecha = o => o.inicio ? (o.inicio + '-00-00').slice(0, 10) : '0000-00-00';
 
     const ORDENES = {
@@ -327,16 +353,117 @@
     }
 
     function pintarFechaDatos(fecha){
-        const texto = fecha ? `actualizados el ${textoFecha(fecha)}` : 'actualizados periódicamente';
-        const nota = (antes) => {
-            const enlace = crear('a', null, 'AniList');
-            enlace.href = 'https://anilist.co';
-            enlace.target = '_blank';
-            enlace.rel = 'noopener noreferrer';
-            return [antes, enlace, `, ${texto}.`];
-        };
-        $('notaDatos').replaceChildren(...nota('Datos de '));
-        $('fechaDatos').replaceChildren(...nota('Datos de '));
+        let texto = fecha ? `Catálogo con datos de AniList del ${textoFecha(fecha)}.` : 'Catálogo con datos de AniList.';
+        if (comunidad && comunidad.generado){
+            const nombres = Object.entries(comunidad.fuentes || {}).filter(([, f]) => f).map(([n]) => NOMBRES_FUENTES[n]).filter(Boolean);
+            texto += ` Opinión de la comunidad (${enumerar(nombres)}) actualizada el ${textoFecha(comunidad.generado.slice(0, 10))}; se renueva cada lunes.`;
+        }
+        $('fechaDatos').textContent = texto;
+        const enlace = crear('a', null, 'Cómo se calcula');
+        enlace.href = '#sobre';
+        $('notaDatos').replaceChildren(texto + ' ', enlace);
+    }
+
+    // ---------- Lo que opina la comunidad (dentro de la ficha) ----------
+    const formatoPorcentaje = new Intl.NumberFormat('es', { style: 'percent', maximumFractionDigits: 1 });
+
+    function pintarComunidad(o){
+        const c = deComunidad(o);
+        const p = puntaje(o);
+        const nodos = [];
+
+        // Puntaje: combinado de varias comunidades si ya está calculado; si no, el de AniList
+        const fila = crear('div', 'comunidad');
+        if (p != null){
+            const grande = crear('span', 'puntaje', textoPuntaje(p));
+            grande.append(crear('small', null, '/10'));
+            fila.append(grande);
+        }
+        const explicacion = crear('p');
+        if (c && c.puntaje){
+            const nombres = Object.keys(c.fuentes || {}).map(f => NOMBRES_FUENTES[f]).filter(Boolean);
+            explicacion.append(`Combinado de ${enumerar(nombres)}.`, document.createElement('br'),
+                `${formatoLectores.format(c.puntaje.votos)} votos. Confianza ${c.puntaje.confianza}.`);
+        } else {
+            explicacion.append(p == null ? 'Todavía no tiene puntaje.' : 'Promedio de los lectores de AniList.');
+        }
+        explicacion.append(document.createElement('br'),
+            `${formatoLectores.format(popularidad(o))} la tienen en su lista de AniList (puesto ${puestoPopularidad.get(o.id)} de ${obras.length} en popularidad).`);
+        fila.append(explicacion);
+        nodos.push(fila);
+
+        if (c){
+            // Reparto de votos: cuántos le pusieron cada nota, del 1 al 10
+            const d = c.distribucion;
+            if (d && Array.isArray(d.barras)){
+                const maximo = Math.max(...d.barras, 1);
+                const grafico = crear('div', 'reparto');
+                grafico.setAttribute('role', 'img');
+                grafico.setAttribute('aria-label', 'Votos en AniList, del 1 al 10: ' +
+                    d.barras.map((b, i) => `${i + 1}: ${formatoPorcentaje.format(b / 100)}`).join(', '));
+                d.barras.forEach((b, i) => {
+                    const barra = crear('span', i >= 6 ? 'barra gusta' : 'barra');
+                    barra.style.height = Math.max(2, Math.round(100 * b / maximo)) + '%';
+                    grafico.append(barra);
+                });
+                const ejes = crear('div', 'reparto-ejes');
+                ejes.setAttribute('aria-hidden', 'true');
+                ejes.append(crear('span', null, '1'), crear('span', null, '10'));
+                nodos.push(grafico, ejes,
+                    crear('p', 'dato-opinion', fraseReparto(d)));
+            }
+
+            // Reseñas: cuántas son positivas y qué temas se elogian o critican
+            const r = c.resenas || { n: 0 };
+            if (!r.n){
+                nodos.push(crear('p', 'dato-opinion', 'Todavía no tiene reseñas en AniList.'));
+            } else {
+                const partes = [[r.positivas, 'positiva', 'positivas'], [r.negativas, 'negativa', 'negativas'], [r.mixtas, 'mixta', 'mixtas']]
+                    .filter(([x]) => x > 0).map(([x, una, varias]) => `${x} ${x === 1 ? una : varias}`);
+                nodos.push(crear('p', 'dato-opinion', `${r.n === 1 ? 'Una reseña' : r.n + ' reseñas'} en AniList: ${enumerar(partes)}.`));
+                if (r.elogian && r.elogian.length) nodos.push(crear('p', 'dato-opinion', `Lo más elogiado: ${enumerar(r.elogian.map(t => NOMBRES_TEMAS[t] || t))}.`));
+                if (r.critican && r.critican.length) nodos.push(crear('p', 'dato-opinion', `Lo más criticado: ${enumerar(r.critican.map(t => NOMBRES_TEMAS[t] || t))}.`));
+            }
+
+            // Tendencia frente a la semana anterior
+            if (c.tendencia && Number.isFinite(c.tendencia.lectores)){
+                const v = c.tendencia.lectores;
+                nodos.push(crear('p', 'dato-opinion', Math.abs(v) < 0.0005
+                    ? 'Los mismos lectores que la semana pasada.'
+                    : `${v > 0 ? '+' : '−'}${formatoPorcentaje.format(Math.abs(v))} de lectores frente a la semana pasada.`));
+            }
+
+            // Puntaje en cada comunidad
+            const lista = crear('ul', 'por-fuente');
+            Object.entries(c.fuentes || {}).forEach(([f, datos]) => {
+                if (!datos || !Number.isFinite(datos.puntaje)) return;
+                const li = document.createElement('li');
+                li.append(crear('span', null, NOMBRES_FUENTES[f] || f), crear('strong', null, textoPuntaje(datos.puntaje)),
+                    crear('span', 'votos', `${formatoLectores.format(datos.votos)} votos`));
+                lista.append(li);
+            });
+            if (lista.children.length) nodos.push(lista);
+
+            if (comunidad.generado){
+                const nota = crear('p', 'opinion-fecha', `Actualizado el ${textoFecha(comunidad.generado.slice(0, 10))}. `);
+                const enlace = crear('a', null, 'Cómo se calcula');
+                enlace.href = '#sobre';
+                nota.append(enlace);
+                nodos.push(nota);
+            }
+        }
+        $('fichaComunidad').replaceChildren(...nodos);
+    }
+
+    async function cargarComunidad(){
+        try {
+            const r = await fetch('datos/comunidad.json', { cache: 'no-cache' });
+            if (!r.ok) return null;
+            const d = await r.json();
+            return d && d.obras ? d : null;
+        } catch (error){
+            return null;     // sin la opinión de la comunidad, la página sigue con los datos de AniList
+        }
     }
 
     // ---------- Ficha de una obra ----------
@@ -392,22 +519,7 @@
         fila(dl, 'Tomos', o.tomos);
         fila(dl, 'Géneros', o.generos.map(g => GENEROS[g]).filter(Boolean).join(', '));
 
-        const comunidad = $('fichaComunidad');
-        const p = puntaje(o);
-        const explicacion = crear('p');
-        const puesto = puestoPopularidad.get(o.id);
-        explicacion.append(
-            p == null ? 'Todavía no tiene puntaje en AniList.' : 'Promedio de los lectores de AniList.',
-            document.createElement('br'),
-            `${formatoLectores.format(popularidad(o))} la tienen en su lista (puesto ${puesto} de ${obras.length} en popularidad).`
-        );
-        if (p == null){
-            comunidad.replaceChildren(explicacion);
-        } else {
-            const grande = crear('span', 'puntaje', textoPuntaje(p));
-            grande.append(crear('small', null, '/10'));
-            comunidad.replaceChildren(grande, explicacion);
-        }
+        pintarComunidad(o);
 
         const dondeLeer = $('fichaDondeLeer');
         if (o.enlaces && o.enlaces.length){
@@ -544,9 +656,10 @@
     async function cargar(){
         rejilla.replaceChildren(crear('li', 'estado-lista', 'Cargando el catálogo…'));
         try {
-            const respuesta = await fetch('obras.json', { cache: 'no-cache' });
+            const [respuesta, datosComunidad] = await Promise.all([fetch('obras.json', { cache: 'no-cache' }), cargarComunidad()]);
             if (!respuesta.ok) throw new Error('HTTP ' + respuesta.status);
             const datos = await respuesta.json();
+            comunidad = datosComunidad;
             obras = (datos.obras || []).filter(o => o && o.id && o.titulo && o.portada && TIPOS[o.tipo] && Array.isArray(o.generos));
             porId = new Map(obras.map(o => [o.id, o]));
             puestoPopularidad = new Map([...obras].sort(ORDENES.populares).map((o, i) => [o.id, i + 1]));

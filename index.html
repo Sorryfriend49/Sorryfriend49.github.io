@@ -48,7 +48,7 @@
 
     <!-- El ?v= obliga a los navegadores a bajar la versión nueva tras cada cambio.
          Si editas styles.css, sitio.js o catalogo.js, sube ese número (v=3, v=4...). -->
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="stylesheet" href="styles.css?v=3">
 </head>
 
 <body>
@@ -145,15 +145,25 @@
 
                 <h3>De dónde salen los datos</h3>
                 <ul>
-                    <li>Los títulos, géneros, fechas, portadas, el puntaje y la popularidad vienen de <a href="https://anilist.co" target="_blank" rel="noopener noreferrer">AniList</a>, una comunidad donde los lectores registran y califican lo que leen.</li>
-                    <li>El puntaje es el promedio de las calificaciones de AniList, pasado a una escala de 0 a 10.</li>
+                    <li>Los títulos, géneros, fechas y portadas vienen de <a href="https://anilist.co" target="_blank" rel="noopener noreferrer">AniList</a>.</li>
+                    <li>Lo que opina la comunidad junta a tres comunidades de lectores: <a href="https://anilist.co" target="_blank" rel="noopener noreferrer">AniList</a>, <a href="https://kitsu.app" target="_blank" rel="noopener noreferrer">Kitsu</a> y <a href="https://www.mangaupdates.com" target="_blank" rel="noopener noreferrer">MangaUpdates</a>.</li>
                     <li>La popularidad es cuántas personas tienen la obra en su lista de AniList.</li>
                     <li>“Dónde leer” lleva solo a plataformas oficiales.</li>
                 </ul>
+
+                <h3>Cómo se calcula lo que opina la comunidad</h3>
+                <ol>
+                    <li>Cada lunes, una tarea automática y gratuita de GitHub junta los puntajes y votos de AniList, Kitsu y MangaUpdates.</li>
+                    <li>El puntaje combinado pesa a cada comunidad según sus votos, con un tope de 10.000 para que ninguna tape a las demás. Las obras con pocos votos se acercan al promedio del catálogo hasta reunir más opiniones.</li>
+                    <li>La confianza es alta cuando hay muchos votos y las comunidades coinciden, y baja cuando hay pocos o no coinciden.</li>
+                    <li>El reparto de votos muestra cuánta gente le puso cada nota en AniList y si las opiniones están divididas.</li>
+                    <li>De las reseñas de AniList (hasta 50, las que sus lectores marcaron como más útiles) se cuenta cuántas son positivas y se buscan palabras clave para ver qué temas se elogian o critican. Con menos de 8 reseñas no se sacan temas. No se guarda el texto de las reseñas ni quién las escribió.</li>
+                    <li>La tendencia compara los lectores con la medición de la semana anterior.</li>
+                </ol>
                 <p class="nota-datos" id="fechaDatos"></p>
 
                 <h3>Créditos</h3>
-                <p>Datos y portadas: AniList. Fondo animado: Blind Angel, de MoeWalls.</p>
+                <p>Datos: AniList, Kitsu y MangaUpdates. Portadas: AniList. Fondo animado: Blind Angel, de MoeWalls.</p>
             </div>
         </section>
 
@@ -174,7 +184,7 @@
                 <dl id="fichaDatos"></dl>
 
                 <h3>Lo que opina la comunidad</h3>
-                <div class="comunidad" id="fichaComunidad"></div>
+                <div class="opinion" id="fichaComunidad"></div>
 
                 <h3>Dónde leer</h3>
                 <div id="fichaDondeLeer"></div>
@@ -184,8 +194,8 @@
         </div>
     </dialog>
 
-    <script src="sitio.js?v=2" defer></script>
-    <script src="catalogo.js?v=2" defer></script>
+    <script src="sitio.js?v=3" defer></script>
+    <script src="catalogo.js?v=3" defer></script>
 
 </body>
 

@@ -872,6 +872,92 @@ nav{
     color: var(--texto-suave);
 }
 
+/* Lo que opina la comunidad: reparto de votos, reseñas, tendencia y puntaje por comunidad */
+.opinion{
+    margin-top: 8px;
+}
+
+.reparto{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: end;
+    gap: 4px;
+    max-width: 320px;
+    height: 48px;
+    margin-top: 16px;
+}
+
+.barra{
+    display: block;
+    border-radius: 3px 3px 0 0;
+    background: rgba(168, 198, 236, 0.3);
+}
+
+/* Las notas de 7 a 10 ("le gusta") en el azul del sitio */
+.barra.gusta{
+    background: var(--acero);
+}
+
+.reparto-ejes{
+    display: flex;
+    justify-content: space-between;
+    max-width: 320px;
+    margin-top: 4px;
+    font-size: 12px;
+    color: var(--texto-suave);
+}
+
+.dato-opinion{
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--texto-claro);
+}
+
+.por-fuente{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.por-fuente li{
+    display: inline-flex;
+    align-items: baseline;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    background: rgba(168, 198, 236, 0.08);
+    font-size: 14px;
+}
+
+.por-fuente strong{
+    color: var(--hielo);
+}
+
+.por-fuente .votos{
+    font-size: 12px;
+    color: var(--texto-suave);
+}
+
+.opinion-fecha{
+    margin-top: 12px;
+    font-size: 13px;
+    color: var(--texto-suave);
+}
+
+.opinion-fecha a{
+    color: var(--cristal);
+}
+
+.sobre-texto ol{
+    display: grid;
+    gap: 6px;
+    margin-top: 8px;
+    padding-left: 22px;
+}
+
 .donde-leer{
     list-style: none;
     display: flex;
