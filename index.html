@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Galería y rincón personal de Sorry: arte, anime y proyectos.">
-    <title>Frozen Project</title>
+    <title>Frozen Project | Reseñas de manga, manhwa y manhua</title>
+    <meta name="description" content="Reseñas y recomendaciones de manga, manhwa y manhua en español. Filtra por género y ordena por popularidad o fecha de salida, con lo que opina la comunidad.">
 
     <!-- ICONO DE LA PESTAÑA -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -13,19 +13,24 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <meta name="theme-color" content="#030a13">
 
+    <!-- FUENTES (Baloo 2 para títulos, Poppins para el texto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap">
+
     <!-- VISTA PREVIA AL COMPARTIR (WhatsApp, Discord, Telegram, Facebook, X) -->
     <link rel="canonical" href="https://sorryfriend49.github.io/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Frozen Project">
     <meta property="og:title" content="Frozen Project">
-    <meta property="og:description" content="Galería y rincón personal de Sorry: arte, anime y proyectos.">
+    <meta property="og:description" content="Reseñas y recomendaciones de manga, manhwa y manhua en español, con lo que opina la comunidad.">
     <meta property="og:url" content="https://sorryfriend49.github.io/">
     <meta property="og:locale" content="es_CO">
     <meta property="og:image" content="https://sorryfriend49.github.io/vista-previa.jpg">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Ángel de cabello blanco con un halo brillante sobre fondo oscuro y el título Frozen Project">
+    <meta property="og:image:alt" content="Ángel de cabello blanco con un halo brillante, el título Frozen Project y el lema Reseñas y recomendaciones de manga, manhwa y manhua">
     <meta name="twitter:card" content="summary_large_image">
 
     <!-- DATOS PARA GOOGLE: nombre del sitio en los resultados de búsqueda -->
@@ -35,11 +40,12 @@
         "@type": "WebSite",
         "name": "Frozen Project",
         "alternateName": "Frozen Project de Sorry",
-        "url": "https://sorryfriend49.github.io/"
+        "url": "https://sorryfriend49.github.io/",
+        "inLanguage": "es",
+        "description": "Reseñas y recomendaciones de manga, manhwa y manhua en español, con lo que opina la comunidad."
     }
     </script>
 
-    <!-- AQUI SE CONECTA EL CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -55,402 +61,129 @@
     </div>
 
     <header>
-        <h1><a href="#inicio" id="linkTitulo" class="titulo-link">Frozen Project</a></h1>
+        <h1><a href="#inicio" class="titulo-link">Frozen Project</a></h1>
     </header>
 
-    <nav aria-label="Navegación principal">
-        <ul class="nav-menu" id="navMenu">
-
-            <li class="nav-item" data-grupo="inicio">
-                <button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">
-                    Inicio
-                    <svg class="nav-arrow" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#inicio">Bienvenida</a></li>
-                    <li><a href="#inicio">Sobre el sitio</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-item">
-                <button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">
-                    Contenido
-                    <svg class="nav-arrow" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#inicio">Temario</a></li>
-                    <li><a href="#contenido" id="linkRecursos">Recursos</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-item">
-                <button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">
-                    Requisitos
-                    <svg class="nav-arrow" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#inicio">Software necesario</a></li>
-                    <li><a href="#inicio">Conocimientos previos</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-item">
-                <button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">
-                    Lenguajes
-                    <svg class="nav-arrow" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#inicio">HTML</a></li>
-                    <li><a href="#inicio">CSS</a></li>
-                    <li><a href="#inicio">JavaScript</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-item">
-                <button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">
-                    Frameworks
-                    <svg class="nav-arrow" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#inicio">Bootstrap</a></li>
-                    <li><a href="#inicio">Tailwind CSS</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-item">
-                <button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">
-                    Proyectos
-                    <svg class="nav-arrow" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#inicio">Galería</a></li>
-                    <li><a href="#inicio">Próximos proyectos</a></li>
-                </ul>
-            </li>
-
+    <nav aria-label="Principal">
+        <ul class="nav-menu">
+            <li><a class="nav-link" href="#inicio" data-seccion="inicio">Inicio</a></li>
+            <li><a class="nav-link" href="#catalogo" data-seccion="catalogo">Catálogo</a></li>
+            <li><a class="nav-link" href="#sobre" data-seccion="sobre">Sobre el sitio</a></li>
         </ul>
     </nav>
 
     <main>
 
-        <section id="inicio"></section>
+        <!-- INICIO: el ángel al centro, el lema a un lado y lo más popular al otro -->
+        <section class="seccion seccion-inicio" data-seccion="inicio" aria-labelledby="tituloInicio">
+            <div class="inicio-texto">
+                <h2 id="tituloInicio" tabindex="-1">Reseñas y recomendaciones de manga, manhwa y manhua</h2>
+                <p>Encuentra qué leer según lo que opina la comunidad: filtra por género y ordena por popularidad o fecha de salida.</p>
+                <a class="boton-principal" href="#catalogo">Explorar el catálogo</a>
+            </div>
+            <section class="inicio-populares" id="inicioPopulares" aria-labelledby="tituloPopulares" hidden>
+                <h3 id="tituloPopulares">Lo más popular de cada tipo</h3>
+                <ul class="mini-lista" id="listaPopulares"></ul>
+            </section>
+        </section>
 
-        <section id="contenido" class="gallery oculta">
-            <div class="gallery-header">
-                <h2>Galería</h2>
-                <!-- Solo aparecen en el navegador donde conectaste tu token (?admin) -->
-                <div class="acciones-admin">
-                    <button class="boton-agregar" id="botonOrganizar" type="button" hidden>Organizar</button>
-                    <button class="boton-agregar" id="botonAgregar" type="button" hidden>+ Agregar imagen</button>
+        <!-- CATÁLOGO: las obras salen de obras.json (ver catalogo.js) -->
+        <section class="seccion panel" data-seccion="catalogo" aria-labelledby="tituloCatalogo" hidden>
+            <div class="catalogo-cabecera">
+                <h2 id="tituloCatalogo" tabindex="-1">Catálogo</h2>
+                <p class="conteo" id="conteo" aria-live="polite"></p>
+            </div>
+
+            <div class="filtros" id="filtros">
+                <div class="fila-filtros">
+                    <fieldset class="segmentado" id="filtroTipo">
+                        <legend class="solo-lectores">Tipo de obra</legend>
+                        <label><input type="radio" name="tipo" value="" checked><span>Todos</span></label>
+                        <label><input type="radio" name="tipo" value="manga"><span>Manga</span></label>
+                        <label><input type="radio" name="tipo" value="manhwa"><span>Manhwa</span></label>
+                        <label><input type="radio" name="tipo" value="manhua"><span>Manhua</span></label>
+                    </fieldset>
+
+                    <div class="orden">
+                        <label for="orden">Ordenar por</label>
+                        <select id="orden">
+                            <option value="populares">Más populares</option>
+                            <option value="valorados">Mejor valorados</option>
+                            <optgroup label="Fecha de salida">
+                                <option value="fecha-desc">Más recientes</option>
+                                <option value="fecha-asc">Más antiguas</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <!-- Solo en celular: muestra u oculta los géneros -->
+                    <button class="boton-generos" id="botonGeneros" type="button" aria-expanded="false" aria-controls="zonaGeneros">
+                        Géneros <span id="cuentaGeneros"></span>
+                        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+
+                <div class="generos-zona" id="zonaGeneros" role="group" aria-label="Géneros">
+                    <button class="quitar-generos" id="quitarGeneros" type="button" hidden>Quitar géneros</button>
                 </div>
             </div>
-            <!-- Modo "Organizar": mover las imágenes con flechas y guardar el orden -->
-            <div class="barra-organizar" id="barraOrganizar" hidden>
-                <span>Usa las flechas de cada imagen para moverla.</span>
-                <div class="barra-botones">
-                    <button class="boton-secundario" id="botonCancelarOrden" type="button">Cancelar</button>
-                    <button class="boton-principal" id="botonGuardarOrden" type="button">Guardar orden</button>
-                </div>
+
+            <ul class="rejilla" id="rejilla" aria-label="Obras">
+                <li class="estado-lista">Cargando el catálogo…</li>
+            </ul>
+
+            <p class="nota-datos" id="notaDatos"></p>
+        </section>
+
+        <!-- SOBRE EL SITIO -->
+        <section class="seccion panel" data-seccion="sobre" aria-labelledby="tituloSobre" hidden>
+            <div class="sobre-texto">
+                <h2 id="tituloSobre" tabindex="-1">Sobre el sitio</h2>
+                <p>Frozen Project es un catálogo para encontrar qué leer en manga (Japón), manhwa (Corea) y manhua (China). No se basa en una sola opinión: cada obra muestra lo que piensa la comunidad de lectores.</p>
+
+                <h3>De dónde salen los datos</h3>
+                <ul>
+                    <li>Los títulos, géneros, fechas, portadas, el puntaje y la popularidad vienen de <a href="https://anilist.co" target="_blank" rel="noopener">AniList</a>, una comunidad donde los lectores registran y califican lo que leen.</li>
+                    <li>El puntaje es el promedio de las calificaciones de AniList, pasado a una escala de 0 a 10.</li>
+                    <li>La popularidad es cuántas personas tienen la obra en su lista de AniList.</li>
+                    <li>“Dónde leer” lleva solo a plataformas oficiales.</li>
+                </ul>
+                <p class="nota-datos" id="fechaDatos"></p>
+
+                <h3>Créditos</h3>
+                <p>Datos y portadas: AniList. Fondo animado: Blind Angel, de MoeWalls.</p>
             </div>
-            <!-- Las imágenes se cargan desde galeria.json (ver galeria.js) -->
-            <div class="gallery-grid" id="galeriaGrid" data-estado="cargando"></div>
         </section>
 
     </main>
 
-    <!-- LIGHTBOX: visor de imagen ampliada -->
-    <div class="lightbox" id="lightbox">
-        <div class="lightbox-content">
-            <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">&times;</button>
-            <img id="lightboxImg" src="" alt="">
-            <p class="lightbox-descripcion" id="lightboxDescripcion"></p>
-            <button id="lightboxDownload" class="lightbox-download" type="button">Descargar imagen</button>
-        </div>
-    </div>
+    <!-- FICHA DE UNA OBRA: se llena con catalogo.js -->
+    <dialog class="ficha" id="ficha" aria-labelledby="fichaTitulo">
+        <button class="ficha-cerrar" id="fichaCerrar" type="button" aria-label="Cerrar">&times;</button>
+        <div class="ficha-cuerpo">
+            <!-- La portada se agrega al abrir la ficha -->
+            <div class="ficha-portada" id="fichaPortada"></div>
+            <div class="ficha-cabecera">
+                <h2 id="fichaTitulo"></h2>
+                <p class="otros-titulos" id="fichaOtrosTitulos"></p>
+                <div class="etiquetas" id="fichaEtiquetas"></div>
+            </div>
+            <div class="ficha-detalles">
+                <dl id="fichaDatos"></dl>
 
-    <!-- PANEL PARA AGREGAR IMÁGENES (solo administrador) -->
-    <dialog class="panel-subida" id="panelSubida" aria-labelledby="tituloPanel">
-        <button class="lightbox-close" id="botonCerrarPanel" type="button" aria-label="Cerrar">&times;</button>
+                <h3>Lo que opina la comunidad</h3>
+                <div class="comunidad" id="fichaComunidad"></div>
 
-        <div id="vistaConectar">
-            <h3 id="tituloPanel">Conectar con GitHub</h3>
-            <p class="panel-texto">Para publicar imágenes desde la página, pega un token de GitHub. Se guarda solo en este navegador.</p>
-            <ol class="pasos-token">
-                <li>Abre <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">esta página de GitHub</a> para crear un token.</li>
-                <li>En <b>Repository access</b> elige <b>Only select repositories</b> y marca <b>Sorryfriend49.github.io</b>.</li>
-                <li>En <b>Permissions</b>, pon <b>Contents</b> en <b>Read and write</b>. Genera el token y cópialo.</li>
-            </ol>
-            <input class="campo" type="password" id="campoToken" placeholder="github_pat_…" autocomplete="off" spellcheck="false">
-            <button class="boton-principal" id="botonConectar" type="button">Conectar</button>
-            <p class="estado" id="estadoConectar" role="status"></p>
-        </div>
+                <h3>Dónde leer</h3>
+                <div id="fichaDondeLeer"></div>
 
-        <div id="vistaSubir" hidden>
-            <h3>Agregar imágenes</h3>
-            <label class="zona-archivos" id="zonaArchivos" for="campoArchivos">
-                <input type="file" id="campoArchivos" accept="image/*" multiple>
-                <span id="textoArchivos">Toca o arrastra aquí tus imágenes</span>
-            </label>
-            <div class="previas" id="previas"></div>
-            <input class="campo" type="text" id="campoDescripcion" placeholder="Descripción (opcional)" maxlength="120">
-            <button class="boton-principal" id="botonPublicar" type="button" disabled>Publicar</button>
-            <p class="estado" id="estadoSubir" role="status"></p>
-            <button class="enlace-discreto" id="botonDesconectar" type="button">Desconectar este navegador</button>
+                <p class="ficha-fuente">Datos y portada de <a id="fichaAniList" href="https://anilist.co" target="_blank" rel="noopener">esta obra en AniList</a>.</p>
+            </div>
         </div>
     </dialog>
 
-    <!-- CONFIRMAR ANTES DE ELIMINAR (solo administrador) -->
-    <dialog class="panel-subida panel-confirmar" id="panelEliminar" aria-labelledby="tituloEliminar">
-        <h3 id="tituloEliminar">¿Eliminar esta imagen?</h3>
-        <img class="confirmar-previa" id="previaEliminar" src="" alt="">
-        <p class="panel-texto">Se borrará de la galería para todos los visitantes.</p>
-        <div class="confirmar-botones">
-            <button class="boton-secundario" id="botonCancelarEliminar" type="button">Cancelar</button>
-            <button class="boton-peligro" id="botonConfirmarEliminar" type="button">Eliminar</button>
-        </div>
-        <p class="estado" id="estadoEliminar" role="status"></p>
-    </dialog>
-
-    <!-- EDITAR LA DESCRIPCIÓN DE UNA IMAGEN (solo administrador) -->
-    <dialog class="panel-subida panel-confirmar" id="panelEditar" aria-labelledby="tituloEditar">
-        <h3 id="tituloEditar">Editar descripción</h3>
-        <img class="confirmar-previa" id="previaEditar" src="" alt="">
-        <input class="campo" type="text" id="campoEditar" maxlength="120" placeholder="Describe la imagen" aria-label="Descripción de la imagen">
-        <div class="confirmar-botones">
-            <button class="boton-secundario" id="botonCancelarEditar" type="button">Cancelar</button>
-            <button class="boton-principal" id="botonGuardarEditar" type="button">Guardar</button>
-        </div>
-        <p class="estado" id="estadoEditar" role="status"></p>
-    </dialog>
-
-    <!-- AVISO FLOTANTE -->
-    <div class="aviso" id="aviso" role="status" aria-live="polite"></div>
-
-    <script>
-        // ===== MENU DESPLEGABLE =====
-        const navItems = document.querySelectorAll('.nav-item');
-
-        function cerrarMenus(){
-            navItems.forEach(item => {
-                item.classList.remove('open');
-                item.querySelector('.nav-link').setAttribute('aria-expanded', 'false');
-            });
-        }
-
-        navItems.forEach(item => {
-            const btn = item.querySelector('.nav-link');
-            btn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                const yaAbierto = item.classList.contains('open');
-                cerrarMenus();
-                if (!yaAbierto){
-                    item.classList.add('open');
-                    btn.setAttribute('aria-expanded', 'true');
-                }
-            });
-        });
-
-        // Cierra el menú si se hace clic en cualquier otra parte de la página,
-        // o al elegir una opción dentro del desplegable
-        document.addEventListener('click', cerrarMenus);
-
-        // ===== APARTADOS TIPO PESTAÑA =====
-        // Solo se ve un apartado a la vez, justo debajo del menú, y la página
-        // vuelve arriba del todo. La galería solo se muestra desde
-        // Contenido > Recursos; cualquier otra opción la vuelve a ocultar.
-        const seccionContenido = document.getElementById('contenido');
-
-        function mostrarApartado(esRecursos, esInicio){
-            // Video nítido solo en Inicio; difuminado en cualquier otro apartado
-            document.body.classList.toggle('difuminado', !esInicio);
-
-            // En celular el video se pausa mientras está difuminado: casi no se
-            // nota el movimiento y así no se recalcula el desenfoque en cada cuadro
-            if (esCelular.matches && !reducirMovimiento){
-                if (esInicio) videoFondo.play().catch(() => {});
-                else videoFondo.pause();
-            }
-
-            if (esRecursos){
-                seccionContenido.classList.remove('oculta', 'visible');
-                void seccionContenido.offsetWidth; // reinicia la animación de entrada
-                seccionContenido.classList.add('visible');
-            } else {
-                seccionContenido.classList.add('oculta');
-                seccionContenido.classList.remove('visible');
-            }
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        document.querySelectorAll('.dropdown-menu a').forEach(enlace => {
-            enlace.addEventListener('click', (e) => {
-                e.preventDefault();
-                const esInicio = enlace.closest('.nav-item').dataset.grupo === 'inicio';
-                mostrarApartado(enlace.id === 'linkRecursos', esInicio);
-                setTimeout(cerrarMenus, 150);
-            });
-        });
-
-        // El título "Frozen Project" lleva de vuelta a Inicio
-        document.getElementById('linkTitulo').addEventListener('click', (e) => {
-            e.preventDefault();
-            mostrarApartado(false, true);
-            cerrarMenus();
-        });
-
-        // ===== VIDEO DE FONDO =====
-        // El video empieza justo debajo del menú para que el halo no quede tapado
-        const cabecera = document.querySelector('header');
-        const menu = document.querySelector('nav');
-        function ajustarAltoCabecera(){
-            const alto = cabecera.offsetHeight + menu.offsetHeight;
-            document.documentElement.style.setProperty('--alto-cabecera', alto + 'px');
-
-            // Si un desplegable no cabe a la derecha (p. ej. en celular), se abre hacia la izquierda
-            navItems.forEach(item => {
-                const panel = item.querySelector('.dropdown-menu');
-                const izquierda = item.getBoundingClientRect().left;
-                item.classList.toggle('abre-izquierda', izquierda + panel.offsetWidth > window.innerWidth - 8);
-            });
-        }
-        ajustarAltoCabecera();
-        window.addEventListener('resize', ajustarAltoCabecera);
-        window.addEventListener('load', ajustarAltoCabecera);
-
-        const videoFondo = document.getElementById('fondoVideo');
-        const esCelular = window.matchMedia('(max-width: 768px)');
-        const reducirMovimiento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-        // Respeta a quien prefiere menos movimiento: deja el video quieto
-        if (reducirMovimiento) videoFondo.pause();
-
-        if (esCelular.matches){
-            // Navegadores antiguos que ignoran media="" en <source>: forzar la versión de celular
-            const asegurarVideoMovil = () => {
-                if (!videoFondo.currentSrc.includes('fondo-movil')){
-                    videoFondo.src = 'Video/fondo-movil.mp4';
-                    if (!reducirMovimiento) videoFondo.play().catch(() => {});
-                }
-            };
-            if (videoFondo.readyState > 0) asegurarVideoMovil();
-            else videoFondo.addEventListener('loadedmetadata', asegurarVideoMovil, { once: true });
-            // Pausa el video si la pestaña queda en segundo plano (ahorra batería)
-            document.addEventListener('visibilitychange', () => {
-                if (document.hidden) videoFondo.pause();
-                else if (!document.body.classList.contains('difuminado') && !reducirMovimiento) videoFondo.play().catch(() => {});
-            });
-        }
-
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightboxImg');
-        const lightboxDownload = document.getElementById('lightboxDownload');
-        const lightboxClose = document.getElementById('lightboxClose');
-
-        let currentImgUrl = '';
-        let currentImgName = '';
-
-        function openLightbox(img){
-            lightboxImg.src = img.src;
-            lightboxImg.alt = img.alt;
-            currentImgUrl = img.src;
-            currentImgName = img.dataset.nombre || img.src.split('/').pop();
-            document.getElementById('lightboxDescripcion').textContent = img.alt;
-            lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function guardarBlob(blob, nombre){
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = nombre;
-            document.body.appendChild(a);
-            a.click();
-            a.remove();
-            setTimeout(() => URL.revokeObjectURL(url), 1000);
-        }
-
-        // Descarga la imagen sin salir de la página.
-        // 1) Baja el archivo original tal cual (mismo formato y calidad).
-        // 2) Si eso falla (p. ej. abriendo el HTML en local con file://),
-        //    redibuja la imagen en un canvas y la guarda.
-        // 3) Si el navegador también bloquea eso, la abre en una pestaña aparte.
-        async function descargarImagenActual(){
-            try{
-                const respuesta = await fetch(currentImgUrl);
-                if (!respuesta.ok) throw new Error('sin respuesta');
-                guardarBlob(await respuesta.blob(), currentImgName);
-                return;
-            } catch (err){ /* seguimos con el plan B */ }
-
-            if (!lightboxImg.complete || lightboxImg.naturalWidth === 0){
-                alert('La imagen todavía está cargando, espera un segundo e inténtalo de nuevo.');
-                return;
-            }
-
-            const canvas = document.createElement('canvas');
-            canvas.width = lightboxImg.naturalWidth;
-            canvas.height = lightboxImg.naturalHeight;
-            const extension = currentImgName.split('.').pop().toLowerCase();
-            const tipo = extension === 'png' ? 'image/png'
-                       : extension === 'webp' ? 'image/webp'
-                       : 'image/jpeg';
-
-            try{
-                canvas.getContext('2d').drawImage(lightboxImg, 0, 0);
-                canvas.toBlob((blob) => {
-                    if (blob) guardarBlob(blob, currentImgName);
-                    else abrirEnPestañaNueva();
-                }, tipo, 0.95);
-            } catch (err){
-                abrirEnPestañaNueva();
-            }
-        }
-
-        function abrirEnPestañaNueva(){
-            const nueva = window.open(currentImgUrl, '_blank');
-            if (!nueva){
-                // Si el navegador bloqueó la ventana emergente, al menos intentamos
-                // la descarga directa como último recurso.
-                const a = document.createElement('a');
-                a.href = currentImgUrl;
-                a.download = currentImgName;
-                a.target = '_blank';
-                document.body.appendChild(a);
-                a.click();
-                a.remove();
-            }
-        }
-
-        function closeLightbox(){
-            lightbox.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-
-        // Un solo detector para toda la galería: funciona también con las imágenes agregadas después
-        document.getElementById('galeriaGrid').addEventListener('click', (e) => {
-            // Los botones de administrador los maneja galeria.js; mientras se organiza no se abre el visor
-            if (e.target.closest('.boton-eliminar, .boton-editar, .flechas-orden')) return;
-            if (document.body.classList.contains('organizando')) return;
-            const recuadro = e.target.closest('.gallery-item');
-            if (recuadro) openLightbox(recuadro.querySelector('img'));
-        });
-
-        lightboxClose.addEventListener('click', closeLightbox);
-        lightboxDownload.addEventListener('click', descargarImagenActual);
-
-        lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox) closeLightbox();
-        });
-
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape'){
-                closeLightbox();
-                cerrarMenus();
-            }
-        });
-    </script>
-    <script src="galeria.js"></script>
+    <script src="sitio.js" defer></script>
+    <script src="catalogo.js" defer></script>
 
 </body>
 
