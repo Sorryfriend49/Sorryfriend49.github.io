@@ -36,7 +36,9 @@ concurrency:
 jobs:
   actualizar:
     runs-on: ubuntu-latest
-    timeout-minutes: 75
+    # Con unas 200 obras: ~25 min de datos + hasta 45 de resúmenes. Las tareas de los
+    # repositorios públicos son gratis, así que se deja margen para que nunca se corte.
+    timeout-minutes: 120
     steps:
       - name: Descargar el repositorio
         uses: actions/checkout@v5
