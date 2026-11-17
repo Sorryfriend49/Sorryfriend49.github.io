@@ -81,7 +81,11 @@ export function crearCliente({ fetch, esperar, registro }){
                 await esperar(segundos * 1000);
                 continue;
             }
-            if (!respuesta.ok) throw Object.assign(new Error(`${sitio} respondió ${respuesta.status}`), { status: respuesta.status });
+            if (!respuesta.ok){
+                let detalle = '';
+                try { detalle = (await respuesta.text()).replace(/\s+/g, ' ').trim().slice(0, 160); } catch { detalle = ''; }
+                throw Object.assign(new Error(`${sitio} respondió ${respuesta.status}${detalle ? ': ' + detalle : ''}`), { status: respuesta.status });
+            }
             return respuesta.json();
         }
     };
@@ -212,7 +216,7 @@ export async function ejecutar({
     ahora = new Date(),
     esperar = dormir,
     registro = console.log,
-    claveMAL = process.env.MAL_CLIENT_ID || '',
+    claveMAL = (process.env.MAL_CLIENT_ID || '').trim(),
     clasificador = null            // tono de las frases; si no se pasa, se carga el modelo (tono.mjs)
 } = {}){
     const fecha = hoy(ahora);
@@ -242,6 +246,10 @@ export async function ejecutar({
     // Una fuente queda con la fecha de hoy si aportó datos frescos a alguna obra
     const fuentesUsadas = { anilist: true, kitsu: false, mangaupdates: false, myanimelist: false };
     const resultado = {};
+    // MyAnimeList: si rechaza la clave en las primeras obras (400, 401 o 403), no se insiste con las demás
+    let malActivo = Boolean(claveMAL);
+    let malRespondio = false;
+    let malRechazos = 0;
 
     for (const obra of obras){
         const id = String(obra.ids.anilist);
@@ -292,10 +300,26 @@ export async function ejecutar({
             else if (!mu.id && mu.buscado === fecha) registro(`  ${obra.titulo} → no está en MangaUpdates`);
         } else if (emparejadaAlDia && previo.fuentes && previo.fuentes.mangaupdates) fuentes.mangaupdates = previo.fuentes.mangaupdates;
 
-        if (claveMAL){
-            const mal = await intentar('myanimelist', () => traerMAL(pedir, obra, claveMAL));
-            if (mal) fuentes.myanimelist = mal;
-            else if (mal === undefined && previo.fuentes && previo.fuentes.myanimelist) fuentes.myanimelist = previo.fuentes.myanimelist;
+        if (malActivo){
+            try {
+                const mal = await traerMAL(pedir, obra, claveMAL);
+                if (mal){
+                    fuentes.myanimelist = mal;
+                    fuentesUsadas.myanimelist = true;
+                    malRespondio = true;
+                }
+            } catch (error){
+                if (!malRespondio && [400, 401, 403].includes(error.status) && ++malRechazos >= 3){
+                    malActivo = false;
+                    registro(`MyAnimeList rechazó la clave (${error.message}). Revisa el secreto MAL_CLIENT_ID ` +
+                        `(tiene ${claveMAL.length} caracteres; una clave de MyAnimeList tiene 32). Esta vez se sigue sin MyAnimeList.`);
+                } else {
+                    registro(`  ${obra.titulo}: myanimelist falló (${error.message}); se usa el dato anterior`);
+                }
+                if (previo.fuentes && previo.fuentes.myanimelist) fuentes.myanimelist = previo.fuentes.myanimelist;
+            }
+        } else if (claveMAL && previo.fuentes && previo.fuentes.myanimelist){
+            fuentes.myanimelist = previo.fuentes.myanimelist;
         }
 
         // Reseñas, etiquetas, recomendaciones y actividad (si fallan, se conserva lo anterior)
@@ -392,8 +416,9 @@ export async function ejecutar({
     if (ultima && diasEntre(ultima.fecha, fecha) < 5) semanas[semanas.length - 1] = foto;
     else semanas.push(foto);
 
+    const conDatos = nombre => Object.values(resultado).some(r => r.fuentes && r.fuentes[nombre]);
     const fechasFuentes = Object.fromEntries(Object.entries(fuentesUsadas).map(([nombre, usada]) =>
-        [nombre, usada ? fecha : ((anterior.fuentes || {})[nombre] || null)]));
+        [nombre, !conDatos(nombre) ? null : (usada ? fecha : ((anterior.fuentes || {})[nombre] || null))]));
     if (!claveMAL) fechasFuentes.myanimelist = null;
 
     await escribirJSON(ruta('datos/comunidad.json'), {
