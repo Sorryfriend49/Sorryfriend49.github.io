@@ -5,9 +5,12 @@ const Q = `query ($p:Int, $pais: CountryCode, $genero: String) { Page(page:$p, p
   media(type: MANGA, format_in:[MANGA, ONE_SHOT], countryOfOrigin: $pais, genre: $genero, isAdult:false, sort: POPULARITY_DESC) {
     id idMal title { romaji english } format countryOfOrigin popularity meanScore status genres startDate { year } chapters } } }`;
 async function pedir(variables){
-  for (let i = 1; i <= 5; i++){
-    const r = await fetch(ANILIST, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify({ query: Q, variables }) });
-    if (r.status === 429 || r.status >= 500){ await dormir(15000 * i); continue; }
+  for (let i = 1; i <= 8; i++){
+    let r;
+    try {
+      r = await fetch(ANILIST, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json', 'User-Agent': 'FrozenProject/1.0 (+https://sorryfriend49.github.io)' }, body: JSON.stringify({ query: Q, variables }), signal: AbortSignal.timeout(30000) });
+    } catch (e){ console.log('reintento por', e.message); await dormir(8000 * i); continue; }
+    if (r.status === 429 || r.status >= 500){ console.log('reintento por', r.status); await dormir(15000 * i); continue; }
     const d = await r.json();
     if (d.errors) throw new Error(JSON.stringify(d.errors));
     return d.data.Page.media;
