@@ -1,0 +1,14 @@
+# Temporal (rama buscar-obras): lista obras populares de AniList para elegir cuáles sumar al catálogo.
+name: Buscar obras candidatas (temporal)
+on:
+  push:
+    branches: [buscar-obras]
+permissions:
+  contents: read
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - run: node scripts/buscar-candidatas.mjs
