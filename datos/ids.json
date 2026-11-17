@@ -21,6 +21,13 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "30007": {
+      "kitsu": "23",
+      "mangaupdates": 20546760497,
+      "mangaupdatesTitulo": "Hajime no Ippo",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "30011": {
       "kitsu": "35",
       "mangaupdates": 17360452316,
@@ -49,6 +56,20 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "30022": {
+      "kitsu": "60",
+      "mangaupdates": 36164756587,
+      "mangaupdatesTitulo": "Rurouni Kenshin",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "30024": {
+      "kitsu": "64",
+      "mangaupdates": 64519011883,
+      "mangaupdatesTitulo": "D.Gray-man",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "30025": {
       "kitsu": "66",
       "mangaupdates": 19001585632,
@@ -63,6 +84,13 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "30028": {
+      "kitsu": "74",
+      "mangaupdates": 54125238536,
+      "mangaupdatesTitulo": "Nana",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "30042": {
       "kitsu": "111",
       "mangaupdates": 40319778780,
@@ -70,11 +98,74 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "30043": {
+      "kitsu": "113",
+      "mangaupdates": 52285325363,
+      "mangaupdatesTitulo": "Eyeshield 21",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "30044": {
+      "kitsu": "116",
+      "mangaupdates": 10663654534,
+      "mangaupdatesTitulo": "Gintama",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "30051": {
       "kitsu": "133",
       "mangaupdates": 55665151734,
       "mangaupdatesTitulo": "Slam Dunk",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "30053": {
+      "kitsu": "138",
+      "mangaupdates": 62649284922,
+      "mangaupdatesTitulo": "Yu Yu Hakusho",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "30102": {
+      "kitsu": "267",
+      "mangaupdates": 21907104419,
+      "mangaupdatesTitulo": "Fruits Basket",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "30104": {
+      "kitsu": "272",
+      "mangaupdates": 23606352927,
+      "mangaupdatesTitulo": "Yotsuba to!",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "30401": {
+      "kitsu": "906",
+      "mangaupdates": 50302817858,
+      "mangaupdatesTitulo": "Kiseijuu",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "30418": {
+      "kitsu": "940",
+      "mangaupdates": 71516477271,
+      "mangaupdatesTitulo": "Mushishi",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "30436": {
+      "kitsu": "983",
+      "mangaupdates": 77448016865,
+      "mangaupdatesTitulo": "Uzumaki",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "30598": {
+      "kitsu": "1361",
+      "mangaupdates": 61251107617,
+      "mangaupdatesTitulo": "Fairy Tail",
+      "buscado": "2026-11-17",
       "emparejador": 2
     },
     "30642": {
@@ -91,11 +182,74 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "30657": {
+      "kitsu": "1484",
+      "mangaupdates": 24661607542,
+      "mangaupdatesTitulo": "Real",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "30664": {
+      "kitsu": "1500",
+      "mangaupdates": 46397795369,
+      "mangaupdatesTitulo": "Akira",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "30698": {
+      "kitsu": "1563",
+      "mangaupdates": 42358856015,
+      "mangaupdatesTitulo": "Shin Seiki Evangelion",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "30745": {
+      "kitsu": "1637",
+      "mangaupdates": 36529479380,
+      "mangaupdatesTitulo": "Pluto",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "30756": {
+      "kitsu": "1654",
+      "mangaupdates": 45888065064,
+      "mangaupdatesTitulo": "Banana Fish",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "30908": {
+      "kitsu": "1984",
+      "mangaupdates": 62703903593,
+      "mangaupdatesTitulo": "Soul Eater",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "30936": {
+      "kitsu": "2041",
+      "mangaupdates": 16187629177,
+      "mangaupdatesTitulo": "Homunculus",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "31133": {
       "kitsu": "2435",
       "mangaupdates": 72792030757,
       "mangaupdatesTitulo": "Dorohedoro",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "31224": {
+      "kitsu": "2704",
+      "mangaupdates": 63298688127,
+      "mangaupdatesTitulo": "3-gatsu no Lion",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "31320": {
+      "kitsu": "2864",
+      "mangaupdates": 49242576612,
+      "mangaupdatesTitulo": "The Ravages of Time",
+      "buscado": "2026-11-17",
       "emparejador": 2
     },
     "31706": {
@@ -112,11 +266,46 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "37375": {
+      "kitsu": "15190",
+      "mangaupdates": 29777637784,
+      "mangaupdatesTitulo": "Kokou no Hito",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "38586": {
+      "kitsu": "17413",
+      "mangaupdates": 50997611698,
+      "mangaupdatesTitulo": "The Breaker",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "41652": {
+      "kitsu": "21730",
+      "mangaupdates": 64201264591,
+      "mangaupdatesTitulo": "Kuroko no Basket",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "43245": {
+      "kitsu": "23862",
+      "mangaupdates": 17036345354,
+      "mangaupdatesTitulo": "Chihayafuru",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "46765": {
       "kitsu": "3480",
       "mangaupdates": 4324727424,
       "mangaupdatesTitulo": "Kingdom",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "51525": {
+      "kitsu": "11152",
+      "mangaupdates": 37877877786,
+      "mangaupdatesTitulo": "Akatsuki no Yona",
+      "buscado": "2026-11-17",
       "emparejador": 2
     },
     "53390": {
@@ -126,11 +315,32 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "54692": {
+      "kitsu": "17204",
+      "mangaupdates": 7375807293,
+      "mangaupdatesTitulo": "Noragami",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "59983": {
       "kitsu": "23815",
       "mangaupdates": 62393605458,
       "mangaupdatesTitulo": "Noblesse",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "60079": {
+      "kitsu": "134",
+      "mangaupdates": 16971017958,
+      "mangaupdatesTitulo": "Annarasumanara",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "63031": {
+      "kitsu": "6535",
+      "mangaupdates": 5792851680,
+      "mangaupdatesTitulo": "Imawa no Kuni no Alice",
+      "buscado": "2026-11-17",
       "emparejador": 2
     },
     "63327": {
@@ -147,6 +357,27 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "69325": {
+      "kitsu": "19100",
+      "mangaupdates": 60899029545,
+      "mangaupdatesTitulo": "Boku Dake ga Inai Machi",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "69883": {
+      "kitsu": "19682",
+      "mangaupdates": 67339072487,
+      "mangaupdatesTitulo": "Ansatsu Kyoushitsu",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "72001": {
+      "kitsu": "21891",
+      "mangaupdates": 64382072124,
+      "mangaupdatesTitulo": "Chang Ge Xing",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "72451": {
       "kitsu": "22352",
       "mangaupdates": 67129139039,
@@ -159,6 +390,20 @@
       "mangaupdates": 30535847369,
       "mangaupdatesTitulo": "One Punch-Man",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "74485": {
+      "kitsu": "24208",
+      "mangaupdates": 62758791984,
+      "mangaupdatesTitulo": "Nanatsu no Taizai",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "74489": {
+      "kitsu": "24211",
+      "mangaupdates": 23040144902,
+      "mangaupdatesTitulo": "Houseki no Kuni",
+      "buscado": "2026-11-17",
       "emparejador": 2
     },
     "85135": {
@@ -182,6 +427,27 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "85189": {
+      "kitsu": "25358",
+      "mangaupdates": 605012986,
+      "mangaupdatesTitulo": "Mob Psycho 100",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "85412": {
+      "kitsu": "25931",
+      "mangaupdates": 65172390077,
+      "mangaupdatesTitulo": "Shoujo Shuumatsu Ryokou",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "85446": {
+      "kitsu": "25779",
+      "mangaupdates": 56536923316,
+      "mangaupdatesTitulo": "Douluo Dalu",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "85453": {
       "kitsu": "32621",
       "mangaupdates": 45299806980,
@@ -194,6 +460,13 @@
       "mangaupdates": 63868402874,
       "mangaupdatesTitulo": "Boku no Hero Academia",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "85611": {
+      "kitsu": "26401",
+      "mangaupdates": 45405144027,
+      "mangaupdatesTitulo": "Toukyou Ghoul:re",
+      "buscado": "2026-11-17",
       "emparejador": 2
     },
     "85734": {
@@ -217,11 +490,53 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "86099": {
+      "kitsu": "47067",
+      "mangaupdates": 18602075756,
+      "mangaupdatesTitulo": "Wind Breaker",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "86123": {
       "kitsu": "27527",
       "mangaupdates": 70180620476,
       "mangaupdatesTitulo": "Black Clover",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "86218": {
+      "kitsu": "36107",
+      "mangaupdates": 71019989107,
+      "mangaupdatesTitulo": "Yagate Kimi ni Naru",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "86310": {
+      "kitsu": "36201",
+      "mangaupdates": 20334720872,
+      "mangaupdatesTitulo": "Enen no Shouboutai",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "86399": {
+      "kitsu": "35483",
+      "mangaupdates": 270105846,
+      "mangaupdatesTitulo": "Tensei Shitara Slime datta Ken",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "86551": {
+      "kitsu": "38449",
+      "mangaupdates": 22899415114,
+      "mangaupdatesTitulo": "Made in Abyss",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "86559": {
+      "kitsu": "34444",
+      "mangaupdates": 6279724596,
+      "mangaupdatesTitulo": "Golden Kamui",
+      "buscado": "2026-11-17",
       "emparejador": 2
     },
     "86635": {
@@ -265,11 +580,25 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "87395": {
+      "kitsu": "30463",
+      "mangaupdates": 65672018770,
+      "mangaupdatesTitulo": "Grand Blue",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "87423": {
       "kitsu": "38047",
       "mangaupdates": 58588321341,
       "mangaupdatesTitulo": "Yakusoku no Neverland",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "97830": {
+      "kitsu": "38622",
+      "mangaupdates": 49456376337,
+      "mangaupdatesTitulo": "Fumetsu no Anata e",
+      "buscado": "2026-11-17",
       "emparejador": 2
     },
     "97852": {
@@ -286,11 +615,39 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "98397": {
+      "kitsu": "38859",
+      "mangaupdates": 3457525393,
+      "mangaupdatesTitulo": "Chi no Wadachi",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "98416": {
       "kitsu": "38860",
       "mangaupdates": 372275459,
       "mangaupdatesTitulo": "Dr. Stone",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "99022": {
+      "kitsu": "39631",
+      "mangaupdates": 15124812002,
+      "mangaupdatesTitulo": "Kusuriya no Hitorigoto",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "99943": {
+      "kitsu": "40005",
+      "mangaupdates": 21192936031,
+      "mangaupdatesTitulo": "Kanojo, Okarishimasu",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "100230": {
+      "kitsu": "39018",
+      "mangaupdates": 39568149365,
+      "mangaupdatesTitulo": "Go-Toubun no Hanayome",
+      "buscado": "2026-11-17",
       "emparejador": 2
     },
     "100568": {
@@ -321,11 +678,25 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "101233": {
+      "kitsu": "40679",
+      "mangaupdates": 21920652313,
+      "mangaupdatesTitulo": "Gokushufudou",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "101517": {
       "kitsu": "40815",
       "mangaupdates": 23801312094,
       "mangaupdatesTitulo": "Jujutsu Kaisen",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "101557": {
+      "kitsu": "52757",
+      "mangaupdates": 9143777514,
+      "mangaupdatesTitulo": "Boku no Kokoro no Yabai Yatsu",
+      "buscado": "2026-11-17",
       "emparejador": 2
     },
     "101563": {
@@ -335,11 +706,45 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "101583": {
+      "kitsu": "41006",
+      "mangaupdates": 13952982910,
+      "mangaupdatesTitulo": "Sono Bisque Doll wa Koi o Suru",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "101942": {
+      "kitsu": "52154",
+      "mangaupdates": 45702686526,
+      "mangaupdatesTitulo": "Tengoku Daimakyou",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "102988": {
       "kitsu": "40278",
       "mangaupdates": 22666849312,
       "mangaupdatesTitulo": "Toukyou 卍 Revengers",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "103995": {
+      "kitsu": "53969",
+      "mangaupdates": 3550903119,
+      "mangaupdatesTitulo": "True Beauty",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "104494": {
+      "mangaupdates": 19455438921,
+      "mangaupdatesTitulo": "Martial Peak",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "104660": {
+      "kitsu": "55549",
+      "mangaupdates": 36965395479,
+      "mangaupdatesTitulo": "Zom 100: Zombie ni Naru made ni Shitai 100 no Koto",
+      "buscado": "2026-11-17",
       "emparejador": 2
     },
     "104973": {
@@ -384,6 +789,27 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "107098": {
+      "kitsu": "51379",
+      "mangaupdates": 67808789330,
+      "mangaupdatesTitulo": "Shuumatsu no Valkyrie",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "107237": {
+      "kitsu": "49863",
+      "mangaupdates": 11255037735,
+      "mangaupdatesTitulo": "Blue Period.",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "107279": {
+      "kitsu": "46620",
+      "mangaupdates": 64879261865,
+      "mangaupdatesTitulo": "Ao Ashi",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "107521": {
       "kitsu": "54665",
       "mangaupdates": 2716484370,
@@ -396,6 +822,13 @@
       "mangaupdates": 63936957555,
       "mangaupdatesTitulo": "My Wife Is a Demon Queen",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "108050": {
+      "kitsu": "54512",
+      "mangaupdates": 27599877263,
+      "mangaupdatesTitulo": "Master of Gu",
+      "buscado": "2026-11-17",
       "emparejador": 2
     },
     "108152": {
@@ -412,6 +845,19 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "108952": {
+      "kitsu": "56170",
+      "mangaupdates": 75712583833,
+      "mangaupdatesTitulo": "PIGPEN",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "109285": {
+      "mangaupdates": 4563152379,
+      "mangaupdatesTitulo": "Skip to Loafer",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "109957": {
       "kitsu": "54690",
       "mangaupdates": 34373027975,
@@ -426,6 +872,33 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "110605": {
+      "kitsu": "55656",
+      "mangaupdates": 2427288872,
+      "mangaupdatesTitulo": "Leviathan (LEE Gyuntak)",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "111189": {
+      "kitsu": "56016",
+      "mangaupdates": 22765007599,
+      "mangaupdatesTitulo": "Yubisaki to Renren",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "111233": {
+      "kitsu": "55099",
+      "mangaupdates": 57601415104,
+      "mangaupdatesTitulo": "Yofukashi no Uta",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "111593": {
+      "mangaupdates": 46911101271,
+      "mangaupdatesTitulo": "The 10 Years I loved you the most",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "112275": {
       "mangaupdates": 56198748593,
       "mangaupdatesTitulo": "Heaven Official's Blessing",
@@ -438,10 +911,51 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "113055": {
+      "kitsu": "55733",
+      "mangaupdates": 45951072106,
+      "mangaupdatesTitulo": "The Remarried Empress",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "113350": {
       "mangaupdates": 62688067415,
       "mangaupdatesTitulo": "Salad Days (Jing Shui Bian)",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "113488": {
+      "kitsu": "55387",
+      "mangaupdates": 47112913103,
+      "mangaupdatesTitulo": "Weak Hero",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "114605": {
+      "kitsu": "55797",
+      "mangaupdates": 55302214008,
+      "mangaupdatesTitulo": "Latna Saga: Survival of a Sword King",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "114791": {
+      "kitsu": "55829",
+      "mangaupdates": 6376149234,
+      "mangaupdatesTitulo": "Undead Unluck",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "114960": {
+      "kitsu": "55857",
+      "mangaupdates": 444271657,
+      "mangaupdatesTitulo": "MASHLE",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "115000": {
+      "mangaupdates": 1701302859,
+      "mangaupdatesTitulo": "Unholy Blood",
+      "buscado": "2026-11-17",
       "emparejador": 2
     },
     "116353": {
@@ -471,11 +985,39 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "117540": {
+      "kitsu": "56230",
+      "mangaupdates": 33309873901,
+      "mangaupdatesTitulo": "Beware the Villainess!",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "118269": {
+      "kitsu": "58500",
+      "mangaupdates": 11760633805,
+      "mangaupdatesTitulo": "Soulmate",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "118371": {
+      "kitsu": "59944",
+      "mangaupdates": 26977861324,
+      "mangaupdatesTitulo": "Medalist",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "118408": {
       "kitsu": "56296",
       "mangaupdates": 4081439862,
       "mangaupdatesTitulo": "Villains Are Destined to Die",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "118424": {
+      "kitsu": "56270",
+      "mangaupdates": 17066552636,
+      "mangaupdatesTitulo": "The Archmage Returns After 4000 Years",
+      "buscado": "2026-11-17",
       "emparejador": 2
     },
     "118586": {
@@ -506,6 +1048,18 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "120288": {
+      "mangaupdates": 21528356545,
+      "mangaupdatesTitulo": "Spare Me, Great Lord!",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "120385": {
+      "mangaupdates": 76874161220,
+      "mangaupdatesTitulo": "Log-In Murim",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "120760": {
       "kitsu": "56808",
       "mangaupdates": 19101650311,
@@ -520,6 +1074,12 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "121565": {
+      "mangaupdates": 74574654029,
+      "mangaupdatesTitulo": "Seasons of Blossom",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "121991": {
       "kitsu": "57228",
       "mangaupdates": 68589850270,
@@ -532,6 +1092,13 @@
       "mangaupdates": 28433049110,
       "mangaupdatesTitulo": "Lout of Count's Family",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "123739": {
+      "kitsu": "57378",
+      "mangaupdates": 22856385000,
+      "mangaupdatesTitulo": "Under the Oak Tree",
+      "buscado": "2026-11-17",
       "emparejador": 2
     },
     "125291": {
@@ -562,6 +1129,34 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "129210": {
+      "kitsu": "58844",
+      "mangaupdates": 67107908111,
+      "mangaupdatesTitulo": "Roxana",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "130229": {
+      "kitsu": "59034",
+      "mangaupdates": 37560902795,
+      "mangaupdatesTitulo": "Shotgun Boy",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "130429": {
+      "kitsu": "59037",
+      "mangaupdates": 59678448845,
+      "mangaupdatesTitulo": "I Shall Master This Family",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "130511": {
+      "kitsu": "58886",
+      "mangaupdates": 66042781119,
+      "mangaupdatesTitulo": "The Player Who Can't Level Up",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "132029": {
       "kitsu": "59289",
       "mangaupdates": 64884662872,
@@ -583,11 +1178,25 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "135325": {
+      "kitsu": "59750",
+      "mangaupdates": 43476221806,
+      "mangaupdatesTitulo": "The Lazy Lord Masters the Sword",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "136220": {
       "kitsu": "60196",
       "mangaupdates": 3796218942,
       "mangaupdatesTitulo": "Doom Breaker",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "136807": {
+      "kitsu": "60475",
+      "mangaupdates": 62512335978,
+      "mangaupdatesTitulo": "Look Back (FUJIMOTO Tatsuki)",
+      "buscado": "2026-11-17",
       "emparejador": 2
     },
     "137280": {
@@ -597,6 +1206,48 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "137304": {
+      "kitsu": "60873",
+      "mangaupdates": 16611247248,
+      "mangaupdatesTitulo": "Return of the Mad Demon",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "138222": {
+      "kitsu": "60832",
+      "mangaupdates": 38141085546,
+      "mangaupdatesTitulo": "Level Up With the Gods",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "138366": {
+      "kitsu": "60556",
+      "mangaupdates": 60261451232,
+      "mangaupdatesTitulo": "Your Talent Is Mine",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "138603": {
+      "kitsu": "61626",
+      "mangaupdates": 9839035525,
+      "mangaupdatesTitulo": "Hikaru ga Shinda Natsu",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "138726": {
+      "kitsu": "62386",
+      "mangaupdates": 45983968973,
+      "mangaupdatesTitulo": "Rebirth of the Ultimate Master",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "139741": {
+      "kitsu": "61302",
+      "mangaupdates": 9803421694,
+      "mangaupdatesTitulo": "I'm Really Not the Devil's Lackey",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "140407": {
       "kitsu": "60854",
       "mangaupdates": 27180626786,
@@ -604,11 +1255,39 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "140475": {
+      "kitsu": "63153",
+      "mangaupdates": 31409091299,
+      "mangaupdatesTitulo": "Kaoru Hana wa Rin to Saku",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "141756": {
+      "kitsu": "61631",
+      "mangaupdates": 58993669186,
+      "mangaupdatesTitulo": "Please Bully Me, Miss Villainess!",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "142287": {
       "kitsu": "61963",
       "mangaupdates": 75183500944,
       "mangaupdatesTitulo": "I Am the Fated Villain",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "142568": {
+      "kitsu": "61927",
+      "mangaupdates": 76276804978,
+      "mangaupdatesTitulo": "Takopii no Genzai",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "143056": {
+      "kitsu": "61981",
+      "mangaupdates": 43236637606,
+      "mangaupdatesTitulo": "The Return of the Disaster-Class Hero",
+      "buscado": "2026-11-17",
       "emparejador": 2
     },
     "144946": {
@@ -625,6 +1304,20 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "146139": {
+      "kitsu": "62858",
+      "mangaupdates": 20504442429,
+      "mangaupdatesTitulo": "Maybe Meant to Be",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "146267": {
+      "kitsu": "63747",
+      "mangaupdates": 41296548654,
+      "mangaupdatesTitulo": "My Wife Is From a Thousand Years Ago",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "146983": {
       "kitsu": "62923",
       "mangaupdates": 47603342373,
@@ -639,8 +1332,22 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "152128": {
+      "kitsu": "63926",
+      "mangaupdates": 29556692510,
+      "mangaupdatesTitulo": "The Novel's Extra (2022)",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "154159": {
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "154258": {
+      "kitsu": "65005",
+      "mangaupdates": 12600089717,
+      "mangaupdatesTitulo": "Lucky Me: I Secretly Cultivated for 1,000 Years",
+      "buscado": "2026-11-17",
       "emparejador": 2
     },
     "159441": {
@@ -671,11 +1378,25 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "164857": {
+      "kitsu": "67775",
+      "mangaupdates": 47777182673,
+      "mangaupdatesTitulo": "Surviving the Game as a Barbarian",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "167372": {
       "kitsu": "68710",
       "mangaupdates": 27902891655,
       "mangaupdatesTitulo": "Necromancer, the Ultimate Scourge!",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "168843": {
+      "kitsu": "74702",
+      "mangaupdates": 41569187745,
+      "mangaupdatesTitulo": "Little Mushroom",
+      "buscado": "2026-11-17",
       "emparejador": 2
     },
     "169355": {
@@ -699,11 +1420,46 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "175946": {
+      "kitsu": "71426",
+      "mangaupdates": 66602465958,
+      "mangaupdatesTitulo": "Myst, Might, Mayhem",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
     "177706": {
       "kitsu": "71747",
       "mangaupdates": 35590700362,
       "mangaupdatesTitulo": "The Knight Only Lives Today",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "180752": {
+      "kitsu": "72926",
+      "mangaupdates": 69937991585,
+      "mangaupdatesTitulo": "Ichi the Witch",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "180891": {
+      "kitsu": "72603",
+      "mangaupdates": 73697803962,
+      "mangaupdatesTitulo": "Absolute Regression",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "182066": {
+      "kitsu": "73088",
+      "mangaupdates": 74631868688,
+      "mangaupdatesTitulo": "The Regressed Mercenary Has a Plan",
+      "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "187944": {
+      "kitsu": "74483",
+      "mangaupdates": 21349312008,
+      "mangaupdatesTitulo": "My Bias Gets on the Last Train",
+      "buscado": "2026-11-17",
       "emparejador": 2
     }
   }
