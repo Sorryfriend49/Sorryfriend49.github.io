@@ -1,12 +1,12 @@
 {
   "esquema": 1,
   "metodo": "1.2",
-  "generado": "2026-11-17T02:28:44.873Z",
+  "generado": "2026-11-17T02:44:51.479Z",
   "fuentes": {
     "anilist": "2026-11-17",
     "kitsu": "2026-11-17",
     "mangaupdates": "2026-11-17",
-    "myanimelist": null
+    "myanimelist": "2026-11-17"
   },
   "mediaCatalogo": 81.4,
   "tono": {
@@ -16,11 +16,11 @@
   "obras": {
     "30001": {
       "puntaje": {
-        "valor": 87.4,
-        "votos": 41812,
-        "confianza": "alta",
-        "diferencia": 6.6,
-        "comunidades": 3
+        "valor": 88.9,
+        "votos": 162015,
+        "confianza": "media",
+        "diferencia": 8.2,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -34,6 +34,10 @@
         "mangaupdates": {
           "puntaje": 87.6,
           "votos": 2033
+        },
+        "myanimelist": {
+          "puntaje": 91.6,
+          "votos": 120203
         }
       },
       "distribucion": {
@@ -191,11 +195,11 @@
     },
     "30002": {
       "puntaje": {
-        "valor": 88.6,
-        "votos": 116577,
-        "confianza": "alta",
-        "diferencia": 7.1,
-        "comunidades": 3
+        "valor": 90.4,
+        "votos": 524182,
+        "confianza": "media",
+        "diferencia": 9.7,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -209,6 +213,10 @@
         "mangaupdates": {
           "puntaje": 89.8,
           "votos": 3731
+        },
+        "myanimelist": {
+          "puntaje": 94.6,
+          "votos": 407605
         }
       },
       "distribucion": {
@@ -368,11 +376,11 @@
     },
     "30003": {
       "puntaje": {
-        "valor": 86.2,
-        "votos": 34463,
+        "valor": 87.3,
+        "votos": 147066,
         "confianza": "alta",
-        "diferencia": 5.3,
-        "comunidades": 3
+        "diferencia": 6.6,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -386,6 +394,10 @@
         "mangaupdates": {
           "puntaje": 87.6,
           "votos": 1858
+        },
+        "myanimelist": {
+          "puntaje": 89.3,
+          "votos": 112603
         }
       },
       "distribucion": {
@@ -543,11 +555,11 @@
     },
     "30007": {
       "puntaje": {
-        "valor": 86.6,
-        "votos": 13058,
+        "valor": 87,
+        "votos": 55808,
         "confianza": "alta",
         "diferencia": 5.3,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -561,6 +573,10 @@
         "mangaupdates": {
           "puntaje": 84.4,
           "votos": 1017
+        },
+        "myanimelist": {
+          "puntaje": 87.6,
+          "votos": 42750
         }
       },
       "distribucion": {
@@ -689,11 +705,11 @@
     },
     "30011": {
       "puntaje": {
-        "valor": 80.3,
-        "votos": 73981,
+        "valor": 80.4,
+        "votos": 364901,
         "confianza": "alta",
         "diferencia": 5.5,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -707,6 +723,10 @@
         "mangaupdates": {
           "puntaje": 76.9,
           "votos": 5593
+        },
+        "myanimelist": {
+          "puntaje": 80.9,
+          "votos": 290920
         }
       },
       "distribucion": {
@@ -866,11 +886,11 @@
     },
     "30012": {
       "puntaje": {
-        "valor": 78.4,
-        "votos": 73598,
+        "valor": 78.6,
+        "votos": 338266,
         "confianza": "alta",
         "diferencia": 4.1,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -884,6 +904,10 @@
         "mangaupdates": {
           "puntaje": 75.9,
           "votos": 4895
+        },
+        "myanimelist": {
+          "puntaje": 79.3,
+          "votos": 264668
         }
       },
       "distribucion": {
@@ -1043,11 +1067,11 @@
     },
     "30013": {
       "puntaje": {
-        "valor": 88.2,
-        "votos": 199709,
+        "valor": 89.3,
+        "votos": 628091,
         "confianza": "alta",
-        "diferencia": 5.9,
-        "comunidades": 3
+        "diferencia": 6.9,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -1061,6 +1085,10 @@
         "mangaupdates": {
           "puntaje": 88.9,
           "votos": 5372
+        },
+        "myanimelist": {
+          "puntaje": 92,
+          "votos": 428382
         }
       },
       "distribucion": {
@@ -1220,11 +1248,11 @@
     },
     "30021": {
       "puntaje": {
-        "valor": 84.4,
-        "votos": 104762,
+        "valor": 85.1,
+        "votos": 352440,
         "confianza": "alta",
-        "diferencia": 1.8,
-        "comunidades": 3
+        "diferencia": 2.8,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -1238,6 +1266,10 @@
         "mangaupdates": {
           "puntaje": 85.8,
           "votos": 3699
+        },
+        "myanimelist": {
+          "puntaje": 86.8,
+          "votos": 247678
         }
       },
       "distribucion": {
@@ -1385,11 +1417,11 @@
     },
     "30022": {
       "puntaje": {
-        "valor": 82.8,
-        "votos": 14331,
+        "valor": 83.8,
+        "votos": 64693,
         "confianza": "alta",
         "diferencia": 4.7,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -1403,6 +1435,10 @@
         "mangaupdates": {
           "puntaje": 86.7,
           "votos": 2044
+        },
+        "myanimelist": {
+          "puntaje": 85.3,
+          "votos": 50362
         }
       },
       "distribucion": {
@@ -1541,11 +1577,11 @@
     },
     "30024": {
       "puntaje": {
-        "valor": 82.5,
-        "votos": 16640,
+        "valor": 82.6,
+        "votos": 83228,
         "confianza": "alta",
         "diferencia": 2.7,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -1559,6 +1595,10 @@
         "mangaupdates": {
           "puntaje": 84.7,
           "votos": 2193
+        },
+        "myanimelist": {
+          "puntaje": 82.8,
+          "votos": 66588
         }
       },
       "distribucion": {
@@ -1706,11 +1746,11 @@
     },
     "30025": {
       "puntaje": {
-        "valor": 86.7,
-        "votos": 64100,
+        "valor": 87.8,
+        "votos": 236927,
         "confianza": "alta",
-        "diferencia": 5,
-        "comunidades": 3
+        "diferencia": 6.5,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -1724,6 +1764,10 @@
         "mangaupdates": {
           "puntaje": 87.8,
           "votos": 4358
+        },
+        "myanimelist": {
+          "puntaje": 90.5,
+          "votos": 172827
         }
       },
       "distribucion": {
@@ -1871,11 +1915,11 @@
     },
     "30026": {
       "puntaje": {
-        "valor": 86.2,
-        "votos": 73362,
+        "valor": 86.8,
+        "votos": 219313,
         "confianza": "alta",
         "diferencia": 3.6,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -1889,6 +1933,10 @@
         "mangaupdates": {
           "puntaje": 86.7,
           "votos": 2011
+        },
+        "myanimelist": {
+          "puntaje": 87.9,
+          "votos": 145951
         }
       },
       "distribucion": {
@@ -2046,11 +2094,11 @@
     },
     "30028": {
       "puntaje": {
-        "valor": 86.6,
-        "votos": 16668,
+        "valor": 87.2,
+        "votos": 71499,
         "confianza": "alta",
-        "diferencia": 5,
-        "comunidades": 3
+        "diferencia": 5.2,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -2064,6 +2112,10 @@
         "mangaupdates": {
           "puntaje": 85.5,
           "votos": 1252
+        },
+        "myanimelist": {
+          "puntaje": 88.2,
+          "votos": 54831
         }
       },
       "distribucion": {
@@ -2211,11 +2263,11 @@
     },
     "30042": {
       "puntaje": {
-        "valor": 83.8,
-        "votos": 46401,
+        "valor": 84.1,
+        "votos": 159242,
         "confianza": "alta",
         "diferencia": 2.2,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -2229,6 +2281,10 @@
         "mangaupdates": {
           "puntaje": 85.6,
           "votos": 1518
+        },
+        "myanimelist": {
+          "puntaje": 84.6,
+          "votos": 112841
         }
       },
       "distribucion": {
@@ -2376,11 +2432,11 @@
     },
     "30043": {
       "puntaje": {
-        "valor": 82.8,
-        "votos": 10716,
+        "valor": 83.7,
+        "votos": 49235,
         "confianza": "alta",
         "diferencia": 4.6,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -2394,6 +2450,10 @@
         "mangaupdates": {
           "puntaje": 86.6,
           "votos": 1669
+        },
+        "myanimelist": {
+          "puntaje": 84.6,
+          "votos": 38519
         }
       },
       "distribucion": {
@@ -2531,11 +2591,11 @@
     },
     "30044": {
       "puntaje": {
-        "valor": 85.7,
-        "votos": 13473,
+        "valor": 86,
+        "votos": 55858,
         "confianza": "alta",
         "diferencia": 4.4,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -2549,6 +2609,10 @@
         "mangaupdates": {
           "puntaje": 86.4,
           "votos": 1141
+        },
+        "myanimelist": {
+          "puntaje": 86.5,
+          "votos": 42385
         }
       },
       "distribucion": {
@@ -2696,11 +2760,11 @@
     },
     "30051": {
       "puntaje": {
-        "valor": 87.9,
-        "votos": 31589,
+        "valor": 89,
+        "votos": 122536,
         "confianza": "alta",
-        "diferencia": 6.8,
-        "comunidades": 3
+        "diferencia": 7.7,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -2714,6 +2778,10 @@
         "mangaupdates": {
           "puntaje": 89.6,
           "votos": 1896
+        },
+        "myanimelist": {
+          "puntaje": 90.9,
+          "votos": 90947
         }
       },
       "distribucion": {
@@ -2871,11 +2939,11 @@
     },
     "30053": {
       "puntaje": {
-        "valor": 80.4,
-        "votos": 12105,
+        "valor": 81,
+        "votos": 48055,
         "confianza": "alta",
-        "diferencia": 1.5,
-        "comunidades": 3
+        "diferencia": 1.8,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -2889,6 +2957,10 @@
         "mangaupdates": {
           "puntaje": 81.5,
           "votos": 1098
+        },
+        "myanimelist": {
+          "puntaje": 81.8,
+          "votos": 35950
         }
       },
       "distribucion": {
@@ -3046,11 +3118,11 @@
     },
     "30102": {
       "puntaje": {
-        "valor": 84.2,
-        "votos": 21765,
+        "valor": 84.5,
+        "votos": 98444,
         "confianza": "alta",
         "diferencia": 3.3,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -3064,6 +3136,10 @@
         "mangaupdates": {
           "puntaje": 85.8,
           "votos": 2758
+        },
+        "myanimelist": {
+          "puntaje": 85.3,
+          "votos": 76679
         }
       },
       "distribucion": {
@@ -3205,11 +3281,11 @@
     },
     "30104": {
       "puntaje": {
-        "valor": 86.9,
-        "votos": 23964,
+        "valor": 87.7,
+        "votos": 86631,
         "confianza": "alta",
-        "diferencia": 6.1,
-        "comunidades": 3
+        "diferencia": 6.3,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -3223,6 +3299,10 @@
         "mangaupdates": {
           "puntaje": 87.7,
           "votos": 2167
+        },
+        "myanimelist": {
+          "puntaje": 89.2,
+          "votos": 62667
         }
       },
       "distribucion": {
@@ -3376,11 +3456,11 @@
     },
     "30401": {
       "puntaje": {
-        "valor": 82.4,
-        "votos": 19213,
+        "valor": 82.9,
+        "votos": 72269,
         "confianza": "alta",
         "diferencia": 2.6,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -3394,6 +3474,10 @@
         "mangaupdates": {
           "puntaje": 84.6,
           "votos": 1818
+        },
+        "myanimelist": {
+          "puntaje": 83.7,
+          "votos": 53056
         }
       },
       "distribucion": {
@@ -3531,11 +3615,11 @@
     },
     "30418": {
       "puntaje": {
-        "valor": 84.7,
-        "votos": 7337,
+        "valor": 86.1,
+        "votos": 29533,
         "confianza": "alta",
         "diferencia": 4.5,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -3549,6 +3633,10 @@
         "mangaupdates": {
           "puntaje": 87.2,
           "votos": 920
+        },
+        "myanimelist": {
+          "puntaje": 87.1,
+          "votos": 22196
         }
       },
       "distribucion": {
@@ -3696,11 +3784,11 @@
     },
     "30436": {
       "puntaje": {
-        "valor": 79,
-        "votos": 48310,
+        "valor": 79.9,
+        "votos": 193580,
         "confianza": "alta",
-        "diferencia": 0.5,
-        "comunidades": 3
+        "diferencia": 2.9,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -3714,6 +3802,10 @@
         "mangaupdates": {
           "puntaje": 78.6,
           "votos": 1153
+        },
+        "myanimelist": {
+          "puntaje": 81.5,
+          "votos": 145270
         }
       },
       "distribucion": {
@@ -3866,11 +3958,11 @@
     },
     "30598": {
       "puntaje": {
-        "valor": 75,
-        "votos": 39776,
+        "valor": 75.1,
+        "votos": 203922,
         "confianza": "alta",
         "diferencia": 7.9,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -3884,6 +3976,10 @@
         "mangaupdates": {
           "puntaje": 78.9,
           "votos": 3403
+        },
+        "myanimelist": {
+          "puntaje": 75.5,
+          "votos": 164146
         }
       },
       "distribucion": {
@@ -4037,11 +4133,11 @@
     },
     "30642": {
       "puntaje": {
-        "valor": 87.3,
-        "votos": 56442,
+        "valor": 88.5,
+        "votos": 221400,
         "confianza": "alta",
-        "diferencia": 6.2,
-        "comunidades": 3
+        "diferencia": 7.1,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -4055,6 +4151,10 @@
         "mangaupdates": {
           "puntaje": 87.7,
           "votos": 2118
+        },
+        "myanimelist": {
+          "puntaje": 90.9,
+          "votos": 164958
         }
       },
       "distribucion": {
@@ -4214,11 +4314,11 @@
     },
     "30656": {
       "puntaje": {
-        "valor": 88.1,
-        "votos": 54867,
-        "confianza": "alta",
-        "diferencia": 6.7,
-        "comunidades": 3
+        "valor": 89.7,
+        "votos": 235875,
+        "confianza": "media",
+        "diferencia": 8.4,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -4232,6 +4332,10 @@
         "mangaupdates": {
           "puntaje": 89.6,
           "votos": 1944
+        },
+        "myanimelist": {
+          "puntaje": 92.7,
+          "votos": 181008
         }
       },
       "distribucion": {
@@ -4389,11 +4493,11 @@
     },
     "30657": {
       "puntaje": {
-        "valor": 88.2,
-        "votos": 11027,
+        "valor": 89,
+        "votos": 37361,
         "confianza": "alta",
-        "diferencia": 6,
-        "comunidades": 3
+        "diferencia": 6.8,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -4407,6 +4511,10 @@
         "mangaupdates": {
           "puntaje": 87.9,
           "votos": 674
+        },
+        "myanimelist": {
+          "puntaje": 89.8,
+          "votos": 26334
         }
       },
       "distribucion": {
@@ -4554,11 +4662,11 @@
     },
     "30664": {
       "puntaje": {
-        "valor": 83.7,
-        "votos": 15299,
+        "valor": 84.9,
+        "votos": 64523,
         "confianza": "alta",
-        "diferencia": 3,
-        "comunidades": 3
+        "diferencia": 4.2,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -4572,6 +4680,10 @@
         "mangaupdates": {
           "puntaje": 85.3,
           "votos": 909
+        },
+        "myanimelist": {
+          "puntaje": 86.5,
+          "votos": 49224
         }
       },
       "distribucion": {
@@ -4725,11 +4837,11 @@
     },
     "30698": {
       "puntaje": {
-        "valor": 84.2,
-        "votos": 18337,
+        "valor": 84.9,
+        "votos": 75655,
         "confianza": "alta",
-        "diferencia": 2.2,
-        "comunidades": 3
+        "diferencia": 3.2,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -4743,6 +4855,10 @@
         "mangaupdates": {
           "puntaje": 83.1,
           "votos": 663
+        },
+        "myanimelist": {
+          "puntaje": 86,
+          "votos": 57318
         }
       },
       "distribucion": {
@@ -4890,11 +5006,11 @@
     },
     "30745": {
       "puntaje": {
-        "valor": 84.7,
-        "votos": 20623,
+        "valor": 85.3,
+        "votos": 73542,
         "confianza": "alta",
         "diferencia": 3.7,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -4908,6 +5024,10 @@
         "mangaupdates": {
           "puntaje": 86.5,
           "votos": 1282
+        },
+        "myanimelist": {
+          "puntaje": 86.2,
+          "votos": 52919
         }
       },
       "distribucion": {
@@ -5067,11 +5187,11 @@
     },
     "30756": {
       "puntaje": {
-        "valor": 84.5,
-        "votos": 7518,
+        "valor": 85.4,
+        "votos": 25040,
         "confianza": "alta",
         "diferencia": 3.8,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -5085,6 +5205,10 @@
         "mangaupdates": {
           "puntaje": 86.3,
           "votos": 409
+        },
+        "myanimelist": {
+          "puntaje": 86.1,
+          "votos": 17522
         }
       },
       "distribucion": {
@@ -5232,11 +5356,11 @@
     },
     "30908": {
       "puntaje": {
-        "valor": 81,
-        "votos": 26742,
+        "valor": 81.1,
+        "votos": 120578,
         "confianza": "alta",
         "diferencia": 0.5,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -5250,6 +5374,10 @@
         "mangaupdates": {
           "puntaje": 80.7,
           "votos": 1601
+        },
+        "myanimelist": {
+          "puntaje": 81.2,
+          "votos": 93836
         }
       },
       "distribucion": {
@@ -5403,11 +5531,11 @@
     },
     "30936": {
       "puntaje": {
-        "valor": 82.7,
-        "votos": 23182,
+        "valor": 83,
+        "votos": 88704,
         "confianza": "alta",
-        "diferencia": 1.2,
-        "comunidades": 3
+        "diferencia": 1.5,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -5421,6 +5549,10 @@
         "mangaupdates": {
           "puntaje": 82.5,
           "votos": 1081
+        },
+        "myanimelist": {
+          "puntaje": 83.3,
+          "votos": 65522
         }
       },
       "distribucion": {
@@ -5573,11 +5705,11 @@
     },
     "31133": {
       "puntaje": {
-        "valor": 85.3,
-        "votos": 25995,
+        "valor": 85.9,
+        "votos": 95402,
         "confianza": "alta",
-        "diferencia": 3.6,
-        "comunidades": 3
+        "diferencia": 4,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -5591,6 +5723,10 @@
         "mangaupdates": {
           "puntaje": 86.4,
           "votos": 1100
+        },
+        "myanimelist": {
+          "puntaje": 86.8,
+          "votos": 69407
         }
       },
       "distribucion": {
@@ -5748,11 +5884,11 @@
     },
     "31224": {
       "puntaje": {
-        "valor": 86.9,
-        "votos": 8665,
+        "valor": 87.8,
+        "votos": 30291,
         "confianza": "alta",
-        "diferencia": 5.2,
-        "comunidades": 3
+        "diferencia": 5.8,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -5766,6 +5902,10 @@
         "mangaupdates": {
           "puntaje": 85.9,
           "votos": 589
+        },
+        "myanimelist": {
+          "puntaje": 88.6,
+          "votos": 21626
         }
       },
       "distribucion": {
@@ -5919,11 +6059,11 @@
     },
     "31320": {
       "puntaje": {
-        "valor": 82.6,
-        "votos": 1164,
+        "valor": 82.3,
+        "votos": 3343,
         "confianza": "media",
         "diferencia": 3.6,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -5937,6 +6077,10 @@
         "mangaupdates": {
           "puntaje": 83.1,
           "votos": 209
+        },
+        "myanimelist": {
+          "puntaje": 82.2,
+          "votos": 2179
         }
       },
       "distribucion": {
@@ -6084,11 +6228,11 @@
     },
     "31706": {
       "puntaje": {
-        "valor": 88.1,
-        "votos": 62296,
-        "confianza": "alta",
-        "diferencia": 8,
-        "comunidades": 3
+        "valor": 89.9,
+        "votos": 270664,
+        "confianza": "media",
+        "diferencia": 9.4,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -6102,6 +6246,10 @@
         "mangaupdates": {
           "puntaje": 89,
           "votos": 746
+        },
+        "myanimelist": {
+          "puntaje": 93.4,
+          "votos": 208368
         }
       },
       "distribucion": {
@@ -6259,11 +6407,11 @@
     },
     "34632": {
       "puntaje": {
-        "valor": 85.6,
-        "votos": 77204,
+        "valor": 86.9,
+        "votos": 302566,
         "confianza": "alta",
-        "diferencia": 4.9,
-        "comunidades": 3
+        "diferencia": 6.6,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -6277,6 +6425,10 @@
         "mangaupdates": {
           "puntaje": 86.6,
           "votos": 1552
+        },
+        "myanimelist": {
+          "puntaje": 89.7,
+          "votos": 225362
         }
       },
       "distribucion": {
@@ -6436,11 +6588,11 @@
     },
     "37375": {
       "puntaje": {
-        "valor": 86.3,
-        "votos": 21997,
+        "valor": 87.2,
+        "votos": 77692,
         "confianza": "alta",
-        "diferencia": 3.9,
-        "comunidades": 3
+        "diferencia": 5.3,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -6454,6 +6606,10 @@
         "mangaupdates": {
           "puntaje": 85.2,
           "votos": 804
+        },
+        "myanimelist": {
+          "puntaje": 88.4,
+          "votos": 55695
         }
       },
       "distribucion": {
@@ -6611,11 +6767,11 @@
     },
     "38586": {
       "puntaje": {
-        "valor": 81.7,
-        "votos": 20873,
+        "valor": 82.4,
+        "votos": 93501,
         "confianza": "alta",
         "diferencia": 6.8,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -6629,6 +6785,10 @@
         "mangaupdates": {
           "puntaje": 86.8,
           "votos": 2806
+        },
+        "myanimelist": {
+          "puntaje": 83.7,
+          "votos": 72628
         }
       },
       "distribucion": {
@@ -6735,11 +6895,11 @@
     },
     "41652": {
       "puntaje": {
-        "valor": 78.2,
-        "votos": 10943,
+        "valor": 79.5,
+        "votos": 51825,
         "confianza": "alta",
-        "diferencia": 3.4,
-        "comunidades": 3
+        "diferencia": 4,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -6753,6 +6913,10 @@
         "mangaupdates": {
           "puntaje": 79.5,
           "votos": 1087
+        },
+        "myanimelist": {
+          "puntaje": 81,
+          "votos": 40882
         }
       },
       "distribucion": {
@@ -6885,11 +7049,11 @@
     },
     "43245": {
       "puntaje": {
-        "valor": 86.1,
-        "votos": 6597,
+        "valor": 86,
+        "votos": 23183,
         "confianza": "alta",
         "diferencia": 4.8,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -6903,6 +7067,10 @@
         "mangaupdates": {
           "puntaje": 85,
           "votos": 648
+        },
+        "myanimelist": {
+          "puntaje": 85.9,
+          "votos": 16586
         }
       },
       "distribucion": {
@@ -7050,11 +7218,11 @@
     },
     "46765": {
       "puntaje": {
-        "valor": 87.3,
-        "votos": 22778,
+        "valor": 88.5,
+        "votos": 96387,
         "confianza": "alta",
-        "diferencia": 6.1,
-        "comunidades": 3
+        "diferencia": 7.3,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -7068,6 +7236,10 @@
         "mangaupdates": {
           "puntaje": 87.3,
           "votos": 1046
+        },
+        "myanimelist": {
+          "puntaje": 90.2,
+          "votos": 73609
         }
       },
       "distribucion": {
@@ -7225,11 +7397,11 @@
     },
     "51525": {
       "puntaje": {
-        "valor": 85.3,
-        "votos": 21380,
+        "valor": 86.3,
+        "votos": 76249,
         "confianza": "alta",
-        "diferencia": 4.8,
-        "comunidades": 3
+        "diferencia": 5.7,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -7243,6 +7415,10 @@
         "mangaupdates": {
           "puntaje": 87.4,
           "votos": 1272
+        },
+        "myanimelist": {
+          "puntaje": 88.3,
+          "votos": 54869
         }
       },
       "distribucion": {
@@ -7390,11 +7566,11 @@
     },
     "53390": {
       "puntaje": {
-        "valor": 84,
-        "votos": 203043,
+        "valor": 84.5,
+        "votos": 638157,
         "confianza": "alta",
-        "diferencia": 0.3,
-        "comunidades": 3
+        "diferencia": 1.8,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -7408,6 +7584,10 @@
         "mangaupdates": {
           "puntaje": 83.8,
           "votos": 2933
+        },
+        "myanimelist": {
+          "puntaje": 85.6,
+          "votos": 435114
         }
       },
       "distribucion": {
@@ -7568,11 +7748,11 @@
     },
     "54692": {
       "puntaje": {
-        "valor": 82.3,
-        "votos": 31496,
+        "valor": 82.7,
+        "votos": 102380,
         "confianza": "alta",
         "diferencia": 2.2,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -7586,6 +7766,10 @@
         "mangaupdates": {
           "puntaje": 84.2,
           "votos": 831
+        },
+        "myanimelist": {
+          "puntaje": 83.5,
+          "votos": 70884
         }
       },
       "distribucion": {
@@ -7733,11 +7917,11 @@
     },
     "59983": {
       "puntaje": {
-        "valor": 79.2,
-        "votos": 15632,
+        "valor": 79.9,
+        "votos": 61413,
         "confianza": "media",
         "diferencia": 8.7,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -7751,6 +7935,10 @@
         "mangaupdates": {
           "puntaje": 85.7,
           "votos": 2375
+        },
+        "myanimelist": {
+          "puntaje": 80.9,
+          "votos": 45781
         }
       },
       "distribucion": {
@@ -7876,11 +8064,11 @@
     },
     "60079": {
       "puntaje": {
-        "valor": 80.6,
-        "votos": 11881,
+        "valor": 81.5,
+        "votos": 42457,
         "confianza": "alta",
         "diferencia": 7.6,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -7894,6 +8082,10 @@
         "mangaupdates": {
           "puntaje": 86.6,
           "votos": 1688
+        },
+        "myanimelist": {
+          "puntaje": 82.6,
+          "votos": 30576
         }
       },
       "distribucion": {
@@ -7995,11 +8187,11 @@
     },
     "63031": {
       "puntaje": {
-        "valor": 81.9,
-        "votos": 13540,
+        "valor": 82.8,
+        "votos": 48562,
         "confianza": "alta",
-        "diferencia": 2.3,
-        "comunidades": 3
+        "diferencia": 4.1,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -8013,6 +8205,10 @@
         "mangaupdates": {
           "puntaje": 79.7,
           "votos": 389
+        },
+        "myanimelist": {
+          "puntaje": 83.8,
+          "votos": 35022
         }
       },
       "distribucion": {
@@ -8166,11 +8362,11 @@
     },
     "63327": {
       "puntaje": {
-        "valor": 84.4,
-        "votos": 178946,
+        "valor": 84.8,
+        "votos": 496641,
         "confianza": "alta",
-        "diferencia": 2.3,
-        "comunidades": 3
+        "diferencia": 2.9,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -8184,6 +8380,10 @@
         "mangaupdates": {
           "puntaje": 82.7,
           "votos": 1785
+        },
+        "myanimelist": {
+          "puntaje": 85.6,
+          "votos": 317695
         }
       },
       "distribucion": {
@@ -8341,11 +8541,11 @@
     },
     "65243": {
       "puntaje": {
-        "valor": 86.7,
-        "votos": 69990,
+        "valor": 87.4,
+        "votos": 190711,
         "confianza": "alta",
         "diferencia": 4.6,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -8359,6 +8559,10 @@
         "mangaupdates": {
           "puntaje": 87.2,
           "votos": 882
+        },
+        "myanimelist": {
+          "puntaje": 88.7,
+          "votos": 120721
         }
       },
       "distribucion": {
@@ -8511,11 +8715,11 @@
     },
     "69325": {
       "puntaje": {
-        "valor": 80.5,
-        "votos": 14497,
+        "valor": 81.8,
+        "votos": 57679,
         "confianza": "alta",
         "diferencia": 4.3,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -8529,6 +8733,10 @@
         "mangaupdates": {
           "puntaje": 84.3,
           "votos": 857
+        },
+        "myanimelist": {
+          "puntaje": 83.7,
+          "votos": 43182
         }
       },
       "distribucion": {
@@ -8677,10 +8885,10 @@
     "69883": {
       "puntaje": {
         "valor": 82.5,
-        "votos": 63891,
+        "votos": 146519,
         "confianza": "alta",
         "diferencia": 3.2,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -8694,6 +8902,10 @@
         "mangaupdates": {
           "puntaje": 81.6,
           "votos": 1257
+        },
+        "myanimelist": {
+          "puntaje": 82.4,
+          "votos": 82628
         }
       },
       "distribucion": {
@@ -8831,11 +9043,11 @@
     },
     "72001": {
       "puntaje": {
-        "valor": 84,
-        "votos": 2152,
-        "confianza": "media",
+        "valor": 84.3,
+        "votos": 7322,
+        "confianza": "alta",
         "diferencia": 5.8,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -8849,6 +9061,10 @@
         "mangaupdates": {
           "puntaje": 87,
           "votos": 736
+        },
+        "myanimelist": {
+          "puntaje": 84.5,
+          "votos": 5170
         }
       },
       "distribucion": {
@@ -8982,11 +9198,11 @@
     },
     "72451": {
       "puntaje": {
-        "valor": 83,
-        "votos": 64638,
+        "valor": 83.3,
+        "votos": 229534,
         "confianza": "alta",
         "diferencia": 3.7,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -9000,6 +9216,10 @@
         "mangaupdates": {
           "puntaje": 85.7,
           "votos": 2070
+        },
+        "myanimelist": {
+          "puntaje": 84,
+          "votos": 164896
         }
       },
       "distribucion": {
@@ -9143,11 +9363,11 @@
     },
     "74347": {
       "puntaje": {
-        "valor": 85.2,
-        "votos": 136347,
+        "valor": 85.7,
+        "votos": 399214,
         "confianza": "alta",
         "diferencia": 3,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -9161,6 +9381,10 @@
         "mangaupdates": {
           "puntaje": 87.7,
           "votos": 2539
+        },
+        "myanimelist": {
+          "puntaje": 86.8,
+          "votos": 262867
         }
       },
       "distribucion": {
@@ -9308,11 +9532,11 @@
     },
     "74485": {
       "puntaje": {
-        "valor": 76,
-        "votos": 60397,
+        "valor": 75.4,
+        "votos": 158568,
         "confianza": "media",
         "diferencia": 14,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -9326,6 +9550,10 @@
         "mangaupdates": {
           "puntaje": 75.6,
           "votos": 970
+        },
+        "myanimelist": {
+          "puntaje": 74.1,
+          "votos": 98171
         }
       },
       "distribucion": {
@@ -9473,11 +9701,11 @@
     },
     "74489": {
       "puntaje": {
-        "valor": 87.7,
-        "votos": 28949,
+        "valor": 88.7,
+        "votos": 91947,
         "confianza": "alta",
-        "diferencia": 5.6,
-        "comunidades": 3
+        "diferencia": 6.7,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -9491,6 +9719,10 @@
         "mangaupdates": {
           "puntaje": 84.5,
           "votos": 423
+        },
+        "myanimelist": {
+          "puntaje": 90.1,
+          "votos": 62998
         }
       },
       "distribucion": {
@@ -9648,11 +9880,11 @@
     },
     "85135": {
       "puntaje": {
-        "valor": 85.8,
-        "votos": 81571,
+        "valor": 86.7,
+        "votos": 241191,
         "confianza": "alta",
-        "diferencia": 2.6,
-        "comunidades": 3
+        "diferencia": 4.2,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -9666,6 +9898,10 @@
         "mangaupdates": {
           "puntaje": 86.7,
           "votos": 2253
+        },
+        "myanimelist": {
+          "puntaje": 88.6,
+          "votos": 159620
         }
       },
       "distribucion": {
@@ -9809,11 +10045,11 @@
     },
     "85141": {
       "puntaje": {
-        "valor": 76.4,
-        "votos": 18003,
+        "valor": 76.6,
+        "votos": 53574,
         "confianza": "alta",
         "diferencia": 2.1,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -9827,6 +10063,10 @@
         "mangaupdates": {
           "puntaje": 77.5,
           "votos": 793
+        },
+        "myanimelist": {
+          "puntaje": 76.7,
+          "votos": 35571
         }
       },
       "distribucion": {
@@ -9968,11 +10208,11 @@
     },
     "85143": {
       "puntaje": {
-        "valor": 82.5,
-        "votos": 35462,
+        "valor": 82.8,
+        "votos": 124490,
         "confianza": "alta",
         "diferencia": 3.7,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -9986,6 +10226,10 @@
         "mangaupdates": {
           "puntaje": 85.7,
           "votos": 2435
+        },
+        "myanimelist": {
+          "puntaje": 83.3,
+          "votos": 89028
         }
       },
       "distribucion": {
@@ -10139,11 +10383,11 @@
     },
     "85189": {
       "puntaje": {
-        "valor": 84,
-        "votos": 23627,
+        "valor": 84.8,
+        "votos": 76011,
         "confianza": "alta",
-        "diferencia": 2.2,
-        "comunidades": 3
+        "diferencia": 3.4,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -10157,6 +10401,10 @@
         "mangaupdates": {
           "puntaje": 85,
           "votos": 628
+        },
+        "myanimelist": {
+          "puntaje": 86.2,
+          "votos": 52384
         }
       },
       "distribucion": {
@@ -10310,11 +10558,11 @@
     },
     "85412": {
       "puntaje": {
-        "valor": 85.4,
-        "votos": 19224,
+        "valor": 86.3,
+        "votos": 56923,
         "confianza": "alta",
-        "diferencia": 2.9,
-        "comunidades": 3
+        "diferencia": 4.4,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -10328,6 +10576,10 @@
         "mangaupdates": {
           "puntaje": 83.3,
           "votos": 344
+        },
+        "myanimelist": {
+          "puntaje": 87.5,
+          "votos": 37699
         }
       },
       "distribucion": {
@@ -10485,11 +10737,11 @@
     },
     "85446": {
       "puntaje": {
-        "valor": 74.1,
-        "votos": 3500,
+        "valor": 77.2,
+        "votos": 14621,
         "confianza": "media",
-        "diferencia": 6.3,
-        "comunidades": 3
+        "diferencia": 8.9,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -10503,6 +10755,10 @@
         "mangaupdates": {
           "puntaje": 69.4,
           "votos": 361
+        },
+        "myanimelist": {
+          "puntaje": 78.3,
+          "votos": 11121
         }
       },
       "distribucion": {
@@ -10604,11 +10860,11 @@
     },
     "85453": {
       "puntaje": {
-        "valor": 75.2,
-        "votos": 3772,
-        "confianza": "media",
-        "diferencia": 3.2,
-        "comunidades": 3
+        "valor": 78.3,
+        "votos": 12890,
+        "confianza": "alta",
+        "diferencia": 5.6,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -10622,6 +10878,10 @@
         "mangaupdates": {
           "puntaje": 77.1,
           "votos": 445
+        },
+        "myanimelist": {
+          "puntaje": 79.6,
+          "votos": 9118
         }
       },
       "distribucion": {
@@ -10714,11 +10974,11 @@
     },
     "85486": {
       "puntaje": {
-        "valor": 80.7,
-        "votos": 175503,
+        "valor": 80.3,
+        "votos": 420577,
         "confianza": "alta",
         "diferencia": 7.6,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -10732,6 +10992,10 @@
         "mangaupdates": {
           "puntaje": 78.7,
           "votos": 1359
+        },
+        "myanimelist": {
+          "puntaje": 79.4,
+          "votos": 245074
         }
       },
       "distribucion": {
@@ -10890,10 +11154,10 @@
     "85611": {
       "puntaje": {
         "valor": 83.6,
-        "votos": 84546,
+        "votos": 259379,
         "confianza": "alta",
         "diferencia": 3.6,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -10907,6 +11171,10 @@
         "mangaupdates": {
           "puntaje": 80.4,
           "votos": 936
+        },
+        "myanimelist": {
+          "puntaje": 83.7,
+          "votos": 174833
         }
       },
       "distribucion": {
@@ -11066,11 +11334,11 @@
     },
     "85734": {
       "puntaje": {
-        "valor": 82.2,
-        "votos": 13103,
+        "valor": 82.8,
+        "votos": 38842,
         "confianza": "alta",
         "diferencia": 3.8,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -11084,6 +11352,10 @@
         "mangaupdates": {
           "puntaje": 85.8,
           "votos": 579
+        },
+        "myanimelist": {
+          "puntaje": 83.6,
+          "votos": 25739
         }
       },
       "distribucion": {
@@ -11231,11 +11503,11 @@
     },
     "85850": {
       "puntaje": {
-        "valor": 84.1,
-        "votos": 12777,
+        "valor": 84.6,
+        "votos": 18642,
         "confianza": "alta",
         "diferencia": 4.5,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -11249,6 +11521,10 @@
         "mangaupdates": {
           "puntaje": 87,
           "votos": 705
+        },
+        "myanimelist": {
+          "puntaje": 85.6,
+          "votos": 5865
         }
       },
       "distribucion": {
@@ -11396,11 +11672,11 @@
     },
     "86082": {
       "puntaje": {
-        "valor": 87.6,
-        "votos": 19496,
+        "valor": 87.8,
+        "votos": 63672,
         "confianza": "alta",
         "diferencia": 4.8,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -11414,6 +11690,10 @@
         "mangaupdates": {
           "puntaje": 89.1,
           "votos": 898
+        },
+        "myanimelist": {
+          "puntaje": 88.1,
+          "votos": 44176
         }
       },
       "distribucion": {
@@ -11567,11 +11847,11 @@
     },
     "86099": {
       "puntaje": {
-        "valor": 84.8,
-        "votos": 10881,
+        "valor": 85.1,
+        "votos": 35439,
         "confianza": "alta",
-        "diferencia": 2.6,
-        "comunidades": 3
+        "diferencia": 3.1,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -11585,6 +11865,10 @@
         "mangaupdates": {
           "puntaje": 83.6,
           "votos": 257
+        },
+        "myanimelist": {
+          "puntaje": 85.5,
+          "votos": 24558
         }
       },
       "distribucion": {
@@ -11728,11 +12012,11 @@
     },
     "86123": {
       "puntaje": {
-        "valor": 77.1,
-        "votos": 45478,
+        "valor": 77.6,
+        "votos": 171179,
         "confianza": "alta",
-        "diferencia": 3.1,
-        "comunidades": 3
+        "diferencia": 3.9,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -11746,6 +12030,10 @@
         "mangaupdates": {
           "puntaje": 74.5,
           "votos": 748
+        },
+        "myanimelist": {
+          "puntaje": 78.4,
+          "votos": 125701
         }
       },
       "distribucion": {
@@ -11893,11 +12181,11 @@
     },
     "86218": {
       "puntaje": {
-        "valor": 85.2,
-        "votos": 29645,
+        "valor": 85.7,
+        "votos": 87990,
         "confianza": "alta",
         "diferencia": 3.7,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -11911,6 +12199,10 @@
         "mangaupdates": {
           "puntaje": 86.8,
           "votos": 592
+        },
+        "myanimelist": {
+          "puntaje": 86.5,
+          "votos": 58345
         }
       },
       "distribucion": {
@@ -12068,11 +12360,11 @@
     },
     "86310": {
       "puntaje": {
-        "valor": 77.7,
-        "votos": 25165,
+        "valor": 77.8,
+        "votos": 85678,
         "confianza": "alta",
         "diferencia": 4.8,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -12086,6 +12378,10 @@
         "mangaupdates": {
           "puntaje": 73.2,
           "votos": 388
+        },
+        "myanimelist": {
+          "puntaje": 78,
+          "votos": 60513
         }
       },
       "distribucion": {
@@ -12239,11 +12535,11 @@
     },
     "86399": {
       "puntaje": {
-        "valor": 82.3,
-        "votos": 25990,
+        "valor": 82.8,
+        "votos": 86346,
         "confianza": "alta",
-        "diferencia": 0.7,
-        "comunidades": 3
+        "diferencia": 1.6,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -12257,6 +12553,10 @@
         "mangaupdates": {
           "puntaje": 82.3,
           "votos": 856
+        },
+        "myanimelist": {
+          "puntaje": 83.6,
+          "votos": 60356
         }
       },
       "distribucion": {
@@ -12404,11 +12704,11 @@
     },
     "86551": {
       "puntaje": {
-        "valor": 84.3,
-        "votos": 19240,
+        "valor": 85.5,
+        "votos": 80823,
         "confianza": "alta",
-        "diferencia": 2.3,
-        "comunidades": 3
+        "diferencia": 4.4,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -12422,6 +12722,10 @@
         "mangaupdates": {
           "puntaje": 83.4,
           "votos": 377
+        },
+        "myanimelist": {
+          "puntaje": 87.1,
+          "votos": 61583
         }
       },
       "distribucion": {
@@ -12569,11 +12873,11 @@
     },
     "86559": {
       "puntaje": {
-        "valor": 85.4,
-        "votos": 13150,
+        "valor": 85.9,
+        "votos": 44308,
         "confianza": "alta",
-        "diferencia": 3.5,
-        "comunidades": 3
+        "diferencia": 4.1,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -12587,6 +12891,10 @@
         "mangaupdates": {
           "puntaje": 83.7,
           "votos": 465
+        },
+        "myanimelist": {
+          "puntaje": 86.6,
+          "votos": 31158
         }
       },
       "distribucion": {
@@ -12744,11 +13052,11 @@
     },
     "86635": {
       "puntaje": {
-        "valor": 85.2,
-        "votos": 57022,
+        "valor": 86.4,
+        "votos": 209775,
         "confianza": "alta",
-        "diferencia": 3.7,
-        "comunidades": 3
+        "diferencia": 5.5,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -12762,6 +13070,10 @@
         "mangaupdates": {
           "puntaje": 86.3,
           "votos": 964
+        },
+        "myanimelist": {
+          "puntaje": 88.8,
+          "votos": 152753
         }
       },
       "distribucion": {
@@ -13082,11 +13394,11 @@
     },
     "86848": {
       "puntaje": {
-        "valor": 78.5,
-        "votos": 14398,
+        "valor": 78.9,
+        "votos": 46748,
         "confianza": "alta",
         "diferencia": 2.9,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -13100,6 +13412,10 @@
         "mangaupdates": {
           "puntaje": 80.9,
           "votos": 464
+        },
+        "myanimelist": {
+          "puntaje": 79.3,
+          "votos": 32350
         }
       },
       "distribucion": {
@@ -13247,11 +13563,11 @@
     },
     "86964": {
       "puntaje": {
-        "valor": 82.9,
-        "votos": 38125,
+        "valor": 83.4,
+        "votos": 118750,
         "confianza": "alta",
         "diferencia": 2.6,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -13265,6 +13581,10 @@
         "mangaupdates": {
           "puntaje": 85.1,
           "votos": 714
+        },
+        "myanimelist": {
+          "puntaje": 84.5,
+          "votos": 80625
         }
       },
       "distribucion": {
@@ -13418,11 +13738,11 @@
     },
     "87170": {
       "puntaje": {
-        "valor": 78.5,
-        "votos": 43750,
+        "valor": 78.9,
+        "votos": 158159,
         "confianza": "alta",
-        "diferencia": 2.5,
-        "comunidades": 3
+        "diferencia": 3,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -13436,6 +13756,10 @@
         "mangaupdates": {
           "puntaje": 76.5,
           "votos": 755
+        },
+        "myanimelist": {
+          "puntaje": 79.5,
+          "votos": 114409
         }
       },
       "distribucion": {
@@ -13595,11 +13919,11 @@
     },
     "87216": {
       "puntaje": {
-        "valor": 81.7,
-        "votos": 161418,
+        "valor": 81.4,
+        "votos": 485403,
         "confianza": "alta",
         "diferencia": 5.5,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -13613,6 +13937,10 @@
         "mangaupdates": {
           "puntaje": 80.5,
           "votos": 1036
+        },
+        "myanimelist": {
+          "puntaje": 80.9,
+          "votos": 323985
         }
       },
       "distribucion": {
@@ -13748,11 +14076,11 @@
     },
     "87395": {
       "puntaje": {
-        "valor": 87,
-        "votos": 24543,
+        "valor": 88.4,
+        "votos": 102585,
         "confianza": "alta",
-        "diferencia": 6,
-        "comunidades": 3
+        "diferencia": 7.5,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -13766,6 +14094,10 @@
         "mangaupdates": {
           "puntaje": 83,
           "votos": 585
+        },
+        "myanimelist": {
+          "puntaje": 90.5,
+          "votos": 78042
         }
       },
       "distribucion": {
@@ -13919,11 +14251,11 @@
     },
     "87423": {
       "puntaje": {
-        "valor": 81.1,
-        "votos": 78944,
+        "valor": 81.2,
+        "votos": 252919,
         "confianza": "alta",
         "diferencia": 4.4,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -13937,6 +14269,10 @@
         "mangaupdates": {
           "puntaje": 79.4,
           "votos": 878
+        },
+        "myanimelist": {
+          "puntaje": 81.4,
+          "votos": 173975
         }
       },
       "distribucion": {
@@ -14096,11 +14432,11 @@
     },
     "97830": {
       "puntaje": {
-        "valor": 80.4,
-        "votos": 14051,
+        "valor": 81.3,
+        "votos": 50023,
         "confianza": "alta",
-        "diferencia": 1.8,
-        "comunidades": 3
+        "diferencia": 2.5,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -14114,6 +14450,10 @@
         "mangaupdates": {
           "puntaje": 80.7,
           "votos": 417
+        },
+        "myanimelist": {
+          "puntaje": 82.5,
+          "votos": 35972
         }
       },
       "distribucion": {
@@ -14250,11 +14590,11 @@
     },
     "97852": {
       "puntaje": {
-        "valor": 78.6,
-        "votos": 38208,
+        "valor": 79.1,
+        "votos": 150154,
         "confianza": "alta",
         "diferencia": 4.2,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -14268,6 +14608,10 @@
         "mangaupdates": {
           "puntaje": 79.3,
           "votos": 703
+        },
+        "myanimelist": {
+          "puntaje": 79.9,
+          "votos": 111946
         }
       },
       "distribucion": {
@@ -14423,11 +14767,11 @@
     },
     "98263": {
       "puntaje": {
-        "valor": 86.4,
-        "votos": 18527,
+        "valor": 86.9,
+        "votos": 58594,
         "confianza": "alta",
-        "diferencia": 4.5,
-        "comunidades": 3
+        "diferencia": 5.1,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -14441,6 +14785,10 @@
         "mangaupdates": {
           "puntaje": 82.5,
           "votos": 392
+        },
+        "myanimelist": {
+          "puntaje": 87.6,
+          "votos": 40067
         }
       },
       "distribucion": {
@@ -14598,11 +14946,11 @@
     },
     "98397": {
       "puntaje": {
-        "valor": 79.9,
-        "votos": 21101,
+        "valor": 80.3,
+        "votos": 71961,
         "confianza": "alta",
-        "diferencia": 3.2,
-        "comunidades": 3
+        "diferencia": 3.9,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -14616,6 +14964,10 @@
         "mangaupdates": {
           "puntaje": 76.8,
           "votos": 362
+        },
+        "myanimelist": {
+          "puntaje": 80.7,
+          "votos": 50860
         }
       },
       "distribucion": {
@@ -14753,11 +15105,11 @@
     },
     "98416": {
       "puntaje": {
-        "valor": 81.3,
-        "votos": 40767,
+        "valor": 81.5,
+        "votos": 146751,
         "confianza": "alta",
         "diferencia": 6.8,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -14771,6 +15123,10 @@
         "mangaupdates": {
           "puntaje": 75.4,
           "votos": 622
+        },
+        "myanimelist": {
+          "puntaje": 82,
+          "votos": 105984
         }
       },
       "distribucion": {
@@ -14924,11 +15280,11 @@
     },
     "99022": {
       "puntaje": {
-        "valor": 85.8,
-        "votos": 11797,
+        "valor": 86.2,
+        "votos": 40236,
         "confianza": "alta",
         "diferencia": 3.4,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -14942,6 +15298,10 @@
         "mangaupdates": {
           "puntaje": 86.9,
           "votos": 636
+        },
+        "myanimelist": {
+          "puntaje": 86.8,
+          "votos": 28439
         }
       },
       "distribucion": {
@@ -15089,11 +15449,11 @@
     },
     "99943": {
       "puntaje": {
-        "valor": 59.5,
-        "votos": 24581,
+        "valor": 60.2,
+        "votos": 93508,
         "confianza": "media",
         "diferencia": 13.3,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -15107,6 +15467,10 @@
         "mangaupdates": {
           "puntaje": 54.6,
           "votos": 370
+        },
+        "myanimelist": {
+          "puntaje": 61,
+          "votos": 68927
         }
       },
       "distribucion": {
@@ -15264,11 +15628,11 @@
     },
     "100230": {
       "puntaje": {
-        "valor": 77.6,
-        "votos": 39861,
+        "valor": 78.1,
+        "votos": 148625,
         "confianza": "alta",
-        "diferencia": 2.4,
-        "comunidades": 3
+        "diferencia": 2.6,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -15282,6 +15646,10 @@
         "mangaupdates": {
           "puntaje": 76.4,
           "votos": 651
+        },
+        "myanimelist": {
+          "puntaje": 79,
+          "votos": 108764
         }
       },
       "distribucion": {
@@ -15441,11 +15809,11 @@
     },
     "100568": {
       "puntaje": {
-        "valor": 84.6,
-        "votos": 27109,
+        "valor": 85.6,
+        "votos": 82094,
         "confianza": "alta",
-        "diferencia": 1.8,
-        "comunidades": 3
+        "diferencia": 3.5,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -15459,6 +15827,10 @@
         "mangaupdates": {
           "puntaje": 83.8,
           "votos": 287
+        },
+        "myanimelist": {
+          "puntaje": 86.7,
+          "votos": 54985
         }
       },
       "distribucion": {
@@ -15619,11 +15991,11 @@
     },
     "100805": {
       "puntaje": {
-        "valor": 85,
-        "votos": 15123,
+        "valor": 84.9,
+        "votos": 31175,
         "confianza": "alta",
         "diferencia": 4,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -15637,6 +16009,10 @@
         "mangaupdates": {
           "puntaje": 86.5,
           "votos": 471
+        },
+        "myanimelist": {
+          "puntaje": 84.6,
+          "votos": 16052
         }
       },
       "distribucion": {
@@ -15774,11 +16150,11 @@
     },
     "100954": {
       "puntaje": {
-        "valor": 82.1,
-        "votos": 24589,
+        "valor": 82.3,
+        "votos": 73067,
         "confianza": "alta",
-        "diferencia": 0.4,
-        "comunidades": 3
+        "diferencia": 0.6,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -15792,6 +16168,10 @@
         "mangaupdates": {
           "puntaje": 82.4,
           "votos": 350
+        },
+        "myanimelist": {
+          "puntaje": 82.6,
+          "votos": 48478
         }
       },
       "distribucion": {
@@ -15914,11 +16294,11 @@
     },
     "100994": {
       "puntaje": {
-        "valor": 81.2,
-        "votos": 35022,
+        "valor": 81.5,
+        "votos": 119055,
         "confianza": "alta",
         "diferencia": 2.1,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -15932,6 +16312,10 @@
         "mangaupdates": {
           "puntaje": 79.9,
           "votos": 461
+        },
+        "myanimelist": {
+          "puntaje": 82,
+          "votos": 84033
         }
       },
       "distribucion": {
@@ -16085,11 +16469,11 @@
     },
     "101233": {
       "puntaje": {
-        "valor": 79.8,
-        "votos": 19769,
+        "valor": 80.3,
+        "votos": 65867,
         "confianza": "alta",
         "diferencia": 2.9,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -16103,6 +16487,10 @@
         "mangaupdates": {
           "puntaje": 81.9,
           "votos": 514
+        },
+        "myanimelist": {
+          "puntaje": 80.9,
+          "votos": 46098
         }
       },
       "distribucion": {
@@ -16250,11 +16638,11 @@
     },
     "101517": {
       "puntaje": {
-        "valor": 82,
-        "votos": 132776,
+        "valor": 81.9,
+        "votos": 407178,
         "confianza": "alta",
         "diferencia": 8,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -16268,6 +16656,10 @@
         "mangaupdates": {
           "puntaje": 76.5,
           "votos": 758
+        },
+        "myanimelist": {
+          "puntaje": 81.7,
+          "votos": 274402
         }
       },
       "distribucion": {
@@ -16428,11 +16820,11 @@
     },
     "101557": {
       "puntaje": {
-        "valor": 81,
-        "votos": 10339,
+        "valor": 81.6,
+        "votos": 35541,
         "confianza": "alta",
-        "diferencia": 1.7,
-        "comunidades": 3
+        "diferencia": 1.8,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -16446,6 +16838,10 @@
         "mangaupdates": {
           "puntaje": 82.2,
           "votos": 312
+        },
+        "myanimelist": {
+          "puntaje": 82.3,
+          "votos": 25202
         }
       },
       "distribucion": {
@@ -16563,11 +16959,11 @@
     },
     "101563": {
       "puntaje": {
-        "valor": 84.1,
-        "votos": 4272,
-        "confianza": "media",
-        "diferencia": 3.8,
-        "comunidades": 3
+        "valor": 85.6,
+        "votos": 10851,
+        "confianza": "alta",
+        "diferencia": 5.3,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -16581,6 +16977,10 @@
         "mangaupdates": {
           "puntaje": 81.2,
           "votos": 192
+        },
+        "myanimelist": {
+          "puntaje": 86.5,
+          "votos": 6579
         }
       },
       "distribucion": {
@@ -16728,11 +17128,11 @@
     },
     "101583": {
       "puntaje": {
-        "valor": 79.4,
-        "votos": 36519,
+        "valor": 79.7,
+        "votos": 127313,
         "confianza": "alta",
         "diferencia": 1.4,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -16746,6 +17146,10 @@
         "mangaupdates": {
           "puntaje": 80.3,
           "votos": 774
+        },
+        "myanimelist": {
+          "puntaje": 80.2,
+          "votos": 90794
         }
       },
       "distribucion": {
@@ -16899,11 +17303,11 @@
     },
     "101942": {
       "puntaje": {
-        "valor": 79.8,
-        "votos": 4945,
-        "confianza": "media",
-        "diferencia": 5.3,
-        "comunidades": 3
+        "valor": 81.1,
+        "votos": 16565,
+        "confianza": "alta",
+        "diferencia": 6.8,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -16917,6 +17321,10 @@
         "mangaupdates": {
           "puntaje": 74.9,
           "votos": 173
+        },
+        "myanimelist": {
+          "puntaje": 81.7,
+          "votos": 11620
         }
       },
       "distribucion": {
@@ -17054,11 +17462,11 @@
     },
     "102988": {
       "puntaje": {
-        "valor": 77.4,
-        "votos": 58646,
+        "valor": 77.2,
+        "votos": 202530,
         "confianza": "media",
         "diferencia": 9.8,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -17072,6 +17480,10 @@
         "mangaupdates": {
           "puntaje": 71.3,
           "votos": 346
+        },
+        "myanimelist": {
+          "puntaje": 76.9,
+          "votos": 143884
         }
       },
       "distribucion": {
@@ -17224,11 +17636,11 @@
     },
     "103995": {
       "puntaje": {
-        "valor": 66.5,
-        "votos": 7624,
+        "valor": 65.3,
+        "votos": 17093,
         "confianza": "baja",
         "diferencia": 16.1,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -17242,6 +17654,10 @@
         "mangaupdates": {
           "puntaje": 64.7,
           "votos": 207
+        },
+        "myanimelist": {
+          "puntaje": 64.4,
+          "votos": 9469
         }
       },
       "distribucion": {
@@ -17490,11 +17906,11 @@
     },
     "104660": {
       "puntaje": {
-        "valor": 75.1,
-        "votos": 6505,
+        "valor": 75.5,
+        "votos": 22400,
         "confianza": "alta",
         "diferencia": 2.4,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -17508,6 +17924,10 @@
         "mangaupdates": {
           "puntaje": 73.4,
           "votos": 120
+        },
+        "myanimelist": {
+          "puntaje": 75.7,
+          "votos": 15895
         }
       },
       "distribucion": {
@@ -17655,11 +18075,11 @@
     },
     "104973": {
       "puntaje": {
-        "valor": 81.3,
-        "votos": 13316,
+        "valor": 81.6,
+        "votos": 37040,
         "confianza": "alta",
         "diferencia": 2.3,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -17673,6 +18093,10 @@
         "mangaupdates": {
           "puntaje": 83.3,
           "votos": 844
+        },
+        "myanimelist": {
+          "puntaje": 81.9,
+          "votos": 23724
         }
       },
       "distribucion": {
@@ -17810,11 +18234,11 @@
     },
     "105393": {
       "puntaje": {
-        "valor": 76.4,
-        "votos": 16985,
+        "valor": 76.2,
+        "votos": 41674,
         "confianza": "alta",
         "diferencia": 1.9,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -17828,6 +18252,10 @@
         "mangaupdates": {
           "puntaje": 76.4,
           "votos": 715
+        },
+        "myanimelist": {
+          "puntaje": 76,
+          "votos": 24689
         }
       },
       "distribucion": {
@@ -17970,11 +18398,11 @@
     },
     "105398": {
       "puntaje": {
-        "valor": 84.3,
-        "votos": 156519,
+        "valor": 84.6,
+        "votos": 534013,
         "confianza": "alta",
-        "diferencia": 0.7,
-        "comunidades": 3
+        "diferencia": 1.4,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -17988,6 +18416,10 @@
         "mangaupdates": {
           "puntaje": 84.7,
           "votos": 2323
+        },
+        "myanimelist": {
+          "puntaje": 85.4,
+          "votos": 377494
         }
       },
       "distribucion": {
@@ -18149,11 +18581,11 @@
     },
     "105778": {
       "puntaje": {
-        "valor": 84.2,
-        "votos": 179537,
+        "valor": 84.8,
+        "votos": 639235,
         "confianza": "alta",
-        "diferencia": 3.2,
-        "comunidades": 3
+        "diferencia": 4.5,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -18167,6 +18599,10 @@
         "mangaupdates": {
           "puntaje": 81.6,
           "votos": 1340
+        },
+        "myanimelist": {
+          "puntaje": 86.1,
+          "votos": 459698
         }
       },
       "distribucion": {
@@ -18326,11 +18762,11 @@
     },
     "106130": {
       "puntaje": {
-        "valor": 82.1,
-        "votos": 42635,
+        "valor": 82.9,
+        "votos": 149860,
         "confianza": "alta",
-        "diferencia": 4.3,
-        "comunidades": 3
+        "diferencia": 5.6,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -18344,6 +18780,10 @@
         "mangaupdates": {
           "puntaje": 78.4,
           "votos": 296
+        },
+        "myanimelist": {
+          "puntaje": 84,
+          "votos": 107225
         }
       },
       "distribucion": {
@@ -18492,11 +18932,11 @@
     },
     "106929": {
       "puntaje": {
-        "valor": 84.7,
-        "votos": 13306,
+        "valor": 84.8,
+        "votos": 31032,
         "confianza": "alta",
         "diferencia": 3.4,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -18510,6 +18950,10 @@
         "mangaupdates": {
           "puntaje": 85.6,
           "votos": 464
+        },
+        "myanimelist": {
+          "puntaje": 84.9,
+          "votos": 17726
         }
       },
       "distribucion": {
@@ -18647,11 +19091,11 @@
     },
     "107098": {
       "puntaje": {
-        "valor": 77.7,
-        "votos": 22911,
+        "valor": 78.5,
+        "votos": 87923,
         "confianza": "alta",
         "diferencia": 3.6,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -18665,6 +19109,10 @@
         "mangaupdates": {
           "puntaje": 77.3,
           "votos": 260
+        },
+        "myanimelist": {
+          "puntaje": 79.6,
+          "votos": 65012
         }
       },
       "distribucion": {
@@ -18812,11 +19260,11 @@
     },
     "107237": {
       "puntaje": {
-        "valor": 85.3,
-        "votos": 18896,
+        "valor": 85.7,
+        "votos": 61253,
         "confianza": "alta",
-        "diferencia": 3.4,
-        "comunidades": 3
+        "diferencia": 3.5,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -18830,6 +19278,10 @@
         "mangaupdates": {
           "puntaje": 84.5,
           "votos": 259
+        },
+        "myanimelist": {
+          "puntaje": 86.1,
+          "votos": 42357
         }
       },
       "distribucion": {
@@ -18973,11 +19425,11 @@
     },
     "107279": {
       "puntaje": {
-        "valor": 86.7,
-        "votos": 8812,
+        "valor": 86.8,
+        "votos": 29108,
         "confianza": "alta",
         "diferencia": 4.6,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -18991,6 +19443,10 @@
         "mangaupdates": {
           "puntaje": 82.4,
           "votos": 162
+        },
+        "myanimelist": {
+          "puntaje": 86.9,
+          "votos": 20296
         }
       },
       "distribucion": {
@@ -19129,11 +19585,11 @@
     },
     "107521": {
       "puntaje": {
-        "valor": 83,
-        "votos": 19131,
+        "valor": 83.6,
+        "votos": 52718,
         "confianza": "alta",
-        "diferencia": 1.7,
-        "comunidades": 3
+        "diferencia": 1.9,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -19147,6 +19603,10 @@
         "mangaupdates": {
           "puntaje": 84.3,
           "votos": 857
+        },
+        "myanimelist": {
+          "puntaje": 84.5,
+          "votos": 33587
         }
       },
       "distribucion": {
@@ -19619,11 +20079,11 @@
     },
     "108152": {
       "puntaje": {
-        "valor": 72.7,
-        "votos": 3855,
-        "confianza": "media",
+        "valor": 73,
+        "votos": 7249,
+        "confianza": "alta",
         "diferencia": 4.8,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -19637,6 +20097,10 @@
         "mangaupdates": {
           "puntaje": 71.7,
           "votos": 209
+        },
+        "myanimelist": {
+          "puntaje": 73.4,
+          "votos": 3394
         }
       },
       "distribucion": {
@@ -19784,11 +20248,11 @@
     },
     "108556": {
       "puntaje": {
-        "valor": 84,
-        "votos": 62419,
+        "valor": 84.1,
+        "votos": 205397,
         "confianza": "alta",
         "diferencia": 2.3,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -19802,6 +20266,10 @@
         "mangaupdates": {
           "puntaje": 85.3,
           "votos": 972
+        },
+        "myanimelist": {
+          "puntaje": 84.5,
+          "votos": 142978
         }
       },
       "distribucion": {
@@ -19955,11 +20423,11 @@
     },
     "108952": {
       "puntaje": {
-        "valor": 80.1,
-        "votos": 5665,
+        "valor": 79.9,
+        "votos": 13446,
         "confianza": "alta",
         "diferencia": 2.1,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -19973,6 +20441,10 @@
         "mangaupdates": {
           "puntaje": 78.8,
           "votos": 146
+        },
+        "myanimelist": {
+          "puntaje": 79.8,
+          "votos": 7781
         }
       },
       "distribucion": {
@@ -20105,11 +20577,11 @@
     },
     "109285": {
       "puntaje": {
-        "valor": 85.9,
-        "votos": 6766,
+        "valor": 86,
+        "votos": 21157,
         "confianza": "alta",
         "diferencia": 1,
-        "comunidades": 2
+        "comunidades": 3
       },
       "fuentes": {
         "anilist": {
@@ -20119,6 +20591,10 @@
         "mangaupdates": {
           "puntaje": 85,
           "votos": 220
+        },
+        "myanimelist": {
+          "puntaje": 86,
+          "votos": 14391
         }
       },
       "distribucion": {
@@ -20256,11 +20732,11 @@
     },
     "109957": {
       "puntaje": {
-        "valor": 77.6,
-        "votos": 12226,
+        "valor": 76.6,
+        "votos": 22489,
         "confianza": "alta",
-        "diferencia": 3.4,
-        "comunidades": 3
+        "diferencia": 5,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -20274,6 +20750,10 @@
         "mangaupdates": {
           "puntaje": 77,
           "votos": 414
+        },
+        "myanimelist": {
+          "puntaje": 75.4,
+          "votos": 10263
         }
       },
       "distribucion": {
@@ -20405,11 +20885,11 @@
     },
     "110462": {
       "puntaje": {
-        "valor": 74.3,
-        "votos": 11058,
+        "valor": 73.9,
+        "votos": 27434,
         "confianza": "alta",
-        "diferencia": 1.8,
-        "comunidades": 3
+        "diferencia": 2.3,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -20423,6 +20903,10 @@
         "mangaupdates": {
           "puntaje": 74.1,
           "votos": 377
+        },
+        "myanimelist": {
+          "puntaje": 73.5,
+          "votos": 16376
         }
       },
       "distribucion": {
@@ -20550,11 +21034,11 @@
     },
     "110605": {
       "puntaje": {
-        "valor": 83,
-        "votos": 6443,
+        "valor": 83.2,
+        "votos": 17925,
         "confianza": "alta",
         "diferencia": 0.8,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -20568,6 +21052,10 @@
         "mangaupdates": {
           "puntaje": 83.4,
           "votos": 230
+        },
+        "myanimelist": {
+          "puntaje": 83.3,
+          "votos": 11482
         }
       },
       "distribucion": {
@@ -20691,11 +21179,11 @@
     },
     "111189": {
       "puntaje": {
-        "valor": 82.9,
-        "votos": 8387,
+        "valor": 83.9,
+        "votos": 25664,
         "confianza": "alta",
-        "diferencia": 1.4,
-        "comunidades": 3
+        "diferencia": 3.1,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -20709,6 +21197,10 @@
         "mangaupdates": {
           "puntaje": 81.6,
           "votos": 226
+        },
+        "myanimelist": {
+          "puntaje": 84.7,
+          "votos": 17277
         }
       },
       "distribucion": {
@@ -20836,11 +21328,11 @@
     },
     "111233": {
       "puntaje": {
-        "valor": 80.9,
-        "votos": 20911,
+        "valor": 81.5,
+        "votos": 69066,
         "confianza": "alta",
-        "diferencia": 4.3,
-        "comunidades": 3
+        "diferencia": 5.4,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -20854,6 +21346,10 @@
         "mangaupdates": {
           "puntaje": 76.8,
           "votos": 354
+        },
+        "myanimelist": {
+          "puntaje": 82.2,
+          "votos": 48155
         }
       },
       "distribucion": {
@@ -21131,11 +21627,11 @@
     },
     "112275": {
       "puntaje": {
-        "valor": 87.8,
-        "votos": 3739,
-        "confianza": "media",
-        "diferencia": 0,
-        "comunidades": 2
+        "valor": 88.1,
+        "votos": 9539,
+        "confianza": "alta",
+        "diferencia": 0.3,
+        "comunidades": 3
       },
       "fuentes": {
         "anilist": {
@@ -21145,6 +21641,10 @@
         "mangaupdates": {
           "puntaje": 79.6,
           "votos": 67
+        },
+        "myanimelist": {
+          "puntaje": 88.3,
+          "votos": 5800
         }
       },
       "distribucion": {
@@ -21292,11 +21792,11 @@
     },
     "112378": {
       "puntaje": {
-        "valor": 77,
-        "votos": 2424,
+        "valor": 76.8,
+        "votos": 3790,
         "confianza": "media",
-        "diferencia": 0,
-        "comunidades": 2
+        "diferencia": 0.6,
+        "comunidades": 3
       },
       "fuentes": {
         "anilist": {
@@ -21306,6 +21806,10 @@
         "mangaupdates": {
           "puntaje": 73.9,
           "votos": 80
+        },
+        "myanimelist": {
+          "puntaje": 76.4,
+          "votos": 1366
         }
       },
       "distribucion": {
@@ -21448,11 +21952,11 @@
     },
     "113055": {
       "puntaje": {
-        "valor": 77.8,
-        "votos": 7414,
+        "valor": 78.1,
+        "votos": 19063,
         "confianza": "alta",
         "diferencia": 6.7,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -21466,6 +21970,10 @@
         "mangaupdates": {
           "puntaje": 74.9,
           "votos": 323
+        },
+        "myanimelist": {
+          "puntaje": 78.3,
+          "votos": 11649
         }
       },
       "distribucion": {
@@ -21613,11 +22121,11 @@
     },
     "113350": {
       "puntaje": {
-        "valor": 82.9,
-        "votos": 1674,
+        "valor": 82.1,
+        "votos": 2315,
         "confianza": "media",
-        "diferencia": 1.2,
-        "comunidades": 2
+        "diferencia": 3.1,
+        "comunidades": 3
       },
       "fuentes": {
         "anilist": {
@@ -21627,6 +22135,10 @@
         "mangaupdates": {
           "puntaje": 81.8,
           "votos": 107
+        },
+        "myanimelist": {
+          "puntaje": 79.9,
+          "votos": 641
         }
       },
       "distribucion": {
@@ -21749,11 +22261,11 @@
     },
     "113488": {
       "puntaje": {
-        "valor": 79.1,
-        "votos": 6822,
+        "valor": 79.3,
+        "votos": 19809,
         "confianza": "alta",
         "diferencia": 1.6,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -21767,6 +22279,10 @@
         "mangaupdates": {
           "puntaje": 78.6,
           "votos": 198
+        },
+        "myanimelist": {
+          "puntaje": 79.5,
+          "votos": 12987
         }
       },
       "distribucion": {
@@ -21899,11 +22415,11 @@
     },
     "114605": {
       "puntaje": {
-        "valor": 77,
-        "votos": 9109,
+        "valor": 77.5,
+        "votos": 18678,
         "confianza": "alta",
-        "diferencia": 1,
-        "comunidades": 3
+        "diferencia": 1.9,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -21917,6 +22433,10 @@
         "mangaupdates": {
           "puntaje": 76.1,
           "votos": 429
+        },
+        "myanimelist": {
+          "puntaje": 78,
+          "votos": 9569
         }
       },
       "distribucion": {
@@ -22034,11 +22554,11 @@
     },
     "114791": {
       "puntaje": {
-        "valor": 76.8,
-        "votos": 8591,
+        "valor": 77,
+        "votos": 27447,
         "confianza": "alta",
-        "diferencia": 4.5,
-        "comunidades": 3
+        "diferencia": 4.7,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -22052,6 +22572,10 @@
         "mangaupdates": {
           "puntaje": 72.5,
           "votos": 195
+        },
+        "myanimelist": {
+          "puntaje": 77.2,
+          "votos": 18856
         }
       },
       "distribucion": {
@@ -22204,11 +22728,11 @@
     },
     "114960": {
       "puntaje": {
-        "valor": 75.4,
-        "votos": 22574,
+        "valor": 75.6,
+        "votos": 74844,
         "confianza": "alta",
         "diferencia": 2.4,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -22222,6 +22746,10 @@
         "mangaupdates": {
           "puntaje": 75.1,
           "votos": 419
+        },
+        "myanimelist": {
+          "puntaje": 75.9,
+          "votos": 52270
         }
       },
       "distribucion": {
@@ -22369,11 +22897,11 @@
     },
     "115000": {
       "puntaje": {
-        "valor": 80,
-        "votos": 7740,
+        "valor": 79.5,
+        "votos": 19339,
         "confianza": "alta",
         "diferencia": 1.5,
-        "comunidades": 2
+        "comunidades": 3
       },
       "fuentes": {
         "anilist": {
@@ -22383,6 +22911,10 @@
         "mangaupdates": {
           "puntaje": 78.5,
           "votos": 301
+        },
+        "myanimelist": {
+          "puntaje": 79.1,
+          "votos": 11599
         }
       },
       "distribucion": {
@@ -22668,11 +23200,11 @@
     },
     "117195": {
       "puntaje": {
-        "valor": 78.7,
-        "votos": 43326,
+        "valor": 79.5,
+        "votos": 150751,
         "confianza": "alta",
         "diferencia": 6.2,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -22686,6 +23218,10 @@
         "mangaupdates": {
           "puntaje": 75.4,
           "votos": 600
+        },
+        "myanimelist": {
+          "puntaje": 80.5,
+          "votos": 107425
         }
       },
       "distribucion": {
@@ -22846,11 +23382,11 @@
     },
     "117324": {
       "puntaje": {
-        "valor": 84,
-        "votos": 6328,
+        "valor": 84.9,
+        "votos": 15217,
         "confianza": "alta",
-        "diferencia": 1.1,
-        "comunidades": 2
+        "diferencia": 1.6,
+        "comunidades": 3
       },
       "fuentes": {
         "anilist": {
@@ -22860,6 +23396,10 @@
         "mangaupdates": {
           "puntaje": 85.1,
           "votos": 224
+        },
+        "myanimelist": {
+          "puntaje": 85.6,
+          "votos": 8889
         }
       },
       "distribucion": {
@@ -22997,11 +23537,11 @@
     },
     "117460": {
       "puntaje": {
-        "valor": 77.4,
-        "votos": 10322,
+        "valor": 77.2,
+        "votos": 20595,
         "confianza": "alta",
         "diferencia": 4.4,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -23015,6 +23555,10 @@
         "mangaupdates": {
           "puntaje": 75.7,
           "votos": 297
+        },
+        "myanimelist": {
+          "puntaje": 77,
+          "votos": 10273
         }
       },
       "distribucion": {
@@ -23131,11 +23675,11 @@
     },
     "117540": {
       "puntaje": {
-        "valor": 77.9,
-        "votos": 11177,
+        "valor": 77.6,
+        "votos": 22021,
         "confianza": "alta",
         "diferencia": 4.8,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -23149,6 +23693,10 @@
         "mangaupdates": {
           "puntaje": 79.3,
           "votos": 715
+        },
+        "myanimelist": {
+          "puntaje": 77.3,
+          "votos": 10844
         }
       },
       "distribucion": {
@@ -23441,11 +23989,11 @@
     },
     "118371": {
       "puntaje": {
-        "valor": 87.5,
-        "votos": 2720,
-        "confianza": "media",
+        "valor": 87.8,
+        "votos": 7812,
+        "confianza": "alta",
         "diferencia": 4.8,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -23459,6 +24007,10 @@
         "mangaupdates": {
           "puntaje": 78.4,
           "votos": 70
+        },
+        "myanimelist": {
+          "puntaje": 88,
+          "votos": 5092
         }
       },
       "distribucion": {
@@ -23581,11 +24133,11 @@
     },
     "118408": {
       "puntaje": {
-        "valor": 84,
-        "votos": 14312,
+        "valor": 84.4,
+        "votos": 34260,
         "confianza": "alta",
         "diferencia": 4.4,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -23599,6 +24151,10 @@
         "mangaupdates": {
           "puntaje": 87.1,
           "votos": 824
+        },
+        "myanimelist": {
+          "puntaje": 85,
+          "votos": 19948
         }
       },
       "distribucion": {
@@ -23746,11 +24302,11 @@
     },
     "118424": {
       "puntaje": {
-        "valor": 75.4,
-        "votos": 11221,
+        "valor": 74.6,
+        "votos": 21182,
         "confianza": "alta",
         "diferencia": 5.1,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -23764,6 +24320,10 @@
         "mangaupdates": {
           "puntaje": 73.2,
           "votos": 392
+        },
+        "myanimelist": {
+          "puntaje": 73.8,
+          "votos": 9961
         }
       },
       "distribucion": {
@@ -23891,11 +24451,11 @@
     },
     "118586": {
       "puntaje": {
-        "valor": 86.5,
-        "votos": 22548,
+        "valor": 87.5,
+        "votos": 82506,
         "confianza": "alta",
-        "diferencia": 2.8,
-        "comunidades": 3
+        "diferencia": 4.5,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -23909,6 +24469,10 @@
         "mangaupdates": {
           "puntaje": 86,
           "votos": 651
+        },
+        "myanimelist": {
+          "puntaje": 88.7,
+          "votos": 59958
         }
       },
       "distribucion": {
@@ -24062,11 +24626,11 @@
     },
     "119174": {
       "puntaje": {
-        "valor": 83.8,
-        "votos": 16773,
+        "valor": 84.3,
+        "votos": 47969,
         "confianza": "alta",
-        "diferencia": 1.8,
-        "comunidades": 3
+        "diferencia": 2.8,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -24080,6 +24644,10 @@
         "mangaupdates": {
           "puntaje": 82.8,
           "votos": 272
+        },
+        "myanimelist": {
+          "puntaje": 85,
+          "votos": 31196
         }
       },
       "distribucion": {
@@ -24197,11 +24765,11 @@
     },
     "119257": {
       "puntaje": {
-        "valor": 85.4,
-        "votos": 40896,
+        "valor": 85.9,
+        "votos": 114713,
         "confianza": "alta",
         "diferencia": 4.4,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -24215,6 +24783,10 @@
         "mangaupdates": {
           "puntaje": 88.2,
           "votos": 956
+        },
+        "myanimelist": {
+          "puntaje": 86.6,
+          "votos": 73817
         }
       },
       "distribucion": {
@@ -24362,11 +24934,11 @@
     },
     "119521": {
       "puntaje": {
-        "valor": 85.7,
-        "votos": 15573,
+        "valor": 85.8,
+        "votos": 41140,
         "confianza": "alta",
         "diferencia": 4.2,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -24380,6 +24952,10 @@
         "mangaupdates": {
           "puntaje": 87.8,
           "votos": 619
+        },
+        "myanimelist": {
+          "puntaje": 85.8,
+          "votos": 25567
         }
       },
       "distribucion": {
@@ -24517,11 +25093,11 @@
     },
     "120288": {
       "puntaje": {
-        "valor": 72.2,
-        "votos": 905,
-        "confianza": "baja",
-        "diferencia": 0,
-        "comunidades": 2
+        "valor": 73.6,
+        "votos": 1642,
+        "confianza": "media",
+        "diferencia": 3.5,
+        "comunidades": 3
       },
       "fuentes": {
         "anilist": {
@@ -24531,6 +25107,10 @@
         "mangaupdates": {
           "puntaje": 66.7,
           "votos": 56
+        },
+        "myanimelist": {
+          "puntaje": 75.5,
+          "votos": 737
         }
       },
       "distribucion": {
@@ -24607,11 +25187,11 @@
     },
     "120385": {
       "puntaje": {
-        "valor": 81.1,
-        "votos": 5652,
+        "valor": 80.6,
+        "votos": 12813,
         "confianza": "alta",
-        "diferencia": 1.6,
-        "comunidades": 2
+        "diferencia": 2.5,
+        "comunidades": 3
       },
       "fuentes": {
         "anilist": {
@@ -24621,6 +25201,10 @@
         "mangaupdates": {
           "puntaje": 82.6,
           "votos": 414
+        },
+        "myanimelist": {
+          "puntaje": 80.1,
+          "votos": 7161
         }
       },
       "distribucion": {
@@ -24742,11 +25326,11 @@
     },
     "120760": {
       "puntaje": {
-        "valor": 75.8,
-        "votos": 34861,
+        "valor": 75.9,
+        "votos": 119455,
         "confianza": "alta",
         "diferencia": 3.4,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -24760,6 +25344,10 @@
         "mangaupdates": {
           "puntaje": 75.3,
           "votos": 556
+        },
+        "myanimelist": {
+          "puntaje": 76,
+          "votos": 84594
         }
       },
       "distribucion": {
@@ -24907,11 +25495,11 @@
     },
     "120980": {
       "puntaje": {
-        "valor": 81,
-        "votos": 14456,
+        "valor": 80.7,
+        "votos": 31649,
         "confianza": "alta",
         "diferencia": 1.1,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -24925,6 +25513,10 @@
         "mangaupdates": {
           "puntaje": 80.2,
           "votos": 628
+        },
+        "myanimelist": {
+          "puntaje": 80.3,
+          "votos": 17193
         }
       },
       "distribucion": {
@@ -25072,11 +25664,11 @@
     },
     "121565": {
       "puntaje": {
-        "valor": 84.9,
-        "votos": 6273,
+        "valor": 85.6,
+        "votos": 15974,
         "confianza": "alta",
-        "diferencia": 2.1,
-        "comunidades": 2
+        "diferencia": 3.1,
+        "comunidades": 3
       },
       "fuentes": {
         "anilist": {
@@ -25086,6 +25678,10 @@
         "mangaupdates": {
           "puntaje": 82.9,
           "votos": 142
+        },
+        "myanimelist": {
+          "puntaje": 86,
+          "votos": 9701
         }
       },
       "distribucion": {
@@ -25208,11 +25804,11 @@
     },
     "121991": {
       "puntaje": {
-        "valor": 78.2,
-        "votos": 8742,
+        "valor": 78.7,
+        "votos": 23635,
         "confianza": "alta",
         "diferencia": 2.7,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -25226,6 +25822,10 @@
         "mangaupdates": {
           "puntaje": 77.6,
           "votos": 185
+        },
+        "myanimelist": {
+          "puntaje": 79.1,
+          "votos": 14893
         }
       },
       "distribucion": {
@@ -25368,11 +25968,11 @@
     },
     "123573": {
       "puntaje": {
-        "valor": 78.3,
-        "votos": 11329,
+        "valor": 78,
+        "votos": 22460,
         "confianza": "alta",
-        "diferencia": 3,
-        "comunidades": 3
+        "diferencia": 3.4,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -25386,6 +25986,10 @@
         "mangaupdates": {
           "puntaje": 81,
           "votos": 534
+        },
+        "myanimelist": {
+          "puntaje": 77.6,
+          "votos": 11131
         }
       },
       "distribucion": {
@@ -25527,11 +26131,11 @@
     },
     "123739": {
       "puntaje": {
-        "valor": 74.8,
-        "votos": 4306,
-        "confianza": "media",
+        "valor": 74.9,
+        "votos": 5281,
+        "confianza": "alta",
         "diferencia": 5.8,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -25545,6 +26149,10 @@
         "mangaupdates": {
           "puntaje": 76.5,
           "votos": 279
+        },
+        "myanimelist": {
+          "puntaje": 75.1,
+          "votos": 975
         }
       },
       "distribucion": {
@@ -25821,11 +26429,11 @@
     },
     "125828": {
       "puntaje": {
-        "valor": 79,
-        "votos": 22531,
+        "valor": 79.6,
+        "votos": 76063,
         "confianza": "alta",
-        "diferencia": 1.5,
-        "comunidades": 3
+        "diferencia": 2.9,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -25839,6 +26447,10 @@
         "mangaupdates": {
           "puntaje": 77.5,
           "votos": 283
+        },
+        "myanimelist": {
+          "puntaje": 80.4,
+          "votos": 53532
         }
       },
       "distribucion": {
@@ -25986,11 +26598,11 @@
     },
     "126297": {
       "puntaje": {
-        "valor": 79.4,
-        "votos": 16745,
+        "valor": 78.8,
+        "votos": 36421,
         "confianza": "alta",
-        "diferencia": 2.8,
-        "comunidades": 3
+        "diferencia": 3.8,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -26004,6 +26616,10 @@
         "mangaupdates": {
           "puntaje": 81.8,
           "votos": 472
+        },
+        "myanimelist": {
+          "puntaje": 78,
+          "votos": 19676
         }
       },
       "distribucion": {
@@ -26141,11 +26757,11 @@
     },
     "128067": {
       "puntaje": {
-        "valor": 82.9,
-        "votos": 19875,
+        "valor": 83.1,
+        "votos": 46061,
         "confianza": "alta",
-        "diferencia": 0.9,
-        "comunidades": 3
+        "diferencia": 1.1,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -26159,6 +26775,10 @@
         "mangaupdates": {
           "puntaje": 83.1,
           "votos": 698
+        },
+        "myanimelist": {
+          "puntaje": 83.3,
+          "votos": 26186
         }
       },
       "distribucion": {
@@ -26286,11 +26906,11 @@
     },
     "129210": {
       "puntaje": {
-        "valor": 81.4,
-        "votos": 6006,
+        "valor": 81.3,
+        "votos": 12088,
         "confianza": "alta",
         "diferencia": 3.5,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -26304,6 +26924,10 @@
         "mangaupdates": {
           "puntaje": 84.5,
           "votos": 430
+        },
+        "myanimelist": {
+          "puntaje": 81.3,
+          "votos": 6082
         }
       },
       "distribucion": {
@@ -26451,11 +27075,11 @@
     },
     "130229": {
       "puntaje": {
-        "valor": 77.1,
-        "votos": 7140,
+        "valor": 76.7,
+        "votos": 17327,
         "confianza": "alta",
         "diferencia": 2.2,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -26469,6 +27093,10 @@
         "mangaupdates": {
           "puntaje": 75.6,
           "votos": 162
+        },
+        "myanimelist": {
+          "puntaje": 76.5,
+          "votos": 10187
         }
       },
       "distribucion": {
@@ -26586,11 +27214,11 @@
     },
     "130429": {
       "puntaje": {
-        "valor": 83,
-        "votos": 7434,
+        "valor": 83.2,
+        "votos": 16132,
         "confianza": "alta",
         "diferencia": 1.1,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -26604,6 +27232,10 @@
         "mangaupdates": {
           "puntaje": 83.7,
           "votos": 483
+        },
+        "myanimelist": {
+          "puntaje": 83.3,
+          "votos": 8698
         }
       },
       "distribucion": {
@@ -26730,11 +27362,11 @@
     },
     "130511": {
       "puntaje": {
-        "valor": 72.3,
-        "votos": 8114,
+        "valor": 71.6,
+        "votos": 16097,
         "confianza": "alta",
         "diferencia": 4.4,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -26748,6 +27380,10 @@
         "mangaupdates": {
           "puntaje": 70.3,
           "votos": 310
+        },
+        "myanimelist": {
+          "puntaje": 70.8,
+          "votos": 7983
         }
       },
       "distribucion": {
@@ -26852,11 +27488,11 @@
     },
     "132029": {
       "puntaje": {
-        "valor": 82.1,
-        "votos": 32757,
+        "valor": 82.7,
+        "votos": 115020,
         "confianza": "alta",
-        "diferencia": 0.7,
-        "comunidades": 3
+        "diferencia": 1.9,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -26870,6 +27506,10 @@
         "mangaupdates": {
           "puntaje": 81.7,
           "votos": 437
+        },
+        "myanimelist": {
+          "puntaje": 83.6,
+          "votos": 82263
         }
       },
       "distribucion": {
@@ -27024,10 +27664,10 @@
     "132144": {
       "puntaje": {
         "valor": 84.6,
-        "votos": 12753,
+        "votos": 29383,
         "confianza": "alta",
         "diferencia": 3.2,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -27041,6 +27681,10 @@
         "mangaupdates": {
           "puntaje": 84.8,
           "votos": 533
+        },
+        "myanimelist": {
+          "puntaje": 84.6,
+          "votos": 16630
         }
       },
       "distribucion": {
@@ -27173,11 +27817,11 @@
     },
     "132182": {
       "puntaje": {
-        "valor": 80.7,
-        "votos": 18795,
+        "valor": 81.9,
+        "votos": 63208,
         "confianza": "alta",
-        "diferencia": 3.6,
-        "comunidades": 3
+        "diferencia": 5.8,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -27191,6 +27835,10 @@
         "mangaupdates": {
           "puntaje": 77.4,
           "votos": 273
+        },
+        "myanimelist": {
+          "puntaje": 83.2,
+          "votos": 44413
         }
       },
       "distribucion": {
@@ -27344,11 +27992,11 @@
     },
     "135325": {
       "puntaje": {
-        "valor": 77.9,
-        "votos": 8836,
+        "valor": 77.2,
+        "votos": 18847,
         "confianza": "alta",
-        "diferencia": 1.1,
-        "comunidades": 3
+        "diferencia": 1.4,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -27362,6 +28010,10 @@
         "mangaupdates": {
           "puntaje": 76.9,
           "votos": 375
+        },
+        "myanimelist": {
+          "puntaje": 76.6,
+          "votos": 10011
         }
       },
       "distribucion": {
@@ -27474,10 +28126,10 @@
     "136220": {
       "puntaje": {
         "valor": 79.2,
-        "votos": 10194,
+        "votos": 23120,
         "confianza": "alta",
         "diferencia": 1.7,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -27491,6 +28143,10 @@
         "mangaupdates": {
           "puntaje": 80.7,
           "votos": 407
+        },
+        "myanimelist": {
+          "puntaje": 79.2,
+          "votos": 12926
         }
       },
       "distribucion": {
@@ -27628,11 +28284,11 @@
     },
     "136807": {
       "puntaje": {
-        "valor": 83,
-        "votos": 36176,
+        "valor": 83.6,
+        "votos": 123265,
         "confianza": "alta",
-        "diferencia": 0.4,
-        "comunidades": 3
+        "diferencia": 1.8,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -27646,6 +28302,10 @@
         "mangaupdates": {
           "puntaje": 82.6,
           "votos": 412
+        },
+        "myanimelist": {
+          "puntaje": 84.4,
+          "votos": 87089
         }
       },
       "distribucion": {
@@ -27805,11 +28465,11 @@
     },
     "137280": {
       "puntaje": {
-        "valor": 77.1,
-        "votos": 12007,
+        "valor": 76.9,
+        "votos": 27231,
         "confianza": "alta",
         "diferencia": 3.6,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -27823,6 +28483,10 @@
         "mangaupdates": {
           "puntaje": 75.1,
           "votos": 390
+        },
+        "myanimelist": {
+          "puntaje": 76.6,
+          "votos": 15224
         }
       },
       "distribucion": {
@@ -27945,11 +28609,11 @@
     },
     "137304": {
       "puntaje": {
-        "valor": 80.3,
-        "votos": 7234,
+        "valor": 79.7,
+        "votos": 15438,
         "confianza": "alta",
-        "diferencia": 3.4,
-        "comunidades": 3
+        "diferencia": 4.1,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -27963,6 +28627,10 @@
         "mangaupdates": {
           "puntaje": 83.4,
           "votos": 378
+        },
+        "myanimelist": {
+          "puntaje": 79.3,
+          "votos": 8204
         }
       },
       "distribucion": {
@@ -28084,11 +28752,11 @@
     },
     "138222": {
       "puntaje": {
-        "valor": 78,
-        "votos": 7078,
+        "valor": 77.1,
+        "votos": 15170,
         "confianza": "alta",
-        "diferencia": 1.4,
-        "comunidades": 3
+        "diferencia": 1.7,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -28102,6 +28770,10 @@
         "mangaupdates": {
           "puntaje": 76.7,
           "votos": 307
+        },
+        "myanimelist": {
+          "puntaje": 76.4,
+          "votos": 8092
         }
       },
       "distribucion": {
@@ -28347,11 +29019,11 @@
     },
     "138603": {
       "puntaje": {
-        "valor": 83.8,
-        "votos": 8304,
+        "valor": 84.2,
+        "votos": 26562,
         "confianza": "alta",
-        "diferencia": 2.8,
-        "comunidades": 3
+        "diferencia": 3.3,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -28365,6 +29037,10 @@
         "mangaupdates": {
           "puntaje": 81.2,
           "votos": 193
+        },
+        "myanimelist": {
+          "puntaje": 84.5,
+          "votos": 18258
         }
       },
       "distribucion": {
@@ -28812,11 +29488,11 @@
     },
     "140407": {
       "puntaje": {
-        "valor": 89.4,
-        "votos": 27193,
+        "valor": 90.1,
+        "votos": 76701,
         "confianza": "alta",
         "diferencia": 5.5,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -28830,6 +29506,10 @@
         "mangaupdates": {
           "puntaje": 91.3,
           "votos": 1138
+        },
+        "myanimelist": {
+          "puntaje": 91.1,
+          "votos": 49508
         }
       },
       "distribucion": {
@@ -28983,11 +29663,11 @@
     },
     "140475": {
       "puntaje": {
-        "valor": 85.7,
-        "votos": 22259,
-        "confianza": "alta",
-        "diferencia": 7.5,
-        "comunidades": 3
+        "valor": 86.6,
+        "votos": 76727,
+        "confianza": "media",
+        "diferencia": 9.1,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -29001,6 +29681,10 @@
         "mangaupdates": {
           "puntaje": 78.5,
           "votos": 312
+        },
+        "myanimelist": {
+          "puntaje": 87.6,
+          "votos": 54468
         }
       },
       "distribucion": {
@@ -29472,11 +30156,11 @@
     },
     "142568": {
       "puntaje": {
-        "valor": 77,
-        "votos": 14794,
+        "valor": 77.8,
+        "votos": 47323,
         "confianza": "alta",
-        "diferencia": 0.4,
-        "comunidades": 3
+        "diferencia": 1.7,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -29490,6 +30174,10 @@
         "mangaupdates": {
           "puntaje": 77.4,
           "votos": 280
+        },
+        "myanimelist": {
+          "puntaje": 78.7,
+          "votos": 32529
         }
       },
       "distribucion": {
@@ -29623,11 +30311,11 @@
     },
     "143056": {
       "puntaje": {
-        "valor": 75.1,
-        "votos": 8633,
+        "valor": 74.2,
+        "votos": 18252,
         "confianza": "alta",
-        "diferencia": 2.3,
-        "comunidades": 3
+        "diferencia": 2.9,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -29641,6 +30329,10 @@
         "mangaupdates": {
           "puntaje": 74,
           "votos": 353
+        },
+        "myanimelist": {
+          "puntaje": 73.4,
+          "votos": 9619
         }
       },
       "distribucion": {
@@ -29747,11 +30439,11 @@
     },
     "144946": {
       "puntaje": {
-        "valor": 80.7,
-        "votos": 13229,
+        "valor": 81.2,
+        "votos": 44558,
         "confianza": "alta",
-        "diferencia": 5,
-        "comunidades": 3
+        "diferencia": 5.8,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -29765,6 +30457,10 @@
         "mangaupdates": {
           "puntaje": 76,
           "votos": 193
+        },
+        "myanimelist": {
+          "puntaje": 81.8,
+          "votos": 31329
         }
       },
       "distribucion": {
@@ -29912,11 +30608,11 @@
     },
     "144957": {
       "puntaje": {
-        "valor": 77,
-        "votos": 9656,
+        "valor": 76.2,
+        "votos": 21681,
         "confianza": "alta",
         "diferencia": 4.7,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -29930,6 +30626,10 @@
         "mangaupdates": {
           "puntaje": 73.1,
           "votos": 342
+        },
+        "myanimelist": {
+          "puntaje": 75.5,
+          "votos": 12025
         }
       },
       "distribucion": {
@@ -30041,11 +30741,11 @@
     },
     "146139": {
       "puntaje": {
-        "valor": 79.1,
-        "votos": 7455,
+        "valor": 79.4,
+        "votos": 18487,
         "confianza": "alta",
         "diferencia": 1.1,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -30059,6 +30759,10 @@
         "mangaupdates": {
           "puntaje": 79.4,
           "votos": 309
+        },
+        "myanimelist": {
+          "puntaje": 79.6,
+          "votos": 11032
         }
       },
       "distribucion": {
@@ -30315,11 +31019,11 @@
     },
     "146983": {
       "puntaje": {
-        "valor": 84.6,
-        "votos": 49390,
+        "valor": 85.3,
+        "votos": 164652,
         "confianza": "alta",
-        "diferencia": 1.6,
-        "comunidades": 3
+        "diferencia": 2.9,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -30333,6 +31037,10 @@
         "mangaupdates": {
           "puntaje": 83.7,
           "votos": 469
+        },
+        "myanimelist": {
+          "puntaje": 86.3,
+          "votos": 115262
         }
       },
       "distribucion": {
@@ -30480,11 +31188,11 @@
     },
     "149332": {
       "puntaje": {
-        "valor": 79,
-        "votos": 10425,
+        "valor": 78.7,
+        "votos": 23885,
         "confianza": "alta",
         "diferencia": 2,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -30498,6 +31206,10 @@
         "mangaupdates": {
           "puntaje": 77.9,
           "votos": 391
+        },
+        "myanimelist": {
+          "puntaje": 78.3,
+          "votos": 13460
         }
       },
       "distribucion": {
@@ -30614,11 +31326,11 @@
     },
     "152128": {
       "puntaje": {
-        "valor": 77.9,
-        "votos": 7254,
+        "valor": 77.3,
+        "votos": 16794,
         "confianza": "alta",
         "diferencia": 1.3,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -30632,6 +31344,10 @@
         "mangaupdates": {
           "puntaje": 76.7,
           "votos": 314
+        },
+        "myanimelist": {
+          "puntaje": 76.9,
+          "votos": 9540
         }
       },
       "distribucion": {
@@ -30764,16 +31480,20 @@
     },
     "154159": {
       "puntaje": {
-        "valor": 80,
-        "votos": 2072,
-        "confianza": "media",
-        "diferencia": 0,
-        "comunidades": 1
+        "valor": 80.4,
+        "votos": 5415,
+        "confianza": "alta",
+        "diferencia": 0.6,
+        "comunidades": 2
       },
       "fuentes": {
         "anilist": {
           "puntaje": 80,
           "votos": 2072
+        },
+        "myanimelist": {
+          "puntaje": 80.6,
+          "votos": 3343
         }
       },
       "distribucion": {
@@ -31032,11 +31752,11 @@
     },
     "159441": {
       "puntaje": {
-        "valor": 83.8,
-        "votos": 11217,
+        "valor": 84,
+        "votos": 27117,
         "confianza": "alta",
-        "diferencia": 1.5,
-        "comunidades": 3
+        "diferencia": 1.6,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -31050,6 +31770,10 @@
         "mangaupdates": {
           "puntaje": 82.7,
           "votos": 461
+        },
+        "myanimelist": {
+          "puntaje": 84.1,
+          "votos": 15900
         }
       },
       "distribucion": {
@@ -31191,11 +31915,11 @@
     },
     "159930": {
       "puntaje": {
-        "valor": 78.8,
-        "votos": 10173,
+        "valor": 78.6,
+        "votos": 24061,
         "confianza": "alta",
         "diferencia": 2.1,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -31209,6 +31933,10 @@
         "mangaupdates": {
           "puntaje": 76.9,
           "votos": 391
+        },
+        "myanimelist": {
+          "puntaje": 78.3,
+          "votos": 13888
         }
       },
       "distribucion": {
@@ -31435,11 +32163,11 @@
     },
     "163824": {
       "puntaje": {
-        "valor": 78.9,
-        "votos": 10849,
+        "valor": 79.2,
+        "votos": 25408,
         "confianza": "alta",
-        "diferencia": 1.1,
-        "comunidades": 3
+        "diferencia": 1.5,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -31453,6 +32181,10 @@
         "mangaupdates": {
           "puntaje": 77.9,
           "votos": 420
+        },
+        "myanimelist": {
+          "puntaje": 79.4,
+          "votos": 14559
         }
       },
       "distribucion": {
@@ -31570,10 +32302,10 @@
     "164857": {
       "puntaje": {
         "valor": 81,
-        "votos": 5225,
+        "votos": 12766,
         "confianza": "alta",
         "diferencia": 1.5,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -31587,6 +32319,10 @@
         "mangaupdates": {
           "puntaje": 81.5,
           "votos": 361
+        },
+        "myanimelist": {
+          "puntaje": 81,
+          "votos": 7541
         }
       },
       "distribucion": {
@@ -31843,10 +32579,10 @@
     "168843": {
       "puntaje": {
         "valor": 85.3,
-        "votos": 835,
-        "confianza": "baja",
-        "diferencia": 0,
-        "comunidades": 3
+        "votos": 1565,
+        "confianza": "media",
+        "diferencia": 2.7,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -31860,6 +32596,10 @@
         "mangaupdates": {
           "puntaje": 81.2,
           "votos": 80
+        },
+        "myanimelist": {
+          "puntaje": 85.3,
+          "votos": 730
         }
       },
       "distribucion": {
@@ -31975,11 +32715,11 @@
     },
     "169355": {
       "puntaje": {
-        "valor": 78.8,
-        "votos": 14420,
+        "valor": 79.8,
+        "votos": 47437,
         "confianza": "alta",
-        "diferencia": 4.7,
-        "comunidades": 3
+        "diferencia": 6.6,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -31993,6 +32733,10 @@
         "mangaupdates": {
           "puntaje": 74.3,
           "votos": 205
+        },
+        "myanimelist": {
+          "puntaje": 80.9,
+          "votos": 33017
         }
       },
       "distribucion": {
@@ -32140,11 +32884,11 @@
     },
     "170400": {
       "puntaje": {
-        "valor": 82.8,
-        "votos": 7337,
+        "valor": 82.7,
+        "votos": 17363,
         "confianza": "alta",
         "diferencia": 3,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -32158,6 +32902,10 @@
         "mangaupdates": {
           "puntaje": 82.2,
           "votos": 311
+        },
+        "myanimelist": {
+          "puntaje": 82.7,
+          "votos": 10026
         }
       },
       "distribucion": {
@@ -32280,11 +33028,11 @@
     },
     "172619": {
       "puntaje": {
-        "valor": 81.8,
-        "votos": 7989,
+        "valor": 82.2,
+        "votos": 19776,
         "confianza": "alta",
-        "diferencia": 2.7,
-        "comunidades": 3
+        "diferencia": 3.3,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -32298,6 +33046,10 @@
         "mangaupdates": {
           "puntaje": 81.6,
           "votos": 397
+        },
+        "myanimelist": {
+          "puntaje": 82.6,
+          "votos": 11787
         }
       },
       "distribucion": {
@@ -32424,11 +33176,11 @@
     },
     "175946": {
       "puntaje": {
-        "valor": 83.7,
-        "votos": 4784,
-        "confianza": "media",
+        "valor": 83.5,
+        "votos": 10374,
+        "confianza": "alta",
         "diferencia": 3.3,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -32442,6 +33194,10 @@
         "mangaupdates": {
           "puntaje": 83.1,
           "votos": 310
+        },
+        "myanimelist": {
+          "puntaje": 83.3,
+          "votos": 5590
         }
       },
       "distribucion": {
@@ -32569,10 +33325,10 @@
     "177706": {
       "puntaje": {
         "valor": 85.8,
-        "votos": 7201,
+        "votos": 17504,
         "confianza": "alta",
         "diferencia": 3,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -32586,6 +33342,10 @@
         "mangaupdates": {
           "puntaje": 86.4,
           "votos": 424
+        },
+        "myanimelist": {
+          "puntaje": 85.7,
+          "votos": 10303
         }
       },
       "distribucion": {
@@ -32708,11 +33468,11 @@
     },
     "180752": {
       "puntaje": {
-        "valor": 79,
-        "votos": 5541,
+        "valor": 79.1,
+        "votos": 15866,
         "confianza": "alta",
-        "diferencia": 2.7,
-        "comunidades": 3
+        "diferencia": 2.8,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -32726,6 +33486,10 @@
         "mangaupdates": {
           "puntaje": 76.3,
           "votos": 110
+        },
+        "myanimelist": {
+          "puntaje": 79.1,
+          "votos": 10325
         }
       },
       "distribucion": {
@@ -32868,11 +33632,11 @@
     },
     "180891": {
       "puntaje": {
-        "valor": 82.7,
-        "votos": 4280,
-        "confianza": "media",
+        "valor": 82.2,
+        "votos": 9113,
+        "confianza": "alta",
         "diferencia": 7.5,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -32886,6 +33650,10 @@
         "mangaupdates": {
           "puntaje": 84.7,
           "votos": 280
+        },
+        "myanimelist": {
+          "puntaje": 81.7,
+          "votos": 4833
         }
       },
       "distribucion": {
@@ -33007,11 +33775,11 @@
     },
     "182066": {
       "puntaje": {
-        "valor": 80.8,
-        "votos": 5471,
+        "valor": 80.9,
+        "votos": 11970,
         "confianza": "alta",
         "diferencia": 2.9,
-        "comunidades": 3
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -33025,6 +33793,10 @@
         "mangaupdates": {
           "puntaje": 81.2,
           "votos": 295
+        },
+        "myanimelist": {
+          "puntaje": 80.9,
+          "votos": 6499
         }
       },
       "distribucion": {
@@ -33141,11 +33913,11 @@
     },
     "187944": {
       "puntaje": {
-        "valor": 85.6,
-        "votos": 4851,
+        "valor": 86.2,
+        "votos": 13751,
         "confianza": "media",
-        "diferencia": 12.8,
-        "comunidades": 3
+        "diferencia": 13.4,
+        "comunidades": 4
       },
       "fuentes": {
         "anilist": {
@@ -33159,6 +33931,10 @@
         "mangaupdates": {
           "puntaje": 73.2,
           "votos": 113
+        },
+        "myanimelist": {
+          "puntaje": 86.6,
+          "votos": 8900
         }
       },
       "distribucion": {
