@@ -1,17 +1,17 @@
 {
   "esquema": 1,
   "metodo": "1.2",
-  "generado": "2026-11-17T01:10:55.716Z",
+  "generado": "2026-11-17T02:07:05.074Z",
   "fuentes": {
     "anilist": "2026-11-17",
     "kitsu": "2026-11-17",
     "mangaupdates": "2026-11-17",
-    "myanimelist": null
+    "myanimelist": "2026-11-17"
   },
   "mediaCatalogo": 81.4,
   "tono": {
     "metodo": "modelo",
-    "acierto": 0.83
+    "acierto": 0.814
   },
   "obras": {
     "30001": {
@@ -167,7 +167,7 @@
         }
       ],
       "actividad": {
-        "semana": 493,
+        "semana": 494,
         "leyendo": 13053,
         "lectores": 0.0019,
         "dias": 7
@@ -344,7 +344,7 @@
         }
       ],
       "actividad": {
-        "semana": 1607,
+        "semana": 1623,
         "leyendo": 120830,
         "lectores": 0.0019,
         "dias": 7
@@ -418,9 +418,7 @@
           "personajes",
           "arte"
         ],
-        "critican": [
-          "final"
-        ]
+        "critican": []
       },
       "popularidad": 109676,
       "favoritos": 8764,
@@ -521,7 +519,7 @@
         }
       ],
       "actividad": {
-        "semana": 613,
+        "semana": 621,
         "leyendo": 14027,
         "lectores": 0.002,
         "dias": 7
@@ -667,7 +665,7 @@
         }
       ],
       "actividad": {
-        "semana": 589,
+        "semana": 593,
         "leyendo": 15866,
         "lectores": 0.0021,
         "dias": 7
@@ -844,7 +842,7 @@
         }
       ],
       "actividad": {
-        "semana": 964,
+        "semana": 979,
         "leyendo": 15207,
         "lectores": 0.0017,
         "dias": 7
@@ -1021,7 +1019,7 @@
         }
       ],
       "actividad": {
-        "semana": 1156,
+        "semana": 1166,
         "leyendo": 24409,
         "lectores": 0.0018,
         "dias": 7
@@ -1198,7 +1196,7 @@
         }
       ],
       "actividad": {
-        "semana": 5708,
+        "semana": 5768,
         "leyendo": 171806,
         "lectores": 0.002,
         "dias": 7
@@ -1519,7 +1517,7 @@
         }
       ],
       "actividad": {
-        "semana": 59,
+        "semana": 60,
         "leyendo": 2606,
         "lectores": 0.0011,
         "dias": 7
@@ -1691,7 +1689,7 @@
         }
       ],
       "actividad": {
-        "semana": 276,
+        "semana": 283,
         "leyendo": 14591,
         "lectores": 0.0022,
         "dias": 7
@@ -1856,7 +1854,7 @@
         }
       ],
       "actividad": {
-        "semana": 357,
+        "semana": 361,
         "leyendo": 9719,
         "lectores": 0.0015,
         "dias": 7
@@ -2025,7 +2023,7 @@
         }
       ],
       "actividad": {
-        "semana": 1002,
+        "semana": 1010,
         "leyendo": 51953,
         "lectores": 0.0017,
         "dias": 7
@@ -2197,7 +2195,7 @@
         }
       ],
       "actividad": {
-        "semana": 191,
+        "semana": 192,
         "leyendo": 11283,
         "lectores": 0.0019,
         "dias": 7
@@ -2356,7 +2354,7 @@
         }
       ],
       "actividad": {
-        "semana": 377,
+        "semana": 382,
         "leyendo": 7744,
         "lectores": 0.0021,
         "dias": 7
@@ -2684,7 +2682,7 @@
         }
       ],
       "actividad": {
-        "semana": 242,
+        "semana": 244,
         "leyendo": 6324,
         "lectores": 0.0017,
         "dias": 7
@@ -2853,7 +2851,7 @@
         }
       ],
       "actividad": {
-        "semana": 372,
+        "semana": 373,
         "leyendo": 9379,
         "lectores": 0.0015,
         "dias": 7
@@ -3193,7 +3191,7 @@
         }
       ],
       "actividad": {
-        "semana": 69,
+        "semana": 71,
         "leyendo": 3755,
         "lectores": 0.0014,
         "dias": 7
@@ -3519,7 +3517,7 @@
         }
       ],
       "actividad": {
-        "semana": 104,
+        "semana": 105,
         "leyendo": 2601,
         "lectores": 0.0016,
         "dias": 7
@@ -4021,7 +4019,7 @@
         }
       ],
       "actividad": {
-        "semana": 275,
+        "semana": 279,
         "leyendo": 9214,
         "lectores": 0.0012,
         "dias": 7
@@ -4198,7 +4196,7 @@
         }
       ],
       "actividad": {
-        "semana": 811,
+        "semana": 818,
         "leyendo": 50931,
         "lectores": 0.0017,
         "dias": 7
@@ -4373,7 +4371,7 @@
         }
       ],
       "actividad": {
-        "semana": 1067,
+        "semana": 1085,
         "leyendo": 47383,
         "lectores": 0.0021,
         "dias": 7
@@ -4544,7 +4542,7 @@
         }
       ],
       "actividad": {
-        "semana": 352,
+        "semana": 358,
         "leyendo": 12419,
         "lectores": 0.0026,
         "dias": 7
@@ -4710,7 +4708,7 @@
         }
       ],
       "actividad": {
-        "semana": 76,
+        "semana": 78,
         "leyendo": 3938,
         "lectores": 0.0014,
         "dias": 7
@@ -5392,7 +5390,7 @@
         }
       ],
       "actividad": {
-        "semana": 295,
+        "semana": 301,
         "leyendo": 9625,
         "lectores": 0.0022,
         "dias": 7
@@ -5563,7 +5561,7 @@
         }
       ],
       "actividad": {
-        "semana": 241,
+        "semana": 242,
         "leyendo": 6897,
         "lectores": 0.0024,
         "dias": 7
@@ -5738,7 +5736,7 @@
         }
       ],
       "actividad": {
-        "semana": 299,
+        "semana": 303,
         "leyendo": 13579,
         "lectores": 0.0015,
         "dias": 7
@@ -5911,7 +5909,7 @@
         }
       ],
       "actividad": {
-        "semana": 116,
+        "semana": 120,
         "leyendo": 11029,
         "lectores": 0.0015,
         "dias": 7
@@ -6251,7 +6249,7 @@
         }
       ],
       "actividad": {
-        "semana": 991,
+        "semana": 1001,
         "leyendo": 14292,
         "lectores": 0.0028,
         "dias": 7
@@ -6428,7 +6426,7 @@
         }
       ],
       "actividad": {
-        "semana": 678,
+        "semana": 684,
         "leyendo": 29969,
         "lectores": 0.0018,
         "dias": 7
@@ -6605,7 +6603,7 @@
         }
       ],
       "actividad": {
-        "semana": 787,
+        "semana": 800,
         "leyendo": 10620,
         "lectores": 0.0043,
         "dias": 7
@@ -7221,7 +7219,7 @@
         }
       ],
       "actividad": {
-        "semana": 1241,
+        "semana": 1252,
         "leyendo": 30165,
         "lectores": 0.0022,
         "dias": 7
@@ -7392,7 +7390,7 @@
         }
       ],
       "actividad": {
-        "semana": 444,
+        "semana": 447,
         "leyendo": 20583,
         "lectores": 0.0023,
         "dias": 7
@@ -7461,7 +7459,8 @@
           "accion"
         ],
         "critican": [
-          "final"
+          "final",
+          "ritmo"
         ]
       },
       "popularidad": 229089,
@@ -7563,7 +7562,7 @@
         }
       ],
       "actividad": {
-        "semana": 423,
+        "semana": 433,
         "leyendo": 46401,
         "lectores": 0.001,
         "dias": 7
@@ -7734,7 +7733,7 @@
         }
       ],
       "actividad": {
-        "semana": 179,
+        "semana": 181,
         "leyendo": 19021,
         "lectores": 0.0014,
         "dias": 7
@@ -7877,7 +7876,7 @@
         }
       ],
       "actividad": {
-        "semana": 144,
+        "semana": 145,
         "leyendo": 7978,
         "lectores": 0.0019,
         "dias": 7
@@ -8337,7 +8336,7 @@
         }
       ],
       "actividad": {
-        "semana": 1075,
+        "semana": 1083,
         "leyendo": 30011,
         "lectores": 0.002,
         "dias": 7
@@ -8507,7 +8506,7 @@
         }
       ],
       "actividad": {
-        "semana": 360,
+        "semana": 362,
         "leyendo": 22118,
         "lectores": 0.0012,
         "dias": 7
@@ -9141,7 +9140,7 @@
         }
       ],
       "actividad": {
-        "semana": 362,
+        "semana": 367,
         "leyendo": 29824,
         "lectores": 0.0011,
         "dias": 7
@@ -9312,7 +9311,7 @@
         }
       ],
       "actividad": {
-        "semana": 1395,
+        "semana": 1409,
         "leyendo": 106864,
         "lectores": 0.0012,
         "dias": 7
@@ -9479,7 +9478,7 @@
         }
       ],
       "actividad": {
-        "semana": 96,
+        "semana": 98,
         "leyendo": 11322,
         "lectores": 0.0009,
         "dias": 7
@@ -9650,7 +9649,7 @@
         }
       ],
       "actividad": {
-        "semana": 477,
+        "semana": 481,
         "leyendo": 17294,
         "lectores": 0.0023,
         "dias": 7
@@ -9811,7 +9810,7 @@
         }
       ],
       "actividad": {
-        "semana": 144,
+        "semana": 145,
         "leyendo": 6290,
         "lectores": 0.0015,
         "dias": 7
@@ -9976,7 +9975,7 @@
         }
       ],
       "actividad": {
-        "semana": 614,
+        "semana": 622,
         "leyendo": 18633,
         "lectores": 0.0017,
         "dias": 7
@@ -10141,7 +10140,7 @@
         }
       ],
       "actividad": {
-        "semana": 582,
+        "semana": 585,
         "leyendo": 48974,
         "lectores": 0.0012,
         "dias": 7
@@ -10312,7 +10311,7 @@
         }
       ],
       "actividad": {
-        "semana": 131,
+        "semana": 132,
         "leyendo": 6828,
         "lectores": 0.0014,
         "dias": 7
@@ -10722,7 +10721,7 @@
         }
       ],
       "actividad": {
-        "semana": 53,
+        "semana": 54,
         "leyendo": 6110,
         "lectores": 0.0014,
         "dias": 7
@@ -10891,7 +10890,7 @@
         }
       ],
       "actividad": {
-        "semana": 340,
+        "semana": 341,
         "leyendo": 83163,
         "lectores": 0.0009,
         "dias": 7
@@ -10965,8 +10964,8 @@
         ],
         "critican": [
           "personajes",
-          "accion",
-          "ritmo"
+          "historia",
+          "accion"
         ]
       },
       "popularidad": 106158,
@@ -11068,7 +11067,7 @@
         }
       ],
       "actividad": {
-        "semana": 833,
+        "semana": 844,
         "leyendo": 13961,
         "lectores": 0.002,
         "dias": 7
@@ -11404,7 +11403,7 @@
         }
       ],
       "actividad": {
-        "semana": 225,
+        "semana": 230,
         "leyendo": 13600,
         "lectores": 0.0017,
         "dias": 7
@@ -11569,7 +11568,7 @@
         }
       ],
       "actividad": {
-        "semana": 387,
+        "semana": 395,
         "leyendo": 12384,
         "lectores": 0.0024,
         "dias": 7
@@ -11731,7 +11730,7 @@
         }
       ],
       "actividad": {
-        "semana": 181,
+        "semana": 182,
         "leyendo": 18383,
         "lectores": 0.0011,
         "dias": 7
@@ -11902,7 +11901,7 @@
         }
       ],
       "actividad": {
-        "semana": 1092,
+        "semana": 1106,
         "leyendo": 57278,
         "lectores": 0.0019,
         "dias": 7
@@ -12244,7 +12243,7 @@
         }
       ],
       "actividad": {
-        "semana": 215,
+        "semana": 220,
         "leyendo": 15575,
         "lectores": 0.0012,
         "dias": 7
@@ -12415,7 +12414,7 @@
         }
       ],
       "actividad": {
-        "semana": 421,
+        "semana": 430,
         "leyendo": 41705,
         "lectores": 0.0013,
         "dias": 7
@@ -12582,7 +12581,7 @@
         }
       ],
       "actividad": {
-        "semana": 220,
+        "semana": 222,
         "leyendo": 25039,
         "lectores": 0.0012,
         "dias": 7
@@ -12827,8 +12826,7 @@
           "personajes"
         ],
         "critican": [
-          "emocion",
-          "ritmo"
+          "emocion"
         ]
       },
       "popularidad": 120826,
@@ -12930,7 +12928,7 @@
         }
       ],
       "actividad": {
-        "semana": 414,
+        "semana": 419,
         "leyendo": 35979,
         "lectores": 0.0013,
         "dias": 7
@@ -13097,7 +13095,7 @@
         }
       ],
       "actividad": {
-        "semana": 633,
+        "semana": 635,
         "leyendo": 20210,
         "lectores": 0.0013,
         "dias": 7
@@ -13262,7 +13260,7 @@
         }
       ],
       "actividad": {
-        "semana": 1753,
+        "semana": 1761,
         "leyendo": 25458,
         "lectores": 0.0026,
         "dias": 7
@@ -13604,7 +13602,7 @@
         }
       ],
       "actividad": {
-        "semana": 377,
+        "semana": 382,
         "leyendo": 11821,
         "lectores": 0.0022,
         "dias": 7
@@ -13757,7 +13755,7 @@
         }
       ],
       "actividad": {
-        "semana": 354,
+        "semana": 359,
         "leyendo": 36324,
         "lectores": 0.0013,
         "dias": 7
@@ -13931,7 +13929,7 @@
         }
       ],
       "actividad": {
-        "semana": 415,
+        "semana": 420,
         "leyendo": 33137,
         "lectores": 0.0016,
         "dias": 7
@@ -14108,7 +14106,7 @@
         }
       ],
       "actividad": {
-        "semana": 280,
+        "semana": 284,
         "leyendo": 26653,
         "lectores": 0.0013,
         "dias": 7
@@ -14269,7 +14267,7 @@
         }
       ],
       "actividad": {
-        "semana": 203,
+        "semana": 204,
         "leyendo": 16398,
         "lectores": 0.0014,
         "dias": 7
@@ -14338,6 +14336,7 @@
           "ritmo"
         ],
         "critican": [
+          "humor",
           "historia"
         ]
       },
@@ -14610,7 +14609,7 @@
         }
       ],
       "actividad": {
-        "semana": 1706,
+        "semana": 1721,
         "leyendo": 41040,
         "lectores": 0.0038,
         "dias": 7
@@ -14765,7 +14764,7 @@
         }
       ],
       "actividad": {
-        "semana": 312,
+        "semana": 316,
         "leyendo": 14041,
         "lectores": 0.0027,
         "dias": 7
@@ -14936,7 +14935,7 @@
         }
       ],
       "actividad": {
-        "semana": 216,
+        "semana": 218,
         "leyendo": 27107,
         "lectores": 0.001,
         "dias": 7
@@ -15109,7 +15108,7 @@
         }
       ],
       "actividad": {
-        "semana": 378,
+        "semana": 379,
         "leyendo": 25754,
         "lectores": 0.0026,
         "dias": 7
@@ -15279,7 +15278,7 @@
         }
       ],
       "actividad": {
-        "semana": 1097,
+        "semana": 1098,
         "leyendo": 31513,
         "lectores": 0.0011,
         "dias": 7
@@ -15531,7 +15530,8 @@
           "personajes"
         ],
         "critican": [
-          "accion"
+          "accion",
+          "final"
         ]
       },
       "popularidad": 65833,
@@ -15934,7 +15934,7 @@
         }
       ],
       "actividad": {
-        "semana": 196,
+        "semana": 198,
         "leyendo": 7012,
         "lectores": 0.0017,
         "dias": 7
@@ -16099,7 +16099,7 @@
         }
       ],
       "actividad": {
-        "semana": 237,
+        "semana": 238,
         "leyendo": 17819,
         "lectores": 0.0015,
         "dias": 7
@@ -16270,7 +16270,7 @@
         }
       ],
       "actividad": {
-        "semana": 250,
+        "semana": 251,
         "leyendo": 29506,
         "lectores": 0.0008,
         "dias": 7
@@ -16335,13 +16335,12 @@
         "wilson": 0.523,
         "elogian": [
           "accion",
-          "mundo",
           "arte"
         ],
         "critican": [
+          "personajes",
           "historia",
-          "ritmo",
-          "final"
+          "ritmo"
         ]
       },
       "popularidad": 257188,
@@ -16443,7 +16442,7 @@
         }
       ],
       "actividad": {
-        "semana": 1060,
+        "semana": 1077,
         "leyendo": 113158,
         "lectores": 0.0016,
         "dias": 7
@@ -16584,7 +16583,7 @@
         }
       ],
       "actividad": {
-        "semana": 341,
+        "semana": 348,
         "leyendo": 18514,
         "lectores": 0.0021,
         "dias": 7
@@ -16749,7 +16748,7 @@
         }
       ],
       "actividad": {
-        "semana": 64,
+        "semana": 65,
         "leyendo": 4332,
         "lectores": 0.0018,
         "dias": 7
@@ -16919,7 +16918,7 @@
         }
       ],
       "actividad": {
-        "semana": 527,
+        "semana": 530,
         "leyendo": 40313,
         "lectores": 0.0025,
         "dias": 7
@@ -17081,7 +17080,7 @@
         }
       ],
       "actividad": {
-        "semana": 164,
+        "semana": 165,
         "leyendo": 11342,
         "lectores": 0.0024,
         "dias": 7
@@ -17146,9 +17145,9 @@
         "wilson": 0.262,
         "elogian": [],
         "critican": [
-          "historia",
           "personajes",
-          "accion"
+          "accion",
+          "arte"
         ]
       },
       "popularidad": 119078,
@@ -17245,7 +17244,7 @@
         }
       ],
       "actividad": {
-        "semana": 245,
+        "semana": 246,
         "leyendo": 39397,
         "lectores": 0.0012,
         "dias": 7
@@ -17519,7 +17518,7 @@
         }
       ],
       "actividad": {
-        "semana": 745,
+        "semana": 751,
         "leyendo": 14821,
         "lectores": 0.0022,
         "dias": 7
@@ -17840,7 +17839,7 @@
         }
       ],
       "actividad": {
-        "semana": 217,
+        "semana": 219,
         "leyendo": 5293,
         "lectores": 0.0032,
         "dias": 7
@@ -18000,7 +17999,7 @@
         }
       ],
       "actividad": {
-        "semana": 627,
+        "semana": 635,
         "leyendo": 24386,
         "lectores": 0.0019,
         "dias": 7
@@ -18173,7 +18172,7 @@
         }
       ],
       "actividad": {
-        "semana": 894,
+        "semana": 907,
         "leyendo": 84253,
         "lectores": 0.0016,
         "dias": 7
@@ -18243,9 +18242,9 @@
         "mixtas": 7,
         "wilson": 0.694,
         "elogian": [
-          "personajes",
           "historia",
-          "accion"
+          "accion",
+          "arte"
         ],
         "critican": [
           "final"
@@ -18350,7 +18349,7 @@
         }
       ],
       "actividad": {
-        "semana": 1384,
+        "semana": 1397,
         "leyendo": 134931,
         "lectores": 0.0017,
         "dias": 7
@@ -18516,7 +18515,7 @@
         }
       ],
       "actividad": {
-        "semana": 4603,
+        "semana": 4624,
         "leyendo": 76569,
         "lectores": 0.0024,
         "dias": 7
@@ -18677,7 +18676,7 @@
         }
       ],
       "actividad": {
-        "semana": 3439,
+        "semana": 3449,
         "leyendo": 29548,
         "lectores": 0.0036,
         "dias": 7
@@ -18842,7 +18841,7 @@
         }
       ],
       "actividad": {
-        "semana": 299,
+        "semana": 303,
         "leyendo": 37078,
         "lectores": 0.0012,
         "dias": 7
@@ -19153,7 +19152,7 @@
         }
       ],
       "actividad": {
-        "semana": 787,
+        "semana": 792,
         "leyendo": 9711,
         "lectores": 0.0035,
         "dias": 7
@@ -19324,7 +19323,7 @@
         }
       ],
       "actividad": {
-        "semana": 175,
+        "semana": 176,
         "leyendo": 10923,
         "lectores": 0.002,
         "dias": 7
@@ -19815,7 +19814,7 @@
         }
       ],
       "actividad": {
-        "semana": 297,
+        "semana": 300,
         "leyendo": 7697,
         "lectores": 0.0027,
         "dias": 7
@@ -19980,7 +19979,7 @@
         }
       ],
       "actividad": {
-        "semana": 1385,
+        "semana": 1396,
         "leyendo": 91871,
         "lectores": 0.0012,
         "dias": 7
@@ -20287,7 +20286,7 @@
         }
       ],
       "actividad": {
-        "semana": 681,
+        "semana": 684,
         "leyendo": 15127,
         "lectores": 0.0021,
         "dias": 7
@@ -20436,7 +20435,7 @@
         }
       ],
       "actividad": {
-        "semana": 512,
+        "semana": 517,
         "leyendo": 28509,
         "lectores": 0.0022,
         "dias": 7
@@ -20581,7 +20580,7 @@
         }
       ],
       "actividad": {
-        "semana": 480,
+        "semana": 491,
         "leyendo": 16412,
         "lectores": 0.0024,
         "dias": 7
@@ -20722,7 +20721,7 @@
         }
       ],
       "actividad": {
-        "semana": 212,
+        "semana": 213,
         "leyendo": 4741,
         "lectores": 0.0046,
         "dias": 7
@@ -20867,7 +20866,7 @@
         }
       ],
       "actividad": {
-        "semana": 162,
+        "semana": 164,
         "leyendo": 17109,
         "lectores": 0.0021,
         "dias": 7
@@ -21039,7 +21038,7 @@
         }
       ],
       "actividad": {
-        "semana": 378,
+        "semana": 382,
         "leyendo": 19432,
         "lectores": 0.002,
         "dias": 7
@@ -21324,8 +21323,8 @@
         }
       ],
       "actividad": {
-        "semana": 50,
-        "leyendo": 6662,
+        "semana": 44,
+        "leyendo": 6663,
         "lectores": 0.0016,
         "dias": 7
       },
@@ -21647,7 +21646,7 @@
         }
       ],
       "actividad": {
-        "semana": 1070,
+        "semana": 1078,
         "leyendo": 10906,
         "lectores": 0.0068,
         "dias": 7
@@ -21933,7 +21932,7 @@
         }
       ],
       "actividad": {
-        "semana": 137,
+        "semana": 138,
         "leyendo": 7794,
         "lectores": 0.0024,
         "dias": 7
@@ -22068,7 +22067,7 @@
         }
       ],
       "actividad": {
-        "semana": 1597,
+        "semana": 1605,
         "leyendo": 23889,
         "lectores": 0.0032,
         "dias": 7
@@ -22232,7 +22231,7 @@
         }
       ],
       "actividad": {
-        "semana": 152,
+        "semana": 157,
         "leyendo": 9232,
         "lectores": 0.0024,
         "dias": 7
@@ -22403,7 +22402,7 @@
         }
       ],
       "actividad": {
-        "semana": 190,
+        "semana": 192,
         "leyendo": 20271,
         "lectores": 0.0015,
         "dias": 7
@@ -22558,7 +22557,7 @@
         }
       ],
       "actividad": {
-        "semana": 68,
+        "semana": 69,
         "leyendo": 5011,
         "lectores": 0.0019,
         "dias": 7
@@ -22702,7 +22701,7 @@
         }
       ],
       "actividad": {
-        "semana": 4444,
+        "semana": 4466,
         "leyendo": 18603,
         "lectores": 0.004,
         "dias": 7
@@ -22874,7 +22873,7 @@
         }
       ],
       "actividad": {
-        "semana": 254,
+        "semana": 255,
         "leyendo": 36037,
         "lectores": 0.0012,
         "dias": 7
@@ -23031,7 +23030,7 @@
         }
       ],
       "actividad": {
-        "semana": 125,
+        "semana": 127,
         "leyendo": 15104,
         "lectores": 0.0021,
         "dias": 7
@@ -23165,7 +23164,7 @@
         }
       ],
       "actividad": {
-        "semana": 5813,
+        "semana": 5877,
         "leyendo": 26496,
         "lectores": 0.0069,
         "dias": 7
@@ -23332,7 +23331,7 @@
         }
       ],
       "actividad": {
-        "semana": 186,
+        "semana": 187,
         "leyendo": 8040,
         "lectores": 0.0024,
         "dias": 7
@@ -23783,7 +23782,7 @@
         }
       ],
       "actividad": {
-        "semana": 1026,
+        "semana": 1033,
         "leyendo": 24331,
         "lectores": 0.0036,
         "dias": 7
@@ -23928,7 +23927,7 @@
         }
       ],
       "actividad": {
-        "semana": 987,
+        "semana": 998,
         "leyendo": 25299,
         "lectores": 0.0023,
         "dias": 7
@@ -24093,7 +24092,7 @@
         }
       ],
       "actividad": {
-        "semana": 370,
+        "semana": 377,
         "leyendo": 45983,
         "lectores": 0.0019,
         "dias": 7
@@ -24234,7 +24233,7 @@
         }
       ],
       "actividad": {
-        "semana": 589,
+        "semana": 597,
         "leyendo": 10365,
         "lectores": 0.0037,
         "dias": 7
@@ -24399,7 +24398,7 @@
         }
       ],
       "actividad": {
-        "semana": 1789,
+        "semana": 1810,
         "leyendo": 84112,
         "lectores": 0.0025,
         "dias": 7
@@ -24554,7 +24553,7 @@
         }
       ],
       "actividad": {
-        "semana": 674,
+        "semana": 680,
         "leyendo": 18066,
         "lectores": 0.0033,
         "dias": 7
@@ -24644,7 +24643,7 @@
         }
       ],
       "actividad": {
-        "semana": 306,
+        "semana": 309,
         "leyendo": 3247,
         "lectores": 0.0068,
         "dias": 7
@@ -24779,7 +24778,7 @@
         }
       ],
       "actividad": {
-        "semana": 3953,
+        "semana": 3965,
         "leyendo": 18311,
         "lectores": 0.0096,
         "dias": 7
@@ -24944,7 +24943,7 @@
         }
       ],
       "actividad": {
-        "semana": 339,
+        "semana": 343,
         "leyendo": 46660,
         "lectores": 0.0013,
         "dias": 7
@@ -25109,7 +25108,7 @@
         }
       ],
       "actividad": {
-        "semana": 5188,
+        "semana": 5212,
         "leyendo": 33796,
         "lectores": 0.0048,
         "dias": 7
@@ -25245,7 +25244,7 @@
         }
       ],
       "actividad": {
-        "semana": 212,
+        "semana": 214,
         "leyendo": 4881,
         "lectores": 0.0045,
         "dias": 7
@@ -25564,7 +25563,7 @@
         }
       ],
       "actividad": {
-        "semana": 1596,
+        "semana": 1608,
         "leyendo": 28110,
         "lectores": 0.0035,
         "dias": 7
@@ -26024,7 +26023,7 @@
         }
       ],
       "actividad": {
-        "semana": 3343,
+        "semana": 3388,
         "leyendo": 47797,
         "lectores": 0.0017,
         "dias": 7
@@ -26179,7 +26178,7 @@
         }
       ],
       "actividad": {
-        "semana": 354,
+        "semana": 356,
         "leyendo": 37079,
         "lectores": 0.0021,
         "dias": 7
@@ -26324,7 +26323,7 @@
         }
       ],
       "actividad": {
-        "semana": 4477,
+        "semana": 4526,
         "leyendo": 46952,
         "lectores": 0.004,
         "dias": 7
@@ -26489,7 +26488,7 @@
         }
       ],
       "actividad": {
-        "semana": 276,
+        "semana": 277,
         "leyendo": 10756,
         "lectores": 0.0048,
         "dias": 7
@@ -26769,7 +26768,7 @@
         }
       ],
       "actividad": {
-        "semana": 1377,
+        "semana": 1386,
         "leyendo": 16603,
         "lectores": 0.0039,
         "dias": 7
@@ -26891,7 +26890,7 @@
         }
       ],
       "actividad": {
-        "semana": 805,
+        "semana": 815,
         "leyendo": 23543,
         "lectores": 0.0018,
         "dias": 7
@@ -27056,7 +27055,7 @@
         }
       ],
       "actividad": {
-        "semana": 4699,
+        "semana": 4930,
         "leyendo": 67304,
         "lectores": 0.003,
         "dias": 7
@@ -27081,7 +27080,7 @@
     "132144": {
       "puntaje": {
         "valor": 84.6,
-        "votos": 12752,
+        "votos": 12753,
         "confianza": "alta",
         "diferencia": 3.2,
         "comunidades": 3
@@ -27093,7 +27092,7 @@
         },
         "kitsu": {
           "puntaje": 81.8,
-          "votos": 1286
+          "votos": 1287
         },
         "mangaupdates": {
           "puntaje": 84.8,
@@ -27212,7 +27211,7 @@
         }
       ],
       "actividad": {
-        "semana": 5049,
+        "semana": 5084,
         "leyendo": 31255,
         "lectores": 0.0053,
         "dias": 7
@@ -27377,7 +27376,7 @@
         }
       ],
       "actividad": {
-        "semana": 449,
+        "semana": 462,
         "leyendo": 25310,
         "lectores": 0.0025,
         "dias": 7
@@ -27512,7 +27511,7 @@
         }
       ],
       "actividad": {
-        "semana": 2654,
+        "semana": 2664,
         "leyendo": 25576,
         "lectores": 0.0049,
         "dias": 7
@@ -27667,7 +27666,7 @@
         }
       ],
       "actividad": {
-        "semana": 451,
+        "semana": 455,
         "leyendo": 26539,
         "lectores": 0.0031,
         "dias": 7
@@ -27838,7 +27837,7 @@
         }
       ],
       "actividad": {
-        "semana": 154,
+        "semana": 155,
         "leyendo": 1073,
         "lectores": 0.0026,
         "dias": 7
@@ -27984,7 +27983,7 @@
         }
       ],
       "actividad": {
-        "semana": 3393,
+        "semana": 3424,
         "leyendo": 36161,
         "lectores": 0.003,
         "dias": 7
@@ -28123,7 +28122,7 @@
         }
       ],
       "actividad": {
-        "semana": 1185,
+        "semana": 1193,
         "leyendo": 19505,
         "lectores": 0.0042,
         "dias": 7
@@ -28267,7 +28266,7 @@
         }
       ],
       "actividad": {
-        "semana": 388,
+        "semana": 390,
         "leyendo": 20145,
         "lectores": 0.0025,
         "dias": 7
@@ -28386,7 +28385,7 @@
         }
       ],
       "actividad": {
-        "semana": 152,
+        "semana": 155,
         "leyendo": 9543,
         "lectores": 0.0022,
         "dias": 7
@@ -28551,7 +28550,7 @@
         }
       ],
       "actividad": {
-        "semana": 558,
+        "semana": 565,
         "leyendo": 17114,
         "lectores": 0.0035,
         "dias": 7
@@ -28692,7 +28691,7 @@
         }
       ],
       "actividad": {
-        "semana": 1483,
+        "semana": 1499,
         "leyendo": 7711,
         "lectores": 0.006,
         "dias": 7
@@ -28852,7 +28851,7 @@
         }
       ],
       "actividad": {
-        "semana": 266,
+        "semana": 270,
         "leyendo": 6594,
         "lectores": 0.003,
         "dias": 7
@@ -29017,7 +29016,7 @@
         }
       ],
       "actividad": {
-        "semana": 3043,
+        "semana": 3073,
         "leyendo": 32186,
         "lectores": 0.0057,
         "dias": 7
@@ -29192,7 +29191,7 @@
         }
       ],
       "actividad": {
-        "semana": 1368,
+        "semana": 1379,
         "leyendo": 47935,
         "lectores": 0.003,
         "dias": 7
@@ -29357,7 +29356,7 @@
         }
       ],
       "actividad": {
-        "semana": 639,
+        "semana": 641,
         "leyendo": 5734,
         "lectores": 0.0048,
         "dias": 7
@@ -29512,7 +29511,7 @@
         }
       ],
       "actividad": {
-        "semana": 1624,
+        "semana": 1638,
         "leyendo": 10912,
         "lectores": 0.006,
         "dias": 7
@@ -29657,7 +29656,7 @@
         }
       ],
       "actividad": {
-        "semana": 111,
+        "semana": 112,
         "leyendo": 1989,
         "lectores": 0.0029,
         "dias": 7
@@ -29787,7 +29786,7 @@
         }
       ],
       "actividad": {
-        "semana": 2191,
+        "semana": 2202,
         "leyendo": 27124,
         "lectores": 0.0029,
         "dias": 7
@@ -29952,7 +29951,7 @@
         }
       ],
       "actividad": {
-        "semana": 2912,
+        "semana": 2935,
         "leyendo": 36206,
         "lectores": 0.0044,
         "dias": 7
@@ -30081,7 +30080,7 @@
         }
       ],
       "actividad": {
-        "semana": 665,
+        "semana": 678,
         "leyendo": 28263,
         "lectores": 0.0026,
         "dias": 7
@@ -30225,7 +30224,7 @@
         }
       ],
       "actividad": {
-        "semana": 272,
+        "semana": 274,
         "leyendo": 12884,
         "lectores": 0.0031,
         "dias": 7
@@ -30356,7 +30355,7 @@
         }
       ],
       "actividad": {
-        "semana": 669,
+        "semana": 671,
         "leyendo": 6320,
         "lectores": 0.005,
         "dias": 7
@@ -30515,7 +30514,7 @@
         }
       ],
       "actividad": {
-        "semana": 268,
+        "semana": 270,
         "leyendo": 1780,
         "lectores": 0.0031,
         "dias": 7
@@ -30655,7 +30654,7 @@
         }
       ],
       "actividad": {
-        "semana": 3849,
+        "semana": 3888,
         "leyendo": 33258,
         "lectores": 0.0039,
         "dias": 7
@@ -30805,7 +30804,7 @@
         }
       ],
       "actividad": {
-        "semana": 2295,
+        "semana": 2339,
         "leyendo": 21762,
         "lectores": 0.0052,
         "dias": 7
@@ -30931,7 +30930,7 @@
         }
       ],
       "actividad": {
-        "semana": 558,
+        "semana": 563,
         "leyendo": 6696,
         "lectores": 0.006,
         "dias": 7
@@ -31073,7 +31072,7 @@
         }
       ],
       "actividad": {
-        "semana": 1607,
+        "semana": 1615,
         "leyendo": 8034,
         "lectores": 0.0095,
         "dias": 7
@@ -31232,7 +31231,7 @@
         }
       ],
       "actividad": {
-        "semana": 5333,
+        "semana": 5370,
         "leyendo": 33732,
         "lectores": 0.0057,
         "dias": 7
@@ -31357,7 +31356,7 @@
         }
       ],
       "actividad": {
-        "semana": 4162,
+        "semana": 4187,
         "leyendo": 31083,
         "lectores": 0.006,
         "dias": 7
@@ -31476,7 +31475,7 @@
         }
       ],
       "actividad": {
-        "semana": 2356,
+        "semana": 2371,
         "leyendo": 10920,
         "lectores": 0.0053,
         "dias": 7
@@ -31610,7 +31609,7 @@
         }
       ],
       "actividad": {
-        "semana": 4836,
+        "semana": 4932,
         "leyendo": 34518,
         "lectores": 0.0045,
         "dias": 7
@@ -31771,7 +31770,7 @@
         }
       ],
       "actividad": {
-        "semana": 3623,
+        "semana": 3630,
         "leyendo": 16669,
         "lectores": 0.0083,
         "dias": 7
@@ -31885,7 +31884,7 @@
         }
       ],
       "actividad": {
-        "semana": 936,
+        "semana": 994,
         "leyendo": 8214,
         "lectores": 0.0062,
         "dias": 7
@@ -32185,7 +32184,7 @@
         }
       ],
       "actividad": {
-        "semana": 3821,
+        "semana": 3866,
         "leyendo": 38688,
         "lectores": 0.0035,
         "dias": 7
@@ -32325,7 +32324,7 @@
         }
       ],
       "actividad": {
-        "semana": 5263,
+        "semana": 5288,
         "leyendo": 25190,
         "lectores": 0.008,
         "dias": 7
@@ -32469,7 +32468,7 @@
         }
       ],
       "actividad": {
-        "semana": 4662,
+        "semana": 4697,
         "leyendo": 24879,
         "lectores": 0.0072,
         "dias": 7
@@ -32613,7 +32612,7 @@
         }
       ],
       "actividad": {
-        "semana": 3586,
+        "semana": 3707,
         "leyendo": 15453,
         "lectores": 0.0102,
         "dias": 7
@@ -32753,7 +32752,7 @@
         }
       ],
       "actividad": {
-        "semana": 913,
+        "semana": 931,
         "leyendo": 21106,
         "lectores": 0.0081,
         "dias": 7
@@ -32914,7 +32913,7 @@
         }
       ],
       "actividad": {
-        "semana": 3159,
+        "semana": 3206,
         "leyendo": 17131,
         "lectores": 0.0077,
         "dias": 7
@@ -33053,7 +33052,7 @@
         }
       ],
       "actividad": {
-        "semana": 5020,
+        "semana": 5088,
         "leyendo": 15315,
         "lectores": 0.0118,
         "dias": 7
@@ -33187,7 +33186,7 @@
         }
       ],
       "actividad": {
-        "semana": 3663,
+        "semana": 3728,
         "leyendo": 19947,
         "lectores": 0.01,
         "dias": 7
@@ -33333,7 +33332,7 @@
         }
       ],
       "actividad": {
-        "semana": 695,
+        "semana": 698,
         "leyendo": 13104,
         "lectores": 0.0094,
         "dias": 7
