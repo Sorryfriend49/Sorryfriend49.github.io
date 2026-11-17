@@ -476,6 +476,7 @@ nav{
 
 .filtros{
     display: grid;
+    grid-template-columns: minmax(0, 1fr);    /* una fila de etiquetas larga se desliza en vez de ensanchar la página */
     gap: 14px;
     margin-top: 20px;
 }
@@ -729,6 +730,179 @@ nav{
 
 .nota-datos a{
     color: var(--cristal);
+}
+
+/* ===================================
+   MI BIBLIOTECA
+   Las obras que guardas desde su ficha (se guardan en este navegador)
+=================================== */
+.biblioteca-intro{
+    max-width: 720px;
+    margin-top: 8px;
+    font-size: 15px;
+    color: var(--texto-suave);
+}
+
+.aviso-almacenamiento{
+    max-width: 720px;
+    margin-top: 14px;
+    padding: 10px 14px;
+    border: 1px solid rgba(195, 180, 242, 0.45);
+    border-radius: 12px;
+    background: rgba(195, 180, 242, 0.1);
+    font-size: 14px;
+}
+
+/* Ver por etiqueta: Todas, Leyendo, Por leer... con cuántas obras hay en cada una */
+.zona-etiquetas{
+    position: relative;      /* el texto para lectores de pantalla queda dentro (no ensancha la página) */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.chip-icono{
+    display: inline-flex;
+    color: var(--lavanda);
+}
+
+.chip[aria-pressed="true"] .chip-icono,
+.chip[aria-pressed="true"] .cuenta{
+    color: currentColor;
+}
+
+/* Una etiqueta sin obras se ve apagada (igual se puede tocar) */
+.zona-etiquetas .chip.vacia:not([aria-pressed="true"]){
+    opacity: 0.55;
+}
+
+/* Marca sobre la portada: la etiqueta de tu biblioteca (y un corazón si es favorita) */
+.marca-biblioteca{
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    max-width: calc(100% - 16px);
+    padding: 1px 8px;
+    border: 1px solid rgba(230, 242, 248, 0.55);
+    border-radius: 6px;
+    background: rgba(3, 10, 19, 0.88);
+    color: var(--hielo);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.6;
+    white-space: nowrap;
+}
+
+.marca-biblioteca.solo-corazon{
+    padding: 2px 6px;
+}
+
+.marca-corazon{
+    display: inline-flex;
+    color: var(--lavanda);
+}
+
+/* Copia para llevar la biblioteca a otro navegador */
+.biblioteca-copia{
+    margin-top: 36px;
+    padding-top: 22px;
+    border-top: 1px solid var(--vidrio-borde);
+}
+
+.biblioteca-copia h3{
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--hielo);
+}
+
+.biblioteca-copia p{
+    max-width: 680px;
+    margin-top: 4px;
+    font-size: 14px;
+    color: var(--texto-suave);
+}
+
+.botones-copia{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.biblioteca-copia .aviso-copia{
+    margin-top: 12px;
+    color: var(--texto-claro);
+}
+
+.biblioteca-copia .aviso-copia.error{
+    color: #ffc2c2;
+}
+
+.aviso-copia:empty,
+.aviso-biblioteca:empty{
+    display: none;
+}
+
+/* En la ficha: guardar la obra con una etiqueta */
+.mi-biblioteca{
+    margin-top: 18px;
+    padding: 12px 16px 14px;
+    border: 1px solid var(--vidrio-borde);
+    border-radius: 16px;
+    background: rgba(168, 198, 236, 0.06);
+    transition: border-color 0.2s ease;
+}
+
+.mi-biblioteca.guardada{
+    border-color: rgba(124, 179, 234, 0.5);
+}
+
+.mi-biblioteca-cabecera{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px 12px;
+}
+
+.mi-biblioteca-titulo{
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--hielo);
+}
+
+.mi-biblioteca-cabecera .quitar-generos{
+    min-height: 32px;
+    font-size: 13px;
+}
+
+.botones-biblioteca{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.botones-biblioteca .chip{
+    min-height: 40px;
+}
+
+.chip-favorito[aria-pressed="true"]{
+    border-color: var(--lavanda);
+    background: var(--lavanda);
+    color: var(--fondo);
+}
+
+.aviso-biblioteca{
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--texto-suave);
 }
 
 /* ===================================
@@ -1278,7 +1452,7 @@ nav{
         letter-spacing: 1px;
     }
 
-    /* --- Menú: tres botones grandes en una fila --- */
+    /* --- Menú: cuatro botones grandes en una fila --- */
     nav{
         padding: 4px 6px;
         background: rgba(3, 10, 19, 0.94);
@@ -1288,7 +1462,7 @@ nav{
 
     .nav-menu{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 4px;
     }
 
@@ -1297,9 +1471,10 @@ nav{
         align-items: center;
         justify-content: center;
         min-height: 48px;
-        padding: 8px 4px;
+        padding: 6px 4px;
         border-radius: 10px;
-        font-size: 15px;
+        font-size: 14px;
+        line-height: 1.15;
         text-align: center;
     }
 
@@ -1476,6 +1651,41 @@ nav{
         grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
         gap: 22px 14px;
         margin-top: 20px;
+    }
+
+    /* --- Biblioteca: las etiquetas en una sola fila que se desliza con el dedo --- */
+    .biblioteca-intro{
+        font-size: 14px;
+    }
+
+    /* Con obras guardadas, la explicación se esconde para que las portadas se vean sin bajar */
+    .con-obras .biblioteca-intro{
+        display: none;
+    }
+
+    .zona-etiquetas{
+        flex-wrap: nowrap;
+        width: calc(100% + 28px);
+        margin: 0 -14px;
+        padding: 2px 14px 6px;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .zona-etiquetas::-webkit-scrollbar{
+        display: none;
+    }
+
+    .zona-etiquetas .chip{
+        flex: none;
+    }
+
+    .botones-biblioteca .chip{
+        min-height: 44px;
+    }
+
+    .mi-biblioteca{
+        padding: 12px 12px 14px;
     }
 
     /* --- Ficha --- */

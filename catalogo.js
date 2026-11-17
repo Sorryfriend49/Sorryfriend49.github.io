@@ -5,6 +5,8 @@
    cada obra. Los filtros viven en la dirección de la página, por ejemplo
    #catalogo?tipo=manhwa&generos=accion,fantasia&orden=fecha-desc
    así un enlace compartido abre el catálogo tal como lo dejaste.
+   También pinta "Mi biblioteca" (#biblioteca?ver=leyendo) y los botones de la
+   ficha para guardar cada obra con su etiqueta; los datos los guarda biblioteca.js.
 =================================== */
 (() => {
     const GENEROS = {
@@ -73,6 +75,20 @@
     };
     const ORDEN_INICIAL = 'populares';
 
+    // ---------- Mi biblioteca ----------
+    const Biblioteca = window.FrozenBiblioteca;
+    const ETIQUETAS_BIB = { 'leyendo': 'Leyendo', 'por-leer': 'Por leer', 'leido': 'Leído', 'en-pausa': 'En pausa', 'abandonado': 'Abandonado' };
+    // Lo que se puede ver en la biblioteca: todas, cada etiqueta o las favoritas
+    const VISTAS_BIB = { 'todas': 'Todas', ...ETIQUETAS_BIB, 'favoritos': 'Favorito' };
+    const fechaCambio = x => Date.parse(x.e.cambiada) || 0;
+    const ORDENES_BIB = {
+        'recientes': (a, b) => fechaCambio(b) - fechaCambio(a),
+        'titulo': (a, b) => a.o.titulo.localeCompare(b.o.titulo, 'es'),
+        'valorados': (a, b) => (puntaje(b.o) || 0) - (puntaje(a.o) || 0)
+    };
+    const VISTA_BIB_INICIAL = { ver: 'todas', orden: 'recientes' };
+    const cumpleVista = (e, ver) => ver === 'todas' || (ver === 'favoritos' ? e.favorito : e.estado === ver);
+
     const formatoLectores = new Intl.NumberFormat('es', { notation: 'compact' });   // 337640 -> "338 mil"
     const formatoPuntaje = new Intl.NumberFormat('es', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
     const formatoNumero = new Intl.NumberFormat('es');   // 1198 -> "1198"; 10500 -> "10.500"
@@ -88,7 +104,12 @@
     const selectOrden = $('orden');
     const ficha = $('ficha');
     const enlaceMenuCatalogo = document.querySelector('.nav-link[data-seccion="catalogo"]');
+    const enlaceMenuBiblioteca = document.querySelector('.nav-link[data-seccion="biblioteca"]');
     const botonExplorar = document.querySelector('.inicio-texto .boton-principal');
+    const rejillaBib = $('rejillaBiblioteca');
+    const filtroBib = $('filtroBiblioteca');
+    const ordenBib = $('ordenBiblioteca');
+    const botonesFicha = $('botonesBiblioteca');
 
     let obras = [];
     let porId = new Map();
@@ -106,7 +127,12 @@
     let ultimaObra = null;         // obra de la última ficha abierta (por si no hay elemento de origen)
     let volviendo = false;         // la ficha se cerró con history.back() y el navegador aún no vuelve
     let cambioPendiente = null;    // filtro tocado justo en ese momento: se aplica al terminar de volver
+    let cambioPendienteBib = null; // lo mismo para los filtros de la biblioteca
     let esperaVolver = 0;
+    let vistaBib = { ...VISTA_BIB_INICIAL };
+    let chipsBib = new Map();      // vista -> { boton, cuenta }
+    let tarjetasBib = new Map();   // id -> { li, a, marca } (se reusan para no recargar portadas)
+    let ordenPintadoBib = '';
 
     // ---------- Textos ----------
     function textoFecha(iso){
@@ -139,6 +165,8 @@
     }
 
     const ICONO_ESTRELLA = '<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><path fill="currentColor" d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg>';
+
+    const ICONO_CORAZON = '<svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M12 21s-7.5-4.6-9.6-9.3C.9 8.4 2.9 4.5 6.6 4.5c2.2 0 3.7 1.2 5.4 3.2 1.7-2 3.2-3.2 5.4-3.2 3.7 0 5.7 3.9 4.2 7.2C19.5 16.4 12 21 12 21z"/></svg>';
 
     function datoPuntaje(o){
         const p = puntaje(o);
@@ -192,6 +220,34 @@
         return '#catalogo' + (partes.length ? '?' + partes.join('&') : '');
     }
 
+    // Biblioteca: #biblioteca?ver=leyendo&orden=titulo (y &obra=... con la ficha abierta)
+    function vistaDesdeParams(params){
+        const ver = Object.prototype.hasOwnProperty.call(VISTAS_BIB, params.get('ver')) ? params.get('ver') : VISTA_BIB_INICIAL.ver;
+        const orden = Object.prototype.hasOwnProperty.call(ORDENES_BIB, params.get('orden')) ? params.get('orden') : VISTA_BIB_INICIAL.orden;
+        return { ver, orden };
+    }
+
+    function hashBiblioteca(v = vistaBib, obra = null){
+        const partes = [];
+        if (v.ver !== VISTA_BIB_INICIAL.ver) partes.push('ver=' + v.ver);
+        if (v.orden !== VISTA_BIB_INICIAL.orden) partes.push('orden=' + v.orden);
+        if (obra) partes.push('obra=' + encodeURIComponent(obra));
+        return '#biblioteca' + (partes.length ? '?' + partes.join('&') : '');
+    }
+
+    // La ficha se abre encima del apartado en el que estás (catálogo o biblioteca)
+    const enBiblioteca = () => Frozen.ruta().seccion === 'biblioteca';
+    const hashObra = id => enBiblioteca() ? hashBiblioteca(vistaBib, id) : hashCatalogo(estado, id);
+    const hashSinFicha = () => enBiblioteca() ? hashBiblioteca() : hashCatalogo();
+
+    function cambiarVistaBib(cambios){
+        if (volviendo){
+            cambioPendienteBib = { ...(cambioPendienteBib || {}), ...cambios };
+            return;
+        }
+        Frozen.navegar(hashBiblioteca({ ...vistaBib, ...cambios }), { reemplazar: true });
+    }
+
     function cambiarEstado(cambios){
         // Si la ficha se está cerrando con Atrás, el cambio espera a que el navegador termine de volver
         if (volviendo){
@@ -217,6 +273,11 @@
             cambioPendiente = null;
             cambiarEstado(cambios);
         }
+        if (cambioPendienteBib){
+            const cambios = cambioPendienteBib;
+            cambioPendienteBib = null;
+            cambiarVistaBib(cambios);
+        }
     }
 
     // ---------- Filtrar y ordenar ----------
@@ -238,12 +299,30 @@
             a.dataset.obra = o.id;
             const portada = crear('div', 'obra-portada');
             colorDePlaca(portada, o);
-            portada.append(imagenPortada(o, '(max-width: 768px) 46vw, 190px'), etiquetaTipo(o.tipo));
+            const marca = crear('span', 'marca-biblioteca');
+            pintarMarca(marca, Biblioteca.obtener(o.id));
+            portada.append(imagenPortada(o, '(max-width: 768px) 46vw, 190px'), etiquetaTipo(o.tipo), marca);
             const datos = crear('span', 'obra-datos');
             a.append(portada, crear('span', 'obra-titulo', o.titulo), datos);
             li.append(a);
-            return [o.id, { li, a, datos }];
+            return [o.id, { li, a, datos, marca }];
         }));
+    }
+
+    // Marca sobre la portada si la obra está en tu biblioteca: su etiqueta y un corazón si es favorita
+    function pintarMarca(marca, e){
+        marca.replaceChildren();
+        marca.hidden = !e;
+        if (!e) return;
+        marca.append(crear('span', 'solo-lectores', 'En tu biblioteca: '));
+        if (e.favorito){
+            const corazon = crear('span', 'marca-corazon');
+            corazon.innerHTML = ICONO_CORAZON;
+            corazon.append(crear('span', 'solo-lectores', e.estado ? 'favorita, ' : 'favorita'));
+            marca.append(corazon);
+        }
+        if (e.estado) marca.append(ETIQUETAS_BIB[e.estado]);
+        marca.classList.toggle('solo-corazon', !e.estado);
     }
 
     function construirChips(){
@@ -402,6 +481,231 @@
         $('notaDatos').replaceChildren(texto + ' ', enlace);
     }
 
+    // ---------- Mi biblioteca (apartado) ----------
+    function construirChipsBiblioteca(){
+        chipsBib = new Map(Object.entries(VISTAS_BIB).map(([ver, nombre]) => {
+            const boton = crear('button', 'chip');
+            boton.type = 'button';
+            boton.dataset.ver = ver;
+            boton.setAttribute('aria-pressed', 'false');
+            const cuenta = crear('span', 'cuenta');
+            const texto = crear('span', null, nombre);
+            if (ver === 'favoritos'){
+                const corazon = crear('span', 'chip-icono');
+                corazon.innerHTML = ICONO_CORAZON;
+                boton.append(corazon);
+            }
+            boton.append(texto, cuenta);
+            return [ver, { boton, cuenta }];
+        }));
+        filtroBib.replaceChildren(...[...chipsBib.values()].map(c => c.boton));
+    }
+
+    // Las obras de la biblioteca que siguen en el catálogo, con su entrada: [{ o, e }]
+    const entradasBiblioteca = () => Biblioteca.todas()
+        .map(([id, e]) => ({ o: porId.get(id), e }))
+        .filter(x => x.o);
+
+    function tarjetaBiblioteca({ o, e }){
+        let t = tarjetasBib.get(o.id);
+        if (!t){
+            const li = document.createElement('li');
+            const a = crear('a', 'obra');
+            a.dataset.obra = o.id;
+            const portada = crear('div', 'obra-portada');
+            colorDePlaca(portada, o);
+            const marca = crear('span', 'marca-biblioteca');
+            portada.append(imagenPortada(o, '(max-width: 768px) 46vw, 190px'), etiquetaTipo(o.tipo), marca);
+            const datos = crear('span', 'obra-datos');
+            datos.append(crear('span', null, o.inicio ? o.inicio.slice(0, 4) : ''));
+            const p = datoPuntaje(o);
+            if (p) datos.append(p);
+            a.append(portada, crear('span', 'obra-titulo', o.titulo), datos);
+            li.append(a);
+            t = { li, a, marca };
+            tarjetasBib.set(o.id, t);
+        }
+        t.a.href = hashBiblioteca(vistaBib, o.id);
+        pintarMarca(t.marca, e);
+        return t.li;
+    }
+
+    function estadoVacioBiblioteca(total){
+        const li = crear('li', 'estado-lista');
+        if (!total){
+            li.append(crear('strong', null, 'Tu biblioteca está vacía.'),
+                crear('span', null, 'Abre una obra del catálogo y elige una etiqueta: Leyendo, Por leer, Leído…'), document.createElement('br'));
+            const a = crear('a', 'boton-principal', 'Explorar el catálogo');
+            a.href = hashCatalogo();
+            li.append(a);
+        } else {
+            const nombre = VISTAS_BIB[vistaBib.ver];
+            li.append(crear('strong', null, vistaBib.ver === 'favoritos' ? 'Todavía no tienes obras favoritas.' : `No tienes obras con la etiqueta «${nombre}».`),
+                crear('span', null, vistaBib.ver === 'favoritos' ? 'En la ficha de una obra, toca «Favorito».' : 'En la ficha de una obra puedes cambiarle la etiqueta.'),
+                document.createElement('br'));
+            const boton = crear('button', 'boton-secundario', 'Ver todas');
+            boton.type = 'button';
+            boton.addEventListener('click', () => {
+                cambiarVistaBib({ ver: 'todas' });
+                $('tituloBiblioteca').focus();
+            });
+            li.append(boton);
+        }
+        return li;
+    }
+
+    function pintarBiblioteca(){
+        const entradas = entradasBiblioteca();
+        chipsBib.forEach(({ boton, cuenta }, ver) => {
+            const n = entradas.filter(x => cumpleVista(x.e, ver)).length;
+            boton.setAttribute('aria-pressed', String(ver === vistaBib.ver));
+            boton.classList.toggle('vacia', n === 0);
+            cuenta.replaceChildren(crear('span', 'solo-lectores', ', '), String(n), crear('span', 'solo-lectores', n === 1 ? ' obra' : ' obras'));
+        });
+        rejillaBib.closest('.seccion').classList.toggle('con-obras', entradas.length > 0);
+        ordenBib.value = vistaBib.orden;
+
+        const lista = entradas
+            .filter(x => cumpleVista(x.e, vistaBib.ver))
+            .sort((a, b) => ORDENES_BIB[vistaBib.orden](a, b) || a.o.titulo.localeCompare(b.o.titulo, 'es'));
+        const total = entradas.length;
+        $('conteoBiblioteca').textContent = !total ? '' : (lista.length === total ? `${total} ${total === 1 ? 'obra' : 'obras'}` : `${lista.length} de ${total} obras`);
+
+        if (!lista.length){
+            ordenPintadoBib = '';
+            rejillaBib.replaceChildren(estadoVacioBiblioteca(total));
+        } else {
+            const items = lista.map(tarjetaBiblioteca);
+            const ids = lista.map(x => x.o.id).join('|');
+            if (ids !== ordenPintadoBib){
+                rejillaBib.replaceChildren(...items);
+                ordenPintadoBib = ids;
+            }
+        }
+        $('avisoAlmacenamiento').hidden = Biblioteca.disponible();
+        enlaceMenuBiblioteca.href = hashBiblioteca();
+    }
+
+    // ---------- Mi biblioteca (botones de la ficha) ----------
+    function construirBotonesFicha(){
+        const botones = Object.entries(ETIQUETAS_BIB).map(([clave, nombre]) => {
+            const b = crear('button', 'chip', nombre);
+            b.type = 'button';
+            b.dataset.estado = clave;
+            b.setAttribute('aria-pressed', 'false');
+            return b;
+        });
+        const favorito = crear('button', 'chip chip-favorito');
+        favorito.type = 'button';
+        favorito.dataset.favorito = 'si';
+        favorito.setAttribute('aria-pressed', 'false');
+        const corazon = crear('span', 'chip-icono');
+        corazon.innerHTML = ICONO_CORAZON;
+        favorito.append(corazon, crear('span', null, 'Favorito'));
+        botonesFicha.replaceChildren(...botones, favorito);
+    }
+
+    function pintarBotonesFicha(id){
+        const e = Biblioteca.obtener(id);
+        botonesFicha.querySelectorAll('[data-estado]').forEach(b => b.setAttribute('aria-pressed', String(Boolean(e && e.estado === b.dataset.estado))));
+        botonesFicha.querySelector('[data-favorito]').setAttribute('aria-pressed', String(Boolean(e && e.favorito)));
+        $('quitarDeBiblioteca').hidden = !e;
+        $('fichaBiblioteca').classList.toggle('guardada', Boolean(e));
+    }
+
+    function avisarFicha(texto){
+        $('avisoBiblioteca').textContent = texto;
+    }
+
+    botonesFicha.addEventListener('click', ev => {
+        const boton = ev.target.closest('button');
+        if (!boton || !fichaAbierta) return;
+        const id = fichaAbierta;
+        const antes = Biblioteca.obtener(id);
+        let despues;
+        if (boton.dataset.estado){
+            const clave = boton.dataset.estado;
+            const quitar = Boolean(antes && antes.estado === clave);
+            despues = Biblioteca.poner(id, { estado: quitar ? null : clave });
+            if (!despues) avisarFicha('La quitaste de tu biblioteca.');
+            else if (quitar) avisarFicha(`Le quitaste la etiqueta «${ETIQUETAS_BIB[clave]}»; sigue en tu biblioteca como favorita.`);
+            else avisarFicha(antes ? `Ahora está en «${ETIQUETAS_BIB[clave]}».` : `Guardada en tu biblioteca: «${ETIQUETAS_BIB[clave]}».`);
+        } else if (boton.dataset.favorito){
+            const favorita = !(antes && antes.favorito);
+            despues = Biblioteca.poner(id, { favorito: favorita });
+            if (favorita) avisarFicha(antes ? 'La marcaste como favorita.' : 'Guardada en tu biblioteca como favorita.');
+            else avisarFicha(despues ? 'Ya no es favorita.' : 'La quitaste de tu biblioteca.');
+        }
+        if (!Biblioteca.disponible()) avisarFicha('Este navegador no deja guardar datos: se borrará al cerrar la página.');
+    });
+
+    $('quitarDeBiblioteca').addEventListener('click', () => {
+        if (!fichaAbierta) return;
+        Biblioteca.quitar(fichaAbierta);
+        avisarFicha('La quitaste de tu biblioteca.');
+        // El botón desaparece: el foco pasa al primer botón de etiqueta
+        const primero = botonesFicha.querySelector('button');
+        if (primero) primero.focus();
+    });
+
+    // Cualquier cambio (aquí, en la ficha o en otra pestaña) pone al día marcas, ficha y biblioteca
+    Biblioteca.alCambiar(id => {
+        if (!datosListos) return;
+        const ids = id ? [id] : [...tarjetas.keys()];
+        ids.forEach(x => { const t = tarjetas.get(x); if (t) pintarMarca(t.marca, Biblioteca.obtener(x)); });
+        if (fichaAbierta) pintarBotonesFicha(fichaAbierta);
+        pintarBiblioteca();
+    });
+
+    // ---------- Mi biblioteca (copia para llevarla a otro navegador) ----------
+    function avisarCopia(texto, error = false){
+        const aviso = $('avisoCopia');
+        aviso.textContent = texto;
+        aviso.classList.toggle('error', error);
+    }
+
+    $('guardarCopia').addEventListener('click', () => {
+        const total = Biblioteca.todas().length;
+        if (!total){
+            avisarCopia('Tu biblioteca está vacía: no hay nada que copiar todavía.');
+            return;
+        }
+        const archivo = new Blob([Biblioteca.exportar()], { type: 'application/json' });
+        const url = URL.createObjectURL(archivo);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `frozen-project-biblioteca-${new Date().toISOString().slice(0, 10)}.json`;
+        document.body.append(a);
+        a.click();
+        a.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 10000);
+        avisarCopia(`Copia guardada con ${total} ${total === 1 ? 'obra' : 'obras'}. Búscala en tus descargas.`);
+    });
+
+    $('cargarCopia').addEventListener('click', () => $('archivoCopia').click());
+
+    $('archivoCopia').addEventListener('change', async ev => {
+        const archivo = ev.target.files && ev.target.files[0];
+        ev.target.value = '';          // así se puede volver a elegir el mismo archivo
+        if (!archivo) return;
+        try {
+            const r = Biblioteca.importar(await archivo.text());
+            const partes = [];
+            if (r.nuevas) partes.push(`${r.nuevas} ${r.nuevas === 1 ? 'obra nueva' : 'obras nuevas'}`);
+            if (r.actualizadas) partes.push(`${r.actualizadas} ${r.actualizadas === 1 ? 'obra actualizada' : 'obras actualizadas'}`);
+            avisarCopia(partes.length ? `Listo: ${enumerar(partes)}.` : 'Listo: ya tenías todo lo que había en esa copia.');
+        } catch (error){
+            avisarCopia(error.message || 'No se pudo cargar esa copia.', true);
+        }
+    });
+
+    filtroBib.addEventListener('click', ev => {
+        const boton = ev.target.closest('.chip');
+        if (boton) cambiarVistaBib({ ver: boton.dataset.ver });
+    });
+
+    ordenBib.addEventListener('change', () => cambiarVistaBib({ orden: ordenBib.value }));
+
     // ---------- Lo que opina la comunidad (dentro de la ficha) ----------
     const formatoPorcentaje = new Intl.NumberFormat('es', { style: 'percent', maximumFractionDigits: 1 });
 
@@ -516,7 +820,7 @@
             const datos = crear('span', 'mini-datos');
             const texto = crear('span', 'mini-texto');
             if (propia){
-                a.href = hashCatalogo(estado, propia.id);
+                a.href = hashObra(propia.id);
                 a.dataset.obra = propia.id;
                 colorDePlaca(portada, propia);
                 portada.append(imagenPortada(propia, '54px'));
@@ -557,13 +861,15 @@
     function abrirFicha(id){
         const o = porId.get(id);
         if (!o){
-            // Enlace a una obra que ya no está: se queda en el catálogo
-            Frozen.navegar(hashCatalogo(), { reemplazar: true });
+            // Enlace a una obra que ya no está: se queda en el catálogo (o en la biblioteca)
+            Frozen.navegar(hashSinFicha(), { reemplazar: true });
             return;
         }
         if (fichaAbierta === id && ficha.open) return;
+        if (fichaAbierta !== id) avisarFicha('');
         fichaAbierta = id;
         ultimaObra = id;
+        pintarBotonesFicha(id);
 
         const portada = $('fichaPortada');
         portada.style.removeProperty('--color-placa');
@@ -695,7 +1001,7 @@
         if (porRuta) return;
         if (!Frozen.ruta().params.has('obra')) return;
         if (history.state && history.state.ficha) volverAtras();
-        else Frozen.navegar(hashCatalogo(), { reemplazar: true });
+        else Frozen.navegar(hashSinFicha(), { reemplazar: true });
     });
 
     $('fichaCerrar').addEventListener('click', () => ficha.close());
@@ -704,22 +1010,24 @@
     // ---------- Seguir la dirección ----------
     function aplicarRuta(ruta){
         if (!datosListos) return;
+        const obra = ruta.params.get('obra');
         if (ruta.seccion === 'catalogo'){
             estado = estadoDesdeParams(ruta.params);
             pintar();
-            const obra = ruta.params.get('obra');
-            if (obra) abrirFicha(obra);
-            else cerrarFichaPorRuta();
-        } else {
-            cerrarFichaPorRuta();
+        } else if (ruta.seccion === 'biblioteca'){
+            vistaBib = vistaDesdeParams(ruta.params);
+            pintarBiblioteca();
         }
+        if (obra && (ruta.seccion === 'catalogo' || ruta.seccion === 'biblioteca')) abrirFicha(obra);
+        else cerrarFichaPorRuta();
         // Al cerrar una ficha, el foco regresa a la portada que la abrió (o, si llegaste
-        // directo a la ficha con un enlace, a esa misma obra en el catálogo)
-        if (!ruta.params.get('obra') && ultimaObra){
+        // directo a la ficha con un enlace, a esa misma obra en el catálogo o la biblioteca)
+        if (!obra && ultimaObra){
             const visible = el => el && el.isConnected && el.offsetParent !== null;
-            const tarjeta = tarjetas.get(ultimaObra);
+            const tarjeta = ruta.seccion === 'biblioteca' ? tarjetasBib.get(ultimaObra) : tarjetas.get(ultimaObra);
             if (visible(origenFicha)) origenFicha.focus({ preventScroll: true });
             else if (tarjeta && visible(tarjeta.a)) tarjeta.a.focus();
+            else if (ruta.seccion === 'biblioteca') $('tituloBiblioteca').focus({ preventScroll: true });
             origenFicha = null;
             ultimaObra = null;
         }
@@ -738,6 +1046,7 @@
         Frozen.navegar(a.getAttribute('href'), { estado: { ficha: true } });
     }
     rejilla.addEventListener('click', alTocarObra);
+    rejillaBib.addEventListener('click', alTocarObra);
     $('listaPopulares').addEventListener('click', alTocarObra);
     $('fichaRecomendadas').addEventListener('click', alTocarObra);
     $('quitarEtiqueta').addEventListener('click', quitarEtiqueta);
@@ -777,6 +1086,9 @@
         li.append(boton);
         rejilla.replaceChildren(li);
         conteo.textContent = '';
+        const enBib = li.cloneNode(true);
+        enBib.querySelector('button').addEventListener('click', cargar);
+        rejillaBib.replaceChildren(enBib);
     }
 
     async function cargar(){
@@ -793,6 +1105,7 @@
             puestoPopularidad = new Map([...obras].sort(ORDENES.populares).map((o, i) => [o.id, i + 1]));
             construirTarjetas();
             construirChips();
+            construirChipsBiblioteca();
             pintarPopulares();
             pintarFechaDatos(datos.actualizado);
             datosListos = true;
@@ -806,5 +1119,6 @@
         }
     }
 
+    construirBotonesFicha();
     cargar();
 })();

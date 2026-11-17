@@ -47,8 +47,8 @@
     </script>
 
     <!-- El ?v= obliga a los navegadores a bajar la versión nueva tras cada cambio.
-         Si editas styles.css, sitio.js o catalogo.js, sube ese número (v=3, v=4...). -->
-    <link rel="stylesheet" href="styles.css?v=7">
+         Si editas styles.css, sitio.js, biblioteca.js o catalogo.js, sube ese número (v=3, v=4...). -->
+    <link rel="stylesheet" href="styles.css?v=8">
 </head>
 
 <body>
@@ -70,6 +70,7 @@
         <ul class="nav-menu">
             <li><a class="nav-link" href="#inicio" data-seccion="inicio">Inicio</a></li>
             <li><a class="nav-link" href="#catalogo" data-seccion="catalogo">Catálogo</a></li>
+            <li><a class="nav-link" href="#biblioteca" data-seccion="biblioteca">Mi biblioteca</a></li>
             <li><a class="nav-link" href="#sobre" data-seccion="sobre">Sobre el sitio</a></li>
         </ul>
     </nav>
@@ -144,6 +145,45 @@
             <p class="nota-datos" id="notaDatos"></p>
         </section>
 
+        <!-- MI BIBLIOTECA: las obras que guardas desde su ficha (biblioteca.js guarda, catalogo.js pinta) -->
+        <section class="seccion panel" data-seccion="biblioteca" aria-labelledby="tituloBiblioteca" hidden>
+            <div class="catalogo-cabecera">
+                <h2 id="tituloBiblioteca" tabindex="-1">Mi biblioteca</h2>
+                <p class="conteo" id="conteoBiblioteca" aria-live="polite"></p>
+            </div>
+            <p class="biblioteca-intro">Guarda obras desde su ficha con una etiqueta (Leyendo, Por leer, Leído, En pausa o Abandonado) y marca tus favoritas.</p>
+            <p class="aviso-almacenamiento" id="avisoAlmacenamiento" hidden>Este navegador no deja guardar datos de la página (pasa, por ejemplo, en modo incógnito). Lo que agregues se borrará al cerrarla.</p>
+
+            <div class="filtros">
+                <div class="fila-filtros">
+                    <div class="zona-etiquetas" id="filtroBiblioteca" role="group" aria-label="Ver por etiqueta"></div>
+                    <div class="orden">
+                        <label for="ordenBiblioteca">Ordenar por</label>
+                        <select id="ordenBiblioteca">
+                            <option value="recientes">Movidas hace poco</option>
+                            <option value="titulo">Título (A a la Z)</option>
+                            <option value="valorados">Mejor valoradas</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="rejilla" id="rejillaBiblioteca" aria-label="Obras de mi biblioteca">
+                <li class="estado-lista">Cargando tu biblioteca…</li>
+            </ul>
+
+            <div class="biblioteca-copia">
+                <h3>Llévala a otro celular o computador</h3>
+                <p>Tu biblioteca se guarda solo en este navegador, sin cuenta. Para pasarla a otro, guarda una copia y cárgala allá: se junta con lo que ya tengas.</p>
+                <div class="botones-copia">
+                    <button class="boton-secundario" id="guardarCopia" type="button">Guardar una copia</button>
+                    <button class="boton-secundario" id="cargarCopia" type="button">Cargar una copia</button>
+                    <input type="file" id="archivoCopia" accept="application/json,.json" hidden>
+                </div>
+                <p class="aviso-copia" id="avisoCopia" role="status" aria-live="polite"></p>
+            </div>
+        </section>
+
         <!-- SOBRE EL SITIO -->
         <section class="seccion panel" data-seccion="sobre" aria-labelledby="tituloSobre" hidden>
             <div class="sobre-texto">
@@ -171,6 +211,9 @@
                 </ol>
                 <p class="nota-datos" id="fechaDatos"></p>
 
+                <h3>Tu biblioteca</h3>
+                <p>“Mi biblioteca” se guarda solo en tu navegador: no necesitas cuenta y nadie más la ve. Si borras los datos del navegador, se borra con ellos, así que guarda una copia de vez en cuando (desde el mismo apartado). Con esa copia también la puedes pasar a otro celular o computador.</p>
+
                 <h3>Créditos</h3>
                 <p>Datos: AniList, MyAnimeList, Kitsu y MangaUpdates. Portadas: AniList. Modelo de sentimiento: BERT multilingüe de NLP Town (licencia MIT). Resúmenes: Gemma 4 de Google (licencia Apache 2.0). Fondo animado: Blind Angel, de MoeWalls.</p>
             </div>
@@ -190,6 +233,16 @@
                 <div class="etiquetas" id="fichaEtiquetas"></div>
             </div>
             <div class="ficha-detalles">
+                <!-- Mi biblioteca: etiqueta y favorito de esta obra (se guarda en este navegador) -->
+                <div class="mi-biblioteca" id="fichaBiblioteca" role="group" aria-labelledby="tituloMiBiblioteca">
+                    <div class="mi-biblioteca-cabecera">
+                        <p class="mi-biblioteca-titulo" id="tituloMiBiblioteca">Mi biblioteca</p>
+                        <button class="quitar-generos" id="quitarDeBiblioteca" type="button" hidden>Quitar de mi biblioteca</button>
+                    </div>
+                    <div class="botones-biblioteca" id="botonesBiblioteca"></div>
+                    <p class="aviso-biblioteca" id="avisoBiblioteca" role="status" aria-live="polite"></p>
+                </div>
+
                 <dl id="fichaDatos"></dl>
 
                 <h3>Lo que opina la comunidad</h3>
@@ -208,8 +261,9 @@
         </div>
     </dialog>
 
-    <script src="sitio.js?v=3" defer></script>
-    <script src="catalogo.js?v=6" defer></script>
+    <script src="sitio.js?v=4" defer></script>
+    <script src="biblioteca.js?v=1" defer></script>
+    <script src="catalogo.js?v=7" defer></script>
 
 </body>
 

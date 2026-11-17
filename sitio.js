@@ -1,12 +1,12 @@
 /* ===================================
    FROZEN PROJECT: apartados y video de fondo
-   Cada apartado tiene su dirección (#inicio, #catalogo, #sobre), así se
+   Cada apartado tiene su dirección (#inicio, #catalogo, #biblioteca, #sobre), así se
    pueden compartir enlaces directos y el botón Atrás del celular funciona.
-   catalogo.js escucha el evento "frozen:ruta" para pintar el catálogo.
+   catalogo.js escucha el evento "frozen:ruta" para pintar el catálogo y la biblioteca.
 =================================== */
 (() => {
     const NOMBRE_SITIO = 'Frozen Project';
-    const SECCIONES = { inicio: 'Inicio', catalogo: 'Catálogo', sobre: 'Sobre el sitio' };
+    const SECCIONES = { inicio: 'Inicio', catalogo: 'Catálogo', biblioteca: 'Mi biblioteca', sobre: 'Sobre el sitio' };
 
     const secciones = document.querySelectorAll('main > .seccion');
     const enlacesMenu = document.querySelectorAll('.nav-link');
