@@ -1,12 +1,12 @@
 {
   "esquema": 1,
   "metodo": "1.2",
-  "generado": "2026-11-17T02:07:05.074Z",
+  "generado": "2026-11-17T02:28:44.873Z",
   "fuentes": {
     "anilist": "2026-11-17",
     "kitsu": "2026-11-17",
     "mangaupdates": "2026-11-17",
-    "myanimelist": "2026-11-17"
+    "myanimelist": null
   },
   "mediaCatalogo": 81.4,
   "tono": {
@@ -1638,10 +1638,9 @@
           "voto": 73
         },
         {
-          "id": "circus",
-          "nombre": "Circus",
-          "voto": 70,
-          "en": true
+          "id": "circo",
+          "nombre": "Circo",
+          "voto": 70
         }
       ],
       "recomendaciones": [
@@ -2134,10 +2133,9 @@
           "voto": 68
         },
         {
-          "id": "rock-music",
-          "nombre": "Rock Music",
-          "voto": 65,
-          "en": true
+          "id": "rock",
+          "nombre": "Rock",
+          "voto": 65
         },
         {
           "id": "yuri",
@@ -2430,10 +2428,9 @@
       "favoritos": 1230,
       "etiquetas": [
         {
-          "id": "american-football",
-          "nombre": "American Football",
-          "voto": 100,
-          "en": true
+          "id": "futbol-americano",
+          "nombre": "Fútbol americano",
+          "voto": 100
         },
         {
           "id": "shonen",
@@ -2461,10 +2458,9 @@
           "voto": 65
         },
         {
-          "id": "gambling",
-          "nombre": "Gambling",
-          "voto": 60,
-          "en": true
+          "id": "apuestas",
+          "nombre": "Apuestas",
+          "voto": 60
         },
         {
           "id": "personajes-adolescentes",
@@ -2846,7 +2842,7 @@
           "anilist": 30915,
           "titulo": "Rookies",
           "tipo": "manga",
-          "votos": 66,
+          "votos": 67,
           "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30915-bimfJSD4pzdl.jpg"
         }
       ],
@@ -3617,10 +3613,9 @@
           "voto": 84
         },
         {
-          "id": "eco-horror",
-          "nombre": "Eco-Horror",
-          "voto": 79,
-          "en": true
+          "id": "ecoterror",
+          "nombre": "Ecoterror",
+          "voto": 79
         },
         {
           "id": "iyashikei",
@@ -3963,10 +3958,9 @@
           "voto": 76
         },
         {
-          "id": "nekomimi",
-          "nombre": "Nekomimi",
-          "voto": 67,
-          "en": true
+          "id": "orejas-de-gato",
+          "nombre": "Orejas de gato",
+          "voto": 67
         },
         {
           "id": "sectas",
@@ -4657,10 +4651,9 @@
           "voto": 78
         },
         {
-          "id": "drugs",
-          "nombre": "Drugs",
-          "voto": 76,
-          "en": true
+          "id": "drogas",
+          "nombre": "Drogas",
+          "voto": 76
         }
       ],
       "recomendaciones": [
@@ -4814,10 +4807,9 @@
           "voto": 80
         },
         {
-          "id": "real-robot",
-          "nombre": "Real Robot",
-          "voto": 77,
-          "en": true
+          "id": "robots-realistas",
+          "nombre": "Robots realistas",
+          "voto": 77
         },
         {
           "id": "robots",
@@ -4825,10 +4817,9 @@
           "voto": 76
         },
         {
-          "id": "super-robot",
-          "nombre": "Super Robot",
-          "voto": 73,
-          "en": true
+          "id": "super-robots",
+          "nombre": "Súper robots",
+          "voto": 73
         },
         {
           "id": "seinen",
@@ -5002,10 +4993,9 @@
           "voto": 79
         },
         {
-          "id": "real-robot",
-          "nombre": "Real Robot",
-          "voto": 79,
-          "en": true
+          "id": "robots-realistas",
+          "nombre": "Robots realistas",
+          "voto": 79
         }
       ],
       "recomendaciones": [
@@ -5144,10 +5134,9 @@
           "voto": 95
         },
         {
-          "id": "drugs",
-          "nombre": "Drugs",
-          "voto": 84,
-          "en": true
+          "id": "drogas",
+          "nombre": "Drogas",
+          "voto": 84
         },
         {
           "id": "noir",
@@ -5500,10 +5489,9 @@
           "voto": 80
         },
         {
-          "id": "homeless",
-          "nombre": "Homeless",
-          "voto": 75,
-          "en": true
+          "id": "personas-sin-hogar",
+          "nombre": "Personas sin hogar",
+          "voto": 75
         },
         {
           "id": "gore",
@@ -5838,9 +5826,8 @@
         },
         {
           "id": "shogi",
-          "nombre": "Shogi",
-          "voto": 88,
-          "en": true
+          "nombre": "Shōgi",
+          "voto": 88
         },
         {
           "id": "familia-elegida",
@@ -5853,10 +5840,9 @@
           "voto": 75
         },
         {
-          "id": "board-game",
-          "nombre": "Board Game",
-          "voto": 73,
-          "en": true
+          "id": "juegos-de-mesa",
+          "nombre": "Juegos de mesa",
+          "voto": 73
         },
         {
           "id": "comida",
@@ -6506,10 +6492,9 @@
       "favoritos": 6305,
       "etiquetas": [
         {
-          "id": "mountaineering",
-          "nombre": "Mountaineering",
-          "voto": 96,
-          "en": true
+          "id": "montanismo",
+          "nombre": "Montañismo",
+          "voto": 96
         },
         {
           "id": "paso-a-la-madurez",
@@ -6537,10 +6522,9 @@
           "voto": 92
         },
         {
-          "id": "wilderness",
-          "nombre": "Wilderness",
-          "voto": 85,
-          "en": true
+          "id": "naturaleza-salvaje",
+          "nombre": "Naturaleza salvaje",
+          "voto": 85
         },
         {
           "id": "personajes-masculinos",
@@ -6955,8 +6939,7 @@
         {
           "id": "karuta",
           "nombre": "Karuta",
-          "voto": 99,
-          "en": true
+          "voto": 99
         },
         {
           "id": "protagonista-femenina",
@@ -6984,10 +6967,9 @@
           "voto": 79
         },
         {
-          "id": "card-battle",
-          "nombre": "Card Battle",
-          "voto": 74,
-          "en": true
+          "id": "batallas-de-cartas",
+          "nombre": "Batallas de cartas",
+          "voto": 74
         },
         {
           "id": "triangulo-amoroso",
@@ -8090,10 +8072,9 @@
           "voto": 84
         },
         {
-          "id": "gambling",
-          "nombre": "Gambling",
-          "voto": 82,
-          "en": true
+          "id": "apuestas",
+          "nombre": "Apuestas",
+          "voto": 82
         },
         {
           "id": "distopia",
@@ -8622,10 +8603,9 @@
           "voto": 71
         },
         {
-          "id": "writing",
-          "nombre": "Writing",
-          "voto": 66,
-          "en": true
+          "id": "escritura",
+          "nombre": "Escritura",
+          "voto": 66
         },
         {
           "id": "paisajes-nevados",
@@ -8938,10 +8918,9 @@
           "voto": 80
         },
         {
-          "id": "indigenous-cultures",
-          "nombre": "Indigenous Cultures",
-          "voto": 79,
-          "en": true
+          "id": "culturas-indigenas",
+          "nombre": "Culturas indígenas",
+          "voto": 79
         },
         {
           "id": "intrigas-de-la-realeza",
@@ -9411,10 +9390,9 @@
           "voto": 79
         },
         {
-          "id": "spearplay",
-          "nombre": "Spearplay",
-          "voto": 79,
-          "en": true
+          "id": "lanzas",
+          "nombre": "Lanzas",
+          "voto": 79
         },
         {
           "id": "hadas",
@@ -9427,10 +9405,9 @@
           "voto": 79
         },
         {
-          "id": "fairy-tale",
-          "nombre": "Fairy Tale",
-          "voto": 75,
-          "en": true
+          "id": "cuento-de-hadas",
+          "nombre": "Cuento de hadas",
+          "voto": 75
         }
       ],
       "recomendaciones": [
@@ -9582,10 +9559,9 @@
           "voto": 81
         },
         {
-          "id": "agender",
-          "nombre": "Agender",
-          "voto": 77,
-          "en": true
+          "id": "personajes-agenero",
+          "nombre": "Personajes agénero",
+          "voto": 77
         },
         {
           "id": "identidades-disociativas",
@@ -9598,10 +9574,9 @@
           "voto": 74
         },
         {
-          "id": "asexual",
-          "nombre": "Asexual",
-          "voto": 66,
-          "en": true
+          "id": "personajes-asexuales",
+          "nombre": "Personajes asexuales",
+          "voto": 66
         }
       ],
       "recomendaciones": [
@@ -11644,10 +11619,9 @@
       "favoritos": 3613,
       "etiquetas": [
         {
-          "id": "cycling",
-          "nombre": "Cycling",
-          "voto": 98,
-          "en": true
+          "id": "ciclismo",
+          "nombre": "Ciclismo",
+          "voto": 98
         },
         {
           "id": "paso-a-la-madurez",
@@ -12020,10 +11994,9 @@
           "voto": 67
         },
         {
-          "id": "aromantic",
-          "nombre": "Aromantic",
-          "voto": 66,
-          "en": true
+          "id": "personajes-arromanticos",
+          "nombre": "Personajes arrománticos",
+          "voto": 66
         }
       ],
       "recomendaciones": [
@@ -12162,10 +12135,9 @@
           "voto": 90
         },
         {
-          "id": "firefighters",
-          "nombre": "Firefighters",
-          "voto": 88,
-          "en": true
+          "id": "bomberos",
+          "nombre": "Bomberos",
+          "voto": 88
         },
         {
           "id": "conspiracion",
@@ -12516,14 +12488,12 @@
         {
           "id": "chibi",
           "nombre": "Chibi",
-          "voto": 81,
-          "en": true
+          "voto": 81
         },
         {
-          "id": "wilderness",
-          "nombre": "Wilderness",
-          "voto": 79,
-          "en": true
+          "id": "naturaleza-salvaje",
+          "nombre": "Naturaleza salvaje",
+          "voto": 79
         },
         {
           "id": "amnesia",
@@ -12670,10 +12640,9 @@
           "voto": 92
         },
         {
-          "id": "indigenous-cultures",
-          "nombre": "Indigenous Cultures",
-          "voto": 90,
-          "en": true
+          "id": "culturas-indigenas",
+          "nombre": "Culturas indígenas",
+          "voto": 90
         },
         {
           "id": "seinen",
@@ -13856,22 +13825,19 @@
           "voto": 89
         },
         {
-          "id": "coastal",
-          "nombre": "Coastal",
-          "voto": 83,
-          "en": true
+          "id": "costa",
+          "nombre": "Costa",
+          "voto": 83
         },
         {
-          "id": "bar",
-          "nombre": "Bar",
-          "voto": 76,
-          "en": true
+          "id": "bares",
+          "nombre": "Bares",
+          "voto": 76
         },
         {
-          "id": "scuba-diving",
-          "nombre": "Scuba Diving",
-          "voto": 75,
-          "en": true
+          "id": "buceo",
+          "nombre": "Buceo",
+          "voto": 75
         },
         {
           "id": "cultura-otaku",
@@ -14206,10 +14172,9 @@
           "voto": 63
         },
         {
-          "id": "agender",
-          "nombre": "Agender",
-          "voto": 62,
-          "en": true
+          "id": "personajes-agenero",
+          "nombre": "Personajes agénero",
+          "voto": 62
         },
         {
           "id": "gore",
@@ -15016,10 +14981,9 @@
           "voto": 93
         },
         {
-          "id": "medicine",
-          "nombre": "Medicine",
-          "voto": 92,
-          "en": true
+          "id": "medicina",
+          "nombre": "Medicina",
+          "voto": 92
         },
         {
           "id": "detectives",
@@ -15047,10 +15011,9 @@
           "voto": 75
         },
         {
-          "id": "drugs",
-          "nombre": "Drugs",
-          "voto": 74,
-          "en": true
+          "id": "drogas",
+          "nombre": "Drogas",
+          "voto": 74
         },
         {
           "id": "politica",
@@ -15212,10 +15175,9 @@
           "voto": 77
         },
         {
-          "id": "gambling",
-          "nombre": "Gambling",
-          "voto": 77,
-          "en": true
+          "id": "apuestas",
+          "nombre": "Apuestas",
+          "voto": 77
         },
         {
           "id": "tsundere",
@@ -16820,8 +16782,7 @@
         {
           "id": "cosplay",
           "nombre": "Cosplay",
-          "voto": 97,
-          "en": true
+          "voto": 97
         },
         {
           "id": "cultura-otaku",
@@ -16829,10 +16790,9 @@
           "voto": 93
         },
         {
-          "id": "fashion",
-          "nombre": "Fashion",
-          "voto": 89,
-          "en": true
+          "id": "moda",
+          "nombre": "Moda",
+          "voto": 89
         },
         {
           "id": "protagonista-femenina",
@@ -16840,10 +16800,9 @@
           "voto": 89
         },
         {
-          "id": "gyaru",
-          "nombre": "Gyaru",
-          "voto": 81,
-          "en": true
+          "id": "gyarus",
+          "nombre": "Gyarus",
+          "voto": 81
         },
         {
           "id": "personajes-adolescentes",
@@ -16851,10 +16810,9 @@
           "voto": 81
         },
         {
-          "id": "makeup",
-          "nombre": "Makeup",
-          "voto": 81,
-          "en": true
+          "id": "maquillaje",
+          "nombre": "Maquillaje",
+          "voto": 81
         },
         {
           "id": "seinen",
@@ -16862,10 +16820,9 @@
           "voto": 74
         },
         {
-          "id": "photography",
-          "nombre": "Photography",
-          "voto": 73,
-          "en": true
+          "id": "fotografia",
+          "nombre": "Fotografía",
+          "voto": 73
         },
         {
           "id": "educativo",
@@ -17029,10 +16986,9 @@
           "voto": 66
         },
         {
-          "id": "transgender",
-          "nombre": "Transgender",
-          "voto": 60,
-          "en": true
+          "id": "personajes-trans",
+          "nombre": "Personajes trans",
+          "voto": 60
         }
       ],
       "recomendaciones": [
@@ -17320,10 +17276,9 @@
       "favoritos": 379,
       "etiquetas": [
         {
-          "id": "makeup",
-          "nombre": "Makeup",
-          "voto": 100,
-          "en": true
+          "id": "maquillaje",
+          "nombre": "Maquillaje",
+          "voto": 100
         },
         {
           "id": "protagonista-femenina",
@@ -17331,10 +17286,9 @@
           "voto": 92
         },
         {
-          "id": "fashion",
-          "nombre": "Fashion",
-          "voto": 81,
-          "en": true
+          "id": "moda",
+          "nombre": "Moda",
+          "voto": 81
         },
         {
           "id": "idolos",
@@ -17598,10 +17552,9 @@
           "voto": 84
         },
         {
-          "id": "pandemic",
-          "nombre": "Pandemic",
-          "voto": 84,
-          "en": true
+          "id": "pandemia",
+          "nombre": "Pandemia",
+          "voto": 84
         },
         {
           "id": "postapocaliptico",
@@ -19568,10 +19521,9 @@
           "voto": 86
         },
         {
-          "id": "asexual",
-          "nombre": "Asexual",
-          "voto": 79,
-          "en": true
+          "id": "personajes-asexuales",
+          "nombre": "Personajes asexuales",
+          "voto": 79
         },
         {
           "id": "filosofia",
@@ -20967,10 +20919,9 @@
           "voto": 80
         },
         {
-          "id": "interspecies",
-          "nombre": "Interspecies",
-          "voto": 79,
-          "en": true
+          "id": "entre-especies",
+          "nombre": "Entre especies",
+          "voto": 79
         },
         {
           "id": "comedia-absurda",
@@ -21569,10 +21520,9 @@
           "voto": 80
         },
         {
-          "id": "cheating",
-          "nombre": "Cheating",
-          "voto": 79,
-          "en": true
+          "id": "infidelidad",
+          "nombre": "Infidelidad",
+          "voto": 79
         },
         {
           "id": "cambiaformas",
@@ -21590,10 +21540,9 @@
           "voto": 72
         },
         {
-          "id": "arranged-marriage",
-          "nombre": "Arranged Marriage",
-          "voto": 70,
-          "en": true
+          "id": "matrimonio-arreglado",
+          "nombre": "Matrimonio arreglado",
+          "voto": 70
         },
         {
           "id": "amor-no-correspondido",
@@ -23254,10 +23203,9 @@
           "voto": 80
         },
         {
-          "id": "mixed-gender-harem",
-          "nombre": "Mixed Gender Harem",
-          "voto": 76,
-          "en": true
+          "id": "haren-mixto",
+          "nombre": "Harén mixto",
+          "voto": 76
         },
         {
           "id": "hombres-lobo",
@@ -23265,10 +23213,9 @@
           "voto": 73
         },
         {
-          "id": "kemonomimi",
-          "nombre": "Kemonomimi",
-          "voto": 73,
-          "en": true
+          "id": "orejas-de-animal",
+          "nombre": "Orejas de animal",
+          "voto": 73
         },
         {
           "id": "personajes-adultos",
@@ -23546,10 +23493,9 @@
       "favoritos": 1266,
       "etiquetas": [
         {
-          "id": "ice-sports",
-          "nombre": "Ice Sports",
-          "voto": 99,
-          "en": true
+          "id": "deportes-sobre-hielo",
+          "nombre": "Deportes sobre hielo",
+          "voto": 99
         },
         {
           "id": "seinen",
@@ -25648,10 +25594,9 @@
           "voto": 79
         },
         {
-          "id": "arranged-marriage",
-          "nombre": "Arranged Marriage",
-          "voto": 79,
-          "en": true
+          "id": "matrimonio-arreglado",
+          "nombre": "Matrimonio arreglado",
+          "voto": 79
         },
         {
           "id": "medieval",
@@ -26717,10 +26662,9 @@
           "voto": 79
         },
         {
-          "id": "matriarchy",
-          "nombre": "Matriarchy",
-          "voto": 73,
-          "en": true
+          "id": "matriarcado",
+          "nombre": "Matriarcado",
+          "voto": 73
         }
       ],
       "recomendaciones": [
@@ -28800,10 +28744,9 @@
           "voto": 73
         },
         {
-          "id": "fairy-tale",
-          "nombre": "Fairy Tale",
-          "voto": 68,
-          "en": true
+          "id": "cuento-de-hadas",
+          "nombre": "Cuento de hadas",
+          "voto": 68
         }
       ],
       "recomendaciones": [
@@ -29030,7 +28973,7 @@
       },
       "capitulos": {
         "ultimo": 222,
-        "tomos": 8
+        "tomos": 10
       },
       "tendencia": {
         "lectores": 0.0057,
@@ -29375,7 +29318,7 @@
     "142287": {
       "puntaje": {
         "valor": 77.3,
-        "votos": 4195,
+        "votos": 4196,
         "confianza": "media",
         "diferencia": 1.5,
         "comunidades": 3
@@ -29391,7 +29334,7 @@
         },
         "mangaupdates": {
           "puntaje": 78.5,
-          "votos": 300
+          "votos": 301
         }
       },
       "distribucion": {
@@ -30299,10 +30242,9 @@
           "voto": 80
         },
         {
-          "id": "reverse-isekai",
-          "nombre": "Reverse Isekai",
-          "voto": 79,
-          "en": true
+          "id": "isekai-inverso",
+          "nombre": "Isekai inverso",
+          "voto": 79
         },
         {
           "id": "vida-familiar",
@@ -31698,10 +31640,9 @@
           "voto": 79
         },
         {
-          "id": "kemonomimi",
-          "nombre": "Kemonomimi",
-          "voto": 73,
-          "en": true
+          "id": "orejas-de-animal",
+          "nombre": "Orejas de animal",
+          "voto": 73
         },
         {
           "id": "magia",
@@ -31714,10 +31655,9 @@
           "voto": 64
         },
         {
-          "id": "nekomimi",
-          "nombre": "Nekomimi",
-          "voto": 60,
-          "en": true
+          "id": "orejas-de-gato",
+          "nombre": "Orejas de gato",
+          "voto": 60
         },
         {
           "id": "espadas",
@@ -31968,16 +31908,14 @@
           "voto": 80
         },
         {
-          "id": "eco-horror",
-          "nombre": "Eco-Horror",
-          "voto": 80,
-          "en": true
+          "id": "ecoterror",
+          "nombre": "Ecoterror",
+          "voto": 80
         },
         {
-          "id": "pandemic",
-          "nombre": "Pandemic",
-          "voto": 66,
-          "en": true
+          "id": "pandemia",
+          "nombre": "Pandemia",
+          "voto": 66
         },
         {
           "id": "medio-ambiente",
@@ -32852,10 +32790,9 @@
           "voto": 79
         },
         {
-          "id": "matriarchy",
-          "nombre": "Matriarchy",
-          "voto": 77,
-          "en": true
+          "id": "matriarcado",
+          "nombre": "Matriarcado",
+          "voto": 77
         },
         {
           "id": "personajes-femeninos",
@@ -33265,10 +33202,9 @@
           "voto": 86
         },
         {
-          "id": "classical-music",
-          "nombre": "Classical Music",
-          "voto": 75,
-          "en": true
+          "id": "musica-clasica",
+          "nombre": "Música clásica",
+          "voto": 75
         },
         {
           "id": "urbano",
@@ -33276,10 +33212,9 @@
           "voto": 68
         },
         {
-          "id": "trains",
-          "nombre": "Trains",
-          "voto": 67,
-          "en": true
+          "id": "trenes",
+          "nombre": "Trenes",
+          "voto": 67
         },
         {
           "id": "protagonista-femenina",
