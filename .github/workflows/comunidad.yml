@@ -1,6 +1,6 @@
 # Cada lunes: arma obras.json desde catalogo.json (scripts/catalogo.mjs) con los datos de
 # AniList, y después la opinión de la comunidad: junta puntajes, votos y reseñas de AniList,
-# Kitsu y MangaUpdates (y MyAnimeList si hay clave), además de las etiquetas, las
+# MyAnimeList, Kitsu y MangaUpdates, además de las etiquetas, las
 # recomendaciones y la actividad de AniList; calcula los resultados con
 # scripts/comunidad.mjs (y el modelo de sentimiento de scripts/tono.mjs), escribe
 # resúmenes con Gemma 4 (scripts/resumenes.mjs) y publica datos/comunidad.json en la
@@ -8,9 +8,10 @@
 #
 # Para agregar obras: suma su número de AniList a catalogo.json (la tarea corre sola al guardarlo).
 # Para correrla a mano: pestaña Actions > "Opinión de la comunidad" > Run workflow.
-# Para sumar MyAnimeList (opcional y gratis): crea una clave en
-# https://myanimelist.net/apiconfig y guárdala en Settings > Secrets and variables >
-# Actions como MAL_CLIENT_ID.
+# MyAnimeList usa una clave gratis (app "Frozen Project", uso no comercial) guardada en
+# Settings > Secrets and variables > Actions como MAL_CLIENT_ID. Si algún día deja de
+# funcionar, crea otra en https://myanimelist.net/apiconfig y reemplaza el secreto; sin
+# clave, la tarea sigue con las otras tres comunidades.
 name: Opinión de la comunidad
 
 on:
@@ -40,8 +41,12 @@ jobs:
     # repositorios públicos son gratis, así que se deja margen para que nunca se corte.
     timeout-minutes: 120
     steps:
+      # Siempre la última versión de main: si esta ejecución esperó a que terminara otra,
+      # así parte de los datos que la otra acaba de guardar (y no de una copia vieja).
       - name: Descargar el repositorio
         uses: actions/checkout@v5
+        with:
+          ref: main
 
       # Modelo de sentimiento (gratis, licencia MIT). --ignore-scripts evita bajar
       # extras para tarjetas gráficas que aquí no se usan.
