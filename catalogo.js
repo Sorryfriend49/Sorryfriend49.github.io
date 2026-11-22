@@ -3,8 +3,10 @@
    Lee obras.json (datos de AniList), arma los filtros por tipo y género,
    ordena por popularidad, puntaje o fecha de salida, y abre la ficha de
    cada obra. Los filtros viven en la dirección de la página, por ejemplo
-   #catalogo?tipo=manhwa&generos=accion,fantasia&orden=fecha-desc
-   así un enlace compartido abre el catálogo tal como lo dejaste.
+   #catalogo?q=frieren&tipo=manga&generos=accion,fantasia&orden=fecha-desc
+   así un enlace compartido abre el catálogo tal como lo dejaste. El buscador (q)
+   encuentra cada obra por cualquiera de sus nombres: en español, inglés, romaji,
+   su idioma original o sus otros títulos, sin importar tildes ni mayúsculas.
    También pinta "Mi biblioteca" (#biblioteca?ver=leyendo) y los botones de la
    ficha para guardar cada obra con su etiqueta; los datos los guarda biblioteca.js.
 =================================== */
@@ -102,6 +104,8 @@
     const botonGeneros = $('botonGeneros');
     const cuentaGeneros = $('cuentaGeneros');
     const selectOrden = $('orden');
+    const inputBuscar = $('buscar');
+    let esperaBusqueda = 0;
     const ficha = $('ficha');
     const enlaceMenuCatalogo = document.querySelector('.nav-link[data-seccion="catalogo"]');
     const enlaceMenuBiblioteca = document.querySelector('.nav-link[data-seccion="biblioteca"]');
@@ -117,7 +121,9 @@
     let etiquetasConocidas = new Map();   // id -> { nombre, en }
     let puestoPopularidad = new Map();
     let datosListos = false;
-    let estado = { tipo: '', generos: [], orden: ORDEN_INICIAL, etiqueta: '' };
+    let estado = { tipo: '', generos: [], orden: ORDEN_INICIAL, etiqueta: '', q: '' };
+    let indiceBusqueda = new Map();   // id -> nombres de la obra, ya normalizados para buscar
+    let coincidencias = null;         // id -> { nivel, nombre, principal } mientras hay una búsqueda
     let tarjetas = new Map();      // id -> { li, a, datos }
     let chips = new Map();         // género -> { boton, cuenta }
     let ordenPintado = '';         // ids en pantalla, para no mover tarjetas sin necesidad
@@ -201,17 +207,65 @@
         if (o.color) el.style.setProperty('--color-placa', o.color + '55');
     }
 
+    // ---------- Buscar por nombre ----------
+    // Sin tildes, mayúsculas ni signos: "Pokémon", "POKEMON" y "pokemon" son lo mismo.
+    // Las letras de ancho completo (japonés) se pasan a las normales.
+    const MAX_BUSQUEDA = 80;
+    const normalizar = t => String(t || '').normalize('NFKC').normalize('NFD').replace(/\p{M}/gu, '')
+        .toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+
+    function construirIndiceBusqueda(){
+        indiceBusqueda = new Map(obras.map(o => {
+            const t = o.titulos || {};
+            const vistos = new Set();
+            const nombres = [o.titulo, t.ingles, t.romaji, t.nativo, ...(o.sinonimos || [])]
+                .filter(Boolean)
+                .map(texto => ({ texto, norm: normalizar(texto) }))
+                .filter(n => n.norm && !vistos.has(n.norm) && vistos.add(n.norm));
+            return [o.id, nombres];
+        }));
+    }
+
+    // Qué tan bien coincide una obra con lo buscado (q ya normalizado). null si no coincide;
+    // nivel 0: un nombre empieza así; 1: alguna palabra empieza así; 2: aparece en otra parte.
+    // También encuentra lo escrito sin espacios ("chainsawman"). "nombre" es el nombre que mejor
+    // coincidió y "principal" dice si el título que se ve en la tarjeta también coincide.
+    function coincidencia(o, q){
+        const palabras = q.split(' ');
+        const junto = q.replace(/ /g, '');
+        let mejor = null;
+        let enTitulo = false;
+        for (const n of indiceBusqueda.get(o.id) || []){
+            let nivel = null;
+            if (n.norm.startsWith(q)) nivel = 0;
+            else if (palabras.every(p => n.norm.includes(p))) nivel = (' ' + n.norm).includes(' ' + palabras[0]) ? 1 : 2;
+            else if (junto.length >= 3 && n.norm.replace(/ /g, '').includes(junto)) nivel = 2;
+            if (nivel === null) continue;
+            if (n.texto === o.titulo) enTitulo = true;
+            if (!mejor || nivel < mejor.nivel) mejor = { nivel, nombre: n.texto };
+        }
+        if (mejor) mejor.principal = enTitulo;
+        return mejor;
+    }
+
+    function calcularCoincidencias(){
+        const q = normalizar(estado.q);
+        coincidencias = q ? new Map(obras.map(o => [o.id, coincidencia(o, q)]).filter(([, c]) => c)) : null;
+    }
+
     // ---------- Estado <-> dirección ----------
     function estadoDesdeParams(params){
         const tipo = Object.prototype.hasOwnProperty.call(TIPOS, params.get('tipo')) ? params.get('tipo') : '';
         const generos = [...new Set((params.get('generos') || '').split(',').filter(g => Object.prototype.hasOwnProperty.call(GENEROS, g)))];
         const orden = Object.prototype.hasOwnProperty.call(ORDENES, params.get('orden')) ? params.get('orden') : ORDEN_INICIAL;
         const etiqueta = etiquetasConocidas.has(params.get('etiqueta')) ? params.get('etiqueta') : '';
-        return { tipo, generos, orden, etiqueta };
+        const q = (params.get('q') || '').replace(/\s+/g, ' ').trim().slice(0, MAX_BUSQUEDA);
+        return { tipo, generos, orden, etiqueta, q };
     }
 
     function hashCatalogo(e = estado, obra = null){
         const partes = [];
+        if (e.q) partes.push('q=' + encodeURIComponent(e.q));
         if (e.tipo) partes.push('tipo=' + e.tipo);
         if (e.generos.length) partes.push('generos=' + e.generos.join(','));
         if (e.etiqueta) partes.push('etiqueta=' + e.etiqueta);
@@ -284,11 +338,14 @@
     const cumpleTipo = (o, tipo) => !tipo || o.tipo === tipo;
     const tieneGeneros = (o, generos) => generos.every(g => o.generos.includes(g));
     const tieneEtiqueta = (o, etiqueta) => !etiqueta || etiquetasDe(o).some(e => e.id === etiqueta);
+    const cumpleBusqueda = o => !coincidencias || coincidencias.has(o.id);
+    // Con una búsqueda, primero las obras cuyo nombre empieza con lo escrito; después, el orden elegido
+    const porRelevancia = (a, b) => coincidencias ? coincidencias.get(a.id).nivel - coincidencias.get(b.id).nivel : 0;
 
     function resultados(){
         return obras
-            .filter(o => cumpleTipo(o, estado.tipo) && tieneGeneros(o, estado.generos) && tieneEtiqueta(o, estado.etiqueta))
-            .sort((a, b) => ORDENES[estado.orden](a, b) || a.titulo.localeCompare(b.titulo, 'es'));
+            .filter(o => cumpleBusqueda(o) && cumpleTipo(o, estado.tipo) && tieneGeneros(o, estado.generos) && tieneEtiqueta(o, estado.etiqueta))
+            .sort((a, b) => porRelevancia(a, b) || ORDENES[estado.orden](a, b) || a.titulo.localeCompare(b.titulo, 'es'));
     }
 
     // ---------- Construir una vez ----------
@@ -303,9 +360,11 @@
             pintarMarca(marca, Biblioteca.obtener(o.id));
             portada.append(imagenPortada(o, '(max-width: 768px) 46vw, 190px'), etiquetaTipo(o.tipo), marca);
             const datos = crear('span', 'obra-datos');
-            a.append(portada, crear('span', 'obra-titulo', o.titulo), datos);
+            const alias = crear('span', 'obra-alias');
+            alias.hidden = true;
+            a.append(portada, crear('span', 'obra-titulo', o.titulo), alias, datos);
             li.append(a);
-            return [o.id, { li, a, datos, marca }];
+            return [o.id, { li, a, datos, marca, alias }];
         }));
     }
 
@@ -346,8 +405,11 @@
         document.querySelectorAll('#filtroTipo input').forEach(i => { i.checked = i.value === estado.tipo; });
         selectOrden.value = estado.orden;
 
+        // El buscador muestra lo buscado, salvo mientras escribes en él
+        if (document.activeElement !== inputBuscar && inputBuscar.value !== estado.q) inputBuscar.value = estado.q;
+
         // Cada género dice cuántas obras quedarían si lo sumas a lo que ya elegiste
-        const base = obras.filter(o => cumpleTipo(o, estado.tipo) && tieneGeneros(o, estado.generos) && tieneEtiqueta(o, estado.etiqueta));
+        const base = obras.filter(o => cumpleBusqueda(o) && cumpleTipo(o, estado.tipo) && tieneGeneros(o, estado.generos) && tieneEtiqueta(o, estado.etiqueta));
         chips.forEach(({ boton, cuenta }, g) => {
             const activo = estado.generos.includes(g);
             boton.setAttribute('aria-pressed', String(activo));
@@ -388,6 +450,7 @@
             else if (estado.orden === 'tendencia' && actividad(o).leyendo) datos.push(crear('span', null, `${formatoLectores.format(actividad(o).leyendo)} leyendo`));
             else { const p = datoPuntaje(o); if (p) datos.push(p); }
             t.datos.replaceChildren(...datos);
+            pintarAlias(t.alias, o);
         });
         // Solo se mueven las tarjetas si cambió la lista (así no se pierde el foco ni se recargan portadas)
         const ids = lista.map(o => o.id).join('|');
@@ -397,8 +460,49 @@
         }
     }
 
+    // Si la búsqueda coincidió con otro nombre (p. ej. "Shingeki no Kyojin" para Attack on Titan), se muestra bajo el título
+    function pintarAlias(alias, o){
+        const c = coincidencias && coincidencias.get(o.id);
+        const mostrar = Boolean(c && !c.principal);
+        alias.hidden = !mostrar;
+        if (!mostrar){
+            alias.replaceChildren();
+            return;
+        }
+        const nombre = crear('span', null, c.nombre);
+        if (o.titulos && c.nombre === o.titulos.nativo) nombre.lang = IDIOMA_ORIGINAL[o.tipo];
+        alias.replaceChildren(crear('span', 'solo-lectores', 'También llamada '), nombre);
+    }
+
+    function borrarBusqueda(){
+        clearTimeout(esperaBusqueda);
+        inputBuscar.value = '';
+        cambiarEstado({ q: '' });
+        inputBuscar.focus();
+    }
+
     function estadoVacio(){
         const li = crear('li', 'estado-lista');
+        if (estado.q){
+            // ¿La búsqueda encuentra algo si se quitan el tipo, los géneros y la etiqueta?
+            const sinFiltros = obras.filter(cumpleBusqueda).length;
+            const boton = crear('button', 'boton-secundario', sinFiltros ? 'Buscar en todo el catálogo' : 'Borrar la búsqueda');
+            boton.type = 'button';
+            if (sinFiltros){
+                li.append(crear('strong', null, `Hay ${sinFiltros} ${sinFiltros === 1 ? 'obra' : 'obras'} con «${estado.q}», pero no con los filtros que elegiste.`),
+                    crear('span', null, 'Puedes buscar en todo el catálogo sin borrar lo que escribiste.'));
+                boton.addEventListener('click', () => {
+                    cambiarEstado({ tipo: '', generos: [], etiqueta: '' });
+                    $('tituloCatalogo').focus();
+                });
+            } else {
+                li.append(crear('strong', null, `Ninguna obra se llama «${estado.q}».`),
+                    crear('span', null, 'Revisa cómo está escrito o prueba con otro de sus nombres: en inglés, en romaji o en su idioma original.'));
+                boton.addEventListener('click', borrarBusqueda);
+            }
+            li.append(document.createElement('br'), boton);
+            return li;
+        }
         const quien = estado.tipo ? `Ningún ${TIPOS[estado.tipo].toLowerCase()}` : 'Ninguna obra';
         const conEtiqueta = Boolean(estado.etiqueta) && estado.generos.length === 0;
         if (conEtiqueta) li.append(crear('strong', null, `${quien} tiene esa etiqueta.`), crear('span', null, 'Quita la etiqueta o cambia el tipo.'));
@@ -416,6 +520,7 @@
     }
 
     function pintar(){
+        calcularCoincidencias();
         const lista = resultados();
         pintarFiltros();
         pintarRejilla(lista);
@@ -1058,6 +1163,35 @@
 
     selectOrden.addEventListener('change', () => cambiarEstado({ orden: selectOrden.value }));
 
+    // Buscador: filtra mientras escribes (con una pausa corta para no repintar en cada letra)
+    const textoBuscado = () => inputBuscar.value.replace(/\s+/g, ' ').trim().slice(0, MAX_BUSQUEDA);
+    inputBuscar.addEventListener('input', () => {
+        clearTimeout(esperaBusqueda);
+        esperaBusqueda = setTimeout(() => {
+            if (textoBuscado() !== estado.q) cambiarEstado({ q: textoBuscado() });
+        }, 150);
+    });
+    inputBuscar.addEventListener('keydown', e => {
+        if (e.key === 'Enter'){
+            clearTimeout(esperaBusqueda);
+            if (textoBuscado() !== estado.q) cambiarEstado({ q: textoBuscado() });
+            // En el celular se cierra el teclado para ver los resultados
+            if (window.matchMedia('(pointer: coarse)').matches) inputBuscar.blur();
+        } else if (e.key === 'Escape' && inputBuscar.value){
+            e.preventDefault();
+            borrarBusqueda();
+        }
+    });
+    // Atajo: "/" lleva al buscador cuando estás en el catálogo
+    document.addEventListener('keydown', e => {
+        if (e.key !== '/' || e.ctrlKey || e.metaKey || e.altKey || ficha.open) return;
+        if (e.target.closest && e.target.closest('input, textarea, select, [contenteditable="true"]')) return;
+        if (Frozen.ruta().seccion !== 'catalogo') return;
+        e.preventDefault();
+        inputBuscar.focus();
+        inputBuscar.select();
+    });
+
     zonaGeneros.addEventListener('click', e => {
         const boton = e.target.closest('.chip');
         if (!boton || boton.disabled) return;
@@ -1104,6 +1238,7 @@
             etiquetasConocidas = new Map(obras.flatMap(etiquetasDe).map(e => [e.id, { nombre: e.nombre, en: Boolean(e.en) }]));
             puestoPopularidad = new Map([...obras].sort(ORDENES.populares).map((o, i) => [o.id, i + 1]));
             construirTarjetas();
+            construirIndiceBusqueda();
             construirChips();
             construirChipsBiblioteca();
             pintarPopulares();

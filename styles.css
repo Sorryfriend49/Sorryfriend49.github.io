@@ -572,6 +572,65 @@ nav{
     color: var(--hielo);
 }
 
+/* Buscador por nombre */
+.buscador{
+    position: relative;
+    flex: 1 1 240px;
+    max-width: 420px;
+}
+
+.buscador-icono{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: var(--cristal);
+    pointer-events: none;
+}
+
+.buscador input{
+    width: 100%;
+    min-height: 44px;
+    padding: 0 14px 0 42px;
+    border: 1px solid var(--vidrio-borde);
+    border-radius: 999px;
+    background: rgba(3, 10, 19, 0.7);
+    color: var(--hielo);
+    font: 500 15px 'Poppins', sans-serif;
+    transition: border-color 0.2s ease;
+}
+
+.buscador input:hover{
+    border-color: rgba(168, 198, 236, 0.4);
+}
+
+.buscador input::placeholder{
+    color: var(--texto-suave);
+    opacity: 1;
+}
+
+/* La × para borrar, en el color del sitio (la de Chrome y Safari es gris oscura) */
+.buscador input::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    margin-left: 6px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 6l12 12M18 6L6 18' fill='none' stroke='%23a8c6ec' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E") center / 18px no-repeat;
+    cursor: pointer;
+}
+
+/* Otro nombre con el que coincidió la búsqueda (p. ej. el título en romaji) */
+.obra-alias{
+    display: block;
+    overflow: hidden;
+    margin-top: 2px;
+    font-size: 12px;
+    color: var(--texto-suave);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 /* Géneros: cada botón dice cuántas obras quedarían si lo eliges */
 .boton-generos{
     display: none;
@@ -1579,9 +1638,15 @@ nav{
         -webkit-backdrop-filter: none;
     }
 
-    /* --- Filtros: tipo a lo ancho; orden y géneros en una fila --- */
+    /* --- Filtros: el buscador arriba a lo ancho; luego el tipo; orden y géneros en una fila --- */
     .fila-filtros{
         gap: 10px;
+    }
+
+    .buscador{
+        order: -1;
+        flex: 1 1 100%;
+        max-width: none;
     }
 
     .segmentado{
