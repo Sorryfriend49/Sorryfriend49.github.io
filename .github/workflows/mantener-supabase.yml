@@ -1,0 +1,35 @@
+# Mantiene despierta la base de datos de Supabase (la de las cuentas y la biblioteca en la nube).
+# El plan gratis pausa los proyectos que tienen muy poca actividad en una semana; con una consulta
+# pequeña cada día no pasa. Es gratis: corre en GitHub Actions y solo llama a la función "ping",
+# que responde "ok" y no lee ni cambia datos de nadie (ver supabase/esquema.sql).
+# La clave de abajo es la pública de la página (la misma que está en cuenta.js), no un secreto.
+name: Mantener despierta la base de datos
+
+on:
+  schedule:
+    - cron: '23 14 * * *'   # todos los días a las 14:23 UTC (9:23 en Colombia)
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  latido:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Consulta pequeña a Supabase
+        env:
+          SUPABASE_URL: https://jbujqndemyxxnxznhvqe.supabase.co
+          SUPABASE_CLAVE: sb_publishable_e7wYrt7DYwAc8c7dN6A_iA_xwmqNJ-4
+        run: |
+          for intento in 1 2 3; do
+            if respuesta=$(curl -fsS --max-time 30 -X POST "$SUPABASE_URL/rest/v1/rpc/ping" \
+                 -H "apikey: $SUPABASE_CLAVE" -H "Content-Type: application/json" -d '{}'); then
+              echo "Supabase respondió: $respuesta"
+              exit 0
+            fi
+            echo "Intento $intento falló; se reintenta en 30 segundos"
+            sleep 30
+          done
+          echo "::warning::Supabase no respondió. Si el proyecto quedó en pausa, reactívalo en supabase.com/dashboard (Restore project)."
+          exit 1

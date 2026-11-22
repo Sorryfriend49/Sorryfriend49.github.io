@@ -907,6 +907,307 @@ nav{
     display: none;
 }
 
+/* ===================================
+   TU CUENTA (botón de la cabecera, diálogo y avisos; ver cuenta.js)
+=================================== */
+header{
+    position: relative;
+}
+
+.boton-cuenta{
+    position: absolute;
+    top: 50%;
+    right: clamp(12px, 3vw, 28px);
+    transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    max-width: 200px;
+    padding: 4px 16px 4px 4px;
+    border: 1px solid rgba(230, 242, 248, 0.3);
+    border-radius: 999px;
+    background: rgba(3, 10, 19, 0.6);
+    color: var(--hielo);
+    font: 600 15px 'Poppins', sans-serif;
+    letter-spacing: 0;
+    text-shadow: none;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.boton-cuenta:hover{
+    background: rgba(168, 198, 236, 0.14);
+    border-color: rgba(230, 242, 248, 0.6);
+}
+
+.boton-cuenta-avatar,
+.cuenta-foto{
+    position: relative;
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--profundo), var(--azul-boton));
+    color: var(--hielo);
+}
+
+.boton-cuenta-avatar img,
+.cuenta-foto img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* La inicial va como dibujo (no como texto) para que el nombre que leen los lectores de pantalla sea solo el tuyo */
+.avatar-inicial{
+    font: 700 16px 'Baloo 2', sans-serif;
+    line-height: 1;
+}
+
+.avatar-inicial::before{
+    content: attr(data-inicial);
+}
+
+.boton-cuenta-texto{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Diálogo de la cuenta (usa el mismo marco que la ficha) */
+.dialogo-cuenta{
+    width: min(500px, calc(100vw - 24px));
+}
+
+.cuenta-cuerpo{
+    padding: clamp(22px, 4vw, 32px);
+}
+
+.cuenta-cuerpo h2{
+    padding-right: 48px;
+    font-size: clamp(24px, 4vw, 28px);
+}
+
+.cuenta-intro{
+    margin-top: 8px;
+    color: var(--texto-suave);
+}
+
+.cuenta-proveedores{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    justify-items: center;
+    margin: 22px auto 0;
+    max-width: 320px;
+}
+
+.boton-google{
+    width: 100%;
+    min-height: 44px;
+    display: flex;
+    justify-content: center;
+}
+
+.boton-proveedor{
+    width: 100%;
+    min-height: 44px;
+    padding: 0 20px;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    font: 600 15px 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: filter 0.2s ease;
+}
+
+/* El azul de Discord un poco más oscuro, para que el texto blanco se lea bien (5,5:1) */
+.boton-discord{
+    background: #4f5bd5;
+    color: #ffffff;
+}
+
+.boton-discord:hover{
+    background: #5865f2;
+}
+
+.cuenta-alterno{
+    margin-top: 12px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--texto-suave);
+}
+
+.enlace{
+    padding: 0;
+    border: none;
+    background: none;
+    color: var(--hielo);
+    font: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+}
+
+.cuenta-letra-chica{
+    margin-top: 18px;
+    font-size: 13px;
+    color: var(--texto-suave);
+}
+
+.cuenta-letra-chica a{
+    color: var(--hielo);
+}
+
+/* Páginas de privacidad y términos */
+.pagina-legal .panel{
+    margin-top: 28px;
+}
+
+.pagina-legal .sobre-texto h2 + p{
+    margin-top: 6px;
+}
+
+.volver-sitio{
+    margin-top: 28px;
+}
+
+.cuenta-perfil{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 16px;
+}
+
+.cuenta-foto{
+    width: 56px;
+    height: 56px;
+}
+
+.cuenta-foto .avatar-inicial{
+    font-size: 24px;
+}
+
+.cuenta-nombre{
+    font: 700 19px 'Baloo 2', sans-serif;
+    color: var(--hielo);
+    overflow-wrap: anywhere;
+}
+
+.cuenta-detalle{
+    font-size: 14px;
+    color: var(--texto-suave);
+    overflow-wrap: anywhere;
+}
+
+.cuenta-estado{
+    margin-top: 16px;
+    padding: 10px 14px;
+    border: 1px solid var(--vidrio-borde);
+    border-radius: 12px;
+    background: rgba(168, 198, 236, 0.06);
+    font-size: 14px;
+}
+
+.cuenta-estado.error{
+    border-color: rgba(255, 194, 194, 0.4);
+    color: #ffc2c2;
+}
+
+.cuenta-estado:empty{
+    display: none;
+}
+
+.cuenta-acciones{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.cuenta-acciones .boton-principal{
+    min-height: 44px;
+    font-size: 16px;
+}
+
+.boton-peligro{
+    min-height: 44px;
+    padding: 0 18px;
+    border: 1px solid rgba(255, 194, 194, 0.5);
+    border-radius: 999px;
+    background: rgba(140, 30, 40, 0.35);
+    color: #ffe1e1;
+    font: 600 15px 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.boton-peligro:hover{
+    background: rgba(160, 36, 48, 0.55);
+}
+
+.boton-peligro:disabled,
+.boton-secundario:disabled{
+    opacity: 0.55;
+    cursor: wait;
+}
+
+.cuenta-borrar{
+    margin-top: 22px;
+    padding-top: 14px;
+    border-top: 1px solid var(--vidrio-borde);
+}
+
+.cuenta-borrar summary{
+    width: fit-content;
+    min-height: 32px;
+    font-size: 14px;
+    color: var(--texto-suave);
+    cursor: pointer;
+}
+
+.cuenta-borrar p{
+    margin: 6px 0 12px;
+    font-size: 14px;
+    color: var(--texto-suave);
+}
+
+.aviso-cuenta{
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.aviso-cuenta.error{
+    color: #ffc2c2;
+}
+
+.aviso-cuenta:empty{
+    display: none;
+}
+
+/* Aviso corto abajo de la pantalla */
+.aviso-global{
+    position: fixed;
+    left: 50%;
+    bottom: max(16px, env(safe-area-inset-bottom));
+    z-index: 300;
+    width: max-content;
+    max-width: calc(100vw - 24px);
+    padding: 12px 18px;
+    transform: translateX(-50%);
+    border: 1px solid var(--vidrio-borde);
+    border-radius: 14px;
+    background: #0b1a2b;
+    color: var(--texto-claro);
+    font-size: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    animation: aparecer 0.25s ease;
+}
+
 /* En la ficha: guardar la obra con una etiqueta */
 .mi-biblioteca{
     margin-top: 18px;
@@ -1511,6 +1812,21 @@ nav{
         letter-spacing: 1px;
     }
 
+    /* --- Cuenta: solo el círculo (el nombre lo leen los lectores de pantalla) --- */
+    .boton-cuenta{
+        right: 8px;
+        padding: 4px;
+        border-color: rgba(230, 242, 248, 0.22);
+    }
+
+    .boton-cuenta-texto{
+        display: none;
+    }
+
+    .cuenta-acciones > *{
+        flex: 1 1 100%;
+    }
+
     /* --- Menú: cuatro botones grandes en una fila --- */
     nav{
         padding: 4px 6px;
@@ -1787,6 +2103,9 @@ nav{
     }
 
     .nav-link,
+    .boton-cuenta,
+    .boton-proveedor,
+    .boton-peligro,
     .chip,
     .boton-generos,
     .segmentado input,

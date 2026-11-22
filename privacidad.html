@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // En una dirección vieja de la página, pasa a la oficial
+        if (['sorryfriend49.github.io', 'frozen-project-vert-mu.vercel.app'].indexOf(location.hostname) !== -1) {
+            location.replace('https://frozen-project.vercel.app' + location.pathname.replace(/^\/[^/]*\.github\.io/, ''));
+        }
+    </script>
+    <title>Política de privacidad | Frozen Project</title>
+    <meta name="description" content="Qué datos guarda Frozen Project cuando usas el sitio o entras con Google o Discord, para qué se usan y cómo borrarlos.">
+    <link rel="canonical" href="https://frozen-project.vercel.app/privacidad.html">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#030a13">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="styles.css?v=10">
+</head>
+
+<body class="pagina-legal">
+    <header>
+        <h1><a href="./" class="titulo-link">Frozen Project</a></h1>
+    </header>
+
+    <main>
+        <article class="panel">
+            <div class="sobre-texto">
+                <h2>Política de privacidad</h2>
+                <p class="nota-datos">Última actualización: 22 de noviembre de 2026</p>
+
+                <p>Frozen Project es un proyecto personal, gratuito y sin fines comerciales para encontrar qué leer en manga, manhwa y manhua. Aquí se explica qué datos se guardan cuando usas el sitio y qué puedes hacer con ellos.</p>
+
+                <h3>Si usas el sitio sin cuenta</h3>
+                <ul>
+                    <li>No se te pide ningún dato. “Mi biblioteca” se guarda solo en tu navegador y no sale de tu dispositivo.</li>
+                    <li>No hay publicidad, ni cookies de publicidad, ni herramientas para seguir lo que haces.</li>
+                    <li>Las portadas vienen de AniList y las letras de Google Fonts. Al cargarlas, esos servicios reciben tu dirección IP, como pasa con cualquier página que muestra contenido de otro sitio. La página la sirve Vercel, que guarda registros técnicos de las visitas para que funcione.</li>
+                </ul>
+
+                <h3>Si entras con Google o Discord (es opcional)</h3>
+                <p>Solo se guarda lo necesario para que tengas tu biblioteca en todos tus dispositivos:</p>
+                <ul>
+                    <li>Tu nombre, tu correo, tu foto de perfil y el identificador de tu cuenta, que los manda Google o Discord cuando entras. Nunca recibimos tu contraseña.</li>
+                    <li>Tu biblioteca: qué obras guardaste, con qué etiqueta, si son favoritas y cuándo las cambiaste. También se recuerda qué obras quitaste, para que tus otros dispositivos las quiten.</li>
+                    <li>Datos técnicos de la sesión que guarda el sistema de cuentas (por ejemplo, cuándo entraste por última vez y desde qué dirección IP), para que la sesión funcione y sea segura.</li>
+                </ul>
+                <p>Estos datos solo se usan para que puedas entrar y sincronizar tu biblioteca. No se venden, no se comparten para publicidad y no se usan para mandarte correos.</p>
+                <p>Se guardan en <a href="https://supabase.com" target="_blank" rel="noopener noreferrer">Supabase</a>, un servicio de bases de datos, en servidores de Estados Unidos. Las reglas de la base hacen que cada usuario solo pueda ver y cambiar su propia biblioteca. En tu navegador también queda tu sesión (para no pedirte entrar cada vez) y una copia de tu biblioteca.</p>
+                <p>Intervienen estos servicios, cada uno con su propia política de privacidad: Google o Discord (para entrar; al abrir “Entrar” se carga el botón oficial de Google), Supabase (las cuentas y la base de datos) y Vercel (donde está alojada la página).</p>
+
+                <h3>Lo que puedes hacer</h3>
+                <ul>
+                    <li><strong>Llevarte tus datos:</strong> en “Mi biblioteca”, “Guardar una copia” descarga tu biblioteca en un archivo.</li>
+                    <li><strong>Cerrar sesión:</strong> tu biblioteca se borra de ese navegador, pero sigue guardada en tu cuenta.</li>
+                    <li><strong>Borrar tu cuenta:</strong> en “Entrar”, “Borrar mi cuenta”. Tu cuenta y tu biblioteca se borran de la base de datos en ese momento, para siempre.</li>
+                    <li><strong>Quitar el permiso:</strong> también puedes desconectar Frozen Project desde la configuración de tu cuenta de Google o de Discord, en la lista de aplicaciones conectadas.</li>
+                </ul>
+
+                <h3>Menores de edad</h3>
+                <p>Para entrar con Google o Discord necesitas tener la edad mínima que esos servicios piden en tu país. Si eres menor de edad, pídele permiso a tus padres o a quien te cuide antes de crear una cuenta. Sin cuenta puedes usar todo el sitio.</p>
+
+                <h3>Cambios y preguntas</h3>
+                <p>Si esta política cambia, se actualiza esta página con su nueva fecha. Si tienes una pregunta, escribe en <a href="https://github.com/Sorryfriend49/Sorryfriend49.github.io/issues" target="_blank" rel="noopener noreferrer">GitHub</a> (lo que escribas allí es público: no pongas datos personales).</p>
+
+                <p class="volver-sitio"><a class="boton-principal" href="./">Volver a Frozen Project</a></p>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>

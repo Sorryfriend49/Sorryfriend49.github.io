@@ -41,6 +41,14 @@
                 var volver = /^#[a-z]/.test(datos.volver || '') ? datos.volver : '';
                 history.replaceState(null, '', location.pathname + location.search + volver);
             }
+            // Al volver de entrar con Discord (o con Google por redirección) llega "?code=…":
+            // se vuelve al apartado donde estabas antes de que cargue la página (cuenta.js hace el resto)
+            if (/[?&](code|error)=/.test(location.search) && !location.hash) {
+                try {
+                    var antes = sessionStorage.getItem('frozen-project:cuenta:volver');
+                    if (/^#[a-z]/.test(antes || '')) history.replaceState(null, '', location.pathname + location.search + antes);
+                } catch (e) {}
+            }
         })();
     </script>
 
@@ -87,8 +95,8 @@
     </script>
 
     <!-- El ?v= obliga a los navegadores a bajar la versión nueva tras cada cambio.
-         Si editas styles.css, sitio.js, biblioteca.js o catalogo.js, sube ese número (v=3, v=4...). -->
-    <link rel="stylesheet" href="styles.css?v=9">
+         Si editas styles.css, sitio.js, biblioteca.js, catalogo.js o cuenta.js, sube ese número (v=3, v=4...). -->
+    <link rel="stylesheet" href="styles.css?v=10">
 </head>
 
 <body>
@@ -104,6 +112,11 @@
 
     <header>
         <h1><a href="#inicio" class="titulo-link">Frozen Project</a></h1>
+        <!-- CUENTA (opcional): entrar con Google o Discord para guardar la biblioteca en la nube (ver cuenta.js) -->
+        <button class="boton-cuenta" id="botonCuenta" type="button" aria-haspopup="dialog" aria-controls="dialogoCuenta" aria-label="Entrar a tu cuenta (opcional)">
+            <span class="boton-cuenta-avatar" id="avatarCuenta" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 20c1.5-4 4.5-6 8-6s6.5 2 8 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            <span class="boton-cuenta-texto" id="textoCuenta" aria-hidden="true">Entrar</span>
+        </button>
     </header>
 
     <nav aria-label="Principal">
@@ -221,8 +234,10 @@
 
             <div class="biblioteca-copia">
                 <h3>Llévala a otro celular o computador</h3>
-                <p>Tu biblioteca se guarda solo en este navegador, sin cuenta. Para pasarla a otro, guarda una copia y cárgala allá: se junta con lo que ya tengas.</p>
+                <!-- cuenta.js cambia este texto según si entraste a tu cuenta -->
+                <p id="textoNube">Entra con Google o Discord y tu biblioteca se guarda en tu cuenta: la tendrás en todos tus celulares y computadores. Sin cuenta también funciona, pero queda solo en este navegador. También puedes guardar una copia y cargarla en otro lado.</p>
                 <div class="botones-copia">
+                    <button class="boton-principal" id="entrarDesdeBiblioteca" type="button">Entrar para sincronizarla</button>
                     <button class="boton-secundario" id="guardarCopia" type="button">Guardar una copia</button>
                     <button class="boton-secundario" id="cargarCopia" type="button">Cargar una copia</button>
                     <input type="file" id="archivoCopia" accept="application/json,.json" hidden>
@@ -258,8 +273,8 @@
                 </ol>
                 <p class="nota-datos" id="fechaDatos"></p>
 
-                <h3>Tu biblioteca</h3>
-                <p>“Mi biblioteca” se guarda solo en tu navegador: no necesitas cuenta y nadie más la ve. Si borras los datos del navegador, se borra con ellos, así que guarda una copia de vez en cuando (desde el mismo apartado). Con esa copia también la puedes pasar a otro celular o computador.</p>
+                <h3>Tu biblioteca y tu cuenta</h3>
+                <p>“Mi biblioteca” funciona sin cuenta: se guarda en tu navegador y nadie más la ve. Si quieres tenerla en todos tus dispositivos, entra con Google o Discord (botón “Entrar”, arriba): se guarda también en tu cuenta y se sincroniza sola. Entrar es opcional y gratis; solo se guarda tu nombre, tu correo, tu foto de perfil y tu biblioteca, y puedes borrar tu cuenta cuando quieras. Más detalles en la <a href="privacidad.html">política de privacidad</a> y los <a href="terminos.html">términos</a>.</p>
 
                 <h3>Créditos</h3>
                 <p>Datos: AniList, MyAnimeList, Kitsu y MangaUpdates. Portadas: AniList. Modelo de sentimiento: BERT multilingüe de NLP Town (licencia MIT). Resúmenes: Gemma 4 de Google (licencia Apache 2.0). Fondo animado: Blind Angel, de MoeWalls.</p>
@@ -308,9 +323,58 @@
         </div>
     </dialog>
 
+    <!-- TU CUENTA: entrar con Google o Discord (ver cuenta.js) -->
+    <dialog class="ficha dialogo-cuenta" id="dialogoCuenta" aria-labelledby="tituloCuenta">
+        <button class="ficha-cerrar" id="cerrarCuenta" type="button" aria-label="Cerrar">&times;</button>
+        <div class="cuenta-cuerpo">
+            <h2 id="tituloCuenta">Guarda tu biblioteca en tu cuenta</h2>
+
+            <!-- Sin sesión -->
+            <div id="cuentaFuera">
+                <p class="cuenta-intro">Entra y tu biblioteca te sigue a cualquier celular o computador. Es gratis y opcional: sin cuenta, todo sigue funcionando en este navegador.</p>
+                <div class="cuenta-proveedores">
+                    <div class="boton-google" id="botonGoogle"></div>
+                    <button class="boton-proveedor boton-discord" id="entrarDiscord" type="button">Continuar con Discord</button>
+                </div>
+                <p class="cuenta-alterno" id="googleAlterno" hidden>¿No aparece el botón de Google? <button class="enlace" id="entrarGoogleRedireccion" type="button">Entra con Google por aquí</button>.</p>
+                <p class="cuenta-letra-chica">Solo guardamos tu nombre, tu correo, tu foto de perfil y tu biblioteca. Al entrar aceptas los <a href="terminos.html">términos</a> y la <a href="privacidad.html">política de privacidad</a>.</p>
+            </div>
+
+            <!-- Con sesión -->
+            <div id="cuentaDentro" hidden>
+                <div class="cuenta-perfil">
+                    <span class="cuenta-foto" id="fotoPerfil" aria-hidden="true"></span>
+                    <div>
+                        <p class="cuenta-nombre" id="nombrePerfil"></p>
+                        <p class="cuenta-detalle" id="detallePerfil"></p>
+                    </div>
+                </div>
+                <p class="cuenta-estado" id="estadoSync" role="status" aria-live="polite"></p>
+                <div class="cuenta-acciones">
+                    <a class="boton-principal" id="irBiblioteca" href="#biblioteca">Ver mi biblioteca</a>
+                    <button class="boton-secundario" id="sincronizarAhora" type="button">Sincronizar ahora</button>
+                    <button class="boton-secundario" id="cerrarSesion" type="button">Cerrar sesión</button>
+                    <button class="boton-peligro" id="cerrarIgual" type="button" hidden>Cerrar sesión igual</button>
+                </div>
+                <p class="cuenta-letra-chica">Al cerrar sesión, tu biblioteca se borra de este navegador, pero sigue guardada en tu cuenta.</p>
+                <details class="cuenta-borrar" id="zonaBorrar">
+                    <summary>Borrar mi cuenta</summary>
+                    <p>Se borran tu cuenta y la biblioteca guardada en ella, para siempre. Si quieres conservar la biblioteca, antes guarda una copia desde «Mi biblioteca».</p>
+                    <button class="boton-peligro" id="borrarCuenta" type="button">Sí, borrar mi cuenta</button>
+                </details>
+            </div>
+
+            <p class="aviso-cuenta" id="avisoCuenta" role="status" aria-live="polite"></p>
+        </div>
+    </dialog>
+
+    <!-- Avisos cortos (por ejemplo, al terminar de entrar a tu cuenta) -->
+    <div class="aviso-global" id="avisoGlobal" role="status" aria-live="polite" hidden></div>
+
     <script src="sitio.js?v=4" defer></script>
-    <script src="biblioteca.js?v=2" defer></script>
+    <script src="biblioteca.js?v=3" defer></script>
     <script src="catalogo.js?v=8" defer></script>
+    <script src="cuenta.js?v=1" defer></script>
 
 </body>
 
