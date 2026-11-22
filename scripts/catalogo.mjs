@@ -123,7 +123,9 @@ export function prepararAutores(edges){
         .sort((x, y) => primero(x.a) - primero(y.a) || x.i - y.i)      // si empatan, el orden de AniList
         .slice(0, 4)
         .map(({ a }) => {
-            const roles = a.roles.includes('historia') && a.roles.includes('arte') ? ['historia y arte', ...a.roles.filter(r => r !== 'historia' && r !== 'arte')] : a.roles;
+            // Quien escribió la novela y también la adaptó queda como «historia original» (no «historia y historia original»)
+            let roles = a.roles.some(r => ORDEN_ROLES[r] === 0) ? a.roles.filter(r => r !== 'historia') : a.roles;
+            if (roles.includes('historia') && roles.includes('arte')) roles = ['historia y arte', ...roles.filter(r => r !== 'historia' && r !== 'arte')];
             const autor = { nombre: a.nombre, rol: roles.join(' y ') };
             if (a.nativo && a.nativo !== a.nombre) autor.nativo = a.nativo;
             return autor;
