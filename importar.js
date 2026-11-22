@@ -55,7 +55,7 @@
     let indice = null;
     async function cargarIndice(){
         if (indice) return indice;
-        const r = await fetch('obras.json', { cache: 'no-cache' });
+        const r = await fetch('datos/lista.json', { cache: 'no-cache' });
         if (!r.ok) throw new Error('catálogo');
         const datos = await r.json();
         const lista = Array.isArray(datos) ? datos : (datos.obras || []);
