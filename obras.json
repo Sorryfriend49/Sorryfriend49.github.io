@@ -27,6 +27,13 @@
       "fin": "2026-03-25",
       "capitulos": 232,
       "tomos": 24,
+      "autores": [
+        {
+          "nombre": "Tatsuki Fujimoto",
+          "rol": "historia y arte",
+          "nativo": "藤本タツキ"
+        }
+      ],
       "generos": [
         "accion",
         "comedia",
@@ -123,6 +130,13 @@
       "fin": "2024-09-30",
       "capitulos": 272,
       "tomos": 30,
+      "autores": [
+        {
+          "nombre": "Gege Akutami",
+          "rol": "historia y arte",
+          "nativo": "芥見下々"
+        }
+      ],
       "generos": [
         "accion",
         "drama",
@@ -217,6 +231,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Kentarou Miura",
+          "rol": "historia y arte",
+          "nativo": "三浦建太郎"
+        },
+        {
+          "nombre": "Studio Gaga",
+          "rol": "historia y arte",
+          "nativo": "スタジオ我画"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -286,6 +312,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Eiichirou Oda",
+          "rol": "historia y arte",
+          "nativo": "尾田栄一郎"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -375,6 +408,13 @@
       "fin": "2021-04-09",
       "capitulos": 141,
       "tomos": 34,
+      "autores": [
+        {
+          "nombre": "Hajime Isayama",
+          "rol": "historia y arte",
+          "nativo": "諫山創"
+        }
+      ],
       "generos": [
         "accion",
         "drama",
@@ -470,6 +510,13 @@
       "fin": "2020-05-18",
       "capitulos": 207,
       "tomos": 23,
+      "autores": [
+        {
+          "nombre": "Koyoharu Gotouge",
+          "rol": "historia y arte",
+          "nativo": "吾峠呼世晴"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -557,6 +604,13 @@
       "fin": "2014-09-18",
       "capitulos": 144,
       "tomos": 14,
+      "autores": [
+        {
+          "nombre": "Sui Ishida",
+          "rol": "historia y arte",
+          "nativo": "石田スイ"
+        }
+      ],
       "generos": [
         "accion",
         "terror",
@@ -641,6 +695,13 @@
       "fin": "2013-11-02",
       "capitulos": 147,
       "tomos": 13,
+      "autores": [
+        {
+          "nombre": "Inio Asano",
+          "rol": "historia y arte",
+          "nativo": "浅野いにお"
+        }
+      ],
       "generos": [
         "drama",
         "psicologico",
@@ -705,6 +766,13 @@
       "fin": "2024-08-05",
       "capitulos": 432,
       "tomos": 42,
+      "autores": [
+        {
+          "nombre": "Kouhei Horikoshi",
+          "rol": "historia y arte",
+          "nativo": "堀越耕平"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -792,6 +860,17 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "ONE",
+          "rol": "historia"
+        },
+        {
+          "nombre": "Yuusuke Murata",
+          "rol": "arte",
+          "nativo": "村田雄介"
+        }
+      ],
       "generos": [
         "accion",
         "comedia",
@@ -860,6 +939,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Takehiko Inoue",
+          "rol": "historia y arte",
+          "nativo": "井上雄彦"
+        },
+        {
+          "nombre": "Eiji Yoshikawa",
+          "rol": "historia",
+          "nativo": "吉川英治"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -909,6 +1000,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Tatsuya Endou",
+          "rol": "historia y arte",
+          "nativo": "遠藤達哉"
+        }
+      ],
       "generos": [
         "accion",
         "comedia",
@@ -1000,6 +1098,13 @@
       "fin": "2025-07-25",
       "capitulos": 224,
       "tomos": 29,
+      "autores": [
+        {
+          "nombre": "Makoto Yukimura",
+          "rol": "historia y arte",
+          "nativo": "幸村誠"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -1100,6 +1205,18 @@
       "fin": "2020-06-15",
       "capitulos": 181,
       "tomos": 20,
+      "autores": [
+        {
+          "nombre": "Kaiu Shirai",
+          "rol": "historia",
+          "nativo": "白井カイウ"
+        },
+        {
+          "nombre": "Posuka Demizu",
+          "rol": "arte",
+          "nativo": "出水ぽすか"
+        }
+      ],
       "generos": [
         "drama",
         "fantasia",
@@ -1192,6 +1309,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Muneyuki Kaneshiro",
+          "rol": "historia",
+          "nativo": "金城宗幸"
+        },
+        {
+          "nombre": "Yuusuke Nomura",
+          "rol": "arte",
+          "nativo": "ノ村優介"
+        }
+      ],
       "generos": [
         "accion",
         "drama",
@@ -1286,6 +1415,17 @@
       "fin": "2023-07-18",
       "capitulos": 152,
       "tomos": 17,
+      "autores": [
+        {
+          "nombre": "HERO",
+          "rol": "historia"
+        },
+        {
+          "nombre": "Daisuke Hagiwara",
+          "rol": "arte",
+          "nativo": "萩原ダイスケ"
+        }
+      ],
       "generos": [
         "comedia",
         "romance",
@@ -1342,6 +1482,28 @@
       "fin": "2023-05-31",
       "capitulos": 201,
       "tomos": 15,
+      "autores": [
+        {
+          "nombre": "Chu-Gong",
+          "rol": "historia original",
+          "nativo": "추공"
+        },
+        {
+          "nombre": "So-Ryeong Gi",
+          "rol": "historia",
+          "nativo": "기소령"
+        },
+        {
+          "nombre": "Hyeon-Gun",
+          "rol": "historia",
+          "nativo": "현군"
+        },
+        {
+          "nombre": "Seong-Rak Jang",
+          "rol": "arte",
+          "nativo": "장성락"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -1436,6 +1598,22 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Singsyong",
+          "rol": "historia original",
+          "nativo": "싱숑"
+        },
+        {
+          "nombre": "UMI",
+          "rol": "historia"
+        },
+        {
+          "nombre": "Sleepy-C",
+          "rol": "arte",
+          "nativo": "슬리피-C"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -1507,6 +1685,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "SIU",
+          "rol": "historia y arte",
+          "nativo": "S.I.U."
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -1575,6 +1760,18 @@
       "fin": "2017-03-20",
       "capitulos": 94,
       "tomos": 5,
+      "autores": [
+        {
+          "nombre": "Carnby Kim",
+          "rol": "historia",
+          "nativo": "김칸비"
+        },
+        {
+          "nombre": "Yeong-Chan Hwang",
+          "rol": "arte",
+          "nativo": "황영찬"
+        }
+      ],
       "generos": [
         "drama",
         "terror",
@@ -1653,6 +1850,23 @@
       "fin": "2026-01-01",
       "capitulos": 222,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Baek-Gyeong Mun",
+          "rol": "historia original",
+          "nativo": "문백경"
+        },
+        {
+          "nombre": "Hyeon-Min Lee",
+          "rol": "historia",
+          "nativo": "이현민"
+        },
+        {
+          "nombre": "Hyeon-Su Kim",
+          "rol": "arte",
+          "nativo": "김현수"
+        }
+      ],
       "generos": [
         "aventura",
         "comedia",
@@ -1720,6 +1934,22 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "No-A Sin",
+          "rol": "historia original",
+          "nativo": "신노아"
+        },
+        {
+          "nombre": "Neida",
+          "rol": "historia",
+          "nativo": "네이다"
+        },
+        {
+          "nombre": "Bill K",
+          "rol": "arte"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -1786,6 +2016,13 @@
       "fin": "2016-07-22",
       "capitulos": 21,
       "tomos": 3,
+      "autores": [
+        {
+          "nombre": "Ji-Hun Jeong",
+          "rol": "historia y arte",
+          "nativo": "정지훈"
+        }
+      ],
       "generos": [
         "aventura",
         "drama",
@@ -1866,6 +2103,17 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "YC",
+          "rol": "historia"
+        },
+        {
+          "nombre": "Rakyeon",
+          "rol": "arte",
+          "nativo": "락현"
+        }
+      ],
       "generos": [
         "accion",
         "drama"
@@ -1926,6 +2174,18 @@
       "fin": "2020-07-02",
       "capitulos": 141,
       "tomos": 12,
+      "autores": [
+        {
+          "nombre": "Carnby Kim",
+          "rol": "historia",
+          "nativo": "김칸비"
+        },
+        {
+          "nombre": "Yeong-Chan Hwang",
+          "rol": "arte",
+          "nativo": "황영찬"
+        }
+      ],
       "generos": [
         "drama",
         "terror",
@@ -1985,6 +2245,13 @@
       "fin": "2022-10-13",
       "capitulos": 569,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Yong-Je Park",
+          "rol": "historia y arte",
+          "nativo": "박용제"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -2051,6 +2318,22 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Maslow",
+          "rol": "historia original",
+          "nativo": "메슬로우"
+        },
+        {
+          "nombre": "WAN.Z",
+          "rol": "historia"
+        },
+        {
+          "nombre": "Swing Bat",
+          "rol": "arte",
+          "nativo": "스윙뱃"
+        }
+      ],
       "generos": [
         "accion",
         "fantasia"
@@ -2117,6 +2400,18 @@
       "fin": "2024-06-22",
       "capitulos": 268,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Usonan",
+          "rol": "historia original",
+          "nativo": "유소난"
+        },
+        {
+          "nombre": "Wookjakga",
+          "rol": "arte",
+          "nativo": "욱작가"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -2182,6 +2477,23 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Hanjung Worya",
+          "rol": "historia original",
+          "nativo": "한중월야"
+        },
+        {
+          "nombre": "Geobalhan",
+          "rol": "historia",
+          "nativo": "거발한"
+        },
+        {
+          "nombre": "Geumgangbulgoe",
+          "rol": "arte",
+          "nativo": "금강불괴"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -2238,6 +2550,18 @@
       "fin": "2024-11-19",
       "capitulos": 202,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "U-Gak",
+          "rol": "historia original",
+          "nativo": "우각"
+        },
+        {
+          "nombre": "Hae-Min",
+          "rol": "historia y arte",
+          "nativo": "해민"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -2295,6 +2619,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Jae-Ho Son",
+          "rol": "historia",
+          "nativo": "손제호"
+        },
+        {
+          "nombre": "Hye-Jin Kim",
+          "rol": "arte",
+          "nativo": "김혜진"
+        }
+      ],
       "generos": [
         "accion",
         "comedia",
@@ -2357,6 +2693,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Tae-Jun Park",
+          "rol": "historia y arte",
+          "nativo": "박태준"
+        }
+      ],
       "generos": [
         "accion",
         "comedia",
@@ -2424,6 +2767,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Tan Jiu",
+          "rol": "historia y arte",
+          "nativo": "坛九"
+        }
+      ],
       "generos": [
         "comedia",
         "romance",
@@ -2473,6 +2823,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Fabiao De Woniu",
+          "rol": "historia original",
+          "nativo": "发飙的蜗牛"
+        },
+        {
+          "nombre": "Jiang Ruo Tai",
+          "rol": "arte",
+          "nativo": "姜若泰"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -2554,6 +2916,13 @@
       "fin": "2020-11-25",
       "capitulos": 157,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "DJUN",
+          "rol": "historia y arte",
+          "nativo": "D君"
+        }
+      ],
       "generos": [
         "drama",
         "romance",
@@ -2645,6 +3014,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Ye Xiao",
+          "rol": "historia original",
+          "nativo": "夜枭"
+        },
+        {
+          "nombre": "Bao Ke Ai",
+          "rol": "historia y arte",
+          "nativo": "鲍可爱"
+        }
+      ],
       "generos": [
         "accion",
         "fantasia"
@@ -2718,6 +3099,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Old Xian",
+          "rol": "historia y arte",
+          "nativo": "old先"
+        }
+      ],
       "generos": [
         "comedia",
         "romance",
@@ -2763,6 +3151,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Bulangni",
+          "rol": "historia y arte",
+          "nativo": "布朗尼"
+        }
+      ],
       "generos": [
         "comedia",
         "recuentos-de-la-vida"
@@ -2811,6 +3206,22 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Mo Xiang Tong Xiu",
+          "rol": "historia",
+          "nativo": "墨香铜臭"
+        },
+        {
+          "nombre": "STARember",
+          "rol": "arte"
+        },
+        {
+          "nombre": "Bai Meng She",
+          "rol": "arte",
+          "nativo": "白梦社"
+        }
+      ],
       "generos": [
         "aventura",
         "drama",
@@ -2862,6 +3273,23 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Tian Ming Fan Pai",
+          "rol": "historia original",
+          "nativo": "天命反派"
+        },
+        {
+          "nombre": "Liu Mang",
+          "rol": "historia",
+          "nativo": "六芒"
+        },
+        {
+          "nombre": "Mu Tou Ren",
+          "rol": "arte",
+          "nativo": "木头人"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -2934,6 +3362,13 @@
       "fin": "2016-08-23",
       "capitulos": 706,
       "tomos": 74,
+      "autores": [
+        {
+          "nombre": "Tite Kubo",
+          "rol": "historia y arte",
+          "nativo": "久保帯人"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -3022,6 +3457,13 @@
       "fin": "2022-11-02",
       "capitulos": 281,
       "tomos": 28,
+      "autores": [
+        {
+          "nombre": "Aka Akasaka",
+          "rol": "historia y arte",
+          "nativo": "赤坂アカ"
+        }
+      ],
       "generos": [
         "comedia",
         "psicologico",
@@ -3099,6 +3541,13 @@
       "fin": "2022-11-16",
       "capitulos": 279,
       "tomos": 31,
+      "autores": [
+        {
+          "nombre": "Ken Wakui",
+          "rol": "historia y arte",
+          "nativo": "和久井健"
+        }
+      ],
       "generos": [
         "accion",
         "drama",
@@ -3199,6 +3648,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Yukinobu Tatsu",
+          "rol": "historia y arte",
+          "nativo": "龍幸伸"
+        }
+      ],
       "generos": [
         "accion",
         "comedia",
@@ -3278,6 +3734,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Yoshihiro Togashi",
+          "rol": "historia y arte",
+          "nativo": "冨樫義博"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -3356,6 +3819,13 @@
       "fin": "2006-04-24",
       "capitulos": 249,
       "tomos": 22,
+      "autores": [
+        {
+          "nombre": "Naoki Urasawa",
+          "rol": "historia y arte",
+          "nativo": "浦沢直樹"
+        }
+      ],
       "generos": [
         "drama",
         "misterio",
@@ -3407,6 +3877,13 @@
       "fin": "2026-05-01",
       "capitulos": 392,
       "tomos": 38,
+      "autores": [
+        {
+          "nombre": "Yuuki Tabata",
+          "rol": "historia y arte",
+          "nativo": "田畠裕基"
+        }
+      ],
       "generos": [
         "accion",
         "comedia",
@@ -3487,6 +3964,13 @@
       "fin": "2001-12-20",
       "capitulos": 162,
       "tomos": 18,
+      "autores": [
+        {
+          "nombre": "Naoki Urasawa",
+          "rol": "historia y arte",
+          "nativo": "浦沢直樹"
+        }
+      ],
       "generos": [
         "drama",
         "misterio",
@@ -3540,6 +4024,18 @@
       "fin": "2024-11-14",
       "capitulos": 171,
       "tomos": 16,
+      "autores": [
+        {
+          "nombre": "Aka Akasaka",
+          "rol": "historia",
+          "nativo": "赤坂アカ"
+        },
+        {
+          "nombre": "Mengo Yokoyari",
+          "rol": "arte",
+          "nativo": "横槍メンゴ"
+        }
+      ],
       "generos": [
         "drama",
         "misterio",
@@ -3617,6 +4113,13 @@
       "fin": "2025-01-29",
       "capitulos": 537,
       "tomos": 37,
+      "autores": [
+        {
+          "nombre": "Tomohito Oda",
+          "rol": "historia y arte",
+          "nativo": "オダトモヒト"
+        }
+      ],
       "generos": [
         "comedia",
         "romance",
@@ -3691,6 +4194,13 @@
       "fin": "2025-07-18",
       "capitulos": 129,
       "tomos": 16,
+      "autores": [
+        {
+          "nombre": "Naoya Matsumoto",
+          "rol": "historia y arte",
+          "nativo": "松本直也"
+        }
+      ],
       "generos": [
         "accion",
         "ciencia-ficcion"
@@ -3778,6 +4288,13 @@
       "fin": "2011-04-19",
       "capitulos": 95,
       "tomos": 24,
+      "autores": [
+        {
+          "nombre": "Hirohiko Araki",
+          "rol": "historia y arte",
+          "nativo": "荒木飛呂彦"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -3830,6 +4347,13 @@
       "fin": "2018-01-01",
       "capitulos": 83,
       "tomos": 8,
+      "autores": [
+        {
+          "nombre": "Tatsuki Fujimoto",
+          "rol": "historia y arte",
+          "nativo": "藤本タツキ"
+        }
+      ],
       "generos": [
         "accion",
         "drama",
@@ -3906,6 +4430,13 @@
       "fin": "2020-07-20",
       "capitulos": 404,
       "tomos": 45,
+      "autores": [
+        {
+          "nombre": "Haruichi Furudate",
+          "rol": "historia y arte",
+          "nativo": "古舘春一"
+        }
+      ],
       "generos": [
         "comedia",
         "drama",
@@ -4004,6 +4535,18 @@
       "fin": "2006-05-15",
       "capitulos": 108,
       "tomos": 12,
+      "autores": [
+        {
+          "nombre": "Tsugumi Ooba",
+          "rol": "historia",
+          "nativo": "大場つぐみ"
+        },
+        {
+          "nombre": "Takeshi Obata",
+          "rol": "arte",
+          "nativo": "小畑健"
+        }
+      ],
       "generos": [
         "drama",
         "misterio",
@@ -4083,6 +4626,13 @@
       "fin": "2014-11-10",
       "capitulos": 700,
       "tomos": 72,
+      "autores": [
+        {
+          "nombre": "Masashi Kishimoto",
+          "rol": "historia y arte",
+          "nativo": "岸本斉史"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -4163,6 +4713,13 @@
       "fin": "2021-01-25",
       "capitulos": 127,
       "tomos": 13,
+      "autores": [
+        {
+          "nombre": "Yuuji Kaku",
+          "rol": "historia y arte",
+          "nativo": "賀来ゆうじ"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -4258,6 +4815,13 @@
       "fin": "2014-11-19",
       "capitulos": 64,
       "tomos": 7,
+      "autores": [
+        {
+          "nombre": "Yoshitoki Ooima",
+          "rol": "historia y arte",
+          "nativo": "大今良時"
+        }
+      ],
       "generos": [
         "drama",
         "romance",
@@ -4352,6 +4916,13 @@
       "fin": "2026-11-23",
       "capitulos": 284,
       "tomos": 31,
+      "autores": [
+        {
+          "nombre": "Yuuto  Suzuki",
+          "rol": "historia y arte",
+          "nativo": "鈴木祐斗"
+        }
+      ],
       "generos": [
         "accion",
         "comedia"
@@ -4434,6 +5005,18 @@
       "fin": "2024-04-04",
       "capitulos": 236,
       "tomos": 27,
+      "autores": [
+        {
+          "nombre": "Riichirou Inagaki",
+          "rol": "historia",
+          "nativo": "稲垣理一郎"
+        },
+        {
+          "nombre": "Boichi",
+          "rol": "arte",
+          "nativo": "ボウイチ"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -4522,6 +5105,13 @@
       "fin": "2018-09-12",
       "capitulos": 191,
       "tomos": 23,
+      "autores": [
+        {
+          "nombre": "Q Hayashida",
+          "rol": "historia y arte",
+          "nativo": "林田球"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -4580,6 +5170,13 @@
       "fin": "2022-04-11",
       "capitulos": 1,
       "tomos": 1,
+      "autores": [
+        {
+          "nombre": "Tatsuki Fujimoto",
+          "rol": "historia y arte",
+          "nativo": "藤本タツキ"
+        }
+      ],
       "generos": [
         "drama",
         "psicologico"
@@ -4655,6 +5252,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Kanehito Yamada",
+          "rol": "historia",
+          "nativo": "山田鐘人"
+        },
+        {
+          "nombre": "Tsukasa Abe",
+          "rol": "arte",
+          "nativo": "アベツカサ"
+        }
+      ],
       "generos": [
         "aventura",
         "drama",
@@ -4725,6 +5334,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Kamome Shirahama",
+          "rol": "historia y arte",
+          "nativo": "白浜鴎"
+        }
+      ],
       "generos": [
         "aventura",
         "drama",
@@ -4819,6 +5435,13 @@
       "fin": "2010-06-11",
       "capitulos": 116,
       "tomos": 27,
+      "autores": [
+        {
+          "nombre": "Hiromu Arakawa",
+          "rol": "historia y arte",
+          "nativo": "荒川弘"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -4907,6 +5530,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Yasuhisa Hara",
+          "rol": "historia y arte",
+          "nativo": "原泰久"
+        }
+      ],
       "generos": [
         "accion",
         "drama"
@@ -4976,6 +5606,13 @@
       "fin": "1996-06-04",
       "capitulos": 276,
       "tomos": 31,
+      "autores": [
+        {
+          "nombre": "Takehiko Inoue",
+          "rol": "historia y arte",
+          "nativo": "井上雄彦"
+        }
+      ],
       "generos": [
         "comedia",
         "drama",
@@ -5022,6 +5659,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Takeru Hokazono",
+          "rol": "historia y arte",
+          "nativo": "外薗健"
+        }
+      ],
       "generos": [
         "accion",
         "drama",
@@ -5109,6 +5753,13 @@
       "fin": "1995-05-23",
       "capitulos": 520,
       "tomos": 42,
+      "autores": [
+        {
+          "nombre": "Akira Toriyama",
+          "rol": "historia y arte",
+          "nativo": "鳥山明"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -5185,6 +5836,13 @@
       "fin": "2026-07-13",
       "capitulos": 250,
       "tomos": 28,
+      "autores": [
+        {
+          "nombre": "Kouji Miura",
+          "rol": "historia y arte",
+          "nativo": "三浦糀"
+        }
+      ],
       "generos": [
         "drama",
         "romance",
@@ -5286,6 +5944,13 @@
       "fin": "2023-09-15",
       "capitulos": 111,
       "tomos": 14,
+      "autores": [
+        {
+          "nombre": "Ryouko Kui",
+          "rol": "historia y arte",
+          "nativo": "九井諒子"
+        }
+      ],
       "generos": [
         "aventura",
         "comedia",
@@ -5342,6 +6007,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Kei Urana",
+          "rol": "historia y arte",
+          "nativo": "裏那圭"
+        }
+      ],
       "generos": [
         "accion",
         "drama",
@@ -5428,6 +6100,23 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Hermod",
+          "rol": "historia original",
+          "nativo": "헤르모드"
+        },
+        {
+          "nombre": "U-Ne Cho",
+          "rol": "historia",
+          "nativo": "조우네"
+        },
+        {
+          "nombre": "Wasakbasak",
+          "rol": "arte",
+          "nativo": "와삭바삭"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -5488,6 +6177,23 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Lego Balbasseo",
+          "rol": "historia original",
+          "nativo": "레고밟았어"
+        },
+        {
+          "nombre": "San-Chaek Lee",
+          "rol": "historia",
+          "nativo": "이산책"
+        },
+        {
+          "nombre": "Seol Arang",
+          "rol": "arte",
+          "nativo": "설아랑"
+        }
+      ],
       "generos": [
         "accion",
         "fantasia"
@@ -5554,6 +6260,17 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Biga",
+          "rol": "historia original",
+          "nativo": "비가"
+        },
+        {
+          "nombre": "LICO",
+          "rol": "historia y arte"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -5624,6 +6341,22 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Ryeo-Han Yu",
+          "rol": "historia original",
+          "nativo": "유려한"
+        },
+        {
+          "nombre": "Byeollarae",
+          "rol": "historia",
+          "nativo": "별나래"
+        },
+        {
+          "nombre": "PAN4",
+          "rol": "arte"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -5713,6 +6446,13 @@
       "fin": "2022-05-04",
       "capitulos": 133,
       "tomos": 13,
+      "autores": [
+        {
+          "nombre": "Ji-Hun Jeong",
+          "rol": "historia y arte",
+          "nativo": "정지훈"
+        }
+      ],
       "generos": [
         "accion",
         "drama",
@@ -5784,6 +6524,22 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Singsyong",
+          "rol": "historia original",
+          "nativo": "싱숑"
+        },
+        {
+          "nombre": "S-Cynan",
+          "rol": "historia"
+        },
+        {
+          "nombre": "Eondedeu Gamja",
+          "rol": "arte",
+          "nativo": "언데드 감자"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -5855,6 +6611,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Do-Yeon Sa",
+          "rol": "historia original",
+          "nativo": "사도연"
+        },
+        {
+          "nombre": "Nong Nong",
+          "rol": "arte",
+          "nativo": "농농"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -5909,6 +6677,26 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Hwangje Penguin",
+          "rol": "historia original",
+          "nativo": "황제펭귄"
+        },
+        {
+          "nombre": "COBY",
+          "rol": "historia"
+        },
+        {
+          "nombre": "AZI",
+          "rol": "historia"
+        },
+        {
+          "nombre": "Je-Won Lee",
+          "rol": "arte",
+          "nativo": "이제원"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -5973,6 +6761,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Gyeo-Eul Kwon",
+          "rol": "historia original",
+          "nativo": "권겨을"
+        },
+        {
+          "nombre": "Suwol",
+          "rol": "historia y arte",
+          "nativo": "수월"
+        }
+      ],
       "generos": [
         "drama",
         "fantasia",
@@ -6048,6 +6848,22 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Chi-U Kim",
+          "rol": "historia original",
+          "nativo": "김치우"
+        },
+        {
+          "nombre": "kiraz",
+          "rol": "historia"
+        },
+        {
+          "nombre": "Themis",
+          "rol": "arte",
+          "nativo": "테미스"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -6108,6 +6924,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Cheong-Dam",
+          "rol": "historia y arte",
+          "nativo": "청담"
+        }
+      ],
       "generos": [
         "accion",
         "fantasia"
@@ -6171,6 +6994,22 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Sae-Nal Park",
+          "rol": "historia original",
+          "nativo": "박새날"
+        },
+        {
+          "nombre": "Dong-Wook Lee",
+          "rol": "historia",
+          "nativo": "이동욱"
+        },
+        {
+          "nombre": "Team Argo",
+          "rol": "arte"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -6266,6 +7105,18 @@
       "fin": "2025-12-12",
       "capitulos": 135,
       "tomos": 9,
+      "autores": [
+        {
+          "nombre": "Plutus",
+          "rol": "historia",
+          "nativo": "플루토스"
+        },
+        {
+          "nombre": "Spoon",
+          "rol": "arte",
+          "nativo": "스푼"
+        }
+      ],
       "generos": [
         "comedia",
         "fantasia",
@@ -6346,6 +7197,18 @@
       "fin": "2019-01-07",
       "capitulos": 544,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Jae-Ho Son",
+          "rol": "historia",
+          "nativo": "손제호"
+        },
+        {
+          "nombre": "Gwang-Su Lee",
+          "rol": "arte",
+          "nativo": "이광수"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -6412,6 +7275,22 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Q10",
+          "rol": "historia original"
+        },
+        {
+          "nombre": "Dae-Ui Hong",
+          "rol": "historia",
+          "nativo": "홍대의"
+        },
+        {
+          "nombre": "Juno",
+          "rol": "arte",
+          "nativo": "주노"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -6473,6 +7352,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Korita",
+          "rol": "historia original",
+          "nativo": "코리타"
+        },
+        {
+          "nombre": "Green Kyrin",
+          "rol": "historia y arte",
+          "nativo": "기린그린"
+        }
+      ],
       "generos": [
         "accion",
         "fantasia"
@@ -6536,6 +7427,18 @@
       "fin": "2021-03-22",
       "capitulos": 158,
       "tomos": 9,
+      "autores": [
+        {
+          "nombre": "Milcha",
+          "rol": "historia original",
+          "nativo": "밀차"
+        },
+        {
+          "nombre": "Go-Rae",
+          "rol": "historia y arte",
+          "nativo": "고래"
+        }
+      ],
       "generos": [
         "comedia",
         "fantasia",
@@ -6609,6 +7512,18 @@
       "fin": "2024-01-27",
       "capitulos": 222,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Tae-Jun Park",
+          "rol": "historia",
+          "nativo": "박태준"
+        },
+        {
+          "nombre": "Jeong-Hyeon Kim",
+          "rol": "arte",
+          "nativo": "김정현"
+        }
+      ],
       "generos": [
         "accion",
         "comedia"
@@ -6674,6 +7589,28 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Soulpung",
+          "rol": "historia original",
+          "nativo": "소울풍"
+        },
+        {
+          "nombre": "Hyeon-Min Lee",
+          "rol": "historia",
+          "nativo": "이현민"
+        },
+        {
+          "nombre": "Ga Nara",
+          "rol": "historia",
+          "nativo": "가나라"
+        },
+        {
+          "nombre": "An Lee",
+          "rol": "arte",
+          "nativo": "이안"
+        }
+      ],
       "generos": [
         "accion",
         "fantasia"
@@ -6732,6 +7669,23 @@
       "fin": "2023-03-27",
       "capitulos": 411,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Sanjijiksong",
+          "rol": "historia original",
+          "nativo": "산지직송"
+        },
+        {
+          "nombre": "Yoonz",
+          "rol": "historia",
+          "nativo": "윤쓰"
+        },
+        {
+          "nombre": "3B2S",
+          "rol": "arte",
+          "nativo": "쓰리비투에스"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -6817,6 +7771,17 @@
       "fin": "2023-09-02",
       "capitulos": 460,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Rong Rong",
+          "rol": "historia",
+          "nativo": "荣荣"
+        },
+        {
+          "nombre": "DW",
+          "rol": "arte"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -6871,6 +7836,28 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Mei Yue Yi Geng",
+          "rol": "historia original",
+          "nativo": "每月一更"
+        },
+        {
+          "nombre": "Lie Ren",
+          "rol": "historia",
+          "nativo": "猎人"
+        },
+        {
+          "nombre": "Ruo Zhi Ji Ji",
+          "rol": "arte",
+          "nativo": "弱智鸡鸡"
+        },
+        {
+          "nombre": "Ji Zhi Wa Wa",
+          "rol": "arte",
+          "nativo": "机智蛙蛙"
+        }
+      ],
       "generos": [
         "accion",
         "drama",
@@ -6945,6 +7932,18 @@
       "fin": "2022-10-26",
       "capitulos": 259,
       "tomos": 13,
+      "autores": [
+        {
+          "nombre": "Mo Xiang Tong Xiu",
+          "rol": "historia original",
+          "nativo": "墨香铜臭"
+        },
+        {
+          "nombre": "Luo Di Cheng Qiu",
+          "rol": "historia y arte",
+          "nativo": "落地成球"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -6998,6 +7997,18 @@
       "fin": "2025-03-30",
       "capitulos": 695,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Er Mu",
+          "rol": "historia original",
+          "nativo": "二目"
+        },
+        {
+          "nombre": "Yuewen Manhua",
+          "rol": "historia y arte",
+          "nativo": "阅文漫画"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -7062,6 +8073,13 @@
       "fin": "2022-02-02",
       "capitulos": 125,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Ghost",
+          "rol": "historia y arte",
+          "nativo": "郭斯特"
+        }
+      ],
       "generos": [
         "comedia",
         "recuentos-de-la-vida"
@@ -7147,6 +8165,23 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Cha-Cha Kim",
+          "rol": "historia original",
+          "nativo": "김차차"
+        },
+        {
+          "nombre": "Chokam",
+          "rol": "historia",
+          "nativo": "초캄"
+        },
+        {
+          "nombre": "Cheong-Gwa",
+          "rol": "arte",
+          "nativo": "청과"
+        }
+      ],
       "generos": [
         "drama",
         "fantasia",
@@ -7220,6 +8255,23 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Man Tu De Zhu",
+          "rol": "historia original",
+          "nativo": "慢途的猪"
+        },
+        {
+          "nombre": "Hetun Dusu",
+          "rol": "historia",
+          "nativo": "河豚毒素"
+        },
+        {
+          "nombre": "Ke Xin",
+          "rol": "arte",
+          "nativo": "可心"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -7295,6 +8347,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Tian Can Tudou",
+          "rol": "historia original",
+          "nativo": "天蚕土豆"
+        },
+        {
+          "nombre": "Xiang Ren",
+          "rol": "arte",
+          "nativo": "任翔"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -7355,6 +8419,18 @@
       "fin": "2023-03-09",
       "capitulos": 161,
       "tomos": 3,
+      "autores": [
+        {
+          "nombre": "ShuiBian Jing",
+          "rol": "historia",
+          "nativo": "静水边"
+        },
+        {
+          "nombre": "Liu Zang Tang",
+          "rol": "arte",
+          "nativo": "六藏糖"
+        }
+      ],
       "generos": [
         "romance",
         "deportes"
@@ -7425,6 +8501,17 @@
       "fin": "2020",
       "capitulos": 65,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Ai Qianshui de Wuzei",
+          "rol": "historia original",
+          "nativo": "爱潜水的乌贼"
+        },
+        {
+          "nombre": "V",
+          "rol": "historia y arte"
+        }
+      ],
       "generos": [
         "accion",
         "drama",
@@ -7479,6 +8566,13 @@
       "fin": "2018-07-05",
       "capitulos": 181,
       "tomos": 16,
+      "autores": [
+        {
+          "nombre": "Sui Ishida",
+          "rol": "historia y arte",
+          "nativo": "石田スイ"
+        }
+      ],
       "generos": [
         "accion",
         "drama",
@@ -7561,6 +8655,13 @@
       "fin": "2013-08-12",
       "capitulos": 117,
       "tomos": 25,
+      "autores": [
+        {
+          "nombre": "Atsushi Ookubo",
+          "rol": "historia y arte",
+          "nativo": "大久保篤"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -7636,6 +8737,23 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Takumi Fukui",
+          "rol": "historia",
+          "nativo": "フクイタクミ"
+        },
+        {
+          "nombre": "Shinya Umemura",
+          "rol": "historia",
+          "nativo": "梅村真也"
+        },
+        {
+          "nombre": "Azychika",
+          "rol": "arte",
+          "nativo": "アジチカ"
+        }
+      ],
       "generos": [
         "accion",
         "drama",
@@ -7705,6 +8823,13 @@
       "fin": "2022-02-22",
       "capitulos": 305,
       "tomos": 34,
+      "autores": [
+        {
+          "nombre": "Atsushi Ookubo",
+          "rol": "historia y arte",
+          "nativo": "大久保篤"
+        }
+      ],
       "generos": [
         "accion",
         "drama",
@@ -7786,6 +8911,13 @@
       "fin": "2024-01-06",
       "capitulos": 109,
       "tomos": 27,
+      "autores": [
+        {
+          "nombre": "Adachitoka",
+          "rol": "historia y arte",
+          "nativo": "あだちとか"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -7870,6 +9002,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Fuse",
+          "rol": "historia original",
+          "nativo": "伏瀬"
+        },
+        {
+          "nombre": "Taiki Kawakami",
+          "rol": "historia y arte",
+          "nativo": "川上泰樹"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -7948,6 +9092,13 @@
       "fin": "2023-07-03",
       "capitulos": 162,
       "tomos": 18,
+      "autores": [
+        {
+          "nombre": "Hajime Koumoto",
+          "rol": "historia y arte",
+          "nativo": "甲本一"
+        }
+      ],
       "generos": [
         "accion",
         "comedia",
@@ -8042,6 +9193,13 @@
       "fin": "2016-04-25",
       "capitulos": 188,
       "tomos": 21,
+      "autores": [
+        {
+          "nombre": "Yuusei Matsui",
+          "rol": "historia y arte",
+          "nativo": "松井優征"
+        }
+      ],
       "generos": [
         "accion",
         "comedia",
@@ -8124,6 +9282,13 @@
       "fin": "2017-07-26",
       "capitulos": 549,
       "tomos": 63,
+      "autores": [
+        {
+          "nombre": "Hiro Mashima",
+          "rol": "historia y arte",
+          "nativo": "真島ヒロ"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -8216,6 +9381,13 @@
       "fin": "2020-03-25",
       "capitulos": 367,
       "tomos": 41,
+      "autores": [
+        {
+          "nombre": "Nakaba Suzuki",
+          "rol": "historia y arte",
+          "nativo": "鈴木央"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -8306,6 +9478,12 @@
       "fin": "2017-12-22",
       "capitulos": 201,
       "tomos": 16,
+      "autores": [
+        {
+          "nombre": "ONE",
+          "rol": "historia y arte"
+        }
+      ],
       "generos": [
         "accion",
         "comedia",
@@ -8376,6 +9554,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Katsura Hoshino",
+          "rol": "historia y arte",
+          "nativo": "星野桂"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -8438,6 +9623,13 @@
       "fin": "1994-07-05",
       "capitulos": 176,
       "tomos": 19,
+      "autores": [
+        {
+          "nombre": "Yoshihiro Togashi",
+          "rol": "historia y arte",
+          "nativo": "冨樫義博"
+        }
+      ],
       "generos": [
         "accion",
         "comedia",
@@ -8515,6 +9707,13 @@
       "fin": "1999-09-21",
       "capitulos": 259,
       "tomos": 28,
+      "autores": [
+        {
+          "nombre": "Nobuhiro Watsuki",
+          "rol": "historia y arte",
+          "nativo": "和月伸宏"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -8599,6 +9798,13 @@
       "fin": "2019-06-20",
       "capitulos": 709,
       "tomos": 77,
+      "autores": [
+        {
+          "nombre": "Hideaki Sorachi",
+          "rol": "historia y arte",
+          "nativo": "空知英秋"
+        }
+      ],
       "generos": [
         "accion",
         "comedia",
@@ -8673,6 +9879,13 @@
       "fin": "2025-01-27",
       "capitulos": 244,
       "tomos": 27,
+      "autores": [
+        {
+          "nombre": "Yoshifumi Tozuka",
+          "rol": "historia y arte",
+          "nativo": "戸塚慶文"
+        }
+      ],
       "generos": [
         "accion",
         "comedia",
@@ -8762,6 +9975,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Haro Aso",
+          "rol": "historia",
+          "nativo": "麻生羽呂"
+        },
+        {
+          "nombre": "Koutarou Takata",
+          "rol": "arte",
+          "nativo": "高田康太郎"
+        }
+      ],
       "generos": [
         "accion",
         "comedia",
@@ -8820,6 +10045,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Osamu Nishi",
+          "rol": "historia",
+          "nativo": "西修"
+        },
+        {
+          "nombre": "Shiro Usazaki",
+          "rol": "arte",
+          "nativo": "宇佐崎しろ"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -8909,6 +10146,13 @@
       "fin": "2024-04-25",
       "capitulos": 120,
       "tomos": 13,
+      "autores": [
+        {
+          "nombre": "Haruko Ichikawa",
+          "rol": "historia y arte",
+          "nativo": "市川春子"
+        }
+      ],
       "generos": [
         "accion",
         "drama",
@@ -8992,6 +10236,28 @@
       "fin": "2011-11-10",
       "capitulos": 170,
       "tomos": 17,
+      "autores": [
+        {
+          "nombre": "Jirou Nitta",
+          "rol": "historia original",
+          "nativo": "新田次郎"
+        },
+        {
+          "nombre": "Shinichi Sakamoto",
+          "rol": "historia y arte",
+          "nativo": "坂本眞一"
+        },
+        {
+          "nombre": "Yoshio Nabeta",
+          "rol": "historia",
+          "nativo": "鍋田吉郎"
+        },
+        {
+          "nombre": "Hiroshi Takano",
+          "rol": "historia",
+          "nativo": "高野洋"
+        }
+      ],
       "generos": [
         "aventura",
         "drama",
@@ -9036,6 +10302,13 @@
       "fin": "2011-02-21",
       "capitulos": 166,
       "tomos": 15,
+      "autores": [
+        {
+          "nombre": "Hideo Yamamoto",
+          "rol": "historia y arte",
+          "nativo": "山本英夫"
+        }
+      ],
       "generos": [
         "drama",
         "terror",
@@ -9089,6 +10362,13 @@
       "fin": "1999-08-30",
       "capitulos": 20,
       "tomos": 3,
+      "autores": [
+        {
+          "nombre": "Junji Itou",
+          "rol": "historia y arte",
+          "nativo": "伊藤潤二"
+        }
+      ],
       "generos": [
         "drama",
         "terror",
@@ -9159,6 +10439,13 @@
       "fin": "2023-09-08",
       "capitulos": 153,
       "tomos": 17,
+      "autores": [
+        {
+          "nombre": "Shuuzou Oshimi",
+          "rol": "historia y arte",
+          "nativo": "押見修造"
+        }
+      ],
       "generos": [
         "drama",
         "terror",
@@ -9216,6 +10503,13 @@
       "fin": "2022-04-28",
       "capitulos": 314,
       "tomos": 31,
+      "autores": [
+        {
+          "nombre": "Satoru Noda",
+          "rol": "historia y arte",
+          "nativo": "野田サトル"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -9297,6 +10591,13 @@
       "fin": "2025-06-04",
       "capitulos": 202,
       "tomos": 25,
+      "autores": [
+        {
+          "nombre": "Yoshitoki Ooima",
+          "rol": "historia y arte",
+          "nativo": "大今良時"
+        }
+      ],
       "generos": [
         "aventura",
         "drama",
@@ -9375,6 +10676,13 @@
       "fin": "2018-01-12",
       "capitulos": 47,
       "tomos": 6,
+      "autores": [
+        {
+          "nombre": "Tsukumizu",
+          "rol": "historia y arte",
+          "nativo": "つくみず"
+        }
+      ],
       "generos": [
         "aventura",
         "ciencia-ficcion",
@@ -9422,6 +10730,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Takehiko Inoue",
+          "rol": "historia y arte",
+          "nativo": "井上雄彦"
+        }
+      ],
       "generos": [
         "drama",
         "psicologico",
@@ -9465,6 +10780,13 @@
       "fin": "1990-06-25",
       "capitulos": 120,
       "tomos": 6,
+      "autores": [
+        {
+          "nombre": "Katsuhiro Ootomo",
+          "rol": "historia y arte",
+          "nativo": "大友克洋"
+        }
+      ],
       "generos": [
         "accion",
         "terror",
@@ -9512,6 +10834,28 @@
       "fin": "2009-04-01",
       "capitulos": 65,
       "tomos": 8,
+      "autores": [
+        {
+          "nombre": "Osamu Tezuka",
+          "rol": "historia original",
+          "nativo": "手塚治虫"
+        },
+        {
+          "nombre": "Naoki Urasawa",
+          "rol": "historia y arte",
+          "nativo": "浦沢直樹"
+        },
+        {
+          "nombre": "Takashi Nagasaki",
+          "rol": "historia",
+          "nativo": "長崎尚志"
+        },
+        {
+          "nombre": "Makoto Tezuka",
+          "rol": "historia",
+          "nativo": "手塚眞"
+        }
+      ],
       "generos": [
         "drama",
         "mecha",
@@ -9567,6 +10911,13 @@
       "fin": "2016-03-02",
       "capitulos": 87,
       "tomos": 18,
+      "autores": [
+        {
+          "nombre": "Haro Aso",
+          "rol": "historia y arte",
+          "nativo": "麻生羽呂"
+        }
+      ],
       "generos": [
         "accion",
         "drama",
@@ -9646,6 +10997,13 @@
       "fin": "2026-10-20",
       "capitulos": 160,
       "tomos": 10,
+      "autores": [
+        {
+          "nombre": "Mokmok Len",
+          "rol": "historia y arte",
+          "nativo": "モクモクれん"
+        }
+      ],
       "generos": [
         "terror",
         "misterio",
@@ -9720,6 +11078,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Akihito Tsukushi",
+          "rol": "historia y arte",
+          "nativo": "つくしあきひと"
+        }
+      ],
       "generos": [
         "aventura",
         "drama",
@@ -9792,6 +11157,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Natsu Hyuuga",
+          "rol": "historia original",
+          "nativo": "日向夏"
+        },
+        {
+          "nombre": "Erika Ikeda",
+          "rol": "historia y arte",
+          "nativo": "池田恵理香"
+        }
+      ],
       "generos": [
         "drama",
         "misterio"
@@ -9863,6 +11240,13 @@
       "fin": "2013-06-04",
       "capitulos": 97,
       "tomos": 14,
+      "autores": [
+        {
+          "nombre": "Yoshiyuki Sadamoto",
+          "rol": "historia y arte",
+          "nativo": "貞本義行"
+        }
+      ],
       "generos": [
         "accion",
         "drama",
@@ -9922,6 +11306,13 @@
       "fin": "1994-04-01",
       "capitulos": 110,
       "tomos": 19,
+      "autores": [
+        {
+          "nombre": "Akimi Yoshida",
+          "rol": "historia y arte",
+          "nativo": "吉田秋生"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -9998,6 +11389,13 @@
       "fin": "1995-12-23",
       "capitulos": 64,
       "tomos": 10,
+      "autores": [
+        {
+          "nombre": "Hitoshi Iwaaki",
+          "rol": "historia y arte",
+          "nativo": "岩明均"
+        }
+      ],
       "generos": [
         "accion",
         "drama",
@@ -10088,6 +11486,13 @@
       "fin": "2016-11-04",
       "capitulos": 49,
       "tomos": 9,
+      "autores": [
+        {
+          "nombre": "Kei Sanbe",
+          "rol": "historia y arte",
+          "nativo": "三部けい"
+        }
+      ],
       "generos": [
         "drama",
         "misterio",
@@ -10153,6 +11558,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Masakazu Ishiguro",
+          "rol": "historia y arte",
+          "nativo": "石黒正教"
+        }
+      ],
       "generos": [
         "aventura",
         "drama",
@@ -10210,6 +11622,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Chica Umino",
+          "rol": "historia y arte",
+          "nativo": "羽海野チカ"
+        }
+      ],
       "generos": [
         "drama",
         "recuentos-de-la-vida"
@@ -10255,6 +11674,13 @@
       "fin": "2008-08-25",
       "capitulos": 50,
       "tomos": 10,
+      "autores": [
+        {
+          "nombre": "Yuki Urushibara",
+          "rol": "historia y arte",
+          "nativo": "漆原友紀"
+        }
+      ],
       "generos": [
         "drama",
         "fantasia",
@@ -10350,6 +11776,13 @@
       "fin": "2021-07-19",
       "capitulos": 1,
       "tomos": 1,
+      "autores": [
+        {
+          "nombre": "Tatsuki Fujimoto",
+          "rol": "historia y arte",
+          "nativo": "藤本タツキ"
+        }
+      ],
       "generos": [
         "drama",
         "recuentos-de-la-vida"
@@ -10425,6 +11858,13 @@
       "fin": "2022-03-25",
       "capitulos": 16,
       "tomos": 2,
+      "autores": [
+        {
+          "nombre": "Taizan 5",
+          "rol": "historia y arte",
+          "nativo": "タイザン5"
+        }
+      ],
       "generos": [
         "drama",
         "psicologico",
@@ -10490,6 +11930,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Tsubasa Yamaguchi",
+          "rol": "historia y arte",
+          "nativo": "山口つばさ"
+        }
+      ],
       "generos": [
         "drama",
         "recuentos-de-la-vida"
@@ -10573,6 +12020,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Kiyohiko Azuma",
+          "rol": "historia y arte",
+          "nativo": "あずまきよひこ"
+        }
+      ],
       "generos": [
         "comedia",
         "recuentos-de-la-vida"
@@ -10630,6 +12084,13 @@
       "fin": "2025-07-04",
       "capitulos": 119,
       "tomos": 15,
+      "autores": [
+        {
+          "nombre": "Shinichi Fukuda",
+          "rol": "historia y arte",
+          "nativo": "福田晋一"
+        }
+      ],
       "generos": [
         "comedia",
         "romance",
@@ -10706,6 +12167,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Saka Mikami",
+          "rol": "historia y arte",
+          "nativo": "三香見サカ"
+        }
+      ],
       "generos": [
         "comedia",
         "drama",
@@ -10806,6 +12274,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Kenji Inoue",
+          "rol": "historia",
+          "nativo": "井上堅二"
+        },
+        {
+          "nombre": "Kimitake Yoshioka",
+          "rol": "arte",
+          "nativo": "吉岡公威"
+        }
+      ],
       "generos": [
         "comedia",
         "romance",
@@ -10877,6 +12357,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Kousuke Oono",
+          "rol": "historia y arte",
+          "nativo": "おおのこうすけ"
+        }
+      ],
       "generos": [
         "comedia",
         "recuentos-de-la-vida"
@@ -10938,6 +12425,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Ai Yazawa",
+          "rol": "historia y arte",
+          "nativo": "矢沢あい"
+        }
+      ],
       "generos": [
         "drama",
         "musica",
@@ -11022,6 +12516,13 @@
       "fin": "2006-11-20",
       "capitulos": 137,
       "tomos": 23,
+      "autores": [
+        {
+          "nombre": "Natsuki Takaya",
+          "rol": "historia y arte",
+          "nativo": "高屋奈月"
+        }
+      ],
       "generos": [
         "comedia",
         "drama",
@@ -11088,6 +12589,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Misaki Takamatsu",
+          "rol": "historia y arte",
+          "nativo": "高松美咲"
+        }
+      ],
       "generos": [
         "comedia",
         "romance",
@@ -11152,6 +12660,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Suu Morishita",
+          "rol": "historia y arte",
+          "nativo": "森下suu"
+        }
+      ],
       "generos": [
         "romance",
         "recuentos-de-la-vida"
@@ -11236,6 +12751,13 @@
       "fin": "2026-09-15",
       "capitulos": 199,
       "tomos": 14,
+      "autores": [
+        {
+          "nombre": "Norio Sakurai",
+          "rol": "historia y arte",
+          "nativo": "桜井のりお"
+        }
+      ],
       "generos": [
         "comedia",
         "romance",
@@ -11300,6 +12822,13 @@
       "fin": "2020-02-19",
       "capitulos": 122,
       "tomos": 14,
+      "autores": [
+        {
+          "nombre": "Negi Haruba",
+          "rol": "historia y arte",
+          "nativo": "春場ねぎ"
+        }
+      ],
       "generos": [
         "comedia",
         "drama",
@@ -11399,6 +12928,13 @@
       "fin": "2024-01-24",
       "capitulos": 203,
       "tomos": 20,
+      "autores": [
+        {
+          "nombre": "Kotoyama",
+          "rol": "historia y arte",
+          "nativo": "コトヤマ"
+        }
+      ],
       "generos": [
         "comedia",
         "psicologico",
@@ -11476,6 +13012,13 @@
       "fin": "2026-07-03",
       "capitulos": 295,
       "tomos": 48,
+      "autores": [
+        {
+          "nombre": "Mizuho Kusanagi",
+          "rol": "historia y arte",
+          "nativo": "草凪みずほ"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -11546,6 +13089,13 @@
       "fin": "2019-09-27",
       "capitulos": 53,
       "tomos": 8,
+      "autores": [
+        {
+          "nombre": "Nio Nakatani",
+          "rol": "historia y arte",
+          "nativo": "仲谷鳰"
+        }
+      ],
       "generos": [
         "drama",
         "romance",
@@ -11614,6 +13164,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Reiji Miyajima",
+          "rol": "historia y arte",
+          "nativo": "宮島礼吏"
+        }
+      ],
       "generos": [
         "comedia",
         "drama",
@@ -11679,6 +13236,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "George Morikawa",
+          "rol": "historia y arte",
+          "nativo": "森川ジョージ"
+        }
+      ],
       "generos": [
         "accion",
         "comedia",
@@ -11736,6 +13300,18 @@
       "fin": "2025-06-23",
       "capitulos": 410,
       "tomos": 40,
+      "autores": [
+        {
+          "nombre": "Yuugo Kobayashi",
+          "rol": "historia y arte",
+          "nativo": "小林有吾"
+        },
+        {
+          "nombre": "Naohiko Ueno",
+          "rol": "historia",
+          "nativo": "上野直彦"
+        }
+      ],
       "generos": [
         "deportes"
       ],
@@ -11784,6 +13360,13 @@
       "fin": "2022-08-01",
       "capitulos": 248,
       "tomos": 50,
+      "autores": [
+        {
+          "nombre": "Yuki Suetsugu",
+          "rol": "historia y arte",
+          "nativo": "末次由紀"
+        }
+      ],
       "generos": [
         "drama",
         "romance",
@@ -11884,6 +13467,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Ikada Tsuruma",
+          "rol": "historia y arte",
+          "nativo": "つるまいかだ"
+        }
+      ],
       "generos": [
         "drama",
         "psicologico",
@@ -11950,6 +13540,13 @@
       "fin": "2014-09-01",
       "capitulos": 276,
       "tomos": 30,
+      "autores": [
+        {
+          "nombre": "Tadatoshi Fujimaki",
+          "rol": "historia y arte",
+          "nativo": "藤巻忠俊"
+        }
+      ],
       "generos": [
         "comedia",
         "deportes"
@@ -12026,6 +13623,18 @@
       "fin": "2009-06-15",
       "capitulos": 333,
       "tomos": 37,
+      "autores": [
+        {
+          "nombre": "Riichirou Inagaki",
+          "rol": "historia",
+          "nativo": "稲垣理一郎"
+        },
+        {
+          "nombre": "Yuusuke Murata",
+          "rol": "arte",
+          "nativo": "村田雄介"
+        }
+      ],
       "generos": [
         "comedia",
         "deportes"
@@ -12071,6 +13680,13 @@
       "fin": "2025-07-06",
       "capitulos": 554,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Yong-Seok Jo",
+          "rol": "historia y arte",
+          "nativo": "조용석"
+        }
+      ],
       "generos": [
         "accion",
         "comedia",
@@ -12107,6 +13723,18 @@
       "fin": "2010-07-20",
       "capitulos": 72,
       "tomos": 10,
+      "autores": [
+        {
+          "nombre": "Geuk-Jin Jeon",
+          "rol": "historia",
+          "nativo": "전극진"
+        },
+        {
+          "nombre": "Jin-Hwan Park",
+          "rol": "arte",
+          "nativo": "박진환"
+        }
+      ],
       "generos": [
         "accion",
         "comedia",
@@ -12146,6 +13774,22 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Sanjijiksong",
+          "rol": "historia original",
+          "nativo": "산지직송"
+        },
+        {
+          "nombre": "HEATS",
+          "rol": "historia"
+        },
+        {
+          "nombre": "Beom-Geun Lee",
+          "rol": "arte",
+          "nativo": "이범근"
+        }
+      ],
       "generos": [
         "accion",
         "fantasia"
@@ -12215,6 +13859,23 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Nakhasan",
+          "rol": "historia original",
+          "nativo": "낙하산"
+        },
+        {
+          "nombre": "Barnicle",
+          "rol": "historia",
+          "nativo": "따개비"
+        },
+        {
+          "nombre": "Deok-Yong Kim",
+          "rol": "arte",
+          "nativo": "김덕용"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -12276,6 +13937,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Gyeong-Bae Im",
+          "rol": "historia original",
+          "nativo": "임경배"
+        },
+        {
+          "nombre": "Sun-Gyu Gwon",
+          "rol": "historia y arte",
+          "nativo": "권순규"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -12334,6 +14007,23 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Gabinji",
+          "rol": "historia original",
+          "nativo": "가빈지"
+        },
+        {
+          "nombre": "Aengmusae",
+          "rol": "historia",
+          "nativo": "앵무새"
+        },
+        {
+          "nombre": "Jeong-Jae Park",
+          "rol": "arte",
+          "nativo": "박정재"
+        }
+      ],
       "generos": [
         "accion",
         "fantasia"
@@ -12391,6 +14081,22 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Deung-Byeol Lee",
+          "rol": "historia original",
+          "nativo": "이등별"
+        },
+        {
+          "nombre": "doip",
+          "rol": "historia"
+        },
+        {
+          "nombre": "Do-Mun Do",
+          "rol": "arte",
+          "nativo": "도도문"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -12451,6 +14157,23 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Gap-Song Ji",
+          "rol": "historia original",
+          "nativo": "지갑송"
+        },
+        {
+          "nombre": "Seul-Gi Park",
+          "rol": "historia",
+          "nativo": "박슬기"
+        },
+        {
+          "nombre": "Ju-Hui O",
+          "rol": "arte",
+          "nativo": "오주희"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -12510,6 +14233,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Heugain",
+          "rol": "historia original",
+          "nativo": "흑아인"
+        },
+        {
+          "nombre": "O-Hyeon",
+          "rol": "historia y arte",
+          "nativo": "오현"
+        }
+      ],
       "generos": [
         "accion",
         "fantasia"
@@ -12573,6 +14308,22 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Jin-Seong Yu",
+          "rol": "historia original",
+          "nativo": "유진성"
+        },
+        {
+          "nombre": "JP",
+          "rol": "historia"
+        },
+        {
+          "nombre": "Hi Lee",
+          "rol": "arte",
+          "nativo": "이히"
+        }
+      ],
       "generos": [
         "accion",
         "fantasia"
@@ -12630,6 +14381,18 @@
       "fin": "2025-10-09",
       "capitulos": 132,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Kkultarae",
+          "rol": "historia",
+          "nativo": "꿀타래"
+        },
+        {
+          "nombre": "Damcho",
+          "rol": "arte",
+          "nativo": "담초"
+        }
+      ],
       "generos": [
         "comedia",
         "drama",
@@ -12697,6 +14460,23 @@
       "fin": "2026-06-07",
       "capitulos": 144,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Ppongttamatseukeuryuba",
+          "rol": "historia original",
+          "nativo": "뽕따맛스크류바"
+        },
+        {
+          "nombre": "Yeolmae",
+          "rol": "historia",
+          "nativo": "열매"
+        },
+        {
+          "nombre": "Blue Canna",
+          "rol": "arte",
+          "nativo": "푸른칸나"
+        }
+      ],
       "generos": [
         "comedia",
         "drama",
@@ -12764,6 +14544,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Gold Haeng",
+          "rol": "historia y historia original",
+          "nativo": "골드행"
+        },
+        {
+          "nombre": "Jin-Seok Park",
+          "rol": "arte",
+          "nativo": "박진석"
+        }
+      ],
       "generos": [
         "accion",
         "fantasia"
@@ -12830,6 +14622,13 @@
       "fin": "2021-09-22",
       "capitulos": 93,
       "tomos": 8,
+      "autores": [
+        {
+          "nombre": "Li-Na Lim",
+          "rol": "historia y arte",
+          "nativo": "임리나"
+        }
+      ],
       "generos": [
         "accion",
         "drama",
@@ -12906,6 +14705,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Roah Kim",
+          "rol": "historia original",
+          "nativo": "김로아"
+        },
+        {
+          "nombre": "Mon",
+          "rol": "historia y arte",
+          "nativo": "몬"
+        }
+      ],
       "generos": [
         "drama",
         "fantasia",
@@ -12970,6 +14781,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Zero-BIG",
+          "rol": "historia original",
+          "nativo": "제로빅"
+        },
+        {
+          "nombre": "Cheol-byeok Jang",
+          "rol": "arte",
+          "nativo": "장철벽"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -13022,6 +14845,28 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Yungang Jeong",
+          "rol": "historia original",
+          "nativo": "정윤강"
+        },
+        {
+          "nombre": "Taesu Han",
+          "rol": "historia",
+          "nativo": "한태수"
+        },
+        {
+          "nombre": "Team The Jick",
+          "rol": "historia",
+          "nativo": "팀 더 지크"
+        },
+        {
+          "nombre": "MIDNIGHT STUDIO",
+          "rol": "arte",
+          "nativo": "미드나잇 스튜디오"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -13095,6 +14940,18 @@
       "fin": "2025-08-06",
       "capitulos": 115,
       "tomos": 9,
+      "autores": [
+        {
+          "nombre": "Kyung-Tak Lee",
+          "rol": "historia",
+          "nativo": "이경탁"
+        },
+        {
+          "nombre": "Mi-Young No",
+          "rol": "arte",
+          "nativo": "노미영"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -13152,6 +15009,18 @@
       "fin": "2023-10-14",
       "capitulos": 268,
       "tomos": 19,
+      "autores": [
+        {
+          "nombre": "Seopass",
+          "rol": "historia",
+          "nativo": "서패스"
+        },
+        {
+          "nombre": "Jin-Seok Kim",
+          "rol": "arte",
+          "nativo": "김진석"
+        }
+      ],
       "generos": [
         "accion",
         "drama"
@@ -13217,6 +15086,23 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Kin",
+          "rol": "historia original",
+          "nativo": "킨"
+        },
+        {
+          "nombre": "Mongdang",
+          "rol": "historia",
+          "nativo": "몽당"
+        },
+        {
+          "nombre": "Yoreumppit",
+          "rol": "historia y arte",
+          "nativo": "여름빛"
+        }
+      ],
       "generos": [
         "drama",
         "fantasia",
@@ -13263,6 +15149,13 @@
       "fin": "2010-12-31",
       "capitulos": 28,
       "tomos": 3,
+      "autores": [
+        {
+          "nombre": "Il-Kwon Ha",
+          "rol": "historia y arte",
+          "nativo": "하일권"
+        }
+      ],
       "generos": [
         "drama",
         "psicologico",
@@ -13328,6 +15221,23 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Alpha Tart",
+          "rol": "historia original",
+          "nativo": "알파타르트"
+        },
+        {
+          "nombre": "Hieori",
+          "rol": "historia",
+          "nativo": "히어리"
+        },
+        {
+          "nombre": "Sumpul",
+          "rol": "arte",
+          "nativo": "숨풀"
+        }
+      ],
       "generos": [
         "drama",
         "fantasia",
@@ -13397,6 +15307,23 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Hanjung Worya",
+          "rol": "historia original",
+          "nativo": "한중월야"
+        },
+        {
+          "nombre": "Mad Bird",
+          "rol": "historia",
+          "nativo": "매드버드"
+        },
+        {
+          "nombre": "Tae-Hyeong Kim",
+          "rol": "arte",
+          "nativo": "김태형"
+        }
+      ],
       "generos": [
         "accion",
         "fantasia"
@@ -13453,6 +15380,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "JIXKSEE",
+          "rol": "historia y arte",
+          "nativo": "직씨"
+        }
+      ],
       "generos": [
         "drama",
         "romance"
@@ -13518,6 +15452,17 @@
       "fin": "2023-03-31",
       "capitulos": 130,
       "tomos": 12,
+      "autores": [
+        {
+          "nombre": "HONGDUCK",
+          "rol": "historia",
+          "nativo": "홍덕"
+        },
+        {
+          "nombre": "NEMONE",
+          "rol": "arte"
+        }
+      ],
       "generos": [
         "comedia",
         "drama",
@@ -13581,6 +15526,22 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Yeong-Hun Jang",
+          "rol": "historia original",
+          "nativo": "장영훈"
+        },
+        {
+          "nombre": "JP",
+          "rol": "historia"
+        },
+        {
+          "nombre": "Jin-Hwan Park",
+          "rol": "arte",
+          "nativo": "박진환"
+        }
+      ],
       "generos": [
         "accion",
         "fantasia"
@@ -13637,6 +15598,18 @@
       "fin": "2020-06-13",
       "capitulos": 68,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Carnby Kim",
+          "rol": "historia",
+          "nativo": "김칸비"
+        },
+        {
+          "nombre": "Beom-Sik Cheon",
+          "rol": "arte",
+          "nativo": "천범식"
+        }
+      ],
       "generos": [
         "drama",
         "terror",
@@ -13702,6 +15675,18 @@
       "fin": "2022-06-20",
       "capitulos": 69,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Carnby Kim",
+          "rol": "historia",
+          "nativo": "김칸비"
+        },
+        {
+          "nombre": "Pil Hong",
+          "rol": "arte",
+          "nativo": "홍필"
+        }
+      ],
       "generos": [
         "accion",
         "terror",
@@ -13768,6 +15753,22 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Su-Ji Kim",
+          "rol": "historia original",
+          "nativo": "김수지"
+        },
+        {
+          "nombre": "Namu",
+          "rol": "historia",
+          "nativo": "나무"
+        },
+        {
+          "nombre": "P",
+          "rol": "arte"
+        }
+      ],
       "generos": [
         "drama",
         "fantasia",
@@ -13825,6 +15826,13 @@
       "fin": "2023-04-10",
       "capitulos": 257,
       "tomos": 19,
+      "autores": [
+        {
+          "nombre": "Yaongyi",
+          "rol": "historia y arte",
+          "nativo": "야옹이"
+        }
+      ],
       "generos": [
         "comedia",
         "drama",
@@ -13888,6 +15896,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Momo",
+          "rol": "historia original",
+          "nativo": "莫默"
+        },
+        {
+          "nombre": "PIKAPI",
+          "rol": "historia y arte",
+          "nativo": "噼咔噼"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -13943,6 +15963,23 @@
       "fin": "2025-10-31",
       "capitulos": 106,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Jian Shen Wu Di",
+          "rol": "historia original",
+          "nativo": "剑神无敌"
+        },
+        {
+          "nombre": "Hao Fan",
+          "rol": "historia",
+          "nativo": "好饭"
+        },
+        {
+          "nombre": "Wei CC",
+          "rol": "arte",
+          "nativo": "維CC"
+        }
+      ],
       "generos": [
         "accion",
         "fantasia"
@@ -14001,6 +16038,23 @@
       "fin": "2026-01-31",
       "capitulos": 456,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Hua Hai Mei Kai",
+          "rol": "historia original",
+          "nativo": "花还没开"
+        },
+        {
+          "nombre": "Ting Yi",
+          "rol": "historia",
+          "nativo": "益廷"
+        },
+        {
+          "nombre": "Zhu Dajia Dou You Laopo",
+          "rol": "arte",
+          "nativo": "祝大家都有老婆"
+        }
+      ],
       "generos": [
         "comedia",
         "fantasia",
@@ -14057,6 +16111,23 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Ren Wo Xiao",
+          "rol": "historia original",
+          "nativo": "任我笑"
+        },
+        {
+          "nombre": "Shui Bu Xing De Nengneng",
+          "rol": "historia",
+          "nativo": "睡不醒的能能"
+        },
+        {
+          "nombre": "Ru Bao",
+          "rol": "arte",
+          "nativo": "肉包"
+        }
+      ],
       "generos": [
         "accion",
         "comedia",
@@ -14124,6 +16195,23 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Tai Yi Sheng Shui",
+          "rol": "historia original",
+          "nativo": "太一生水"
+        },
+        {
+          "nombre": "Di Shui",
+          "rol": "historia",
+          "nativo": "滴水"
+        },
+        {
+          "nombre": "Jie Ke Nuo Wei",
+          "rol": "arte",
+          "nativo": "杰克挪威"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -14194,6 +16282,23 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Jiehuo Wan",
+          "rol": "historia original",
+          "nativo": "万劫火"
+        },
+        {
+          "nombre": "MR.Zhen Zhan",
+          "rol": "historia",
+          "nativo": "MR.真战"
+        },
+        {
+          "nombre": "Xu Jia",
+          "rol": "arte",
+          "nativo": "嘉煦"
+        }
+      ],
       "generos": [
         "accion",
         "fantasia",
@@ -14237,6 +16342,28 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Chise",
+          "rol": "historia original",
+          "nativo": "赤色"
+        },
+        {
+          "nombre": "Ciwei Mao Yuedu",
+          "rol": "historia original",
+          "nativo": "刺猬猫阅读"
+        },
+        {
+          "nombre": "Can Ye",
+          "rol": "historia",
+          "nativo": "灿夜"
+        },
+        {
+          "nombre": "Duan S",
+          "rol": "arte",
+          "nativo": "断S"
+        }
+      ],
       "generos": [
         "comedia",
         "fantasia",
@@ -14289,6 +16416,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Da Xia",
+          "rol": "historia y arte",
+          "nativo": "夏达"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -14335,6 +16469,13 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Mou Chan",
+          "rol": "historia y arte",
+          "nativo": "陳某"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -14372,6 +16513,18 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Tang Jia San Shao",
+          "rol": "historia original",
+          "nativo": "唐家三少"
+        },
+        {
+          "nombre": "Fengchun Mu",
+          "rol": "historia y arte",
+          "nativo": "暮逢春"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -14424,6 +16577,18 @@
       "fin": "2020-05-16",
       "capitulos": 96,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Gu Zhenren",
+          "rol": "historia original",
+          "nativo": "蛊真人"
+        },
+        {
+          "nombre": "Ran Hui Wenhua",
+          "rol": "historia y arte",
+          "nativo": "燃绘文化"
+        }
+      ],
       "generos": [
         "aventura",
         "drama",
@@ -14479,6 +16644,18 @@
       "fin": "2020-08-28",
       "capitulos": 41,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Wenzhi Lizi",
+          "rol": "historia",
+          "nativo": "文枝栗子"
+        },
+        {
+          "nombre": "Ke Ran Bing",
+          "rol": "arte",
+          "nativo": "可燃冰"
+        }
+      ],
       "generos": [
         "comedia",
         "drama",
@@ -14529,6 +16706,18 @@
       "fin": "2024-07-25",
       "capitulos": 949,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Hui Shuohua De Zhouzi",
+          "rol": "historia original",
+          "nativo": "会说话的肘子"
+        },
+        {
+          "nombre": "Yue Dong Wenhua",
+          "rol": "historia y arte",
+          "nativo": "阅动文化"
+        }
+      ],
       "generos": [
         "accion",
         "aventura",
@@ -14579,6 +16768,28 @@
       "fin": null,
       "capitulos": null,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Yi Shi Si Zhou",
+          "rol": "historia original",
+          "nativo": "一十四洲"
+        },
+        {
+          "nombre": "Jinze Yuchi",
+          "rol": "historia y arte",
+          "nativo": "尉迟金泽"
+        },
+        {
+          "nombre": "Yi'er Jin",
+          "rol": "historia",
+          "nativo": "金一二"
+        },
+        {
+          "nombre": "Maomao Tou",
+          "rol": "arte",
+          "nativo": "猫猫头"
+        }
+      ],
       "generos": [
         "drama",
         "romance",
@@ -14626,6 +16837,17 @@
       "fin": "2020-01-26",
       "capitulos": 72,
       "tomos": null,
+      "autores": [
+        {
+          "nombre": "Wu Yi Ning Si",
+          "rol": "historia original",
+          "nativo": "无仪宁死"
+        },
+        {
+          "nombre": "EUN",
+          "rol": "historia y arte"
+        }
+      ],
       "generos": [
         "drama",
         "romance"
