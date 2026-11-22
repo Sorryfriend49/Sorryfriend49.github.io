@@ -5,9 +5,12 @@
    de AniList en el momento, no salen de la máquina de GitHub y no se guardan en ningún lado.
    1. scripts/comunidad.mjs deja en .tmp/pendientes.json qué obras necesitan resumen (5 reseñas
       o más, sin resumen o con reseñas nuevas). Ese archivo nunca se sube al repositorio.
-   2. Este programa baja las reseñas más útiles de cada una (sin las partes marcadas como
-      spoiler), le pide a Gemma un resumen de 2 o 3 oraciones, lo revisa y lo guarda en
-      datos/comunidad.json.
+   2. Este programa baja las reseñas más útiles de cada una y, de cada reseña, se queda con sus
+      frases clave: las que opinan de un tema (el arte, la historia, el ritmo…) y que el modelo de
+      sentimiento (tono.mjs) marca como elogio o crítica, sin las partes marcadas como spoiler.
+      Con eso Gemma lee un 30 % menos y escribe cada resumen más rápido (medido con
+      .github/workflows/medir-gemma.yml). Le pide un resumen de 2 o 3 oraciones, lo revisa y
+      lo guarda en datos/comunidad.json.
    En GitHub, si hay muchas, se reparten entre varias máquinas a la vez (ver comunidad.yml):
       --repartir          cuántas máquinas usar (lo lee la tarea; RESUMIR=id,id agrega otras)
       --parte K --de N    la máquina K (de N) escribe los suyos en .tmp/resumenes/parte-K.json
@@ -18,14 +21,15 @@
 import { readFile, writeFile, rm, mkdir, readdir, appendFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { textoParaResumen } from './analisis.mjs';
+import { textoParaResumen, limpiarTexto, oraciones, temasEn } from './analisis.mjs';
+import { crearClasificador, clasificadorPalabras } from './tono.mjs';
 
 export const VERSION_RESUMEN = 1;           // si cambian las instrucciones, se sube y se reescriben todos
 export const MODELO_RESUMEN = 'gemma4:e4b';
 export const NOMBRE_MODELO = 'Gemma 4';
 export const MIN_RESENAS_RESUMEN = 5;       // con menos, el "resumen" sería la opinión de una o dos personas
 export const RESENAS_EN_RESUMEN = 8;        // las más útiles según los lectores de AniList
-export const CARACTERES_POR_RESENA = 500;
+export const CARACTERES_CLAVE = 320;        // de cada reseña, sus frases clave hasta este largo
 const RESENAS_NUEVAS_PARA_REHACER = 3;
 const DIAS_PARA_REHACER = 84;               // 12 semanas
 const LIMITE_MINUTOS = 40;                  // por máquina; lo que no alcance entra al día siguiente (ver niveles.mjs)
@@ -170,13 +174,49 @@ export function crearLectorResenas({ fetch = globalThis.fetch, esperar = dormir,
     };
 }
 
-// De cada reseña, Gemma recibe su nota, el resumen de su autor y el comienzo del texto (sin spoilers)
-export function resenasParaResumen(resenas){
-    return (resenas || []).filter(r => r && Number.isFinite(r.score)).slice(0, RESENAS_EN_RESUMEN).map(r => ({
-        nota: r.score,
-        resumen: textoParaResumen(r.summary, 200),
-        texto: textoParaResumen(r.body, CARACTERES_POR_RESENA)
-    }));
+/* ---------- Las frases clave de cada reseña ---------- */
+// Frases sin spoilers (~! … !~) que hablan de algún tema; ni muy cortas ni muy largas
+export function frasesCandidatas(body){
+    const limpio = limpiarTexto(String(body || '').replace(/~![\s\S]*?!~/g, ' '));
+    return oraciones(limpio)
+        .map(t => t.replace(/\s+/g, ' ').trim())
+        .filter(t => t.length >= 25 && t.length <= 280)
+        .map((texto, orden) => ({ texto, orden, temas: temasEn(texto) }))
+        .filter(f => f.temas.length);
+}
+
+/* De esas, las que elogian o critican (tonos: +1, 0 o −1 de cada una), primero una por tema
+   y después las que quepan (hasta 4), en el orden de la reseña. Si no hay ninguna, el comienzo
+   de la reseña. */
+export function elegirFrases(candidatas, tonos, body, maximo = CARACTERES_CLAVE){
+    const opinan = candidatas.map((f, k) => ({ ...f, tono: tonos[k] || 0 })).filter(f => f.tono !== 0);
+    const elegidas = new Set();
+    const vistos = new Set();
+    let largo = 0;
+    const cabe = f => largo + f.texto.length + 2 <= maximo;
+    const tomar = f => { elegidas.add(f); f.temas.forEach(t => vistos.add(t)); largo += f.texto.length + 2; };
+    for (const f of opinan) if (f.temas.some(t => !vistos.has(t)) && cabe(f)) tomar(f);
+    for (const f of opinan) if (!elegidas.has(f) && elegidas.size < 4 && cabe(f)) tomar(f);
+    if (!elegidas.size) return textoParaResumen(body, 250);
+    return [...elegidas].sort((a, b) => a.orden - b.orden).map(f => f.texto).join('. ') + '.';
+}
+
+// De cada reseña, Gemma recibe su nota, el resumen de su autor y sus frases clave
+export async function resenasParaResumen(resenas, clasificador = clasificadorPalabras){
+    const lista = (resenas || []).filter(r => r && Number.isFinite(r.score)).slice(0, RESENAS_EN_RESUMEN);
+    const porResena = lista.map(r => frasesCandidatas(r.body));
+    const textos = porResena.flat().map(f => f.texto);
+    let tonos = [];
+    if (textos.length){
+        try { tonos = await clasificador.tonos(textos); }
+        catch { tonos = await clasificadorPalabras.tonos(textos); }   // si el modelo falla, palabras clave
+    }
+    let k = 0;
+    return lista.map((r, i) => {
+        const suyos = tonos.slice(k, k + porResena[i].length);
+        k += porResena[i].length;
+        return { nota: r.score, resumen: textoParaResumen(r.summary, 200), texto: elegirFrases(porResena[i], suyos, r.body) };
+    });
 }
 
 // Lo que la obra ya tiene guardado de sus reseñas: cuántas, de qué tono y qué temas
@@ -186,7 +226,8 @@ const datosDe = r => ({ n: r.n, positivas: r.positivas, negativas: r.negativas, 
    alListo(id, resumen) se llama apenas sale cada uno, para guardarlo sin esperar al final. */
 export async function resumir(pendientes, comunidad, {
     fetch = globalThis.fetch, resenasDe, ahora = new Date(), registro = console.log,
-    limiteMs = LIMITE_MINUTOS * 60 * 1000, modelo = MODELO_RESUMEN, alListo = async () => {}
+    limiteMs = LIMITE_MINUTOS * 60 * 1000, modelo = MODELO_RESUMEN, alListo = async () => {},
+    clasificador = clasificadorPalabras
 } = {}){
     const inicio = Date.now();
     const hechos = [];
@@ -201,7 +242,7 @@ export async function resumir(pendientes, comunidad, {
         if (!guardada || !guardada.resenas) continue;
         const t0 = Date.now();
         try {
-            const resenas = resenasParaResumen(await resenasDe(obra.id));
+            const resenas = await resenasParaResumen(await resenasDe(obra.id), clasificador);
             if (resenas.length < MIN_RESENAS_RESUMEN){
                 registro(`  ${obra.titulo}: AniList dio pocas reseñas; queda para otro día`);
                 continue;
@@ -231,7 +272,8 @@ export async function escribirResumenes({
     registro = console.log,
     limiteMs = LIMITE_MINUTOS * 60 * 1000,
     modelo = MODELO_RESUMEN,
-    resenasDe = crearLectorResenas({ fetch, registro })
+    resenasDe = crearLectorResenas({ fetch, registro }),
+    clasificador = null
 } = {}){
     const carpetaTemporal = join(raiz, '.tmp');
     const pendientes = await leerJSON(join(carpetaTemporal, 'pendientes.json'), []);
@@ -242,8 +284,9 @@ export async function escribirResumenes({
     const rutaDatos = join(raiz, 'datos/comunidad.json');
     const datos = JSON.parse(await readFile(rutaDatos, 'utf8'));
     registro(`Resúmenes por escribir con ${NOMBRE_MODELO} (${modelo}): ${pendientes.length}.`);
+    if (!clasificador) clasificador = await crearClasificador({ carpeta: join(raiz, '.modelos'), registro });
     const hechos = await resumir(pendientes, datos, {
-        fetch, resenasDe, ahora, registro, limiteMs, modelo,
+        fetch, resenasDe, ahora, registro, limiteMs, modelo, clasificador,
         // Se guarda después de cada obra: si la tarea se corta, lo hecho no se pierde
         alListo: async (id, resumen) => { datos.obras[id].resumen = resumen; await writeFile(rutaDatos, JSON.stringify(datos, null, 2) + '\n'); }
     });
@@ -271,7 +314,8 @@ export async function escribirParte({
     registro = console.log,
     limiteMs = LIMITE_MINUTOS * 60 * 1000,
     modelo = MODELO_RESUMEN,
-    resenasDe = crearLectorResenas({ fetch, registro })
+    resenasDe = crearLectorResenas({ fetch, registro }),
+    clasificador = null
 }){
     if (!Number.isInteger(parte) || !Number.isInteger(de) || de < 1 || parte < 0 || parte >= de) throw new Error(`Parte ${parte} de ${de}: no tiene sentido`);
     const catalogo = (await leerJSON(join(raiz, 'obras.json'), { obras: [] })).obras || [];
@@ -283,8 +327,9 @@ export async function escribirParte({
     const salida = join(raiz, '.tmp/resumenes', `parte-${parte}.json`);
     await mkdir(dirname(salida), { recursive: true });
     const guardados = [];
+    if (!clasificador && mias.length) clasificador = await crearClasificador({ carpeta: join(raiz, '.modelos'), registro });
     const hechos = await resumir(mias, comunidad, {
-        fetch, resenasDe, ahora, registro, limiteMs, modelo,
+        fetch, resenasDe, ahora, registro, limiteMs, modelo, clasificador: clasificador || clasificadorPalabras,
         alListo: async (id, resumen) => { guardados.push({ id, resumen }); await writeFile(salida, JSON.stringify(guardados, null, 2) + '\n'); }
     });
     registro(`Resúmenes escritos en esta máquina: ${hechos.length} de ${mias.length}.`);

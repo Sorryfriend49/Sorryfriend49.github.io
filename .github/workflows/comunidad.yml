@@ -129,8 +129,8 @@ jobs:
 
   # Resúmenes con Gemma 4 (modelo abierto de Google, licencia Apache 2.0) con Ollama, en una
   # o varias máquinas a la vez. Cada una baja de AniList las reseñas de sus obras (no se
-  # guardan en ningún lado) y entrega solo los resúmenes. Si una falla, las demás siguen y
-  # esas obras se intentan otro día.
+  # guardan en ningún lado), le pasa a Gemma sus frases clave y entrega solo los resúmenes.
+  # Si una falla, las demás siguen y esas obras se intentan otro día.
   resumenes:
     needs: actualizar
     if: needs.actualizar.outputs.hay == 'si'
@@ -147,6 +147,16 @@ jobs:
         uses: actions/checkout@v5
         with:
           ref: main
+
+      # El modelo de sentimiento elige las frases clave de cada reseña (las que opinan de un tema)
+      - name: Instalar el modelo de sentimiento
+        run: npm ci --prefix scripts --ignore-scripts --no-audit --no-fund
+
+      - name: Usar el modelo guardado
+        uses: actions/cache/restore@v5
+        with:
+          path: .modelos
+          key: modelo-sentimiento-${{ hashFiles('scripts/package-lock.json') }}
 
       - name: Instalar Gemma 4
         timeout-minutes: 15

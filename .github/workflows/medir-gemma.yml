@@ -28,24 +28,25 @@ jobs:
           path: .modelos
           key: modelo-sentimiento-${{ hashFiles('scripts/package-lock.json') }}
 
+      # Ollama se abre a mano (sin el servicio del sistema) para poder probar opciones del servidor
       - name: Instalar Gemma 4
         timeout-minutes: 15
         run: |
           echo "Núcleos: $(nproc)"; lscpu | grep -E "Model name|Thread\(s\) per core|Core\(s\) per socket" || true; free -g
           curl -fsSL https://ollama.com/install.sh | sh
           sudo systemctl stop ollama 2>/dev/null || true
-          (OLLAMA_NUM_PARALLEL=2 OLLAMA_KEEP_ALIVE=60m ollama serve > /tmp/ollama.log 2>&1 &)
+          (OLLAMA_KEEP_ALIVE=60m ollama serve > /tmp/ollama.log 2>&1 &)
           for i in $(seq 1 30); do curl -sf http://127.0.0.1:11434/api/version && break; sleep 2; done
           ollama pull gemma4:e4b
 
-      - name: Medir
-        timeout-minutes: 40
-        run: node .github/scripts/medir-gemma.mjs
+      - name: Medir con el servidor normal
+        timeout-minutes: 30
+        run: node .github/scripts/medir-gemma.mjs --obras 3 --etiqueta "Servidor normal"
 
       - name: Medir con flash attention
-        timeout-minutes: 15
+        timeout-minutes: 30
         run: |
           pkill -f "ollama serve" || true; sleep 3
           (OLLAMA_FLASH_ATTENTION=1 OLLAMA_KEEP_ALIVE=60m ollama serve > /tmp/ollama-fa.log 2>&1 &)
           for i in $(seq 1 30); do curl -sf http://127.0.0.1:11434/api/version && break; sleep 2; done
-          node .github/scripts/medir-gemma.mjs --fa
+          node .github/scripts/medir-gemma.mjs --obras 3 --etiqueta "Con flash attention"
