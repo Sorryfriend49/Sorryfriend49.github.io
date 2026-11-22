@@ -584,15 +584,14 @@
     // 9,5 s con una transición suave; se queda quieta mientras tienes el mouse o el foco encima, mientras
     // la tocas en el celular, si la pestaña está oculta o con "menos movimiento" activado en tu sistema.
     // Sin ese archivo queda como antes: lo más popular de siempre de cada tipo.
-    // «Nuevas»: las últimas que llegaron al catálogo (las que entran solas cada día hábil o las que
-    // agregas a mano); aparece solo si llegó alguna en los últimos 30 días.
+    // «Nuevas»: las obras del catálogo que salieron más recientemente (por la fecha en que empezaron
+    // a publicarse), sin importar cuándo llegaron a la página.
     const PERIODOS_BASE = [
         { clave: 'hoy', boton: 'Hoy', titulo: 'Lo más popular de hoy', cuando: 'hoy' },
         { clave: 'semana', boton: 'Semana', titulo: 'Lo más popular de la semana', cuando: 'esta semana' },
         { clave: 'mes', boton: 'Mes', titulo: 'Lo más popular del mes', cuando: 'este mes' }
     ];
-    const NUEVAS = { clave: 'nuevas', boton: 'Nuevas', titulo: 'Recién llegadas al catálogo', nuevas: true };
-    const DIAS_NUEVAS = 30;
+    const NUEVAS = { clave: 'nuevas', boton: 'Nuevas', titulo: 'Las más recientes en salir', nuevas: true };
     const CUANTAS_NUEVAS = 6;
     let PERIODOS_POP = PERIODOS_BASE;
     const INTERVALO_POP = 9500;
@@ -620,16 +619,20 @@
         }
     }
 
-    // Días desde que llegó (las fechas de llegada son del día en hora UTC, como las guarda la tarea)
-    const diasDesde = fecha => Math.round((Date.parse(new Date().toISOString().slice(0, 10)) - Date.parse(fecha)) / 86400000);
-    const textoLlegada = fecha => {
-        const d = diasDesde(fecha);
-        return d <= 0 ? 'Llegó hoy' : d === 1 ? 'Llegó ayer' : `Llegó hace ${d} días`;
-    };
-    // Las últimas que llegaron: las más nuevas primero y, el mismo día, las más populares
+    // Cuándo salió: "Salió el 12 de noviembre", "Salió en marzo de 2025" o "Salió en 2024" (según lo que diga AniList)
+    function textoSalida(inicio){
+        const [anio, mes, dia] = String(inicio || '').split('-').map(Number);
+        if (!anio) return '';
+        if (!mes) return `Salió en ${anio}`;
+        if (!dia) return `Salió en ${MESES[mes - 1]} de ${anio}`;
+        return anio === new Date().getFullYear() ? `Salió el ${dia} de ${MESES[mes - 1]}` : `Salió el ${dia} de ${MESES[mes - 1]} de ${anio}`;
+    }
+    // Las más recientes en salir (las que todavía no salen no cuentan); el mismo día, las más populares
     function recientes(){
-        return obras.filter(o => typeof o.agregada === 'string' && diasDesde(o.agregada) <= DIAS_NUEVAS)
-            .sort((a, b) => b.agregada.localeCompare(a.agregada) || popularidad(b) - popularidad(a))
+        const d = new Date();
+        const hoy = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+        return obras.filter(o => o.inicio && claveFecha(o) <= hoy)
+            .sort((a, b) => claveFecha(b).localeCompare(claveFecha(a)) || popularidad(b) - popularidad(a))
             .slice(0, CUANTAS_NUEVAS);
     }
 
@@ -659,7 +662,7 @@
         portada.append(imagenPortada(o, TAMANOS_MINI));
         const texto = crear('span', 'mini-texto');
         const datos = crear('span', 'mini-datos');
-        const cifra = periodo && periodo.nuevas ? textoLlegada(o.agregada)
+        const cifra = periodo && periodo.nuevas ? textoSalida(o.inicio)
             : periodo && nuevos > 0
                 ? `+${formatoLectores.format(nuevos)} ${nuevos === 1 ? 'lector' : 'lectores'} ${periodo.cuando}`
                 : textoLectores(popularidad(o));

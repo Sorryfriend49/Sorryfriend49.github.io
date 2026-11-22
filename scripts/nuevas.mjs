@@ -8,8 +8,8 @@
    menos de dos años y tienen muy buen puntaje).
    Reglas: nunca obras para adultos (+18); solo manga, manhwa y manhua (no novelas, ni guías,
    antologías o ediciones a color de una que ya está); que ya hayan empezado a publicarse;
-   2.500 lectores o más en AniList; puntaje de 70/100 o más (75 para las prometedoras; las
-   tendencias y estrenos que todavía no tienen puntaje pueden entrar).
+   2.500 lectores o más en AniList; puntaje de 60/100 o más (75 para las prometedoras, que
+   entran por su puntaje; las tendencias y estrenos que todavía no tienen puntaje pueden entrar).
    No vuelven: las de "excluidas" en catalogo.json y las que entraron solas y después quitaste
    (quedan anotadas en datos/agregadas.json).
    Después, catalogo.mjs les pone nombre y portada, y comunidad.mjs las revisa ese mismo día.
@@ -26,7 +26,7 @@ import { diaHabil } from './niveles.mjs';
 export const POR_DIA = 20;
 export const POR_GRUPO = 10;                  // 10 en tendencia o estrenos y 10 populares
 export const MIN_LECTORES = 2500;
-export const MIN_PUNTAJE = 70;
+export const MIN_PUNTAJE = 60;
 export const MIN_PUNTAJE_PROMETEDORA = 75;
 const PAISES = new Set(['JP', 'KR', 'CN', 'TW', 'HK']);     // manga, manhwa y manhua
 const FORMATOS = new Set(['MANGA', 'ONE_SHOT']);              // sin novelas
