@@ -608,7 +608,7 @@
         const texto = crear('span', 'mini-texto');
         const datos = crear('span', 'mini-datos');
         const cifra = periodo && nuevos > 0
-            ? `+${formatoLectores.format(nuevos)} lectores ${periodo.cuando}`
+            ? `+${formatoLectores.format(nuevos)} ${nuevos === 1 ? 'lector' : 'lectores'} ${periodo.cuando}`
             : textoLectores(popularidad(o));
         datos.append(etiquetaTipo(o.tipo), crear('span', 'lectores', cifra));
         texto.append(crear('span', 'mini-titulo', o.titulo), datos);
