@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "metodo": "1.2",
-  "generado": "2026-11-22T16:17:26.027Z",
+  "generado": "2026-11-22T16:48:33.095Z",
   "fuentes": {
     "anilist": "2026-11-22",
     "kitsu": "2026-11-22",
@@ -191,7 +191,8 @@
         "lectores": 0.0018,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30002": {
       "puntaje": {
@@ -373,7 +374,8 @@
         "lectores": 0.0016,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30003": {
       "puntaje": {
@@ -554,7 +556,8 @@
         "lectores": 0.0018,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30007": {
       "puntaje": {
@@ -704,7 +707,8 @@
         "lectores": 0.002,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30011": {
       "puntaje": {
@@ -885,7 +889,8 @@
         "lectores": 0.0016,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30012": {
       "puntaje": {
@@ -1066,7 +1071,8 @@
         "lectores": 0.0018,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30013": {
       "puntaje": {
@@ -1247,7 +1253,8 @@
         "lectores": 0.0018,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30021": {
       "puntaje": {
@@ -1416,7 +1423,8 @@
         "lectores": 0.0015,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30022": {
       "puntaje": {
@@ -1576,7 +1584,8 @@
         "lectores": 0.001,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30024": {
       "puntaje": {
@@ -1745,7 +1754,8 @@
         "lectores": 0.0021,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30025": {
       "puntaje": {
@@ -1914,7 +1924,8 @@
         "lectores": 0.0017,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30026": {
       "puntaje": {
@@ -2093,7 +2104,8 @@
         "lectores": 0.0017,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30028": {
       "puntaje": {
@@ -2262,7 +2274,8 @@
         "lectores": 0.0023,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30042": {
       "puntaje": {
@@ -2431,7 +2444,8 @@
         "lectores": 0.0016,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30043": {
       "puntaje": {
@@ -2590,7 +2604,8 @@
         "lectores": 0.0014,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30044": {
       "puntaje": {
@@ -2759,7 +2774,8 @@
         "lectores": 0.0016,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30051": {
       "puntaje": {
@@ -2938,7 +2954,8 @@
         "lectores": 0.0016,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30053": {
       "puntaje": {
@@ -3117,7 +3134,8 @@
         "lectores": 0.0012,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30102": {
       "puntaje": {
@@ -3280,7 +3298,8 @@
         "lectores": 0.0013,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30104": {
       "puntaje": {
@@ -3455,7 +3474,8 @@
         "lectores": 0.0015,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30401": {
       "puntaje": {
@@ -3614,7 +3634,8 @@
         "lectores": 0.0018,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30418": {
       "puntaje": {
@@ -3783,7 +3804,8 @@
         "lectores": 0.0021,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30436": {
       "puntaje": {
@@ -3957,7 +3979,8 @@
         "lectores": 0.001,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30598": {
       "puntaje": {
@@ -4132,7 +4155,8 @@
         "lectores": 0.0011,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30642": {
       "puntaje": {
@@ -4313,7 +4337,8 @@
         "lectores": 0.0019,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30656": {
       "puntaje": {
@@ -4492,7 +4517,8 @@
         "lectores": 0.0019,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30657": {
       "puntaje": {
@@ -4661,7 +4687,8 @@
         "lectores": 0.0023,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30664": {
       "puntaje": {
@@ -4836,7 +4863,8 @@
         "lectores": 0.0017,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30698": {
       "puntaje": {
@@ -5005,7 +5033,8 @@
         "lectores": 0.002,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30745": {
       "puntaje": {
@@ -5186,7 +5215,8 @@
         "lectores": 0.0014,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30756": {
       "puntaje": {
@@ -5355,7 +5385,8 @@
         "lectores": 0.0011,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30908": {
       "puntaje": {
@@ -5530,7 +5561,8 @@
         "lectores": 0.002,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "30936": {
       "puntaje": {
@@ -5704,7 +5736,8 @@
         "lectores": 0.0021,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "31133": {
       "puntaje": {
@@ -5883,7 +5916,8 @@
         "lectores": 0.0015,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "31224": {
       "puntaje": {
@@ -6058,7 +6092,8 @@
         "lectores": 0.0012,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "31320": {
       "puntaje": {
@@ -6227,7 +6262,8 @@
         "lectores": 0.0026,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "31706": {
       "puntaje": {
@@ -6406,7 +6442,8 @@
         "lectores": 0.0019,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "34632": {
       "puntaje": {
@@ -6587,7 +6624,8 @@
         "lectores": 0.0016,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "37375": {
       "puntaje": {
@@ -6766,7 +6804,8 @@
         "lectores": 0.0044,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "38586": {
       "puntaje": {
@@ -6894,7 +6933,8 @@
         "lectores": 0.0013,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "41652": {
       "puntaje": {
@@ -7048,7 +7088,8 @@
         "lectores": 0.0012,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "43245": {
       "puntaje": {
@@ -7217,7 +7258,8 @@
         "lectores": 0.0017,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "46765": {
       "puntaje": {
@@ -7396,7 +7438,8 @@
         "lectores": 0.0021,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "51525": {
       "puntaje": {
@@ -7565,7 +7608,8 @@
         "lectores": 0.0017,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "53390": {
       "puntaje": {
@@ -7746,7 +7790,8 @@
         "lectores": 0.001,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "54692": {
       "puntaje": {
@@ -7915,7 +7960,8 @@
         "lectores": 0.0011,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "59983": {
       "puntaje": {
@@ -8062,7 +8108,8 @@
         "lectores": 0.0018,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "60079": {
       "puntaje": {
@@ -8185,7 +8232,8 @@
         "lectores": 0.0013,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "63031": {
       "puntaje": {
@@ -8360,7 +8408,8 @@
         "lectores": 0.0019,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "63327": {
       "puntaje": {
@@ -8539,7 +8588,8 @@
         "lectores": 0.0019,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "65243": {
       "puntaje": {
@@ -8713,7 +8763,8 @@
         "lectores": 0.0011,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "69325": {
       "puntaje": {
@@ -8882,7 +8933,8 @@
         "lectores": 0.0011,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "69883": {
       "puntaje": {
@@ -9041,7 +9093,8 @@
         "lectores": 0.0012,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "72001": {
       "puntaje": {
@@ -9196,7 +9249,8 @@
         "lectores": 0.0017,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "72451": {
       "puntaje": {
@@ -9361,7 +9415,8 @@
         "lectores": 0.0011,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "74347": {
       "puntaje": {
@@ -9530,7 +9585,8 @@
         "lectores": 0.0012,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "74485": {
       "puntaje": {
@@ -9699,7 +9755,8 @@
         "lectores": 0.0008,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "74489": {
       "puntaje": {
@@ -9878,7 +9935,8 @@
         "lectores": 0.0022,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "85135": {
       "puntaje": {
@@ -10043,7 +10101,8 @@
         "lectores": 0.001,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "85141": {
       "puntaje": {
@@ -10206,7 +10265,8 @@
         "lectores": 0.0014,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "85143": {
       "puntaje": {
@@ -10381,7 +10441,8 @@
         "lectores": 0.0015,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "85189": {
       "puntaje": {
@@ -10556,7 +10617,8 @@
         "lectores": 0.0012,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "85412": {
       "puntaje": {
@@ -10735,7 +10797,8 @@
         "lectores": 0.0026,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "85446": {
       "puntaje": {
@@ -10858,7 +10921,8 @@
         "lectores": 0.0014,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "85453": {
       "puntaje": {
@@ -10972,7 +11036,8 @@
         "lectores": 0.002,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "85486": {
       "puntaje": {
@@ -11151,7 +11216,8 @@
         "lectores": 0.0009,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "85611": {
       "puntaje": {
@@ -11332,7 +11398,8 @@
         "lectores": 0.0019,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "85734": {
       "puntaje": {
@@ -11501,7 +11568,8 @@
         "lectores": 0.0008,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "85850": {
       "puntaje": {
@@ -11670,7 +11738,8 @@
         "lectores": 0.0014,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "86082": {
       "puntaje": {
@@ -11845,7 +11914,8 @@
         "lectores": 0.002,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "86099": {
       "puntaje": {
@@ -12010,7 +12080,8 @@
         "lectores": 0.0015,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "86123": {
       "puntaje": {
@@ -12169,7 +12240,8 @@
         "lectores": 0.002,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "86218": {
       "puntaje": {
@@ -12348,7 +12420,8 @@
         "lectores": 0.0013,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "86310": {
       "puntaje": {
@@ -12523,7 +12596,8 @@
         "lectores": 0.0012,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "86399": {
       "puntaje": {
@@ -12692,7 +12766,8 @@
         "lectores": 0.0015,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "86551": {
       "puntaje": {
@@ -12861,7 +12936,8 @@
         "lectores": 0.0012,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "86559": {
       "puntaje": {
@@ -13040,7 +13116,8 @@
         "lectores": 0.0017,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "86635": {
       "puntaje": {
@@ -13222,7 +13299,8 @@
         "lectores": 0.0013,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "86707": {
       "puntaje": {
@@ -13383,7 +13461,8 @@
         "lectores": 0.0012,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "86848": {
       "puntaje": {
@@ -13552,7 +13631,8 @@
         "lectores": 0.0027,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "86964": {
       "puntaje": {
@@ -13727,7 +13807,8 @@
         "lectores": 0.0014,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "87170": {
       "puntaje": {
@@ -13908,7 +13989,8 @@
         "lectores": 0.002,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "87216": {
       "puntaje": {
@@ -14065,7 +14147,8 @@
         "lectores": 0.0012,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "87395": {
       "puntaje": {
@@ -14240,7 +14323,8 @@
         "lectores": 0.0015,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "87423": {
       "puntaje": {
@@ -14421,7 +14505,8 @@
         "lectores": 0.0011,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "97830": {
       "puntaje": {
@@ -14579,7 +14664,8 @@
         "lectores": 0.0014,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "97852": {
       "puntaje": {
@@ -14755,7 +14841,8 @@
         "lectores": 0.0009,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "98263": {
       "puntaje": {
@@ -14934,7 +15021,8 @@
         "lectores": 0.0027,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "98397": {
       "puntaje": {
@@ -15093,7 +15181,8 @@
         "lectores": 0.0023,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "98416": {
       "puntaje": {
@@ -15268,7 +15357,8 @@
         "lectores": 0.0012,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "99022": {
       "puntaje": {
@@ -15437,7 +15527,8 @@
         "lectores": 0.0026,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "99943": {
       "puntaje": {
@@ -15616,7 +15707,8 @@
         "lectores": 0.0008,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "100230": {
       "puntaje": {
@@ -15797,7 +15889,8 @@
         "lectores": 0.001,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "100568": {
       "puntaje": {
@@ -15979,7 +16072,8 @@
         "lectores": 0.0019,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "100805": {
       "puntaje": {
@@ -16138,7 +16232,8 @@
         "lectores": 0.0011,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "100954": {
       "puntaje": {
@@ -16282,7 +16377,8 @@
         "lectores": 0.0021,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "100994": {
       "puntaje": {
@@ -16457,7 +16553,8 @@
         "lectores": 0.0014,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "101233": {
       "puntaje": {
@@ -16626,7 +16723,8 @@
         "lectores": 0.0008,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "101517": {
       "puntaje": {
@@ -16809,7 +16907,8 @@
         "lectores": 0.0016,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "101557": {
       "puntaje": {
@@ -16948,7 +17047,8 @@
         "lectores": 0.0019,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "101563": {
       "puntaje": {
@@ -17117,7 +17217,8 @@
         "lectores": 0.0022,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "101583": {
       "puntaje": {
@@ -17292,7 +17393,8 @@
         "lectores": 0.0023,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "101942": {
       "puntaje": {
@@ -17451,7 +17553,8 @@
         "lectores": 0.0016,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "102988": {
       "puntaje": {
@@ -17625,7 +17728,8 @@
         "lectores": 0.001,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "103995": {
       "puntaje": {
@@ -17734,7 +17838,8 @@
         "lectores": 0.0006,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "104494": {
       "puntaje": {
@@ -17895,7 +18000,8 @@
         "lectores": 0.0018,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "104660": {
       "puntaje": {
@@ -18064,7 +18170,8 @@
         "lectores": 0.002,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "104973": {
       "puntaje": {
@@ -18223,7 +18330,8 @@
         "lectores": 0.0024,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "105393": {
       "puntaje": {
@@ -18387,7 +18495,8 @@
         "lectores": 0.0026,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "105398": {
       "puntaje": {
@@ -18570,7 +18679,8 @@
         "lectores": 0.0014,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "105778": {
       "puntaje": {
@@ -18751,7 +18861,8 @@
         "lectores": 0.0016,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "106130": {
       "puntaje": {
@@ -18921,7 +19032,8 @@
         "lectores": 0.0023,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "106929": {
       "puntaje": {
@@ -19080,7 +19192,8 @@
         "lectores": 0.0033,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "107098": {
       "puntaje": {
@@ -19249,7 +19362,8 @@
         "lectores": 0.0009,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "107237": {
       "puntaje": {
@@ -19414,7 +19528,8 @@
         "lectores": 0.0011,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "107279": {
       "puntaje": {
@@ -19574,7 +19689,8 @@
         "lectores": 0.0045,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "107521": {
       "puntaje": {
@@ -19743,7 +19859,8 @@
         "lectores": 0.0025,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "107966": {
       "puntaje": {
@@ -19908,7 +20025,8 @@
         "lectores": 0.0018,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "108050": {
       "puntaje": {
@@ -20068,7 +20186,8 @@
         "lectores": 0.0028,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "108152": {
       "puntaje": {
@@ -20237,7 +20356,8 @@
         "lectores": 0.0036,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "108556": {
       "puntaje": {
@@ -20412,7 +20532,8 @@
         "lectores": 0.001,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "108952": {
       "puntaje": {
@@ -20566,7 +20687,8 @@
         "lectores": 0.0031,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "109285": {
       "puntaje": {
@@ -20721,7 +20843,8 @@
         "lectores": 0.0021,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "109957": {
       "puntaje": {
@@ -20874,7 +20997,8 @@
         "lectores": 0.0026,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "110462": {
       "puntaje": {
@@ -21023,7 +21147,8 @@
         "lectores": 0.0026,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "110605": {
       "puntaje": {
@@ -21168,7 +21293,8 @@
         "lectores": 0.0045,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "111189": {
       "puntaje": {
@@ -21317,7 +21443,8 @@
         "lectores": 0.0016,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "111233": {
       "puntaje": {
@@ -21498,7 +21625,8 @@
         "lectores": 0.0021,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "111593": {
       "puntaje": {
@@ -21616,7 +21744,8 @@
         "lectores": 0.0015,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "112275": {
       "puntaje": {
@@ -21781,7 +21910,8 @@
         "lectores": 0.0023,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "112378": {
       "puntaje": {
@@ -21941,7 +22071,8 @@
         "lectores": 0.0016,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "113055": {
       "puntaje": {
@@ -22110,7 +22241,8 @@
         "lectores": 0.0061,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "113350": {
       "puntaje": {
@@ -22250,7 +22382,8 @@
         "lectores": 0.0006,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "113488": {
       "puntaje": {
@@ -22404,7 +22537,8 @@
         "lectores": 0.0026,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "114605": {
       "puntaje": {
@@ -22543,7 +22677,8 @@
         "lectores": 0.0028,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "114791": {
       "puntaje": {
@@ -22717,7 +22852,8 @@
         "lectores": 0.0018,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "114960": {
       "puntaje": {
@@ -22886,7 +23022,8 @@
         "lectores": 0.0016,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "115000": {
       "puntaje": {
@@ -23045,7 +23182,8 @@
         "lectores": 0.0023,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "116353": {
       "puntaje": {
@@ -23189,7 +23327,8 @@
         "lectores": 0.0031,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "117195": {
       "puntaje": {
@@ -23371,7 +23510,8 @@
         "lectores": 0.0011,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "117324": {
       "puntaje": {
@@ -23526,7 +23666,8 @@
         "lectores": 0.0027,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "117460": {
       "puntaje": {
@@ -23664,7 +23805,8 @@
         "lectores": 0.0077,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "117540": {
       "puntaje": {
@@ -23833,7 +23975,8 @@
         "lectores": 0.0029,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "118269": {
       "puntaje": {
@@ -23978,7 +24121,8 @@
         "lectores": 0.0013,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "118371": {
       "puntaje": {
@@ -24122,7 +24266,8 @@
         "lectores": 0.0026,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "118408": {
       "puntaje": {
@@ -24291,7 +24436,8 @@
         "lectores": 0.0039,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "118424": {
       "puntaje": {
@@ -24440,7 +24586,8 @@
         "lectores": 0.0022,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "118586": {
       "puntaje": {
@@ -24615,7 +24762,8 @@
         "lectores": 0.0018,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "119174": {
       "puntaje": {
@@ -24754,7 +24902,8 @@
         "lectores": 0.0034,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "119257": {
       "puntaje": {
@@ -24923,7 +25072,8 @@
         "lectores": 0.0029,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "119521": {
       "puntaje": {
@@ -25082,7 +25232,8 @@
         "lectores": 0.0036,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "120288": {
       "puntaje": {
@@ -25183,7 +25334,8 @@
         "lectores": 0.0056,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "120385": {
       "puntaje": {
@@ -25322,7 +25474,8 @@
         "lectores": 0.0074,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "120760": {
       "puntaje": {
@@ -25491,7 +25644,8 @@
         "lectores": 0.0012,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "120980": {
       "puntaje": {
@@ -25660,7 +25814,8 @@
         "lectores": 0.0038,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "121565": {
       "puntaje": {
@@ -25800,7 +25955,8 @@
         "lectores": 0.004,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "121991": {
       "puntaje": {
@@ -25964,7 +26120,8 @@
         "lectores": 0.0024,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "123573": {
       "puntaje": {
@@ -26127,7 +26284,8 @@
         "lectores": 0.004,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "123739": {
       "puntaje": {
@@ -26291,7 +26449,8 @@
         "lectores": 0.0023,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "125291": {
       "puntaje": {
@@ -26425,7 +26584,8 @@
         "lectores": 0.0017,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "125828": {
       "puntaje": {
@@ -26594,7 +26754,8 @@
         "lectores": 0.0019,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "126297": {
       "puntaje": {
@@ -26753,7 +26914,8 @@
         "lectores": 0.0019,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "128067": {
       "puntaje": {
@@ -26902,7 +27064,8 @@
         "lectores": 0.0045,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "129210": {
       "puntaje": {
@@ -27071,7 +27234,8 @@
         "lectores": 0.0065,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "130229": {
       "puntaje": {
@@ -27210,7 +27374,8 @@
         "lectores": 0.0023,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "130429": {
       "puntaje": {
@@ -27358,7 +27523,8 @@
         "lectores": 0.0046,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "130511": {
       "puntaje": {
@@ -27484,7 +27650,8 @@
         "lectores": 0.0022,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "132029": {
       "puntaje": {
@@ -27659,7 +27826,8 @@
         "lectores": 0.0025,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "132144": {
       "puntaje": {
@@ -27813,7 +27981,8 @@
         "lectores": 0.0049,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "132182": {
       "puntaje": {
@@ -27988,7 +28157,8 @@
         "lectores": 0.0023,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "135325": {
       "puntaje": {
@@ -28121,7 +28291,8 @@
         "lectores": 0.0053,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "136220": {
       "puntaje": {
@@ -28280,7 +28451,8 @@
         "lectores": 0.0031,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "136807": {
       "puntaje": {
@@ -28461,7 +28633,8 @@
         "lectores": 0.0024,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "137280": {
       "puntaje": {
@@ -28605,7 +28778,8 @@
         "lectores": 0.0033,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "137304": {
       "puntaje": {
@@ -28748,7 +28922,8 @@
         "lectores": 0.0045,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "138222": {
       "puntaje": {
@@ -28896,7 +29071,8 @@
         "lectores": 0.003,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "138366": {
       "puntaje": {
@@ -29015,7 +29191,8 @@
         "lectores": 0.0019,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "138603": {
       "puntaje": {
@@ -29184,7 +29361,8 @@
         "lectores": 0.003,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "138726": {
       "puntaje": {
@@ -29325,7 +29503,8 @@
         "lectores": 0.0042,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "139741": {
       "puntaje": {
@@ -29484,7 +29663,8 @@
         "lectores": 0.0035,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "140407": {
       "puntaje": {
@@ -29659,7 +29839,8 @@
         "lectores": 0.0055,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "140475": {
       "puntaje": {
@@ -29838,7 +30019,8 @@
         "lectores": 0.003,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "141756": {
       "puntaje": {
@@ -29997,7 +30179,8 @@
         "lectores": 0.0027,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "142287": {
       "puntaje": {
@@ -30152,7 +30335,8 @@
         "lectores": 0.0044,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "142568": {
       "puntaje": {
@@ -30307,7 +30491,8 @@
         "lectores": 0.0024,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "143056": {
       "puntaje": {
@@ -30435,7 +30620,8 @@
         "lectores": 0.003,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "144946": {
       "puntaje": {
@@ -30604,7 +30790,8 @@
         "lectores": 0.0037,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "144957": {
       "puntaje": {
@@ -30737,7 +30924,8 @@
         "lectores": 0.0033,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "146139": {
       "puntaje": {
@@ -30885,7 +31073,8 @@
         "lectores": 0.0031,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "146267": {
       "puntaje": {
@@ -31015,7 +31204,8 @@
         "lectores": 0.0056,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "146983": {
       "puntaje": {
@@ -31184,7 +31374,8 @@
         "lectores": 0.0025,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "149332": {
       "puntaje": {
@@ -31322,7 +31513,8 @@
         "lectores": 0.0037,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "152128": {
       "puntaje": {
@@ -31476,7 +31668,8 @@
         "lectores": 0.005,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "154159": {
       "puntaje": {
@@ -31603,7 +31796,8 @@
         "lectores": 0.0057,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "154258": {
       "puntaje": {
@@ -31748,7 +31942,8 @@
         "lectores": 0.0082,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "159441": {
       "puntaje": {
@@ -31911,7 +32106,8 @@
         "lectores": 0.0055,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "159930": {
       "puntaje": {
@@ -32040,7 +32236,8 @@
         "lectores": 0.0055,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "160980": {
       "puntaje": {
@@ -32159,7 +32356,8 @@
         "lectores": 0.0037,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "163824": {
       "puntaje": {
@@ -32297,7 +32495,8 @@
         "lectores": 0.0046,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "164857": {
       "puntaje": {
@@ -32460,7 +32659,8 @@
         "lectores": 0.0076,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "167372": {
       "puntaje": {
@@ -32574,7 +32774,8 @@
         "lectores": 0.0059,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "168843": {
       "puntaje": {
@@ -32711,7 +32912,8 @@
         "lectores": 0.0066,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "169355": {
       "puntaje": {
@@ -32880,7 +33082,8 @@
         "lectores": 0.0039,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "170400": {
       "puntaje": {
@@ -33024,7 +33227,8 @@
         "lectores": 0.006,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "172619": {
       "puntaje": {
@@ -33172,7 +33376,8 @@
         "lectores": 0.0074,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "175946": {
       "puntaje": {
@@ -33320,7 +33525,8 @@
         "lectores": 0.0092,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "177706": {
       "puntaje": {
@@ -33464,7 +33670,8 @@
         "lectores": 0.0071,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "180752": {
       "puntaje": {
@@ -33628,7 +33835,8 @@
         "lectores": 0.0076,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "180891": {
       "puntaje": {
@@ -33771,7 +33979,8 @@
         "lectores": 0.0124,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "182066": {
       "puntaje": {
@@ -33909,7 +34118,8 @@
         "lectores": 0.009,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     },
     "187944": {
       "puntaje": {
@@ -34057,7 +34267,8 @@
         "lectores": 0.0076,
         "puntaje": null,
         "dias": 7
-      }
+      },
+      "revisada": "2026-11-22"
     }
   }
 }
