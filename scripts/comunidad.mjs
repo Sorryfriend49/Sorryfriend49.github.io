@@ -1,6 +1,10 @@
 /* ===================================
    FROZEN PROJECT: "Lo que opina la comunidad"
-   Lo corre GitHub cada lunes (.github/workflows/comunidad.yml), gratis.
+   Lo corre GitHub de lunes a viernes (.github/workflows/comunidad.yml), gratis.
+   Cada día renueva por completo solo las obras que les toca (ver niveles.mjs: las que siguen
+   saliendo, una vez por semana; las terminadas, una vez cada 4 semanas; las nuevas, apenas
+   llegan) y, para todas, lo liviano de AniList (puntaje, reparto de votos y popularidad).
+   Para renovarlas todas de una vez: TODAS=si node scripts/comunidad.mjs
    1. Lee el catálogo (obras.json).
    2. Trae puntajes y votos de AniList, Kitsu y MangaUpdates (y MyAnimeList si hay
       una clave en el secreto MAL_CLIENT_ID); de AniList, además, el reparto de votos,
@@ -23,6 +27,7 @@ import {
 } from './analisis.mjs';
 import { crearClasificador } from './tono.mjs';
 import { necesitaResumen, VERSION_RESUMEN, MIN_RESENAS_RESUMEN, RESENAS_EN_RESUMEN, CARACTERES_POR_RESENA } from './resumenes.mjs';
+import { elegirDelDia } from './niveles.mjs';
 
 const AGENTE = 'FrozenProject/1.0 (+https://sorryfriend49.github.io)';
 const ANILIST = 'https://graphql.anilist.co';
@@ -38,10 +43,18 @@ const SEMANAS_DE_HISTORIAL = 12;
 // Versión de la forma de emparejar obras con MangaUpdates. Al subirla, todas las obras
 // se vuelven a buscar una vez con la regla nueva (la 2 evita antologías y extras).
 const EMPAREJADOR = 2;
+// El acierto del modelo de tono se calcula con lo guardado de cada obra; con menos obras
+// medidas que esto (los primeros días de los niveles), se mantiene el de la vez anterior
+const MIN_OBRAS_ACIERTO = 50;
 
 export const dormir = ms => new Promise(r => setTimeout(r, ms));
 const hoy = fecha => fecha.toISOString().slice(0, 10);
 const diasEntre = (a, b) => Math.round((new Date(b) - new Date(a)) / 86400000);
+// El lunes de la semana de una fecha ('AAAA-MM-DD')
+export const lunesDe = fecha => {
+    const t = Date.parse(fecha.slice(0, 10) + 'T00:00:00Z');
+    return new Date(t - ((new Date(t).getUTCDay() + 6) % 7) * 86400000).toISOString().slice(0, 10);
+};
 
 export async function leerJSON(ruta, siNoExiste){
     try { return JSON.parse(await readFile(ruta, 'utf8')); }
@@ -209,6 +222,24 @@ async function traerMAL(pedir, obra, clave){
     return { puntaje: redondear(r.mean * 10, 1), votos: r.num_scoring_users };
 }
 
+/* Acierto del modelo de tono en todo el catálogo: suma lo que acertó en cada obra la última vez
+   que se renovó. Los primeros días de los niveles (pocas obras medidas) se mantiene el de antes. */
+export function aciertoTotal(resultado, tonoAnterior, metodo){
+    let medidas = 0;
+    const total = { positivas: { aciertos: 0, total: 0 }, negativas: { aciertos: 0, total: 0 } };
+    for (const r of Object.values(resultado)){
+        const e = r && r.evaluacion;
+        if (!Array.isArray(e) || e.length !== 4 || !e.every(Number.isFinite)) continue;
+        medidas++;
+        total.positivas.aciertos += e[0]; total.positivas.total += e[1];
+        total.negativas.aciertos += e[2]; total.negativas.total += e[3];
+    }
+    if (medidas < MIN_OBRAS_ACIERTO && tonoAnterior && tonoAnterior.metodo === metodo && Number.isFinite(tonoAnterior.acierto)){
+        return { metodo, acierto: tonoAnterior.acierto };
+    }
+    return { metodo, acierto: aciertoEquilibrado(total) };
+}
+
 /* ---------- Programa principal ---------- */
 export async function ejecutar({
     raiz,
@@ -217,7 +248,8 @@ export async function ejecutar({
     esperar = dormir,
     registro = console.log,
     claveMAL = (process.env.MAL_CLIENT_ID || '').trim(),
-    clasificador = null            // tono de las frases; si no se pasa, se carga el modelo (tono.mjs)
+    clasificador = null,           // tono de las frases; si no se pasa, se carga el modelo (tono.mjs)
+    todas = /^(si|sí|true|1)$/i.test((process.env.TODAS || '').trim())   // renovar todas, no solo las del día
 } = {}){
     const fecha = hoy(ahora);
     const pedir = crearCliente({ fetch, esperar, registro });
@@ -243,6 +275,18 @@ export async function ejecutar({
     const medias = [...anilist.values()].map(m => m.meanScore).filter(Number.isFinite);
     const mediaCatalogo = medias.length ? medias.reduce((a, b) => a + b, 0) / medias.length : 75;
 
+    // Las obras que hoy se renuevan por completo (las demás: solo lo liviano de AniList)
+    const eleccion = elegirDelDia(obras, anterior, fecha, {
+        todas,
+        faltaResumen: previo => necesitaResumen(previo.resenas, previo.resumen && previo.resumen.version === VERSION_RESUMEN ? previo.resumen : null, fecha)
+    });
+    const respaldo = typeof anterior.generado === 'string' ? anterior.generado.slice(0, 10) : null;
+    const { nueva, atrasada, delDia, sinResumen } = eleccion.motivos;
+    registro(todas
+        ? `Hoy se renuevan todas las obras (${eleccion.ids.size}).`
+        : `Hoy se renuevan por completo ${eleccion.ids.size} obras: ${delDia} del día, ${nueva} nuevas, ${atrasada} atrasadas y ${sinResumen} sin resumen` +
+          `${eleccion.quedan ? ` (${eleccion.quedan} quedan para mañana)` : ''}. Las demás, solo lo de AniList.`);
+
     // Una fuente queda con la fecha de hoy si aportó datos frescos a alguna obra
     const fuentesUsadas = { anilist: true, kitsu: false, mangaupdates: false, myanimelist: false };
     const resultado = {};
@@ -265,6 +309,22 @@ export async function ejecutar({
         const fuentes = {};
         const distribucion = analizarDistribucion(m.stats && m.stats.scoreDistribution);
         if (Number.isFinite(m.meanScore) && distribucion) fuentes.anilist = { puntaje: m.meanScore, votos: distribucion.votos };
+
+        // Hoy no le toca: lo de AniList al día y lo demás como quedó la última vez
+        if (!eleccion.ids.has(id)){
+            const otras = Object.fromEntries(Object.entries(previo.fuentes || {}).filter(([nombre]) => nombre !== 'anilist'));
+            const fuentesHoy = fuentes.anilist ? { anilist: fuentes.anilist, ...otras } : { ...(previo.fuentes || {}) };
+            resultado[id] = {
+                ...previo,
+                puntaje: combinarPuntajes(fuentesHoy, mediaCatalogo),
+                fuentes: fuentesHoy,
+                distribucion: distribucion || previo.distribucion || null,
+                popularidad: m.popularity || previo.popularidad || null,
+                favoritos: m.favourites || previo.favoritos || null,
+                revisada: 'revisada' in previo ? previo.revisada : (Object.keys(previo).length ? respaldo : null)
+            };
+            continue;
+        }
 
         // Cada fuente extra es opcional: si falla, se usa su último dato
         const intentar = async (nombre, tarea) => {
@@ -328,6 +388,8 @@ export async function ejecutar({
         let recomendaciones = previo.recomendaciones || [];
         let actividad = previo.actividad || null;
         let resumen = previo.resumen && previo.resumen.version === VERSION_RESUMEN ? previo.resumen : null;
+        // Cuántas reseñas positivas y negativas acertó el modelo de tono en esta obra (se guarda para el acierto total)
+        let evaluacion = previo.evaluacion || null;
         try {
             const detalles = await traerDetalles(pedir, obra.ids.anilist);
             const frases = frasesConTemas(detalles.resenas);
@@ -339,7 +401,9 @@ export async function ejecutar({
                 catch (error){ registro(`  ${obra.titulo}: el modelo falló (${error.message}); se usan palabras clave`); }
             }
             resenas = analizarResenas(detalles.resenas, frases, tonos);
-            evaluacionModelo = sumarEvaluaciones(evaluacionModelo, evaluarTono(detalles.resenas, frases, tonos));
+            const evaluada = evaluarTono(detalles.resenas, frases, tonos);
+            evaluacion = [evaluada.positivas.aciertos, evaluada.positivas.total, evaluada.negativas.aciertos, evaluada.negativas.total];
+            evaluacionModelo = sumarEvaluaciones(evaluacionModelo, evaluada);
             evaluacionPalabras = sumarEvaluaciones(evaluacionPalabras, evaluarTono(detalles.resenas, frases, tonosPalabras));
 
             if (detalles.media){
@@ -380,7 +444,9 @@ export async function ejecutar({
             recomendaciones,
             actividad,
             resumen: (resenas.n || 0) >= MIN_RESENAS_RESUMEN ? resumen : null,
-            capitulos
+            capitulos,
+            evaluacion,
+            revisada: fecha
         };
         const p = resultado[id].puntaje;
         registro(`  ${obra.titulo}: ${p ? (p.valor / 10).toFixed(1) : '?'} (${Object.keys(fuentes).join(', ')}), ${resenas.n || 0} reseñas`);
@@ -391,14 +457,15 @@ export async function ejecutar({
     const semanas = (historial.semanas || []).filter(s => s && s.fecha && s.obras);
     const referencia = [...semanas].reverse().find(s => diasEntre(s.fecha, fecha) >= 5);
     for (const [id, r] of Object.entries(resultado)){
-        if (r.actividad && Number.isFinite(r.actividad.lectores)){
+        // La actividad diaria solo está al día en las que se renovaron hoy
+        if (r.revisada === fecha && r.actividad && Number.isFinite(r.actividad.lectores)){
             r.tendencia = { lectores: r.actividad.lectores, puntaje: null, dias: r.actividad.dias };
             continue;
         }
         const antes = referencia && referencia.obras[id];
         r.tendencia = antes
             ? calcularTendencia({ popularidad: r.popularidad, puntaje: r.puntaje && r.puntaje.valor }, { popularidad: antes[0], puntaje: antes[1] }, diasEntre(referencia.fecha, fecha))
-            : null;
+            : (r.revisada === fecha ? null : (r.tendencia || null));
     }
 
     // Qué tan seguido el tono de las frases coincide con el puntaje de cada reseña
@@ -406,14 +473,15 @@ export async function ejecutar({
         const a = aciertoEquilibrado(e);
         return a === null ? 'sin datos' : `${Math.round(a * 100)} % (positivas ${e.positivas.aciertos}/${e.positivas.total}, negativas ${e.negativas.aciertos}/${e.negativas.total})`;
     };
-    registro(`Tono de las reseñas con ${clasificador.nombre === 'modelo' ? 'el modelo' : 'palabras clave'}: acierta ${porcentaje(evaluacionModelo)}.`);
+    registro(`Tono de las reseñas de hoy con ${clasificador.nombre === 'modelo' ? 'el modelo' : 'palabras clave'}: acierta ${porcentaje(evaluacionModelo)}.`);
     if (clasificador.nombre === 'modelo') registro(`Con palabras clave habría acertado ${porcentaje(evaluacionPalabras)}.`);
     if (sinTraducir.size) registro(`Etiquetas sin traducir (agrégalas en scripts/etiquetas.mjs): ${[...sinTraducir].join(', ')}`);
 
-    // 3. Historial: una medición por semana (si se corre dos veces la misma semana, se reemplaza)
+    // 3. Historial: una medición por semana, de lunes a domingo (como la tarea corre de lunes a
+    //    viernes, cada día reemplaza la de esa semana y la semana queda con la del viernes)
     const foto = { fecha, obras: Object.fromEntries(Object.entries(resultado).map(([id, r]) => [id, [r.popularidad, r.puntaje ? r.puntaje.valor : null]])) };
     const ultima = semanas[semanas.length - 1];
-    if (ultima && diasEntre(ultima.fecha, fecha) < 5) semanas[semanas.length - 1] = foto;
+    if (ultima && lunesDe(ultima.fecha) === lunesDe(fecha)) semanas[semanas.length - 1] = foto;
     else semanas.push(foto);
 
     const conDatos = nombre => Object.values(resultado).some(r => r.fuentes && r.fuentes[nombre]);
@@ -427,7 +495,7 @@ export async function ejecutar({
         generado: ahora.toISOString(),
         fuentes: fechasFuentes,
         mediaCatalogo: redondear(mediaCatalogo, 1),
-        tono: { metodo: clasificador.nombre, acierto: aciertoEquilibrado(evaluacionModelo) },
+        tono: aciertoTotal(resultado, anterior.tono, clasificador.nombre),
         obras: resultado
     });
     await escribirJSON(ruta('datos/ids.json'), ids);

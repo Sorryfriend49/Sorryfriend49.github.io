@@ -9,11 +9,16 @@
    3. Por tipo (manga, manhwa, manhua) ordena las obras por su actividad de hoy, de los
       últimos 7 días y de los últimos 30, y guarda las primeras en datos/populares.json
       junto con cuántos lectores nuevos sumaron en ese tiempo.
+   4. Guarda también, de cada obra, los números del día (en "diario"): cuántos la tienen en
+      su lista, su actividad de los últimos 7 días, cuántos la están leyendo y cuánto cambiaron
+      sus lectores en una semana. La página los usa para ordenar por popularidad y tendencia
+      con datos de hoy, aunque la opinión completa de cada obra se renueve por partes.
    Para probarlo en tu PC: node scripts/populares.mjs   (Node 18 o más nuevo; no necesita npm)
 =================================== */
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { analizarActividad } from './analisis.mjs';
 
 const ANILIST = 'https://graphql.anilist.co';
 const AGENTE = 'FrozenProject/1.0 (+https://frozen-project.vercel.app)';
@@ -27,8 +32,8 @@ export const PERIODOS = { hoy: 1, semana: 7, mes: 30 };
 const CONSULTA = `query ($ids: [Int], $p: Int) {
     Page(page: $p, perPage: ${OBRAS_POR_CONSULTA}) { pageInfo { hasNextPage }
         media(id_in: $ids, type: MANGA) { id popularity
-            dias1: trends(sort: DATE_DESC, page: 1, perPage: 25) { nodes { date trending popularity } }
-            dias2: trends(sort: DATE_DESC, page: 2, perPage: 25) { nodes { date trending popularity } } } } }`;
+            dias1: trends(sort: DATE_DESC, page: 1, perPage: 25) { nodes { date trending popularity inProgress } }
+            dias2: trends(sort: DATE_DESC, page: 2, perPage: 25) { nodes { date trending popularity inProgress } } } } }`;
 
 const dormir = ms => new Promise(r => setTimeout(r, ms));
 
@@ -118,6 +123,29 @@ export function ordenar(obras, medidas){
     return periodos;
 }
 
+/* Los números del día de cada obra, en filas cortas para que el archivo pese poco:
+   lectores (la tienen en su lista), semana (actividad de los últimos 7 días), leyendo (la están
+   leyendo), cambio (cuánto cambiaron sus lectores en una semana: 0.01 = +1 %) y dias (de esa semana). */
+export const CAMPOS_DIARIO = ['lectores', 'semana', 'leyendo', 'cambio', 'dias'];
+export function numerosDelDia(nodosDe, medidas){
+    const obras = {};
+    for (const [id, { nodos, popularidad }] of nodosDe){
+        const m = medidas.get(id);
+        const a = analizarActividad(nodos) || {};
+        // Si AniList no trae la popularidad de hoy, la del último día que la tenga
+        const ultimo = (nodos || []).filter(n => n && Number.isFinite(n.popularity) && n.popularity > 0).sort((x, y) => y.date - x.date)[0];
+        const lectores = Number.isFinite(popularidad) && popularidad > 0 ? popularidad : (ultimo ? ultimo.popularity : 0);
+        if (!lectores) continue;
+        obras[id] = [lectores, m ? m.semana.actividad : 0, a.leyendo || null,
+            Number.isFinite(a.lectores) ? a.lectores : null, Number.isFinite(a.dias) ? a.dias : null];
+    }
+    return { campos: CAMPOS_DIARIO, obras };
+}
+
+// JSON legible, pero con cada fila de números en una sola línea
+export const aTexto = datos => JSON.stringify(datos, null, 2)
+    .replace(/\[\n\s*([^\[\]{}]*?)\n\s*\]/g, (_, dentro) => '[' + dentro.split(/,\n\s*/).join(', ') + ']') + '\n';
+
 export async function ejecutar({ raiz, pedir = crearPedido(), registro = console.log, ahora = new Date() } = {}){
     const ruta = p => join(raiz, p);
     const catalogo = JSON.parse(await readFile(ruta('obras.json'), 'utf8'));
@@ -150,10 +178,11 @@ export async function ejecutar({ raiz, pedir = crearPedido(), registro = console
         actualizado: ahora.toISOString(),
         dia: new Date(ref * 1000).toISOString().slice(0, 10),
         metodo: 'Actividad diaria de AniList (gente que agrega la obra o avanza capítulos) en el último día, los últimos 7 días y los últimos 30 días.',
-        periodos
+        periodos,
+        diario: numerosDelDia(nodosDe, medidas)
     };
     await mkdir(ruta('datos'), { recursive: true });
-    await writeFile(ruta('datos/populares.json'), JSON.stringify(salida, null, 2) + '\n');
+    await writeFile(ruta('datos/populares.json'), aTexto(salida));
     const resumen = Object.entries(periodos).map(([p, t]) => `${p}: ${TIPOS.map(x => t[x][0] ? t[x][0].id : '—').join(', ')}`).join(' | ');
     registro(`Listo (${salida.dia}). ${resumen}`);
     return salida;

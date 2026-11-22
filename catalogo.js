@@ -50,11 +50,18 @@
     const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
     const MESES_CORTOS = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sept', 'oct', 'nov', 'dic'];
 
-    // Opinión de la comunidad: datos/comunidad.json, que genera cada lunes la tarea de GitHub
-    // (scripts/comunidad.mjs). Si todavía no existe o le falta una obra, se usa AniList de obras.json.
+    // Opinión de la comunidad: datos/comunidad.json, que genera de lunes a viernes la tarea de GitHub
+    // (scripts/comunidad.mjs, por niveles). Si todavía no existe o le falta una obra, se usa AniList de obras.json.
     let comunidad = null;
     const deComunidad = o => (comunidad && comunidad.obras && comunidad.obras[String(o.ids && o.ids.anilist)]) || null;
+    // Números del día (datos/populares.json, dos veces al día): lectores, actividad de la semana,
+    // cuántos la leen y cuánto cambiaron sus lectores. Mandan sobre los de la opinión de la comunidad,
+    // que de cada obra se renueva por partes (de lunes a viernes).
+    let diario = new Map();
+    const delDia = o => diario.get(o.id) || null;
     const popularidad = o => {
+        const d = delDia(o);
+        if (d && d.lectores > 0) return d.lectores;
         const c = deComunidad(o);
         return (c && c.popularidad) || (o.comunidad && o.comunidad.anilist && o.comunidad.anilist.popularidad) || 0;
     };
@@ -65,7 +72,32 @@
     };
     const claveFecha = o => o.inicio ? (o.inicio + '-00-00').slice(0, 10) : '0000-00-00';
     // Actividad de la semana en AniList (gente que la agrega o avanza capítulos) y cuántos la leen ahora
-    const actividad = o => { const c = deComunidad(o); return (c && c.actividad) || {}; };
+    const actividad = o => {
+        const c = deComunidad(o);
+        const base = (c && c.actividad) || {};
+        const d = delDia(o);
+        return d ? { ...base, semana: d.semana || 0, leyendo: d.leyendo || base.leyendo || null } : base;
+    };
+    // Cuánto cambiaron sus lectores en una semana (0.01 = +1 %)
+    const tendenciaDe = o => {
+        const d = delDia(o);
+        if (d && Number.isFinite(d.cambio)) return { lectores: d.cambio, dias: Number.isFinite(d.dias) ? d.dias : 7 };
+        const c = deComunidad(o);
+        return (c && c.tendencia) || null;
+    };
+    // Si la tarea diaria lleva más de un día y medio sin correr (y la de la comunidad sí corrió), no se usa
+    function leerDiario(datos, datosComunidad){
+        const d = datos && datos.diario;
+        if (!d || !Array.isArray(d.campos) || !d.obras) return new Map();
+        const fecha = x => Date.parse(x) || 0;
+        if (datosComunidad && fecha(datosComunidad.generado) - fecha(datos.actualizado) > 36 * 3600 * 1000) return new Map();
+        const col = Object.fromEntries(d.campos.map((c, i) => [c, i]));
+        const valor = (fila, campo) => (campo in col && Number.isFinite(fila[col[campo]])) ? fila[col[campo]] : null;
+        return new Map(Object.entries(d.obras).filter(([, f]) => Array.isArray(f)).map(([id, f]) => [id, {
+            lectores: valor(f, 'lectores'), semana: valor(f, 'semana'), leyendo: valor(f, 'leyendo'),
+            cambio: valor(f, 'cambio'), dias: valor(f, 'dias')
+        }]));
+    }
     const etiquetasDe = o => { const c = deComunidad(o); return (c && Array.isArray(c.etiquetas)) ? c.etiquetas : []; };
 
     const ORDENES = {
@@ -767,7 +799,7 @@
         let texto = fecha ? `Catálogo con datos de AniList del ${textoFecha(fecha)}.` : 'Catálogo con datos de AniList.';
         if (comunidad && comunidad.generado){
             const nombres = Object.entries(comunidad.fuentes || {}).filter(([, f]) => f).map(([n]) => NOMBRES_FUENTES[n]).filter(Boolean);
-            texto += ` Opinión de la comunidad (${enumerar(nombres)}) actualizada el ${textoFecha(comunidad.generado.slice(0, 10))}; se renueva cada lunes.`;
+            texto += ` Opinión de la comunidad (${enumerar(nombres)}) actualizada el ${textoFecha(comunidad.generado.slice(0, 10))}; se renueva por partes de lunes a viernes.`;
         }
         const tono = comunidad && comunidad.tono;
         const acierto = tono && tono.metodo === 'modelo' && Number.isFinite(tono.acierto)
@@ -1034,7 +1066,7 @@
         fila.append(explicacion);
         nodos.push(fila);
 
-        // Resumen de lo que dicen las reseñas, escrito por IA (Gemma 4) en la tarea semanal
+        // Resumen de lo que dicen las reseñas, escrito por IA (Gemma 4) en la tarea de GitHub
         if (c && c.resumen && c.resumen.texto){
             nodos.push(crear('p', 'resumen-ia', c.resumen.texto),
                 crear('p', 'nota-ia', `Resumen hecho con IA (${c.resumen.modelo || 'Gemma 4'}, de Google) a partir de ${c.resumen.resenas} reseñas de AniList. Puede equivocarse.`));
@@ -1074,9 +1106,10 @@
             }
 
             // Tendencia: lectores ganados (o perdidos) en los últimos días
-            if (c.tendencia && Number.isFinite(c.tendencia.lectores)){
-                const v = c.tendencia.lectores;
-                const dias = Number.isFinite(c.tendencia.dias) ? c.tendencia.dias : 7;
+            const tendencia = tendenciaDe(o);
+            if (tendencia && Number.isFinite(tendencia.lectores)){
+                const v = tendencia.lectores;
+                const dias = Number.isFinite(tendencia.dias) ? tendencia.dias : 7;
                 nodos.push(crear('p', 'dato-opinion', Math.abs(v) < 0.0005
                     ? `Los mismos lectores que hace ${dias} días.`
                     : `${v > 0 ? '+' : '−'}${formatoPorcentaje.format(Math.abs(v))} de lectores en los últimos ${dias} días.`));
@@ -1093,8 +1126,10 @@
             });
             if (lista.children.length) nodos.push(lista);
 
-            if (comunidad.generado){
-                const nota = crear('p', 'opinion-fecha', `Actualizado el ${textoFecha(comunidad.generado.slice(0, 10))}. `);
+            // La fecha en que se renovó esta obra por completo (con los niveles, cada una tiene la suya)
+            const fechaObra = String(c.revisada || comunidad.generado || '').slice(0, 10);
+            if (fechaObra){
+                const nota = crear('p', 'opinion-fecha', `Actualizado el ${textoFecha(fechaObra)}. `);
                 const enlace = crear('a', null, 'Cómo se calcula');
                 enlace.href = '#sobre';
                 nota.append(enlace);
@@ -1202,7 +1237,7 @@
         fila(dl, 'Salió', textoFecha(o.inicio));
         if (o.fin) fila(dl, 'Terminó', textoFecha(o.fin));
         // Capítulos y tomos: los de AniList si ya terminó; si sigue saliendo, los publicados
-        // hasta ahora según MangaUpdates (los actualiza la tarea de cada lunes)
+        // hasta ahora según MangaUpdates (los actualiza la tarea de lunes a viernes)
         const publicados = (deComunidad(o) || {}).capitulos || {};
         const hastaAhora = o.estado === 'terminado' ? '' : ' hasta ahora';
         const numero = n => formatoNumero.format(n);
@@ -1425,6 +1460,7 @@
             if (!respuesta.ok) throw new Error('HTTP ' + respuesta.status);
             const datos = await respuesta.json();
             comunidad = datosComunidad;
+            diario = leerDiario(datosPopulares, datosComunidad);
             obras = (datos.obras || []).filter(o => o && o.id && o.titulo && o.portada && TIPOS[o.tipo] && Array.isArray(o.generos));
             porId = new Map(obras.map(o => [o.id, o]));
             porAniList = new Map(obras.filter(o => o.ids && o.ids.anilist).map(o => [o.ids.anilist, o]));

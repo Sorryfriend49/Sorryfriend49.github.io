@@ -23,7 +23,7 @@ export const RESENAS_EN_RESUMEN = 8;        // las más útiles según los lecto
 export const CARACTERES_POR_RESENA = 500;
 const RESENAS_NUEVAS_PARA_REHACER = 3;
 const DIAS_PARA_REHACER = 84;               // 12 semanas
-const LIMITE_MINUTOS = 40;                  // lo que no alcance queda para la semana siguiente
+const LIMITE_MINUTOS = 40;                  // lo que no alcance entra al día siguiente (ver niveles.mjs)
 const OLLAMA = 'http://127.0.0.1:11434';
 
 const NOMBRES_TEMAS = {

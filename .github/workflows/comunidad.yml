@@ -1,10 +1,16 @@
-# Cada lunes: arma obras.json desde catalogo.json (scripts/catalogo.mjs) con los datos de
+# De lunes a viernes: arma obras.json desde catalogo.json (scripts/catalogo.mjs) con los datos de
 # AniList, y después la opinión de la comunidad: junta puntajes, votos y reseñas de AniList,
 # MyAnimeList, Kitsu y MangaUpdates, además de las etiquetas, las
 # recomendaciones y la actividad de AniList; calcula los resultados con
 # scripts/comunidad.mjs (y el modelo de sentimiento de scripts/tono.mjs), escribe
 # resúmenes con Gemma 4 (scripts/resumenes.mjs) y publica datos/comunidad.json en la
 # página. Es gratis: GitHub no cobra las tareas automáticas de los repositorios públicos.
+#
+# Va por niveles (scripts/niveles.mjs): cada día renueva por completo solo las obras que les
+# toca (las que siguen saliendo, una vez por semana; las terminadas, una vez cada 4 semanas;
+# las nuevas, apenas llegan) y, para todas, el puntaje, los votos y la popularidad de AniList.
+# Para renovarlas todas de una vez (por ejemplo, si cambia la forma de calcular): Run workflow
+# con "Renovar todas las obras" marcado.
 #
 # Para agregar obras: suma su número de AniList a catalogo.json (la tarea corre sola al guardarlo).
 # Para correrla a mano: pestaña Actions > "Opinión de la comunidad" > Run workflow.
@@ -16,8 +22,13 @@ name: Opinión de la comunidad
 
 on:
   schedule:
-    - cron: '17 9 * * 1'        # lunes 9:17 UTC (4:17 a. m. en Colombia)
+    - cron: '17 9 * * 1-5'      # de lunes a viernes, 9:17 UTC (4:17 a. m. en Colombia)
   workflow_dispatch:
+    inputs:
+      todas:
+        description: 'Renovar todas las obras (no solo las del día)'
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:                      # también corre cuando cambia el catálogo o el algoritmo
@@ -38,8 +49,9 @@ concurrency:
 jobs:
   actualizar:
     runs-on: ubuntu-latest
-    # Con unas 200 obras: ~25 min de datos + hasta 45 de resúmenes. Las tareas de los
-    # repositorios públicos son gratis, así que se deja margen para que nunca se corte.
+    # Por niveles, un día normal con unas 200 obras tarda pocos minutos; renovarlas todas,
+    # ~25 min de datos + hasta 45 de resúmenes. Las tareas de los repositorios públicos son
+    # gratis, así que se deja margen para que nunca se corte.
     timeout-minutes: 120
     steps:
       # Siempre la última versión de main: si esta ejecución esperó a que terminara otra,
@@ -69,6 +81,7 @@ jobs:
           node scripts/comunidad.mjs
         env:
           MAL_CLIENT_ID: ${{ secrets.MAL_CLIENT_ID }}
+          TODAS: ${{ inputs.todas && 'si' || '' }}
 
       # Resúmenes con Gemma 4 (modelo abierto de Google, licencia Apache 2.0) en esta misma
       # máquina, con Ollama. Solo se instala si hay obras con reseñas nuevas; si algo falla,

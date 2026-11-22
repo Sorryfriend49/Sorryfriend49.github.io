@@ -1,6 +1,6 @@
 /* ===================================
    FROZEN PROJECT: arma obras.json a partir de catalogo.json
-   catalogo.json es la lista de obras (sus números de AniList). Cada semana la tarea de
+   catalogo.json es la lista de obras (sus números de AniList). De lunes a viernes la tarea de
    GitHub corre este programa: trae de AniList títulos, géneros, fechas, capítulos, portadas
    y los lugares oficiales para leer, y escribe obras.json, que es lo que lee la página.
    Para agregar una obra basta con sumar su número de AniList a catalogo.json.

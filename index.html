@@ -293,21 +293,21 @@
 
                 <h3>De dónde salen los datos</h3>
                 <ul>
-                    <li>Los títulos, géneros, fechas y portadas vienen de <a href="https://anilist.co" target="_blank" rel="noopener noreferrer">AniList</a> y se actualizan cada lunes. Si la obra sigue saliendo, los capítulos y tomos publicados hasta ahora vienen de <a href="https://www.mangaupdates.com" target="_blank" rel="noopener noreferrer">MangaUpdates</a>.</li>
+                    <li>Los títulos, géneros, fechas y portadas vienen de <a href="https://anilist.co" target="_blank" rel="noopener noreferrer">AniList</a> y se actualizan de lunes a viernes. Si la obra sigue saliendo, los capítulos y tomos publicados hasta ahora vienen de <a href="https://www.mangaupdates.com" target="_blank" rel="noopener noreferrer">MangaUpdates</a>.</li>
                     <li>Lo que opina la comunidad junta a cuatro comunidades de lectores: <a href="https://anilist.co" target="_blank" rel="noopener noreferrer">AniList</a>, <a href="https://myanimelist.net" target="_blank" rel="noopener noreferrer">MyAnimeList</a>, <a href="https://kitsu.app" target="_blank" rel="noopener noreferrer">Kitsu</a> y <a href="https://www.mangaupdates.com" target="_blank" rel="noopener noreferrer">MangaUpdates</a>.</li>
-                    <li>La popularidad es cuántas personas tienen la obra en su lista de AniList.</li>
+                    <li>La popularidad es cuántas personas tienen la obra en su lista de AniList. Se actualiza dos veces al día.</li>
                     <li>“Dónde leer” lleva solo a lugares oficiales: plataformas para leer en español o en inglés, editoriales que publican los tomos y, si no hay edición en esos idiomas, las plataformas oficiales en su idioma original. La lista sale de los enlaces oficiales que la comunidad registra en AniList.</li>
                 </ul>
 
                 <h3>Cómo se calcula lo que opina la comunidad</h3>
                 <ol>
-                    <li>Cada lunes, una tarea automática y gratuita de GitHub junta los puntajes y votos de AniList, MyAnimeList, Kitsu y MangaUpdates.</li>
+                    <li>De lunes a viernes, una tarea automática y gratuita de GitHub junta los puntajes y votos de AniList, MyAnimeList, Kitsu y MangaUpdates. Para que siga siendo liviana, va por partes: cada obra se renueva por completo una vez por semana si sigue saliendo y una vez cada cuatro semanas si ya terminó, y las nuevas apenas llegan. El puntaje y los votos de AniList se renuevan todos esos días para todas.</li>
                     <li>El puntaje combinado pesa a cada comunidad según sus votos, con un tope de 10.000 para que ninguna tape a las demás. Las obras con pocos votos se acercan al promedio del catálogo hasta reunir más opiniones.</li>
                     <li>La confianza es alta cuando hay muchos votos y las comunidades coinciden, y baja cuando hay pocos o no coinciden.</li>
                     <li>El reparto de votos muestra cuánta gente le puso cada nota en AniList y si las opiniones están divididas.</li>
                     <li>De las reseñas de AniList (hasta 50, las que sus lectores marcaron como más útiles) se cuenta cuántas son positivas. Para saber qué temas se elogian o critican, un modelo de lenguaje gratuito que entiende español e inglés lee cada frase que habla de un tema (el arte, la historia, el ritmo…) y dice si lo elogia o lo critica. Un tema solo aparece si varias reseñas coinciden, y con menos de 8 reseñas no se sacan temas. No se guarda el texto de las reseñas ni quién las escribió.</li>
                     <li>Si la obra tiene 5 reseñas o más, Gemma 4 (el modelo abierto de Google) lee las 8 más útiles, sin las partes marcadas como spoiler, y escribe un resumen corto de lo que opinan. Corre dentro de la misma tarea de GitHub, así que las reseñas no se mandan a ningún otro servicio. El resumen se rehace cuando llegan reseñas nuevas, y en la ficha siempre se avisa que lo hizo una IA.</li>
-                    <li>La tendencia usa el registro diario de AniList: cuántos lectores sumó la obra en los últimos 7 días, cuántos la están leyendo y cuánta actividad tuvo (gente que la agrega o avanza capítulos). “En tendencia esta semana” ordena por esa actividad.</li>
+                    <li>La tendencia usa el registro diario de AniList: cuántos lectores sumó la obra en los últimos 7 días, cuántos la están leyendo y cuánta actividad tuvo (gente que la agrega o avanza capítulos). “En tendencia esta semana” ordena por esa actividad, y “Lo más popular” de Inicio muestra las obras con más actividad en el último día, los últimos 7 días y los últimos 30, con cuántos lectores sumaron en ese tiempo. Estos números se actualizan dos veces al día.</li>
                     <li>Las etiquetas y las recomendaciones (“si te gustó…”) también las votan los lectores de AniList. El porcentaje de cada etiqueta es qué tan de acuerdo están con ella. No se muestran etiquetas que cuentan la historia, ni recomendaciones de novelas u obras para adultos.</li>
                 </ol>
                 <p class="nota-datos" id="fechaDatos"></p>
@@ -412,7 +412,7 @@
 
     <script src="sitio.js?v=4" defer></script>
     <script src="biblioteca.js?v=4" defer></script>
-    <script src="catalogo.js?v=10" defer></script>
+    <script src="catalogo.js?v=11" defer></script>
     <script src="cuenta.js?v=2" defer></script>
     <script src="importar.js?v=1" defer></script>
 
