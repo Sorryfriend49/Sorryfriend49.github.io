@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-11-22T16:17:15.707Z",
+  "actualizado": "2026-11-22T16:23:53.531Z",
   "dia": "2026-11-22",
-  "metodo": "Actividad diaria de AniList (gente que agrega la obra o avanza capítulos) en el último día, 7 días y 30 días.",
+  "metodo": "Actividad diaria de AniList (gente que agrega la obra o avanza capítulos) en el último día, los últimos 7 días y los últimos 30 días.",
   "periodos": {
     "hoy": {
       "manga": [
@@ -173,82 +173,82 @@
       "manga": [
         {
           "id": "one-piece",
-          "actividad": 36494,
-          "nuevos": null
+          "actividad": 39585,
+          "nuevos": 2146
         },
         {
           "id": "dandadan",
-          "actividad": 16533,
-          "nuevos": null
+          "actividad": 20663,
+          "nuevos": 1263
         },
         {
           "id": "blue-lock",
-          "actividad": 15419,
-          "nuevos": null
+          "actividad": 19126,
+          "nuevos": 1336
         },
         {
           "id": "kagurabachi",
-          "actividad": 13900,
-          "nuevos": null
+          "actividad": 17668,
+          "nuevos": 1319
         },
         {
           "id": "sakamoto-days",
-          "actividad": 11281,
-          "nuevos": null
+          "actividad": 14292,
+          "nuevos": 752
         }
       ],
       "manhwa": [
         {
           "id": "overgeared",
-          "actividad": 22109,
-          "nuevos": null
-        },
-        {
-          "id": "the-extras-academy-survival-guide",
-          "actividad": 18544,
-          "nuevos": null
+          "actividad": 27056,
+          "nuevos": 1422
         },
         {
           "id": "pick-me-up",
-          "actividad": 18530,
-          "nuevos": null
+          "actividad": 22581,
+          "nuevos": 1117
+        },
+        {
+          "id": "revenge-of-the-baskerville-bloodhound",
+          "actividad": 21733,
+          "nuevos": 923
         },
         {
           "id": "return-of-the-blossoming-blade",
-          "actividad": 17524,
-          "nuevos": null
+          "actividad": 20810,
+          "nuevos": 1045
         },
         {
-          "id": "nano-machine",
-          "actividad": 17405,
-          "nuevos": null
+          "id": "the-extras-academy-survival-guide",
+          "actividad": 20742,
+          "nuevos": 1152
         }
       ],
       "manhua": [
         {
           "id": "the-devil-butler",
-          "actividad": 16301,
-          "nuevos": null
+          "actividad": 18602,
+          "nuevos": 460
         },
         {
           "id": "log-into-the-future",
-          "actividad": 6877,
-          "nuevos": null
-        },
-        {
-          "id": "lucky-me-i-secretly-cultivated-for-1-000-years",
-          "actividad": 5867,
-          "nuevos": null
+          "actividad": 8551,
+          "nuevos": 312
         },
         {
           "id": "i-am-the-fated-villain",
-          "actividad": 5725,
-          "nuevos": null
+          "actividad": 6976,
+          "nuevos": 355
+        },
+        {
+          "id": "lucky-me-i-secretly-cultivated-for-1-000-years",
+          "actividad": 6868,
+          "nuevos": 416
         },
         {
           "id": "rebirth-of-the-ultimate-master",
-          "actividad": 5186,
-          "nuevos": null
+          "actividad": 6649,
+          "nuevos": 283
         }
       ]
     }
