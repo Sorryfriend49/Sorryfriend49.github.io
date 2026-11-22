@@ -23,10 +23,10 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import {
     METODO, combinarPuntajes, analizarDistribucion, analizarResenas, calcularTendencia, coincidencia, elegirSerie,
     normalizarTitulo, redondear, capitulosDeMangaUpdates, frasesConTemas, tonosConPalabras, evaluarTono, sumarEvaluaciones, aciertoEquilibrado,
-    analizarActividad, prepararEtiquetas, prepararRecomendaciones, textoParaResumen
+    analizarActividad, prepararEtiquetas, prepararRecomendaciones
 } from './analisis.mjs';
 import { crearClasificador } from './tono.mjs';
-import { necesitaResumen, VERSION_RESUMEN, MIN_RESENAS_RESUMEN, RESENAS_EN_RESUMEN, CARACTERES_POR_RESENA } from './resumenes.mjs';
+import { necesitaResumen, VERSION_RESUMEN, MIN_RESENAS_RESUMEN } from './resumenes.mjs';
 import { elegirDelDia } from './niveles.mjs';
 
 const AGENTE = 'FrozenProject/1.0 (+https://sorryfriend49.github.io)';
@@ -414,20 +414,8 @@ export async function ejecutar({
                 actividad = analizarActividad(detalles.media.trends && detalles.media.trends.nodes);
             }
 
-            // Resumen: si hace falta uno nuevo, se dejan listas sus reseñas más útiles (sin spoilers)
-            if (necesitaResumen(resenas, resumen, fecha)){
-                pendientes.push({
-                    id: obra.ids.anilist,
-                    titulo: obra.titulo,
-                    tipo: obra.tipo,
-                    datos: { n: resenas.n, positivas: resenas.positivas, negativas: resenas.negativas, mixtas: resenas.mixtas, elogian: resenas.elogian, critican: resenas.critican },
-                    resenas: detalles.resenas.filter(r => r && Number.isFinite(r.score)).slice(0, RESENAS_EN_RESUMEN).map(r => ({
-                        nota: r.score,
-                        resumen: textoParaResumen(r.summary, 200),
-                        texto: textoParaResumen(r.body, CARACTERES_POR_RESENA)
-                    }))
-                });
-            }
+            // Resumen: si hace falta uno nuevo, queda anotada (resumenes.mjs baja sus reseñas y lo escribe)
+            if (necesitaResumen(resenas, resumen, fecha)) pendientes.push({ id: obra.ids.anilist, titulo: obra.titulo, tipo: obra.tipo });
         } catch (error){
             registro(`  ${obra.titulo}: reseñas y detalles fallaron (${error.message}); se usa el dato anterior`);
         }
@@ -500,7 +488,7 @@ export async function ejecutar({
     });
     await escribirJSON(ruta('datos/ids.json'), ids);
     await escribirJSON(ruta('datos/historial.json'), { semanas: semanas.slice(-SEMANAS_DE_HISTORIAL) });
-    // Reseñas para los resúmenes: archivo temporal que nunca se sube (ver .gitignore y resumenes.mjs)
+    // Qué obras necesitan resumen: archivo temporal que nunca se sube (ver .gitignore y resumenes.mjs)
     const carpetaTemporal = ruta('.tmp');
     await rm(carpetaTemporal, { recursive: true, force: true });
     if (pendientes.length) await escribirJSON(join(carpetaTemporal, 'pendientes.json'), pendientes);

@@ -1,19 +1,24 @@
 /* ===================================
    FROZEN PROJECT: resúmenes de lo que dicen las reseñas
    Los escribe Gemma 4 (E4B), el modelo abierto de Google (licencia Apache 2.0), que corre
-   gratis dentro de la tarea de GitHub con Ollama: sin clave ni cuenta, y las reseñas no
-   salen de GitHub.
-   1. scripts/comunidad.mjs deja en .tmp/pendientes.json las obras que necesitan resumen
-      (5 reseñas o más, sin resumen o con reseñas nuevas) con el texto de sus reseñas más útiles,
-      ya sin las partes marcadas como spoiler. Ese archivo nunca se sube al repositorio.
-   2. Este programa le pide a Gemma un resumen de 2 o 3 oraciones por obra, lo revisa y lo
-      guarda en datos/comunidad.json. Al terminar borra .tmp/.
+   gratis dentro de la tarea de GitHub con Ollama: sin clave ni cuenta. Las reseñas se bajan
+   de AniList en el momento, no salen de la máquina de GitHub y no se guardan en ningún lado.
+   1. scripts/comunidad.mjs deja en .tmp/pendientes.json qué obras necesitan resumen (5 reseñas
+      o más, sin resumen o con reseñas nuevas). Ese archivo nunca se sube al repositorio.
+   2. Este programa baja las reseñas más útiles de cada una (sin las partes marcadas como
+      spoiler), le pide a Gemma un resumen de 2 o 3 oraciones, lo revisa y lo guarda en
+      datos/comunidad.json.
+   En GitHub, si hay muchas, se reparten entre varias máquinas a la vez (ver comunidad.yml):
+      --repartir          cuántas máquinas usar (lo lee la tarea; RESUMIR=id,id agrega otras)
+      --parte K --de N    la máquina K (de N) escribe los suyos en .tmp/resumenes/parte-K.json
+      --juntar            una última máquina los guarda todos en datos/comunidad.json
    Para correrlo en tu PC: instala Ollama, ejecuta "ollama pull gemma4:e4b" y luego
    node scripts/comunidad.mjs && node scripts/resumenes.mjs
 =================================== */
-import { readFile, writeFile, rm } from 'node:fs/promises';
+import { readFile, writeFile, rm, mkdir, readdir, appendFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { textoParaResumen } from './analisis.mjs';
 
 export const VERSION_RESUMEN = 1;           // si cambian las instrucciones, se sube y se reescriben todos
 export const MODELO_RESUMEN = 'gemma4:e4b';
@@ -23,7 +28,9 @@ export const RESENAS_EN_RESUMEN = 8;        // las más útiles según los lecto
 export const CARACTERES_POR_RESENA = 500;
 const RESENAS_NUEVAS_PARA_REHACER = 3;
 const DIAS_PARA_REHACER = 84;               // 12 semanas
-const LIMITE_MINUTOS = 40;                  // lo que no alcance entra al día siguiente (ver niveles.mjs)
+const LIMITE_MINUTOS = 40;                  // por máquina; lo que no alcance entra al día siguiente (ver niveles.mjs)
+export const POR_MAQUINA = 15;              // resúmenes por máquina de GitHub (unos 13 minutos de Gemma)
+export const MAX_MAQUINAS = 8;              // GitHub deja 20 tareas a la vez en cuentas gratis: queda margen
 const OLLAMA = 'http://127.0.0.1:11434';
 
 const NOMBRES_TEMAS = {
@@ -120,13 +127,111 @@ async function leerJSON(ruta, siNoExiste){
     catch (error){ if (error.code === 'ENOENT') return siNoExiste; throw error; }
 }
 
+/* ---------- Las reseñas, de AniList en el momento ---------- */
+const ANILIST = 'https://graphql.anilist.co';
+const AGENTE = 'FrozenProject/1.0 (+https://frozen-project.vercel.app)';
+const PAUSA_ANILIST = 2200;                 // AniList hoy permite unas 30 consultas por minuto
+const CONSULTA_RESENAS = `query ($id: Int) { Page(page: 1, perPage: 25) {
+    reviews(mediaId: $id, sort: RATING_DESC) { score summary body } } }`;
+const dormir = ms => new Promise(r => setTimeout(r, ms));
+
+// Las reseñas más útiles de una obra (respeta la pausa de AniList y reintenta si está ocupado)
+export function crearLectorResenas({ fetch = globalThis.fetch, esperar = dormir, registro = console.log } = {}){
+    let ultima = 0;
+    return async function resenasDe(id, intentos = 5){
+        for (let intento = 1; intento <= intentos; intento++){
+            const falta = ultima + PAUSA_ANILIST - Date.now();
+            if (falta > 0) await esperar(falta);
+            ultima = Date.now();
+            let r;
+            try {
+                r = await fetch(ANILIST, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', Accept: 'application/json', 'User-Agent': AGENTE },
+                    body: JSON.stringify({ query: CONSULTA_RESENAS, variables: { id: Number(id) } }),
+                    signal: AbortSignal.timeout(30000)
+                });
+            } catch (error){
+                if (intento === intentos) throw error;
+                await esperar(3000 * intento);
+                continue;
+            }
+            if (r.status === 429 || r.status >= 500){
+                if (intento === intentos) throw new Error(`AniList respondió ${r.status}`);
+                const segundos = Number(r.headers.get('retry-after')) || 15 * intento;
+                registro(`  AniList respondió ${r.status}; espero ${segundos} s`);
+                await esperar(segundos * 1000);
+                continue;
+            }
+            const d = await r.json();
+            if (!r.ok || (d.errors && d.errors.length)) throw new Error('AniList: ' + ((d.errors || []).map(e => e.message).join('; ') || r.status));
+            return (d.data && d.data.Page && d.data.Page.reviews) || [];
+        }
+    };
+}
+
+// De cada reseña, Gemma recibe su nota, el resumen de su autor y el comienzo del texto (sin spoilers)
+export function resenasParaResumen(resenas){
+    return (resenas || []).filter(r => r && Number.isFinite(r.score)).slice(0, RESENAS_EN_RESUMEN).map(r => ({
+        nota: r.score,
+        resumen: textoParaResumen(r.summary, 200),
+        texto: textoParaResumen(r.body, CARACTERES_POR_RESENA)
+    }));
+}
+
+// Lo que la obra ya tiene guardado de sus reseñas: cuántas, de qué tono y qué temas
+const datosDe = r => ({ n: r.n, positivas: r.positivas, negativas: r.negativas, mixtas: r.mixtas, elogian: r.elogian, critican: r.critican });
+
+/* Escribe los resúmenes de una lista de obras ({ id, titulo, tipo }) y devuelve [{ id, resumen }].
+   alListo(id, resumen) se llama apenas sale cada uno, para guardarlo sin esperar al final. */
+export async function resumir(pendientes, comunidad, {
+    fetch = globalThis.fetch, resenasDe, ahora = new Date(), registro = console.log,
+    limiteMs = LIMITE_MINUTOS * 60 * 1000, modelo = MODELO_RESUMEN, alListo = async () => {}
+} = {}){
+    const inicio = Date.now();
+    const hechos = [];
+    let vistos = 0;
+    for (const obra of pendientes){
+        if (Date.now() - inicio > limiteMs){
+            registro(`Se acabó el tiempo: ${pendientes.length - vistos} quedan para mañana.`);
+            break;
+        }
+        vistos++;
+        const guardada = comunidad && comunidad.obras && comunidad.obras[String(obra.id)];
+        if (!guardada || !guardada.resenas) continue;
+        const t0 = Date.now();
+        try {
+            const resenas = resenasParaResumen(await resenasDe(obra.id));
+            if (resenas.length < MIN_RESENAS_RESUMEN){
+                registro(`  ${obra.titulo}: AniList dio pocas reseñas; queda para otro día`);
+                continue;
+            }
+            const datos = datosDe(guardada.resenas);
+            const texto = revisarResumen(await pedirResumen(fetch, modelo, construirPedido({ titulo: obra.titulo, tipo: obra.tipo, datos, resenas })));
+            if (!texto){
+                registro(`  ${obra.titulo}: el resumen no pasó la revisión; queda el anterior`);
+                continue;
+            }
+            const resumen = { texto, resenas: datos.n, modelo: NOMBRE_MODELO, version: VERSION_RESUMEN, fecha: hoy(ahora) };
+            hechos.push({ id: String(obra.id), resumen });
+            registro(`  ${obra.titulo} (${Math.round((Date.now() - t0) / 1000)} s): ${texto}`);
+            await alListo(String(obra.id), resumen);
+        } catch (error){
+            registro(`  ${obra.titulo}: no se pudo resumir (${error.message})`);
+        }
+    }
+    return hechos;
+}
+
+// En tu PC (una sola máquina): las de .tmp/pendientes.json, guardadas en datos/comunidad.json
 export async function escribirResumenes({
     raiz,
     fetch = globalThis.fetch,
     ahora = new Date(),
     registro = console.log,
     limiteMs = LIMITE_MINUTOS * 60 * 1000,
-    modelo = MODELO_RESUMEN
+    modelo = MODELO_RESUMEN,
+    resenasDe = crearLectorResenas({ fetch, registro })
 } = {}){
     const carpetaTemporal = join(raiz, '.tmp');
     const pendientes = await leerJSON(join(carpetaTemporal, 'pendientes.json'), []);
@@ -136,43 +241,109 @@ export async function escribirResumenes({
     }
     const rutaDatos = join(raiz, 'datos/comunidad.json');
     const datos = JSON.parse(await readFile(rutaDatos, 'utf8'));
-    const inicio = Date.now();
-    let hechos = 0;
-    let vistos = 0;
     registro(`Resúmenes por escribir con ${NOMBRE_MODELO} (${modelo}): ${pendientes.length}.`);
-    for (const obra of pendientes){
-        if (Date.now() - inicio > limiteMs){
-            registro(`Se acabó el tiempo: ${pendientes.length - vistos} quedan para la próxima ejecución.`);
-            break;
-        }
-        vistos++;
-        const destino = datos.obras && datos.obras[String(obra.id)];
-        if (!destino) continue;
-        const t0 = Date.now();
-        try {
-            const texto = revisarResumen(await pedirResumen(fetch, modelo, construirPedido(obra)));
-            if (!texto){
-                registro(`  ${obra.titulo}: el resumen no pasó la revisión; queda el anterior`);
-                continue;
-            }
-            destino.resumen = { texto, resenas: obra.datos.n, modelo: NOMBRE_MODELO, version: VERSION_RESUMEN, fecha: hoy(ahora) };
-            hechos++;
-            registro(`  ${obra.titulo} (${Math.round((Date.now() - t0) / 1000)} s): ${texto}`);
-            // Se guarda después de cada obra: si la tarea se corta, lo hecho no se pierde
-            await writeFile(rutaDatos, JSON.stringify(datos, null, 2) + '\n');
-        } catch (error){
-            registro(`  ${obra.titulo}: no se pudo resumir (${error.message})`);
-        }
-    }
+    const hechos = await resumir(pendientes, datos, {
+        fetch, resenasDe, ahora, registro, limiteMs, modelo,
+        // Se guarda después de cada obra: si la tarea se corta, lo hecho no se pierde
+        alListo: async (id, resumen) => { datos.obras[id].resumen = resumen; await writeFile(rutaDatos, JSON.stringify(datos, null, 2) + '\n'); }
+    });
     await rm(carpetaTemporal, { recursive: true, force: true });
-    registro(`Resúmenes escritos: ${hechos} de ${pendientes.length}.`);
-    return hechos;
+    registro(`Resúmenes escritos: ${hechos.length} de ${pendientes.length}.`);
+    return hechos.length;
 }
 
-// node scripts/resumenes.mjs
+/* ---------- Varias máquinas a la vez (en GitHub) ---------- */
+// Cuántas máquinas usar: una cada POR_MAQUINA resúmenes, como mucho MAX_MAQUINAS
+export function repartir(pendientes, { porMaquina = POR_MAQUINA, maximo = MAX_MAQUINAS } = {}){
+    const ids = (pendientes || []).map(p => Number(p.id)).filter(Number.isFinite);
+    const maquinas = ids.length ? Math.min(maximo, Math.ceil(ids.length / porMaquina)) : 0;
+    return { ids, maquinas };
+}
+
+// Las de la máquina "parte" (de 0 a de − 1): una de cada "de", así todas reciben parecido
+export const parteDe = (lista, parte, de) => (lista || []).filter((_, i) => i % de === parte);
+
+// Una máquina: escribe los suyos en .tmp/resumenes/parte-K.json (lo entrega la tarea a la que junta)
+export async function escribirParte({
+    raiz, parte, de, ids,
+    fetch = globalThis.fetch,
+    ahora = new Date(),
+    registro = console.log,
+    limiteMs = LIMITE_MINUTOS * 60 * 1000,
+    modelo = MODELO_RESUMEN,
+    resenasDe = crearLectorResenas({ fetch, registro })
+}){
+    if (!Number.isInteger(parte) || !Number.isInteger(de) || de < 1 || parte < 0 || parte >= de) throw new Error(`Parte ${parte} de ${de}: no tiene sentido`);
+    const catalogo = (await leerJSON(join(raiz, 'obras.json'), { obras: [] })).obras || [];
+    const porAniList = new Map(catalogo.filter(o => o && o.ids && o.ids.anilist).map(o => [String(o.ids.anilist), o]));
+    const comunidad = await leerJSON(join(raiz, 'datos/comunidad.json'), { obras: {} });
+    const mias = parteDe(ids, parte, de).map(id => porAniList.get(String(id))).filter(Boolean)
+        .map(o => ({ id: o.ids.anilist, titulo: o.titulo, tipo: o.tipo }));
+    registro(`Máquina ${parte + 1} de ${de}: ${mias.length} resúmenes con ${NOMBRE_MODELO} (${modelo}).`);
+    const salida = join(raiz, '.tmp/resumenes', `parte-${parte}.json`);
+    await mkdir(dirname(salida), { recursive: true });
+    const guardados = [];
+    const hechos = await resumir(mias, comunidad, {
+        fetch, resenasDe, ahora, registro, limiteMs, modelo,
+        alListo: async (id, resumen) => { guardados.push({ id, resumen }); await writeFile(salida, JSON.stringify(guardados, null, 2) + '\n'); }
+    });
+    registro(`Resúmenes escritos en esta máquina: ${hechos.length} de ${mias.length}.`);
+    return hechos.length;
+}
+
+// La última: junta lo de todas las máquinas en datos/comunidad.json (revisa cada resumen otra vez)
+export async function juntarResumenes({ raiz, registro = console.log } = {}){
+    const carpeta = join(raiz, '.tmp/resumenes');
+    let archivos = [];
+    try { archivos = (await readdir(carpeta)).filter(f => /^parte-\d+\.json$/.test(f)); }
+    catch (error){ if (error.code !== 'ENOENT') throw error; }
+    const rutaDatos = join(raiz, 'datos/comunidad.json');
+    const datos = JSON.parse(await readFile(rutaDatos, 'utf8'));
+    let puestos = 0;
+    for (const archivo of archivos){
+        const lista = await leerJSON(join(carpeta, archivo), []);
+        for (const item of Array.isArray(lista) ? lista : []){
+            const destino = item && datos.obras && datos.obras[String(item.id)];
+            const r = item && item.resumen;
+            const texto = r && revisarResumen(r.texto);
+            if (!destino || !texto || r.version !== VERSION_RESUMEN || !/^\d{4}-\d{2}-\d{2}$/.test(String(r.fecha))) continue;
+            destino.resumen = { texto, resenas: Number(r.resenas) || 0, modelo: NOMBRE_MODELO, version: VERSION_RESUMEN, fecha: r.fecha };
+            puestos++;
+        }
+    }
+    if (puestos) await writeFile(rutaDatos, JSON.stringify(datos, null, 2) + '\n');
+    await rm(join(raiz, '.tmp'), { recursive: true, force: true });
+    registro(`Resúmenes guardados: ${puestos} (de ${archivos.length} ${archivos.length === 1 ? 'máquina' : 'máquinas'}).`);
+    return puestos;
+}
+
+// node scripts/resumenes.mjs [--repartir | --parte K --de N | --juntar]
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href){
     const raiz = join(dirname(fileURLToPath(import.meta.url)), '..');
-    escribirResumenes({ raiz }).catch(error => {
+    const args = process.argv.slice(2);
+    const numero = nombre => { const i = args.indexOf(nombre); return i >= 0 ? Number(args[i + 1]) : NaN; };
+    let tarea;
+    if (args.includes('--repartir')){
+        tarea = async () => {
+            // A mano (Run workflow) se pueden pedir otras: sus números de AniList en RESUMIR
+            const pendientes = await leerJSON(join(raiz, '.tmp/pendientes.json'), []);
+            const pedidas = String(process.env.RESUMIR || '').split(/[^0-9]+/).filter(Boolean).map(Number)
+                .filter(id => !pendientes.some(p => Number(p.id) === id)).map(id => ({ id }));
+            if (pedidas.length) console.log(`A pedido: ${pedidas.map(p => p.id).join(', ')}.`);
+            const { ids, maquinas } = repartir([...pendientes, ...pedidas]);
+            console.log(`Resúmenes por escribir: ${ids.length}${maquinas ? `; se reparten en ${maquinas} ${maquinas === 1 ? 'máquina' : 'máquinas'}` : ''}.`);
+            const salida = [`hay=${maquinas ? 'si' : 'no'}`, `maquinas=${JSON.stringify([...Array(maquinas).keys()])}`, `ids=${JSON.stringify(ids)}`].join('\n') + '\n';
+            if (process.env.GITHUB_OUTPUT) await appendFile(process.env.GITHUB_OUTPUT, salida);
+            else process.stdout.write(salida);
+        };
+    } else if (args.includes('--parte')){
+        tarea = () => escribirParte({ raiz, parte: numero('--parte'), de: numero('--de'), ids: JSON.parse(process.env.PENDIENTES || '[]') });
+    } else if (args.includes('--juntar')){
+        tarea = () => juntarResumenes({ raiz });
+    } else {
+        tarea = () => escribirResumenes({ raiz });
+    }
+    tarea().catch(error => {
         console.error('Error:', error.message);
         process.exit(1);
     });

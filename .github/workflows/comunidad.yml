@@ -6,6 +6,9 @@
 # resúmenes con Gemma 4 (scripts/resumenes.mjs) y publica datos/comunidad.json en la
 # página. Es gratis: GitHub no cobra las tareas automáticas de los repositorios públicos.
 #
+# Los resúmenes van aparte: si hay muchos por escribir, se reparten entre varias máquinas
+# que trabajan a la vez (una cada 15, hasta 8), y al final otra los guarda todos juntos.
+#
 # Va por niveles (scripts/niveles.mjs): cada día renueva por completo solo las obras que les
 # toca (las que siguen saliendo, una vez por semana; las terminadas, una vez cada 4 semanas;
 # las nuevas, apenas llegan) y, para todas, el puntaje, los votos y la popularidad de AniList.
@@ -29,6 +32,10 @@ on:
         description: 'Renovar todas las obras (no solo las del día)'
         type: boolean
         default: false
+      resumir:
+        description: 'Rehacer el resumen de estas obras (sus números de AniList, separados por comas)'
+        type: string
+        default: ''
   push:
     branches: [main]
     paths:                      # también corre cuando cambia el catálogo o el algoritmo
@@ -50,9 +57,12 @@ jobs:
   actualizar:
     runs-on: ubuntu-latest
     # Por niveles, un día normal con unas 200 obras tarda pocos minutos; renovarlas todas,
-    # ~25 min de datos + hasta 45 de resúmenes. Las tareas de los repositorios públicos son
-    # gratis, así que se deja margen para que nunca se corte.
-    timeout-minutes: 120
+    # unos 25. Las tareas de los repositorios públicos son gratis: se deja margen.
+    timeout-minutes: 90
+    outputs:
+      hay: ${{ steps.repartir.outputs.hay }}
+      maquinas: ${{ steps.repartir.outputs.maquinas }}
+      ids: ${{ steps.repartir.outputs.ids }}
     steps:
       # Siempre la última versión de main: si esta ejecución esperó a que terminara otra,
       # así parte de los datos que la otra acaba de guardar (y no de una copia vieja).
@@ -83,31 +93,12 @@ jobs:
           MAL_CLIENT_ID: ${{ secrets.MAL_CLIENT_ID }}
           TODAS: ${{ inputs.todas && 'si' || '' }}
 
-      # Resúmenes con Gemma 4 (modelo abierto de Google, licencia Apache 2.0) en esta misma
-      # máquina, con Ollama. Solo se instala si hay obras con reseñas nuevas; si algo falla,
-      # la tarea sigue y la página conserva los resúmenes anteriores.
-      - name: ¿Hay resúmenes por escribir?
-        id: pendientes
-        run: |
-          if [ -s .tmp/pendientes.json ]; then echo "hay=si" >> "$GITHUB_OUTPUT"; else echo "hay=no" >> "$GITHUB_OUTPUT"; fi
-
-      - name: Instalar Gemma 4
-        if: steps.pendientes.outputs.hay == 'si'
-        continue-on-error: true
-        timeout-minutes: 15
-        run: |
-          curl -fsSL https://ollama.com/install.sh | sh
-          if ! curl -sf http://127.0.0.1:11434/api/version > /dev/null; then
-            (ollama serve > /tmp/ollama.log 2>&1 &)
-          fi
-          for i in $(seq 1 30); do curl -sf http://127.0.0.1:11434/api/version && break; sleep 2; done
-          ollama pull gemma4:e4b
-
-      - name: Escribir los resúmenes
-        if: steps.pendientes.outputs.hay == 'si'
-        continue-on-error: true
-        timeout-minutes: 45
-        run: node scripts/resumenes.mjs
+      # Cuántas máquinas usar para los resúmenes (solo se pasa la lista de obras, no sus reseñas)
+      - name: Repartir los resúmenes
+        id: repartir
+        run: node scripts/resumenes.mjs --repartir
+        env:
+          RESUMIR: ${{ inputs.resumir }}
 
       - name: Guardar los resultados
         id: guardar
@@ -121,11 +112,112 @@ jobs:
             exit 0
           fi
           git commit -m "Actualiza el catálogo y la opinión de la comunidad"
-          git pull --rebase origin main
-          git push origin HEAD:main
-          echo "cambios=si" >> "$GITHUB_OUTPUT"
+          for intento in 1 2 3; do
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              echo "cambios=si" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            sleep $((intento * 10))
+          done
+          exit 1
 
       - name: Publicar la página con los datos nuevos
+        if: steps.guardar.outputs.cambios == 'si'
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || echo "No se pudo pedir la publicación; saldrá con el próximo cambio."
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+  # Resúmenes con Gemma 4 (modelo abierto de Google, licencia Apache 2.0) con Ollama, en una
+  # o varias máquinas a la vez. Cada una baja de AniList las reseñas de sus obras (no se
+  # guardan en ningún lado) y entrega solo los resúmenes. Si una falla, las demás siguen y
+  # esas obras se intentan otro día.
+  resumenes:
+    needs: actualizar
+    if: needs.actualizar.outputs.hay == 'si'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      matrix:
+        parte: ${{ fromJSON(needs.actualizar.outputs.maquinas) }}
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - name: Instalar Gemma 4
+        timeout-minutes: 15
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          if ! curl -sf http://127.0.0.1:11434/api/version > /dev/null; then
+            (ollama serve > /tmp/ollama.log 2>&1 &)
+          fi
+          for i in $(seq 1 30); do curl -sf http://127.0.0.1:11434/api/version && break; sleep 2; done
+          ollama pull gemma4:e4b
+
+      - name: Escribir los resúmenes
+        timeout-minutes: 45
+        run: node scripts/resumenes.mjs --parte ${{ matrix.parte }} --de ${{ strategy.job-total }}
+        env:
+          PENDIENTES: ${{ needs.actualizar.outputs.ids }}
+
+      - name: Entregar los resúmenes
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: resumenes-${{ matrix.parte }}
+          path: .tmp/resumenes/
+          include-hidden-files: true
+          if-no-files-found: ignore
+          retention-days: 1
+
+  guardar-resumenes:
+    needs: [actualizar, resumenes]
+    if: always() && needs.actualizar.outputs.hay == 'si'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - name: Recibir los resúmenes de cada máquina
+        uses: actions/download-artifact@v8
+        continue-on-error: true
+        with:
+          pattern: resumenes-*
+          path: .tmp/resumenes
+          merge-multiple: true
+
+      - name: Juntarlos en la opinión de la comunidad
+        run: node scripts/resumenes.mjs --juntar
+
+      - name: Guardar los resúmenes
+        id: guardar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add datos/comunidad.json
+          if git diff --cached --quiet; then
+            echo "No hay resúmenes nuevos."
+            echo "cambios=no" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "Agrega los resúmenes de Gemma"
+          for intento in 1 2 3; do
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              echo "cambios=si" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            sleep $((intento * 10))
+          done
+          exit 1
+
+      - name: Publicar la página con los resúmenes
         if: steps.guardar.outputs.cambios == 'si'
         run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || echo "No se pudo pedir la publicación; saldrá con el próximo cambio."
         env:
