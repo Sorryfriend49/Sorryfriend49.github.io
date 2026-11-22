@@ -1,0 +1,256 @@
+{
+  "actualizado": "2026-11-22T16:17:15.707Z",
+  "dia": "2026-11-22",
+  "metodo": "Actividad diaria de AniList (gente que agrega la obra o avanza capítulos) en el último día, 7 días y 30 días.",
+  "periodos": {
+    "hoy": {
+      "manga": [
+        {
+          "id": "sakamoto-days",
+          "actividad": 317,
+          "nuevos": 22
+        },
+        {
+          "id": "one-piece",
+          "actividad": 260,
+          "nuevos": 62
+        },
+        {
+          "id": "kagurabachi",
+          "actividad": 235,
+          "nuevos": 44
+        },
+        {
+          "id": "ichi-the-witch",
+          "actividad": 232,
+          "nuevos": 25
+        },
+        {
+          "id": "spy-x-family",
+          "actividad": 183,
+          "nuevos": 24
+        }
+      ],
+      "manhwa": [
+        {
+          "id": "revenge-of-the-baskerville-bloodhound",
+          "actividad": 337,
+          "nuevos": 26
+        },
+        {
+          "id": "i-shall-master-this-family",
+          "actividad": 177,
+          "nuevos": 13
+        },
+        {
+          "id": "the-swordmasters-son",
+          "actividad": 98,
+          "nuevos": 33
+        },
+        {
+          "id": "overgeared",
+          "actividad": 73,
+          "nuevos": 28
+        },
+        {
+          "id": "the-extras-academy-survival-guide",
+          "actividad": 67,
+          "nuevos": 40
+        }
+      ],
+      "manhua": [
+        {
+          "id": "the-devil-butler",
+          "actividad": 71,
+          "nuevos": 18
+        },
+        {
+          "id": "log-into-the-future",
+          "actividad": 59,
+          "nuevos": 1
+        },
+        {
+          "id": "lucky-me-i-secretly-cultivated-for-1-000-years",
+          "actividad": 45,
+          "nuevos": 31
+        },
+        {
+          "id": "tales-of-demons-and-gods",
+          "actividad": 12,
+          "nuevos": 6
+        },
+        {
+          "id": "i-am-the-fated-villain",
+          "actividad": 9,
+          "nuevos": 9
+        }
+      ]
+    },
+    "semana": {
+      "manga": [
+        {
+          "id": "one-piece",
+          "actividad": 9097,
+          "nuevos": 436
+        },
+        {
+          "id": "dandadan",
+          "actividad": 5075,
+          "nuevos": 296
+        },
+        {
+          "id": "blue-lock",
+          "actividad": 4536,
+          "nuevos": 291
+        },
+        {
+          "id": "the-fragrant-flower-blooms-with-dignity",
+          "actividad": 4124,
+          "nuevos": 249
+        },
+        {
+          "id": "gachiakuta",
+          "actividad": 3114,
+          "nuevos": 257
+        }
+      ],
+      "manhwa": [
+        {
+          "id": "return-of-the-blossoming-blade",
+          "actividad": 5294,
+          "nuevos": 231
+        },
+        {
+          "id": "overgeared",
+          "actividad": 5235,
+          "nuevos": 317
+        },
+        {
+          "id": "pick-me-up",
+          "actividad": 4736,
+          "nuevos": 258
+        },
+        {
+          "id": "absolute-regression",
+          "actividad": 4436,
+          "nuevos": 254
+        },
+        {
+          "id": "the-extras-academy-survival-guide",
+          "actividad": 4424,
+          "nuevos": 246
+        }
+      ],
+      "manhua": [
+        {
+          "id": "the-devil-butler",
+          "actividad": 3940,
+          "nuevos": 88
+        },
+        {
+          "id": "log-into-the-future",
+          "actividad": 1610,
+          "nuevos": 58
+        },
+        {
+          "id": "lucky-me-i-secretly-cultivated-for-1-000-years",
+          "actividad": 1513,
+          "nuevos": 94
+        },
+        {
+          "id": "necromancer-the-ultimate-scourge",
+          "actividad": 1260,
+          "nuevos": 69
+        },
+        {
+          "id": "i-am-the-fated-villain",
+          "actividad": 1120,
+          "nuevos": 72
+        }
+      ]
+    },
+    "mes": {
+      "manga": [
+        {
+          "id": "one-piece",
+          "actividad": 36494,
+          "nuevos": null
+        },
+        {
+          "id": "dandadan",
+          "actividad": 16533,
+          "nuevos": null
+        },
+        {
+          "id": "blue-lock",
+          "actividad": 15419,
+          "nuevos": null
+        },
+        {
+          "id": "kagurabachi",
+          "actividad": 13900,
+          "nuevos": null
+        },
+        {
+          "id": "sakamoto-days",
+          "actividad": 11281,
+          "nuevos": null
+        }
+      ],
+      "manhwa": [
+        {
+          "id": "overgeared",
+          "actividad": 22109,
+          "nuevos": null
+        },
+        {
+          "id": "the-extras-academy-survival-guide",
+          "actividad": 18544,
+          "nuevos": null
+        },
+        {
+          "id": "pick-me-up",
+          "actividad": 18530,
+          "nuevos": null
+        },
+        {
+          "id": "return-of-the-blossoming-blade",
+          "actividad": 17524,
+          "nuevos": null
+        },
+        {
+          "id": "nano-machine",
+          "actividad": 17405,
+          "nuevos": null
+        }
+      ],
+      "manhua": [
+        {
+          "id": "the-devil-butler",
+          "actividad": 16301,
+          "nuevos": null
+        },
+        {
+          "id": "log-into-the-future",
+          "actividad": 6877,
+          "nuevos": null
+        },
+        {
+          "id": "lucky-me-i-secretly-cultivated-for-1-000-years",
+          "actividad": 5867,
+          "nuevos": null
+        },
+        {
+          "id": "i-am-the-fated-villain",
+          "actividad": 5725,
+          "nuevos": null
+        },
+        {
+          "id": "rebirth-of-the-ultimate-master",
+          "actividad": 5186,
+          "nuevos": null
+        }
+      ]
+    }
+  }
+}
