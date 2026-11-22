@@ -1319,10 +1319,32 @@
         pintarRecomendadas(o, f);
     }
 
-    // Fechas, capítulos, tomos, géneros y etiquetas (las fechas de fin, capítulos y tomos vienen en la ficha)
+    // Quién la creó: "Tatsuki Fujimoto", o con lo que hizo cada uno si son varios
+    // ("Chugong (historia original) y DUBU (arte)"). El nombre no se corta entre dos líneas,
+    // lo que hizo va en un tono más suave y el nombre original aparece al pasar el mouse.
+    function textoAutores(autores){
+        const solo = autores.length === 1 && autores[0].rol === 'historia y arte';
+        const partes = [];
+        autores.forEach((a, i) => {
+            if (i) partes.push(document.createTextNode(i === autores.length - 1 ? ' y ' : ', '));
+            const nombre = crear('span', 'autor', a.nombre);
+            if (a.nativo) nombre.title = a.nativo;
+            partes.push(nombre);
+            if (!solo && a.rol) partes.push(document.createTextNode(' '), crear('span', 'autor-rol', `(${a.rol})`));
+        });
+        return partes;
+    }
+
+    // Quién la creó, fechas, capítulos, tomos, géneros y etiquetas (los autores, el fin, los capítulos
+    // y los tomos vienen en la ficha)
     function pintarDatos(o, f){
         const dl = $('fichaDatos');
         dl.replaceChildren();
+        if (f && Array.isArray(f.autores) && f.autores.length){
+            const dd = document.createElement('dd');
+            dd.append(...textoAutores(f.autores));
+            dl.append(crear('dt', null, 'Creado por'), dd);
+        }
         fila(dl, 'Salió', textoFecha(o.inicio));
         if (f && f.fin) fila(dl, 'Terminó', textoFecha(f.fin));
         // Capítulos y tomos: los de AniList si ya terminó; si sigue saliendo, los publicados

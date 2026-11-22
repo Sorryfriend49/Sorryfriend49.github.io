@@ -6,7 +6,8 @@
      biblioteca (nombres, portada, tipo, géneros, fecha, puntaje, lectores, etiquetas…), una
      obra por línea. Es lo único que baja la página al abrir.
    - datos/fichas/<id>.json: lo demás, que se baja recién al abrir la ficha de esa obra
-     (dónde leer, la opinión completa de la comunidad, el resumen y las recomendaciones).
+     (quién la creó, dónde leer, la opinión completa de la comunidad, el resumen y las
+     recomendaciones).
    Una ficha solo se vuelve a escribir cuando cambia algo de verdad (por ejemplo, cuando la
    obra se renueva por completo), no por los números de AniList que cambian cada día: esos
    van en la lista. Así el repositorio no se llena de cambios.
@@ -72,6 +73,7 @@ export function armarLista(catalogo, comunidad){
         // Lo que se baja al abrir la ficha
         fichas.set(o.id, sinVacios({
             id: o.id,
+            autores: o.autores,
             fin: o.fin,
             capitulos: o.capitulos,
             tomos: o.tomos,

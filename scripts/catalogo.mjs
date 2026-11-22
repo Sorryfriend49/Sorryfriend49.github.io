@@ -1,8 +1,9 @@
 /* ===================================
    FROZEN PROJECT: arma obras.json a partir de catalogo.json
    catalogo.json es la lista de obras (sus números de AniList). De lunes a viernes la tarea de
-   GitHub corre este programa: trae de AniList títulos, géneros, fechas, capítulos, portadas
-   y los lugares oficiales para leer, y escribe obras.json, que es lo que lee la página.
+   GitHub corre este programa: trae de AniList títulos, autores, géneros, fechas, capítulos,
+   portadas y los lugares oficiales para leer, y escribe obras.json (de ahí salen la lista y las
+   fichas que lee la página, ver lista.mjs).
    Para agregar una obra basta con sumar su número de AniList a catalogo.json (además, cada
    día hábil entran solas hasta 20: ver nuevas.mjs). Cada obra nueva queda con "agregada",
    el día en que llegó.
@@ -45,6 +46,7 @@ const CONSULTA = `query ($ids: [Int], $p: Int) { Page(page: $p, perPage: ${POR_P
     media(id_in: $ids, type: MANGA) { id idMal isAdult countryOfOrigin status chapters volumes genres synonyms
         title { romaji english native } startDate { year month day } endDate { year month day }
         coverImage { large color } meanScore popularity
+        staff(sort: [RELEVANCE, ROLE], perPage: 8) { edges { role node { name { full native } } } }
         externalLinks { site type language url isDisabled notes } } } }`;
 
 const fechaISO = f => {
@@ -89,6 +91,45 @@ export function prepararEnlaces(links, tipoObra){
 }
 
 // Una obra de obras.json a partir de lo que devuelve AniList (y lo fijo de catalogo.json)
+/* Quién la creó: la historia, el arte o las dos. Los demás trabajos (asistentes, traducción,
+   rotulado, edición, color o diseño) no se nombran. Primero quien inventó la historia (la novela
+   o la obra original), después quien la escribió y la dibujó; como mucho 4 personas. AniList manda
+   hasta 8 nombres porque a veces el autor original viene después (Solo Leveling: Chugong es el 5.º). */
+const ROLES = [
+    [/^story\s*(&|and)\s*art/i, ['historia', 'arte']],
+    [/^original\s*(creator|work)/i, ['creación original']],
+    [/^original\s*story/i, ['historia original']],
+    [/^story/i, ['historia']],
+    [/^(art|illustration)/i, ['arte']]
+];
+const ORDEN_ROLES = { 'creación original': 0, 'historia original': 0, historia: 1, arte: 2 };
+const OTROS_TRABAJOS = /assist|touch|letter|translat|edit|colou?r|design|supervis|cooperat|compos|cover/i;
+export function prepararAutores(edges){
+    const porNombre = new Map();
+    for (const e of edges || []){
+        const nombres = (e && e.node && e.node.name) || {};
+        const nombre = String(nombres.full || nombres.native || '').trim();
+        const rol = String((e && e.role) || '').trim();
+        if (!nombre || OTROS_TRABAJOS.test(rol)) continue;
+        const regla = ROLES.find(([re]) => re.test(rol));
+        if (!regla) continue;
+        const autor = porNombre.get(nombre) || { nombre, nativo: String(nombres.native || '').trim(), roles: [] };
+        regla[1].forEach(r => { if (!autor.roles.includes(r)) autor.roles.push(r); });
+        porNombre.set(nombre, autor);
+    }
+    const primero = a => Math.min(...a.roles.map(r => ORDEN_ROLES[r]));
+    return [...porNombre.values()]
+        .map((a, i) => ({ a, i }))
+        .sort((x, y) => primero(x.a) - primero(y.a) || x.i - y.i)      // si empatan, el orden de AniList
+        .slice(0, 4)
+        .map(({ a }) => {
+            const roles = a.roles.includes('historia') && a.roles.includes('arte') ? ['historia y arte', ...a.roles.filter(r => r !== 'historia' && r !== 'arte')] : a.roles;
+            const autor = { nombre: a.nombre, rol: roles.join(' y ') };
+            if (a.nativo && a.nativo !== a.nombre) autor.nativo = a.nativo;
+            return autor;
+        });
+}
+
 export function prepararObra(m, entrada){
     const tipo = TIPO_POR_PAIS[m.countryOfOrigin] || 'manga';
     const titulo = entrada.titulo || (m.title && (m.title.english || m.title.romaji)) || String(m.id);
@@ -106,6 +147,7 @@ export function prepararObra(m, entrada){
         fin: fechaISO(m.endDate),
         capitulos: m.chapters || null,
         tomos: m.volumes || null,
+        autores: prepararAutores(m.staff && m.staff.edges),
         generos: [...new Set((m.genres || []).map(g => GENEROS[g]).filter(Boolean))],
         portada: m.coverImage && m.coverImage.large,
         color: (m.coverImage && m.coverImage.color) || null,

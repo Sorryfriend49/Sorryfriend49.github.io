@@ -1540,6 +1540,15 @@ header{
     color: var(--texto-suave);
 }
 
+/* "Creado por": el nombre entero en una línea; lo que hizo, más suave */
+.ficha .autor{
+    white-space: nowrap;
+}
+
+.ficha .autor-rol{
+    color: var(--texto-suave);
+}
+
 .ficha h3{
     margin-top: 24px;
     font-family: 'Baloo 2', sans-serif;
