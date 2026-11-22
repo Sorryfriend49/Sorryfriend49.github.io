@@ -24,6 +24,7 @@ on:
       - 'catalogo.json'
       - 'obras.json'
       - 'scripts/**'
+      - '!scripts/populares.mjs'  # lo más popular tiene su propia tarea diaria (populares.yml)
       - '.github/workflows/comunidad.yml'
 
 permissions:

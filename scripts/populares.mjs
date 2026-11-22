@@ -4,7 +4,8 @@
    no usa modelos ni otras comunidades, solo la actividad diaria que AniList guarda de
    cada obra (gente que la agrega a su lista o avanza capítulos) y cuántos la tienen.
    1. Lee el catálogo (obras.json).
-   2. Pide a AniList, de a varias obras por consulta, sus últimos 31 días de actividad.
+   2. Pide a AniList, de a varias obras por consulta, sus últimos 50 días de actividad
+      (AniList da 25 días por página: se piden las dos primeras páginas).
    3. Por tipo (manga, manhwa, manhua) ordena las obras por su actividad de hoy, de los
       últimos 7 días y de los últimos 30, y guarda las primeras en datos/populares.json
       junto con cuántos lectores nuevos sumaron en ese tiempo.
@@ -17,8 +18,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 const ANILIST = 'https://graphql.anilist.co';
 const AGENTE = 'FrozenProject/1.0 (+https://frozen-project.vercel.app)';
 const PAUSA = 2200;              // AniList hoy permite unas 30 consultas por minuto
-const OBRAS_POR_CONSULTA = 10;   // 10 obras × 31 días: una consulta liviana para AniList
-const DIAS = 31;
+const OBRAS_POR_CONSULTA = 8;    // 8 obras × 50 días por consulta: liviana para AniList
 const PRIMERAS = 5;              // se guardan las 5 primeras de cada tipo (Inicio muestra 2)
 const DIA = 86400;
 export const TIPOS = ['manga', 'manhwa', 'manhua'];
@@ -27,7 +27,8 @@ export const PERIODOS = { hoy: 1, semana: 7, mes: 30 };
 const CONSULTA = `query ($ids: [Int], $p: Int) {
     Page(page: $p, perPage: ${OBRAS_POR_CONSULTA}) { pageInfo { hasNextPage }
         media(id_in: $ids, type: MANGA) { id popularity
-            trends(sort: DATE_DESC, perPage: ${DIAS}) { nodes { date trending popularity } } } } }`;
+            dias1: trends(sort: DATE_DESC, page: 1, perPage: 25) { nodes { date trending popularity } }
+            dias2: trends(sort: DATE_DESC, page: 2, perPage: 25) { nodes { date trending popularity } } } } }`;
 
 const dormir = ms => new Promise(r => setTimeout(r, ms));
 
@@ -72,7 +73,10 @@ export function crearPedido({ fetch = globalThis.fetch, esperar = dormir, regist
    nodos: [{ date (segundos, un día UTC), trending, popularity }]; ref: el último día con datos de todo el catálogo.
    Los días sin actividad no aparecen en AniList: cuentan como 0. */
 export function medir(nodos, ref, popularidadActual){
-    const dias = (nodos || []).filter(n => n && Number.isFinite(n.date) && n.date <= ref).sort((a, b) => b.date - a.date);
+    const vistos = new Set();   // un nodo por día, por si las dos páginas de AniList se pisan
+    const dias = (nodos || [])
+        .filter(n => n && Number.isFinite(n.date) && n.date <= ref && !vistos.has(n.date) && vistos.add(n.date))
+        .sort((a, b) => b.date - a.date);
     const conLectores = dias.filter(n => Number.isFinite(n.popularity) && n.popularity > 0);
     const resultado = {};
     for (const [periodo, largo] of Object.entries(PERIODOS)){
@@ -128,7 +132,8 @@ export async function ejecutar({ raiz, pedir = crearPedido(), registro = console
         const data = await pedir({ ids: lote, p: 1 });
         for (const m of (data.Page && data.Page.media) || []){
             const o = porAniList.get(m.id);
-            if (o) nodosDe.set(o.id, { nodos: (m.trends && m.trends.nodes) || [], popularidad: m.popularity });
+            const nodos = [...((m.dias1 && m.dias1.nodes) || []), ...((m.dias2 && m.dias2.nodes) || [])];
+            if (o) nodosDe.set(o.id, { nodos, popularidad: m.popularity });
         }
     }
 
@@ -144,7 +149,7 @@ export async function ejecutar({ raiz, pedir = crearPedido(), registro = console
     const salida = {
         actualizado: ahora.toISOString(),
         dia: new Date(ref * 1000).toISOString().slice(0, 10),
-        metodo: 'Actividad diaria de AniList (gente que agrega la obra o avanza capítulos) en el último día, 7 días y 30 días.',
+        metodo: 'Actividad diaria de AniList (gente que agrega la obra o avanza capítulos) en el último día, los últimos 7 días y los últimos 30 días.',
         periodos
     };
     await mkdir(ruta('datos'), { recursive: true });
