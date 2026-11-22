@@ -547,27 +547,220 @@
         $('tituloCatalogo').focus();
     }
 
-    function pintarPopulares(){
-        const elegidas = Object.keys(TIPOS).flatMap(tipo =>
-            obras.filter(o => o.tipo === tipo).sort(ORDENES.populares).slice(0, 2));
-        if (!elegidas.length) return;
-        $('listaPopulares').replaceChildren(...elegidas.map(o => {
-            const li = document.createElement('li');
-            const a = crear('a', 'mini-obra');
-            a.href = hashCatalogo({ tipo: '', generos: [], orden: ORDEN_INICIAL }, o.id);
-            a.dataset.obra = o.id;
-            const portada = crear('span', 'mini-portada');
-            colorDePlaca(portada, o);
-            portada.append(imagenPortada(o, '(max-width: 1279px) 96px, 54px'));
-            const texto = crear('span', 'mini-texto');
-            const datos = crear('span', 'mini-datos');
-            datos.append(etiquetaTipo(o.tipo), crear('span', 'lectores', textoLectores(popularidad(o))));
-            texto.append(crear('span', 'mini-titulo', o.titulo), datos);
-            a.append(portada, texto);
-            li.append(a);
-            return li;
-        }));
-        $('inicioPopulares').hidden = false;
+    // ---------- Inicio: lo más popular de hoy, de la semana y del mes ----------
+    // Sale de datos/populares.json (scripts/populares.mjs, una tarea diaria de GitHub). Cambia sola cada
+    // 9,5 s con una transición suave; se queda quieta mientras tienes el mouse o el foco encima, mientras
+    // la tocas en el celular, si la pestaña está oculta o con "menos movimiento" activado en tu sistema.
+    // Sin ese archivo queda como antes: lo más popular de siempre de cada tipo.
+    const PERIODOS_POP = [
+        { clave: 'hoy', boton: 'Hoy', titulo: 'Lo más popular de hoy', cuando: 'hoy' },
+        { clave: 'semana', boton: 'Semana', titulo: 'Lo más popular de la semana', cuando: 'esta semana' },
+        { clave: 'mes', boton: 'Mes', titulo: 'Lo más popular del mes', cuando: 'este mes' }
+    ];
+    const INTERVALO_POP = 9500;
+    const POR_TIPO_POP = 2;
+    const TAMANOS_MINI = '(max-width: 1279px) 96px, 54px';
+    const menosMovimiento = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let populares = null;
+    let periodoPop = 0;
+    let relojPop = 0;
+    let inicioCiclo = 0;
+    let restanteCiclo = INTERVALO_POP;
+    let pausaUsuario = menosMovimiento.matches;
+    let cambiandoPop = Promise.resolve();
+    const pausasPop = new Set();
+    const panelPop = $('inicioPopulares');
+
+    async function cargarPopulares(){
+        try {
+            const r = await fetch('datos/populares.json', { cache: 'no-cache' });
+            if (!r.ok) return null;
+            const datos = await r.json();
+            return datos && datos.periodos ? datos : null;
+        } catch (error){
+            return null;
+        }
+    }
+
+    // Las obras de un periodo: 2 por tipo; si faltan, se completa con las más populares de siempre
+    function elegidasPop(periodo){
+        return Object.keys(TIPOS).flatMap(tipo => {
+            const lista = ((populares && periodo && populares.periodos[periodo.clave] && populares.periodos[periodo.clave][tipo]) || [])
+                .map(x => ({ o: porId.get(x.id), nuevos: Number.isFinite(x.nuevos) ? x.nuevos : null }))
+                .filter(x => x.o)
+                .slice(0, POR_TIPO_POP);
+            if (lista.length < POR_TIPO_POP){
+                obras.filter(o => o.tipo === tipo && !lista.some(x => x.o.id === o.id)).sort(ORDENES.populares)
+                    .slice(0, POR_TIPO_POP - lista.length).forEach(o => lista.push({ o, nuevos: null }));
+            }
+            return lista;
+        });
+    }
+
+    function itemPopular({ o, nuevos }, periodo){
+        const li = document.createElement('li');
+        const a = crear('a', 'mini-obra');
+        a.href = hashCatalogo({ tipo: '', generos: [], orden: ORDEN_INICIAL }, o.id);
+        a.dataset.obra = o.id;
+        const portada = crear('span', 'mini-portada');
+        colorDePlaca(portada, o);
+        portada.append(imagenPortada(o, TAMANOS_MINI));
+        const texto = crear('span', 'mini-texto');
+        const datos = crear('span', 'mini-datos');
+        const cifra = periodo && nuevos > 0
+            ? `+${formatoLectores.format(nuevos)} lectores ${periodo.cuando}`
+            : textoLectores(popularidad(o));
+        datos.append(etiquetaTipo(o.tipo), crear('span', 'lectores', cifra));
+        texto.append(crear('span', 'mini-titulo', o.titulo), datos);
+        a.append(portada, texto);
+        li.append(a);
+        return li;
+    }
+
+    // Deja bajando las portadas del periodo que sigue, para que el cambio no muestre huecos
+    function adelantarPortadas(periodo){
+        elegidasPop(periodo).forEach(({ o }) => {
+            const img = new Image();
+            img.referrerPolicy = 'no-referrer';
+            img.sizes = TAMANOS_MINI;
+            img.srcset = `${o.portada} 230w, ${portadaGrande(o)} 460w`;
+            img.src = o.portada;
+        });
+    }
+
+    async function cambiarLista(items, animar){
+        const lista = $('listaPopulares');
+        const viejos = [...lista.children];
+        if (!animar || menosMovimiento.matches || !viejos.length || typeof lista.animate !== 'function'){
+            lista.replaceChildren(...items);
+            return;
+        }
+        lista.style.minHeight = lista.offsetHeight + 'px';    // que la página no salte mientras cambia
+        await Promise.all(viejos.map((li, i) => li.animate(
+            [{ opacity: 1, transform: 'none' }, { opacity: 0, transform: 'translateY(-10px)' }],
+            { duration: 220, delay: i * 35, easing: 'cubic-bezier(.4, 0, 1, 1)', fill: 'forwards' }
+        ).finished.catch(() => {})));
+        lista.scrollLeft = 0;
+        lista.replaceChildren(...items);
+        items.forEach((li, i) => li.animate(
+            [{ opacity: 0, transform: 'translateY(12px)' }, { opacity: 1, transform: 'none' }],
+            { duration: 420, delay: i * 55, easing: 'cubic-bezier(.2, .7, .2, 1)', fill: 'backwards' }
+        ));
+        lista.style.minHeight = '';
+    }
+
+    function mostrarPeriodo(indice, { animar = false } = {}){
+        periodoPop = indice;
+        const periodo = populares ? PERIODOS_POP[indice] : null;
+        const titulo = $('tituloPopulares');
+        titulo.textContent = periodo ? periodo.titulo : 'Lo más popular de cada tipo';
+        if (animar && !menosMovimiento.matches && typeof titulo.animate === 'function'){
+            titulo.animate([{ opacity: 0.2 }, { opacity: 1 }], { duration: 420, easing: 'ease-out' });
+        }
+        $('periodosPopulares').querySelectorAll('button').forEach((b, i) => b.setAttribute('aria-pressed', String(i === indice)));
+        const items = elegidasPop(periodo).map(x => itemPopular(x, periodo));
+        cambiandoPop = cambiandoPop.then(() => cambiarLista(items, animar));
+        if (populares) adelantarPortadas(PERIODOS_POP[(indice + 1) % PERIODOS_POP.length]);
+        reiniciarCiclo();
+    }
+
+    // ----- El reloj: avanza cada 9,5 s, se pausa y retoma donde iba (la barrita de progreso va igual) -----
+    const pausadoPop = () => pausaUsuario || pausasPop.size > 0;
+
+    function actualizarRelojPop(){
+        if (!populares) return;
+        const parar = pausadoPop();
+        panelPop.classList.toggle('pausado', parar);
+        if (parar){
+            if (inicioCiclo){
+                restanteCiclo = Math.max(0, restanteCiclo - (Date.now() - inicioCiclo));
+                inicioCiclo = 0;
+                clearTimeout(relojPop);
+            }
+        } else if (!inicioCiclo){
+            inicioCiclo = Date.now();
+            relojPop = setTimeout(avanzarPop, restanteCiclo);
+        }
+    }
+
+    function reiniciarCiclo(){
+        clearTimeout(relojPop);
+        inicioCiclo = 0;
+        restanteCiclo = INTERVALO_POP;
+        // La barrita del botón activo vuelve a empezar
+        panelPop.querySelectorAll('.progreso-periodo').forEach(b => b.remove());
+        const activo = $('periodosPopulares').querySelector('[aria-pressed="true"]');
+        if (activo && populares) activo.append(crear('span', 'progreso-periodo'));
+        actualizarRelojPop();
+    }
+
+    function avanzarPop(){
+        inicioCiclo = 0;
+        mostrarPeriodo((periodoPop + 1) % PERIODOS_POP.length, { animar: true });
+    }
+
+    function pausarPor(motivo, si){
+        if (si) pausasPop.add(motivo); else pausasPop.delete(motivo);
+        actualizarRelojPop();
+    }
+
+    function pintarBotonPausa(){
+        const boton = $('pausaPopulares');
+        boton.setAttribute('aria-pressed', String(pausaUsuario));
+        boton.setAttribute('aria-label', pausaUsuario ? 'Reanudar el cambio automático' : 'Pausar el cambio automático');
+        boton.dataset.estado = pausaUsuario ? 'pausado' : 'andando';
+    }
+
+    let relojToque = 0;
+    function prepararRotacion(){
+        $('periodosPopulares').hidden = false;
+        $('pausaPopulares').hidden = false;
+        pintarBotonPausa();
+        $('periodosPopulares').addEventListener('click', ev => {
+            const b = ev.target.closest('button[data-periodo]');
+            if (!b) return;
+            const i = PERIODOS_POP.findIndex(p => p.clave === b.dataset.periodo);
+            if (i !== -1 && i !== periodoPop) mostrarPeriodo(i, { animar: true });
+        });
+        $('pausaPopulares').addEventListener('click', () => {
+            pausaUsuario = !pausaUsuario;
+            if (!pausaUsuario){
+                // "Reanudar" es una orden clara: sigue ya, aunque el mouse o el foco estén encima
+                pausasPop.delete('encima');
+                pausasPop.delete('foco');
+            }
+            pintarBotonPausa();
+            actualizarRelojPop();
+        });
+        panelPop.addEventListener('pointerenter', e => { if (e.pointerType === 'mouse') pausarPor('encima', true); });
+        panelPop.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse') pausarPor('encima', false); });
+        // Solo con el teclado (con el mouse ya cuenta tenerlo encima)
+        panelPop.addEventListener('focusin', e => { if (e.target.matches(':focus-visible')) pausarPor('foco', true); });
+        panelPop.addEventListener('focusout', e => { if (!panelPop.contains(e.relatedTarget)) pausarPor('foco', false); });
+        // En el celular: mientras la tocas o la deslizas, y hasta 8 s después
+        const tocar = () => {
+            pausarPor('toque', true);
+            clearTimeout(relojToque);
+            relojToque = setTimeout(() => pausarPor('toque', false), 8000);
+        };
+        panelPop.addEventListener('touchstart', tocar, { passive: true });
+        $('listaPopulares').addEventListener('scroll', tocar, { passive: true });
+        document.addEventListener('visibilitychange', () => pausarPor('oculta', document.visibilityState === 'hidden'));
+        window.addEventListener('frozen:ruta', e => pausarPor('apartado', e.detail.seccion !== 'inicio'));
+        pausasPop.clear();
+        if (document.visibilityState === 'hidden') pausasPop.add('oculta');
+        if (Frozen.ruta().seccion !== 'inicio') pausasPop.add('apartado');
+        menosMovimiento.addEventListener('change', () => {
+            if (menosMovimiento.matches){ pausaUsuario = true; pintarBotonPausa(); actualizarRelojPop(); }
+        });
+    }
+
+    function pintarPopulares(datosPopulares){
+        populares = datosPopulares;
+        if (!obras.length) return;
+        if (populares) prepararRotacion();
+        mostrarPeriodo(0);
+        panelPop.hidden = false;
     }
 
     function pintarFechaDatos(fecha){
@@ -1228,7 +1421,7 @@
     async function cargar(){
         rejilla.replaceChildren(crear('li', 'estado-lista', 'Cargando el catálogo…'));
         try {
-            const [respuesta, datosComunidad] = await Promise.all([fetch('obras.json', { cache: 'no-cache' }), cargarComunidad()]);
+            const [respuesta, datosComunidad, datosPopulares] = await Promise.all([fetch('obras.json', { cache: 'no-cache' }), cargarComunidad(), cargarPopulares()]);
             if (!respuesta.ok) throw new Error('HTTP ' + respuesta.status);
             const datos = await respuesta.json();
             comunidad = datosComunidad;
@@ -1241,7 +1434,7 @@
             construirIndiceBusqueda();
             construirChips();
             construirChipsBiblioteca();
-            pintarPopulares();
+            pintarPopulares(datosPopulares);
             pintarFechaDatos(datos.actualizado);
             datosListos = true;
 

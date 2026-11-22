@@ -1,0 +1,48 @@
+# Lo más popular de hoy, de la semana y del mes (panel de Inicio).
+# Dos veces al día pide a AniList la actividad diaria de todas las obras del catálogo
+# (scripts/populares.mjs) y guarda datos/populares.json. Es liviano (unas 22 consultas con
+# 211 obras, ~1 minuto) y gratis: GitHub no cobra las tareas de los repositorios públicos.
+# Para correrla a mano: pestaña Actions > "Lo más popular" > Run workflow.
+name: Lo más popular
+
+on:
+  schedule:
+    - cron: '41 10 * * *'   # 5:41 a. m. en Colombia
+    - cron: '41 22 * * *'   # 5:41 p. m. en Colombia
+  workflow_dispatch:
+
+permissions:
+  contents: write           # para guardar datos/populares.json en el repositorio
+
+concurrency:
+  group: lo-mas-popular
+  cancel-in-progress: false
+
+jobs:
+  populares:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - name: Calcular lo más popular
+        run: node scripts/populares.mjs
+
+      - name: Guardar los resultados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add datos/populares.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios."
+            exit 0
+          fi
+          git commit -m "Actualiza lo más popular de hoy, la semana y el mes"
+          for intento in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 10
+          done
+          exit 1

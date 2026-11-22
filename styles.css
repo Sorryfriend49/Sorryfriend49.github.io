@@ -410,6 +410,96 @@ nav{
     color: var(--hielo);
 }
 
+/* Título + botón de pausa, y debajo Hoy / Semana / Mes */
+.populares-cabecera{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.populares-cabecera h3{
+    margin-bottom: 0;
+}
+
+.pausa-populares{
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(230, 242, 248, 0.28);
+    border-radius: 50%;
+    background: rgba(3, 10, 19, 0.5);
+    color: var(--hielo);
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.pausa-populares:hover{
+    background: rgba(168, 198, 236, 0.16);
+}
+
+.pausa-populares .icono-seguir,
+.pausa-populares[data-estado="pausado"] .icono-pausa{
+    display: none;
+}
+
+.pausa-populares[data-estado="pausado"] .icono-seguir{
+    display: block;
+}
+
+.periodos-populares{
+    display: flex;
+    gap: 6px;
+    margin: 12px 0 16px;
+}
+
+.periodos-populares button{
+    position: relative;
+    overflow: hidden;
+    min-height: 36px;
+    padding: 0 14px;
+    border: 1px solid rgba(230, 242, 248, 0.22);
+    border-radius: 999px;
+    background: rgba(3, 10, 19, 0.45);
+    color: var(--texto-suave);
+    font: 600 14px 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.periodos-populares button:hover{
+    color: var(--hielo);
+}
+
+.periodos-populares button[aria-pressed="true"]{
+    border-color: rgba(230, 242, 248, 0.55);
+    background: rgba(36, 80, 125, 0.55);
+    color: var(--hielo);
+}
+
+/* Barrita que se llena mientras falta para el siguiente periodo */
+.progreso-periodo{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: var(--hielo);
+    transform: scaleX(0);
+    transform-origin: left center;
+    animation: llenar-periodo 9.5s linear forwards;
+}
+
+.inicio-populares.pausado .progreso-periodo{
+    animation-play-state: paused;
+}
+
+@keyframes llenar-periodo{
+    to{ transform: scaleX(1); }
+}
+
 .mini-lista{
     list-style: none;
     display: grid;
@@ -2222,5 +2312,10 @@ header{
     .descongelar{
         filter: none;
         transform: none;
+    }
+
+    /* Con menos movimiento, lo más popular no cambia solo: sin barrita */
+    .progreso-periodo{
+        display: none;
     }
 }
