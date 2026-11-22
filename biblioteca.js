@@ -94,10 +94,11 @@
         }
     }
 
-    // origen: 'local' (cambio hecho aquí), 'copia' (se cargó un archivo), 'nube' (llegó de la cuenta),
-    // 'pestana' (cambió en otra pestaña). catalogo.js no lo necesita; cuenta.js sí.
-    function avisar(id, origen){
-        oyentes.forEach(fn => { try { fn(id, origen); } catch (error){ console.error(error); } });
+    // origen: 'local' (cambio hecho aquí), 'copia' (se cargó un archivo o una lista de AniList/MAL),
+    // 'nube' (llegó de la cuenta), 'pestana' (cambió en otra pestaña). catalogo.js no lo necesita; cuenta.js sí.
+    // ids: cuando cambian varias obras de una vez (id = null), cuáles fueron.
+    function avisar(id, origen, ids){
+        oyentes.forEach(fn => { try { fn(id, origen, ids); } catch (error){ console.error(error); } });
     }
 
     const copiar = e => e ? { ...e } : null;
@@ -188,8 +189,39 @@
             throw new Error('Ese archivo no es una copia de la biblioteca de Frozen Project.');
         }
         const r = juntar(limpiarObras(datos.obras));
-        r.cambiadas.forEach(id => avisar(id, 'copia'));
+        if (r.cambiadas.length) avisar(null, 'copia', r.cambiadas);
         return { nuevas: r.nuevas, actualizadas: r.actualizadas, iguales: r.iguales };
+    }
+
+    // Trae obras de una lista de AniList o MyAnimeList (importar.js ya las pasó a id del catálogo).
+    // entradas: [{ id, estado, favorito, agregada }]. Las que no tienes se agregan; las que ya tienes
+    // solo cambian si cambiarExistentes es true (si no, se respeta lo que ya habías puesto aquí).
+    function importarLista(entradas, { cambiarExistentes = false } = {}){
+        let nuevas = 0, actualizadas = 0, iguales = 0;
+        const cambiadas = [];
+        const ahora = new Date().toISOString();
+        for (const e of entradas){
+            if (!e || !idValido(e.id)) continue;
+            const estado = ESTADOS.includes(e.estado) ? e.estado : null;
+            const favorito = e.favorito === true;
+            const actual = obras.get(e.id);
+            if (!actual){
+                if (!estado && !favorito) continue;
+                obras.set(e.id, { estado, favorito, agregada: fechaValida(e.agregada) ? e.agregada : ahora, cambiada: marcaNueva(e.id) });
+                borradas.delete(e.id);
+                nuevas++;
+                cambiadas.push(e.id);
+            } else if (cambiarExistentes && ((estado && estado !== actual.estado) || (favorito && !actual.favorito))){
+                obras.set(e.id, { ...actual, estado: estado || actual.estado, favorito: actual.favorito || favorito, cambiada: marcaNueva(e.id) });
+                actualizadas++;
+                cambiadas.push(e.id);
+            } else iguales++;
+        }
+        if (cambiadas.length){
+            guardar();
+            avisar(null, 'copia', cambiadas);
+        }
+        return { nuevas, actualizadas, iguales };
     }
 
     // ===== Para la sincronización con la cuenta (cuenta.js) =====
@@ -282,12 +314,13 @@
         quitar,
         exportar,
         importar,
+        importarLista,
         registro,
         juntarNube,
         reemplazar,
         vaciar,
         disponible: () => disponible,
-        // fn(id, origen) se llama después de cada cambio (id = null si cambiaron varias obras)
+        // fn(id, origen, ids) se llama después de cada cambio (id = null si cambiaron varias obras; ids dice cuáles, si se sabe)
         alCambiar: fn => { oyentes.add(fn); return () => oyentes.delete(fn); }
     };
 })();

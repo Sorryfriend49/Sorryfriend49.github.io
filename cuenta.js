@@ -494,10 +494,11 @@
     if (entrarBiblioteca) entrarBiblioteca.addEventListener('click', abrirDialogo);
 
     // Cambios en la biblioteca: los de aquí (o de una copia cargada) se suben
-    Biblioteca.alCambiar((id, origen) => {
+    Biblioteca.alCambiar((id, origen, ids) => {
         if (!usuario) return;
         if (origen === 'local' || origen === 'copia'){
             if (id) pendientes.add(id);
+            if (Array.isArray(ids)) ids.forEach(x => pendientes.add(x));
             programarSubida();
         }
     });

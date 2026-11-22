@@ -96,7 +96,7 @@
 
     <!-- El ?v= obliga a los navegadores a bajar la versión nueva tras cada cambio.
          Si editas styles.css, sitio.js, biblioteca.js, catalogo.js o cuenta.js, sube ese número (v=3, v=4...). -->
-    <link rel="stylesheet" href="styles.css?v=10">
+    <link rel="stylesheet" href="styles.css?v=11">
 </head>
 
 <body>
@@ -244,6 +244,33 @@
                 </div>
                 <p class="aviso-copia" id="avisoCopia" role="status" aria-live="polite"></p>
             </div>
+
+            <!-- Traer tu lista de AniList o MyAnimeList (ver importar.js) -->
+            <div class="biblioteca-copia biblioteca-importar">
+                <h3>Trae tu lista de AniList o MyAnimeList</h3>
+                <p>Entran las obras de tu lista que ya están en el catálogo, cada una con su etiqueta. Tus favoritos de AniList también llegan como favoritos.</p>
+                <form class="importar-anilist" id="formAniList" novalidate>
+                    <label for="usuarioAniList">Tu usuario de AniList (la lista tiene que ser pública)</label>
+                    <div class="fila-importar">
+                        <input type="text" id="usuarioAniList" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="20" placeholder="Tu usuario">
+                        <button class="boton-secundario" id="traerAniList" type="submit">Traer de AniList</button>
+                    </div>
+                </form>
+                <div class="botones-copia">
+                    <button class="boton-secundario" id="cargarMal" type="button">Cargar archivo de MyAnimeList</button>
+                    <input type="file" id="archivoMal" accept=".xml,.gz,application/xml,text/xml,application/gzip" hidden>
+                </div>
+                <details class="ayuda-importar">
+                    <summary>¿Cómo saco el archivo de MyAnimeList?</summary>
+                    <ol>
+                        <li>Con tu sesión iniciada en MyAnimeList, entra a <a href="https://myanimelist.net/panel.php?go=export" target="_blank" rel="noopener noreferrer">exportar lista</a>.</li>
+                        <li>Elige tu lista de manga y expórtala.</li>
+                        <li>Carga aquí el archivo que se descarga (.xml.gz), tal cual: se lee en tu navegador y no se sube a ningún lado.</li>
+                    </ol>
+                </details>
+                <label class="opcion-importar"><input type="checkbox" id="cambiarExistentes"> Cambiar también las que ya tengo en mi biblioteca</label>
+                <p class="aviso-copia" id="avisoImportar" role="status" aria-live="polite"></p>
+            </div>
         </section>
 
         <!-- SOBRE EL SITIO -->
@@ -372,9 +399,10 @@
     <div class="aviso-global" id="avisoGlobal" role="status" aria-live="polite" hidden></div>
 
     <script src="sitio.js?v=4" defer></script>
-    <script src="biblioteca.js?v=3" defer></script>
+    <script src="biblioteca.js?v=4" defer></script>
     <script src="catalogo.js?v=8" defer></script>
-    <script src="cuenta.js?v=1" defer></script>
+    <script src="cuenta.js?v=2" defer></script>
+    <script src="importar.js?v=1" defer></script>
 
 </body>
 
