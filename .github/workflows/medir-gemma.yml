@@ -1,0 +1,51 @@
+# Prueba a mano: mide qué tan rápido escribe Gemma los resúmenes de varias formas
+# (.github/scripts/medir-gemma.mjs) para elegir la más rápida que no pierda calidad.
+# No guarda nada en el repositorio. Para correrla: Actions > "Medir Gemma" > Run workflow.
+# Es gratis: GitHub no cobra las tareas de los repositorios públicos.
+name: Medir Gemma
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  medir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v5
+
+      - name: Instalar el modelo de sentimiento
+        run: npm ci --prefix scripts --ignore-scripts --no-audit --no-fund
+
+      # Solo lee la caché del modelo que guarda la tarea de la comunidad (no la cambia)
+      - name: Usar el modelo guardado
+        uses: actions/cache/restore@v5
+        with:
+          path: .modelos
+          key: modelo-sentimiento-${{ hashFiles('scripts/package-lock.json') }}
+
+      - name: Instalar Gemma 4
+        timeout-minutes: 15
+        run: |
+          echo "Núcleos: $(nproc)"; lscpu | grep -E "Model name|Thread\(s\) per core|Core\(s\) per socket" || true; free -g
+          curl -fsSL https://ollama.com/install.sh | sh
+          sudo systemctl stop ollama 2>/dev/null || true
+          (OLLAMA_NUM_PARALLEL=2 OLLAMA_KEEP_ALIVE=60m ollama serve > /tmp/ollama.log 2>&1 &)
+          for i in $(seq 1 30); do curl -sf http://127.0.0.1:11434/api/version && break; sleep 2; done
+          ollama pull gemma4:e4b
+
+      - name: Medir
+        timeout-minutes: 40
+        run: node .github/scripts/medir-gemma.mjs
+
+      - name: Medir con flash attention
+        timeout-minutes: 15
+        run: |
+          pkill -f "ollama serve" || true; sleep 3
+          (OLLAMA_FLASH_ATTENTION=1 OLLAMA_KEEP_ALIVE=60m ollama serve > /tmp/ollama-fa.log 2>&1 &)
+          for i in $(seq 1 30); do curl -sf http://127.0.0.1:11434/api/version && break; sleep 2; done
+          node .github/scripts/medir-gemma.mjs --fa
