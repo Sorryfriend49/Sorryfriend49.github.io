@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sorryfriend49.github.io/sitemap.xml
+Sitemap: https://frozen-project.vercel.app/sitemap.xml

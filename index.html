@@ -4,6 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- DIRECCIÓN OFICIAL: https://frozen-project.vercel.app
+         Si la página se abre en una dirección vieja (GitHub Pages o frozen-project-vert-mu.vercel.app),
+         pasa a la oficial y se lleva
+         la biblioteca guardada en ese navegador (biblioteca.js la junta con la que ya haya). -->
+    <script>
+        (function () {
+            var OFICIAL = 'https://frozen-project.vercel.app';
+            var VIEJAS = ['sorryfriend49.github.io', 'frozen-project-vert-mu.vercel.app'];
+            var CLAVE = 'frozen-project:biblioteca';
+            if (VIEJAS.indexOf(location.hostname) !== -1) {
+                var destino = OFICIAL + '/' + location.hash;
+                try {
+                    var guardada = localStorage.getItem(CLAVE);
+                    if (guardada) {
+                        destino = OFICIAL + '/#!traspaso=' + encodeURIComponent(guardada) + '&volver=' + encodeURIComponent(location.hash);
+                        // Queda una copia aparte en la dirección vieja, pero ya no se vuelve a mandar
+                        localStorage.setItem(CLAVE + ':trasladada', guardada);
+                        localStorage.removeItem(CLAVE);
+                    }
+                } catch (e) {}
+                location.replace(destino);
+                return;
+            }
+            // En la dirección oficial: la biblioteca que llega se deja lista y se limpia la dirección
+            if (location.hash.indexOf('#!traspaso=') === 0) {
+                var datos = {};
+                location.hash.slice(2).split('&').forEach(function (parte) {
+                    var i = parte.indexOf('=');
+                    if (i > 0) {
+                        try { datos[parte.slice(0, i)] = decodeURIComponent(parte.slice(i + 1)); } catch (e) {}
+                    }
+                });
+                try { if (datos.traspaso) sessionStorage.setItem(CLAVE + ':traspaso', datos.traspaso); } catch (e) {}
+                var volver = /^#[a-z]/.test(datos.volver || '') ? datos.volver : '';
+                history.replaceState(null, '', location.pathname + location.search + volver);
+            }
+        })();
+    </script>
+
     <title>Frozen Project | Reseñas de manga, manhwa y manhua</title>
     <meta name="description" content="Reseñas y recomendaciones de manga, manhwa y manhua en español. Filtra por género y ordena por popularidad o fecha de salida, con lo que opina la comunidad.">
 
@@ -19,14 +59,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap">
 
     <!-- VISTA PREVIA AL COMPARTIR (WhatsApp, Discord, Telegram, Facebook, X) -->
-    <link rel="canonical" href="https://sorryfriend49.github.io/">
+    <link rel="canonical" href="https://frozen-project.vercel.app/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Frozen Project">
     <meta property="og:title" content="Frozen Project">
     <meta property="og:description" content="Reseñas y recomendaciones de manga, manhwa y manhua en español, con lo que opina la comunidad.">
-    <meta property="og:url" content="https://sorryfriend49.github.io/">
+    <meta property="og:url" content="https://frozen-project.vercel.app/">
     <meta property="og:locale" content="es_CO">
-    <meta property="og:image" content="https://sorryfriend49.github.io/vista-previa.jpg">
+    <meta property="og:image" content="https://frozen-project.vercel.app/vista-previa.jpg">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -40,7 +80,7 @@
         "@type": "WebSite",
         "name": "Frozen Project",
         "alternateName": "Frozen Project de Sorry",
-        "url": "https://sorryfriend49.github.io/",
+        "url": "https://frozen-project.vercel.app/",
         "inLanguage": "es",
         "description": "Reseñas y recomendaciones de manga, manhwa y manhua en español, con lo que opina la comunidad."
     }
@@ -269,7 +309,7 @@
     </dialog>
 
     <script src="sitio.js?v=4" defer></script>
-    <script src="biblioteca.js?v=1" defer></script>
+    <script src="biblioteca.js?v=2" defer></script>
     <script src="catalogo.js?v=8" defer></script>
 
 </body>

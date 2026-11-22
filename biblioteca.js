@@ -4,7 +4,8 @@
    con una etiqueta (Leyendo, Por leer, Leído, En pausa, Abandonado) y, si quieres,
    marcada como favorita. No necesita cuenta ni servidor: es gratis y privado, pero
    cada navegador tiene su propia biblioteca. Para pasarla a otro, se guarda una
-   copia (un archivo .json) y se carga allá.
+   copia (un archivo .json) y se carga allá. Si alguien llega desde la dirección vieja de la
+   página (GitHub Pages), su biblioteca viene con él y se junta aquí (ver index.html).
    catalogo.js pinta la biblioteca y los botones de la ficha con lo que da este archivo.
 =================================== */
 (() => {
@@ -110,7 +111,20 @@
         }, null, 2);
     }
 
-    // Carga una copia y la junta con lo que ya hay: si una obra está en las dos, gana el cambio más reciente.
+    // Junta obras que llegan de afuera con las que ya hay: si una obra está en las dos, gana el cambio más reciente
+    function juntar(entrantes){
+        let nuevas = 0, actualizadas = 0, iguales = 0;
+        entrantes.forEach((e, id) => {
+            const actual = obras.get(id);
+            if (!actual){ obras.set(id, e); nuevas++; }
+            else if (Date.parse(e.cambiada) > Date.parse(actual.cambiada)){ obras.set(id, e); actualizadas++; }
+            else iguales++;
+        });
+        if (nuevas || actualizadas) guardar();
+        return { nuevas, actualizadas, iguales };
+    }
+
+    // Carga una copia y la junta con lo que ya hay.
     // Devuelve { nuevas, actualizadas, iguales } o lanza un Error con un mensaje para mostrar.
     function importar(texto){
         if (typeof texto !== 'string' || !texto.trim()) throw new Error('El archivo está vacío.');
@@ -121,19 +135,21 @@
         if (!datos || datos.tipo !== 'biblioteca' || !datos.obras || typeof datos.obras !== 'object'){
             throw new Error('Ese archivo no es una copia de la biblioteca de Frozen Project.');
         }
-        const entrantes = limpiarObras(datos.obras);
-        let nuevas = 0, actualizadas = 0, iguales = 0;
-        entrantes.forEach((e, id) => {
-            const actual = obras.get(id);
-            if (!actual){ obras.set(id, e); nuevas++; }
-            else if (Date.parse(e.cambiada) > Date.parse(actual.cambiada)){ obras.set(id, e); actualizadas++; }
-            else iguales++;
-        });
-        if (nuevas || actualizadas){
-            guardar();
-            avisar(null);
+        const r = juntar(limpiarObras(datos.obras));
+        if (r.nuevas || r.actualizadas) avisar(null);
+        return r;
+    }
+
+    // La biblioteca que llegó desde la dirección vieja (la deja el script del inicio de index.html)
+    try {
+        const traida = sessionStorage.getItem(CLAVE + ':traspaso');
+        if (traida){
+            sessionStorage.removeItem(CLAVE + ':traspaso');
+            const datos = JSON.parse(traida);
+            juntar(limpiarObras(datos && datos.obras));
         }
-        return { nuevas, actualizadas, iguales };
+    } catch (error){
+        // Si algo falla, la copia sigue guardada en la dirección vieja (frozen-project:biblioteca:trasladada)
     }
 
     // Si la biblioteca cambia en otra pestaña, esta se pone al día
