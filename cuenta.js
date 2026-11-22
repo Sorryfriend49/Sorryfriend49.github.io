@@ -373,6 +373,8 @@
 
     function prepararGoogle(){
         if (googleListo) return googleListo;
+        // Mientras carga, su lugar queda reservado (para que no salte nada); si no carga, se quita
+        $('botonGoogle').hidden = false;
         $('googleAlterno').hidden = true;
         googleListo = (async () => {
             const [, nonce] = await Promise.all([window.google && window.google.accounts ? null : cargarScript(GOOGLE_GSI, 10000), crearNonce()]);
@@ -396,6 +398,7 @@
         })().catch(error => {
             console.warn('Frozen Project: Google', error);
             googleListo = null;
+            $('botonGoogle').hidden = true;         // sin hueco vacío arriba de Discord (bloqueadores)
             $('googleAlterno').hidden = false;      // queda la entrada con Google por redirección
         });
         return googleListo;

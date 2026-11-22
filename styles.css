@@ -61,6 +61,12 @@ img{
     display: none !important;
 }
 
+/* Barras de desplazamiento con los colores de la página (en Windows y Linux salían grises).
+   Se hereda: vale para la página, «Lo más popular», la ficha y los diálogos */
+html{
+    scrollbar-color: rgba(168, 198, 236, 0.32) transparent;
+}
+
 :focus-visible{
     outline: 2px solid var(--acero);
     outline-offset: 3px;
@@ -1970,6 +1976,28 @@ header{
 
     .mini-datos .lectores{
         display: none;
+    }
+}
+
+/* Tablet y ventanas medianas: el texto del Inicio cae sobre el pelo brillante del ángel.
+   Una sombra suave detrás lo deja leer sin tapar el fondo (en el celular el párrafo no se muestra) */
+@media (min-width: 769px) and (max-width: 1279px){
+    .inicio-texto{
+        position: relative;
+    }
+
+    .inicio-texto::before{
+        content: "";
+        position: absolute;
+        inset: -48px -72px;
+        z-index: -1;
+        pointer-events: none;
+        background: radial-gradient(closest-side, rgba(3, 10, 19, 0.82), rgba(3, 10, 19, 0.6) 55%, rgba(3, 10, 19, 0));
+    }
+
+    /* El título a veces pasa por delante del halo blanco: un borde oscuro pegado a las letras */
+    .inicio-texto h2{
+        text-shadow: 0 0 10px rgba(3, 10, 19, 0.9), 0 2px 28px rgba(3, 10, 19, 0.9);
     }
 }
 
