@@ -8,9 +8,9 @@
    2. Este programa baja las reseñas más útiles de cada una y, de cada reseña, se queda con sus
       frases clave: las que opinan de un tema (el arte, la historia, el ritmo…) y que el modelo de
       sentimiento (tono.mjs) marca como elogio o crítica, sin las partes marcadas como spoiler.
-      Con eso Gemma lee un 30 % menos y escribe cada resumen más rápido (medido con
-      .github/workflows/medir-gemma.yml). Le pide un resumen de 2 o 3 oraciones, lo revisa y
-      lo guarda en datos/comunidad.json.
+      Así Gemma lee casi un 30 % menos y cada resumen sale un 18 % más rápido, igual de
+      concreto (medido con .github/workflows/medir-gemma.yml). Le pide un resumen de 2 o 3
+      oraciones, lo revisa y lo guarda en datos/comunidad.json.
    En GitHub, si hay muchas, se reparten entre varias máquinas a la vez (ver comunidad.yml):
       --repartir          cuántas máquinas usar (lo lee la tarea; RESUMIR=id,id agrega otras)
       --parte K --de N    la máquina K (de N) escribe los suyos en .tmp/resumenes/parte-K.json
@@ -323,7 +323,7 @@ export async function escribirParte({
     const comunidad = await leerJSON(join(raiz, 'datos/comunidad.json'), { obras: {} });
     const mias = parteDe(ids, parte, de).map(id => porAniList.get(String(id))).filter(Boolean)
         .map(o => ({ id: o.ids.anilist, titulo: o.titulo, tipo: o.tipo }));
-    registro(`Máquina ${parte + 1} de ${de}: ${mias.length} resúmenes con ${NOMBRE_MODELO} (${modelo}).`);
+    registro(`Máquina ${parte + 1} de ${de}: ${mias.length} ${mias.length === 1 ? 'resumen' : 'resúmenes'} con ${NOMBRE_MODELO} (${modelo}).`);
     const salida = join(raiz, '.tmp/resumenes', `parte-${parte}.json`);
     await mkdir(dirname(salida), { recursive: true });
     const guardados = [];

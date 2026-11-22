@@ -6,9 +6,12 @@
    - antes: los primeros 500 caracteres de cada reseña (como se hacía hasta noviembre de 2026)
    - clave: las frases clave de cada reseña, como lo hace hoy scripts/resumenes.mjs
    Opciones: --obras N (cuántas, 3 si no se dice) y --etiqueta texto (para la tabla).
-   Primera medición (22-nov-2026, 6 obras): con las frases clave Gemma lee un 28 % menos y cada
-   resumen sale un 28 % más rápido, igual de concreto; más hilos o dos a la vez en la misma
-   máquina lo hacen más lento.
+   Lo que se midió el 22-nov-2026 (máquina de GitHub: 4 núcleos AMD EPYC, 16 GB):
+   - Frases clave: Gemma lee un 27 % menos (1143 tokens en vez de 1567) y cada resumen sale en
+     47 s en vez de 57 (18 % más rápido), igual de concretos.
+   - Más hilos (num_thread 4): escribe a la mitad de velocidad. Dos resúmenes a la vez
+     (OLLAMA_NUM_PARALLEL=2): más lento. Flash attention: igual. Nada de eso se usa.
+   Lo que más acelera es repartir entre varias máquinas (ver comunidad.yml).
    El registro de las tareas es público: no muestra el texto de las reseñas, solo tiempos y resúmenes.
 =================================== */
 import { readFile, appendFile } from 'node:fs/promises';
