@@ -3,7 +3,9 @@
    catalogo.json es la lista de obras (sus números de AniList). De lunes a viernes la tarea de
    GitHub corre este programa: trae de AniList títulos, géneros, fechas, capítulos, portadas
    y los lugares oficiales para leer, y escribe obras.json, que es lo que lee la página.
-   Para agregar una obra basta con sumar su número de AniList a catalogo.json.
+   Para agregar una obra basta con sumar su número de AniList a catalogo.json (además, cada
+   día hábil entran solas hasta 20: ver nuevas.mjs). Cada obra nueva queda con "agregada",
+   el día en que llegó.
    Si AniList no responde, obras.json se queda como estaba.
    Para probarlo en tu PC: node scripts/catalogo.mjs
 =================================== */
@@ -112,12 +114,13 @@ export function prepararObra(m, entrada){
         comunidad: { anilist: { puntaje: m.meanScore || null, popularidad: m.popularity || 0 } }
     };
     if (entrada.portadaGrande) obra.portadaGrande = entrada.portadaGrande;
+    if (entrada.agregada) obra.agregada = entrada.agregada;      // el día en que llegó al catálogo (Inicio: «Nuevas»)
     return obra;
 }
 
 // catalogo.json con una obra por línea, para que sea fácil de editar a mano
 export async function escribirCatalogo(ruta, lista, entradas){
-    const campos = e => Object.fromEntries(['anilist', 'id', 'titulo', 'portadaGrande'].filter(k => e[k] != null).map(k => [k, e[k]]));
+    const campos = e => Object.fromEntries(['anilist', 'id', 'titulo', 'agregada', 'portadaGrande'].filter(k => e[k] != null).map(k => [k, e[k]]));
     const otros = Object.entries(lista).filter(([k]) => k !== 'obras').map(([k, v]) => `  ${JSON.stringify(k)}: ${JSON.stringify(v)},`);
     const texto = ['{', ...otros, '  "obras": [', entradas.map(e => '    ' + JSON.stringify(campos(e))).join(',\n'), '  ]', '}', ''].join('\n');
     await writeFile(ruta, texto);
@@ -177,6 +180,7 @@ export async function armarCatalogo({
             for (let n = 2; usados.has(id); n++) id = `${base}-${n}`;
             entrada.id = id;
             usados.add(id);
+            if (!entrada.agregada) entrada.agregada = ahora.toISOString().slice(0, 10);
             nuevas++;
             registro(`  Nueva: ${entrada.titulo} (${id})`);
         }

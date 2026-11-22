@@ -579,16 +579,22 @@
         $('tituloCatalogo').focus();
     }
 
-    // ---------- Inicio: lo más popular de hoy, de la semana y del mes ----------
+    // ---------- Inicio: lo más popular de hoy, de la semana y del mes, y las recién llegadas ----------
     // Sale de datos/populares.json (scripts/populares.mjs, una tarea diaria de GitHub). Cambia sola cada
     // 9,5 s con una transición suave; se queda quieta mientras tienes el mouse o el foco encima, mientras
     // la tocas en el celular, si la pestaña está oculta o con "menos movimiento" activado en tu sistema.
     // Sin ese archivo queda como antes: lo más popular de siempre de cada tipo.
-    const PERIODOS_POP = [
+    // «Nuevas»: las últimas que llegaron al catálogo (las que entran solas cada día hábil o las que
+    // agregas a mano); aparece solo si llegó alguna en los últimos 30 días.
+    const PERIODOS_BASE = [
         { clave: 'hoy', boton: 'Hoy', titulo: 'Lo más popular de hoy', cuando: 'hoy' },
         { clave: 'semana', boton: 'Semana', titulo: 'Lo más popular de la semana', cuando: 'esta semana' },
         { clave: 'mes', boton: 'Mes', titulo: 'Lo más popular del mes', cuando: 'este mes' }
     ];
+    const NUEVAS = { clave: 'nuevas', boton: 'Nuevas', titulo: 'Recién llegadas al catálogo', nuevas: true };
+    const DIAS_NUEVAS = 30;
+    const CUANTAS_NUEVAS = 6;
+    let PERIODOS_POP = PERIODOS_BASE;
     const INTERVALO_POP = 9500;
     const POR_TIPO_POP = 2;
     const TAMANOS_MINI = '(max-width: 1279px) 96px, 54px';
@@ -614,8 +620,22 @@
         }
     }
 
+    // Días desde que llegó (las fechas de llegada son del día en hora UTC, como las guarda la tarea)
+    const diasDesde = fecha => Math.round((Date.parse(new Date().toISOString().slice(0, 10)) - Date.parse(fecha)) / 86400000);
+    const textoLlegada = fecha => {
+        const d = diasDesde(fecha);
+        return d <= 0 ? 'Llegó hoy' : d === 1 ? 'Llegó ayer' : `Llegó hace ${d} días`;
+    };
+    // Las últimas que llegaron: las más nuevas primero y, el mismo día, las más populares
+    function recientes(){
+        return obras.filter(o => typeof o.agregada === 'string' && diasDesde(o.agregada) <= DIAS_NUEVAS)
+            .sort((a, b) => b.agregada.localeCompare(a.agregada) || popularidad(b) - popularidad(a))
+            .slice(0, CUANTAS_NUEVAS);
+    }
+
     // Las obras de un periodo: 2 por tipo; si faltan, se completa con las más populares de siempre
     function elegidasPop(periodo){
+        if (periodo && periodo.nuevas) return recientes().map(o => ({ o, nuevos: null }));
         return Object.keys(TIPOS).flatMap(tipo => {
             const lista = ((populares && periodo && populares.periodos[periodo.clave] && populares.periodos[periodo.clave][tipo]) || [])
                 .map(x => ({ o: porId.get(x.id), nuevos: Number.isFinite(x.nuevos) ? x.nuevos : null }))
@@ -639,9 +659,10 @@
         portada.append(imagenPortada(o, TAMANOS_MINI));
         const texto = crear('span', 'mini-texto');
         const datos = crear('span', 'mini-datos');
-        const cifra = periodo && nuevos > 0
-            ? `+${formatoLectores.format(nuevos)} ${nuevos === 1 ? 'lector' : 'lectores'} ${periodo.cuando}`
-            : textoLectores(popularidad(o));
+        const cifra = periodo && periodo.nuevas ? textoLlegada(o.agregada)
+            : periodo && nuevos > 0
+                ? `+${formatoLectores.format(nuevos)} ${nuevos === 1 ? 'lector' : 'lectores'} ${periodo.cuando}`
+                : textoLectores(popularidad(o));
         datos.append(etiquetaTipo(o.tipo), crear('span', 'lectores', cifra));
         texto.append(crear('span', 'mini-titulo', o.titulo), datos);
         a.append(portada, texto);
@@ -689,7 +710,7 @@
         if (animar && !menosMovimiento.matches && typeof titulo.animate === 'function'){
             titulo.animate([{ opacity: 0.2 }, { opacity: 1 }], { duration: 420, easing: 'ease-out' });
         }
-        $('periodosPopulares').querySelectorAll('button').forEach((b, i) => b.setAttribute('aria-pressed', String(i === indice)));
+        $('periodosPopulares').querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(Boolean(periodo) && b.dataset.periodo === periodo.clave)));
         const items = elegidasPop(periodo).map(x => itemPopular(x, periodo));
         cambiandoPop = cambiandoPop.then(() => cambiarLista(items, animar));
         if (populares) adelantarPortadas(PERIODOS_POP[(indice + 1) % PERIODOS_POP.length]);
@@ -790,6 +811,8 @@
     function pintarPopulares(datosPopulares){
         populares = datosPopulares;
         if (!obras.length) return;
+        PERIODOS_POP = recientes().length ? [...PERIODOS_BASE, NUEVAS] : PERIODOS_BASE;
+        $('periodosPopulares').querySelector('[data-periodo="nuevas"]').hidden = !PERIODOS_POP.includes(NUEVAS);
         if (populares) prepararRotacion();
         mostrarPeriodo(0);
         panelPop.hidden = false;

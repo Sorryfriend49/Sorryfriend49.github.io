@@ -137,7 +137,7 @@
                 <p>Encuentra qué leer según lo que opina la comunidad: búscala por su nombre, filtra por género y ordena por popularidad o fecha de salida.</p>
                 <a class="boton-principal" href="#catalogo">Explorar el catálogo</a>
             </div>
-            <!-- Lo más popular: rota entre hoy, la semana y el mes (ver catalogo.js y datos/populares.json) -->
+            <!-- Lo más popular: rota entre hoy, la semana, el mes y las recién llegadas (ver catalogo.js y datos/populares.json) -->
             <section class="inicio-populares" id="inicioPopulares" aria-labelledby="tituloPopulares" hidden>
                 <div class="populares-cabecera">
                     <h3 id="tituloPopulares">Lo más popular de cada tipo</h3>
@@ -146,10 +146,11 @@
                         <svg class="icono-seguir" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg>
                     </button>
                 </div>
-                <div class="periodos-populares" id="periodosPopulares" role="group" aria-label="Ver lo más popular de" hidden>
+                <div class="periodos-populares" id="periodosPopulares" role="group" aria-label="Qué mostrar" hidden>
                     <button type="button" data-periodo="hoy" aria-pressed="true">Hoy</button>
                     <button type="button" data-periodo="semana" aria-pressed="false">Semana</button>
                     <button type="button" data-periodo="mes" aria-pressed="false">Mes</button>
+                    <button type="button" data-periodo="nuevas" aria-pressed="false" hidden>Nuevas</button>
                 </div>
                 <ul class="mini-lista" id="listaPopulares"></ul>
             </section>
@@ -412,7 +413,7 @@
 
     <script src="sitio.js?v=4" defer></script>
     <script src="biblioteca.js?v=4" defer></script>
-    <script src="catalogo.js?v=11" defer></script>
+    <script src="catalogo.js?v=12" defer></script>
     <script src="cuenta.js?v=2" defer></script>
     <script src="importar.js?v=1" defer></script>
 

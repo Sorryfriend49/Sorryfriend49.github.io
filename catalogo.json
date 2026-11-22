@@ -1,5 +1,6 @@
 {
-  "_ayuda": "Lista de obras del catálogo. Para agregar una, busca la obra en AniList (por ejemplo https://anilist.co/manga/105398/Solo-Leveling), copia su número (105398) y agrégala al final como { \"anilist\": 105398 }. Para quitar una, borra su línea. La tarea semanal de GitHub completa el resto (título, géneros, portada, capítulos y dónde leer) y publica la página. \"id\" y \"titulo\" se llenan solos la primera vez; puedes cambiar \"titulo\" si quieres otro nombre, pero no cambies \"id\" (es parte de los enlaces a cada obra).",
+  "_ayuda": "Lista de obras del catálogo. De lunes a viernes entran solas hasta 20 obras nuevas (scripts/nuevas.mjs). Para agregar una a mano, busca la obra en AniList (por ejemplo https://anilist.co/manga/105398/Solo-Leveling), copia su número (105398) y agrégala al final como { \"anilist\": 105398 }. Para quitar una, borra su línea: si había entrado sola, no vuelve. Para que una obra nunca entre sola, pon su número en \"excluidas\", por ejemplo [105398, 30013]. La tarea de GitHub completa el resto (título, géneros, portada, capítulos y dónde leer) y publica la página. \"id\", \"titulo\" y \"agregada\" (el día en que llegó) se llenan solos la primera vez; puedes cambiar \"titulo\" si quieres otro nombre, pero no cambies \"id\" (es parte de los enlaces a cada obra).",
+  "excluidas": [],
   "obras": [
     {"anilist":105778,"id":"chainsaw-man","titulo":"Chainsaw Man"},
     {"anilist":101517,"id":"jujutsu-kaisen","titulo":"Jujutsu Kaisen"},

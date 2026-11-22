@@ -15,7 +15,8 @@
 # Para renovarlas todas de una vez (por ejemplo, si cambia la forma de calcular): Run workflow
 # con "Renovar todas las obras" marcado.
 #
-# Para agregar obras: suma su número de AniList a catalogo.json (la tarea corre sola al guardarlo).
+# Obras nuevas: de lunes a viernes entran solas hasta 20 (scripts/nuevas.mjs). Para agregar una
+# a mano, suma su número de AniList a catalogo.json (la tarea corre sola al guardarlo).
 # Para correrla a mano: pestaña Actions > "Opinión de la comunidad" > Run workflow.
 # MyAnimeList usa una clave gratis (app "Frozen Project", uso no comercial) guardada en
 # Settings > Secrets and variables > Actions como MAL_CLIENT_ID. Si algún día deja de
@@ -36,6 +37,11 @@ on:
         description: 'Rehacer el resumen de estas obras (sus números de AniList, separados por comas)'
         type: string
         default: ''
+      obras_nuevas:
+        description: 'Obras nuevas: simular (solo muestra cuáles entrarían) o agregarlas ahora'
+        type: choice
+        options: ['no', 'simular', 'agregar']
+        default: 'no'
   push:
     branches: [main]
     paths:                      # también corre cuando cambia el catálogo o el algoritmo
@@ -81,6 +87,13 @@ jobs:
         with:
           path: .modelos
           key: modelo-sentimiento-${{ hashFiles('scripts/package-lock.json') }}
+
+      # De lunes a viernes entran solas hasta 20 obras nuevas (scripts/nuevas.mjs: 10 en tendencia
+      # o estrenos y 10 populares que faltan). Si AniList falla, el resto de la tarea sigue igual.
+      - name: Buscar obras nuevas
+        if: github.event_name == 'schedule' || inputs.obras_nuevas == 'simular' || inputs.obras_nuevas == 'agregar'
+        continue-on-error: true
+        run: node scripts/nuevas.mjs ${{ inputs.obras_nuevas == 'simular' && '--simular' || '' }} ${{ inputs.obras_nuevas == 'agregar' && '--forzar' || '' }}
 
       - name: Actualizar el catálogo desde AniList
         run: node scripts/catalogo.mjs
