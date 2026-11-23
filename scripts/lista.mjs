@@ -89,6 +89,8 @@ export function armarLista(catalogo, comunidad){
             tipo: o.tipo,
             estado: o.estado,
             inicio: o.inicio,
+            // Tiene dónde leerla o comprar los tomos en español (oficial): filtro «En español» del catálogo
+            es: (o.enlaces || []).some(e => e && e.idioma === 'es' && (e.tipo === 'leer' || e.tipo === 'tomos')) ? 1 : null,
             generos: o.generos,
             portada: typeof o.portada === 'string' && o.portada.startsWith(PORTADAS) ? o.portada.slice(PORTADAS.length) : o.portada,
             portadaGrande: o.portadaGrande,

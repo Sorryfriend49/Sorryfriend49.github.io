@@ -96,7 +96,7 @@
 
     <!-- El ?v= obliga a los navegadores a bajar la versión nueva tras cada cambio.
          Si editas styles.css, sitio.js, biblioteca.js, catalogo.js o cuenta.js, sube ese número (v=3, v=4...). -->
-    <link rel="stylesheet" href="styles.css?v=15">
+    <link rel="stylesheet" href="styles.css?v=16">
 </head>
 
 <body>
@@ -208,6 +208,20 @@
                     </button>
                 </div>
 
+                <!-- Estado de la obra y obras con edición oficial en español (?estado=…&es=1) -->
+                <div class="fila-filtros fila-extra">
+                    <fieldset class="segmentado" id="filtroPublicacion">
+                        <legend class="solo-lectores">Estado de la obra</legend>
+                        <label><input type="radio" name="publicacion" value="" checked><span>Todas</span></label>
+                        <label><input type="radio" name="publicacion" value="en-publicacion"><span>En publicación</span></label>
+                        <label><input type="radio" name="publicacion" value="terminado"><span>Terminadas</span></label>
+                    </fieldset>
+                    <button class="chip" id="filtroEspanol" type="button" aria-pressed="false" aria-describedby="ayudaEspanol">
+                        <span>En español</span><span class="cuenta" id="cuentaEspanol"></span>
+                    </button>
+                    <span class="ayuda-filtro" id="ayudaEspanol">Con edición o plataforma oficial en español</span>
+                </div>
+
                 <div class="generos-zona" id="zonaGeneros" role="group" aria-label="Géneros">
                     <button class="quitar-generos" id="quitarGeneros" type="button" hidden>Quitar géneros</button>
                 </div>
@@ -305,7 +319,7 @@
                     <li>Los títulos, autores, géneros, fechas y portadas vienen de <a href="https://anilist.co" target="_blank" rel="noopener noreferrer">AniList</a> y se actualizan de lunes a viernes. Si la obra sigue saliendo, los capítulos y tomos publicados hasta ahora vienen de <a href="https://www.mangaupdates.com" target="_blank" rel="noopener noreferrer">MangaUpdates</a>.</li>
                     <li>Lo que opina la comunidad junta a cuatro comunidades de lectores: <a href="https://anilist.co" target="_blank" rel="noopener noreferrer">AniList</a>, <a href="https://myanimelist.net" target="_blank" rel="noopener noreferrer">MyAnimeList</a>, <a href="https://kitsu.app" target="_blank" rel="noopener noreferrer">Kitsu</a> y <a href="https://www.mangaupdates.com" target="_blank" rel="noopener noreferrer">MangaUpdates</a>.</li>
                     <li>La popularidad es cuántas personas tienen la obra en su lista de AniList. Se actualiza dos veces al día.</li>
-                    <li>“Dónde leer” lleva solo a lugares oficiales: plataformas para leer en español o en inglés, editoriales que publican los tomos y, si no hay edición en esos idiomas, las plataformas oficiales en su idioma original. La lista sale de los enlaces oficiales que la comunidad registra en AniList.</li>
+                    <li>“Dónde leer” lleva solo a lugares oficiales: plataformas para leer en español o en inglés, editoriales que publican los tomos y, si no hay edición en esos idiomas, las plataformas oficiales en su idioma original. La lista sale de los enlaces oficiales que la comunidad registra en AniList. El filtro «En español» del catálogo muestra las obras con al menos una plataforma o editorial oficial en español en esa lista; si AniList todavía no tiene registrada una edición, la obra no aparece ahí.</li>
                 </ul>
 
                 <h3>Cómo se calcula lo que opina la comunidad</h3>
@@ -437,7 +451,7 @@
 
     <script src="sitio.js?v=5" defer></script>
     <script src="biblioteca.js?v=4" defer></script>
-    <script src="catalogo.js?v=16" defer></script>
+    <script src="catalogo.js?v=17" defer></script>
     <script src="cuenta.js?v=3" defer></script>
     <script src="importar.js?v=2" defer></script>
 

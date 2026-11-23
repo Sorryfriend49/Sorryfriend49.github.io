@@ -25,6 +25,8 @@
         'cancelado': 'Cancelada', 'proximamente': 'Por estrenar'
     };
     const IDIOMAS = { es: 'español', en: 'inglés', ja: 'japonés', ko: 'coreano', zh: 'chino' };
+    // Filtro «estado de la obra» del catálogo (?estado=…)
+    const PUBLICACION = { 'en-publicacion': 'En publicación', 'terminado': 'Terminadas' };
     // Dónde leer, por grupos: primero en español, luego en inglés, los tomos y al final el idioma original
     const GRUPOS_LECTURA = [
         { titulo: 'En español', cumple: e => e.tipo === 'leer' && e.idioma === 'es', conIdioma: false },
@@ -150,7 +152,7 @@
     let etiquetasConocidas = new Map();   // id -> { nombre, en }
     let puestoPopularidad = new Map();
     let datosListos = false;
-    let estado = { tipo: '', generos: [], orden: ORDEN_INICIAL, etiqueta: '', q: '' };
+    let estado = { tipo: '', generos: [], orden: ORDEN_INICIAL, etiqueta: '', q: '', publicacion: '', espanol: false };
     let indiceBusqueda = new Map();   // id -> nombres de la obra, ya normalizados para buscar
     let coincidencias = null;         // id -> { nivel, nombre, principal } mientras hay una búsqueda
     let tarjetas = new Map();      // id -> { li, a, datos }
@@ -289,7 +291,9 @@
         const orden = Object.prototype.hasOwnProperty.call(ORDENES, params.get('orden')) ? params.get('orden') : ORDEN_INICIAL;
         const etiqueta = etiquetasConocidas.has(params.get('etiqueta')) ? params.get('etiqueta') : '';
         const q = (params.get('q') || '').replace(/\s+/g, ' ').trim().slice(0, MAX_BUSQUEDA);
-        return { tipo, generos, orden, etiqueta, q };
+        const publicacion = Object.prototype.hasOwnProperty.call(PUBLICACION, params.get('estado')) ? params.get('estado') : '';
+        const espanol = params.get('es') === '1';
+        return { tipo, generos, orden, etiqueta, q, publicacion, espanol };
     }
 
     function hashCatalogo(e = estado, obra = null){
@@ -298,6 +302,8 @@
         if (e.tipo) partes.push('tipo=' + e.tipo);
         if (e.generos.length) partes.push('generos=' + e.generos.join(','));
         if (e.etiqueta) partes.push('etiqueta=' + e.etiqueta);
+        if (e.publicacion) partes.push('estado=' + e.publicacion);
+        if (e.espanol) partes.push('es=1');
         if (e.orden !== ORDEN_INICIAL) partes.push('orden=' + e.orden);
         if (obra) partes.push('obra=' + encodeURIComponent(obra));
         return '#catalogo' + (partes.length ? '?' + partes.join('&') : '');
@@ -367,13 +373,19 @@
     const cumpleTipo = (o, tipo) => !tipo || o.tipo === tipo;
     const tieneGeneros = (o, generos) => generos.every(g => o.generos.includes(g));
     const tieneEtiqueta = (o, etiqueta) => !etiqueta || etiquetasDe(o).some(e => e.id === etiqueta);
+    const cumplePublicacion = (o, publicacion) => !publicacion || o.estado === publicacion;
+    const cumpleEspanol = (o, espanol) => !espanol || o.es === 1;      // edición o plataforma oficial en español
     const cumpleBusqueda = o => !coincidencias || coincidencias.has(o.id);
+    // Todo lo elegido (sin = el filtro que no se cuenta, para saber cuántas quedarían si lo sumas)
+    const cumpleFiltros = (o, sin = '') => cumpleBusqueda(o) && cumpleTipo(o, estado.tipo)
+        && (sin === 'generos' || tieneGeneros(o, estado.generos)) && tieneEtiqueta(o, estado.etiqueta)
+        && cumplePublicacion(o, estado.publicacion) && (sin === 'espanol' || cumpleEspanol(o, estado.espanol));
     // Con una búsqueda, primero las obras cuyo nombre empieza con lo escrito; después, el orden elegido
     const porRelevancia = (a, b) => coincidencias ? coincidencias.get(a.id).nivel - coincidencias.get(b.id).nivel : 0;
 
     function resultados(){
         return obras
-            .filter(o => cumpleBusqueda(o) && cumpleTipo(o, estado.tipo) && tieneGeneros(o, estado.generos) && tieneEtiqueta(o, estado.etiqueta))
+            .filter(o => cumpleFiltros(o))
             .sort((a, b) => porRelevancia(a, b) || ORDENES[estado.orden](a, b) || a.titulo.localeCompare(b.titulo, 'es'));
     }
 
@@ -438,7 +450,7 @@
         if (document.activeElement !== inputBuscar && inputBuscar.value !== estado.q) inputBuscar.value = estado.q;
 
         // Cada género dice cuántas obras quedarían si lo sumas a lo que ya elegiste
-        const base = obras.filter(o => cumpleBusqueda(o) && cumpleTipo(o, estado.tipo) && tieneGeneros(o, estado.generos) && tieneEtiqueta(o, estado.etiqueta));
+        const base = obras.filter(o => cumpleFiltros(o));
         chips.forEach(({ boton, cuenta }, g) => {
             const activo = estado.generos.includes(g);
             boton.setAttribute('aria-pressed', String(activo));
@@ -453,6 +465,20 @@
         });
         quitarGeneros.hidden = estado.generos.length === 0;
         cuentaGeneros.textContent = estado.generos.length ? `(${estado.generos.length})` : '';
+
+        // Estado de la obra y «En español» (este dice cuántas quedarían, como los géneros)
+        document.querySelectorAll('#filtroPublicacion input').forEach(i => { i.checked = i.value === estado.publicacion; });
+        const botonEspanol = $('filtroEspanol');
+        const cuentaEspanol = $('cuentaEspanol');
+        botonEspanol.setAttribute('aria-pressed', String(estado.espanol));
+        if (estado.espanol){
+            cuentaEspanol.replaceChildren();
+            botonEspanol.disabled = false;
+        } else {
+            const n = obras.filter(o => cumpleFiltros(o, 'espanol') && o.es === 1).length;
+            cuentaEspanol.replaceChildren(crear('span', 'solo-lectores', ', '), String(n), crear('span', 'solo-lectores', n === 1 ? ' obra' : ' obras'));
+            botonEspanol.disabled = n === 0;
+        }
 
         const etiqueta = etiquetasConocidas.get(estado.etiqueta);
         $('filtroEtiqueta').hidden = !etiqueta;
@@ -521,7 +547,7 @@
                 li.append(crear('strong', null, `Hay ${sinFiltros} ${sinFiltros === 1 ? 'obra' : 'obras'} con «${estado.q}», pero no con los filtros que elegiste.`),
                     crear('span', null, 'Puedes buscar en todo el catálogo sin borrar lo que escribiste.'));
                 boton.addEventListener('click', () => {
-                    cambiarEstado({ tipo: '', generos: [], etiqueta: '' });
+                    cambiarEstado({ tipo: '', generos: [], etiqueta: '', publicacion: '', espanol: false });
                     $('tituloCatalogo').focus();
                 });
             } else {
@@ -533,6 +559,18 @@
             return li;
         }
         const quien = estado.tipo ? `Ningún ${TIPOS[estado.tipo].toLowerCase()}` : 'Ninguna obra';
+        // Con el estado o «En español» puestos, el aviso habla de todos los filtros
+        if (estado.publicacion || estado.espanol){
+            li.append(crear('strong', null, `${quien} cumple todos esos filtros.`), crear('span', null, 'Quita alguno de los filtros de arriba o cambia el tipo.'));
+            const quitar = crear('button', 'boton-secundario', 'Quitar filtros');
+            quitar.type = 'button';
+            quitar.addEventListener('click', () => {
+                cambiarEstado({ generos: [], etiqueta: '', publicacion: '', espanol: false });
+                $('tituloCatalogo').focus();
+            });
+            li.append(document.createElement('br'), quitar);
+            return li;
+        }
         const conEtiqueta = Boolean(estado.etiqueta) && estado.generos.length === 0;
         if (conEtiqueta) li.append(crear('strong', null, `${quien} tiene esa etiqueta.`), crear('span', null, 'Quita la etiqueta o cambia el tipo.'));
         else li.append(crear('strong', null, `${quien} tiene todos esos géneros.`), crear('span', null, 'Quita algún género o cambia el tipo.'));
@@ -1260,7 +1298,9 @@
         const elegida = opciones[Math.floor(Math.random() * opciones.length)];
         ultimasSorpresas.push(elegida.id);
         if (ultimasSorpresas.length > 10) ultimasSorpresas.shift();
-        Frozen.navegar(hashCatalogo(estado, elegida.id));
+        // Como al tocar una obra: Atrás cierra la ficha y el foco vuelve a este botón
+        origenFicha = $('sorprendeme');
+        Frozen.navegar(hashCatalogo(estado, elegida.id), { estado: { ficha: true } });
     });
 
     // ---------- Tecla «/»: lleva al buscador del catálogo ----------
@@ -1593,9 +1633,15 @@
     rejillaBib.addEventListener('click', alTocarObra);
     $('listaPopulares').addEventListener('click', alTocarObra);
     $('fichaRecomendadas').addEventListener('click', alTocarObra);
+    $('bloqueMismoAutor').addEventListener('click', alTocarObra);
     $('quitarEtiqueta').addEventListener('click', quitarEtiqueta);
 
     // ---------- Controles ----------
+    $('filtroPublicacion').addEventListener('change', e => {
+        if (e.target.name === 'publicacion') cambiarEstado({ publicacion: e.target.value });
+    });
+    $('filtroEspanol').addEventListener('click', () => cambiarEstado({ espanol: !estado.espanol }));
+
     $('filtroTipo').addEventListener('change', e => {
         if (e.target.name === 'tipo') cambiarEstado({ tipo: e.target.value });
     });
