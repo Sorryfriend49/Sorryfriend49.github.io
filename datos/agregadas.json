@@ -1,0 +1,105 @@
+{
+  "_ayuda": "Obras que entraron solas al catálogo (scripts/nuevas.mjs). Si quitas una de catalogo.json, no vuelve a entrar.",
+  "obras": {
+    "30149": {
+      "fecha": "2026-11-23",
+      "origen": "popular",
+      "titulo": "BLAME!"
+    },
+    "30564": {
+      "fecha": "2026-11-23",
+      "origen": "popular",
+      "titulo": "Gantz"
+    },
+    "30583": {
+      "fecha": "2026-11-23",
+      "origen": "popular",
+      "titulo": "Claymore"
+    },
+    "33009": {
+      "fecha": "2026-11-23",
+      "origen": "popular",
+      "titulo": "JoJo's Bizarre Adventure Part 6: Stone Ocean"
+    },
+    "54705": {
+      "fecha": "2026-11-23",
+      "origen": "popular",
+      "titulo": "The Flowers of Evil"
+    },
+    "86717": {
+      "fecha": "2026-11-23",
+      "origen": "popular",
+      "titulo": "Wotakoi: Love is Hard for Otaku"
+    },
+    "97553": {
+      "fecha": "2026-11-23",
+      "origen": "popular",
+      "titulo": "Three Days of Happiness"
+    },
+    "98842": {
+      "fecha": "2026-11-23",
+      "origen": "popular",
+      "titulo": "Toilet-Bound Hanako-kun"
+    },
+    "100664": {
+      "fecha": "2026-11-23",
+      "origen": "popular",
+      "titulo": "Don't Toy With Me, Miss Nagatoro"
+    },
+    "105097": {
+      "fecha": "2026-11-23",
+      "origen": "tendencia",
+      "titulo": "Mieruko-chan"
+    },
+    "105469": {
+      "fecha": "2026-11-23",
+      "origen": "popular",
+      "titulo": "Jujutsu Kaisen 0"
+    },
+    "125636": {
+      "fecha": "2026-11-23",
+      "origen": "tendencia",
+      "titulo": "The Max Level Hero Strikes Back!"
+    },
+    "151460": {
+      "fecha": "2026-11-23",
+      "origen": "tendencia",
+      "titulo": "Absolute Sword Sense"
+    },
+    "151512": {
+      "fecha": "2026-11-23",
+      "origen": "tendencia",
+      "titulo": "My Blasted Reincarnated Life"
+    },
+    "167649": {
+      "fecha": "2026-11-23",
+      "origen": "tendencia",
+      "titulo": "The Academy's Genius Swordsman"
+    },
+    "167834": {
+      "fecha": "2026-11-23",
+      "origen": "tendencia",
+      "titulo": "The Martial God Who Regressed Back to Level 2"
+    },
+    "193817": {
+      "fecha": "2026-11-23",
+      "origen": "tendencia",
+      "titulo": "My Life Turned Around: After I Was Betrayed and Framed, I Won the Heart of the Most Beautiful Girl at School"
+    },
+    "194523": {
+      "fecha": "2026-11-23",
+      "origen": "tendencia",
+      "titulo": "Reincarnation of the Fist King"
+    },
+    "203958": {
+      "fecha": "2026-11-23",
+      "origen": "estreno",
+      "titulo": "A Wimp’s Tower Strategy Guide"
+    },
+    "214453": {
+      "fecha": "2026-11-23",
+      "origen": "estreno",
+      "titulo": "Prologue-eseo 30-nyeoni Heulleotda"
+    }
+  }
+}

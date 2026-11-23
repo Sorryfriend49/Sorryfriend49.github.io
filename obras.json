@@ -1,6 +1,6 @@
 {
   "esquema": 1,
-  "actualizado": "2026-11-22",
+  "actualizado": "2026-11-23",
   "fuente": "AniList (https://anilist.co): títulos, géneros, fechas, portadas, puntaje, popularidad y dónde leer. Este archivo se genera solo a partir de catalogo.json (scripts/catalogo.mjs): para agregar o quitar obras, edita catalogo.json.",
   "obras": [
     {
@@ -100,7 +100,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 84,
-          "popularidad": 338108
+          "popularidad": 338184
         }
       }
     },
@@ -201,7 +201,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 80,
-          "popularidad": 257554
+          "popularidad": 257628
         }
       }
     },
@@ -286,7 +286,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 92,
-          "popularidad": 249700
+          "popularidad": 249771
         }
       }
     },
@@ -378,7 +378,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 91,
-          "popularidad": 237603
+          "popularidad": 237664
         }
       }
     },
@@ -480,7 +480,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 84,
-          "popularidad": 229271
+          "popularidad": 229301
         }
       }
     },
@@ -576,7 +576,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 79,
-          "popularidad": 213043
+          "popularidad": 213077
         }
       }
     },
@@ -665,7 +665,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 85,
-          "popularidad": 200572
+          "popularidad": 200644
         }
       }
     },
@@ -736,7 +736,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 88,
-          "popularidad": 189497
+          "popularidad": 189554
         }
       }
     },
@@ -833,7 +833,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 77,
-          "popularidad": 179936
+          "popularidad": 179959
         }
       }
     },
@@ -918,7 +918,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 85,
-          "popularidad": 176096
+          "popularidad": 176132
         }
       }
     },
@@ -973,7 +973,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 91,
-          "popularidad": 166346
+          "popularidad": 166408
         }
       }
     },
@@ -1072,7 +1072,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 83,
-          "popularidad": 161610
+          "popularidad": 161664
         }
       }
     },
@@ -1175,7 +1175,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 90,
-          "popularidad": 141086
+          "popularidad": 141118
         }
       }
     },
@@ -1284,7 +1284,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 79,
-          "popularidad": 135243
+          "popularidad": 135270
         }
       }
     },
@@ -1391,7 +1391,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 82,
-          "popularidad": 127361
+          "popularidad": 127402
         }
       }
     },
@@ -1454,7 +1454,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 82,
-          "popularidad": 124583
+          "popularidad": 124608
         }
       }
     },
@@ -1568,7 +1568,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 84,
-          "popularidad": 289691
+          "popularidad": 289757
         }
       }
     },
@@ -1660,7 +1660,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 86,
-          "popularidad": 135674
+          "popularidad": 135733
         }
       }
     },
@@ -1734,7 +1734,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 82,
-          "popularidad": 101454
+          "popularidad": 101476
         }
       }
     },
@@ -1821,7 +1821,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 83,
-          "popularidad": 78153
+          "popularidad": 78177
         }
       },
       "portadaGrande": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b86964-vTdn1Esqw3va.jpg"
@@ -1907,7 +1907,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 90,
-          "popularidad": 72861
+          "popularidad": 72937
         }
       }
     },
@@ -1990,7 +1990,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 83,
-          "popularidad": 71208
+          "popularidad": 71259
         }
       }
     },
@@ -2075,7 +2075,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 85,
-          "popularidad": 65938
+          "popularidad": 65959
         }
       }
     },
@@ -2153,7 +2153,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 79,
-          "popularidad": 57669
+          "popularidad": 57687
         }
       }
     },
@@ -2222,7 +2222,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 82,
-          "popularidad": 56896
+          "popularidad": 56915
         }
       }
     },
@@ -2292,7 +2292,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 76,
-          "popularidad": 55986
+          "popularidad": 55997
         }
       }
     },
@@ -2373,7 +2373,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 77,
-          "popularidad": 52423
+          "popularidad": 52464
         }
       }
     },
@@ -2452,7 +2452,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 76,
-          "popularidad": 51333
+          "popularidad": 51368
         }
       }
     },
@@ -2529,7 +2529,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 81,
-          "popularidad": 50002
+          "popularidad": 50046
         }
       }
     },
@@ -2596,7 +2596,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 86,
-          "popularidad": 48282
+          "popularidad": 48307
         }
       }
     },
@@ -2671,7 +2671,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 85,
-          "popularidad": 48072
+          "popularidad": 48095
         }
       }
     },
@@ -2741,7 +2741,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 78,
-          "popularidad": 47277
+          "popularidad": 47292
         }
       }
     },
@@ -2796,7 +2796,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 82,
-          "popularidad": 39264
+          "popularidad": 39273
         }
       }
     },
@@ -2894,7 +2894,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 77,
-          "popularidad": 32466
+          "popularidad": 32476
         }
       }
     },
@@ -2987,7 +2987,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 86,
-          "popularidad": 30784
+          "popularidad": 30790
         }
       }
     },
@@ -3077,7 +3077,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 82,
-          "popularidad": 28593
+          "popularidad": 28606
         }
       }
     },
@@ -3128,7 +3128,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 85,
-          "popularidad": 26312
+          "popularidad": 26319
         }
       },
       "portadaGrande": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b85850-C9jxTZSRutBw.png"
@@ -3179,7 +3179,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 84,
-          "popularidad": 26191
+          "popularidad": 26241
         }
       }
     },
@@ -3251,7 +3251,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 88,
-          "popularidad": 20324
+          "popularidad": 20330
         }
       }
     },
@@ -3337,7 +3337,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 77,
-          "popularidad": 16393
+          "popularidad": 16416
         }
       }
     },
@@ -3427,7 +3427,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 80,
-          "popularidad": 123750
+          "popularidad": 123784
         }
       }
     },
@@ -3511,7 +3511,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 87,
-          "popularidad": 120961
+          "popularidad": 120994
         }
       }
     },
@@ -3625,7 +3625,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 74,
-          "popularidad": 119180
+          "popularidad": 119199
         }
       }
     },
@@ -3710,7 +3710,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 82,
-          "popularidad": 119125
+          "popularidad": 119156
         }
       }
     },
@@ -3794,7 +3794,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 88,
-          "popularidad": 111530
+          "popularidad": 111556
         }
       }
     },
@@ -3856,7 +3856,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 88,
-          "popularidad": 109836
+          "popularidad": 109878
         }
       }
     },
@@ -3943,7 +3943,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 77,
-          "popularidad": 109765
+          "popularidad": 109796
         }
       }
     },
@@ -3994,7 +3994,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 90,
-          "popularidad": 109498
+          "popularidad": 109542
         }
       }
     },
@@ -4083,7 +4083,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 78,
-          "popularidad": 108172
+          "popularidad": 108196
         }
       }
     },
@@ -4166,7 +4166,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 77,
-          "popularidad": 108127
+          "popularidad": 108146
         }
       }
     },
@@ -4264,7 +4264,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 75,
-          "popularidad": 108074
+          "popularidad": 108100
         }
       }
     },
@@ -4325,7 +4325,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 92,
-          "popularidad": 107206
+          "popularidad": 107243
         }
       }
     },
@@ -4403,7 +4403,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 79,
-          "popularidad": 107045
+          "popularidad": 107079
         }
       }
     },
@@ -4507,7 +4507,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 89,
-          "popularidad": 103222
+          "popularidad": 103243
         }
       }
     },
@@ -4601,7 +4601,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 84,
-          "popularidad": 101516
+          "popularidad": 101542
         }
       }
     },
@@ -4685,7 +4685,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 80,
-          "popularidad": 101153
+          "popularidad": 101179
         }
       }
     },
@@ -4785,7 +4785,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 81,
-          "popularidad": 99528
+          "popularidad": 99552
         }
       }
     },
@@ -4892,7 +4892,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 87,
-          "popularidad": 91947
+          "popularidad": 91965
         }
       }
     },
@@ -4986,7 +4986,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 79,
-          "popularidad": 90711
+          "popularidad": 90824
         }
       }
     },
@@ -5082,7 +5082,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 81,
-          "popularidad": 89960
+          "popularidad": 89977
         }
       }
     },
@@ -5143,7 +5143,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 86,
-          "popularidad": 89841
+          "popularidad": 89862
         }
       }
     },
@@ -5222,7 +5222,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 85,
-          "popularidad": 87848
+          "popularidad": 87891
         }
       }
     },
@@ -5304,7 +5304,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 87,
-          "popularidad": 87192
+          "popularidad": 87218
         }
       }
     },
@@ -5405,7 +5405,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 87,
-          "popularidad": 85582
+          "popularidad": 85628
         }
       }
     },
@@ -5508,7 +5508,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 89,
-          "popularidad": 81661
+          "popularidad": 81679
         }
       }
     },
@@ -5582,7 +5582,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 89,
-          "popularidad": 77842
+          "popularidad": 77869
         }
       }
     },
@@ -5635,7 +5635,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 90,
-          "popularidad": 75538
+          "popularidad": 75559
         }
       }
     },
@@ -5724,7 +5724,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 79,
-          "popularidad": 73209
+          "popularidad": 73273
         }
       }
     },
@@ -5809,7 +5809,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 84,
-          "popularidad": 55151
+          "popularidad": 55165
         }
       }
     },
@@ -5914,7 +5914,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 81,
-          "popularidad": 56749
+          "popularidad": 56766
         }
       }
     },
@@ -5986,7 +5986,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 88,
-          "popularidad": 57126
+          "popularidad": 57152
         }
       }
     },
@@ -6078,7 +6078,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 81,
-          "popularidad": 69011
+          "popularidad": 69047
         }
       }
     },
@@ -6151,7 +6151,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 84,
-          "popularidad": 47347
+          "popularidad": 47388
         }
       }
     },
@@ -6233,7 +6233,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 79,
-          "popularidad": 47275
+          "popularidad": 47343
         }
       }
     },
@@ -6311,7 +6311,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 85,
-          "popularidad": 46991
+          "popularidad": 47022
         }
       }
     },
@@ -6422,7 +6422,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 78,
-          "popularidad": 46796
+          "popularidad": 46828
         }
       }
     },
@@ -6499,7 +6499,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 84,
-          "popularidad": 46496
+          "popularidad": 46516
         }
       }
     },
@@ -6586,7 +6586,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 77,
-          "popularidad": 46134
+          "popularidad": 46164
         }
       }
     },
@@ -6651,7 +6651,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 77,
-          "popularidad": 45898
+          "popularidad": 45923
         }
       }
     },
@@ -6731,7 +6731,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 79,
-          "popularidad": 45741
+          "popularidad": 45776
         }
       }
     },
@@ -6826,7 +6826,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 84,
-          "popularidad": 44667
+          "popularidad": 44703
         }
       }
     },
@@ -6899,7 +6899,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 79,
-          "popularidad": 43055
+          "popularidad": 43100
         }
       }
     },
@@ -6970,7 +6970,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 79,
-          "popularidad": 41901
+          "popularidad": 41922
         }
       }
     },
@@ -7075,7 +7075,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 77,
-          "popularidad": 41324
+          "popularidad": 41410
         }
       }
     },
@@ -7175,7 +7175,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 83,
-          "popularidad": 41120
+          "popularidad": 41133
         }
       }
     },
@@ -7250,7 +7250,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 77,
-          "popularidad": 35710
+          "popularidad": 35721
         }
       }
     },
@@ -7331,7 +7331,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 83,
-          "popularidad": 34721
+          "popularidad": 34764
         }
       }
     },
@@ -7397,7 +7397,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 82,
-          "popularidad": 33689
+          "popularidad": 33736
         }
       }
     },
@@ -7440,7 +7440,6 @@
         }
       ],
       "generos": [
-        "comedia",
         "fantasia",
         "misterio",
         "romance"
@@ -7486,7 +7485,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 81,
-          "popularidad": 29904
+          "popularidad": 29916
         }
       }
     },
@@ -7563,7 +7562,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 78,
-          "popularidad": 29532
+          "popularidad": 29540
         }
       }
     },
@@ -7644,7 +7643,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 86,
-          "popularidad": 29063
+          "popularidad": 29097
         }
       }
     },
@@ -7750,7 +7749,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 74,
-          "popularidad": 37977
+          "popularidad": 38000
         }
       }
     },
@@ -7811,7 +7810,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 72,
-          "popularidad": 15912
+          "popularidad": 15924
         }
       }
     },
@@ -7904,7 +7903,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 72,
-          "popularidad": 15696
+          "popularidad": 15713
         }
       }
     },
@@ -7976,7 +7975,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 85,
-          "popularidad": 15256
+          "popularidad": 15263
         }
       }
     },
@@ -8050,7 +8049,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 72,
-          "popularidad": 14239
+          "popularidad": 14250
         }
       }
     },
@@ -8137,7 +8136,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 77,
-          "popularidad": 12218
+          "popularidad": 12225
         }
       }
     },
@@ -8229,7 +8228,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 80,
-          "popularidad": 11866
+          "popularidad": 11874
         }
       }
     },
@@ -8325,7 +8324,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 72,
-          "popularidad": 11842
+          "popularidad": 11857
         }
       }
     },
@@ -8394,7 +8393,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 74,
-          "popularidad": 10642
+          "popularidad": 10648
         }
       }
     },
@@ -8542,7 +8541,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 76,
-          "popularidad": 8279
+          "popularidad": 8281
         }
       }
     },
@@ -8634,7 +8633,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 84,
-          "popularidad": 106326
+          "popularidad": 106366
         }
       }
     },
@@ -8710,7 +8709,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 81,
-          "popularidad": 70540
+          "popularidad": 70559
         }
       }
     },
@@ -8795,7 +8794,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 77,
-          "popularidad": 69251
+          "popularidad": 69263
         }
       }
     },
@@ -8889,7 +8888,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 78,
-          "popularidad": 67008
+          "popularidad": 67016
         }
       }
     },
@@ -8972,7 +8971,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 82,
-          "popularidad": 63431
+          "popularidad": 63442
         }
       }
     },
@@ -9067,7 +9066,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 82,
-          "popularidad": 63056
+          "popularidad": 63072
         }
       }
     },
@@ -9169,7 +9168,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 75,
-          "popularidad": 60873
+          "popularidad": 60886
         }
       }
     },
@@ -9259,7 +9258,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 81,
-          "popularidad": 55413
+          "popularidad": 55426
         }
       }
     },
@@ -9354,7 +9353,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 71,
-          "popularidad": 57825
+          "popularidad": 57834
         }
       }
     },
@@ -9452,7 +9451,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 69,
-          "popularidad": 55672
+          "popularidad": 55681
         }
       }
     },
@@ -9527,7 +9526,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 85,
-          "popularidad": 50036
+          "popularidad": 50049
         }
       }
     },
@@ -9595,7 +9594,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 82,
-          "popularidad": 43340
+          "popularidad": 43347
         }
       }
     },
@@ -9678,7 +9677,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 80,
-          "popularidad": 27834
+          "popularidad": 27840
         }
       }
     },
@@ -9772,7 +9771,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 82,
-          "popularidad": 26375
+          "popularidad": 26377
         }
       }
     },
@@ -9858,7 +9857,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 87,
-          "popularidad": 32298
+          "popularidad": 32301
         }
       }
     },
@@ -9945,7 +9944,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 77,
-          "popularidad": 29971
+          "popularidad": 29976
         }
       }
     },
@@ -10021,7 +10020,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 75,
-          "popularidad": 30980
+          "popularidad": 30986
         }
       }
     },
@@ -10116,7 +10115,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 79,
-          "popularidad": 31305
+          "popularidad": 31365
         }
       }
     },
@@ -10214,7 +10213,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 89,
-          "popularidad": 85254
+          "popularidad": 85289
         }
       }
     },
@@ -10281,7 +10280,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 87,
-          "popularidad": 75184
+          "popularidad": 75234
         }
       }
     },
@@ -10333,7 +10332,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 83,
-          "popularidad": 74320
+          "popularidad": 74347
         }
       }
     },
@@ -10412,7 +10411,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 79,
-          "popularidad": 88673
+          "popularidad": 88693
         }
       }
     },
@@ -10480,7 +10479,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 80,
-          "popularidad": 67421
+          "popularidad": 67453
         }
       }
     },
@@ -10563,7 +10562,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 86,
-          "popularidad": 52195
+          "popularidad": 52212
         }
       }
     },
@@ -10646,7 +10645,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 80,
-          "popularidad": 51585
+          "popularidad": 51593
         }
       }
     },
@@ -10711,7 +10710,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 86,
-          "popularidad": 51556
+          "popularidad": 51584
         }
       }
     },
@@ -10759,7 +10758,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 89,
-          "popularidad": 51452
+          "popularidad": 51472
         }
       }
     },
@@ -10810,7 +10809,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 84,
-          "popularidad": 48054
+          "popularidad": 48063
         }
       }
     },
@@ -10886,7 +10885,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 85,
-          "popularidad": 54251
+          "popularidad": 54268
         }
       }
     },
@@ -10967,7 +10966,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 82,
-          "popularidad": 42228
+          "popularidad": 42247
         }
       }
     },
@@ -11052,7 +11051,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 84,
-          "popularidad": 43655
+          "popularidad": 43681
         }
       }
     },
@@ -11127,7 +11126,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 85,
-          "popularidad": 58742
+          "popularidad": 58751
         }
       }
     },
@@ -11214,7 +11213,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 86,
-          "popularidad": 48180
+          "popularidad": 48206
         }
       }
     },
@@ -11284,7 +11283,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 85,
-          "popularidad": 39653
+          "popularidad": 39671
         }
       }
     },
@@ -11361,7 +11360,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 85,
-          "popularidad": 30993
+          "popularidad": 31000
         }
       }
     },
@@ -11456,7 +11455,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 82,
-          "popularidad": 33462
+          "popularidad": 33471
         }
       }
     },
@@ -11529,7 +11528,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 80,
-          "popularidad": 29931
+          "popularidad": 29938
         }
       }
     },
@@ -11593,7 +11592,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 80,
-          "popularidad": 27535
+          "popularidad": 27549
         }
       }
     },
@@ -11650,7 +11649,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 88,
-          "popularidad": 35015
+          "popularidad": 35029
         }
       }
     },
@@ -11753,7 +11752,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 85,
-          "popularidad": 29946
+          "popularidad": 29952
         }
       }
     },
@@ -11828,7 +11827,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 83,
-          "popularidad": 65956
+          "popularidad": 65977
         }
       }
     },
@@ -11905,7 +11904,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 77,
-          "popularidad": 32410
+          "popularidad": 32424
         }
       }
     },
@@ -11994,7 +11993,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 86,
-          "popularidad": 78033
+          "popularidad": 78058
         }
       }
     },
@@ -12054,7 +12053,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 89,
-          "popularidad": 64884
+          "popularidad": 64902
         }
       }
     },
@@ -12137,7 +12136,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 79,
-          "popularidad": 102311
+          "popularidad": 102346
         }
       }
     },
@@ -12250,7 +12249,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 86,
-          "popularidad": 82416
+          "popularidad": 82451
         }
       }
     },
@@ -12327,7 +12326,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 89,
-          "popularidad": 69529
+          "popularidad": 69542
         }
       }
     },
@@ -12403,7 +12402,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 79,
-          "popularidad": 68783
+          "popularidad": 68797
         }
       }
     },
@@ -12491,7 +12490,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 88,
-          "popularidad": 59847
+          "popularidad": 59873
         }
       }
     },
@@ -12565,7 +12564,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 85,
-          "popularidad": 35524
+          "popularidad": 35529
         }
       }
     },
@@ -12630,7 +12629,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 86,
-          "popularidad": 33894
+          "popularidad": 33902
         }
       }
     },
@@ -12724,7 +12723,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 83,
-          "popularidad": 37080
+          "popularidad": 37099
         }
       }
     },
@@ -12792,7 +12791,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 81,
-          "popularidad": 36953
+          "popularidad": 36966
         }
       }
     },
@@ -12899,7 +12898,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 77,
-          "popularidad": 70797
+          "popularidad": 70810
         }
       }
     },
@@ -12983,7 +12982,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 81,
-          "popularidad": 67176
+          "popularidad": 67203
         }
       }
     },
@@ -13061,7 +13060,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 87,
-          "popularidad": 55175
+          "popularidad": 55190
         }
       }
     },
@@ -13136,7 +13135,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 86,
-          "popularidad": 67281
+          "popularidad": 67293
         }
       }
     },
@@ -13211,7 +13210,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 57,
-          "popularidad": 62852
+          "popularidad": 62859
         }
       }
     },
@@ -13278,7 +13277,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 88,
-          "popularidad": 36316
+          "popularidad": 36329
         }
       }
     },
@@ -13338,7 +13337,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 87,
-          "popularidad": 26409
+          "popularidad": 26425
         }
       }
     },
@@ -13443,7 +13442,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 87,
-          "popularidad": 23712
+          "popularidad": 23719
         }
       }
     },
@@ -13514,7 +13513,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 88,
-          "popularidad": 14040
+          "popularidad": 14048
         }
       }
     },
@@ -13604,7 +13603,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 77,
-          "popularidad": 17582
+          "popularidad": 17584
         }
       }
     },
@@ -13656,7 +13655,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 82,
-          "popularidad": 22931
+          "popularidad": 22936
         }
       }
     },
@@ -13704,7 +13703,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 85,
-          "popularidad": 43006
+          "popularidad": 43013
         }
       }
     },
@@ -13750,7 +13749,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 80,
-          "popularidad": 40260
+          "popularidad": 40268
         }
       }
     },
@@ -13835,7 +13834,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 75,
-          "popularidad": 39893
+          "popularidad": 39912
         }
       }
     },
@@ -13910,7 +13909,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 75,
-          "popularidad": 39246
+          "popularidad": 39268
         }
       }
     },
@@ -13983,7 +13982,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 77,
-          "popularidad": 37336
+          "popularidad": 37358
         }
       }
     },
@@ -14057,7 +14056,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 72,
-          "popularidad": 36447
+          "popularidad": 36464
         }
       }
     },
@@ -14131,7 +14130,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 78,
-          "popularidad": 35955
+          "popularidad": 35986
         }
       }
     },
@@ -14209,7 +14208,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 78,
-          "popularidad": 31336
+          "popularidad": 31357
         }
       }
     },
@@ -14284,7 +14283,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 78,
-          "popularidad": 29621
+          "popularidad": 29643
         }
       }
     },
@@ -14357,7 +14356,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 80,
-          "popularidad": 28794
+          "popularidad": 28817
         }
       }
     },
@@ -14433,7 +14432,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 79,
-          "popularidad": 28600
+          "popularidad": 28617
         }
       }
     },
@@ -14518,7 +14517,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 77,
-          "popularidad": 27606
+          "popularidad": 27618
         }
       }
     },
@@ -14595,7 +14594,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 81,
-          "popularidad": 26495
+          "popularidad": 26524
         }
       }
     },
@@ -14676,7 +14675,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 80,
-          "popularidad": 26313
+          "popularidad": 26324
         }
       }
     },
@@ -14757,7 +14756,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 83,
-          "popularidad": 26130
+          "popularidad": 26161
         }
       }
     },
@@ -14821,7 +14820,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 81,
-          "popularidad": 25529
+          "popularidad": 25555
         }
       }
     },
@@ -14913,7 +14912,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 81,
-          "popularidad": 22739
+          "popularidad": 22767
         }
       }
     },
@@ -14986,7 +14985,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 83,
-          "popularidad": 22564
+          "popularidad": 22576
         }
       }
     },
@@ -15060,7 +15059,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 79,
-          "popularidad": 22437
+          "popularidad": 22447
         }
       }
     },
@@ -15127,7 +15126,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 81,
-          "popularidad": 22124
+          "popularidad": 22139
         }
       }
     },
@@ -15191,7 +15190,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 79,
-          "popularidad": 21617
+          "popularidad": 21620
         }
       }
     },
@@ -15283,8 +15282,8 @@
       ],
       "comunidad": {
         "anilist": {
-          "puntaje": 77,
-          "popularidad": 21669
+          "puntaje": 76,
+          "popularidad": 21681
         }
       }
     },
@@ -15357,7 +15356,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 84,
-          "popularidad": 21536
+          "popularidad": 21568
         }
       }
     },
@@ -15426,7 +15425,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 86,
-          "popularidad": 21059
+          "popularidad": 21085
         }
       }
     },
@@ -15503,7 +15502,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 85,
-          "popularidad": 20861
+          "popularidad": 20867
         }
       }
     },
@@ -15575,7 +15574,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 83,
-          "popularidad": 20726
+          "popularidad": 20759
         }
       }
     },
@@ -15652,7 +15651,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 80,
-          "popularidad": 18551
+          "popularidad": 18564
         }
       }
     },
@@ -15729,7 +15728,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 77,
-          "popularidad": 22464
+          "popularidad": 22472
         }
       }
     },
@@ -15797,7 +15796,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 74,
-          "popularidad": 18790
+          "popularidad": 18797
         }
       }
     },
@@ -15873,7 +15872,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 62,
-          "popularidad": 16068
+          "popularidad": 16070
         }
       }
     },
@@ -15938,7 +15937,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 73,
-          "popularidad": 26020
+          "popularidad": 26030
         }
       }
     },
@@ -16019,7 +16018,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 71,
-          "popularidad": 14943
+          "popularidad": 14951
         }
       }
     },
@@ -16090,7 +16089,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 79,
-          "popularidad": 12615
+          "popularidad": 12625
         }
       }
     },
@@ -16168,7 +16167,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 80,
-          "popularidad": 11510
+          "popularidad": 11527
         }
       }
     },
@@ -16259,7 +16258,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 77,
-          "popularidad": 11171
+          "popularidad": 11185
         }
       }
     },
@@ -16321,7 +16320,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 78,
-          "popularidad": 11002
+          "popularidad": 11029
         }
       }
     },
@@ -16386,7 +16385,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 81,
-          "popularidad": 10317
+          "popularidad": 10323
         }
       }
     },
@@ -16445,7 +16444,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 83,
-          "popularidad": 9667
+          "popularidad": 9669
         }
       }
     },
@@ -16491,7 +16490,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 83,
-          "popularidad": 9504
+          "popularidad": 9507
         }
       }
     },
@@ -16554,7 +16553,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 74,
-          "popularidad": 9053
+          "popularidad": 9058
         }
       }
     },
@@ -16625,7 +16624,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 78,
-          "popularidad": 9011
+          "popularidad": 9016
         }
       }
     },
@@ -16685,7 +16684,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 81,
-          "popularidad": 8555
+          "popularidad": 8556
         }
       }
     },
@@ -16747,7 +16746,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 72,
-          "popularidad": 6997
+          "popularidad": 7002
         }
       }
     },
@@ -16812,7 +16811,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 88,
-          "popularidad": 4113
+          "popularidad": 4122
         }
       }
     },
@@ -16887,9 +16886,1537 @@
       "comunidad": {
         "anilist": {
           "puntaje": 82,
-          "popularidad": 6644
+          "popularidad": 6642
         }
       }
+    },
+    {
+      "id": "absolute-sword-sense",
+      "titulo": "Absolute Sword Sense",
+      "titulos": {
+        "romaji": "Jeoldaegeomgam",
+        "ingles": "Absolute Sword Sense",
+        "nativo": "절대검감"
+      },
+      "sinonimos": [
+        "Perfect Sword Sense",
+        "Le Sens de l'épée",
+        "绝对剑感",
+        "เซียนสัมผัสดาบ",
+        "絕對劍感"
+      ],
+      "tipo": "manhwa",
+      "estado": "en-publicacion",
+      "inicio": "2022-06-19",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Hanjung Worya",
+          "rol": "historia original",
+          "nativo": "한중월야"
+        },
+        {
+          "nombre": "Gimdurumi",
+          "rol": "historia",
+          "nativo": "김두루미"
+        },
+        {
+          "nombre": "T.I",
+          "rol": "arte",
+          "nativo": "티아이"
+        }
+      ],
+      "generos": [
+        "accion",
+        "fantasia"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx151460-Cb2CXwN2ZElE.jpg",
+      "color": "#d6ae6b",
+      "ids": {
+        "anilist": 151460,
+        "mal": 149880
+      },
+      "enlaces": [
+        {
+          "sitio": "WEBTOON",
+          "url": "https://www.webtoons.com/en/action/absolute-sword-sense/list?title_no=5100",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Naver Series",
+          "url": "https://series.naver.com/comic/detail.series?productNo=8555655",
+          "idioma": "ko",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Naver Webtoon",
+          "url": "https://comic.naver.com/webtoon/list?titleId=796075",
+          "idioma": "ko",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 78,
+          "popularidad": 18128
+        }
+      },
+      "agregada": "2026-11-23"
+    },
+    {
+      "id": "a-wimps-tower-strategy-guide",
+      "titulo": "A Wimp’s Tower Strategy Guide",
+      "titulos": {
+        "romaji": "Hanamjaui Tap Gongnyakbeop",
+        "ingles": "A Wimp’s Tower Strategy Guide",
+        "nativo": "하남자의 탑 공략법"
+      },
+      "sinonimos": [
+        "A Wimp’s Strategy Guide to Conquer the Tower",
+        "ไอ้กากผู้พิชิตหอคอย"
+      ],
+      "tipo": "manhwa",
+      "estado": "en-publicacion",
+      "inicio": "2025-12-13",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Kkujjikkujji",
+          "rol": "historia original",
+          "nativo": "꾸찌꾸찌"
+        },
+        {
+          "nombre": "Pyopyo",
+          "rol": "historia",
+          "nativo": "표표"
+        },
+        {
+          "nombre": "Gonggam Media",
+          "rol": "arte",
+          "nativo": "공감미디어"
+        }
+      ],
+      "generos": [
+        "accion",
+        "fantasia"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx203958-AZVqS2yRXfiN.jpg",
+      "color": "#e4506b",
+      "ids": {
+        "anilist": 203958,
+        "mal": 189438
+      },
+      "enlaces": [
+        {
+          "sitio": "WEBTOON",
+          "url": "https://www.webtoons.com/en/action/a-wimps-tower-strategy-guide/list?title_no=9701",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Naver Webtoon",
+          "url": "https://comic.naver.com/webtoon/list?titleId=845508",
+          "idioma": "ko",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Naver Series",
+          "url": "https://series.naver.com/comic/detail.series?productNo=13497877",
+          "idioma": "ko",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 76,
+          "popularidad": 5017
+        }
+      },
+      "agregada": "2026-11-23"
+    },
+    {
+      "id": "reincarnation-of-the-fist-king",
+      "titulo": "Reincarnation of the Fist King",
+      "titulos": {
+        "romaji": "Gwonwanghwansaeng",
+        "ingles": "Reincarnation of the Fist King",
+        "nativo": "권왕환생"
+      },
+      "sinonimos": [
+        "拳王归来",
+        "重生拳王",
+        "กำปั้นราชันคืนชีพ",
+        "Der König der Fäuste",
+        "拳王転生～最強の拳王がろくでなし公子に転生したら～",
+        "Reencarnação do Rei dos Punhos"
+      ],
+      "tipo": "manhwa",
+      "estado": "en-publicacion",
+      "inicio": "2025-06-14",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Jin-Seong Yu",
+          "rol": "historia original",
+          "nativo": "유진성"
+        },
+        {
+          "nombre": "Seungtu",
+          "rol": "historia",
+          "nativo": "승투"
+        },
+        {
+          "nombre": "Donuts",
+          "rol": "arte",
+          "nativo": "도나스"
+        }
+      ],
+      "generos": [
+        "accion",
+        "fantasia"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx194523-cLAK6gTAKNkM.jpg",
+      "color": "#50a1e4",
+      "ids": {
+        "anilist": 194523,
+        "mal": 182882
+      },
+      "enlaces": [
+        {
+          "sitio": "WEBTOON",
+          "url": "https://www.webtoons.com/en/action/reincarnation-of-the-fist-king/list?title_no=8958",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Naver Series",
+          "url": "https://series.naver.com/comic/detail.series?productNo=12656274",
+          "idioma": "ko",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Naver Webtoon",
+          "url": "https://comic.naver.com/webtoon/list?titleId=839568",
+          "idioma": "ko",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 76,
+          "popularidad": 7778
+        }
+      },
+      "agregada": "2026-11-23"
+    },
+    {
+      "id": "my-life-turned-around-after-i-was-betrayed-and-framed-i-won-the-heart-of-the-most-beautiful-girl-at-school",
+      "titulo": "My Life Turned Around: After I Was Betrayed and Framed, I Won the Heart of the Most Beautiful Girl at School",
+      "titulos": {
+        "romaji": "Jinsei Gyakuten: Uwakisare, Enzai wo Kiserareta Orega, Gakuenichi no Bishoujo ni Natsukareru",
+        "ingles": "My Life Turned Around: After I Was Betrayed and Framed, I Won the Heart of the Most Beautiful Girl at School",
+        "nativo": "人生逆転 浮気され、えん罪を着せられた俺が、学園一の美少女に懐かれる"
+      },
+      "sinonimos": [],
+      "tipo": "manga",
+      "estado": "en-publicacion",
+      "inicio": "2025-05-30",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "D",
+          "rol": "historia original"
+        },
+        {
+          "nombre": "Ei Ikaguchi",
+          "rol": "historia y arte",
+          "nativo": "いかぐちえい"
+        }
+      ],
+      "generos": [
+        "drama",
+        "romance"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx193817-mtXm8wHZgrUo.jpg",
+      "color": "#fff100",
+      "ids": {
+        "anilist": 193817,
+        "mal": 182546
+      },
+      "enlaces": [
+        {
+          "sitio": "Nico Nico Seiga",
+          "url": "https://manga.nicovideo.jp/comic/73168",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Kadocomi",
+          "url": "https://comic-walker.com/detail/KC_006728_S?episodeType=first",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 70,
+          "popularidad": 6956
+        }
+      },
+      "agregada": "2026-11-23"
+    },
+    {
+      "id": "my-blasted-reincarnated-life",
+      "titulo": "My Blasted Reincarnated Life",
+      "titulos": {
+        "romaji": "Bireomeogeul Hwansaeng",
+        "ingles": "My Blasted Reincarnated Life",
+        "nativo": "빌어먹을 환생"
+      },
+      "sinonimos": [
+        "Damn Reincarnation"
+      ],
+      "tipo": "manhwa",
+      "estado": "terminado",
+      "inicio": "2022-06-22",
+      "fin": "2023-12-27",
+      "capitulos": 81,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Mokma",
+          "rol": "historia original",
+          "nativo": "목마"
+        },
+        {
+          "nombre": "Kiki",
+          "rol": "historia",
+          "nativo": "키키"
+        },
+        {
+          "nombre": "Jeong-Yeol Park",
+          "rol": "arte",
+          "nativo": "박정열"
+        }
+      ],
+      "generos": [
+        "accion",
+        "fantasia"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx151512-q0Xddr1JNKNq.png",
+      "color": "#5dc9e4",
+      "ids": {
+        "anilist": 151512,
+        "mal": 149438
+      },
+      "enlaces": [
+        {
+          "sitio": "Tapas",
+          "url": "https://tapas.io/series/my-blasted-reincarnated-life",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "KakaoPage",
+          "url": "https://page.kakao.com/home?seriesId=59617058",
+          "idioma": "ko",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 78,
+          "popularidad": 37343
+        }
+      },
+      "agregada": "2026-11-23"
+    },
+    {
+      "id": "the-martial-god-who-regressed-back-to-level-2",
+      "titulo": "The Martial God Who Regressed Back to Level 2",
+      "titulos": {
+        "romaji": "2 Level Hoegwihan Musin",
+        "ingles": "The Martial God Who Regressed Back to Level 2",
+        "nativo": "2레벨로 회귀한 무신"
+      },
+      "sinonimos": [
+        "Martial God Regressed to Level 2",
+        "The God Who Regressed To Level 2",
+        "The Warlord Returned to Level 2",
+        "レベル2から始まるやり直し"
+      ],
+      "tipo": "manhwa",
+      "estado": "en-publicacion",
+      "inicio": "2023-07-31",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Yeombi",
+          "rol": "historia original",
+          "nativo": "염비"
+        },
+        {
+          "nombre": "Anyeonseong",
+          "rol": "historia",
+          "nativo": "아년성"
+        },
+        {
+          "nombre": "Yun-Gu Lee",
+          "rol": "arte",
+          "nativo": "이윤구"
+        }
+      ],
+      "generos": [
+        "accion",
+        "fantasia"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx167834-QgyPJ7tOMGqA.png",
+      "color": "#e45d50",
+      "ids": {
+        "anilist": 167834,
+        "mal": 161374
+      },
+      "enlaces": [
+        {
+          "sitio": "Tapas",
+          "url": "https://tapas.io/series/the-martial-god-who-regressed-back-to-level-2/info",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "KakaoPage",
+          "url": "https://page.kakao.com/content/62302584",
+          "idioma": "ko",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Kakao Webtoon",
+          "url": "https://webtoon.kakao.com/content/2레벨로-회귀한-무신/3634?tab=episode",
+          "idioma": "ko",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 74,
+          "popularidad": 20903
+        }
+      },
+      "agregada": "2026-11-23"
+    },
+    {
+      "id": "mieruko-chan",
+      "titulo": "Mieruko-chan",
+      "titulos": {
+        "romaji": "Mieruko-chan",
+        "ingles": "Mieruko-chan",
+        "nativo": "見える子ちゃん"
+      },
+      "sinonimos": [
+        "Girl That Can See It",
+        "The Girl Who Sees \"Them\"",
+        "Can-See-Ghosts-chan",
+        "Child That Can See It",
+        "Li'l Miss Can-See-Ghosts",
+        "Mieruko-chan: Slice of Horror",
+        "看得见的女孩",
+        "มิเอรุโกะจัง ใครว่าหนูเห็นผี",
+        "Mieruko-chan. Dziewczyna, która widzi więcej",
+        "보이는 여고생"
+      ],
+      "tipo": "manga",
+      "estado": "en-publicacion",
+      "inicio": "2018-11-02",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Tomoki Izumi",
+          "rol": "historia y arte",
+          "nativo": "泉朝樹"
+        }
+      ],
+      "generos": [
+        "comedia",
+        "terror",
+        "recuentos-de-la-vida",
+        "sobrenatural"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx105097-nMpc8bjBeuXE.jpg",
+      "color": null,
+      "ids": {
+        "anilist": 105097,
+        "mal": 116790
+      },
+      "enlaces": [
+        {
+          "sitio": "Yen Press",
+          "url": "https://yenpress.com/9781975317577/mieruko-chan-vol-1/",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Kadocomi",
+          "url": "https://comic-walker.com/contents/detail/KDCW_MF00000090010000_68/",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Nico Nico Seiga",
+          "url": "https://manga.nicovideo.jp/comic/37662",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Pixiv Comic",
+          "url": "https://comic.pixiv.net/works/5304",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 77,
+          "popularidad": 46442
+        }
+      },
+      "agregada": "2026-11-23"
+    },
+    {
+      "id": "prologue-eseo-30-nyeoni-heulleotda",
+      "titulo": "Prologue-eseo 30-nyeoni Heulleotda",
+      "titulos": {
+        "romaji": "Prologue-eseo 30-nyeoni Heulleotda",
+        "ingles": null,
+        "nativo": "프롤로그에서 30년이 흘렀다"
+      },
+      "sinonimos": [
+        "30 Years Since the Prologue",
+        "30 Years Have Passed Since the Prologue"
+      ],
+      "tipo": "manhwa",
+      "estado": "en-publicacion",
+      "inicio": "2026-07-25",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Makellaha",
+          "rol": "historia original",
+          "nativo": "맠엘라하"
+        },
+        {
+          "nombre": "Green Kyrin",
+          "rol": "historia y arte",
+          "nativo": "기린그린"
+        }
+      ],
+      "generos": [
+        "accion",
+        "fantasia"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx214453-dBlfhFxso8j7.jpg",
+      "color": "#e49328",
+      "ids": {
+        "anilist": 214453,
+        "mal": 195216
+      },
+      "enlaces": [
+        {
+          "sitio": "Naver Webtoon",
+          "url": "https://comic.naver.com/webtoon/list?titleId=852765",
+          "idioma": "ko",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Naver Series",
+          "url": "https://series.naver.com/comic/detail.series?productNo=14395909",
+          "idioma": "ko",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 75,
+          "popularidad": 5821
+        }
+      },
+      "agregada": "2026-11-23"
+    },
+    {
+      "id": "the-academys-genius-swordsman",
+      "titulo": "The Academy's Genius Swordsman",
+      "titulos": {
+        "romaji": "Academy Cheonjaekaljabi",
+        "ingles": "The Academy's Genius Swordsman",
+        "nativo": "아카데미의 천재칼잡이"
+      },
+      "sinonimos": [
+        "Academy's Genius Swordmaster",
+        "L'épéiste prodige de l'Académie",
+        "皇家学院的天才剑豪",
+        "學院天才劍客"
+      ],
+      "tipo": "manhwa",
+      "estado": "en-publicacion",
+      "inicio": "2023-07-29",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Gwan-Do Seo",
+          "rol": "historia original",
+          "nativo": "서관도"
+        },
+        {
+          "nombre": "Sichi",
+          "rol": "historia y arte",
+          "nativo": "시치"
+        }
+      ],
+      "generos": [
+        "accion",
+        "fantasia"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx167649-8qpdNIjBdIhQ.png",
+      "color": "#e4506b",
+      "ids": {
+        "anilist": 167649,
+        "mal": 162700
+      },
+      "enlaces": [
+        {
+          "sitio": "WEBTOON",
+          "url": "https://www.webtoons.com/en/fantasy/the-academys-genius-swordsman/list?title_no=5752",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Naver Series",
+          "url": "https://series.naver.com/comic/detail.series?productNo=10002986",
+          "idioma": "ko",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Naver Webtoon",
+          "url": "https://comic.naver.com/webtoon/list?titleId=813564",
+          "idioma": "ko",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 73,
+          "popularidad": 30912
+        }
+      },
+      "agregada": "2026-11-23"
+    },
+    {
+      "id": "the-max-level-hero-strikes-back",
+      "titulo": "The Max Level Hero Strikes Back!",
+      "titulos": {
+        "romaji": "Mallep Yeongungnim Kkeseo Gwihwan Hasinda!",
+        "ingles": "The Max Level Hero Strikes Back!",
+        "nativo": "만렙 영웅님 께서 귀환 하신다!"
+      },
+      "sinonimos": [
+        "Max Level Hero is Making a Comeback!",
+        "The Max Level Hero has Returned!",
+        "Max Level Hero",
+        "最終レベル英雄のご帰還",
+        "Saishuu Level Eiyuu no go Kikan",
+        "英雄大人滿級回歸",
+        "การกลับมาของวีรบุรุษเวลตัน"
+      ],
+      "tipo": "manhwa",
+      "estado": "en-publicacion",
+      "inicio": "2020-10-26",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Angmakkori",
+          "rol": "historia original",
+          "nativo": "악마꼬리"
+        },
+        {
+          "nombre": "Yudo",
+          "rol": "historia y arte",
+          "nativo": "유도"
+        }
+      ],
+      "generos": [
+        "accion",
+        "aventura",
+        "fantasia"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx125636-g0gkyLZbo3Tz.png",
+      "color": "#f1d6c9",
+      "ids": {
+        "anilist": 125636,
+        "mal": 147322
+      },
+      "enlaces": [
+        {
+          "sitio": "Tapas",
+          "url": "https://tapas.io/series/the-max-level-hero-strikes-back/info",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "KakaoPage",
+          "url": "https://page.kakao.com/home?seriesId=55775689",
+          "idioma": "ko",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Kakao Webtoon",
+          "url": "https://webtoon.kakao.com/content/만렙-영웅님께서-귀환하신다/2427",
+          "idioma": "ko",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 72,
+          "popularidad": 32412
+        }
+      },
+      "agregada": "2026-11-23"
+    },
+    {
+      "id": "three-days-of-happiness",
+      "titulo": "Three Days of Happiness",
+      "titulos": {
+        "romaji": "Jumyou wo Kaitotte Moratta. Ichinen ni Tsuki, Ichimanen de.",
+        "ingles": "Three Days of Happiness",
+        "nativo": "寿命を買い取ってもらった。一年につき、一万円で。"
+      },
+      "sinonimos": [
+        "Mikkakan no Koufuku",
+        "I sold my life for ten thousand yen per year.",
+        "Sprzedałem swoje życie za 10 000 jenów rocznie",
+        "Il prezzo di una vita.",
+        "以一年一萬圓的價格，賣掉我剩餘的壽命。",
+        " Ich habe mein Leben für 10.000 Yen pro Jahr verkauft",
+        "Ba ngày hạnh phúc",
+        "Le prix du reste de ma vie",
+        "El precio de mi vida"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "2016-08-10",
+      "fin": "2017-10-25",
+      "capitulos": 18,
+      "tomos": 3,
+      "autores": [
+        {
+          "nombre": "Sugaru Miaki",
+          "rol": "historia original",
+          "nativo": "三秋縋"
+        },
+        {
+          "nombre": "Shouichi Taguchi",
+          "rol": "historia y arte",
+          "nativo": "田口囁一"
+        }
+      ],
+      "generos": [
+        "drama",
+        "psicologico",
+        "romance",
+        "sobrenatural"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx97553-vqJj5DFS8v2p.jpg",
+      "color": "#5dbbe4",
+      "ids": {
+        "anilist": 97553,
+        "mal": 100448
+      },
+      "enlaces": [
+        {
+          "sitio": "Shonen Jump Plus",
+          "url": "https://shonenjumpplus.com/episode/10833497643049550167",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 86,
+          "popularidad": 86281
+        }
+      },
+      "agregada": "2026-11-23"
+    },
+    {
+      "id": "dont-toy-with-me-miss-nagatoro",
+      "titulo": "Don't Toy With Me, Miss Nagatoro",
+      "titulos": {
+        "romaji": "Ijiranaide, Nagatoro-san",
+        "ingles": "Don't Toy With Me, Miss Nagatoro",
+        "nativo": "イジらないで、長瀞さん"
+      },
+      "sinonimos": [
+        "Please don't bully me, Nagatoro",
+        "不要欺负我、长瀞同学",
+        "No me jodas, Nagatoro",
+        "Nie drocz się ze mną, Nagatoro!",
+        "No me rayes, Nagatoro",
+        "ยัยตัวแสบแอบน่ารัก นางาโทโระ",
+        "Arrête de me chauffer, Nagatoro",
+        "Neck mich nicht, Nagatoro-san",
+        "不要欺負我，長瀞同學",
+        "Não Mexa Comigo, Nagatoro"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "2017-11-07",
+      "fin": "2024-07-23",
+      "capitulos": 189,
+      "tomos": 20,
+      "autores": [
+        {
+          "nombre": "Nanashi",
+          "rol": "historia y arte",
+          "nativo": "ナナシ"
+        }
+      ],
+      "generos": [
+        "comedia",
+        "romance",
+        "recuentos-de-la-vida"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx100664-uzN5998CDxPJ.jpg",
+      "color": "#1aa1e4",
+      "ids": {
+        "anilist": 100664,
+        "mal": 110737
+      },
+      "enlaces": [
+        {
+          "sitio": "K MANGA",
+          "url": "https://kmanga.kodansha.com/title/10042/episode/313808",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Omoi",
+          "url": "https://www.omoi.com/series/dont-toy-with-me-miss-nagatoro",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Kodansha USA",
+          "url": "https://kodansha.us/series/dont-toy-with-me-miss-nagatoro/",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Pocket Magazine",
+          "url": "https://pocket.shonenmagazine.com/episode/13932016480029136187",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Comic Days",
+          "url": "https://comic-days.com/episode/10834108156637137119",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 73,
+          "popularidad": 76544
+        }
+      },
+      "agregada": "2026-11-23"
+    },
+    {
+      "id": "the-flowers-of-evil",
+      "titulo": "The Flowers of Evil",
+      "titulos": {
+        "romaji": "Aku no Hana",
+        "ingles": "The Flowers of Evil",
+        "nativo": "惡の華"
+      },
+      "sinonimos": [
+        "Blossom of Evil",
+        "Les Fleurs du mal",
+        "Las Flores del Mal",
+        "I fiori del male",
+        "As Flores do Mal",
+        "Die Blumen des Bösen - Aku no Hana",
+        "Kwiaty zła",
+        "惡之華 ",
+        "악의 꽃"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "2009-09-09",
+      "fin": "2014-05-09",
+      "capitulos": 58,
+      "tomos": 11,
+      "autores": [
+        {
+          "nombre": "Shuuzou Oshimi",
+          "rol": "historia y arte",
+          "nativo": "押見修造"
+        }
+      ],
+      "generos": [
+        "drama",
+        "psicologico",
+        "romance"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx54705-78Th5SRaL0Ns.png",
+      "color": null,
+      "ids": {
+        "anilist": 54705,
+        "mal": 24705
+      },
+      "enlaces": [
+        {
+          "sitio": "MangaPlaza",
+          "url": "https://mangaplaza.com/title/0303001931/",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "K MANGA",
+          "url": "https://kmanga.kodansha.com/title/10121/episode/342871",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Omoi",
+          "url": "https://www.omoi.com/series/the-flowers-of-evil",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Kodansha USA",
+          "url": "https://kodansha.us/series/the-flowers-of-evil/",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Comic Days",
+          "url": "https://comic-days.com/episode/10834108156633828057",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Piccoma",
+          "url": "https://piccoma.com/web/product/207281?etype=episode",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Pocket Magazine",
+          "url": "https://pocket.shonenmagazine.com/title/00136/episode/143141",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 81,
+          "popularidad": 75125
+        }
+      },
+      "agregada": "2026-11-23"
+    },
+    {
+      "id": "jojos-bizarre-adventure-part-6-stone-ocean",
+      "titulo": "JoJo's Bizarre Adventure Part 6: Stone Ocean",
+      "titulos": {
+        "romaji": "JoJo no Kimyou na Bouken: Stone Ocean",
+        "ingles": "JoJo's Bizarre Adventure Part 6: Stone Ocean",
+        "nativo": "ジョジョの奇妙な冒険 ストーンオーシャン"
+      },
+      "sinonimos": [
+        "Dai 6 Bu Kuujou Jolyne: Stone Ocean",
+        "JoJo's Bizarre Adventure Part 6 Jolyne Kujo: Stone Ocean ",
+        "Le bizzarre avventure di JoJo: Stone Ocean"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "1999-12-07",
+      "fin": "2003-02-26",
+      "capitulos": 158,
+      "tomos": 17,
+      "autores": [
+        {
+          "nombre": "Hirohiko Araki",
+          "rol": "historia y arte",
+          "nativo": "荒木飛呂彦"
+        }
+      ],
+      "generos": [
+        "accion",
+        "aventura",
+        "drama",
+        "sobrenatural"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx33009-jF9dqLJcZC4n.png",
+      "color": "#ff861a",
+      "ids": {
+        "anilist": 33009,
+        "mal": 3009
+      },
+      "enlaces": [
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/shonenjump/chapters/jojos-bizarre-adventure-part-6?locale=en",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "MANGA Plus",
+          "url": "https://mangaplus.shueisha.co.jp/titles/100503",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/manga-books/manga/jojo-s-bizarre-adventure-part-6-stone-ocean/all",
+          "idioma": "en",
+          "tipo": "tomos"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 82,
+          "popularidad": 73698
+        }
+      },
+      "agregada": "2026-11-23"
+    },
+    {
+      "id": "jujutsu-kaisen-0",
+      "titulo": "Jujutsu Kaisen 0",
+      "titulos": {
+        "romaji": "Jujutsu Kaisen 0: Tokyo Toritsu Jujutsu Koutou Senmon Gakkou",
+        "ingles": "Jujutsu Kaisen 0",
+        "nativo": "呪術廻戦 0 東京都立呪術高等専門学校"
+      },
+      "sinonimos": [
+        "Tokyo Metropolitan Magic Technical School",
+        "Jujutsu Kaisen vol.0: Tokyo Metropolitan Magic Technical School",
+        "Tokyo Metropolitan Magic Technical College",
+        "東京都立咒術高等專門學校",
+        "东京都立咒术高等专门学校",
+        "JJK 0",
+        "주술회전. 0(외전): 눈부신 어둠 : 도쿄 도립 주술 고등전문학교",
+        "มหาเวทย์ผนึกมาร โรงเรียนเฉพาะทางไสยศาสตร์นครโตเกียว ",
+        "มหาเวทย์ผนึกมาร 0",
+        "東京都立呪術高等専門学校"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "2017-04-28",
+      "fin": "2017-07-28",
+      "capitulos": 4,
+      "tomos": 1,
+      "autores": [
+        {
+          "nombre": "Gege Akutami",
+          "rol": "historia y arte",
+          "nativo": "芥見下々"
+        }
+      ],
+      "generos": [
+        "accion",
+        "sobrenatural"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx105469-IvLF5yIf6LBC.jpg",
+      "color": "#bba128",
+      "ids": {
+        "anilist": 105469,
+        "mal": 115710
+      },
+      "enlaces": [
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/read/manga/jujutsu-kaisen/product/6537",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/shonenjump/chapters/jujutsu-kaisen",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Shonen Jump Plus",
+          "url": "https://shonenjumpplus.com/episode/10834108156631749950",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 80,
+          "popularidad": 73014
+        }
+      },
+      "agregada": "2026-11-23"
+    },
+    {
+      "id": "toilet-bound-hanako-kun",
+      "titulo": "Toilet-Bound Hanako-kun",
+      "titulos": {
+        "romaji": "Jibaku Shounen Hanako-kun",
+        "ingles": "Toilet-Bound Hanako-kun",
+        "nativo": "地縛少年 花子くん"
+      },
+      "sinonimos": [
+        "지박소년 하나코 군",
+        "Hanako, duch ze szkolnej toalety",
+        "Hanako-Kun e os mistérios do colégio Kamome",
+        "Hanako-Kun, El Fantasma del Lavabo",
+        "地缚少年花子君",
+        "ฮานาโกะคุง วิญญาณติดที่",
+        "Hanako kun - I sette misteri dell'Accademia Kamome",
+        "\"Cậu\" ma nhà xí Hanako",
+        "Туалетний привид Ханако",
+        "Туалетный мальчик Ханако"
+      ],
+      "tipo": "manga",
+      "estado": "en-publicacion",
+      "inicio": "2014-06-18",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "AidaIro",
+          "rol": "historia y arte",
+          "nativo": "いろあいだ"
+        }
+      ],
+      "generos": [
+        "accion",
+        "comedia",
+        "drama",
+        "misterio",
+        "romance",
+        "sobrenatural"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx98842-Ji0v423UZ4er.jpg",
+      "color": "#e4355d",
+      "ids": {
+        "anilist": 98842,
+        "mal": 105084
+      },
+      "enlaces": [
+        {
+          "sitio": "Manga UP!",
+          "url": "https://global.manga-up.com/manga/132",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Yen Press",
+          "url": "https://yenpress.com/series/toilet-bound-hanako-kun",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Pixiv Comic",
+          "url": "https://comic.pixiv.net/works/1562",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Manga UP!",
+          "url": "https://www.manga-up.com/titles/19",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 85,
+          "popularidad": 72930
+        }
+      },
+      "agregada": "2026-11-23"
+    },
+    {
+      "id": "gantz",
+      "titulo": "Gantz",
+      "titulos": {
+        "romaji": "GANTZ",
+        "ingles": "Gantz",
+        "nativo": "GANTZ"
+      },
+      "sinonimos": [
+        "ガンツ",
+        "Gantz/Osaka",
+        "간츠"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "2000-07-13",
+      "fin": "2013-06-20",
+      "capitulos": 383,
+      "tomos": 37,
+      "autores": [
+        {
+          "nombre": "Hiroya Oku",
+          "rol": "historia y arte",
+          "nativo": "奥浩哉"
+        }
+      ],
+      "generos": [
+        "accion",
+        "drama",
+        "terror",
+        "psicologico",
+        "ciencia-ficcion",
+        "sobrenatural"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30564-RbyFbLzbnKea.jpg",
+      "color": "#6b1a1a",
+      "ids": {
+        "anilist": 30564,
+        "mal": 564
+      },
+      "enlaces": [
+        {
+          "sitio": "MANGA MILLION",
+          "url": "https://mangamillion.shueisha.co.jp/en/title/1105",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Shonen Jump Plus",
+          "url": "https://shonenjumpplus.com/episode/10834108156628773289",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Piccoma",
+          "url": "https://piccoma.com/web/product/4172",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Jump TOON",
+          "url": "https://jumptoon.com/series/JT00056/?type=episodes",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 77,
+          "popularidad": 71828
+        }
+      },
+      "agregada": "2026-11-23"
+    },
+    {
+      "id": "claymore",
+      "titulo": "Claymore",
+      "titulos": {
+        "romaji": "CLAYMORE",
+        "ingles": "Claymore",
+        "nativo": "CLAYMORE"
+      },
+      "sinonimos": [
+        "クレイモア"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "2001-05-06",
+      "fin": "2014-10-04",
+      "capitulos": 159,
+      "tomos": 27,
+      "autores": [
+        {
+          "nombre": "Norihiro Yagi",
+          "rol": "historia y arte",
+          "nativo": "八木教広"
+        }
+      ],
+      "generos": [
+        "accion",
+        "aventura",
+        "fantasia",
+        "terror"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30583-Ysqwu8uryIUX.png",
+      "color": "#e4935d",
+      "ids": {
+        "anilist": 30583,
+        "mal": 583
+      },
+      "enlaces": [
+        {
+          "sitio": "MANGA Plus",
+          "url": "https://mangaplus.shueisha.co.jp/titles/200005",
+          "idioma": "es",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/shonenjump/chapters/claymore",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "MANGA Plus",
+          "url": "https://mangaplus.shueisha.co.jp/titles/100007",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "MANGA MILLION",
+          "url": "https://mangamillion.shueisha.co.jp/en/title/1087",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/claymore",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Piccoma",
+          "url": "https://piccoma.com/web/product/4162?etype=episode",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Shonen Jump Plus",
+          "url": "https://shonenjumpplus.com/episode/13932016480029012552",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 81,
+          "popularidad": 67768
+        }
+      },
+      "agregada": "2026-11-23"
+    },
+    {
+      "id": "blame",
+      "titulo": "BLAME!",
+      "titulos": {
+        "romaji": "BLAME!",
+        "ingles": "BLAME!",
+        "nativo": "BLAME!"
+      },
+      "sinonimos": [
+        "ブラム!",
+        "Buramu!",
+        "Блам!",
+        "블레임"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "1997-01-25",
+      "fin": "2003-07-25",
+      "capitulos": 66,
+      "tomos": 10,
+      "autores": [
+        {
+          "nombre": "Tsutomu Nihei",
+          "rol": "historia y arte",
+          "nativo": "弐瓶勉"
+        }
+      ],
+      "generos": [
+        "accion",
+        "drama",
+        "terror",
+        "psicologico",
+        "ciencia-ficcion"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30149-YetcNrfacNVj.jpg",
+      "color": "#d6a178",
+      "ids": {
+        "anilist": 30149,
+        "mal": 149
+      },
+      "enlaces": [
+        {
+          "sitio": "Coolmic",
+          "url": "https://coolmic.me/titles/5073",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "K MANGA",
+          "url": "https://kmanga.kodansha.com/title/10222/episode/334232",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "INKR",
+          "url": "https://comics.inkr.com/title/1104-blame",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Omoi",
+          "url": "https://www.omoi.com/series/blame",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "MangaPlaza",
+          "url": "https://mangaplaza.com/title/0303001671/",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Kodansha USA",
+          "url": "https://kodansha.us/series/blame/",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Comic Days",
+          "url": "https://comic-days.com/episode/13932016480029861973",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Pocket Magazine",
+          "url": "https://pocket.shonenmagazine.com/title/00931/episode/309500",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 81,
+          "popularidad": 67268
+        }
+      },
+      "agregada": "2026-11-23"
+    },
+    {
+      "id": "wotakoi-love-is-hard-for-otaku",
+      "titulo": "Wotakoi: Love is Hard for Otaku",
+      "titulos": {
+        "romaji": "Wotaku ni Koi wa Muzukashii",
+        "ingles": "Wotakoi: Love is Hard for Otaku",
+        "nativo": "ヲタクに恋は難しい"
+      },
+      "sinonimos": [
+        "WotaKoi",
+        "It’s Difficult to Love an Otaku",
+        "Love is Hard for an Otaku",
+        "Keine Cheats für die Liebe",
+        "Qué difícil es el amor para un otaku",
+        "Wotakoi: O amor é dificil para otakus",
+        "Otaku Otaku",
+        "Wotakoi. Miłość jest trudna dla otaku",
+        "Так сложно любить отаку",
+        "ยากแท้จริงหนอรักของโอตาคุ"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "2014-04-17",
+      "fin": "2021-07-16",
+      "capitulos": 115,
+      "tomos": 11,
+      "autores": [
+        {
+          "nombre": "Fujita",
+          "rol": "historia y arte",
+          "nativo": "ふじた"
+        }
+      ],
+      "generos": [
+        "comedia",
+        "romance",
+        "recuentos-de-la-vida"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx86717-S7z7uizfTfEu.png",
+      "color": "#f1935d",
+      "ids": {
+        "anilist": 86717,
+        "mal": 89087
+      },
+      "enlaces": [
+        {
+          "sitio": "K MANGA",
+          "url": "https://kmanga.kodansha.com/title/10506/episode/344040",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "MangaPlaza",
+          "url": "https://mangaplaza.com/title/0303007578/",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Omoi",
+          "url": "https://www.omoi.com/series/wotakoi-love-is-hard-for-otaku",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Kodansha USA",
+          "url": "https://kodansha.us/series/wotakoi-love-is-hard-for-otaku/",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Pixiv Comic",
+          "url": "https://comic.pixiv.net/works/1530",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Ichijin Plus",
+          "url": "https://ichicomi.com/episode/2550912965923202428",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Piccoma",
+          "url": "https://piccoma.com/web/product/12973?etype=episode",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 83,
+          "popularidad": 65825
+        }
+      },
+      "agregada": "2026-11-23"
     }
   ]
 }
