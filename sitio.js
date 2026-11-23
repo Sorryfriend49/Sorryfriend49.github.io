@@ -65,6 +65,7 @@
 
         if (cambia){
             window.scrollTo(0, 0);
+            revisarSubir();
             // Para lectores de pantalla y teclado: el foco va al título del apartado nuevo
             if (enfocar){
                 const titulo = document.querySelector(`.seccion[data-seccion="${seccion}"] h2`);
@@ -104,6 +105,26 @@
     };
 
     window.addEventListener('hashchange', () => alCambiarRuta());
+
+    // ===== SUBIR =====
+    // Aparece cuando bajaste más de una pantalla y media (no en Inicio, que cabe en una).
+    // Al usarlo, el foco vuelve al título del apartado (para quien navega con teclado).
+    const botonSubir = document.getElementById('botonSubir');
+    let revisionPendiente = false;
+    function revisarSubir(){
+        revisionPendiente = false;
+        if (botonSubir) botonSubir.hidden = actual === 'inicio' || window.scrollY < window.innerHeight * 1.5;
+    }
+    window.addEventListener('scroll', () => {
+        if (revisionPendiente) return;
+        revisionPendiente = true;
+        requestAnimationFrame(revisarSubir);
+    }, { passive: true });
+    if (botonSubir) botonSubir.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: reducirMovimiento ? 'auto' : 'smooth' });
+        const titulo = document.querySelector(`.seccion[data-seccion="${actual}"] h2`);
+        if (titulo) titulo.focus({ preventScroll: true });
+    });
 
     // ===== VIDEO DE FONDO =====
     // El video empieza justo debajo del menú para que el halo no quede tapado

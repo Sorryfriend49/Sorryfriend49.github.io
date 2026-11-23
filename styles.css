@@ -774,6 +774,88 @@ nav{
     cursor: default;
 }
 
+/* Sorpréndeme, junto a cuántas obras hay */
+.catalogo-resumen{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+}
+
+/* Compartir, en la ficha */
+.ficha-acciones{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+    margin-top: 12px;
+}
+
+.aviso-compartir{
+    font-size: 14px;
+    color: var(--texto-suave);
+    overflow-wrap: anywhere;
+}
+
+/* Atajo «/» dentro del buscador: solo con teclado y mouse, y mientras está vacío y sin foco */
+.buscador .atajo{
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    display: none;
+    min-width: 22px;
+    padding: 1px 6px;
+    border: 1px solid var(--vidrio-borde);
+    border-radius: 6px;
+    color: var(--texto-suave);
+    font: 500 13px 'Poppins', sans-serif;
+    text-align: center;
+    pointer-events: none;
+}
+
+@media (hover: hover) and (pointer: fine){
+    .buscador input:placeholder-shown:not(:focus) ~ .atajo{
+        display: block;
+    }
+}
+
+/* Subir: botón redondo abajo a la derecha */
+.boton-subir{
+    position: fixed;
+    right: max(18px, env(safe-area-inset-right));
+    bottom: max(18px, env(safe-area-inset-bottom));
+    z-index: 90;
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(168, 198, 236, 0.45);
+    border-radius: 50%;
+    background: rgba(3, 10, 19, 0.78);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    color: var(--hielo);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    animation: aparecer-subir 0.2s ease;
+}
+
+.boton-subir:hover{
+    border-color: var(--acero);
+}
+
+.boton-subir[hidden]{
+    display: none;
+}
+
+@keyframes aparecer-subir{
+    from{
+        opacity: 0;
+        transform: translateY(8px);
+    }
+}
+
 .quitar-generos{
     min-height: 36px;
     padding: 0 6px;

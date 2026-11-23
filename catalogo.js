@@ -546,6 +546,7 @@
     function pintarConteo(n){
         const total = obras.length;
         conteo.textContent = n === total ? `${total} obras` : `${n} de ${total} obras`;
+        $('sorprendeme').disabled = n === 0;
     }
 
     function pintar(){
@@ -1181,6 +1182,100 @@
     }
 
     // ---------- Recomendaciones de los lectores ("si te gustó…") ----------
+    // «Más de …»: otras obras del catálogo de las mismas personas (lo arma scripts/lista.mjs).
+    // Un bloque por grupo; si quien escribe y quien dibuja comparten las mismas obras, van juntos.
+    function pintarMismoAutor(o, f){
+        const bloque = $('bloqueMismoAutor');
+        const grupos = (f && !f.fallo && Array.isArray(f.masDelAutor)) ? f.masDelAutor : [];
+        const partes = [];
+        for (const g of grupos){
+            const otras = (Array.isArray(g.obras) ? g.obras : []).map(id => porId.get(id)).filter(x => x && x.id !== o.id);
+            const autores = (Array.isArray(g.autores) ? g.autores : []).filter(Boolean);
+            if (!otras.length || !autores.length) continue;
+            const lista = crear('ul', 'recomendadas');
+            lista.append(...otras.map(obra => {
+                const li = document.createElement('li');
+                const a = crear('a', 'mini-obra');
+                a.href = hashObra(obra.id);
+                a.dataset.obra = obra.id;
+                const portada = crear('span', 'mini-portada');
+                colorDePlaca(portada, obra);
+                portada.append(imagenPortada(obra, '54px'));
+                const datos = crear('span', 'mini-datos');
+                datos.append(etiquetaTipo(obra.tipo));
+                if (obra.inicio) datos.append(crear('span', null, obra.inicio.slice(0, 4)));
+                const texto = crear('span', 'mini-texto');
+                texto.append(crear('span', 'mini-titulo', obra.titulo), datos);
+                a.append(portada, texto);
+                li.append(a);
+                return li;
+            }));
+            partes.push(crear('h3', null, `Más de ${enumerar(autores)}`), lista);
+        }
+        bloque.replaceChildren(...partes);
+        bloque.hidden = partes.length === 0;
+    }
+
+    // ---------- Compartir una obra ----------
+    // En el celular abre el menú de compartir del sistema; en el PC copia el enlace y lo avisa.
+    // El enlace es el de la obra sola (sin los filtros que tengas puestos).
+    let temporizadorCompartir = null;
+    function avisarCompartir(texto){
+        const aviso = $('avisoCompartir');
+        aviso.textContent = texto;
+        clearTimeout(temporizadorCompartir);
+        if (texto) temporizadorCompartir = setTimeout(() => { aviso.textContent = ''; }, 5000);
+    }
+    $('fichaCompartir').addEventListener('click', async () => {
+        const o = porId.get(fichaAbierta);
+        if (!o) return;
+        const url = new URL(`${location.pathname}#catalogo?obra=${encodeURIComponent(o.id)}`, location.origin).href;
+        if (navigator.share && window.matchMedia('(pointer: coarse)').matches){
+            try {
+                await navigator.share({ title: `${o.titulo} | Frozen Project`, url });
+                return;
+            } catch (error){
+                if (error && error.name === 'AbortError') return;      // la persona cerró el menú
+            }
+        }
+        try {
+            await navigator.clipboard.writeText(url);
+            avisarCompartir('Enlace copiado');
+        } catch (error){
+            avisarCompartir(`No se pudo copiar; el enlace es ${url}`);
+        }
+    });
+
+    // ---------- Sorpréndeme: una obra al azar entre las que cumplen tus filtros ----------
+    // Si entre ellas hay al menos 3 bien valoradas (7,5 o más), sale una de esas.
+    // No repite ninguna de las últimas 10.
+    const ultimasSorpresas = [];
+    $('sorprendeme').addEventListener('click', () => {
+        const lista = resultados();
+        if (!lista.length) return;
+        const buenas = lista.filter(o => (puntaje(o) || 0) >= 75);
+        let opciones = buenas.length >= 3 ? buenas : lista;
+        const nuevas = opciones.filter(o => !ultimasSorpresas.includes(o.id));
+        if (nuevas.length) opciones = nuevas;
+        const elegida = opciones[Math.floor(Math.random() * opciones.length)];
+        ultimasSorpresas.push(elegida.id);
+        if (ultimasSorpresas.length > 10) ultimasSorpresas.shift();
+        Frozen.navegar(hashCatalogo(estado, elegida.id));
+    });
+
+    // ---------- Tecla «/»: lleva al buscador del catálogo ----------
+    // No se activa mientras escribes en un campo ni con una ventana abierta.
+    document.addEventListener('keydown', e => {
+        if (e.key !== '/' || e.ctrlKey || e.metaKey || e.altKey || e.defaultPrevented) return;
+        const t = e.target;
+        if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return;
+        if (document.querySelector('dialog[open]')) return;
+        e.preventDefault();
+        if (Frozen.ruta().seccion !== 'catalogo') Frozen.navegar(hashCatalogo());
+        inputBuscar.focus();
+        inputBuscar.select();
+    });
+
     function pintarRecomendadas(o, f){
         const c = f && !f.fallo ? f.comunidad : null;
         const recs = (c && Array.isArray(c.recomendaciones)) ? c.recomendaciones : [];
@@ -1294,7 +1389,9 @@
         pintarDatos(o, null);
         pintarComunidad(o, null);
         pintarDondeLeer(o, null);
+        pintarMismoAutor(o, null);
         pintarRecomendadas(o, null);
+        avisarCompartir('');
 
         $('fichaAniList').href = `https://anilist.co/manga/${o.ids.anilist}`;
 
@@ -1316,6 +1413,7 @@
         pintarDatos(o, f.fallo ? null : f);
         pintarComunidad(o, f);
         pintarDondeLeer(o, f);
+        pintarMismoAutor(o, f);
         pintarRecomendadas(o, f);
     }
 

@@ -29,6 +29,42 @@ const leer = async (ruta, siNoExiste) => {
 };
 const sinVacios = objeto => Object.fromEntries(Object.entries(objeto).filter(([, v]) => v !== null && v !== undefined && !(Array.isArray(v) && !v.length)));
 
+/* «Más de …» en la ficha: las otras obras del catálogo de las mismas personas (por su nombre),
+   las más leídas primero y como mucho 8 por persona. Si dos autores comparten las mismas obras
+   (el que escribe y el que dibuja), van juntos: «Más de Carnby Kim y Yeong-Chan Hwang».
+   Devuelve una función: obra -> [{ autores: [nombres], obras: [ids] }] */
+export const MAX_DEL_AUTOR = 8;
+const nombreClave = nombre => String(nombre || '').normalize('NFKC').trim().toLowerCase();
+export function indiceDeAutores(catalogo, porAniList = {}){
+    const obrasDe = new Map();      // nombre en minúsculas -> [{ id, lectores }]
+    for (const o of (catalogo && catalogo.obras) || []){
+        if (!o || !o.id || !Array.isArray(o.autores)) continue;
+        const c = porAniList[String(o.ids && o.ids.anilist)] || null;
+        const lectores = (c && c.popularidad) || (o.comunidad && o.comunidad.anilist && o.comunidad.anilist.popularidad) || 0;
+        for (const a of o.autores){
+            const clave = nombreClave(a && a.nombre);
+            if (!clave) continue;
+            if (!obrasDe.has(clave)) obrasDe.set(clave, []);
+            if (!obrasDe.get(clave).some(x => x.id === o.id)) obrasDe.get(clave).push({ id: o.id, lectores });
+        }
+    }
+    return o => {
+        const grupos = new Map();   // las mismas obras -> los autores que las comparten
+        for (const a of (o && Array.isArray(o.autores)) ? o.autores : []){
+            const otras = (obrasDe.get(nombreClave(a && a.nombre)) || [])
+                .filter(x => x.id !== o.id)
+                .sort((x, y) => y.lectores - x.lectores || x.id.localeCompare(y.id))
+                .slice(0, MAX_DEL_AUTOR)
+                .map(x => x.id);
+            if (!otras.length) continue;
+            const clave = otras.join(',');
+            if (!grupos.has(clave)) grupos.set(clave, { autores: [], obras: otras });
+            grupos.get(clave).autores.push(a.nombre);
+        }
+        return [...grupos.values()];
+    };
+}
+
 /* La lista y las fichas, sin tocar archivos.
    catalogo: obras.json; comunidad: datos/comunidad.json (puede faltar o no tener alguna obra). */
 export function armarLista(catalogo, comunidad){
@@ -36,6 +72,7 @@ export function armarLista(catalogo, comunidad){
     const etiquetas = {};
     const obras = [];
     const fichas = new Map();
+    const masDelAutor = indiceDeAutores(catalogo, porAniList);
     for (const o of (catalogo && catalogo.obras) || []){
         if (!o || !o.id || !o.titulo) continue;
         const c = porAniList[String(o.ids && o.ids.anilist)] || null;
@@ -74,6 +111,7 @@ export function armarLista(catalogo, comunidad){
         fichas.set(o.id, sinVacios({
             id: o.id,
             autores: o.autores,
+            masDelAutor: masDelAutor(o),
             fin: o.fin,
             capitulos: o.capitulos,
             tomos: o.tomos,
