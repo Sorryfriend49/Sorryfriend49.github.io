@@ -5,6 +5,10 @@
 # La clave de abajo es la pública de la página (la misma que está en cuenta.js), no un secreto.
 name: Mantener despierta la base de datos
 
+# A la hora exacta la lanza cron-job.org con la API de GitHub (POST a
+# /repos/Sorryfriend49/Sorryfriend49.github.io/actions/workflows/mantener-supabase.yml/dispatches, con un
+# token que solo tiene permiso de lanzar tareas). GitHub atrasa horas, y a veces pierde, sus
+# tareas programadas: el horario de abajo queda de respaldo.
 on:
   schedule:
     - cron: '23 14 * * *'   # todos los días a las 14:23 UTC (9:23 en Colombia)

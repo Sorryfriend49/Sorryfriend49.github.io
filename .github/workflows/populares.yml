@@ -5,6 +5,10 @@
 # Para correrla a mano: pestaña Actions > "Lo más popular" > Run workflow.
 name: Lo más popular
 
+# A la hora exacta la lanza cron-job.org con la API de GitHub (POST a
+# /repos/Sorryfriend49/Sorryfriend49.github.io/actions/workflows/populares.yml/dispatches, con un
+# token que solo tiene permiso de lanzar tareas). GitHub atrasa horas, y a veces pierde, sus
+# tareas programadas: el horario de abajo queda de respaldo.
 on:
   schedule:
     - cron: '41 10 * * *'   # 5:41 a. m. en Colombia

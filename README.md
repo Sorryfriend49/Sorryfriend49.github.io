@@ -24,10 +24,12 @@ La página es un sitio estático (HTML, CSS y JavaScript, sin frameworks ni paso
 
 | Tarea | Cuándo | Qué hace |
 |---|---|---|
-| `comunidad.yml` | De lunes a viernes | Trae el catálogo de AniList, suma hasta 20 obras nuevas, calcula lo que opina la comunidad, escribe los resúmenes y arma la lista y las fichas |
-| `populares.yml` | Dos veces al día | Actualiza la popularidad y la actividad de cada obra |
-| `mantener-supabase.yml` | Todos los días | Evita que la base de datos gratuita se pause |
+| `comunidad.yml` | De lunes a viernes, 4:17 a. m. | Trae el catálogo de AniList, suma hasta 20 obras nuevas, calcula lo que opina la comunidad, escribe los resúmenes y arma la lista y las fichas |
+| `populares.yml` | Todos los días, 5:41 a. m. y 5:41 p. m. | Actualiza la popularidad y la actividad de cada obra |
+| `mantener-supabase.yml` | Todos los días, 9:23 a. m. | Evita que la base de datos gratuita se pause |
 | `medir-gemma.yml` | A mano | Mide qué tan rápido se escriben los resúmenes |
+
+Las horas son de Colombia. GitHub atrasa sus tareas programadas cuando tiene mucha carga (a veces varias horas) y a veces no las corre, así que las tres primeras las lanza [cron-job.org](https://cron-job.org) a su hora, con la API de GitHub (`workflow_dispatch`) y un token que solo puede lanzar tareas de este repositorio. El horario de cada tarea en GitHub queda de respaldo: si un día llegan las dos, la segunda casi no hace trabajo (salta las obras que ya se renovaron y no pasa de 20 obras nuevas por día).
 
 - **Lo que opina la comunidad:** el puntaje combinado pesa a cada comunidad según sus votos. Un modelo BERT multilingüe (con Transformers.js) lee las reseñas para saber qué se elogia y qué se critica, y Gemma 4 (con Ollama) escribe los resúmenes. Todo corre dentro de la misma tarea de GitHub: las reseñas no se mandan a ningún otro servicio.
 - **Cuentas:** [Supabase](https://supabase.com), para entrar con Google o Discord y guardar la biblioteca en una tabla con reglas de seguridad por fila. El esquema está en `supabase/esquema.sql`.

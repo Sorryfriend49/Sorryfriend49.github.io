@@ -24,6 +24,11 @@
 # clave, la tarea sigue con las otras tres comunidades.
 name: Opinión de la comunidad
 
+# A la hora exacta la lanza cron-job.org con la API de GitHub (POST a
+# /repos/Sorryfriend49/Sorryfriend49.github.io/actions/workflows/comunidad.yml/dispatches, con un
+# token que solo tiene permiso de lanzar tareas). GitHub atrasa horas, y a veces pierde, sus
+# tareas programadas: el horario de abajo queda de respaldo.
+# cron-job.org manda {"ref":"main","inputs":{"obras_nuevas":"agregar"}} para que también entren las obras nuevas.
 on:
   schedule:
     - cron: '17 9 * * 1-5'      # de lunes a viernes, 9:17 UTC (4:17 a. m. en Colombia)
