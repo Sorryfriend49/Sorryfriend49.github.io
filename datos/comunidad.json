@@ -3645,7 +3645,13 @@
         "lectores": 0.0025,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores destacan la calidad excepcional del arte y la construcción de su mundo distópico. A varios les preocupa la falta de desarrollo emocional en los personajes y la narrativa, percibida como abstracta. Algunos consideran que la obra prioriza la experimentación visual sobre la trama.",
+        "resenas": 16,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-23"
+      },
       "capitulos": {
         "ultimo": 18,
         "tomos": 10
@@ -4334,7 +4340,13 @@
         "lectores": 0.0019,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores destacan la calidad del arte y la acción, percibiendo una experiencia intensa y oscura. Sin embargo, hay opiniones divididas respecto a la narrativa, pues algunos señalan fallas en la historia y los personajes, mientras otros encuentran el desarrollo de los personajes realista a pesar de la premisa. Algunos lectores consideran que la trama se vuelve confusa o carece de profundidad.",
+        "resenas": 9,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-23"
+      },
       "capitulos": {
         "ultimo": 383,
         "tomos": 37
@@ -4514,7 +4526,13 @@
         "lectores": 0.0021,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores destacan la calidad de la historia, la profundidad de sus personajes y la acción intensa del manga. Aprecian cómo aborda temas como el trauma y el liderazgo dentro de su ambientación. Mencionan además el arte detallado y la atmósfera de fantasía oscura.",
+        "resenas": 9,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-23"
+      },
       "capitulos": {
         "ultimo": 155,
         "tomos": 27
@@ -7155,7 +7173,13 @@
         "lectores": 0.0012,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores destacan la fuerza del elenco de personajes, señalando que cada uno aporta profundidad y energía a la historia. Además, se elogia la creatividad y la intensidad de las batallas presentadas en esta parte. Varios mencionan que la protagonista femenina es un punto central y muy apreciado.",
+        "resenas": 6,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-23"
+      },
       "capitulos": {
         "ultimo": 54,
         "tomos": null
@@ -8866,7 +8890,13 @@
         "lectores": 0.0021,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores destacan la historia y la profundidad de los personajes, considerándola una obra maestra provocativa. Aprecian cómo el arte complementa los temas oscuros y la calidad del final. Varios mencionan que la narrativa es intensa y logra transmitir emociones complejas.",
+        "resenas": 15,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-23"
+      },
       "capitulos": {
         "ultimo": 57,
         "tomos": 11
@@ -15762,7 +15792,13 @@
         "lectores": 0.0016,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores destacan el desarrollo de los personajes y la belleza del arte en esta obra. Aprecian especialmente el enfoque en el romance y cómo aborda temas existenciales profundos. Sin embargo, se ha señalado que el desenlace no fue bien recibido por algunos lectores.",
+        "resenas": 12,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-23"
+      },
       "capitulos": {
         "ultimo": 2,
         "tomos": 3
