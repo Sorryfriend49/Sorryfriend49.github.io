@@ -96,7 +96,7 @@
 
     <!-- El ?v= obliga a los navegadores a bajar la versión nueva tras cada cambio.
          Si editas styles.css, sitio.js, biblioteca.js, catalogo.js o cuenta.js, sube ese número (v=3, v=4...). -->
-    <link rel="stylesheet" href="styles.css?v=17">
+    <link rel="stylesheet" href="styles.css?v=18">
 </head>
 
 <body>
@@ -208,7 +208,7 @@
                     </button>
                 </div>
 
-                <!-- Estado de la obra y obras con edición oficial en español (?estado=…&es=1) -->
+                <!-- Estado de la obra, obras con anime y con edición oficial en español (?estado=…&anime=1&es=1) -->
                 <div class="fila-filtros fila-extra">
                     <fieldset class="segmentado" id="filtroPublicacion">
                         <legend class="solo-lectores">Estado de la obra</legend>
@@ -216,6 +216,9 @@
                         <label><input type="radio" name="publicacion" value="en-publicacion"><span>En publicación</span></label>
                         <label><input type="radio" name="publicacion" value="terminado"><span>Terminadas</span></label>
                     </fieldset>
+                    <button class="chip" id="filtroAnime" type="button" aria-pressed="false">
+                        <span>Con anime</span><span class="cuenta" id="cuentaAnime"></span>
+                    </button>
                     <button class="chip" id="filtroEspanol" type="button" aria-pressed="false" aria-describedby="ayudaEspanol">
                         <span>En español</span><span class="cuenta" id="cuentaEspanol"></span>
                     </button>
@@ -338,6 +341,7 @@
                     <li>Lo que opina la comunidad junta a cuatro comunidades de lectores: <a href="https://anilist.co" target="_blank" rel="noopener noreferrer">AniList</a>, <a href="https://myanimelist.net" target="_blank" rel="noopener noreferrer">MyAnimeList</a>, <a href="https://kitsu.app" target="_blank" rel="noopener noreferrer">Kitsu</a> y <a href="https://www.mangaupdates.com" target="_blank" rel="noopener noreferrer">MangaUpdates</a>.</li>
                     <li>La popularidad es cuántas personas tienen la obra en su lista de AniList. Se actualiza dos veces al día.</li>
                     <li>“Dónde leer” lleva solo a lugares oficiales: plataformas para leer en español o en inglés, editoriales que publican los tomos y, si no hay edición en esos idiomas, las plataformas oficiales en su idioma original. La lista sale de los enlaces oficiales que la comunidad registra en AniList. El filtro «En español» del catálogo muestra las obras con al menos una plataforma o editorial oficial en español en esa lista; si AniList todavía no tiene registrada una edición, la obra no aparece ahí.</li>
+                    <li>El orden de lectura (precuelas y secuelas, en orden, y las historias paralelas y spin-offs) y el anime de cada obra también salen de AniList. “Dónde verlo” muestra los servicios oficiales que llegan a Latinoamérica y España (Crunchyroll, Netflix, Prime Video, Disney+, HBO Max y HIDIVE); lo que tiene cada uno cambia según el país. El filtro «Con anime» muestra las obras con al menos una adaptación animada ya estrenada.</li>
                 </ul>
 
                 <h3>Cómo se calcula lo que opina la comunidad</h3>
@@ -406,6 +410,10 @@
                 <h3>Dónde leer</h3>
                 <div id="fichaDondeLeer"></div>
 
+                <!-- Anime y dónde verlo; orden de lectura e historias relacionadas (scripts/relaciones.mjs) -->
+                <div id="bloqueAnime" hidden></div>
+                <div id="bloqueLectura" hidden></div>
+
                 <!-- «Más de …»: otras obras del catálogo de las mismas personas (scripts/lista.mjs) -->
                 <div id="bloqueMismoAutor" hidden></div>
 
@@ -469,7 +477,7 @@
 
     <script src="sitio.js?v=5" defer></script>
     <script src="biblioteca.js?v=4" defer></script>
-    <script src="catalogo.js?v=18" defer></script>
+    <script src="catalogo.js?v=19" defer></script>
     <script src="cuenta.js?v=3" defer></script>
     <script src="importar.js?v=2" defer></script>
 

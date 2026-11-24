@@ -595,6 +595,14 @@ nav{
     color: var(--texto-suave);
 }
 
+/* En PC la explicación va en dos líneas, para que «Salió» quepa en la misma fila que «Con anime» */
+@media (min-width: 769px){
+    .ayuda-filtro{
+        max-width: 190px;
+        line-height: 1.35;
+    }
+}
+
 /* Ocultar géneros: se abre con su título; un género marcado sale tachado y sus obras no se muestran */
 .ocultar-generos > summary{
     display: inline-flex;
@@ -1948,6 +1956,91 @@ header{
 }
 
 .mini-datos .fuera{
+    color: var(--cristal);
+}
+
+/* Orden de lectura: cada obra con su número sobre la portada; la que estás viendo, marcada */
+.orden-lectura .mini-portada{
+    position: relative;
+}
+
+.orden-lectura .paso{
+    position: absolute;
+    left: 3px;
+    bottom: 3px;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+    border-radius: 9px;
+    background: rgba(3, 10, 19, 0.85);
+    color: var(--hielo);
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+}
+
+.orden-lectura .aqui .mini-portada{
+    outline: 2px solid var(--hielo);
+    outline-offset: 1px;
+}
+
+.orden-lectura .aqui .paso{
+    background: var(--hielo);
+    color: #04111f;
+}
+
+.mini-obra.aqui:hover .mini-titulo{
+    color: inherit;
+    text-decoration: none;
+}
+
+.mini-datos .aqui-texto{
+    color: var(--hielo);
+    font-weight: 600;
+}
+
+/* Anime: sus adaptaciones (título, formato, año y episodios) y dónde verlas */
+.lista-anime{
+    list-style: none;
+    display: grid;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.lista-anime li{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 2px 10px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.lista-anime a{
+    color: var(--hielo);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: rgba(168, 198, 236, 0.35);
+    text-underline-offset: 3px;
+}
+
+.lista-anime a:hover{
+    text-decoration-color: currentColor;
+}
+
+.anime-datos{
+    font-size: 13px;
+    color: var(--texto-suave);
+}
+
+.nota-ficha{
+    margin-top: 8px;
+    font-size: 13px;
+    color: var(--texto-suave);
+}
+
+.nota-ficha a{
     color: var(--cristal);
 }
 

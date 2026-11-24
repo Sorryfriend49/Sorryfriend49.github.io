@@ -12,9 +12,11 @@ Es un proyecto personal, gratis y sin fines comerciales: no tiene publicidad ni 
 
 ## Qué puedes hacer
 
-- **Buscar y filtrar:** encuentra una obra por cualquiera de sus nombres, filtra por tipo (manga, manhwa o manhua), género o etiqueta, y ordena por popularidad o fecha de salida.
+- **Buscar y filtrar:** encuentra una obra por cualquiera de sus nombres, filtra por tipo (manga, manhwa o manhua), género, etiqueta, estado, año, si tiene anime o edición en español, oculta los géneros que no quieres ver y ordena por popularidad o fecha de salida.
 - **Ver lo que opina la comunidad:** un puntaje que combina cuatro comunidades, qué tan confiable es, cómo se reparten los votos, qué se elogia y qué se critica, y un resumen corto de las reseñas, sin spoilers y hecho por IA.
 - **Saber dónde leerla:** solo enlaces oficiales, primero en español o inglés.
+- **Saber en qué orden leerla:** sus precuelas y secuelas en orden (JoJo tiene 9 partes), con la obra que estás viendo marcada, y sus historias paralelas y spin-offs.
+- **Saber si tiene anime:** sus adaptaciones y dónde verlas oficialmente, primero en los servicios que llegan a Latinoamérica y España.
 - **Ver qué está de moda:** lo más popular de hoy, de la semana y del mes, y las obras más recientes en salir.
 - **Armar tu biblioteca:** marca obras como Leyendo, Por leer, Leído, En pausa, Abandonado o Favorito. Funciona sin cuenta (se guarda en tu navegador) y, si entras con Google o Discord, se sincroniza en todos tus dispositivos. También puedes traer tu lista de AniList o MyAnimeList.
 
@@ -24,7 +26,7 @@ La página es un sitio estático (HTML, CSS y JavaScript, sin frameworks ni paso
 
 | Tarea | Cuándo | Qué hace |
 |---|---|---|
-| `comunidad.yml` | De lunes a viernes, 4:17 a. m. | Trae el catálogo de AniList, suma hasta 20 obras nuevas, calcula lo que opina la comunidad, escribe los resúmenes y arma la lista y las fichas |
+| `comunidad.yml` | De lunes a viernes, 4:17 a. m. | Trae el catálogo de AniList (con el orden de lectura y el anime), suma hasta 20 obras nuevas, calcula lo que opina la comunidad, escribe los resúmenes y arma la lista y las fichas |
 | `populares.yml` | Todos los días, 5:41 a. m. y 5:41 p. m. | Actualiza la popularidad y la actividad de cada obra |
 | `mantener-supabase.yml` | Todos los días, 9:23 a. m. | Evita que la base de datos gratuita se pause |
 | `medir-gemma.yml` | A mano | Mide qué tan rápido se escriben los resúmenes |

@@ -2,8 +2,8 @@
    FROZEN PROJECT: arma obras.json a partir de catalogo.json
    catalogo.json es la lista de obras (sus números de AniList). De lunes a viernes la tarea de
    GitHub corre este programa: trae de AniList títulos, autores, géneros, fechas, capítulos,
-   portadas y los lugares oficiales para leer, y escribe obras.json (de ahí salen la lista y las
-   fichas que lee la página, ver lista.mjs).
+   portadas, los lugares oficiales para leer, el orden de lectura y el anime (relaciones.mjs), y
+   escribe obras.json (de ahí salen la lista y las fichas que lee la página, ver lista.mjs).
    Para agregar una obra basta con sumar su número de AniList a catalogo.json (además, cada
    día hábil entran solas hasta 20: ver nuevas.mjs). Cada obra nueva queda con "agregada",
    el día en que llegó.
@@ -14,7 +14,8 @@ import { writeFile } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { crearCliente, leerJSON, escribirJSON, dormir } from './comunidad.mjs';
-import { slug } from './analisis.mjs';
+import { slug, TIPO_POR_PAIS } from './analisis.mjs';
+import { traerRelaciones, armarLectura, armarAnime } from './relaciones.mjs';
 
 const ANILIST = 'https://graphql.anilist.co';
 const POR_PAGINA = 50;
@@ -26,7 +27,6 @@ const GENEROS = {
     'Sports': 'deportes', 'Supernatural': 'sobrenatural', 'Thriller': 'suspenso'
 };
 const ESTADOS = { FINISHED: 'terminado', RELEASING: 'en-publicacion', HIATUS: 'pausado', CANCELLED: 'cancelado', NOT_YET_RELEASED: 'proximamente' };
-const TIPO_POR_PAIS = { JP: 'manga', KR: 'manhwa', CN: 'manhua', TW: 'manhua', HK: 'manhua' };
 const IDIOMAS = { Spanish: 'es', English: 'en', Japanese: 'ja', Korean: 'ko', Chinese: 'zh' };
 const IDIOMA_ORIGINAL = { manga: 'ja', manhwa: 'ko', manhua: 'zh' };
 
@@ -231,15 +231,40 @@ export async function armarCatalogo({
         obras.push(prepararObra(m, entrada));
     }
 
+    // 3. Orden de lectura y anime (ver relaciones.mjs). Van aparte: si AniList falla aquí, cada obra
+    //    conserva lo que tenía y lo demás se actualiza igual.
+    const conservar = o => {
+        const previa = previas.get(o.ids.anilist);
+        if (!previa) return;
+        if (previa.lectura) o.lectura = previa.lectura;
+        if (previa.anime) o.anime = previa.anime;
+    };
+    try {
+        const { grafo, detalles } = await traerRelaciones(pedir, obras.map(o => o.ids.anilist), registro);
+        for (const o of obras){
+            const id = o.ids.anilist;
+            if (!grafo.has(id)){ conservar(o); continue; }        // AniList no la devolvió
+            const lectura = armarLectura(id, grafo);
+            const anime = armarAnime(id, grafo, detalles);
+            if (lectura) o.lectura = lectura; else delete o.lectura;
+            if (anime) o.anime = anime; else delete o.anime;
+        }
+    } catch (error){
+        registro(`AniList no respondió al pedir el orden de lectura y el anime (${error.message}); cada obra conserva lo que tenía.`);
+        obras.forEach(conservar);
+    }
+
     await escribirJSON(ruta('obras.json'), {
         esquema: 1,
         actualizado: ahora.toISOString().slice(0, 10),
-        fuente: 'AniList (https://anilist.co): títulos, géneros, fechas, portadas, puntaje, popularidad y dónde leer. Este archivo se genera solo a partir de catalogo.json (scripts/catalogo.mjs): para agregar o quitar obras, edita catalogo.json.',
+        fuente: 'AniList (https://anilist.co): títulos, géneros, fechas, portadas, puntaje, popularidad, dónde leer, orden de lectura y anime. Este archivo se genera solo a partir de catalogo.json (scripts/catalogo.mjs): para agregar o quitar obras, edita catalogo.json.',
         obras
     });
     await escribirCatalogo(ruta('catalogo.json'), lista, entradas);
     const conEnlaces = obras.filter(o => o.enlaces.some(e => e.tipo !== 'original')).length;
-    registro(`obras.json: ${obras.length} obras (${nuevas} nuevas); ${conEnlaces} con dónde leer en español o inglés.`);
+    const conOrden = obras.filter(o => o.lectura && o.lectura.orden).length;
+    const conAnime = obras.filter(o => o.anime && o.anime.estrenado).length;
+    registro(`obras.json: ${obras.length} obras (${nuevas} nuevas); ${conEnlaces} con dónde leer en español o inglés, ${conOrden} con orden de lectura y ${conAnime} con anime.`);
     return obras;
 }
 

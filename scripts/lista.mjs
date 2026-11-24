@@ -6,8 +6,8 @@
      biblioteca (nombres, portada, tipo, géneros, fecha, puntaje, lectores, etiquetas…), una
      obra por línea. Es lo único que baja la página al abrir.
    - datos/fichas/<id>.json: lo demás, que se baja recién al abrir la ficha de esa obra
-     (quién la creó, dónde leer, la opinión completa de la comunidad, el resumen y las
-     recomendaciones).
+     (quién la creó, dónde leer, el orden de lectura, el anime, la opinión completa de la
+     comunidad, el resumen y las recomendaciones).
    Una ficha solo se vuelve a escribir cuando cambia algo de verdad (por ejemplo, cuando la
    obra se renueva por completo), no por los números de AniList que cambian cada día: esos
    van en la lista. Así el repositorio no se llena de cambios.
@@ -91,6 +91,8 @@ export function armarLista(catalogo, comunidad){
             inicio: o.inicio,
             // Tiene dónde leerla o comprar los tomos en español (oficial): filtro «En español» del catálogo
             es: (o.enlaces || []).some(e => e && e.idioma === 'es' && (e.tipo === 'leer' || e.tipo === 'tomos')) ? 1 : null,
+            // Tiene al menos un anime ya estrenado (ver relaciones.mjs): filtro «Con anime»
+            anime: o.anime && o.anime.estrenado ? 1 : null,
             generos: o.generos,
             portada: typeof o.portada === 'string' && o.portada.startsWith(PORTADAS) ? o.portada.slice(PORTADAS.length) : o.portada,
             portadaGrande: o.portadaGrande,
@@ -118,6 +120,9 @@ export function armarLista(catalogo, comunidad){
             capitulos: o.capitulos,
             tomos: o.tomos,
             enlaces: o.enlaces || [],
+            // Orden de lectura (precuelas, secuelas y relacionadas) y anime, de relaciones.mjs
+            lectura: o.lectura,
+            anime: o.anime ? sinVacios({ obras: o.anime.obras, mas: o.anime.mas, ver: o.anime.ver, otros: o.anime.otros }) : null,
             comunidad: c ? sinVacios({
                 fuentes: c.fuentes,
                 distribucion: c.distribucion,

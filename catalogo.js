@@ -155,7 +155,7 @@
     let etiquetasConocidas = new Map();   // id -> { nombre, en }
     let puestoPopularidad = new Map();
     let datosListos = false;
-    let estado = { tipo: '', generos: [], orden: ORDEN_INICIAL, etiqueta: '', q: '', publicacion: '', espanol: false, anio: '', sin: [] };
+    let estado = { tipo: '', generos: [], orden: ORDEN_INICIAL, etiqueta: '', q: '', publicacion: '', anime: false, espanol: false, anio: '', sin: [] };
     let indiceBusqueda = new Map();   // id -> nombres de la obra, ya normalizados para buscar
     let coincidencias = null;         // id -> { nivel, nombre, principal } mientras hay una búsqueda
     let tarjetas = new Map();      // id -> { li, a, datos }
@@ -295,11 +295,12 @@
         const etiqueta = etiquetasConocidas.has(params.get('etiqueta')) ? params.get('etiqueta') : '';
         const q = (params.get('q') || '').replace(/\s+/g, ' ').trim().slice(0, MAX_BUSQUEDA);
         const publicacion = Object.prototype.hasOwnProperty.call(PUBLICACION, params.get('estado')) ? params.get('estado') : '';
+        const anime = params.get('anime') === '1';
         const espanol = params.get('es') === '1';
         const anio = params.get('anio') && Object.prototype.hasOwnProperty.call(ANIOS, params.get('anio')) ? params.get('anio') : '';
         // Géneros que no quieres ver (si uno también está elegido, gana el elegido)
         const sin = [...new Set((params.get('sin') || '').split(',').filter(g => Object.prototype.hasOwnProperty.call(GENEROS, g) && !generos.includes(g)))];
-        return { tipo, generos, orden, etiqueta, q, publicacion, espanol, anio, sin };
+        return { tipo, generos, orden, etiqueta, q, publicacion, anime, espanol, anio, sin };
     }
 
     function hashCatalogo(e = estado, obra = null){
@@ -309,6 +310,7 @@
         if (e.generos.length) partes.push('generos=' + e.generos.join(','));
         if (e.etiqueta) partes.push('etiqueta=' + e.etiqueta);
         if (e.publicacion) partes.push('estado=' + e.publicacion);
+        if (e.anime) partes.push('anime=1');
         if (e.espanol) partes.push('es=1');
         if (e.anio) partes.push('anio=' + e.anio);
         if (e.sin && e.sin.length) partes.push('sin=' + e.sin.join(','));
@@ -382,6 +384,7 @@
     const tieneGeneros = (o, generos) => generos.every(g => o.generos.includes(g));
     const tieneEtiqueta = (o, etiqueta) => !etiqueta || etiquetasDe(o).some(e => e.id === etiqueta);
     const cumplePublicacion = (o, publicacion) => !publicacion || o.estado === publicacion;
+    const cumpleAnime = (o, anime) => !anime || o.anime === 1;         // tiene un anime ya estrenado
     const cumpleEspanol = (o, espanol) => !espanol || o.es === 1;      // edición o plataforma oficial en español
     const anioDe = o => o.inicio ? Number(o.inicio.slice(0, 4)) : null;
     const cumpleAnio = (o, anio) => {
@@ -395,7 +398,8 @@
     // Todo lo elegido (sin = el filtro que no se cuenta, para saber cuántas quedarían si lo sumas)
     const cumpleFiltros = (o, sin = '') => cumpleBusqueda(o) && cumpleTipo(o, estado.tipo)
         && (sin === 'generos' || tieneGeneros(o, estado.generos)) && tieneEtiqueta(o, estado.etiqueta)
-        && cumplePublicacion(o, estado.publicacion) && (sin === 'espanol' || cumpleEspanol(o, estado.espanol))
+        && cumplePublicacion(o, estado.publicacion) && (sin === 'anime' || cumpleAnime(o, estado.anime))
+        && (sin === 'espanol' || cumpleEspanol(o, estado.espanol))
         && (sin === 'anio' || cumpleAnio(o, estado.anio)) && sinGeneros(o, estado.sin);
     // Con una búsqueda, primero las obras cuyo nombre empieza con lo escrito; después, el orden elegido
     const porRelevancia = (a, b) => coincidencias ? coincidencias.get(a.id).nivel - coincidencias.get(b.id).nivel : 0;
@@ -508,19 +512,21 @@
         quitarGeneros.hidden = estado.generos.length === 0;
         cuentaGeneros.textContent = estado.generos.length ? `(${estado.generos.length})` : '';
 
-        // Estado de la obra y «En español» (este dice cuántas quedarían, como los géneros)
+        // Estado de la obra, «Con anime» y «En español» (estos dos dicen cuántas quedarían, como los géneros)
         document.querySelectorAll('#filtroPublicacion input').forEach(i => { i.checked = i.value === estado.publicacion; });
-        const botonEspanol = $('filtroEspanol');
-        const cuentaEspanol = $('cuentaEspanol');
-        botonEspanol.setAttribute('aria-pressed', String(estado.espanol));
-        if (estado.espanol){
-            cuentaEspanol.replaceChildren();
-            botonEspanol.disabled = false;
-        } else {
-            const n = obras.filter(o => cumpleFiltros(o, 'espanol') && o.es === 1).length;
-            cuentaEspanol.replaceChildren(crear('span', 'solo-lectores', ', '), String(n), crear('span', 'solo-lectores', n === 1 ? ' obra' : ' obras'));
-            botonEspanol.disabled = n === 0;
-        }
+        const interruptor = (boton, cuenta, activo, cuantas) => {
+            boton.setAttribute('aria-pressed', String(activo));
+            if (activo){
+                cuenta.replaceChildren();
+                boton.disabled = false;
+                return;
+            }
+            const n = cuantas();
+            cuenta.replaceChildren(crear('span', 'solo-lectores', ', '), String(n), crear('span', 'solo-lectores', n === 1 ? ' obra' : ' obras'));
+            boton.disabled = n === 0;
+        };
+        interruptor($('filtroAnime'), $('cuentaAnime'), estado.anime, () => obras.filter(o => cumpleFiltros(o, 'anime') && o.anime === 1).length);
+        interruptor($('filtroEspanol'), $('cuentaEspanol'), estado.espanol, () => obras.filter(o => cumpleFiltros(o, 'espanol') && o.es === 1).length);
 
         const etiqueta = etiquetasConocidas.get(estado.etiqueta);
         $('filtroEtiqueta').hidden = !etiqueta;
@@ -589,7 +595,7 @@
                 li.append(crear('strong', null, `Hay ${sinFiltros} ${sinFiltros === 1 ? 'obra' : 'obras'} con «${estado.q}», pero no con los filtros que elegiste.`),
                     crear('span', null, 'Puedes buscar en todo el catálogo sin borrar lo que escribiste.'));
                 boton.addEventListener('click', () => {
-                    cambiarEstado({ tipo: '', generos: [], etiqueta: '', publicacion: '', espanol: false, anio: '', sin: [] });
+                    cambiarEstado({ tipo: '', generos: [], etiqueta: '', publicacion: '', anime: false, espanol: false, anio: '', sin: [] });
                     $('tituloCatalogo').focus();
                 });
             } else {
@@ -601,13 +607,13 @@
             return li;
         }
         const quien = estado.tipo ? `Ningún ${TIPOS[estado.tipo].toLowerCase()}` : 'Ninguna obra';
-        // Con el estado o «En español» puestos, el aviso habla de todos los filtros
-        if (estado.publicacion || estado.espanol || estado.anio || estado.sin.length){
+        // Con el estado, «Con anime», «En español», el año u ocultos puestos, el aviso habla de todos los filtros
+        if (estado.publicacion || estado.anime || estado.espanol || estado.anio || estado.sin.length){
             li.append(crear('strong', null, `${quien} cumple todos esos filtros.`), crear('span', null, 'Quita alguno de los filtros de arriba o cambia el tipo.'));
             const quitar = crear('button', 'boton-secundario', 'Quitar filtros');
             quitar.type = 'button';
             quitar.addEventListener('click', () => {
-                cambiarEstado({ generos: [], etiqueta: '', publicacion: '', espanol: false, anio: '', sin: [] });
+                cambiarEstado({ generos: [], etiqueta: '', publicacion: '', anime: false, espanol: false, anio: '', sin: [] });
                 $('tituloCatalogo').focus();
             });
             li.append(document.createElement('br'), quitar);
@@ -1296,6 +1302,128 @@
         bloque.hidden = partes.length === 0;
     }
 
+    // ---------- Anime: sus adaptaciones y dónde verlas (las arma scripts/relaciones.mjs) ----------
+    // Cada título lleva a su página de AniList. «Dónde verlo» muestra los servicios que llegan a
+    // Latinoamérica y España; si no está en ninguno, nombra los de otros países (sin enlace).
+    const enlaceAfuera = (texto, url) => {
+        const a = crear('a', null, texto);
+        a.href = url;
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        return a;
+    };
+    function pintarAnime(o, f){
+        const bloque = $('bloqueAnime');
+        const a = (f && !f.fallo && f.anime) || null;
+        const animes = a && Array.isArray(a.obras) ? a.obras.filter(x => x && x.titulo && Number.isInteger(x.anilist)) : [];
+        if (!animes.length){
+            bloque.replaceChildren();
+            bloque.hidden = true;
+            return;
+        }
+        const lista = crear('ul', 'lista-anime');
+        lista.append(...animes.map(x => {
+            const li = document.createElement('li');
+            li.append(enlaceAfuera(x.titulo, `https://anilist.co/anime/${x.anilist}`));
+            const datos = [x.formato, x.anio, x.episodios && `${formatoNumero.format(x.episodios)} episodios`, x.estado].filter(Boolean);
+            if (datos.length) li.append(' ', crear('span', 'anime-datos', datos.join(' · ')));
+            return li;
+        }));
+        const partes = [crear('h3', null, 'Anime'), lista];
+        if (a.mas > 0){
+            const mas = crear('p', 'nota-ficha');
+            mas.append(enlaceAfuera(`y ${a.mas} más en AniList`, `https://anilist.co/manga/${o.ids.anilist}`));
+            partes.push(mas);
+        }
+        // Dónde verlo: solo si ya se estrenó alguna (las que están por estrenar no tienen dónde)
+        const ver = Array.isArray(a.ver) ? a.ver.filter(s => s && s.sitio && /^https:\/\//.test(s.url || '')) : [];
+        const otros = Array.isArray(a.otros) ? a.otros.filter(Boolean) : [];
+        if (ver.length || otros.length || animes.some(x => x.estado !== 'por estrenar')){
+            const grupo = crear('div', 'grupo-lectura');
+            grupo.append(crear('h4', null, 'Dónde verlo'));
+            if (ver.length){
+                const sitios = crear('ul', 'donde-leer');
+                sitios.append(...ver.map(s => {
+                    const li = document.createElement('li');
+                    li.append(enlaceAfuera(s.sitio, s.url));
+                    return li;
+                }));
+                grupo.append(sitios, crear('p', 'nota-ficha', 'Según AniList. Lo que tiene cada servicio cambia según el país.'));
+            } else if (otros.length){
+                grupo.append(crear('p', 'sin-enlaces', `No lo encontramos en servicios que lleguen a Latinoamérica o España. AniList lo ubica en ${enumerar(otros)}.`));
+            } else {
+                grupo.append(crear('p', 'sin-enlaces', 'No encontramos dónde verlo oficialmente.'));
+            }
+            partes.push(grupo);
+        }
+        bloque.replaceChildren(...partes);
+        bloque.hidden = false;
+    }
+
+    // ---------- Orden de lectura: precuelas y secuelas en orden, e historias relacionadas ----------
+    // Las del catálogo abren su ficha; las demás, su página de AniList (como «Si te gustó…»).
+    // La obra que estás viendo va en su lugar, marcada con «Estás aquí».
+    function miniRelacionada(n, { aqui = false, paso = 0, relacion = '' } = {}){
+        const propia = porAniList.get(n.anilist);
+        const li = document.createElement('li');
+        const el = crear(aqui ? 'div' : 'a', aqui ? 'mini-obra aqui' : 'mini-obra');
+        const portada = crear('span', 'mini-portada');
+        const texto = crear('span', 'mini-texto');
+        const datos = crear('span', 'mini-datos');
+        if (propia){
+            if (!aqui){
+                el.href = hashObra(propia.id);
+                el.dataset.obra = propia.id;
+            }
+            colorDePlaca(portada, propia);
+            portada.append(imagenPortada(propia, '46px'));
+        } else {
+            el.href = `https://anilist.co/manga/${n.anilist}`;
+            el.target = '_blank';
+            el.rel = 'noopener noreferrer';
+            if (n.portada) portada.append(imagenPortada({ portada: n.portada }, '46px'));
+        }
+        if (paso) portada.append(crear('span', 'paso', String(paso)));
+        const anio = propia ? (propia.inicio || '').slice(0, 4) : (n.anio ? String(n.anio) : '');
+        datos.append(etiquetaTipo(propia ? propia.tipo : (TIPOS[n.tipo] ? n.tipo : 'manga')));
+        if (anio) datos.append(crear('span', null, anio));
+        if (n.formato === 'one-shot') datos.append(crear('span', null, 'one-shot'));
+        if (relacion) datos.append(crear('span', null, relacion));
+        if (aqui) datos.append(crear('span', 'aqui-texto', 'Estás aquí'));
+        else if (!propia) datos.append(crear('span', 'fuera', 'en AniList'));
+        texto.append(crear('span', 'mini-titulo', propia ? propia.titulo : n.titulo), datos);
+        el.append(portada, texto);
+        li.append(el);
+        return li;
+    }
+
+    function pintarLectura(o, f){
+        const bloque = $('bloqueLectura');
+        const l = (f && !f.fallo && f.lectura) || null;
+        const valida = n => n && Number.isInteger(n.anilist) && (porAniList.has(n.anilist) || n.titulo);
+        const orden = l && Array.isArray(l.orden) ? l.orden.filter(valida) : [];
+        const relacionadas = l && Array.isArray(l.relacionadas) ? l.relacionadas.filter(valida) : [];
+        const partes = [];
+        if (orden.length >= 2 && orden.some(n => n.anilist === o.ids.anilist)){
+            const lista = crear('ol', 'recomendadas orden-lectura');
+            lista.setAttribute('role', 'list');      // Safari no la anuncia como lista sin viñetas
+            lista.append(...orden.map((n, i) => miniRelacionada(n, { aqui: n.anilist === o.ids.anilist, paso: i + 1 })));
+            partes.push(crear('h3', null, 'Orden de lectura'), lista);
+        }
+        if (relacionadas.length){
+            const lista = crear('ul', 'recomendadas');
+            lista.append(...relacionadas.map(n => miniRelacionada(n, { relacion: n.relacion })));
+            partes.push(crear('h3', null, 'Historias relacionadas'), lista);
+            if (l.masRelacionadas > 0){
+                const mas = crear('p', 'nota-ficha');
+                mas.append(enlaceAfuera(`y ${l.masRelacionadas} más en AniList`, `https://anilist.co/manga/${o.ids.anilist}`));
+                partes.push(mas);
+            }
+        }
+        bloque.replaceChildren(...partes);
+        bloque.hidden = partes.length === 0;
+    }
+
     // ---------- Compartir una obra ----------
     // En el celular abre el menú de compartir del sistema; en el PC copia el enlace y lo avisa.
     // El enlace es el de la obra sola (sin los filtros que tengas puestos).
@@ -1471,6 +1599,8 @@
         pintarDatos(o, null);
         pintarComunidad(o, null);
         pintarDondeLeer(o, null);
+        pintarAnime(o, null);
+        pintarLectura(o, null);
         pintarMismoAutor(o, null);
         pintarRecomendadas(o, null);
         avisarCompartir('');
@@ -1495,6 +1625,8 @@
         pintarDatos(o, f.fallo ? null : f);
         pintarComunidad(o, f);
         pintarDondeLeer(o, f);
+        pintarAnime(o, f);
+        pintarLectura(o, f);
         pintarMismoAutor(o, f);
         pintarRecomendadas(o, f);
     }
@@ -1676,12 +1808,14 @@
     $('listaPopulares').addEventListener('click', alTocarObra);
     $('fichaRecomendadas').addEventListener('click', alTocarObra);
     $('bloqueMismoAutor').addEventListener('click', alTocarObra);
+    $('bloqueLectura').addEventListener('click', alTocarObra);
     $('quitarEtiqueta').addEventListener('click', quitarEtiqueta);
 
     // ---------- Controles ----------
     $('filtroPublicacion').addEventListener('change', e => {
         if (e.target.name === 'publicacion') cambiarEstado({ publicacion: e.target.value });
     });
+    $('filtroAnime').addEventListener('click', () => cambiarEstado({ anime: !estado.anime }));
     $('filtroEspanol').addEventListener('click', () => cambiarEstado({ espanol: !estado.espanol }));
     $('filtroAnio').addEventListener('change', e => cambiarEstado({ anio: e.target.value }));
     listaOcultar.addEventListener('change', () => {

@@ -383,7 +383,7 @@ export function prepararEtiquetas(tags){
    Solo manga, manhwa y manhua (no novelas ni obras para adultos), con 3 votos o más. */
 export const MAX_RECOMENDACIONES = 6;
 export const MIN_VOTOS_RECOMENDACION = 3;
-const TIPO_POR_PAIS = { JP: 'manga', KR: 'manhwa', CN: 'manhua', TW: 'manhua', HK: 'manhua' };
+export const TIPO_POR_PAIS = { JP: 'manga', KR: 'manhwa', CN: 'manhua', TW: 'manhua', HK: 'manhua' };
 
 export function prepararRecomendaciones(nodos){
     const vistas = new Set();
