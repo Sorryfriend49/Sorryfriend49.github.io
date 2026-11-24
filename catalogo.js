@@ -1598,7 +1598,12 @@
 
     // ---------- Compartir una obra ----------
     // En el celular abre el menú de compartir del sistema; en el PC copia el enlace y lo avisa.
-    // El enlace es el de la obra sola (sin los filtros que tengas puestos).
+    // El enlace es el de la página propia de la obra (obra/<id>/, la arma scripts/paginas.mjs):
+    // al compartirlo en WhatsApp o Discord salen su portada y su título.
+    const ID_PAGINA = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+    const enlaceObra = o => ID_PAGINA.test(o.id)
+        ? new URL(`/obra/${o.id}/`, location.origin).href
+        : new URL(`${location.pathname}#catalogo?obra=${encodeURIComponent(o.id)}`, location.origin).href;
     let temporizadorCompartir = null;
     function avisarCompartir(texto){
         const aviso = $('avisoCompartir');
@@ -1609,7 +1614,7 @@
     $('fichaCompartir').addEventListener('click', async () => {
         const o = porId.get(fichaAbierta);
         if (!o) return;
-        const url = new URL(`${location.pathname}#catalogo?obra=${encodeURIComponent(o.id)}`, location.origin).href;
+        const url = enlaceObra(o);
         if (navigator.share && window.matchMedia('(pointer: coarse)').matches){
             try {
                 await navigator.share({ title: `${o.titulo} | Frozen Project`, url });

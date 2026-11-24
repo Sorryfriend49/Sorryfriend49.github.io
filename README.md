@@ -20,6 +20,7 @@ Es un proyecto personal, gratis y sin fines comerciales: no tiene publicidad ni 
 - **Ver qué está de moda:** lo más popular de hoy, de la semana y del mes, y las obras más recientes en salir.
 - **Armar tu biblioteca:** marca obras como Leyendo, Por leer, Leído, En pausa, Abandonado o Favorito. Funciona sin cuenta (se guarda en tu navegador) y, si entras con Google o Discord, se sincroniza en todos tus dispositivos. También puedes traer tu lista de AniList o MyAnimeList.
 - **Recibir recomendaciones para ti:** con tus favoritas y lo que leíste, el Inicio te muestra obras de la misma historia, del mismo autor, las que recomiendan los lectores de AniList y las parecidas. Se calcula en tu navegador.
+- **Compartir una obra:** cada una tiene su propia página (por ejemplo, [frozen-project.vercel.app/obra/berserk/](https://frozen-project.vercel.app/obra/berserk/)). Al mandarla por WhatsApp o Discord salen su portada y su título, y Google la puede encontrar.
 
 ## Cómo funciona
 
@@ -27,7 +28,7 @@ La página es un sitio estático (HTML, CSS y JavaScript, sin frameworks ni paso
 
 | Tarea | Cuándo | Qué hace |
 |---|---|---|
-| `comunidad.yml` | De lunes a viernes, 4:17 a. m. | Trae el catálogo de AniList (con el orden de lectura y el anime), suma hasta 20 obras nuevas, calcula lo que opina la comunidad, escribe los resúmenes y arma la lista y las fichas |
+| `comunidad.yml` | De lunes a viernes, 4:17 a. m. | Trae el catálogo de AniList (con el orden de lectura y el anime), suma hasta 20 obras nuevas, calcula lo que opina la comunidad, escribe los resúmenes y arma la lista, las fichas, la página de cada obra y el mapa del sitio |
 | `populares.yml` | Todos los días, 5:41 a. m. y 5:41 p. m. | Actualiza la popularidad y la actividad de cada obra |
 | `mantener-supabase.yml` | Todos los días, 9:23 a. m. | Evita que la base de datos gratuita se pause |
 | `medir-gemma.yml` | A mano | Mide qué tan rápido se escriben los resúmenes |
@@ -46,6 +47,7 @@ Cada cálculo se explica con detalle en [Sobre el sitio](https://frozen-project.
 | `index.html`, `styles.css` | La página y su diseño |
 | `sitio.js` | La navegación entre secciones |
 | `catalogo.js` | El Inicio, el catálogo y la ficha de cada obra |
+| `obra/`, `obra.js`, `sitemap.xml` | La página propia de cada obra (para compartirla y para Google) y el mapa del sitio; las genera `scripts/paginas.mjs`, no se editan a mano |
 | `biblioteca.js`, `importar.js`, `cuenta.js` | Mi biblioteca, importar listas y la cuenta |
 | `catalogo.json` | La lista de obras; se puede editar a mano (ver abajo) |
 | `obras.json`, `datos/` | Lo que generan las tareas; no se editan a mano |

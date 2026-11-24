@@ -233,7 +233,8 @@ nav{
 }
 
 .panel h2,
-.ficha h2{
+.ficha h2,
+.ficha-pagina h1{
     font-family: 'Baloo 2', sans-serif;
     font-weight: 800;
     line-height: 1.1;
@@ -1729,7 +1730,8 @@ header{
     grid-area: detalles;
 }
 
-.ficha h2{
+.ficha h2,
+.ficha-pagina h1{
     font-size: clamp(26px, 3.4vw, 34px);
 }
 
@@ -1746,7 +1748,8 @@ header{
     margin-top: 12px;
 }
 
-.ficha dl{
+.ficha dl,
+.ficha-pagina dl{
     display: grid;
     grid-template-columns: max-content minmax(0, 1fr);
     gap: 6px 18px;
@@ -1754,20 +1757,24 @@ header{
     font-size: 15px;
 }
 
-.ficha dt{
+.ficha dt,
+.ficha-pagina dt{
     color: var(--texto-suave);
 }
 
 /* "Creado por": el nombre entero en una línea; lo que hizo, más suave */
-.ficha .autor{
+.ficha .autor,
+.ficha-pagina .autor{
     white-space: nowrap;
 }
 
-.ficha .autor-rol{
+.ficha .autor-rol,
+.ficha-pagina .autor-rol{
     color: var(--texto-suave);
 }
 
-.ficha h3{
+.ficha h3,
+.ficha-pagina h2{
     margin-top: 24px;
     font-family: 'Baloo 2', sans-serif;
     font-size: 19px;
@@ -2133,7 +2140,8 @@ header{
     margin-top: 14px;
 }
 
-.grupo-lectura h4{
+.grupo-lectura h4,
+.grupo-lectura h3{
     font-size: 13px;
     font-weight: 600;
     color: var(--texto-suave);
@@ -2182,6 +2190,57 @@ header{
 
 .ficha-fuente a{
     color: var(--cristal);
+}
+
+/* ===================================
+   PÁGINA DE UNA OBRA (obra/<id>/, la arma scripts/paginas.mjs)
+   La misma ficha, como página propia: así se comparte con su portada y su título
+=================================== */
+/* El nombre del sitio, igual que en las demás páginas (aquí el título principal es el de la obra) */
+.titulo-sitio{
+    font-size: 2em;
+}
+
+/* De fondo, un brillo suave del color de la portada */
+.fondo-obra{
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: radial-gradient(ellipse 85% 60% at 50% 0%, var(--color-obra, rgba(60, 106, 158, 0.22)), transparent 72%);
+}
+
+.ficha-pagina{
+    width: min(860px, calc(100% - 32px));
+    margin: 28px auto 56px;
+    border: 1px solid var(--vidrio-borde);
+    border-radius: 22px;
+    background: #06111d;
+    color: var(--texto-claro);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.6);
+}
+
+/* Sin botón de cerrar, el título usa todo el ancho */
+.ficha-pagina .ficha-cabecera{
+    padding-right: 0;
+}
+
+/* Guardar y Compartir van debajo del título (en el celular, a lo ancho bajo la portada) */
+.ficha-pagina .ficha-cuerpo{
+    grid-template-areas:
+        "portada cabecera"
+        "portada acciones"
+        "portada detalles";
+}
+
+.ficha-pagina .ficha-acciones{
+    grid-area: acciones;
+}
+
+.ficha-pagina .ficha-acciones .boton-principal{
+    min-height: 40px;
+    padding: 0 20px;
+    font-size: 16px;
 }
 
 /* ===================================
@@ -2347,7 +2406,8 @@ header{
         animation: none;
     }
 
-    header h1{
+    header h1,
+    header .titulo-sitio{
         font-size: clamp(22px, 7vw, 30px);
         letter-spacing: 1px;
     }
@@ -2654,12 +2714,36 @@ header{
         padding-right: 40px;
     }
 
-    .ficha h2{
+    .ficha h2,
+    .ficha-pagina h1{
         font-size: 24px;
     }
 
-    .ficha dl{
+    .ficha dl,
+    .ficha-pagina dl{
         font-size: 14px;
+    }
+
+    .ficha-pagina{
+        width: calc(100% - 24px);
+        margin: 16px auto 32px;
+        border-radius: 20px;
+    }
+
+    .ficha-pagina .ficha-cuerpo{
+        grid-template-areas:
+            "portada cabecera"
+            "acciones acciones"
+            "detalles detalles";
+    }
+
+    .ficha-pagina .ficha-acciones{
+        margin-top: 16px;
+    }
+
+    .ficha-pagina .ficha-acciones .boton-principal{
+        flex: 1 1 100%;
+        min-height: 44px;
     }
 
     .ficha-cerrar{

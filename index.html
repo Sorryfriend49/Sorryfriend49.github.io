@@ -95,8 +95,10 @@
     </script>
 
     <!-- El ?v= obliga a los navegadores a bajar la versión nueva tras cada cambio.
-         Si editas styles.css, sitio.js, biblioteca.js, catalogo.js o cuenta.js, sube ese número (v=3, v=4...). -->
-    <link rel="stylesheet" href="styles.css?v=21">
+         Si editas styles.css, sitio.js, biblioteca.js, catalogo.js o cuenta.js, sube ese número (v=3, v=4...).
+         Las páginas de cada obra (obra/<id>/) usan el mismo número de styles.css: se ponen al día
+         solas con la tarea de lunes a viernes, o al momento con node scripts/paginas.mjs. -->
+    <link rel="stylesheet" href="styles.css?v=22">
 </head>
 
 <body>
@@ -377,6 +379,9 @@
                 <p>“Mi biblioteca” funciona sin cuenta: se guarda en tu navegador y nadie más la ve. Si quieres tenerla en todos tus dispositivos, entra con Google o Discord (botón “Entrar”, arriba): se guarda también en tu cuenta y se sincroniza sola. Entrar es opcional y gratis; solo se guarda tu nombre, tu correo, tu foto de perfil y tu biblioteca, y puedes borrar tu cuenta cuando quieras. Más detalles en la <a href="privacidad.html">política de privacidad</a> y los <a href="terminos.html">términos</a>.</p>
                 <p>Si tienes favoritas u obras leídas o que estás leyendo, en Inicio aparece «Para ti»: obras de la misma historia, del mismo autor, las que recomiendan los lectores de AniList y las parecidas por etiquetas y géneros, primero las mejor valoradas. Se calcula en tu navegador con lo que ya tienes guardado, y nunca te recomienda una obra que ya está en tu biblioteca.</p>
 
+                <h3>Compartir una obra</h3>
+                <p>Cada obra tiene su propia página, y el botón “Compartir” de su ficha da ese enlace: al mandarlo por WhatsApp o Discord se ven su portada y su título, y Google la puede encontrar. Muestra lo mismo que la ficha, salvo los números que cambian cada día, y “Guardar en mi biblioteca” abre su ficha aquí.</p>
+
                 <h3>Créditos</h3>
                 <p>Datos: AniList, MyAnimeList, Kitsu y MangaUpdates. Portadas: AniList. Modelo de sentimiento: BERT multilingüe de NLP Town (licencia MIT). Resúmenes: Gemma 4 de Google (licencia Apache 2.0). Fondo animado: Blind Angel, de MoeWalls.</p>
             </div>
@@ -399,7 +404,7 @@
                 <h2 id="fichaTitulo"></h2>
                 <p class="otros-titulos" id="fichaOtrosTitulos"></p>
                 <div class="etiquetas" id="fichaEtiquetas"></div>
-                <!-- Compartir: en el celular abre su menú; en el PC copia el enlace de la obra -->
+                <!-- Compartir: en el celular abre su menú; en el PC copia el enlace de la página de la obra (obra/<id>/) -->
                 <div class="ficha-acciones">
                     <button class="chip" id="fichaCompartir" type="button">
                         <svg class="chip-icono" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="18" cy="5.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="6" cy="12" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="18.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.2 10.8l7.6-4.1M8.2 13.2l7.6 4.1" fill="none" stroke="currentColor" stroke-width="2"/></svg>
@@ -494,7 +499,7 @@
 
     <script src="sitio.js?v=5" defer></script>
     <script src="biblioteca.js?v=4" defer></script>
-    <script src="catalogo.js?v=22" defer></script>
+    <script src="catalogo.js?v=23" defer></script>
     <script src="cuenta.js?v=3" defer></script>
     <script src="importar.js?v=2" defer></script>
 

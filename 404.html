@@ -55,7 +55,8 @@
             padding: 10px 22px;
             border-radius: 999px;
             border: 1px solid rgba(230, 242, 248, 0.4);
-            background: linear-gradient(90deg, #24507d, #7cb3ea);
+            /* Los mismos azules que los botones del sitio: el texto claro se lee bien (4,9:1) */
+            background: linear-gradient(90deg, #24507d, #3c6a9e);
             color: #e6f2f8;
             font-weight: 700;
             text-decoration: none;
@@ -66,9 +67,27 @@
 <body>
     <main>
         <h1>Frozen Project</h1>
-        <p>Esta página no existe.</p>
-        <a href="/">Volver al inicio</a>
+        <p id="mensaje">Esta página no existe.</p>
+        <a id="volver" href="/">Volver al inicio</a>
     </main>
+
+    <!-- PÁGINAS DE OBRAS (obra/<id>/): si la dirección llegó sin la barra del final o con
+         mayúsculas, se corrige; si la obra ya no está en el catálogo, se ofrece buscarla por su nombre. -->
+    <script>
+        (function () {
+            var obra = location.pathname.match(/^\/obra\/([a-z0-9-]+)(\/?)$/i);
+            if (!obra) return;
+            var id = obra[1].toLowerCase();
+            if (!obra[2] || id !== obra[1]) {
+                location.replace('/obra/' + id + '/' + location.search + location.hash);
+                return;
+            }
+            document.getElementById('mensaje').textContent = 'Esta obra ya no está en el catálogo.';
+            var volver = document.getElementById('volver');
+            volver.href = '/#catalogo?q=' + encodeURIComponent(id.replace(/-/g, ' '));
+            volver.textContent = 'Buscarla en el catálogo';
+        })();
+    </script>
 </body>
 
 </html>

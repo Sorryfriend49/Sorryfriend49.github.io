@@ -11,6 +11,7 @@
    Una ficha solo se vuelve a escribir cuando cambia algo de verdad (por ejemplo, cuando la
    obra se renueva por completo), no por los números de AniList que cambian cada día: esos
    van en la lista. Así el repositorio no se llena de cambios.
+   Al terminar, arma la página propia de cada obra y el mapa del sitio (scripts/paginas.mjs).
    Lo corre la tarea de la comunidad (.github/workflows/comunidad.yml) después de los datos
    y después de los resúmenes. Para probarlo en tu PC: node scripts/lista.mjs
 =================================== */
@@ -213,10 +214,11 @@ export async function escribirLista({ raiz, registro = console.log } = {}){
     return { lista, escritas, iguales, borradas };
 }
 
-// node scripts/lista.mjs
+// node scripts/lista.mjs (y después, la página de cada obra y el mapa del sitio: scripts/paginas.mjs)
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href){
     const raiz = join(dirname(fileURLToPath(import.meta.url)), '..');
-    escribirLista({ raiz }).catch(error => {
+    const { escribirPaginas } = await import('./paginas.mjs');
+    escribirLista({ raiz }).then(() => escribirPaginas({ raiz })).catch(error => {
         console.error('Error:', error.message);
         process.exit(1);
     });
