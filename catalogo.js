@@ -677,6 +677,11 @@
     ];
     const NUEVAS = { clave: 'nuevas', boton: 'Nuevas', titulo: 'Las más recientes en salir', nuevas: true };
     const CUANTAS_NUEVAS = 6;
+    // «Para ti»: va primero si tienes favoritas u obras leídas o que estás leyendo (ver calcularParaTi)
+    const PARA_TI = { clave: 'para-ti', boton: 'Para ti', titulo: 'Para ti, según tu biblioteca', paraTi: true };
+    const CUANTAS_PARA_TI = 6;
+    const MIN_PARA_TI = 3;          // con menos, la pestaña no aparece
+    const POR_SEMILLA = 3;          // si tienes varias obras, como mucho 3 recomendaciones por la misma
     let PERIODOS_POP = PERIODOS_BASE;
     const INTERVALO_POP = 9500;
     const POR_TIPO_POP = 2;
@@ -720,8 +725,79 @@
             .slice(0, CUANTAS_NUEVAS);
     }
 
+    /* ---------- «Para ti»: recomendaciones según tu biblioteca ----------
+       Se calcula en este navegador con tus favoritas y lo que leíste o estás leyendo (nada sale de
+       aquí). Suman puntos las obras de la misma historia, las del mismo autor y las que recomiendan
+       los lectores de AniList (esas pistas vienen en la lista, en «rel»), y las parecidas por
+       etiquetas y géneros. Pesan más las bien valoradas y las del tipo que más lees. Nunca salen
+       obras que ya están en tu biblioteca, con la etiqueta que sea. */
+    let recomendadasParaTi = [];
+    const pesoSemilla = e => e.favorito ? 3 : e.estado === 'leido' ? 2 : e.estado === 'leyendo' ? 1.5 : 0;
+    // Qué tanto se parecen dos listas (de 0 a 1): las que comparten entre todas las que tienen
+    function parecido(conjunto, lista){
+        if (!conjunto.size || !lista.length) return 0;
+        const comunes = lista.filter(x => conjunto.has(x)).length;
+        return comunes / (conjunto.size + lista.length - comunes);
+    }
+    function motivoParaTi({ s, por }){
+        const t = s.o.titulo;
+        if (por === 'historia') return `De la misma historia que ${t}`;
+        if (por === 'autor') return `Del mismo autor que ${t}`;
+        if (por === 'parecida') return `Parecida a ${t}`;
+        return s.e.favorito ? `Porque te gustó ${t}` : s.e.estado === 'leido' ? `Porque leíste ${t}` : `Porque estás leyendo ${t}`;
+    }
+    function calcularParaTi(){
+        if (!Biblioteca || !obras.length) return [];
+        const biblioteca = Biblioteca.todas();
+        const enBiblioteca = new Set(biblioteca.map(([id]) => id));
+        const semillas = biblioteca.map(([id, e]) => ({ o: porId.get(id), e, peso: pesoSemilla(e) })).filter(s => s.o && s.peso > 0);
+        if (!semillas.length) return [];
+        const total = semillas.reduce((t, s) => t + s.peso, 0);
+        const tipos = {};
+        semillas.forEach(s => { tipos[s.o.tipo] = (tipos[s.o.tipo] || 0) + s.peso / total; });
+        const candidatas = new Map();
+        const sumar = (o, s, puntos, por) => {
+            if (!o || enBiblioteca.has(o.id) || !(puntos > 0)) return;
+            if (!candidatas.has(o.id)) candidatas.set(o.id, { o, puntos: 0, mejor: null });
+            const c = candidatas.get(o.id);
+            c.puntos += puntos;
+            if (!c.mejor || puntos > c.mejor.puntos) c.mejor = { s, por, puntos };
+        };
+        for (const s of semillas){
+            const rel = s.o.rel || {};
+            (rel.h || []).forEach(id => sumar(porAniList.get(id), s, s.peso * 3, 'historia'));
+            (rel.a || []).forEach(id => sumar(porAniList.get(id), s, s.peso * 1.5, 'autor'));
+            (rel.r || []).forEach((id, i) => sumar(porAniList.get(id), s, s.peso * Math.max(1, 2 - i * 0.2), 'lectores'));
+            const etiquetas = new Set(op(s.o).etiquetas || []);
+            const generos = new Set(s.o.generos);
+            for (const o of obras){
+                if (o === s.o) continue;
+                const p = 0.6 * parecido(etiquetas, op(o).etiquetas || []) + 0.4 * parecido(generos, o.generos);
+                if (p >= 0.3) sumar(o, s, s.peso * 1.2 * p, 'parecida');
+            }
+        }
+        const calidad = o => { const p = puntaje(o); return p == null ? 0.75 : 0.6 + 0.4 * Math.min(1, Math.max(0, (p - 60) / 25)); };
+        const ordenadas = [...candidatas.values()]
+            .map(c => ({ ...c, final: c.puntos * calidad(c.o) * (0.9 + 0.2 * (tipos[c.o.tipo] || 0)) }))
+            .sort((a, b) => b.final - a.final || popularidad(b.o) - popularidad(a.o));
+        // Que no salgan todas por la misma obra; si no alcanza, se completa con las que quedaron fuera
+        const elegidas = [];
+        const apartadas = [];
+        const porSemilla = new Map();
+        for (const c of ordenadas){
+            if (elegidas.length === CUANTAS_PARA_TI) break;
+            const n = porSemilla.get(c.mejor.s.o.id) || 0;
+            if (semillas.length > 1 && n >= POR_SEMILLA){ apartadas.push(c); continue; }
+            porSemilla.set(c.mejor.s.o.id, n + 1);
+            elegidas.push(c);
+        }
+        elegidas.push(...apartadas.slice(0, CUANTAS_PARA_TI - elegidas.length));
+        return elegidas.map(c => ({ o: c.o, motivo: motivoParaTi(c.mejor) }));
+    }
+
     // Las obras de un periodo: 2 por tipo; si faltan, se completa con las más populares de siempre
     function elegidasPop(periodo){
+        if (periodo && periodo.paraTi) return recomendadasParaTi.map(({ o, motivo }) => ({ o, nuevos: null, motivo }));
         if (periodo && periodo.nuevas) return recientes().map(o => ({ o, nuevos: null }));
         return Object.keys(TIPOS).flatMap(tipo => {
             const lista = ((populares && periodo && populares.periodos[periodo.clave] && populares.periodos[periodo.clave][tipo]) || [])
@@ -736,7 +812,7 @@
         });
     }
 
-    function itemPopular({ o, nuevos }, periodo){
+    function itemPopular({ o, nuevos, motivo }, periodo){
         const li = document.createElement('li');
         const a = crear('a', 'mini-obra');
         a.href = hashCatalogo({ tipo: '', generos: [], orden: ORDEN_INICIAL }, o.id);
@@ -746,6 +822,16 @@
         portada.append(imagenPortada(o, TAMANOS_MINI));
         const texto = crear('span', 'mini-texto');
         const datos = crear('span', 'mini-datos');
+        if (motivo){
+            // Por qué se recomienda («Porque te gustó …»); si no cabe, se lee entero al pasar el mouse
+            const porQue = crear('span', 'lectores motivo', motivo);
+            porQue.title = motivo;
+            datos.append(etiquetaTipo(o.tipo), porQue);
+            texto.append(crear('span', 'mini-titulo', o.titulo), datos);
+            a.append(portada, texto);
+            li.append(a);
+            return li;
+        }
         const cifra = periodo && periodo.nuevas ? textoSalida(o.inicio)
             : periodo && nuevos > 0
                 ? `+${formatoLectores.format(nuevos)} ${nuevos === 1 ? 'lector' : 'lectores'} ${periodo.cuando}`
@@ -895,15 +981,40 @@
         });
     }
 
+    // Qué pestañas hay: «Para ti» (si tienes con qué), hoy, la semana, el mes y «Nuevas» (si hay)
+    function armarPeriodos(){
+        recomendadasParaTi = calcularParaTi();
+        const paraTi = recomendadasParaTi.length >= MIN_PARA_TI;
+        PERIODOS_POP = [...(paraTi ? [PARA_TI] : []), ...PERIODOS_BASE, ...(recientes().length ? [NUEVAS] : [])];
+        const fila = $('periodosPopulares');
+        fila.querySelector('[data-periodo="nuevas"]').hidden = !PERIODOS_POP.includes(NUEVAS);
+        fila.querySelector('[data-periodo="para-ti"]').hidden = !paraTi;
+        fila.classList.toggle('cinco', PERIODOS_POP.length >= 5);     // más juntas, para que quepan en una fila
+    }
+
     function pintarPopulares(datosPopulares){
         populares = datosPopulares;
         if (!obras.length) return;
-        PERIODOS_POP = recientes().length ? [...PERIODOS_BASE, NUEVAS] : PERIODOS_BASE;
-        $('periodosPopulares').querySelector('[data-periodo="nuevas"]').hidden = !PERIODOS_POP.includes(NUEVAS);
+        armarPeriodos();
         if (populares) prepararRotacion();
         mostrarPeriodo(0);
         panelPop.hidden = false;
     }
+
+    // Si cambia tu biblioteca (aquí, en otra pestaña o desde tu cuenta), «Para ti» se rehace. Si la
+    // estás viendo, se pinta al día; si la pestaña aparece o desaparece, las demás siguen donde iban.
+    if (Biblioteca) Biblioteca.alCambiar(() => {
+        if (!obras.length || panelPop.hidden) return;
+        const actual = populares ? PERIODOS_POP[periodoPop] : null;
+        const firma = () => recomendadasParaTi.map(x => x.o.id + '|' + x.motivo).join('\n');
+        const antes = firma();
+        armarPeriodos();
+        if (!populares) return;
+        const i = actual ? PERIODOS_POP.findIndex(p => p.clave === actual.clave) : 0;
+        if (i === -1) mostrarPeriodo(0);
+        else if (actual.paraTi && firma() !== antes) mostrarPeriodo(i);
+        else periodoPop = i;
+    });
 
     function pintarFechaDatos(fecha){
         let texto = fecha ? `Catálogo con datos de AniList del ${textoFecha(fecha)}.` : 'Catálogo con datos de AniList.';

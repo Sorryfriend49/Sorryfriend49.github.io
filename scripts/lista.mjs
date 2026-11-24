@@ -65,6 +65,23 @@ export function indiceDeAutores(catalogo, porAniList = {}){
     };
 }
 
+/* «Para ti» (Inicio): las otras obras del catálogo relacionadas con una, por su número de AniList.
+   h: de la misma historia (orden de lectura e historias relacionadas), a: de los mismos autores,
+   r: las que recomiendan los lectores de AniList, en su orden. La página junta estas pistas con tu
+   biblioteca, en tu navegador, para recomendarte obras. Devuelve null si no hay ninguna. */
+export function relacionadasDe(o, { enCatalogo, anilistDe, grupos = [], recomendaciones = [] }){
+    const propio = o && o.ids && o.ids.anilist;
+    const solo = ids => [...new Set(ids)].filter(id => Number.isInteger(id) && id !== propio && enCatalogo.has(id));
+    const lectura = (o && o.lectura) || {};
+    const rel = {
+        h: solo([...(lectura.orden || []), ...(lectura.relacionadas || [])].map(n => n && n.anilist)),
+        a: solo(grupos.flatMap(g => (g && g.obras) || []).map(id => anilistDe.get(id))),
+        r: solo((recomendaciones || []).map(x => x && x.anilist))
+    };
+    const conAlgo = sinVacios(rel);
+    return Object.keys(conAlgo).length ? conAlgo : null;
+}
+
 /* La lista y las fichas, sin tocar archivos.
    catalogo: obras.json; comunidad: datos/comunidad.json (puede faltar o no tener alguna obra). */
 export function armarLista(catalogo, comunidad){
@@ -73,9 +90,13 @@ export function armarLista(catalogo, comunidad){
     const obras = [];
     const fichas = new Map();
     const masDelAutor = indiceDeAutores(catalogo, porAniList);
+    const delCatalogo = ((catalogo && catalogo.obras) || []).filter(o => o && o.id && o.ids && Number.isInteger(o.ids.anilist));
+    const enCatalogo = new Set(delCatalogo.map(o => o.ids.anilist));
+    const anilistDe = new Map(delCatalogo.map(o => [o.id, o.ids.anilist]));
     for (const o of (catalogo && catalogo.obras) || []){
         if (!o || !o.id || !o.titulo) continue;
         const c = porAniList[String(o.ids && o.ids.anilist)] || null;
+        const grupos = masDelAutor(o);
         const anilist = (o.comunidad && o.comunidad.anilist) || {};
         const deLaObra = (c && Array.isArray(c.etiquetas)) ? c.etiquetas : [];
         deLaObra.forEach(e => { if (e && e.id && !etiquetas[e.id]) etiquetas[e.id] = sinVacios({ nombre: e.nombre, en: e.en ? true : null }); });
@@ -109,13 +130,15 @@ export function armarLista(catalogo, comunidad){
                 leyendo: actividad.leyendo || null,
                 tendencia: c && c.tendencia && Number.isFinite(c.tendencia.lectores) ? [c.tendencia.lectores, c.tendencia.dias || 7] : null,
                 etiquetas: deLaObra.map(e => e.id).filter(Boolean)
-            })
+            }),
+            // Pistas para «Para ti» en Inicio (ver relacionadasDe)
+            rel: relacionadasDe(o, { enCatalogo, anilistDe, grupos, recomendaciones: c && c.recomendaciones })
         }), generos: Array.isArray(o.generos) ? o.generos : [] });
         // Lo que se baja al abrir la ficha
         fichas.set(o.id, sinVacios({
             id: o.id,
             autores: o.autores,
-            masDelAutor: masDelAutor(o),
+            masDelAutor: grupos,
             fin: o.fin,
             capitulos: o.capitulos,
             tomos: o.tomos,

@@ -19,6 +19,7 @@ Es un proyecto personal, gratis y sin fines comerciales: no tiene publicidad ni 
 - **Saber si tiene anime:** sus adaptaciones y dónde verlas oficialmente, primero en los servicios que llegan a Latinoamérica y España.
 - **Ver qué está de moda:** lo más popular de hoy, de la semana y del mes, y las obras más recientes en salir.
 - **Armar tu biblioteca:** marca obras como Leyendo, Por leer, Leído, En pausa, Abandonado o Favorito. Funciona sin cuenta (se guarda en tu navegador) y, si entras con Google o Discord, se sincroniza en todos tus dispositivos. También puedes traer tu lista de AniList o MyAnimeList.
+- **Recibir recomendaciones para ti:** con tus favoritas y lo que leíste, el Inicio te muestra obras de la misma historia, del mismo autor, las que recomiendan los lectores de AniList y las parecidas. Se calcula en tu navegador.
 
 ## Cómo funciona
 

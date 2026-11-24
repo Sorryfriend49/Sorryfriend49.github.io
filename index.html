@@ -96,7 +96,7 @@
 
     <!-- El ?v= obliga a los navegadores a bajar la versión nueva tras cada cambio.
          Si editas styles.css, sitio.js, biblioteca.js, catalogo.js o cuenta.js, sube ese número (v=3, v=4...). -->
-    <link rel="stylesheet" href="styles.css?v=18">
+    <link rel="stylesheet" href="styles.css?v=19">
 </head>
 
 <body>
@@ -137,7 +137,7 @@
                 <p>Encuentra qué leer según lo que opina la comunidad: búscala por su nombre, filtra por género y ordena por popularidad o fecha de salida.</p>
                 <a class="boton-principal" href="#catalogo">Explorar el catálogo</a>
             </div>
-            <!-- Lo más popular: rota entre hoy, la semana, el mes y las más recientes en salir (ver catalogo.js y datos/populares.json) -->
+            <!-- Lo más popular: rota entre «Para ti» (si tienes biblioteca), hoy, la semana, el mes y las más recientes en salir (ver catalogo.js y datos/populares.json) -->
             <section class="inicio-populares" id="inicioPopulares" aria-labelledby="tituloPopulares" hidden>
                 <div class="populares-cabecera">
                     <h3 id="tituloPopulares">Lo más popular de cada tipo</h3>
@@ -147,6 +147,8 @@
                     </button>
                 </div>
                 <div class="periodos-populares" id="periodosPopulares" role="group" aria-label="Qué mostrar" hidden>
+                    <!-- «Para ti»: solo si tu biblioteca tiene favoritas u obras leídas o que estás leyendo -->
+                    <button type="button" data-periodo="para-ti" aria-pressed="false" hidden>Para ti</button>
                     <button type="button" data-periodo="hoy" aria-pressed="true">Hoy</button>
                     <button type="button" data-periodo="semana" aria-pressed="false">Semana</button>
                     <button type="button" data-periodo="mes" aria-pressed="false">Mes</button>
@@ -359,6 +361,7 @@
 
                 <h3>Tu biblioteca y tu cuenta</h3>
                 <p>“Mi biblioteca” funciona sin cuenta: se guarda en tu navegador y nadie más la ve. Si quieres tenerla en todos tus dispositivos, entra con Google o Discord (botón “Entrar”, arriba): se guarda también en tu cuenta y se sincroniza sola. Entrar es opcional y gratis; solo se guarda tu nombre, tu correo, tu foto de perfil y tu biblioteca, y puedes borrar tu cuenta cuando quieras. Más detalles en la <a href="privacidad.html">política de privacidad</a> y los <a href="terminos.html">términos</a>.</p>
+                <p>Si tienes favoritas u obras leídas o que estás leyendo, en Inicio aparece «Para ti»: obras de la misma historia, del mismo autor, las que recomiendan los lectores de AniList y las parecidas por etiquetas y géneros, primero las mejor valoradas. Se calcula en tu navegador con lo que ya tienes guardado, y nunca te recomienda una obra que ya está en tu biblioteca.</p>
 
                 <h3>Créditos</h3>
                 <p>Datos: AniList, MyAnimeList, Kitsu y MangaUpdates. Portadas: AniList. Modelo de sentimiento: BERT multilingüe de NLP Town (licencia MIT). Resúmenes: Gemma 4 de Google (licencia Apache 2.0). Fondo animado: Blind Angel, de MoeWalls.</p>
@@ -477,7 +480,7 @@
 
     <script src="sitio.js?v=5" defer></script>
     <script src="biblioteca.js?v=4" defer></script>
-    <script src="catalogo.js?v=19" defer></script>
+    <script src="catalogo.js?v=20" defer></script>
     <script src="cuenta.js?v=3" defer></script>
     <script src="importar.js?v=2" defer></script>
 

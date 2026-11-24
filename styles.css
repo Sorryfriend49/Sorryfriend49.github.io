@@ -484,6 +484,38 @@ nav{
     color: var(--hielo);
 }
 
+/* Con «Para ti» son cinco pestañas: más juntas, para que quepan en una fila (si aun así no caben, bajan a otra) */
+.periodos-populares{
+    flex-wrap: wrap;
+}
+
+.periodos-populares.cinco{
+    gap: 5px;
+}
+
+.periodos-populares.cinco button{
+    padding: 0 9px;
+    font-size: 13px;
+}
+
+@media (max-width: 380px){
+    .periodos-populares.cinco button{
+        padding: 0 8px;
+    }
+}
+
+/* «Porque te gustó …»: si no cabe, termina en «…» (se lee entero al pasar el mouse) */
+.mini-texto{
+    min-width: 0;
+}
+
+.mini-datos .motivo{
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 /* Barrita que se llena mientras falta para el siguiente periodo */
 .progreso-periodo{
     position: absolute;
