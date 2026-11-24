@@ -3839,7 +3839,13 @@
         "lectores": 0.0016,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores destacan que la serie es muy divertida y conmovedora, alabando la intensidad de sus arcos argumentales. Aprecian la forma en que el protagonista inspira a los jóvenes, aunque algunos señalan que el arte es el aspecto más débil. El ritmo narrativo es considerado dinámico y cautivador.",
+        "resenas": 5,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-24"
+      },
       "capitulos": {
         "ultimo": 13,
         "tomos": 25
@@ -7543,7 +7549,13 @@
         "lectores": 0.0021,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores destacan la historia como una narración emotiva y bien elaborada, que aborda temas profundos de la condición humana. Además, el arte y el desarrollo de los personajes son ampliamente elogiados por los lectores. Mencionan que la ambientación y la construcción del mundo son aspectos muy fuertes de la obra.",
+        "resenas": 8,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-24"
+      },
       "capitulos": {
         "ultimo": 104,
         "tomos": 24
@@ -7723,7 +7735,13 @@
         "lectores": 0.0019,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores destacan la excepcional narrativa y la forma en que combina momentos de humor con profundidad emocional. Se elogia mucho la calidad del arte y la construcción de personajes muy realistas. Los lectores sienten una gran identificación con los protagonistas y la atmósfera de la obra.",
+        "resenas": 11,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-24"
+      },
       "capitulos": {
         "ultimo": 29,
         "tomos": 2
@@ -9260,7 +9278,13 @@
         "lectores": 0.0014,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores destacan que la obra es un buen ejemplo del manga shoujo, lleno de romance y drama. Varios mencionan que el ritmo es bueno y que el desarrollo de los personajes es muy disfrutable. Sin embargo, hay quienes señalan que la trama se centra demasiado en intrigas amorosas repetitivas.",
+        "resenas": 6,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-24"
+      },
       "capitulos": {
         "ultimo": 49,
         "tomos": 13
@@ -9794,7 +9818,13 @@
         "lectores": 0.0023,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores destacan la creatividad de los personajes, la acción y la profundidad de la historia, señalando que es una obra muy única. Aunque la mayoría la califica positivamente, algunos lectores mencionaron que el final resultó decepcionante o poco pulido.",
+        "resenas": 14,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-24"
+      },
       "capitulos": {
         "ultimo": 30,
         "tomos": 27
@@ -12127,7 +12157,13 @@
         "lectores": 0.0021,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores destacan la impresionante calidad artística y el ritmo narrativo de la obra. Señalan que las escenas de batalla son muy emocionantes y que el protagonista posee inteligencia y valentía. En resumen, los lectores consideran que es un thriller sobrenatural de ciencia ficción muy bien escrito.",
+        "resenas": 6,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-24"
+      },
       "capitulos": {
         "ultimo": 40,
         "tomos": 17
@@ -13944,7 +13980,13 @@
         "lectores": 0.0011,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores destacan la calidad de los personajes, describiéndolos como carismáticos y muy entrañables. Aprecian cómo la obra mezcla con maestría el humor con momentos de drama serio. Varios mencionan que la historia es una reflexión profunda sobre la vida y la importancia de vivir el presente.",
+        "resenas": 7,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-24"
+      },
       "capitulos": {
         "ultimo": 222,
         "tomos": 15
@@ -26964,7 +27006,13 @@
         "lectores": 0.0014,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores tienen opiniones divididas sobre la obra, destacando consistentemente la calidad espectacular del arte y el diseño de los personajes. Sin embargo, varios lectores critican la historia, mencionando que la narrativa es confusa y que el final no es satisfactorio. Algunos sienten que la atmósfera es profunda, mientras que otros encuentran la trama poco coherente.",
+        "resenas": 13,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-24"
+      },
       "capitulos": {
         "ultimo": 183,
         "tomos": 18
