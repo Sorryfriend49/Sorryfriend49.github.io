@@ -492,7 +492,7 @@
                 boton.disabled = n === 0;
             }
         });
-        // Ocultar géneros: un género elegido no se puede ocultar a la vez (y uno oculto queda sin obras arriba)
+        // Excluir géneros: un género elegido no se puede excluir a la vez (y uno oculto queda sin obras arriba)
         listaOcultar.querySelectorAll('input').forEach(i => {
             i.checked = estado.sin.includes(i.value);
             i.disabled = estado.generos.includes(i.value);

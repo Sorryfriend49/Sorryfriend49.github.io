@@ -603,7 +603,7 @@ nav{
     }
 }
 
-/* Ocultar géneros: se abre con su título; un género marcado sale tachado y sus obras no se muestran */
+/* Excluir géneros: se abre con su título; un género marcado sale tachado y sus obras no se muestran */
 .ocultar-generos > summary{
     display: inline-flex;
     align-items: center;
@@ -2498,7 +2498,7 @@ header{
         transform: rotate(180deg);
     }
 
-    /* Los géneros (y «Ocultar géneros») se despliegan con su botón para que las portadas se vean sin bajar */
+    /* Los géneros (y «Excluir géneros») se despliegan con su botón para que las portadas se vean sin bajar */
     .generos-zona,
     .ocultar-generos{
         display: none;
