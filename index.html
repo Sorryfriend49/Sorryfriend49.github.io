@@ -96,7 +96,7 @@
 
     <!-- El ?v= obliga a los navegadores a bajar la versión nueva tras cada cambio.
          Si editas styles.css, sitio.js, biblioteca.js, catalogo.js o cuenta.js, sube ese número (v=3, v=4...). -->
-    <link rel="stylesheet" href="styles.css?v=20">
+    <link rel="stylesheet" href="styles.css?v=21">
 </head>
 
 <body>
@@ -203,15 +203,15 @@
                         </select>
                     </div>
 
-                    <!-- Solo en celular: muestra u oculta los géneros -->
-                    <button class="boton-generos" id="botonGeneros" type="button" aria-expanded="false" aria-controls="zonaGeneros">
-                        Géneros <span id="cuentaGeneros"></span>
+                    <!-- Solo en celular: despliega los demás filtros (estado, anime, español, año, extensión y géneros) y dice cuántos hay puestos -->
+                    <button class="boton-filtros" id="botonFiltros" type="button" aria-expanded="false" aria-controls="filtrosExtra zonaGeneros ocultarGeneros">
+                        Filtros <span id="cuentaFiltros"></span>
                         <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </button>
                 </div>
 
                 <!-- Estado de la obra, obras con anime y con edición oficial en español (?estado=…&anime=1&es=1) -->
-                <div class="fila-filtros fila-extra">
+                <div class="fila-filtros fila-extra" id="filtrosExtra">
                     <fieldset class="segmentado" id="filtroPublicacion">
                         <legend class="solo-lectores">Estado de la obra</legend>
                         <label><input type="radio" name="publicacion" value="" checked><span>Todas</span></label>
@@ -494,7 +494,7 @@
 
     <script src="sitio.js?v=5" defer></script>
     <script src="biblioteca.js?v=4" defer></script>
-    <script src="catalogo.js?v=21" defer></script>
+    <script src="catalogo.js?v=22" defer></script>
     <script src="cuenta.js?v=3" defer></script>
     <script src="importar.js?v=2" defer></script>
 

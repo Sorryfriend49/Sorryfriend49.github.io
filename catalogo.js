@@ -137,8 +137,8 @@
     const zonaGeneros = $('zonaGeneros');
     const listaOcultar = $('listaOcultar');
     const quitarGeneros = $('quitarGeneros');
-    const botonGeneros = $('botonGeneros');
-    const cuentaGeneros = $('cuentaGeneros');
+    const botonFiltros = $('botonFiltros');
+    const cuentaFiltros = $('cuentaFiltros');
     const selectOrden = $('orden');
     const inputBuscar = $('buscar');
     let esperaBusqueda = 0;
@@ -411,6 +411,8 @@
         && cumplePublicacion(o, estado.publicacion) && (sin === 'anime' || cumpleAnime(o, estado.anime))
         && (sin === 'espanol' || cumpleEspanol(o, estado.espanol))
         && (sin === 'anio' || cumpleAnio(o, estado.anio)) && (sin === 'largo' || cumpleLargo(o, estado.largo)) && sinGeneros(o, estado.sin);
+    // Cuántos filtros de los que se pliegan en el celular hay puestos (cada género elegido u oculto cuenta uno)
+    const filtrosPuestos = e => e.generos.length + e.sin.length + [e.publicacion, e.anime, e.espanol, e.anio, e.largo].filter(Boolean).length;
     // Con una búsqueda, primero las obras cuyo nombre empieza con lo escrito; después, el orden elegido
     const porRelevancia = (a, b) => coincidencias ? coincidencias.get(a.id).nivel - coincidencias.get(b.id).nivel : 0;
 
@@ -530,7 +532,9 @@
             op.disabled = n === 0 && op.value !== estado.largo;
         });
         quitarGeneros.hidden = estado.generos.length === 0;
-        cuentaGeneros.textContent = estado.generos.length ? `(${estado.generos.length})` : '';
+        // Celular: el botón «Filtros» dice cuántos hay puestos, aunque estén plegados
+        const puestos = filtrosPuestos(estado);
+        cuentaFiltros.replaceChildren(...(puestos ? [crear('span', null, `(${puestos})`), crear('span', 'solo-lectores', puestos === 1 ? ' puesto' : ' puestos')] : []));
 
         // Estado de la obra, «Con anime» y «En español» (estos dos dicen cuántas quedarían, como los géneros)
         document.querySelectorAll('#filtroPublicacion input').forEach(i => { i.checked = i.value === estado.publicacion; });
@@ -2038,11 +2042,12 @@
 
     quitarGeneros.addEventListener('click', quitarTodosLosGeneros);
 
-    function abrirGeneros(abrir){
-        filtros.classList.toggle('generos-abiertos', abrir);
-        botonGeneros.setAttribute('aria-expanded', String(abrir));
+    // Celular: «Filtros» despliega el estado, el anime, el español, el año, la extensión y los géneros
+    function abrirFiltros(abrir){
+        filtros.classList.toggle('filtros-abiertos', abrir);
+        botonFiltros.setAttribute('aria-expanded', String(abrir));
     }
-    botonGeneros.addEventListener('click', () => abrirGeneros(!filtros.classList.contains('generos-abiertos')));
+    botonFiltros.addEventListener('click', () => abrirFiltros(!filtros.classList.contains('filtros-abiertos')));
 
     // ---------- Cargar los datos ----------
     function mostrarError(){
@@ -2085,8 +2090,8 @@
             datosListos = true;
 
             const ruta = Frozen.ruta();
-            // Si llegas con géneros elegidos (por ejemplo desde un enlace), en celular se ven desplegados
-            if (ruta.seccion === 'catalogo' && estadoDesdeParams(ruta.params).generos.length) abrirGeneros(true);
+            // Si llegas con filtros puestos (por ejemplo desde un enlace), en celular se ven desplegados
+            if (ruta.seccion === 'catalogo' && filtrosPuestos(estadoDesdeParams(ruta.params))) abrirFiltros(true);
             aplicarRuta(ruta);
         } catch (error){
             mostrarError();

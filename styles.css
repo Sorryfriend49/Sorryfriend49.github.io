@@ -857,7 +857,7 @@ nav{
 }
 
 /* Géneros: cada botón dice cuántas obras quedarían si lo eliges */
-.boton-generos{
+.boton-filtros{
     display: none;
 }
 
@@ -2554,7 +2554,7 @@ header{
         width: 100%;
     }
 
-    .boton-generos{
+    .boton-filtros{
         display: inline-flex;
         align-items: center;
         gap: 6px;
@@ -2568,25 +2568,28 @@ header{
         cursor: pointer;
     }
 
-    .boton-generos svg{
+    .boton-filtros svg{
         transition: transform 0.2s ease;
     }
 
-    .boton-generos[aria-expanded="true"] svg{
+    .boton-filtros[aria-expanded="true"] svg{
         transform: rotate(180deg);
     }
 
-    /* Los géneros (y «Excluir géneros») se despliegan con su botón para que las portadas se vean sin bajar */
+    /* El estado, el anime, el español, el año, la extensión, los géneros y «Excluir géneros» se despliegan
+       con el botón «Filtros», para que las portadas se vean sin bajar */
+    .fila-extra,
     .generos-zona,
     .ocultar-generos{
         display: none;
     }
 
-    .filtros.generos-abiertos .generos-zona{
+    .filtros.filtros-abiertos .fila-extra,
+    .filtros.filtros-abiertos .generos-zona{
         display: flex;
     }
 
-    .filtros.generos-abiertos .ocultar-generos{
+    .filtros.filtros-abiertos .ocultar-generos{
         display: block;
     }
 
@@ -2669,7 +2672,7 @@ header{
     .boton-proveedor,
     .boton-peligro,
     .chip,
-    .boton-generos,
+    .boton-filtros,
     .segmentado input,
     .quitar-generos,
     .obra,
