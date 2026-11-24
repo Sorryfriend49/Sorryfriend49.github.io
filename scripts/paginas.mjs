@@ -119,7 +119,9 @@ const placa = color => esColor(color) ? html` style="--color-placa:${color}55"` 
 // ---------- Textos para compartir y para Google ----------
 // "Manga de Kentarou Miura y Studio Gaga, en publicación desde 1989. Acción, aventura, drama y
 // fantasía. Puntaje de la comunidad: 9,0/10. Dónde leerlo, su anime y qué leer después."
-export function descripcion(o, f){
+// Con maximo (la de Google, que corta cerca de los 160 caracteres), la última frase solo va si cabe.
+export const MAX_DESCRIPCION = 160;
+export function descripcion(o, f, { maximo = Infinity } = {}){
     const nombres = (f && Array.isArray(f.autores) ? f.autores : []).map(a => a && a.nombre).filter(Boolean);
     const de = nombres.length ? ` de ${nombres.length > 2 ? `${nombres[0]}, ${nombres[1]} y otros` : enumerar(nombres)}` : '';
     const inicio = String(o.inicio || '').slice(0, 4);
@@ -141,11 +143,11 @@ export function descripcion(o, f){
     if (f && f.anime && Array.isArray(f.anime.obras) && f.anime.obras.length) hay.push('su anime');
     if (f && f.lectura && Array.isArray(f.lectura.orden) && f.lectura.orden.length >= 2) hay.push('el orden de lectura');
     if (f && f.comunidad && Array.isArray(f.comunidad.recomendaciones) && f.comunidad.recomendaciones.length) hay.push('qué leer después');
-    if (hay.length){
-        const texto = enumerar(hay);
-        frases.push(texto[0].toUpperCase() + texto.slice(1) + '.');
-    }
-    return frases.join(' ');
+    const base = frases.join(' ');
+    if (!hay.length) return base;
+    const texto = enumerar(hay);
+    const completa = `${base} ${texto[0].toUpperCase() + texto.slice(1)}.`;
+    return completa.length <= maximo ? completa : base;
 }
 
 // Datos para Google (schema.org): qué obra es, de quién, desde cuándo y dónde más está
@@ -430,6 +432,7 @@ function recomendadas(f, contexto){
 export function armarPagina(o, f, contexto){
     const url = urlObra(o.id);
     const texto = descripcion(o, f);
+    const corta = descripcion(o, f, { maximo: MAX_DESCRIPCION });
     const grande = portadaGrande(o);
     const tipo = TIPOS[o.tipo];
     const estado = ESTADOS[o.estado];
@@ -450,7 +453,7 @@ export function armarPagina(o, f, contexto){
         }
     </script>
     ${html`<title>${o.titulo} (${tipo.toLowerCase()}): opiniones y dónde leer | Frozen Project</title>`}
-    ${html`<meta name="description" content="${texto}">`}
+    ${html`<meta name="description" content="${corta}">`}
     ${html`<link rel="canonical" href="${url}">`}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
