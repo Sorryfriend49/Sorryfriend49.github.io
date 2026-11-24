@@ -6,6 +6,11 @@
       "origen": "popular",
       "titulo": "BLAME!"
     },
+    "30336": {
+      "fecha": "2026-11-24",
+      "origen": "popular",
+      "titulo": "GTO: Great Teacher Onizuka"
+    },
     "30564": {
       "fecha": "2026-11-23",
       "origen": "popular",
@@ -21,10 +26,45 @@
       "origen": "popular",
       "titulo": "JoJo's Bizarre Adventure Part 6: Stone Ocean"
     },
+    "33031": {
+      "fecha": "2026-11-24",
+      "origen": "popular",
+      "titulo": "Pandora Hearts"
+    },
+    "33731": {
+      "fecha": "2026-11-24",
+      "origen": "popular",
+      "titulo": "Solanin"
+    },
+    "54294": {
+      "fecha": "2026-11-24",
+      "origen": "popular",
+      "titulo": "Ao Haru Ride"
+    },
     "54705": {
       "fecha": "2026-11-23",
       "origen": "popular",
       "titulo": "The Flowers of Evil"
+    },
+    "55515": {
+      "fecha": "2026-11-24",
+      "origen": "popular",
+      "titulo": "JoJo’s Bizarre Adventure: Part 8—JoJolion"
+    },
+    "61499": {
+      "fecha": "2026-11-24",
+      "origen": "popular",
+      "titulo": "Nisekoi: False Love"
+    },
+    "79865": {
+      "fecha": "2026-11-24",
+      "origen": "popular",
+      "titulo": "Ajin: Demi-Human"
+    },
+    "85849": {
+      "fecha": "2026-11-24",
+      "origen": "popular",
+      "titulo": "ReLIFE"
     },
     "86717": {
       "fecha": "2026-11-23",
@@ -56,10 +96,35 @@
       "origen": "popular",
       "titulo": "Jujutsu Kaisen 0"
     },
+    "106064": {
+      "fecha": "2026-11-24",
+      "origen": "popular",
+      "titulo": "Chained Soldier"
+    },
+    "116186": {
+      "fecha": "2026-11-24",
+      "origen": "popular",
+      "titulo": "Boy's Abyss"
+    },
     "125636": {
       "fecha": "2026-11-23",
       "origen": "tendencia",
       "titulo": "The Max Level Hero Strikes Back!"
+    },
+    "136204": {
+      "fecha": "2026-11-24",
+      "origen": "tendencia",
+      "titulo": "Descended from Divinity"
+    },
+    "142021": {
+      "fecha": "2026-11-24",
+      "origen": "tendencia",
+      "titulo": "Ryoushin no Shakkin wo Katagawari Shite Morau Jouken wa Nihonichi Kawaii Joshikousei to Issho ni Kurasu Koto deshita."
+    },
+    "143031": {
+      "fecha": "2026-11-24",
+      "origen": "tendencia",
+      "titulo": "I Want to End This Love Game"
     },
     "151460": {
       "fecha": "2026-11-23",
@@ -71,6 +136,11 @@
       "origen": "tendencia",
       "titulo": "My Blasted Reincarnated Life"
     },
+    "160693": {
+      "fecha": "2026-11-24",
+      "origen": "tendencia",
+      "titulo": "Cheonhwa Archive's Young Master"
+    },
     "167649": {
       "fecha": "2026-11-23",
       "origen": "tendencia",
@@ -80,6 +150,16 @@
       "fecha": "2026-11-23",
       "origen": "tendencia",
       "titulo": "The Martial God Who Regressed Back to Level 2"
+    },
+    "183376": {
+      "fecha": "2026-11-24",
+      "origen": "tendencia",
+      "titulo": "Chronicles of a Doomed Prodigy"
+    },
+    "187347": {
+      "fecha": "2026-11-24",
+      "origen": "tendencia",
+      "titulo": "Bouryoku Banzai"
     },
     "193817": {
       "fecha": "2026-11-23",
@@ -91,10 +171,30 @@
       "origen": "tendencia",
       "titulo": "Reincarnation of the Fist King"
     },
+    "195914": {
+      "fecha": "2026-11-24",
+      "origen": "tendencia",
+      "titulo": "Chronicles of the Lazy Sovereign"
+    },
+    "199496": {
+      "fecha": "2026-11-24",
+      "origen": "tendencia",
+      "titulo": "FOG LAND"
+    },
+    "202718": {
+      "fecha": "2026-11-24",
+      "origen": "tendencia",
+      "titulo": "How to Survive as a Wandering Knight"
+    },
     "203958": {
       "fecha": "2026-11-23",
       "origen": "estreno",
       "titulo": "A Wimp’s Tower Strategy Guide"
+    },
+    "214050": {
+      "fecha": "2026-11-24",
+      "origen": "estreno",
+      "titulo": "I Married the Dragon I Killed"
     },
     "214453": {
       "fecha": "2026-11-23",
