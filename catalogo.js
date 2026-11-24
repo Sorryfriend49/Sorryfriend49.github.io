@@ -27,6 +27,8 @@
     const IDIOMAS = { es: 'español', en: 'inglés', ja: 'japonés', ko: 'coreano', zh: 'chino' };
     // Filtro «estado de la obra» del catálogo (?estado=…)
     const PUBLICACION = { 'en-publicacion': 'En publicación', 'terminado': 'Terminadas' };
+    // Filtro «Salió» (?anio=…): desde ese año, o antes de 2000
+    const ANIOS = { '': 'Cualquier año', '2024': 'Desde 2024', '2020': 'Desde 2020', '2015': 'Desde 2015', '2010': 'Desde 2010', '2000': 'Desde 2000', 'antes-2000': 'Antes de 2000' };
     // Dónde leer, por grupos: primero en español, luego en inglés, los tomos y al final el idioma original
     const GRUPOS_LECTURA = [
         { titulo: 'En español', cumple: e => e.tipo === 'leer' && e.idioma === 'es', conIdioma: false },
@@ -131,6 +133,7 @@
     const conteo = $('conteo');
     const filtros = $('filtros');
     const zonaGeneros = $('zonaGeneros');
+    const listaOcultar = $('listaOcultar');
     const quitarGeneros = $('quitarGeneros');
     const botonGeneros = $('botonGeneros');
     const cuentaGeneros = $('cuentaGeneros');
@@ -152,7 +155,7 @@
     let etiquetasConocidas = new Map();   // id -> { nombre, en }
     let puestoPopularidad = new Map();
     let datosListos = false;
-    let estado = { tipo: '', generos: [], orden: ORDEN_INICIAL, etiqueta: '', q: '', publicacion: '', espanol: false };
+    let estado = { tipo: '', generos: [], orden: ORDEN_INICIAL, etiqueta: '', q: '', publicacion: '', espanol: false, anio: '', sin: [] };
     let indiceBusqueda = new Map();   // id -> nombres de la obra, ya normalizados para buscar
     let coincidencias = null;         // id -> { nivel, nombre, principal } mientras hay una búsqueda
     let tarjetas = new Map();      // id -> { li, a, datos }
@@ -293,7 +296,10 @@
         const q = (params.get('q') || '').replace(/\s+/g, ' ').trim().slice(0, MAX_BUSQUEDA);
         const publicacion = Object.prototype.hasOwnProperty.call(PUBLICACION, params.get('estado')) ? params.get('estado') : '';
         const espanol = params.get('es') === '1';
-        return { tipo, generos, orden, etiqueta, q, publicacion, espanol };
+        const anio = params.get('anio') && Object.prototype.hasOwnProperty.call(ANIOS, params.get('anio')) ? params.get('anio') : '';
+        // Géneros que no quieres ver (si uno también está elegido, gana el elegido)
+        const sin = [...new Set((params.get('sin') || '').split(',').filter(g => Object.prototype.hasOwnProperty.call(GENEROS, g) && !generos.includes(g)))];
+        return { tipo, generos, orden, etiqueta, q, publicacion, espanol, anio, sin };
     }
 
     function hashCatalogo(e = estado, obra = null){
@@ -304,6 +310,8 @@
         if (e.etiqueta) partes.push('etiqueta=' + e.etiqueta);
         if (e.publicacion) partes.push('estado=' + e.publicacion);
         if (e.espanol) partes.push('es=1');
+        if (e.anio) partes.push('anio=' + e.anio);
+        if (e.sin && e.sin.length) partes.push('sin=' + e.sin.join(','));
         if (e.orden !== ORDEN_INICIAL) partes.push('orden=' + e.orden);
         if (obra) partes.push('obra=' + encodeURIComponent(obra));
         return '#catalogo' + (partes.length ? '?' + partes.join('&') : '');
@@ -375,11 +383,20 @@
     const tieneEtiqueta = (o, etiqueta) => !etiqueta || etiquetasDe(o).some(e => e.id === etiqueta);
     const cumplePublicacion = (o, publicacion) => !publicacion || o.estado === publicacion;
     const cumpleEspanol = (o, espanol) => !espanol || o.es === 1;      // edición o plataforma oficial en español
+    const anioDe = o => o.inicio ? Number(o.inicio.slice(0, 4)) : null;
+    const cumpleAnio = (o, anio) => {
+        if (!anio) return true;
+        const a = anioDe(o);
+        if (!a) return false;
+        return anio === 'antes-2000' ? a < 2000 : a >= Number(anio);
+    };
+    const sinGeneros = (o, sin) => !sin || !sin.length || !sin.some(g => o.generos.includes(g));
     const cumpleBusqueda = o => !coincidencias || coincidencias.has(o.id);
     // Todo lo elegido (sin = el filtro que no se cuenta, para saber cuántas quedarían si lo sumas)
     const cumpleFiltros = (o, sin = '') => cumpleBusqueda(o) && cumpleTipo(o, estado.tipo)
         && (sin === 'generos' || tieneGeneros(o, estado.generos)) && tieneEtiqueta(o, estado.etiqueta)
-        && cumplePublicacion(o, estado.publicacion) && (sin === 'espanol' || cumpleEspanol(o, estado.espanol));
+        && cumplePublicacion(o, estado.publicacion) && (sin === 'espanol' || cumpleEspanol(o, estado.espanol))
+        && (sin === 'anio' || cumpleAnio(o, estado.anio)) && sinGeneros(o, estado.sin);
     // Con una búsqueda, primero las obras cuyo nombre empieza con lo escrito; después, el orden elegido
     const porRelevancia = (a, b) => coincidencias ? coincidencias.get(a.id).nivel - coincidencias.get(b.id).nivel : 0;
 
@@ -439,6 +456,14 @@
             return [g, { boton, cuenta }];
         }));
         zonaGeneros.replaceChildren(...[...chips.values()].map(c => c.boton), quitarGeneros);
+        listaOcultar.replaceChildren(...presentes.map(g => {
+            const etiqueta = crear('label', 'chip chip-ocultar');
+            const casilla = document.createElement('input');
+            casilla.type = 'checkbox';
+            casilla.value = g;
+            etiqueta.append(casilla, crear('span', null, GENEROS[g]));
+            return etiqueta;
+        }));
     }
 
     // ---------- Pintar ----------
@@ -462,6 +487,23 @@
                 cuenta.replaceChildren(crear('span', 'solo-lectores', ', '), String(n), crear('span', 'solo-lectores', n === 1 ? ' obra' : ' obras'));
                 boton.disabled = n === 0;
             }
+        });
+        // Ocultar géneros: un género elegido no se puede ocultar a la vez (y uno oculto queda sin obras arriba)
+        listaOcultar.querySelectorAll('input').forEach(i => {
+            i.checked = estado.sin.includes(i.value);
+            i.disabled = estado.generos.includes(i.value);
+        });
+        $('cuentaOcultos').textContent = estado.sin.length ? `(${estado.sin.length})` : '';
+
+        // Salió: cada opción dice cuántas obras quedarían
+        const selectAnio = $('filtroAnio');
+        selectAnio.value = estado.anio;
+        const sinAnio = obras.filter(o => cumpleFiltros(o, 'anio'));
+        [...selectAnio.options].forEach(op => {
+            if (!op.value){ op.textContent = ANIOS['']; return; }
+            const n = sinAnio.filter(o => cumpleAnio(o, op.value)).length;
+            op.textContent = `${ANIOS[op.value]} (${n})`;
+            op.disabled = n === 0 && op.value !== estado.anio;
         });
         quitarGeneros.hidden = estado.generos.length === 0;
         cuentaGeneros.textContent = estado.generos.length ? `(${estado.generos.length})` : '';
@@ -547,7 +589,7 @@
                 li.append(crear('strong', null, `Hay ${sinFiltros} ${sinFiltros === 1 ? 'obra' : 'obras'} con «${estado.q}», pero no con los filtros que elegiste.`),
                     crear('span', null, 'Puedes buscar en todo el catálogo sin borrar lo que escribiste.'));
                 boton.addEventListener('click', () => {
-                    cambiarEstado({ tipo: '', generos: [], etiqueta: '', publicacion: '', espanol: false });
+                    cambiarEstado({ tipo: '', generos: [], etiqueta: '', publicacion: '', espanol: false, anio: '', sin: [] });
                     $('tituloCatalogo').focus();
                 });
             } else {
@@ -560,12 +602,12 @@
         }
         const quien = estado.tipo ? `Ningún ${TIPOS[estado.tipo].toLowerCase()}` : 'Ninguna obra';
         // Con el estado o «En español» puestos, el aviso habla de todos los filtros
-        if (estado.publicacion || estado.espanol){
+        if (estado.publicacion || estado.espanol || estado.anio || estado.sin.length){
             li.append(crear('strong', null, `${quien} cumple todos esos filtros.`), crear('span', null, 'Quita alguno de los filtros de arriba o cambia el tipo.'));
             const quitar = crear('button', 'boton-secundario', 'Quitar filtros');
             quitar.type = 'button';
             quitar.addEventListener('click', () => {
-                cambiarEstado({ generos: [], etiqueta: '', publicacion: '', espanol: false });
+                cambiarEstado({ generos: [], etiqueta: '', publicacion: '', espanol: false, anio: '', sin: [] });
                 $('tituloCatalogo').focus();
             });
             li.append(document.createElement('br'), quitar);
@@ -1641,6 +1683,10 @@
         if (e.target.name === 'publicacion') cambiarEstado({ publicacion: e.target.value });
     });
     $('filtroEspanol').addEventListener('click', () => cambiarEstado({ espanol: !estado.espanol }));
+    $('filtroAnio').addEventListener('change', e => cambiarEstado({ anio: e.target.value }));
+    listaOcultar.addEventListener('change', () => {
+        cambiarEstado({ sin: [...listaOcultar.querySelectorAll('input:checked')].map(i => i.value) });
+    });
 
     $('filtroTipo').addEventListener('change', e => {
         if (e.target.name === 'tipo') cambiarEstado({ tipo: e.target.value });

@@ -96,7 +96,7 @@
 
     <!-- El ?v= obliga a los navegadores a bajar la versión nueva tras cada cambio.
          Si editas styles.css, sitio.js, biblioteca.js, catalogo.js o cuenta.js, sube ese número (v=3, v=4...). -->
-    <link rel="stylesheet" href="styles.css?v=16">
+    <link rel="stylesheet" href="styles.css?v=17">
 </head>
 
 <body>
@@ -220,11 +220,29 @@
                         <span>En español</span><span class="cuenta" id="cuentaEspanol"></span>
                     </button>
                     <span class="ayuda-filtro" id="ayudaEspanol">Con edición o plataforma oficial en español</span>
+                    <div class="orden filtro-anio">
+                        <label for="filtroAnio">Salió</label>
+                        <select id="filtroAnio">
+                            <option value="">Cualquier año</option>
+                            <option value="2024">Desde 2024</option>
+                            <option value="2020">Desde 2020</option>
+                            <option value="2015">Desde 2015</option>
+                            <option value="2010">Desde 2010</option>
+                            <option value="2000">Desde 2000</option>
+                            <option value="antes-2000">Antes de 2000</option>
+                        </select>
+                    </div>
                 </div>
 
                 <div class="generos-zona" id="zonaGeneros" role="group" aria-label="Géneros">
                     <button class="quitar-generos" id="quitarGeneros" type="button" hidden>Quitar géneros</button>
                 </div>
+
+                <!-- Ocultar géneros: no se muestran las obras con alguno de estos (?sin=…). Se llena con catalogo.js -->
+                <details class="ocultar-generos" id="ocultarGeneros">
+                    <summary>Ocultar géneros <span id="cuentaOcultos"></span></summary>
+                    <div class="ocultar-lista" id="listaOcultar" role="group" aria-label="Géneros que no quieres ver"></div>
+                </details>
 
                 <!-- Etiqueta elegida desde la ficha de una obra (las votan los lectores de AniList) -->
                 <div class="filtro-etiqueta" id="filtroEtiqueta" hidden>
@@ -451,7 +469,7 @@
 
     <script src="sitio.js?v=5" defer></script>
     <script src="biblioteca.js?v=4" defer></script>
-    <script src="catalogo.js?v=17" defer></script>
+    <script src="catalogo.js?v=18" defer></script>
     <script src="cuenta.js?v=3" defer></script>
     <script src="importar.js?v=2" defer></script>
 

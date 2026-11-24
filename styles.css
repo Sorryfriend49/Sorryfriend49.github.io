@@ -595,6 +595,77 @@ nav{
     color: var(--texto-suave);
 }
 
+/* Ocultar géneros: se abre con su título; un género marcado sale tachado y sus obras no se muestran */
+.ocultar-generos > summary{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 36px;
+    color: var(--cristal);
+    font: 500 14px 'Poppins', sans-serif;
+    list-style: none;
+    cursor: pointer;
+}
+
+.ocultar-generos > summary::-webkit-details-marker{
+    display: none;
+}
+
+.ocultar-generos > summary::after{
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: translateY(-2px) rotate(45deg);
+    transition: transform 0.2s ease;
+}
+
+.ocultar-generos[open] > summary::after{
+    transform: translateY(2px) rotate(-135deg);
+}
+
+.ocultar-lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.chip-ocultar{
+    position: relative;
+}
+
+.chip-ocultar input{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.chip-ocultar:has(input:checked){
+    border-color: rgba(240, 150, 150, 0.75);
+    color: #f4c2c2;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+
+.chip-ocultar:has(input:focus-visible){
+    outline: 2px solid var(--acero);
+    outline-offset: 3px;
+}
+
+.chip-ocultar:has(input:disabled){
+    opacity: 0.35;
+}
+
+.chip-ocultar input:disabled{
+    cursor: default;
+}
+
 /* Tipo: botones unidos (por dentro son botones de radio) */
 .segmentado{
     display: inline-flex;
@@ -2290,6 +2361,11 @@ header{
         white-space: nowrap;
     }
 
+    /* «Salió» a lo ancho, en su propia fila (gana sobre .orden, que viene después) */
+    .fila-extra .filtro-anio{
+        flex: 1 1 100%;
+    }
+
     .orden{
         flex: 1 1 0;
         min-width: 0;
@@ -2329,13 +2405,18 @@ header{
         transform: rotate(180deg);
     }
 
-    /* Los géneros se despliegan con su botón para que las portadas se vean sin bajar */
-    .generos-zona{
+    /* Los géneros (y «Ocultar géneros») se despliegan con su botón para que las portadas se vean sin bajar */
+    .generos-zona,
+    .ocultar-generos{
         display: none;
     }
 
     .filtros.generos-abiertos .generos-zona{
         display: flex;
+    }
+
+    .filtros.generos-abiertos .ocultar-generos{
+        display: block;
     }
 
     .rejilla{
