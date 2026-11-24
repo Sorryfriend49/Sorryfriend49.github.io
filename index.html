@@ -96,7 +96,7 @@
 
     <!-- El ?v= obliga a los navegadores a bajar la versión nueva tras cada cambio.
          Si editas styles.css, sitio.js, biblioteca.js, catalogo.js o cuenta.js, sube ese número (v=3, v=4...). -->
-    <link rel="stylesheet" href="styles.css?v=19">
+    <link rel="stylesheet" href="styles.css?v=20">
 </head>
 
 <body>
@@ -225,17 +225,29 @@
                         <span>En español</span><span class="cuenta" id="cuentaEspanol"></span>
                     </button>
                     <span class="ayuda-filtro" id="ayudaEspanol">Con edición o plataforma oficial en español</span>
-                    <div class="orden filtro-anio">
-                        <label for="filtroAnio">Salió</label>
-                        <select id="filtroAnio">
-                            <option value="">Cualquier año</option>
-                            <option value="2024">Desde 2024</option>
-                            <option value="2020">Desde 2020</option>
-                            <option value="2015">Desde 2015</option>
-                            <option value="2010">Desde 2010</option>
-                            <option value="2000">Desde 2000</option>
-                            <option value="antes-2000">Antes de 2000</option>
-                        </select>
+                    <!-- Salió (?anio=…) y extensión por capítulos (?largo=…): juntos en su fila; en el celular, uno bajo el otro -->
+                    <div class="filtros-selectores">
+                        <div class="orden filtro-anio">
+                            <label for="filtroAnio">Salió</label>
+                            <select id="filtroAnio">
+                                <option value="">Cualquier año</option>
+                                <option value="2024">Desde 2024</option>
+                                <option value="2020">Desde 2020</option>
+                                <option value="2015">Desde 2015</option>
+                                <option value="2010">Desde 2010</option>
+                                <option value="2000">Desde 2000</option>
+                                <option value="antes-2000">Antes de 2000</option>
+                            </select>
+                        </div>
+                        <div class="orden filtro-largo">
+                            <label for="filtroLargo">Extensión</label>
+                            <select id="filtroLargo">
+                                <option value="">Cualquier extensión</option>
+                                <option value="cortas">Cortas: menos de 60 cap.</option>
+                                <option value="medianas">Medianas: de 60 a 150 cap.</option>
+                                <option value="largas">Largas: más de 150 cap.</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
 
@@ -344,6 +356,7 @@
                     <li>La popularidad es cuántas personas tienen la obra en su lista de AniList. Se actualiza dos veces al día.</li>
                     <li>“Dónde leer” lleva solo a lugares oficiales: plataformas para leer en español o en inglés, editoriales que publican los tomos y, si no hay edición en esos idiomas, las plataformas oficiales en su idioma original. La lista sale de los enlaces oficiales que la comunidad registra en AniList. El filtro «En español» del catálogo muestra las obras con al menos una plataforma o editorial oficial en español en esa lista; si AniList todavía no tiene registrada una edición, la obra no aparece ahí.</li>
                     <li>El orden de lectura (precuelas y secuelas, en orden, y las historias paralelas y spin-offs) y el anime de cada obra también salen de AniList. “Dónde verlo” muestra los servicios oficiales que llegan a Latinoamérica y España (Crunchyroll, Netflix, Prime Video, Disney+, HBO Max y HIDIVE); lo que tiene cada uno cambia según el país. El filtro «Con anime» muestra las obras con al menos una adaptación animada ya estrenada.</li>
+                    <li>El filtro «Extensión» cuenta capítulos: los de AniList si la obra ya terminó y, si sigue saliendo, los publicados hasta ahora según MangaUpdates (así, una que sigue saliendo puede pasar de corta a mediana).</li>
                 </ul>
 
                 <h3>Cómo se calcula lo que opina la comunidad</h3>
@@ -356,6 +369,7 @@
                     <li>Si la obra tiene 5 reseñas o más, Gemma 4 (el modelo abierto de Google) lee las 8 más útiles y escribe un resumen corto de lo que opinan. De cada reseña lee sus frases clave: las que opinan de un tema y que el modelo de sentimiento marca como elogio o crítica, sin las partes marcadas como spoiler. Corre dentro de la misma tarea de GitHub, así que las reseñas no se mandan a ningún otro servicio. El resumen se rehace cuando llegan reseñas nuevas, y en la ficha siempre se avisa que lo hizo una IA.</li>
                     <li>La tendencia usa el registro diario de AniList: cuántos lectores sumó la obra en los últimos 7 días, cuántos la están leyendo y cuánta actividad tuvo (gente que la agrega o avanza capítulos). “En tendencia esta semana” ordena por esa actividad, y “Lo más popular” de Inicio muestra las obras con más actividad en el último día, los últimos 7 días y los últimos 30, con cuántos lectores sumaron en ese tiempo. Estos números se actualizan dos veces al día.</li>
                     <li>Las etiquetas y las recomendaciones (“si te gustó…”) también las votan los lectores de AniList. El porcentaje de cada etiqueta es qué tan de acuerdo están con ella. No se muestran etiquetas que cuentan la historia, ni recomendaciones de novelas u obras para adultos.</li>
+                    <li>Los sellos de la ficha: «Aclamada en las 4 comunidades» si AniList, MyAnimeList, Kitsu y MangaUpdates le ponen 8,3 o más (cada una con al menos 50 votos), y «Joya poco conocida» si su puntaje combinado es de 8,2 o más, con confianza media o alta, y está entre el tercio menos leído del catálogo.</li>
                 </ol>
                 <p class="nota-datos" id="fechaDatos"></p>
 
@@ -480,7 +494,7 @@
 
     <script src="sitio.js?v=5" defer></script>
     <script src="biblioteca.js?v=4" defer></script>
-    <script src="catalogo.js?v=20" defer></script>
+    <script src="catalogo.js?v=21" defer></script>
     <script src="cuenta.js?v=3" defer></script>
     <script src="importar.js?v=2" defer></script>
 

@@ -12,8 +12,8 @@ Es un proyecto personal, gratis y sin fines comerciales: no tiene publicidad ni 
 
 ## Qué puedes hacer
 
-- **Buscar y filtrar:** encuentra una obra por cualquiera de sus nombres, filtra por tipo (manga, manhwa o manhua), género, etiqueta, estado, año, si tiene anime o edición en español, oculta los géneros que no quieres ver y ordena por popularidad o fecha de salida.
-- **Ver lo que opina la comunidad:** un puntaje que combina cuatro comunidades, qué tan confiable es, cómo se reparten los votos, qué se elogia y qué se critica, y un resumen corto de las reseñas, sin spoilers y hecho por IA.
+- **Buscar y filtrar:** encuentra una obra por cualquiera de sus nombres, filtra por tipo (manga, manhwa o manhua), género, etiqueta, estado, año, extensión (por capítulos), si tiene anime o edición en español, oculta los géneros que no quieres ver y ordena por popularidad o fecha de salida.
+- **Ver lo que opina la comunidad:** un puntaje que combina cuatro comunidades, qué tan confiable es, cómo se reparten los votos, qué se elogia y qué se critica, un resumen corto de las reseñas, sin spoilers y hecho por IA, y sellos como «Aclamada en las 4 comunidades» o «Joya poco conocida».
 - **Saber dónde leerla:** solo enlaces oficiales, primero en español o inglés.
 - **Saber en qué orden leerla:** sus precuelas y secuelas en orden (JoJo tiene 9 partes), con la obra que estás viendo marcada, y sus historias paralelas y spin-offs.
 - **Saber si tiene anime:** sus adaptaciones y dónde verlas oficialmente, primero en los servicios que llegan a Latinoamérica y España.

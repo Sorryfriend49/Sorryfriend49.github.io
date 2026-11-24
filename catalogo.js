@@ -29,6 +29,8 @@
     const PUBLICACION = { 'en-publicacion': 'En publicación', 'terminado': 'Terminadas' };
     // Filtro «Salió» (?anio=…): desde ese año, o antes de 2000
     const ANIOS = { '': 'Cualquier año', '2024': 'Desde 2024', '2020': 'Desde 2020', '2015': 'Desde 2015', '2010': 'Desde 2010', '2000': 'Desde 2000', 'antes-2000': 'Antes de 2000' };
+    // Filtro «Extensión» (?largo=…), por capítulos: los de AniList si ya terminó; si sigue saliendo, los publicados hasta ahora
+    const LARGOS = { '': 'Cualquier extensión', 'cortas': 'Cortas: menos de 60 cap.', 'medianas': 'Medianas: de 60 a 150 cap.', 'largas': 'Largas: más de 150 cap.' };
     // Dónde leer, por grupos: primero en español, luego en inglés, los tomos y al final el idioma original
     const GRUPOS_LECTURA = [
         { titulo: 'En español', cumple: e => e.tipo === 'leer' && e.idioma === 'es', conIdioma: false },
@@ -155,7 +157,7 @@
     let etiquetasConocidas = new Map();   // id -> { nombre, en }
     let puestoPopularidad = new Map();
     let datosListos = false;
-    let estado = { tipo: '', generos: [], orden: ORDEN_INICIAL, etiqueta: '', q: '', publicacion: '', anime: false, espanol: false, anio: '', sin: [] };
+    let estado = { tipo: '', generos: [], orden: ORDEN_INICIAL, etiqueta: '', q: '', publicacion: '', anime: false, espanol: false, anio: '', largo: '', sin: [] };
     let indiceBusqueda = new Map();   // id -> nombres de la obra, ya normalizados para buscar
     let coincidencias = null;         // id -> { nivel, nombre, principal } mientras hay una búsqueda
     let tarjetas = new Map();      // id -> { li, a, datos }
@@ -298,9 +300,10 @@
         const anime = params.get('anime') === '1';
         const espanol = params.get('es') === '1';
         const anio = params.get('anio') && Object.prototype.hasOwnProperty.call(ANIOS, params.get('anio')) ? params.get('anio') : '';
+        const largo = params.get('largo') && Object.prototype.hasOwnProperty.call(LARGOS, params.get('largo')) ? params.get('largo') : '';
         // Géneros que no quieres ver (si uno también está elegido, gana el elegido)
         const sin = [...new Set((params.get('sin') || '').split(',').filter(g => Object.prototype.hasOwnProperty.call(GENEROS, g) && !generos.includes(g)))];
-        return { tipo, generos, orden, etiqueta, q, publicacion, anime, espanol, anio, sin };
+        return { tipo, generos, orden, etiqueta, q, publicacion, anime, espanol, anio, largo, sin };
     }
 
     function hashCatalogo(e = estado, obra = null){
@@ -313,6 +316,7 @@
         if (e.anime) partes.push('anime=1');
         if (e.espanol) partes.push('es=1');
         if (e.anio) partes.push('anio=' + e.anio);
+        if (e.largo) partes.push('largo=' + e.largo);
         if (e.sin && e.sin.length) partes.push('sin=' + e.sin.join(','));
         if (e.orden !== ORDEN_INICIAL) partes.push('orden=' + e.orden);
         if (obra) partes.push('obra=' + encodeURIComponent(obra));
@@ -393,6 +397,12 @@
         if (!a) return false;
         return anio === 'antes-2000' ? a < 2000 : a >= Number(anio);
     };
+    const cumpleLargo = (o, largo) => {
+        if (!largo) return true;
+        const n = o.cap;
+        if (!Number.isFinite(n) || n <= 0) return false;      // sin capítulos conocidos no entra en ninguna
+        return largo === 'cortas' ? n < 60 : largo === 'medianas' ? n >= 60 && n <= 150 : n > 150;
+    };
     const sinGeneros = (o, sin) => !sin || !sin.length || !sin.some(g => o.generos.includes(g));
     const cumpleBusqueda = o => !coincidencias || coincidencias.has(o.id);
     // Todo lo elegido (sin = el filtro que no se cuenta, para saber cuántas quedarían si lo sumas)
@@ -400,7 +410,7 @@
         && (sin === 'generos' || tieneGeneros(o, estado.generos)) && tieneEtiqueta(o, estado.etiqueta)
         && cumplePublicacion(o, estado.publicacion) && (sin === 'anime' || cumpleAnime(o, estado.anime))
         && (sin === 'espanol' || cumpleEspanol(o, estado.espanol))
-        && (sin === 'anio' || cumpleAnio(o, estado.anio)) && sinGeneros(o, estado.sin);
+        && (sin === 'anio' || cumpleAnio(o, estado.anio)) && (sin === 'largo' || cumpleLargo(o, estado.largo)) && sinGeneros(o, estado.sin);
     // Con una búsqueda, primero las obras cuyo nombre empieza con lo escrito; después, el orden elegido
     const porRelevancia = (a, b) => coincidencias ? coincidencias.get(a.id).nivel - coincidencias.get(b.id).nivel : 0;
 
@@ -509,6 +519,16 @@
             op.textContent = `${ANIOS[op.value]} (${n})`;
             op.disabled = n === 0 && op.value !== estado.anio;
         });
+        // Extensión: lo mismo, por capítulos
+        const selectLargo = $('filtroLargo');
+        selectLargo.value = estado.largo;
+        const sinLargo = obras.filter(o => cumpleFiltros(o, 'largo'));
+        [...selectLargo.options].forEach(op => {
+            if (!op.value){ op.textContent = LARGOS['']; return; }
+            const n = sinLargo.filter(o => cumpleLargo(o, op.value)).length;
+            op.textContent = `${LARGOS[op.value]} (${n})`;
+            op.disabled = n === 0 && op.value !== estado.largo;
+        });
         quitarGeneros.hidden = estado.generos.length === 0;
         cuentaGeneros.textContent = estado.generos.length ? `(${estado.generos.length})` : '';
 
@@ -595,7 +615,7 @@
                 li.append(crear('strong', null, `Hay ${sinFiltros} ${sinFiltros === 1 ? 'obra' : 'obras'} con «${estado.q}», pero no con los filtros que elegiste.`),
                     crear('span', null, 'Puedes buscar en todo el catálogo sin borrar lo que escribiste.'));
                 boton.addEventListener('click', () => {
-                    cambiarEstado({ tipo: '', generos: [], etiqueta: '', publicacion: '', anime: false, espanol: false, anio: '', sin: [] });
+                    cambiarEstado({ tipo: '', generos: [], etiqueta: '', publicacion: '', anime: false, espanol: false, anio: '', largo: '', sin: [] });
                     $('tituloCatalogo').focus();
                 });
             } else {
@@ -607,13 +627,13 @@
             return li;
         }
         const quien = estado.tipo ? `Ningún ${TIPOS[estado.tipo].toLowerCase()}` : 'Ninguna obra';
-        // Con el estado, «Con anime», «En español», el año u ocultos puestos, el aviso habla de todos los filtros
-        if (estado.publicacion || estado.anime || estado.espanol || estado.anio || estado.sin.length){
+        // Con el estado, «Con anime», «En español», el año, la extensión u ocultos puestos, el aviso habla de todos los filtros
+        if (estado.publicacion || estado.anime || estado.espanol || estado.anio || estado.largo || estado.sin.length){
             li.append(crear('strong', null, `${quien} cumple todos esos filtros.`), crear('span', null, 'Quita alguno de los filtros de arriba o cambia el tipo.'));
             const quitar = crear('button', 'boton-secundario', 'Quitar filtros');
             quitar.type = 'button';
             quitar.addEventListener('click', () => {
-                cambiarEstado({ generos: [], etiqueta: '', publicacion: '', anime: false, espanol: false, anio: '', sin: [] });
+                cambiarEstado({ generos: [], etiqueta: '', publicacion: '', anime: false, espanol: false, anio: '', largo: '', sin: [] });
                 $('tituloCatalogo').focus();
             });
             li.append(document.createElement('br'), quitar);
@@ -1261,6 +1281,29 @@
     const formatoPorcentaje = new Intl.NumberFormat('es', { style: 'percent', maximumFractionDigits: 1 });
 
     // Opinión de la comunidad en la ficha. f: la ficha de la obra (null mientras baja, { fallo: true } si no bajó)
+    /* Sellos de la ficha (con datos reales, 24-11-2026: 36 aclamadas y 22 joyas de 251 obras)
+       - «Aclamada en las 4 comunidades»: AniList, MyAnimeList, Kitsu y MangaUpdates le ponen 8,3 o más
+         (cada una con al menos 50 votos). Sale de la ficha, que trae el puntaje de cada comunidad.
+       - «Joya poco conocida»: puntaje combinado de 8,2 o más, con confianza media o alta, y entre el
+         tercio menos leído del catálogo (por lectores de AniList). */
+    const COMUNIDADES = ['anilist', 'myanimelist', 'kitsu', 'mangaupdates'];
+    const ICONO_JOYA = '<svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M6.5 3.5h11l4 5.5L12 21 2.5 9z"/><path d="M2.5 9h19M9 3.5L12 9l3-5.5M12 9v12" fill="none" stroke="rgba(3,10,19,.55)" stroke-width="1.2"/></svg>';
+    function sellosDe(o, c){
+        const sellos = [];
+        const fuentes = c && c.fuentes;
+        if (fuentes && COMUNIDADES.every(k => fuentes[k] && fuentes[k].puntaje >= 83 && fuentes[k].votos >= 50)){
+            sellos.push({ clave: 'aclamada', icono: ICONO_ESTRELLA, texto: 'Aclamada en las 4 comunidades',
+                ayuda: 'AniList, MyAnimeList, Kitsu y MangaUpdates le ponen 8,3 o más.' });
+        }
+        const p = puntaje(o);
+        const confianza = op(o).confianza;
+        if (p != null && p >= 82 && confianza && confianza !== 'baja' && puestoPopularidad.get(o.id) > obras.length * 2 / 3){
+            sellos.push({ clave: 'joya', icono: ICONO_JOYA, texto: 'Joya poco conocida',
+                ayuda: 'Muy bien valorada (8,2 o más) y entre el tercio menos leído del catálogo.' });
+        }
+        return sellos;
+    }
+
     function pintarComunidad(o, f){
         const c = f && !f.fallo ? f.comunidad : null;
         const p = puntaje(o);
@@ -1287,6 +1330,20 @@
             (leyendoAhora ? ` y ${formatoLectores.format(leyendoAhora)} la están leyendo.` : '.'));
         fila.append(explicacion);
         nodos.push(fila);
+
+        // Sellos: «Aclamada en las 4 comunidades» (llega con la ficha) y «Joya poco conocida»
+        const sellos = sellosDe(o, c);
+        if (sellos.length){
+            const lista = crear('ul', 'sellos');
+            lista.append(...sellos.map(s => {
+                const li = crear('li', `sello sello-${s.clave}`);
+                li.title = s.ayuda;
+                li.innerHTML = s.icono;
+                li.append(crear('span', null, s.texto), crear('span', 'solo-lectores', `: ${s.ayuda}`));
+                return li;
+            }));
+            nodos.push(lista);
+        }
 
         if (!f) nodos.push(crear('p', 'dato-opinion', 'Cargando la opinión de la comunidad…'));
         else if (f.fallo) nodos.push(avisoSinFicha(o));
@@ -1929,6 +1986,7 @@
     $('filtroAnime').addEventListener('click', () => cambiarEstado({ anime: !estado.anime }));
     $('filtroEspanol').addEventListener('click', () => cambiarEstado({ espanol: !estado.espanol }));
     $('filtroAnio').addEventListener('change', e => cambiarEstado({ anio: e.target.value }));
+    $('filtroLargo').addEventListener('change', e => cambiarEstado({ largo: e.target.value }));
     listaOcultar.addEventListener('change', () => {
         cambiarEstado({ sin: [...listaOcultar.querySelectorAll('input:checked')].map(i => i.value) });
     });

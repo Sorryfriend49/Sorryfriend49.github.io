@@ -114,6 +114,9 @@ export function armarLista(catalogo, comunidad){
             es: (o.enlaces || []).some(e => e && e.idioma === 'es' && (e.tipo === 'leer' || e.tipo === 'tomos')) ? 1 : null,
             // Tiene al menos un anime ya estrenado (ver relaciones.mjs): filtro «Con anime»
             anime: o.anime && o.anime.estrenado ? 1 : null,
+            // Capítulos (filtro «Extensión»): los de AniList si ya terminó; si sigue saliendo, los
+            // publicados hasta ahora según MangaUpdates (lo mismo que dice la ficha)
+            cap: o.capitulos || (c && c.capitulos && c.capitulos.ultimo) || null,
             generos: o.generos,
             portada: typeof o.portada === 'string' && o.portada.startsWith(PORTADAS) ? o.portada.slice(PORTADAS.length) : o.portada,
             portadaGrande: o.portadaGrande,

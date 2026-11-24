@@ -627,7 +627,15 @@ nav{
     color: var(--texto-suave);
 }
 
-/* En PC la explicación va en dos líneas, para que «Salió» quepa en la misma fila que «Con anime» */
+/* «Salió» y «Extensión» van juntos: si no caben al lado de lo demás, bajan a su propia fila */
+.filtros-selectores{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 18px;
+}
+
+/* En PC la explicación va en dos líneas, para que quepa más en la fila */
 @media (min-width: 769px){
     .ayuda-filtro{
         max-width: 190px;
@@ -1774,6 +1782,42 @@ header{
     margin-top: 8px;
 }
 
+/* Sellos: «Aclamada en las 4 comunidades» (hielo) y «Joya poco conocida» (lavanda) */
+.sellos{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.sello{
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    min-height: 30px;
+    padding: 0 12px;
+    border: 1px solid rgba(230, 242, 248, 0.5);
+    border-radius: 999px;
+    background: rgba(168, 198, 236, 0.14);
+    box-shadow: 0 0 14px rgba(168, 198, 236, 0.16);
+    color: var(--hielo);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: default;
+}
+
+.sello svg{
+    flex: none;
+}
+
+.sello-joya{
+    border-color: rgba(195, 180, 242, 0.55);
+    background: rgba(195, 180, 242, 0.12);
+    box-shadow: none;
+    color: var(--lavanda);
+}
+
 .puntaje{
     font-family: 'Baloo 2', sans-serif;
     font-size: 40px;
@@ -2486,8 +2530,10 @@ header{
         white-space: nowrap;
     }
 
-    /* «Salió» a lo ancho, en su propia fila (gana sobre .orden, que viene después) */
-    .fila-extra .filtro-anio{
+    /* «Salió» y «Extensión» a lo ancho, cada uno en su fila (gana sobre .orden, que viene después) */
+    .fila-extra .filtros-selectores,
+    .fila-extra .filtro-anio,
+    .fila-extra .filtro-largo{
         flex: 1 1 100%;
     }
 
