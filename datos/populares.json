@@ -1,88 +1,88 @@
 {
-  "actualizado": "2026-11-24T10:41:10.062Z",
-  "dia": "2026-11-23",
+  "actualizado": "2026-11-24T20:53:12.030Z",
+  "dia": "2026-11-24",
   "metodo": "Actividad diaria de AniList (gente que agrega la obra o avanza capítulos) en el último día, los últimos 7 días y los últimos 30 días.",
   "periodos": {
     "hoy": {
       "manga": [
         {
+          "id": "blue-lock",
+          "actividad": 616,
+          "nuevos": 45
+        },
+        {
+          "id": "gachiakuta",
+          "actividad": 534,
+          "nuevos": 46
+        },
+        {
           "id": "dandadan",
-          "actividad": 2399,
-          "nuevos": 31
+          "actividad": 310,
+          "nuevos": 65
         },
         {
           "id": "one-piece",
-          "actividad": 965,
-          "nuevos": 61
+          "actividad": 309,
+          "nuevos": 77
         },
         {
-          "id": "sakamoto-days",
-          "actividad": 589,
-          "nuevos": 113
-        },
-        {
-          "id": "mieruko-chan",
-          "actividad": 557,
-          "nuevos": 8
-        },
-        {
-          "id": "spy-x-family",
-          "actividad": 512,
-          "nuevos": 54
+          "id": "rent-a-girlfriend",
+          "actividad": 244,
+          "nuevos": 4
         }
       ],
       "manhwa": [
         {
+          "id": "omniscient-reader",
+          "actividad": 1186,
+          "nuevos": 55
+        },
+        {
+          "id": "the-infinite-mage",
+          "actividad": 612,
+          "nuevos": 35
+        },
+        {
+          "id": "eleceed",
+          "actividad": 504,
+          "nuevos": 22
+        },
+        {
+          "id": "the-stellar-swordmaster",
+          "actividad": 473,
+          "nuevos": 29
+        },
+        {
           "id": "absolute-regression",
-          "actividad": 1529,
-          "nuevos": 33
-        },
-        {
-          "id": "myst-might-mayhem",
-          "actividad": 1427,
-          "nuevos": 32
-        },
-        {
-          "id": "absolute-sword-sense",
-          "actividad": 1078,
-          "nuevos": 27
-        },
-        {
-          "id": "i-married-the-dragon-i-killed",
-          "actividad": 869,
-          "nuevos": 23
-        },
-        {
-          "id": "revenge-of-the-baskerville-bloodhound",
-          "actividad": 850,
-          "nuevos": 68
+          "actividad": 381,
+          "nuevos": 61
         }
       ],
       "manhua": [
         {
-          "id": "i-am-the-fated-villain",
-          "actividad": 397,
-          "nuevos": 23
-        },
-        {
-          "id": "log-into-the-future",
-          "actividad": 375,
-          "nuevos": 17
-        },
-        {
           "id": "necromancer-the-ultimate-scourge",
-          "actividad": 373,
-          "nuevos": 15
+          "actividad": 94,
+          "nuevos": 16
         },
         {
-          "id": "rebirth-of-the-ultimate-master",
-          "actividad": 220,
-          "nuevos": 14
+          "id": "i-am-the-fated-villain",
+          "actividad": 82,
+          "nuevos": 21
         },
         {
           "id": "the-devil-butler",
-          "actividad": 220,
-          "nuevos": 13
+          "actividad": 77,
+          "nuevos": 12
+        },
+        {
+          "id": "log-into-the-future",
+          "actividad": 65,
+          "nuevos": 8
+        },
+        {
+          "id": "rebirth-of-the-ultimate-master",
+          "actividad": 60,
+          "nuevos": 7
         }
       ]
     },
@@ -90,82 +90,82 @@
       "manga": [
         {
           "id": "one-piece",
-          "actividad": 11103,
-          "nuevos": 441
+          "actividad": 11048,
+          "nuevos": 461
         },
         {
           "id": "dandadan",
-          "actividad": 4755,
-          "nuevos": 286
-        },
-        {
-          "id": "blue-lock",
-          "actividad": 4585,
-          "nuevos": 296
+          "actividad": 4679,
+          "nuevos": 276
         },
         {
           "id": "sakamoto-days",
-          "actividad": 4447,
-          "nuevos": 257
+          "actividad": 4476,
+          "nuevos": 293
         },
         {
           "id": "the-fragrant-flower-blooms-with-dignity",
-          "actividad": 4375,
-          "nuevos": 250
+          "actividad": 4331,
+          "nuevos": 256
+        },
+        {
+          "id": "kagurabachi",
+          "actividad": 3854,
+          "nuevos": 286
         }
       ],
       "manhwa": [
         {
           "id": "my-blasted-reincarnated-life",
-          "actividad": 7959,
-          "nuevos": 563
+          "actividad": 8008,
+          "nuevos": 565
         },
         {
           "id": "overgeared",
-          "actividad": 5843,
-          "nuevos": 331
-        },
-        {
-          "id": "return-of-the-blossoming-blade",
-          "actividad": 5539,
-          "nuevos": 232
-        },
-        {
-          "id": "revenge-of-the-baskerville-bloodhound",
-          "actividad": 5219,
-          "nuevos": 238
+          "actividad": 5399,
+          "nuevos": 358
         },
         {
           "id": "absolute-regression",
-          "actividad": 5052,
-          "nuevos": 253
+          "actividad": 5361,
+          "nuevos": 279
+        },
+        {
+          "id": "revenge-of-the-baskerville-bloodhound",
+          "actividad": 4989,
+          "nuevos": 239
+        },
+        {
+          "id": "the-extras-academy-survival-guide",
+          "actividad": 4821,
+          "nuevos": 287
         }
       ],
       "manhua": [
         {
           "id": "the-devil-butler",
-          "actividad": 4337,
-          "nuevos": 85
+          "actividad": 4236,
+          "nuevos": 87
         },
         {
           "id": "log-into-the-future",
-          "actividad": 2151,
+          "actividad": 2162,
           "nuevos": 57
         },
         {
-          "id": "lucky-me-i-secretly-cultivated-for-1-000-years",
-          "actividad": 1709,
-          "nuevos": 97
+          "id": "i-am-the-fated-villain",
+          "actividad": 1686,
+          "nuevos": 79
         },
         {
-          "id": "i-am-the-fated-villain",
-          "actividad": 1632,
-          "nuevos": 76
+          "id": "lucky-me-i-secretly-cultivated-for-1-000-years",
+          "actividad": 1619,
+          "nuevos": 95
         },
         {
           "id": "rebirth-of-the-ultimate-master",
-          "actividad": 1347,
-          "nuevos": 47
+          "actividad": 1250,
+          "nuevos": 41
         }
       ]
     },
@@ -173,82 +173,82 @@
       "manga": [
         {
           "id": "one-piece",
-          "actividad": 41793,
-          "nuevos": 2155
+          "actividad": 41708,
+          "nuevos": 2156
         },
         {
           "id": "dandadan",
-          "actividad": 23095,
-          "nuevos": 1261
-        },
-        {
-          "id": "kagurabachi",
-          "actividad": 19376,
-          "nuevos": 1355
+          "actividad": 23500,
+          "nuevos": 1284
         },
         {
           "id": "blue-lock",
-          "actividad": 19350,
-          "nuevos": 1341
+          "actividad": 19647,
+          "nuevos": 1339
+        },
+        {
+          "id": "kagurabachi",
+          "actividad": 17473,
+          "nuevos": 1355
         },
         {
           "id": "sakamoto-days",
-          "actividad": 16926,
-          "nuevos": 853
+          "actividad": 15396,
+          "nuevos": 884
         }
       ],
       "manhwa": [
         {
           "id": "overgeared",
-          "actividad": 27525,
-          "nuevos": 1457
-        },
-        {
-          "id": "revenge-of-the-baskerville-bloodhound",
-          "actividad": 24667,
-          "nuevos": 960
+          "actividad": 26832,
+          "nuevos": 1506
         },
         {
           "id": "pick-me-up",
-          "actividad": 22719,
-          "nuevos": 1124
+          "actividad": 22357,
+          "nuevos": 1131
+        },
+        {
+          "id": "revenge-of-the-baskerville-bloodhound",
+          "actividad": 22225,
+          "nuevos": 977
         },
         {
           "id": "return-of-the-blossoming-blade",
-          "actividad": 21167,
+          "actividad": 21436,
           "nuevos": 1054
         },
         {
-          "id": "the-extras-academy-survival-guide",
-          "actividad": 21079,
-          "nuevos": 1156
+          "id": "absolute-regression",
+          "actividad": 20804,
+          "nuevos": 1064
         }
       ],
       "manhua": [
         {
           "id": "the-devil-butler",
-          "actividad": 18319,
-          "nuevos": 449
+          "actividad": 17924,
+          "nuevos": 434
         },
         {
           "id": "log-into-the-future",
-          "actividad": 8850,
-          "nuevos": 319
+          "actividad": 8589,
+          "nuevos": 318
         },
         {
           "id": "i-am-the-fated-villain",
-          "actividad": 7568,
-          "nuevos": 369
+          "actividad": 7380,
+          "nuevos": 377
         },
         {
           "id": "rebirth-of-the-ultimate-master",
-          "actividad": 7095,
-          "nuevos": 285
+          "actividad": 6760,
+          "nuevos": 284
         },
         {
           "id": "lucky-me-i-secretly-cultivated-for-1-000-years",
-          "actividad": 6864,
-          "nuevos": 412
+          "actividad": 6734,
+          "nuevos": 400
         }
       ]
     }
@@ -256,257 +256,257 @@
   "diario": {
     "campos": ["lectores", "semana", "leyendo", "cambio", "dias"],
     "obras": {
-      "berserk": [249771, 1368, 120980, 0.0016, 7],
-      "one-piece": [237664, 11103, 172142, 0.0019, 7],
-      "goodnight-punpun": [189554, 747, 30017, 0.0017, 7],
-      "attack-on-titan": [229301, 443, 46426, 0.0009, 7],
-      "tokyo-ghoul": [200644, 1033, 30095, 0.002, 7],
-      "demon-slayer-kimetsu-no-yaiba": [213077, 329, 36351, 0.0012, 7],
-      "jujutsu-kaisen": [257628, 959, 113204, 0.0017, 7],
-      "chainsaw-man": [338184, 1293, 134980, 0.0016, 7],
-      "vinland-saga": [141118, 741, 50978, 0.0019, 7],
-      "vagabond": [166408, 902, 47468, 0.002, 7],
-      "horimiya": [124608, 385, 29835, 0.0011, 7],
-      "one-punch-man": [176132, 2107, 106967, 0.0012, 7],
-      "my-hero-academia": [179959, 360, 83172, 0.0009, 7],
-      "the-promised-neverland": [135270, 325, 26660, 0.0011, 7],
-      "blue-lock": [127402, 4585, 76760, 0.0023, 7],
-      "spy-x-family": [161664, 2952, 91983, 0.0012, 7],
-      "tower-of-god": [101476, 526, 49016, 0.0015, 7],
-      "bastard": [78177, 190, 5245, 0.0017, 7],
-      "the-horizon": [65959, 178, 3405, 0.0019, 7],
-      "solo-leveling": [289757, 913, 84310, 0.0014, 7],
-      "omniscient-reader": [135733, 2361, 84402, 0.003, 7],
-      "teenage-mercenary": [57687, 401, 37138, 0.0019, 7],
-      "sss-class-revival-hunter": [71259, 4705, 47176, 0.0047, 7],
-      "the-greatest-estate-developer": [72993, 2335, 32264, 0.0058, 7],
-      "the-god-of-high-school": [55997, 392, 18647, 0.0015, 7],
-      "lookism": [47292, 1571, 25516, 0.0026, 7],
-      "sweet-home": [56915, 209, 7030, 0.0021, 7],
-      "a-returners-magic-should-be-special": [51368, 776, 24446, 0.0031, 7],
-      "eleceed": [48095, 3443, 29654, 0.0033, 7],
-      "the-legend-of-the-northern-blade": [48307, 735, 18110, 0.0037, 7],
-      "nano-machine": [50046, 4279, 33883, 0.0043, 7],
-      "im-the-max-level-newbie": [52464, 3545, 36294, 0.0038, 7],
-      "tamen-de-gushi": [39273, 52, 13588, 0.0008, 7],
-      "19-tian": [26319, 98, 13619, 0.0016, 7],
-      "tales-of-demons-and-gods": [32476, 629, 20242, 0.0014, 7],
-      "here-u-are": [30790, 51, 4263, 0.0012, 7],
-      "heaven-officials-blessing": [20330, 50, 6675, 0.0023, 7],
-      "the-devil-butler": [28606, 4337, 18652, 0.003, 7],
-      "nan-hao-shang-feng": [26241, 579, 15176, 0.0042, 7],
-      "i-am-the-fated-villain": [16437, 1632, 10966, 0.0047, 7],
-      "monster": [109542, 462, 13090, 0.002, 7],
-      "20th-century-boys": [109878, 620, 14064, 0.0018, 7],
-      "bleach": [123784, 1082, 24455, 0.0019, 7],
-      "hunter-x-hunter": [111556, 922, 52017, 0.0017, 7],
-      "black-clover": [109796, 995, 57295, 0.002, 7],
-      "kaguya-sama-love-is-war": [120994, 539, 35995, 0.0014, 7],
-      "tokyo-revengers": [119199, 181, 39416, 0.001, 7],
-      "dandadan": [119156, 4755, 67471, 0.0024, 7],
-      "naruto": [101179, 1066, 15248, 0.0017, 7],
-      "death-note": [101542, 293, 12463, 0.0015, 7],
-      "jojos-bizarre-adventure-part-7-steel-ball-run": [107243, 773, 14332, 0.0019, 7],
-      "haikyu": [103243, 442, 22142, 0.0011, 7],
-      "fire-punch": [107079, 287, 11852, 0.002, 7],
-      "komi-cant-communicate": [108146, 367, 45676, 0.0009, 7],
-      "oshi-no-ko": [108196, 229, 36051, 0.0012, 7],
-      "kaiju-no-8": [108100, 258, 46676, 0.0014, 7],
-      "dorohedoro": [89862, 330, 13608, 0.0016, 7],
-      "a-silent-voice": [91965, 134, 6295, 0.0011, 7],
-      "witch-hat-atelier": [85628, 1712, 41161, 0.0028, 7],
-      "dr-stone": [89977, 252, 27132, 0.0013, 7],
-      "hells-paradise-jigokuraku": [99552, 246, 17833, 0.0014, 7],
-      "frieren-beyond-journeys-end": [87218, 358, 46045, 0.0018, 7],
-      "sakamoto-days": [90824, 4447, 45681, 0.0028, 7],
-      "goodbye-eri": [87926, 265, 1779, 0.0026, 7],
-      "fullmetal-alchemist": [81679, 353, 9735, 0.0016, 7],
-      "dragon-ball": [55165, 399, 7778, 0.0018, 7],
-      "slam-dunk": [75559, 359, 9404, 0.0017, 7],
-      "kingdom": [77869, 2196, 30231, 0.0021, 7],
-      "delicious-in-dungeon": [57152, 248, 12396, 0.0022, 7],
-      "blue-box": [56766, 534, 25288, 0.0021, 7],
-      "gachiakuta": [69093, 3371, 36373, 0.0036, 7],
-      "kagurabachi": [73312, 3920, 38854, 0.0039, 7],
-      "second-life-ranker": [45923, 1057, 28581, 0.0028, 7],
-      "the-boxer": [46516, 580, 10399, 0.0033, 7],
-      "lout-of-counts-family": [46828, 1762, 28245, 0.0042, 7],
-      "return-of-the-blossoming-blade": [47022, 5539, 31421, 0.005, 7],
-      "the-world-after-the-fall": [46186, 2296, 28368, 0.0037, 7],
-      "the-swordmasters-son": [45803, 3783, 33383, 0.0038, 7],
-      "pick-me-up": [47427, 4923, 33914, 0.0055, 7],
-      "revenge-of-the-baskerville-bloodhound": [47381, 5219, 34598, 0.0051, 7],
-      "noblesse": [35721, 206, 7990, 0.0018, 7],
-      "who-made-me-a-princess": [41133, 250, 10957, 0.0024, 7],
-      "overgeared": [41410, 5843, 26737, 0.0081, 7],
-      "villains-are-destined-to-die": [44703, 1125, 24395, 0.0043, 7],
-      "doom-breaker": [41922, 394, 26619, 0.003, 7],
-      "the-infinite-mage": [43135, 3897, 31257, 0.0059, 7],
-      "the-stellar-swordmaster": [34793, 1649, 25328, 0.0063, 7],
-      "the-extras-academy-survival-guide": [33779, 4923, 25093, 0.008, 7],
-      "grandmaster-of-demonic-cultivation-mo-dao-zu-shi": [15263, 63, 4342, 0.0022, 7],
-      "the-reason-why-raeliana-ended-up-at-the-dukes-mansion": [29916, 254, 5312, 0.0023, 7],
-      "my-wife-is-the-demon-queen": [15924, 75, 7298, 0.0022, 7],
-      "release-that-witch": [14250, 351, 7724, 0.0039, 7],
-      "tomb-raider-king": [38000, 622, 16459, 0.0027, 7],
-      "viral-hit": [29540, 212, 11904, 0.0022, 7],
-      "log-into-the-future": [15721, 2151, 10953, 0.0036, 7],
-      "the-knight-only-lives-today": [29126, 595, 21254, 0.0071, 7],
-      "soul-eater": [70559, 358, 9641, 0.0019, 7],
-      "battle-through-the-heavens": [10648, 145, 6125, 0.0022, 7],
-      "tokyo-ghoul-re": [106366, 726, 13975, 0.002, 7],
-      "she-is-also-cute-today": [12225, 55, 2935, 0.002, 7],
-      "pirouette-into-my-heart": [6925, 13, 2091, 0.0007, 7],
-      "lord-of-the-mysteries": [8281, 23, 1899, 0.0019, 7],
-      "the-broken-ring-this-marriage-will-fail-anyway": [11876, 205, 6731, 0.0052, 7],
-      "necromancer-the-ultimate-scourge": [11873, 1230, 8267, 0.0062, 7],
-      "fairy-tail": [57834, 234, 9223, 0.0012, 7],
-      "noragami-stray-god": [63442, 191, 19031, 0.0011, 7],
-      "assassination-classroom": [55426, 126, 7597, 0.0013, 7],
-      "the-seven-deadly-sins": [55681, 102, 11329, 0.0009, 7],
-      "fire-force": [67016, 147, 15589, 0.0012, 7],
-      "that-time-i-got-reincarnated-as-a-slime": [63072, 352, 41765, 0.0016, 7],
-      "record-of-ragnarok": [69263, 214, 37101, 0.0009, 7],
-      "mashle-magic-and-muscles": [60886, 240, 20298, 0.0016, 7],
-      "rurouni-kenshin": [26377, 40, 2605, 0.0011, 7],
-      "d-gray-man": [43347, 232, 14613, 0.0019, 7],
-      "gin-tama": [32301, 241, 6334, 0.0015, 7],
-      "yu-yu-hakusho": [27840, 104, 2943, 0.0013, 7],
-      "mob-psycho-100": [50049, 143, 6840, 0.0013, 7],
-      "zom-100-bucket-list-of-the-dead": [30986, 471, 14273, 0.002, 7],
-      "undead-unluck": [29976, 104, 9248, 0.0019, 7],
-      "ichi-the-witch": [31398, 3174, 17262, 0.0071, 7],
-      "uzumaki-spiral-into-horror": [88693, 114, 5152, 0.001, 7],
-      "homunculus": [74347, 195, 6910, 0.0023, 7],
-      "the-climber": [75234, 735, 10694, 0.0043, 7],
-      "land-of-the-lustrous": [85289, 481, 17295, 0.0022, 7],
-      "girls-last-tour": [51584, 231, 4492, 0.0028, 7],
-      "golden-kamuy": [52212, 191, 10651, 0.0018, 7],
-      "to-your-eternity": [51593, 94, 16407, 0.0012, 7],
-      "blood-on-the-tracks": [67453, 307, 14065, 0.0025, 7],
-      "real": [51472, 355, 12449, 0.0025, 7],
-      "akira": [48063, 60, 3944, 0.0014, 7],
-      "neon-genesis-evangelion": [39671, 181, 4396, 0.0023, 7],
-      "pluto": [54268, 157, 3397, 0.0013, 7],
-      "alice-in-borderland": [42247, 115, 4493, 0.0021, 7],
-      "made-in-abyss": [58751, 165, 25069, 0.0013, 7],
-      "the-apothecary-diaries": [48206, 327, 25814, 0.0028, 7],
-      "the-summer-hikaru-died": [43707, 389, 17104, 0.0031, 7],
-      "parasyte": [33471, 142, 2612, 0.0017, 7],
-      "mushishi": [29952, 69, 2591, 0.0019, 7],
-      "banana-fish": [31000, 55, 3122, 0.0009, 7],
-      "march-comes-in-like-a-lion": [35029, 123, 11048, 0.0015, 7],
-      "erased": [29938, 39, 2055, 0.0014, 7],
-      "heavenly-delusion": [27549, 173, 11352, 0.0021, 7],
-      "look-back": [65977, 129, 1080, 0.0022, 7],
-      "takopis-original-sin": [32435, 87, 1991, 0.0023, 7],
-      "nana": [59873, 226, 11318, 0.0025, 7],
-      "fruits-basket": [35529, 60, 3763, 0.0011, 7],
-      "yotsuba": [64902, 332, 24133, 0.0015, 7],
-      "grand-blue-dreaming": [69542, 375, 33192, 0.0015, 7],
-      "the-way-of-the-househusband": [68797, 446, 29526, 0.0009, 7],
-      "my-dress-up-darling": [102346, 482, 40367, 0.0023, 7],
-      "blue-period": [78058, 232, 29930, 0.0012, 7],
-      "the-fragrant-flower-blooms-with-dignity": [82488, 4375, 48065, 0.003, 7],
-      "yona-of-the-dawn": [55190, 464, 20604, 0.0016, 7],
-      "bloom-into-you": [67293, 175, 6745, 0.0012, 7],
-      "rent-a-girlfriend": [62859, 1041, 31530, 0.0008, 7],
-      "the-quintessential-quintuplets": [70810, 128, 9827, 0.0009, 7],
-      "the-dangers-in-my-heart": [36966, 279, 18491, 0.0021, 7],
-      "skip-and-loafer": [33902, 326, 15152, 0.002, 7],
-      "a-sign-of-affection": [37099, 182, 17139, 0.0019, 7],
-      "call-of-the-night": [67203, 475, 19443, 0.0022, 7],
-      "hajime-no-ippo-fighting-spirit": [36329, 571, 15887, 0.0021, 7],
-      "eyeshield-21": [22936, 66, 2241, 0.0015, 7],
-      "the-breaker": [40268, 79, 3439, 0.0014, 7],
-      "kurokos-basketball": [17584, 10, 2207, 0.0011, 7],
-      "chihayafuru": [23719, 107, 4174, 0.0019, 7],
-      "wind-breaker": [43013, 242, 18397, 0.0015, 7],
-      "aoashi": [26425, 605, 9739, 0.0043, 7],
-      "medalist": [14048, 129, 5220, 0.0027, 7],
-      "latna-saga-survival-of-a-sword-king": [37358, 1681, 23961, 0.0031, 7],
-      "the-archmage-returns-after-4000-years": [39268, 787, 25346, 0.0023, 7],
-      "the-player-who-cant-level-up": [36464, 669, 23583, 0.0023, 7],
-      "the-lazy-lord-masters-the-sword": [35986, 2911, 25719, 0.0053, 7],
-      "return-of-the-mad-demon": [28817, 1764, 19591, 0.0047, 7],
-      "level-up-with-the-gods": [29658, 294, 20210, 0.0035, 7],
-      "the-return-of-the-disaster-class-hero": [39921, 2020, 27209, 0.0032, 7],
-      "the-novels-extra": [31375, 1353, 21869, 0.0049, 7],
-      "leviathan": [22576, 138, 4764, 0.0044, 7],
-      "unholy-blood": [26324, 113, 5026, 0.0025, 7],
-      "beware-the-villainess": [27618, 222, 8068, 0.0028, 7],
-      "log-in-murim": [25555, 2677, 18470, 0.0073, 7],
-      "i-shall-master-this-family": [26161, 1817, 16684, 0.0045, 7],
-      "maybe-meant-to-be": [28639, 268, 12904, 0.0032, 7],
-      "surviving-the-game-as-a-barbarian": [22789, 3521, 16794, 0.0075, 7],
-      "the-regressed-mercenary-has-a-plan": [26548, 3288, 20133, 0.009, 7],
-      "the-sound-of-magic-annarasumanara": [21620, 24, 980, 0.0011, 7],
-      "the-remarried-empress": [21681, 893, 10981, 0.0057, 7],
-      "weak-hero": [22447, 148, 7807, 0.0027, 7],
-      "seasons-of-blossom": [20867, 182, 4894, 0.0036, 7],
-      "roxana": [22139, 819, 10873, 0.0065, 7],
-      "myst-might-mayhem": [21625, 3457, 15594, 0.0095, 7],
-      "absolute-regression": [20820, 5052, 15520, 0.0123, 7],
-      "my-bias-gets-on-the-last-train": [21109, 594, 13210, 0.0077, 7],
-      "true-beauty": [16070, 13, 4668, 0.0007, 7],
-      "martial-peak": [26030, 506, 14837, 0.0018, 7],
-      "pigpen": [18564, 105, 1865, 0.0036, 7],
-      "under-the-oak-tree": [18797, 131, 9791, 0.0021, 7],
-      "shotgun-boy": [22472, 88, 4331, 0.0025, 7],
-      "your-talent-is-mine": [14955, 73, 9545, 0.0023, 7],
-      "my-wife-is-from-a-thousand-years-ago": [12628, 676, 6361, 0.0057, 7],
-      "lucky-me-i-secretly-cultivated-for-1-000-years": [11538, 1709, 8120, 0.0085, 7],
-      "the-ravages-of-time": [9507, 111, 1820, 0.0024, 7],
-      "chang-ge-xing": [9669, 42, 1435, 0.0017, 7],
-      "soul-land": [9058, 34, 4796, 0.0019, 7],
-      "reverend-insanity": [9016, 68, 2467, 0.0031, 7],
-      "soulmate": [8556, 20, 581, 0.0009, 7],
-      "rebirth-of-the-ultimate-master": [11192, 1347, 7755, 0.0042, 7],
-      "im-really-not-the-devils-lackey": [11037, 577, 6635, 0.0054, 7],
-      "please-bully-me-miss-villainess": [10324, 148, 5746, 0.0027, 7],
-      "10-years-that-i-loved-you-the-most": [6642, 7, 304, 0.0015, 7],
-      "spare-me-great-lord": [7002, 234, 3265, 0.0053, 7],
-      "absolute-sword-sense": [18168, 3433, 13481, 0.0068, 7],
-      "my-blasted-reincarnated-life": [37400, 7959, 24412, 0.0153, 7],
-      "little-mushroom": [4130, 45, 1684, 0.0068, 7],
-      "my-life-turned-around-after-i-was-betrayed-and-framed-i-won-the-heart-of-the-most-beautiful-girl-at-school": [7030, 1088, 5228, 0.0165, 7],
-      "reincarnation-of-the-fist-king": [7809, 2155, 5838, 0.012, 7],
-      "a-wimps-tower-strategy-guide": [5044, 1463, 3977, 0.017, 7],
-      "the-flowers-of-evil": [75125, 272, 4670, 0.0023, 7],
-      "three-days-of-happiness": [86281, 172, 4549, 0.0016, 7],
-      "dont-toy-with-me-miss-nagatoro": [76544, 151, 31901, 0.001, 7],
-      "mieruko-chan": [46442, 769, 23891, 0.001, 7],
-      "the-max-level-hero-strikes-back": [32412, 1579, 22046, 0.0026, 7],
-      "the-academys-genius-swordsman": [30935, 1579, 22342, 0.0044, 7],
-      "the-martial-god-who-regressed-back-to-level-2": [20922, 1282, 15216, 0.0044, 7],
-      "prologue-eseo-30-nyeoni-heulleotda": [5856, 2028, 4642, 0.0385, 7],
-      "blame": [67268, 308, 6978, 0.0025, 7],
-      "gantz": [71828, 328, 7400, 0.0019, 7],
-      "claymore": [67768, 463, 7481, 0.0021, 7],
-      "jojos-bizarre-adventure-part-6-stone-ocean": [73698, 160, 6505, 0.0012, 7],
-      "wotakoi-love-is-hard-for-otaku": [65825, 169, 16269, 0.0015, 7],
-      "toilet-bound-hanako-kun": [72930, 336, 29599, 0.0013, 7],
-      "jujutsu-kaisen-0": [73014, 113, 2247, 0.0014, 7],
-      "chronicles-of-the-lazy-sovereign": [7501, 2207, 5469, 0.0149, 7],
-      "descended-from-divinity": [21481, 4009, 15386, 0.0123, 7],
-      "ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihonichi-kawaii-joshikousei-to-issho-ni-kurasu-koto-deshita": [10718, 398, 6770, 0.0051, 7],
-      "i-want-to-end-this-love-game": [20820, 348, 11328, 0.004, 7],
-      "chronicles-of-a-doomed-prodigy": [9832, 2464, 7536, 0.0103, 7],
-      "bouryoku-banzai": [5113, 362, 2829, 0.0141, 7],
-      "fog-land": [6059, 559, 3665, 0.0243, 7],
-      "how-to-survive-as-a-wandering-knight": [4758, 1140, 3545, 0.0264, 7],
-      "i-married-the-dragon-i-killed": [5846, 2996, 4656, 0.0374, 7],
-      "gto-great-teacher-onizuka": [57009, 142, 6423, 0.0016, 7],
-      "pandora-hearts": [58482, 325, 7468, 0.0021, 7],
-      "ao-haru-ride": [62227, 106, 5494, 0.0014, 7],
-      "jojos-bizarre-adventure-part-8-jojolion": [63698, 822, 12525, 0.0023, 7],
-      "nisekoi-false-love": [57364, 183, 7129, 0.001, 7],
-      "ajin-demi-human": [64888, 304, 10033, 0.0021, 7],
-      "boys-abyss": [59080, 173, 17034, 0.0014, 7],
-      "cheonhwa-archives-young-master": [9607, 1173, 6958, 0.0059, 7],
-      "solanin": [55496, 148, 3037, 0.0019, 7],
-      "relife": [55921, 106, 6410, 0.0011, 7],
-      "chained-soldier": [56381, 342, 32321, 0.0017, 7]
+      "berserk": [249848, 1255, 121015, 0.0017, 7],
+      "one-piece": [237741, 11048, 172206, 0.0019, 7],
+      "goodnight-punpun": [189598, 697, 30027, 0.0017, 7],
+      "attack-on-titan": [229339, 378, 46429, 0.001, 7],
+      "tokyo-ghoul": [200699, 941, 30103, 0.002, 7],
+      "demon-slayer-kimetsu-no-yaiba": [213119, 290, 36354, 0.0012, 7],
+      "jujutsu-kaisen": [257692, 879, 113214, 0.0017, 7],
+      "chainsaw-man": [338259, 1186, 134991, 0.0016, 7],
+      "vinland-saga": [141157, 655, 50983, 0.0019, 7],
+      "vagabond": [166463, 827, 47483, 0.0021, 7],
+      "horimiya": [124632, 349, 29844, 0.0012, 7],
+      "one-punch-man": [176171, 2050, 106987, 0.0012, 7],
+      "my-hero-academia": [179983, 332, 83176, 0.0009, 7],
+      "the-promised-neverland": [135298, 285, 26664, 0.0012, 7],
+      "blue-lock": [127447, 3485, 76786, 0.0024, 7],
+      "spy-x-family": [161715, 3056, 92014, 0.0014, 7],
+      "tower-of-god": [101489, 508, 49017, 0.0014, 7],
+      "bastard": [78190, 171, 5245, 0.0017, 7],
+      "the-horizon": [65978, 185, 3406, 0.0019, 7],
+      "solo-leveling": [289826, 851, 84323, 0.0014, 7],
+      "omniscient-reader": [135788, 3350, 84439, 0.003, 7],
+      "teenage-mercenary": [57705, 411, 37145, 0.002, 7],
+      "sss-class-revival-hunter": [71295, 4591, 47199, 0.0045, 7],
+      "the-greatest-estate-developer": [72993, 2081, 32279, 0.0055, 7],
+      "the-god-of-high-school": [56015, 355, 18654, 0.0015, 7],
+      "lookism": [47312, 1487, 25525, 0.0026, 7],
+      "sweet-home": [56929, 194, 7031, 0.002, 7],
+      "a-returners-magic-should-be-special": [51390, 683, 24452, 0.0031, 7],
+      "eleceed": [48117, 2606, 29665, 0.0033, 7],
+      "the-legend-of-the-northern-blade": [48337, 745, 18119, 0.0036, 7],
+      "nano-machine": [50073, 4155, 33892, 0.0043, 7],
+      "im-the-max-level-newbie": [52489, 3466, 36314, 0.0038, 7],
+      "tamen-de-gushi": [39283, 55, 13592, 0.001, 7],
+      "19-tian": [26325, 86, 13624, 0.0014, 7],
+      "tales-of-demons-and-gods": [32484, 596, 20247, 0.0015, 7],
+      "here-u-are": [30798, 52, 4263, 0.0012, 7],
+      "heaven-officials-blessing": [20337, 42, 6678, 0.0024, 7],
+      "the-devil-butler": [28618, 4236, 18659, 0.003, 7],
+      "nan-hao-shang-feng": [26254, 599, 15188, 0.0042, 7],
+      "i-am-the-fated-villain": [16437, 1686, 10982, 0.0048, 7],
+      "monster": [109575, 433, 13093, 0.0021, 7],
+      "20th-century-boys": [109910, 597, 14069, 0.0019, 7],
+      "bleach": [123813, 1001, 24456, 0.0018, 7],
+      "hunter-x-hunter": [111594, 900, 52037, 0.0018, 7],
+      "black-clover": [109837, 923, 57298, 0.002, 7],
+      "kaguya-sama-love-is-war": [121017, 490, 35993, 0.0014, 7],
+      "tokyo-revengers": [119211, 157, 39415, 0.001, 7],
+      "dandadan": [119221, 4679, 67501, 0.0023, 7],
+      "naruto": [101209, 994, 15254, 0.0017, 7],
+      "death-note": [101570, 271, 12465, 0.0015, 7],
+      "jojos-bizarre-adventure-part-7-steel-ball-run": [107286, 679, 14338, 0.002, 7],
+      "haikyu": [103269, 410, 22149, 0.0012, 7],
+      "fire-punch": [107113, 259, 11851, 0.002, 7],
+      "komi-cant-communicate": [108167, 337, 45677, 0.001, 7],
+      "oshi-no-ko": [108225, 203, 36055, 0.0013, 7],
+      "kaiju-no-8": [108129, 228, 46675, 0.0015, 7],
+      "dorohedoro": [89881, 317, 13608, 0.0016, 7],
+      "a-silent-voice": [91981, 120, 6298, 0.0011, 7],
+      "witch-hat-atelier": [85665, 1436, 41186, 0.003, 7],
+      "dr-stone": [90004, 241, 27134, 0.0015, 7],
+      "hells-paradise-jigokuraku": [99583, 215, 17841, 0.0016, 7],
+      "frieren-beyond-journeys-end": [87243, 333, 46060, 0.0018, 7],
+      "sakamoto-days": [90877, 4476, 45166, 0.0032, 7],
+      "goodbye-eri": [87926, 222, 1779, 0.0027, 7],
+      "fullmetal-alchemist": [81697, 327, 9738, 0.0015, 7],
+      "dragon-ball": [55184, 349, 7782, 0.0018, 7],
+      "slam-dunk": [75585, 338, 9410, 0.0017, 7],
+      "kingdom": [77891, 2140, 30240, 0.0022, 7],
+      "delicious-in-dungeon": [57178, 210, 12403, 0.0023, 7],
+      "blue-box": [56790, 487, 25292, 0.0023, 7],
+      "gachiakuta": [69093, 2500, 36396, 0.0039, 7],
+      "kagurabachi": [73312, 3854, 38877, 0.0039, 7],
+      "second-life-ranker": [45939, 1069, 28592, 0.0028, 7],
+      "the-boxer": [46546, 541, 10403, 0.0035, 7],
+      "lout-of-counts-family": [46859, 1715, 28267, 0.0044, 7],
+      "return-of-the-blossoming-blade": [47051, 4560, 31444, 0.0049, 7],
+      "the-world-after-the-fall": [46186, 2588, 28387, 0.0037, 7],
+      "the-swordmasters-son": [45803, 3605, 33401, 0.0039, 7],
+      "pick-me-up": [47427, 4766, 33941, 0.0056, 7],
+      "revenge-of-the-baskerville-bloodhound": [47381, 4989, 34583, 0.0051, 7],
+      "noblesse": [35733, 186, 7992, 0.0019, 7],
+      "who-made-me-a-princess": [41149, 207, 10960, 0.0024, 7],
+      "overgeared": [41495, 5399, 26802, 0.0087, 7],
+      "villains-are-destined-to-die": [44733, 1031, 24407, 0.0044, 7],
+      "doom-breaker": [41955, 437, 26645, 0.0035, 7],
+      "the-infinite-mage": [43135, 2627, 31281, 0.0059, 7],
+      "the-stellar-swordmaster": [34793, 1860, 25346, 0.0064, 7],
+      "the-extras-academy-survival-guide": [33779, 4821, 25126, 0.0086, 7],
+      "grandmaster-of-demonic-cultivation-mo-dao-zu-shi": [15272, 59, 4344, 0.0026, 7],
+      "the-reason-why-raeliana-ended-up-at-the-dukes-mansion": [29933, 247, 5316, 0.0025, 7],
+      "my-wife-is-the-demon-queen": [15927, 68, 7298, 0.0022, 7],
+      "release-that-witch": [14259, 312, 7729, 0.0039, 7],
+      "tomb-raider-king": [38023, 571, 16469, 0.0031, 7],
+      "viral-hit": [29550, 193, 11909, 0.0021, 7],
+      "log-into-the-future": [15721, 2162, 10958, 0.0036, 7],
+      "the-knight-only-lives-today": [29126, 526, 21267, 0.007, 7],
+      "soul-eater": [70580, 327, 9642, 0.0019, 7],
+      "battle-through-the-heavens": [10650, 156, 6126, 0.0023, 7],
+      "tokyo-ghoul-re": [106398, 646, 13977, 0.0019, 7],
+      "she-is-also-cute-today": [12227, 56, 2935, 0.002, 7],
+      "pirouette-into-my-heart": [6926, 8, 2091, 0.0007, 7],
+      "lord-of-the-mysteries": [8285, 20, 1899, 0.0019, 7],
+      "the-broken-ring-this-marriage-will-fail-anyway": [11876, 209, 6731, 0.0044, 7],
+      "necromancer-the-ultimate-scourge": [11873, 1193, 8281, 0.0061, 7],
+      "fairy-tail": [57844, 222, 9223, 0.0012, 7],
+      "noragami-stray-god": [63449, 188, 19030, 0.001, 7],
+      "assassination-classroom": [55436, 123, 7599, 0.0012, 7],
+      "the-seven-deadly-sins": [55690, 89, 11331, 0.0009, 7],
+      "fire-force": [67032, 132, 15589, 0.0013, 7],
+      "that-time-i-got-reincarnated-as-a-slime": [63091, 321, 41778, 0.0016, 7],
+      "record-of-ragnarok": [69277, 201, 37105, 0.001, 7],
+      "mashle-magic-and-muscles": [60899, 232, 20301, 0.0016, 7],
+      "rurouni-kenshin": [26384, 36, 2605, 0.0011, 7],
+      "d-gray-man": [43356, 203, 14618, 0.0018, 7],
+      "gin-tama": [32309, 210, 6335, 0.0016, 7],
+      "yu-yu-hakusho": [27846, 115, 2945, 0.0014, 7],
+      "mob-psycho-100": [50060, 136, 6840, 0.0013, 7],
+      "zom-100-bucket-list-of-the-dead": [30995, 470, 14279, 0.0018, 7],
+      "undead-unluck": [29992, 104, 9250, 0.002, 7],
+      "ichi-the-witch": [31398, 3073, 17280, 0.0073, 7],
+      "uzumaki-spiral-into-horror": [88717, 98, 5152, 0.0012, 7],
+      "homunculus": [74370, 180, 6912, 0.0022, 7],
+      "the-climber": [75274, 621, 10699, 0.004, 7],
+      "land-of-the-lustrous": [85320, 455, 17301, 0.0022, 7],
+      "girls-last-tour": [51609, 204, 4496, 0.0027, 7],
+      "golden-kamuy": [52224, 172, 10650, 0.0019, 7],
+      "to-your-eternity": [51605, 88, 16412, 0.0012, 7],
+      "blood-on-the-tracks": [67480, 283, 14073, 0.0025, 7],
+      "real": [51484, 320, 12453, 0.0024, 7],
+      "akira": [48073, 50, 3945, 0.0014, 7],
+      "neon-genesis-evangelion": [39688, 160, 4400, 0.0024, 7],
+      "pluto": [54281, 134, 3399, 0.0014, 7],
+      "alice-in-borderland": [42254, 117, 4494, 0.002, 7],
+      "made-in-abyss": [58769, 161, 25078, 0.0014, 7],
+      "the-apothecary-diaries": [48226, 304, 25826, 0.0029, 7],
+      "the-summer-hikaru-died": [43707, 362, 17109, 0.0032, 7],
+      "parasyte": [33482, 130, 2613, 0.0016, 7],
+      "mushishi": [29963, 62, 2591, 0.002, 7],
+      "banana-fish": [31004, 41, 3120, 0.0008, 7],
+      "march-comes-in-like-a-lion": [35044, 117, 11053, 0.0018, 7],
+      "erased": [29943, 37, 2056, 0.0013, 7],
+      "heavenly-delusion": [27561, 156, 11357, 0.0022, 7],
+      "look-back": [66001, 117, 1079, 0.0023, 7],
+      "takopis-original-sin": [32435, 77, 1992, 0.0023, 7],
+      "nana": [59892, 203, 11325, 0.0025, 7],
+      "fruits-basket": [35535, 55, 3763, 0.0011, 7],
+      "yotsuba": [64912, 289, 24137, 0.0014, 7],
+      "grand-blue-dreaming": [69559, 328, 33196, 0.0014, 7],
+      "the-way-of-the-househusband": [68808, 437, 29531, 0.001, 7],
+      "my-dress-up-darling": [102385, 433, 40374, 0.0023, 7],
+      "blue-period": [78074, 239, 29936, 0.0013, 7],
+      "the-fragrant-flower-blooms-with-dignity": [82488, 4331, 48086, 0.0031, 7],
+      "yona-of-the-dawn": [55210, 436, 20615, 0.0017, 7],
+      "bloom-into-you": [67312, 170, 6741, 0.0013, 7],
+      "rent-a-girlfriend": [62863, 761, 31531, 0.0008, 7],
+      "the-quintessential-quintuplets": [70814, 125, 9827, 0.0008, 7],
+      "the-dangers-in-my-heart": [36987, 248, 18489, 0.0023, 7],
+      "skip-and-loafer": [33915, 291, 15157, 0.0019, 7],
+      "a-sign-of-affection": [37113, 176, 17152, 0.002, 7],
+      "call-of-the-night": [67239, 439, 19447, 0.0024, 7],
+      "hajime-no-ippo-fighting-spirit": [36335, 545, 15891, 0.002, 7],
+      "eyeshield-21": [22943, 60, 2244, 0.0016, 7],
+      "the-breaker": [40274, 52, 3441, 0.0014, 7],
+      "kurokos-basketball": [17584, 13, 2209, 0.0009, 7],
+      "chihayafuru": [23728, 86, 4176, 0.0019, 7],
+      "wind-breaker": [43025, 218, 18402, 0.0014, 7],
+      "aoashi": [26432, 528, 9743, 0.004, 7],
+      "medalist": [14056, 112, 5224, 0.003, 7],
+      "latna-saga-survival-of-a-sword-king": [37376, 1431, 23972, 0.0033, 7],
+      "the-archmage-returns-after-4000-years": [39284, 778, 25355, 0.0024, 7],
+      "the-player-who-cant-level-up": [36482, 684, 23592, 0.0026, 7],
+      "the-lazy-lord-masters-the-sword": [36014, 2754, 25740, 0.0055, 7],
+      "return-of-the-mad-demon": [28841, 1750, 19611, 0.0047, 7],
+      "level-up-with-the-gods": [29658, 263, 20218, 0.0036, 7],
+      "the-return-of-the-disaster-class-hero": [39921, 1983, 27218, 0.003, 7],
+      "the-novels-extra": [31375, 997, 21884, 0.0043, 7],
+      "leviathan": [22591, 129, 4769, 0.0042, 7],
+      "unholy-blood": [26339, 113, 5030, 0.0026, 7],
+      "beware-the-villainess": [27636, 207, 8070, 0.003, 7],
+      "log-in-murim": [25571, 2514, 18481, 0.0066, 7],
+      "i-shall-master-this-family": [26177, 1715, 16694, 0.0046, 7],
+      "maybe-meant-to-be": [28639, 236, 12910, 0.0034, 7],
+      "surviving-the-game-as-a-barbarian": [22789, 3430, 16813, 0.0076, 7],
+      "the-regressed-mercenary-has-a-plan": [26548, 2430, 20156, 0.008, 7],
+      "the-sound-of-magic-annarasumanara": [21623, 21, 980, 0.0011, 7],
+      "the-remarried-empress": [21690, 850, 10984, 0.0051, 7],
+      "weak-hero": [22456, 137, 7810, 0.0027, 7],
+      "seasons-of-blossom": [20883, 160, 4901, 0.0037, 7],
+      "roxana": [22155, 812, 10883, 0.0065, 7],
+      "myst-might-mayhem": [21625, 3296, 15635, 0.0102, 7],
+      "absolute-regression": [20820, 5361, 15560, 0.0136, 7],
+      "my-bias-gets-on-the-last-train": [21109, 572, 13229, 0.0074, 7],
+      "true-beauty": [16073, 12, 4668, 0.0009, 7],
+      "martial-peak": [26038, 473, 14843, 0.0019, 7],
+      "pigpen": [18577, 104, 1861, 0.0038, 7],
+      "under-the-oak-tree": [18810, 111, 9801, 0.0024, 7],
+      "shotgun-boy": [22480, 74, 4331, 0.0025, 7],
+      "your-talent-is-mine": [14955, 63, 9544, 0.0023, 7],
+      "my-wife-is-from-a-thousand-years-ago": [12628, 636, 6358, 0.0046, 7],
+      "lucky-me-i-secretly-cultivated-for-1-000-years": [11538, 1619, 8127, 0.0083, 7],
+      "the-ravages-of-time": [9509, 100, 1820, 0.0026, 7],
+      "chang-ge-xing": [9671, 35, 1436, 0.0018, 7],
+      "soul-land": [9060, 36, 4797, 0.0017, 6],
+      "reverend-insanity": [9021, 64, 2470, 0.0031, 7],
+      "soulmate": [8558, 15, 581, 0.0009, 7],
+      "rebirth-of-the-ultimate-master": [11192, 1250, 7759, 0.0037, 7],
+      "im-really-not-the-devils-lackey": [11037, 578, 6641, 0.0058, 7],
+      "please-bully-me-miss-villainess": [10324, 128, 5745, 0.0023, 7],
+      "10-years-that-i-loved-you-the-most": [6642, 6, 304, 0.0015, 7],
+      "spare-me-great-lord": [7008, 214, 3269, 0.0055, 7],
+      "absolute-sword-sense": [18168, 3480, 13511, 0.0078, 7],
+      "my-blasted-reincarnated-life": [37400, 8008, 24375, 0.0153, 7],
+      "little-mushroom": [4130, 37, 1685, 0.0083, 7],
+      "my-life-turned-around-after-i-was-betrayed-and-framed-i-won-the-heart-of-the-most-beautiful-girl-at-school": [7030, 1166, 5297, 0.0249, 7],
+      "reincarnation-of-the-fist-king": [7809, 2257, 5861, 0.0147, 7],
+      "a-wimps-tower-strategy-guide": [5044, 1567, 3997, 0.0198, 7],
+      "the-flowers-of-evil": [75146, 251, 4673, 0.0022, 7],
+      "three-days-of-happiness": [86310, 165, 4553, 0.0016, 7],
+      "dont-toy-with-me-miss-nagatoro": [76557, 151, 31901, 0.001, 7],
+      "mieruko-chan": [46467, 899, 23911, 0.0014, 7],
+      "the-max-level-hero-strikes-back": [32430, 1163, 22063, 0.0027, 7],
+      "the-academys-genius-swordsman": [30935, 1598, 22361, 0.0045, 7],
+      "the-martial-god-who-regressed-back-to-level-2": [20922, 919, 15231, 0.0044, 7],
+      "prologue-eseo-30-nyeoni-heulleotda": [5856, 1799, 4671, 0.0337, 7],
+      "blame": [67287, 297, 6987, 0.0024, 7],
+      "gantz": [71844, 303, 7401, 0.0018, 7],
+      "claymore": [67793, 443, 7485, 0.0022, 7],
+      "jojos-bizarre-adventure-part-6-stone-ocean": [73715, 155, 6506, 0.0012, 7],
+      "wotakoi-love-is-hard-for-otaku": [65835, 159, 16271, 0.0015, 7],
+      "toilet-bound-hanako-kun": [72946, 241, 29605, 0.0014, 7],
+      "jujutsu-kaisen-0": [73029, 104, 2248, 0.0014, 7],
+      "chronicles-of-the-lazy-sovereign": [7501, 2114, 5486, 0.0167, 7],
+      "descended-from-divinity": [21509, 3627, 15409, 0.0089, 7],
+      "ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihonichi-kawaii-joshikousei-to-issho-ni-kurasu-koto-deshita": [10718, 527, 6786, 0.0062, 7],
+      "i-want-to-end-this-love-game": [20820, 672, 11354, 0.0047, 7],
+      "chronicles-of-a-doomed-prodigy": [9832, 2694, 7553, 0.0108, 7],
+      "bouryoku-banzai": [5113, 359, 2841, 0.0135, 7],
+      "fog-land": [6059, 613, 3688, 0.0237, 7],
+      "how-to-survive-as-a-wandering-knight": [4758, 1114, 3559, 0.0237, 7],
+      "i-married-the-dragon-i-killed": [5846, 2693, 4696, 0.043, 7],
+      "gto-great-teacher-onizuka": [57024, 138, 6424, 0.0015, 7],
+      "pandora-hearts": [58501, 306, 7475, 0.0021, 7],
+      "ao-haru-ride": [62241, 104, 5497, 0.0013, 7],
+      "jojos-bizarre-adventure-part-8-jojolion": [63726, 747, 12531, 0.0024, 7],
+      "nisekoi-false-love": [57375, 178, 7129, 0.0012, 7],
+      "ajin-demi-human": [64904, 297, 10033, 0.0019, 7],
+      "boys-abyss": [59095, 164, 17037, 0.0013, 7],
+      "cheonhwa-archives-young-master": [9607, 1342, 6965, 0.0063, 7],
+      "solanin": [55509, 142, 3035, 0.0018, 7],
+      "relife": [55932, 105, 6411, 0.0011, 7],
+      "chained-soldier": [56403, 302, 32323, 0.0017, 7]
     }
   }
 }
