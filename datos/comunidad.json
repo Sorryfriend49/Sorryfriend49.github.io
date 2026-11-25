@@ -7216,7 +7216,13 @@
         "lectores": 0.002,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores destacan la calidad artística de la obra, alabando especialmente a los personajes y la acción. Varios mencionan que la historia posee un ritmo de desarrollo impresionante y una atmósfera única. Algunos lectores señalan que la narrativa se centra en un enfrentamiento clásico entre el bien y el mal.",
+        "resenas": 13,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-25"
+      },
       "capitulos": {
         "ultimo": 44,
         "tomos": null
@@ -8756,7 +8762,13 @@
         "lectores": 0.0046,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores destacan la profunda evolución de los personajes y la calidad de la historia, describiéndola como un viaje emocional. Varios mencionan cómo el romance y el desarrollo personal de los protagonistas son puntos muy fuertes de la obra. Se resalta que la narrativa logra transformar temas inicialmente ligeros en algo mucho más profundo.",
+        "resenas": 15,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-25"
+      },
       "capitulos": {
         "ultimo": 31,
         "tomos": 4
@@ -9264,7 +9276,13 @@
         "lectores": 0.0013,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores destacan la construcción de mundo de Magi, señalando que cada arco explora culturas y características geográficas únicas. A varios les atrae la profundidad filosófica que aporta la exploración del universo a través de los personajes. El relato se presenta como una reimaginación compleja de mil y una noches.",
+        "resenas": 5,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-25"
+      },
       "capitulos": {
         "ultimo": 369,
         "tomos": 37
@@ -17657,7 +17675,13 @@
         "lectores": 0.0018,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores presentan opiniones variadas sobre la obra; algunos destacan las batallas y el desarrollo de personajes, mientras que otros critican aspectos como la calidad artística o la facilidad con que se usan los poderes. Existe un consenso en que la historia es atractiva, aunque la recepción sobre el arte y la trama es mixta.",
+        "resenas": 7,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-25"
+      },
       "capitulos": {
         "ultimo": 80,
         "tomos": 20
@@ -19382,7 +19406,13 @@
         "lectores": 0.0012,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores destacan la calidad del arte y el desarrollo profundo de los personajes, considerándolo una obra fascinante. Sin embargo, algunos señalan que el sistema del mundo y los temas románticos son puntos débiles. Varios opinan que la narrativa se vuelve compleja o se desvía en las etapas finales de la historia.",
+        "resenas": 12,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-25"
+      },
       "capitulos": {
         "ultimo": 196,
         "tomos": 22
