@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "metodo": "1.2",
-  "generado": "2026-11-25T09:18:28.744Z",
+  "generado": "2026-11-25T19:14:26.712Z",
   "fuentes": {
     "anilist": "2026-11-25",
     "kitsu": "2026-11-25",
@@ -72,7 +72,7 @@
         ],
         "critican": []
       },
-      "popularidad": 109575,
+      "popularidad": 109604,
       "favoritos": 11562,
       "etiquetas": [
         {
@@ -195,7 +195,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.0023,
+        "lectores": 0.0026,
         "puntaje": 0,
         "dias": 8
       }
@@ -260,7 +260,7 @@
           "final"
         ]
       },
-      "popularidad": 249848,
+      "popularidad": 249892,
       "favoritos": 41061,
       "etiquetas": [
         {
@@ -448,7 +448,7 @@
           "final"
         ]
       },
-      "popularidad": 109910,
+      "popularidad": 109938,
       "favoritos": 8792,
       "etiquetas": [
         {
@@ -564,7 +564,7 @@
         "tomos": 22
       },
       "tendencia": {
-        "lectores": 0.0021,
+        "lectores": 0.0024,
         "puntaje": 0,
         "dias": 8
       },
@@ -624,7 +624,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 36335,
+      "popularidad": 36346,
       "favoritos": 3563,
       "etiquetas": [
         {
@@ -722,7 +722,7 @@
       ],
       "revisada": "2026-11-24",
       "tendencia": {
-        "lectores": 0.0023,
+        "lectores": 0.0026,
         "puntaje": 0,
         "dias": 8
       }
@@ -787,7 +787,7 @@
           "mundo"
         ]
       },
-      "popularidad": 101209,
+      "popularidad": 101225,
       "favoritos": 7661,
       "etiquetas": [
         {
@@ -903,7 +903,7 @@
         "tomos": 72
       },
       "tendencia": {
-        "lectores": 0.002,
+        "lectores": 0.0022,
         "puntaje": 0,
         "dias": 8
       },
@@ -969,7 +969,7 @@
           "humor"
         ]
       },
-      "popularidad": 123813,
+      "popularidad": 123841,
       "favoritos": 12248,
       "etiquetas": [
         {
@@ -1085,7 +1085,7 @@
         "tomos": 74
       },
       "tendencia": {
-        "lectores": 0.0021,
+        "lectores": 0.0023,
         "puntaje": 0,
         "dias": 8
       },
@@ -1151,7 +1151,7 @@
           "ritmo"
         ]
       },
-      "popularidad": 237741,
+      "popularidad": 237789,
       "favoritos": 48169,
       "etiquetas": [
         {
@@ -1333,7 +1333,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 101570,
+      "popularidad": 101594,
       "favoritos": 6534,
       "etiquetas": [
         {
@@ -1443,7 +1443,7 @@
         "tomos": 12
       },
       "tendencia": {
-        "lectores": 0.0017,
+        "lectores": 0.002,
         "puntaje": 0,
         "dias": 8
       },
@@ -1503,7 +1503,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 26384,
+      "popularidad": 26386,
       "favoritos": 1500,
       "etiquetas": [
         {
@@ -1604,7 +1604,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0013,
+        "lectores": 0.0014,
         "puntaje": 0,
         "dias": 8
       },
@@ -1664,7 +1664,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 43356,
+      "popularidad": 43369,
       "favoritos": 3048,
       "etiquetas": [
         {
@@ -1774,7 +1774,7 @@
         "tomos": 29
       },
       "tendencia": {
-        "lectores": 0.0021,
+        "lectores": 0.0024,
         "puntaje": 0,
         "dias": 8
       },
@@ -1834,7 +1834,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 81697,
+      "popularidad": 81719,
       "favoritos": 7967,
       "etiquetas": [
         {
@@ -1944,7 +1944,7 @@
         "tomos": 27
       },
       "tendencia": {
-        "lectores": 0.0018,
+        "lectores": 0.0021,
         "puntaje": 0,
         "dias": 8
       },
@@ -2008,7 +2008,7 @@
         ],
         "critican": []
       },
-      "popularidad": 111594,
+      "popularidad": 111613,
       "favoritos": 12298,
       "etiquetas": [
         {
@@ -2124,7 +2124,7 @@
         "tomos": 39
       },
       "tendencia": {
-        "lectores": 0.0021,
+        "lectores": 0.0023,
         "puntaje": 0,
         "dias": 8
       },
@@ -2184,7 +2184,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 59892,
+      "popularidad": 59902,
       "favoritos": 5807,
       "etiquetas": [
         {
@@ -2359,7 +2359,7 @@
         ],
         "critican": []
       },
-      "popularidad": 55184,
+      "popularidad": 55193,
       "favoritos": 6257,
       "etiquetas": [
         {
@@ -2465,7 +2465,7 @@
         "tomos": 42
       },
       "tendencia": {
-        "lectores": 0.0021,
+        "lectores": 0.0023,
         "puntaje": 0,
         "dias": 8
       },
@@ -2525,7 +2525,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 22943,
+      "popularidad": 22944,
       "favoritos": 1233,
       "etiquetas": [
         {
@@ -2685,7 +2685,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 32309,
+      "popularidad": 32316,
       "favoritos": 2488,
       "etiquetas": [
         {
@@ -2865,7 +2865,7 @@
         ],
         "critican": []
       },
-      "popularidad": 75585,
+      "popularidad": 75609,
       "favoritos": 8865,
       "etiquetas": [
         {
@@ -2981,7 +2981,7 @@
         "tomos": 31
       },
       "tendencia": {
-        "lectores": 0.002,
+        "lectores": 0.0023,
         "puntaje": 0,
         "dias": 8
       },
@@ -3045,7 +3045,7 @@
         ],
         "critican": []
       },
-      "popularidad": 27846,
+      "popularidad": 27852,
       "favoritos": 1473,
       "etiquetas": [
         {
@@ -3161,7 +3161,7 @@
         "tomos": 19
       },
       "tendencia": {
-        "lectores": 0.0015,
+        "lectores": 0.0018,
         "puntaje": 0,
         "dias": 8
       },
@@ -3215,7 +3215,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 35535,
+      "popularidad": 35542,
       "favoritos": 3015,
       "etiquetas": [
         {
@@ -3332,7 +3332,7 @@
       ],
       "revisada": "2026-11-24",
       "tendencia": {
-        "lectores": 0.0013,
+        "lectores": 0.0015,
         "puntaje": 0.1,
         "dias": 8
       }
@@ -3391,7 +3391,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 64912,
+      "popularidad": 64926,
       "favoritos": 6931,
       "etiquetas": [
         {
@@ -3577,7 +3577,7 @@
         ],
         "critican": []
       },
-      "popularidad": 67287,
+      "popularidad": 67318,
       "favoritos": 4456,
       "etiquetas": [
         {
@@ -3759,7 +3759,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 57024,
+      "popularidad": 57040,
       "favoritos": 3618,
       "etiquetas": [
         {
@@ -3941,7 +3941,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 33482,
+      "popularidad": 33491,
       "favoritos": 1700,
       "etiquetas": [
         {
@@ -4041,7 +4041,7 @@
         "tomos": 10
       },
       "tendencia": {
-        "lectores": 0.002,
+        "lectores": 0.0023,
         "puntaje": 0,
         "dias": 8
       },
@@ -4101,7 +4101,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 29963,
+      "popularidad": 29966,
       "favoritos": 1307,
       "etiquetas": [
         {
@@ -4211,7 +4211,7 @@
         "tomos": 10
       },
       "tendencia": {
-        "lectores": 0.0022,
+        "lectores": 0.0023,
         "puntaje": 0,
         "dias": 8
       },
@@ -4275,7 +4275,7 @@
           "historia"
         ]
       },
-      "popularidad": 88717,
+      "popularidad": 88739,
       "favoritos": 5387,
       "etiquetas": [
         {
@@ -4386,7 +4386,7 @@
         "tomos": 3
       },
       "tendencia": {
-        "lectores": 0.0013,
+        "lectores": 0.0015,
         "puntaje": 0,
         "dias": 8
       },
@@ -4454,7 +4454,7 @@
           "final"
         ]
       },
-      "popularidad": 71844,
+      "popularidad": 71853,
       "favoritos": 4337,
       "etiquetas": [
         {
@@ -4640,7 +4640,7 @@
         ],
         "critican": []
       },
-      "popularidad": 67793,
+      "popularidad": 67816,
       "favoritos": 3806,
       "etiquetas": [
         {
@@ -4822,7 +4822,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 57844,
+      "popularidad": 57854,
       "favoritos": 2650,
       "etiquetas": [
         {
@@ -4938,7 +4938,7 @@
         "tomos": 63
       },
       "tendencia": {
-        "lectores": 0.0014,
+        "lectores": 0.0015,
         "puntaje": 0,
         "dias": 8
       },
@@ -5004,7 +5004,7 @@
           "ritmo"
         ]
       },
-      "popularidad": 141157,
+      "popularidad": 141176,
       "favoritos": 18423,
       "etiquetas": [
         {
@@ -5120,7 +5120,7 @@
         "tomos": 29
       },
       "tendencia": {
-        "lectores": 0.0022,
+        "lectores": 0.0023,
         "puntaje": 0,
         "dias": 8
       },
@@ -5184,7 +5184,7 @@
         ],
         "critican": []
       },
-      "popularidad": 166463,
+      "popularidad": 166492,
       "favoritos": 20649,
       "etiquetas": [
         {
@@ -5307,7 +5307,7 @@
       ],
       "revisada": "2026-11-24",
       "tendencia": {
-        "lectores": 0.0023,
+        "lectores": 0.0025,
         "puntaje": 0,
         "dias": 8
       }
@@ -5366,7 +5366,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 51484,
+      "popularidad": 51503,
       "favoritos": 3836,
       "etiquetas": [
         {
@@ -5476,7 +5476,7 @@
         "tomos": 17
       },
       "tendencia": {
-        "lectores": 0.0027,
+        "lectores": 0.0031,
         "puntaje": 0,
         "dias": 8
       },
@@ -5536,7 +5536,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 48073,
+      "popularidad": 48080,
       "favoritos": 2639,
       "etiquetas": [
         {
@@ -5652,7 +5652,7 @@
         "tomos": 6
       },
       "tendencia": {
-        "lectores": 0.0016,
+        "lectores": 0.0018,
         "puntaje": 0,
         "dias": 8
       },
@@ -5712,7 +5712,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 39688,
+      "popularidad": 39701,
       "favoritos": 2911,
       "etiquetas": [
         {
@@ -5822,7 +5822,7 @@
         "tomos": 14
       },
       "tendencia": {
-        "lectores": 0.0027,
+        "lectores": 0.003,
         "puntaje": 0,
         "dias": 8
       },
@@ -5888,7 +5888,7 @@
           "ritmo"
         ]
       },
-      "popularidad": 54281,
+      "popularidad": 54294,
       "favoritos": 3268,
       "etiquetas": [
         {
@@ -6004,7 +6004,7 @@
         "tomos": 8
       },
       "tendencia": {
-        "lectores": 0.0015,
+        "lectores": 0.0018,
         "puntaje": 0,
         "dias": 8
       },
@@ -6064,7 +6064,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 31004,
+      "popularidad": 31011,
       "favoritos": 1497,
       "etiquetas": [
         {
@@ -6240,7 +6240,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 70580,
+      "popularidad": 70606,
       "favoritos": 4302,
       "etiquetas": [
         {
@@ -6356,7 +6356,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0022,
+        "lectores": 0.0026,
         "puntaje": 0,
         "dias": 8
       },
@@ -6420,7 +6420,7 @@
         ],
         "critican": []
       },
-      "popularidad": 74370,
+      "popularidad": 74394,
       "favoritos": 5022,
       "etiquetas": [
         {
@@ -6531,7 +6531,7 @@
         "tomos": 15
       },
       "tendencia": {
-        "lectores": 0.0026,
+        "lectores": 0.0029,
         "puntaje": 0,
         "dias": 8
       },
@@ -6595,7 +6595,7 @@
         ],
         "critican": []
       },
-      "popularidad": 89881,
+      "popularidad": 89885,
       "favoritos": 9184,
       "etiquetas": [
         {
@@ -6777,7 +6777,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 35044,
+      "popularidad": 35051,
       "favoritos": 2609,
       "etiquetas": [
         {
@@ -6893,7 +6893,7 @@
         "tomos": 18
       },
       "tendencia": {
-        "lectores": 0.0019,
+        "lectores": 0.0021,
         "puntaje": 0,
         "dias": 8
       },
@@ -6953,7 +6953,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 9509,
+      "popularidad": 9512,
       "favoritos": 434,
       "etiquetas": [
         {
@@ -7063,7 +7063,7 @@
         "tomos": 81
       },
       "tendencia": {
-        "lectores": 0.0026,
+        "lectores": 0.003,
         "puntaje": 0.1,
         "dias": 8
       },
@@ -7127,7 +7127,7 @@
         ],
         "critican": []
       },
-      "popularidad": 49011,
+      "popularidad": 49018,
       "favoritos": 1391,
       "etiquetas": [
         {
@@ -7298,7 +7298,7 @@
         ],
         "critican": []
       },
-      "popularidad": 107286,
+      "popularidad": 107315,
       "favoritos": 21202,
       "etiquetas": [
         {
@@ -7414,7 +7414,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0023,
+        "lectores": 0.0026,
         "puntaje": 0,
         "dias": 8
       },
@@ -7474,7 +7474,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 73715,
+      "popularidad": 73724,
       "favoritos": 5316,
       "etiquetas": [
         {
@@ -7662,7 +7662,7 @@
         ],
         "critican": []
       },
-      "popularidad": 58501,
+      "popularidad": 58518,
       "favoritos": 5396,
       "etiquetas": [
         {
@@ -7838,7 +7838,7 @@
         ],
         "critican": []
       },
-      "popularidad": 55509,
+      "popularidad": 55523,
       "favoritos": 3147,
       "etiquetas": [
         {
@@ -8020,7 +8020,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 52443,
+      "popularidad": 52453,
       "favoritos": 1425,
       "etiquetas": [
         {
@@ -8188,7 +8188,7 @@
           "final"
         ]
       },
-      "popularidad": 189598,
+      "popularidad": 189646,
       "favoritos": 21963,
       "etiquetas": [
         {
@@ -8304,7 +8304,7 @@
         "tomos": 13
       },
       "tendencia": {
-        "lectores": 0.002,
+        "lectores": 0.0022,
         "puntaje": 0,
         "dias": 8
       },
@@ -8368,7 +8368,7 @@
         ],
         "critican": []
       },
-      "popularidad": 75274,
+      "popularidad": 75304,
       "favoritos": 6340,
       "etiquetas": [
         {
@@ -8544,7 +8544,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 40274,
+      "popularidad": 40278,
       "favoritos": 1349,
       "etiquetas": [
         {
@@ -8619,7 +8619,7 @@
         "tomos": 10
       },
       "tendencia": {
-        "lectores": 0.0016,
+        "lectores": 0.0017,
         "puntaje": 0,
         "dias": 8
       },
@@ -8683,7 +8683,7 @@
         ],
         "critican": []
       },
-      "popularidad": 51067,
+      "popularidad": 51085,
       "favoritos": 3808,
       "etiquetas": [
         {
@@ -8840,7 +8840,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 17584,
+      "popularidad": 17588,
       "favoritos": 586,
       "etiquetas": [
         {
@@ -8935,7 +8935,7 @@
         "tomos": 30
       },
       "tendencia": {
-        "lectores": 0.0011,
+        "lectores": 0.0014,
         "puntaje": 0,
         "dias": 8
       },
@@ -8995,7 +8995,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 23728,
+      "popularidad": 23730,
       "favoritos": 1884,
       "etiquetas": [
         {
@@ -9112,7 +9112,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.0022,
+        "lectores": 0.0023,
         "puntaje": 0,
         "dias": 8
       }
@@ -9171,7 +9171,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 50929,
+      "popularidad": 50938,
       "favoritos": 3398,
       "etiquetas": [
         {
@@ -9358,7 +9358,7 @@
         ],
         "critican": []
       },
-      "popularidad": 77891,
+      "popularidad": 77912,
       "favoritos": 7497,
       "etiquetas": [
         {
@@ -9481,7 +9481,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.0024,
+        "lectores": 0.0027,
         "puntaje": -0.1,
         "dias": 8
       }
@@ -9540,7 +9540,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 55210,
+      "popularidad": 55223,
       "favoritos": 6021,
       "etiquetas": [
         {
@@ -9657,7 +9657,7 @@
       ],
       "revisada": "2026-11-24",
       "tendencia": {
-        "lectores": 0.002,
+        "lectores": 0.0022,
         "puntaje": 0,
         "dias": 8
       }
@@ -9722,7 +9722,7 @@
           "final"
         ]
       },
-      "popularidad": 229339,
+      "popularidad": 229360,
       "favoritos": 22682,
       "etiquetas": [
         {
@@ -9838,7 +9838,7 @@
         "tomos": 34
       },
       "tendencia": {
-        "lectores": 0.0011,
+        "lectores": 0.0012,
         "puntaje": 0,
         "dias": 8
       },
@@ -9898,7 +9898,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 62241,
+      "popularidad": 62255,
       "favoritos": 3629,
       "etiquetas": [
         {
@@ -10075,7 +10075,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 63449,
+      "popularidad": 63458,
       "favoritos": 3745,
       "etiquetas": [
         {
@@ -10185,7 +10185,7 @@
         "tomos": 27
       },
       "tendencia": {
-        "lectores": 0.0012,
+        "lectores": 0.0013,
         "puntaje": 0,
         "dias": 8
       },
@@ -10249,7 +10249,7 @@
         ],
         "critican": []
       },
-      "popularidad": 75146,
+      "popularidad": 75177,
       "favoritos": 6551,
       "etiquetas": [
         {
@@ -10432,7 +10432,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 49049,
+      "popularidad": 49056,
       "favoritos": 1757,
       "etiquetas": [
         {
@@ -10614,7 +10614,7 @@
           "final"
         ]
       },
-      "popularidad": 63726,
+      "popularidad": 63746,
       "favoritos": 5731,
       "etiquetas": [
         {
@@ -10791,7 +10791,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 35733,
+      "popularidad": 35739,
       "favoritos": 1270,
       "etiquetas": [
         {
@@ -10879,7 +10879,7 @@
         "tomos": 25
       },
       "tendencia": {
-        "lectores": 0.0022,
+        "lectores": 0.0023,
         "puntaje": 0,
         "dias": 8
       },
@@ -10939,7 +10939,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 21623,
+      "popularidad": 21625,
       "favoritos": 814,
       "etiquetas": [
         {
@@ -11063,7 +11063,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 57375,
+      "popularidad": 57385,
       "favoritos": 2695,
       "etiquetas": [
         {
@@ -11239,7 +11239,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 42254,
+      "popularidad": 42270,
       "favoritos": 2183,
       "etiquetas": [
         {
@@ -11355,7 +11355,7 @@
         "tomos": 18
       },
       "tendencia": {
-        "lectores": 0.0023,
+        "lectores": 0.0026,
         "puntaje": 0,
         "dias": 8
       },
@@ -11419,7 +11419,7 @@
         ],
         "critican": []
       },
-      "popularidad": 200699,
+      "popularidad": 200749,
       "favoritos": 18884,
       "etiquetas": [
         {
@@ -11535,7 +11535,7 @@
         "tomos": 14
       },
       "tendencia": {
-        "lectores": 0.0023,
+        "lectores": 0.0025,
         "puntaje": 0,
         "dias": 8
       },
@@ -11599,7 +11599,7 @@
         ],
         "critican": []
       },
-      "popularidad": 103269,
+      "popularidad": 103282,
       "favoritos": 12128,
       "etiquetas": [
         {
@@ -11710,7 +11710,7 @@
         "tomos": 45
       },
       "tendencia": {
-        "lectores": 0.0014,
+        "lectores": 0.0015,
         "puntaje": 0,
         "dias": 8
       },
@@ -11770,7 +11770,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 29943,
+      "popularidad": 29946,
       "favoritos": 1099,
       "etiquetas": [
         {
@@ -11946,7 +11946,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 55436,
+      "popularidad": 55444,
       "favoritos": 2265,
       "etiquetas": [
         {
@@ -12046,7 +12046,7 @@
         "tomos": 21
       },
       "tendencia": {
-        "lectores": 0.0015,
+        "lectores": 0.0016,
         "puntaje": 0,
         "dias": 8
       },
@@ -12106,7 +12106,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 9671,
+      "popularidad": 9674,
       "favoritos": 278,
       "etiquetas": [
         {
@@ -12268,7 +12268,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 124632,
+      "popularidad": 124657,
       "favoritos": 8969,
       "etiquetas": [
         {
@@ -12374,7 +12374,7 @@
         "tomos": 17
       },
       "tendencia": {
-        "lectores": 0.0013,
+        "lectores": 0.0015,
         "puntaje": 0,
         "dias": 8
       },
@@ -12434,7 +12434,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 176171,
+      "popularidad": 176196,
       "favoritos": 14308,
       "etiquetas": [
         {
@@ -12551,7 +12551,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.0014,
+        "lectores": 0.0015,
         "puntaje": 0,
         "dias": 8
       }
@@ -12610,7 +12610,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 55690,
+      "popularidad": 55699,
       "favoritos": 1696,
       "etiquetas": [
         {
@@ -12720,7 +12720,7 @@
         "tomos": 41
       },
       "tendencia": {
-        "lectores": 0.001,
+        "lectores": 0.0012,
         "puntaje": 0,
         "dias": 8
       },
@@ -12784,7 +12784,7 @@
         ],
         "critican": []
       },
-      "popularidad": 85320,
+      "popularidad": 85340,
       "favoritos": 13257,
       "etiquetas": [
         {
@@ -12900,7 +12900,7 @@
         "tomos": 13
       },
       "tendencia": {
-        "lectores": 0.0026,
+        "lectores": 0.0028,
         "puntaje": 0,
         "dias": 8
       },
@@ -12960,7 +12960,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 64904,
+      "popularidad": 64932,
       "favoritos": 3212,
       "etiquetas": [
         {
@@ -13142,7 +13142,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 91981,
+      "popularidad": 91997,
       "favoritos": 7500,
       "etiquetas": [
         {
@@ -13248,7 +13248,7 @@
         "tomos": 7
       },
       "tendencia": {
-        "lectores": 0.0013,
+        "lectores": 0.0014,
         "puntaje": 0,
         "dias": 8
       },
@@ -13302,7 +13302,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 56015,
+      "popularidad": 56026,
       "favoritos": 2769,
       "etiquetas": [
         {
@@ -13412,7 +13412,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0018,
+        "lectores": 0.002,
         "puntaje": -0.1,
         "dias": 8
       },
@@ -13472,7 +13472,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 101489,
+      "popularidad": 101498,
       "favoritos": 7808,
       "etiquetas": [
         {
@@ -13595,7 +13595,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.0016,
+        "lectores": 0.0017,
         "puntaje": 0,
         "dias": 8
       }
@@ -13654,7 +13654,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 50060,
+      "popularidad": 50066,
       "favoritos": 3566,
       "etiquetas": [
         {
@@ -13770,7 +13770,7 @@
         "tomos": 16
       },
       "tendencia": {
-        "lectores": 0.0015,
+        "lectores": 0.0016,
         "puntaje": 0,
         "dias": 8
       },
@@ -13834,7 +13834,7 @@
         ],
         "critican": []
       },
-      "popularidad": 51609,
+      "popularidad": 51624,
       "favoritos": 6046,
       "etiquetas": [
         {
@@ -13950,7 +13950,7 @@
         "tomos": 6
       },
       "tendencia": {
-        "lectores": 0.0033,
+        "lectores": 0.0036,
         "puntaje": 0,
         "dias": 8
       },
@@ -14004,7 +14004,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 9060,
+      "popularidad": 9062,
       "favoritos": 218,
       "etiquetas": [
         {
@@ -14081,7 +14081,7 @@
       ],
       "revisada": "2026-11-24",
       "tendencia": {
-        "lectores": 0.0021,
+        "lectores": 0.0023,
         "puntaje": 0,
         "dias": 8
       }
@@ -14089,7 +14089,7 @@
     "85453": {
       "puntaje": {
         "valor": 78.3,
-        "votos": 12892,
+        "votos": 12891,
         "confianza": "alta",
         "diferencia": 5.6,
         "comunidades": 4
@@ -14097,7 +14097,7 @@
       "fuentes": {
         "anilist": {
           "puntaje": 74,
-          "votos": 2489
+          "votos": 2488
         },
         "kitsu": {
           "puntaje": 77.2,
@@ -14113,28 +14113,28 @@
         }
       },
       "distribucion": {
-        "votos": 2489,
+        "votos": 2488,
         "gusta": 0.773,
         "noGusta": 0.065,
-        "desviacion": 18.5,
+        "desviacion": 18.4,
         "division": "divididas",
         "barras": [
           1,
           0.9,
           1.9,
           2.6,
-          5.9,
+          5.8,
           10.4,
-          19.8,
-          24.3,
+          19.9,
+          24.4,
           19.7,
-          13.4
+          13.3
         ]
       },
       "resenas": {
         "n": 0
       },
-      "popularidad": 10650,
+      "popularidad": 10651,
       "favoritos": 318,
       "etiquetas": [
         {
@@ -14265,7 +14265,7 @@
         ],
         "critican": []
       },
-      "popularidad": 179983,
+      "popularidad": 179998,
       "favoritos": 10974,
       "etiquetas": [
         {
@@ -14381,7 +14381,7 @@
         "tomos": 42
       },
       "tendencia": {
-        "lectores": 0.001,
+        "lectores": 0.0011,
         "puntaje": 0,
         "dias": 8
       },
@@ -14447,7 +14447,7 @@
           "ritmo"
         ]
       },
-      "popularidad": 106398,
+      "popularidad": 106437,
       "favoritos": 10277,
       "etiquetas": [
         {
@@ -14563,7 +14563,7 @@
         "tomos": 16
       },
       "tendencia": {
-        "lectores": 0.0023,
+        "lectores": 0.0026,
         "puntaje": 0,
         "dias": 8
       },
@@ -14623,7 +14623,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 39283,
+      "popularidad": 39293,
       "favoritos": 2411,
       "etiquetas": [
         {
@@ -14733,7 +14733,7 @@
         "tomos": 1
       },
       "tendencia": {
-        "lectores": 0.0011,
+        "lectores": 0.0013,
         "puntaje": 0,
         "dias": 8
       },
@@ -14793,7 +14793,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 55932,
+      "popularidad": 55942,
       "favoritos": 3942,
       "etiquetas": [
         {
@@ -14965,7 +14965,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 26325,
+      "popularidad": 26328,
       "favoritos": 2597,
       "etiquetas": [
         {
@@ -15075,7 +15075,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0019,
+        "lectores": 0.002,
         "puntaje": 0,
         "dias": 8
       },
@@ -15135,7 +15135,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 57178,
+      "popularidad": 57194,
       "favoritos": 7013,
       "etiquetas": [
         {
@@ -15251,7 +15251,7 @@
         "tomos": 14
       },
       "tendencia": {
-        "lectores": 0.0026,
+        "lectores": 0.0029,
         "puntaje": 0,
         "dias": 8
       },
@@ -15311,7 +15311,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 43025,
+      "popularidad": 43032,
       "favoritos": 3644,
       "etiquetas": [
         {
@@ -15417,7 +15417,7 @@
         "tomos": 29
       },
       "tendencia": {
-        "lectores": 0.0018,
+        "lectores": 0.002,
         "puntaje": 0,
         "dias": 8
       },
@@ -15477,7 +15477,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 109837,
+      "popularidad": 109862,
       "favoritos": 7578,
       "etiquetas": [
         {
@@ -15577,7 +15577,7 @@
         "tomos": 38
       },
       "tendencia": {
-        "lectores": 0.0023,
+        "lectores": 0.0026,
         "puntaje": 0,
         "dias": 8
       },
@@ -15641,7 +15641,7 @@
         ],
         "critican": []
       },
-      "popularidad": 67312,
+      "popularidad": 67331,
       "favoritos": 7313,
       "etiquetas": [
         {
@@ -15757,7 +15757,7 @@
         "tomos": 8
       },
       "tendencia": {
-        "lectores": 0.0015,
+        "lectores": 0.0018,
         "puntaje": 0,
         "dias": 8
       },
@@ -15817,7 +15817,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 67032,
+      "popularidad": 67039,
       "favoritos": 3285,
       "etiquetas": [
         {
@@ -15933,7 +15933,7 @@
         "tomos": 34
       },
       "tendencia": {
-        "lectores": 0.0014,
+        "lectores": 0.0015,
         "puntaje": 0,
         "dias": 8
       },
@@ -15993,7 +15993,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 63091,
+      "popularidad": 63102,
       "favoritos": 4105,
       "etiquetas": [
         {
@@ -16169,7 +16169,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 58769,
+      "popularidad": 58779,
       "favoritos": 4282,
       "etiquetas": [
         {
@@ -16279,7 +16279,7 @@
         "tomos": 15
       },
       "tendencia": {
-        "lectores": 0.0016,
+        "lectores": 0.0018,
         "puntaje": 0,
         "dias": 8
       },
@@ -16343,7 +16343,7 @@
         ],
         "critican": []
       },
-      "popularidad": 52224,
+      "popularidad": 52233,
       "favoritos": 4370,
       "etiquetas": [
         {
@@ -16459,7 +16459,7 @@
         "tomos": 31
       },
       "tendencia": {
-        "lectores": 0.002,
+        "lectores": 0.0022,
         "puntaje": 0,
         "dias": 8
       },
@@ -16526,7 +16526,7 @@
           "ritmo"
         ]
       },
-      "popularidad": 121017,
+      "popularidad": 121033,
       "favoritos": 13792,
       "etiquetas": [
         {
@@ -16642,7 +16642,7 @@
         "tomos": 28
       },
       "tendencia": {
-        "lectores": 0.0016,
+        "lectores": 0.0017,
         "puntaje": 0,
         "dias": 8
       },
@@ -16694,7 +16694,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 32484,
+      "popularidad": 32491,
       "favoritos": 1938,
       "etiquetas": [
         {
@@ -16870,7 +16870,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 65835,
+      "popularidad": 65847,
       "favoritos": 4261,
       "etiquetas": [
         {
@@ -17047,7 +17047,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 47312,
+      "popularidad": 47325,
       "favoritos": 3103,
       "etiquetas": [
         {
@@ -17157,7 +17157,7 @@
         "tomos": 20
       },
       "tendencia": {
-        "lectores": 0.003,
+        "lectores": 0.0033,
         "puntaje": 0,
         "dias": 8
       },
@@ -17217,7 +17217,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 78190,
+      "popularidad": 78197,
       "favoritos": 4553,
       "etiquetas": [
         {
@@ -17333,7 +17333,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0018,
+        "lectores": 0.0019,
         "puntaje": 0,
         "dias": 8
       },
@@ -17399,7 +17399,7 @@
           "romance"
         ]
       },
-      "popularidad": 107113,
+      "popularidad": 107141,
       "favoritos": 7212,
       "etiquetas": [
         {
@@ -17581,7 +17581,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 50517,
+      "popularidad": 50529,
       "favoritos": 1646,
       "etiquetas": [
         {
@@ -17760,7 +17760,7 @@
           "ritmo"
         ]
       },
-      "popularidad": 213119,
+      "popularidad": 213150,
       "favoritos": 14794,
       "etiquetas": [
         {
@@ -17851,7 +17851,7 @@
         "tomos": 23
       },
       "tendencia": {
-        "lectores": 0.0014,
+        "lectores": 0.0015,
         "puntaje": 0,
         "dias": 8
       },
@@ -17911,7 +17911,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 69559,
+      "popularidad": 69574,
       "favoritos": 7473,
       "etiquetas": [
         {
@@ -18099,7 +18099,7 @@
           "final"
         ]
       },
-      "popularidad": 135298,
+      "popularidad": 135320,
       "favoritos": 8617,
       "etiquetas": [
         {
@@ -18215,7 +18215,7 @@
         "tomos": 20
       },
       "tendencia": {
-        "lectores": 0.0013,
+        "lectores": 0.0015,
         "puntaje": 0,
         "dias": 8
       },
@@ -18281,7 +18281,7 @@
           "final"
         ]
       },
-      "popularidad": 86310,
+      "popularidad": 86342,
       "favoritos": 8047,
       "etiquetas": [
         {
@@ -18437,7 +18437,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 51605,
+      "popularidad": 51612,
       "favoritos": 2380,
       "etiquetas": [
         {
@@ -18542,7 +18542,7 @@
         "tomos": 25
       },
       "tendencia": {
-        "lectores": 0.0015,
+        "lectores": 0.0016,
         "puntaje": 0,
         "dias": 8
       },
@@ -18608,7 +18608,7 @@
           "historia"
         ]
       },
-      "popularidad": 108167,
+      "popularidad": 108182,
       "favoritos": 5863,
       "etiquetas": [
         {
@@ -18719,7 +18719,7 @@
         "tomos": 37
       },
       "tendencia": {
-        "lectores": 0.0011,
+        "lectores": 0.0012,
         "puntaje": 0,
         "dias": 8
       },
@@ -18783,7 +18783,7 @@
         ],
         "critican": []
       },
-      "popularidad": 85665,
+      "popularidad": 85707,
       "favoritos": 9514,
       "etiquetas": [
         {
@@ -18899,7 +18899,7 @@
         "tomos": 16
       },
       "tendencia": {
-        "lectores": 0.0033,
+        "lectores": 0.0037,
         "puntaje": 0,
         "dias": 8
       },
@@ -18963,7 +18963,7 @@
         ],
         "critican": []
       },
-      "popularidad": 67480,
+      "popularidad": 67506,
       "favoritos": 3786,
       "etiquetas": [
         {
@@ -19059,7 +19059,7 @@
         "tomos": 17
       },
       "tendencia": {
-        "lectores": 0.0029,
+        "lectores": 0.0033,
         "puntaje": 0,
         "dias": 8
       },
@@ -19119,7 +19119,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 90004,
+      "popularidad": 90016,
       "favoritos": 5912,
       "etiquetas": [
         {
@@ -19235,7 +19235,7 @@
         "tomos": 27
       },
       "tendencia": {
-        "lectores": 0.0016,
+        "lectores": 0.0017,
         "puntaje": 0,
         "dias": 8
       },
@@ -19302,7 +19302,7 @@
           "romance"
         ]
       },
-      "popularidad": 49476,
+      "popularidad": 49485,
       "favoritos": 3586,
       "etiquetas": [
         {
@@ -19484,7 +19484,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 72946,
+      "popularidad": 72958,
       "favoritos": 6729,
       "etiquetas": [
         {
@@ -19650,7 +19650,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 48226,
+      "popularidad": 48234,
       "favoritos": 3800,
       "etiquetas": [
         {
@@ -19767,7 +19767,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.0032,
+        "lectores": 0.0034,
         "puntaje": 0,
         "dias": 8
       }
@@ -19830,7 +19830,7 @@
           "romance"
         ]
       },
-      "popularidad": 62863,
+      "popularidad": 62866,
       "favoritos": 2246,
       "etiquetas": [
         {
@@ -19946,7 +19946,7 @@
         "tomos": 47
       },
       "tendencia": {
-        "lectores": 0.0009,
+        "lectores": 0.001,
         "puntaje": -0.1,
         "dias": 8
       },
@@ -20012,7 +20012,7 @@
           "final"
         ]
       },
-      "popularidad": 70814,
+      "popularidad": 70823,
       "favoritos": 4791,
       "etiquetas": [
         {
@@ -20128,7 +20128,7 @@
         "tomos": 14
       },
       "tendencia": {
-        "lectores": 0.001,
+        "lectores": 0.0011,
         "puntaje": 0,
         "dias": 8
       },
@@ -20195,7 +20195,7 @@
           "final"
         ]
       },
-      "popularidad": 65978,
+      "popularidad": 66000,
       "favoritos": 4509,
       "etiquetas": [
         {
@@ -20311,7 +20311,7 @@
         "tomos": 3
       },
       "tendencia": {
-        "lectores": 0.0022,
+        "lectores": 0.0025,
         "puntaje": 0,
         "dias": 8
       },
@@ -20371,7 +20371,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 76557,
+      "popularidad": 76563,
       "favoritos": 3585,
       "etiquetas": [
         {
@@ -20548,7 +20548,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 30798,
+      "popularidad": 30807,
       "favoritos": 2532,
       "etiquetas": [
         {
@@ -20648,7 +20648,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0015,
+        "lectores": 0.0018,
         "puntaje": 0,
         "dias": 8
       },
@@ -20708,7 +20708,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 56929,
+      "popularidad": 56943,
       "favoritos": 3229,
       "etiquetas": [
         {
@@ -20793,7 +20793,7 @@
         "tomos": 12
       },
       "tendencia": {
-        "lectores": 0.0023,
+        "lectores": 0.0026,
         "puntaje": 0,
         "dias": 8
       },
@@ -20853,7 +20853,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 99583,
+      "popularidad": 99596,
       "favoritos": 6172,
       "etiquetas": [
         {
@@ -20969,7 +20969,7 @@
         "tomos": 13
       },
       "tendencia": {
-        "lectores": 0.0017,
+        "lectores": 0.0019,
         "puntaje": 0,
         "dias": 8
       },
@@ -21029,7 +21029,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 68808,
+      "popularidad": 68818,
       "favoritos": 2473,
       "etiquetas": [
         {
@@ -21146,7 +21146,7 @@
       ],
       "revisada": "2026-11-24",
       "tendencia": {
-        "lectores": 0.0011,
+        "lectores": 0.0013,
         "puntaje": -0.1,
         "dias": 8
       }
@@ -21213,7 +21213,7 @@
           "final"
         ]
       },
-      "popularidad": 257692,
+      "popularidad": 257743,
       "favoritos": 24113,
       "etiquetas": [
         {
@@ -21329,7 +21329,7 @@
         "tomos": 30
       },
       "tendencia": {
-        "lectores": 0.002,
+        "lectores": 0.0022,
         "puntaje": 0,
         "dias": 8
       },
@@ -21389,7 +21389,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 36987,
+      "popularidad": 36998,
       "favoritos": 2249,
       "etiquetas": [
         {
@@ -21476,7 +21476,7 @@
       ],
       "revisada": "2026-11-24",
       "tendencia": {
-        "lectores": 0.0027,
+        "lectores": 0.003,
         "puntaje": 0,
         "dias": 8
       }
@@ -21535,7 +21535,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 15272,
+      "popularidad": 15281,
       "favoritos": 1282,
       "etiquetas": [
         {
@@ -21645,7 +21645,7 @@
         "tomos": 13
       },
       "tendencia": {
-        "lectores": 0.0028,
+        "lectores": 0.0034,
         "puntaje": 0,
         "dias": 8
       },
@@ -21705,7 +21705,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 102385,
+      "popularidad": 102415,
       "favoritos": 6608,
       "etiquetas": [
         {
@@ -21821,7 +21821,7 @@
         "tomos": 15
       },
       "tendencia": {
-        "lectores": 0.0026,
+        "lectores": 0.0029,
         "puntaje": 0,
         "dias": 8
       },
@@ -21881,7 +21881,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 27561,
+      "popularidad": 27573,
       "favoritos": 1163,
       "etiquetas": [
         {
@@ -22051,7 +22051,7 @@
           "accion"
         ]
       },
-      "popularidad": 119211,
+      "popularidad": 119228,
       "favoritos": 9335,
       "etiquetas": [
         {
@@ -22162,7 +22162,7 @@
         "tomos": 31
       },
       "tendencia": {
-        "lectores": 0.0011,
+        "lectores": 0.0013,
         "puntaje": 0,
         "dias": 8
       },
@@ -22324,7 +22324,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 26038,
+      "popularidad": 26049,
       "favoritos": 1683,
       "etiquetas": [
         {
@@ -22500,7 +22500,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 30995,
+      "popularidad": 31003,
       "favoritos": 898,
       "etiquetas": [
         {
@@ -22617,7 +22617,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.0023,
+        "lectores": 0.0025,
         "puntaje": 0,
         "dias": 8
       }
@@ -22676,7 +22676,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 29933,
+      "popularidad": 29943,
       "favoritos": 1828,
       "etiquetas": [
         {
@@ -22842,7 +22842,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 46467,
+      "popularidad": 46479,
       "favoritos": 1675,
       "etiquetas": [
         {
@@ -23008,7 +23008,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 51390,
+      "popularidad": 51406,
       "favoritos": 1988,
       "etiquetas": [
         {
@@ -23113,7 +23113,7 @@
         "tomos": 7
       },
       "tendencia": {
-        "lectores": 0.0036,
+        "lectores": 0.0039,
         "puntaje": 0,
         "dias": 8
       },
@@ -23181,7 +23181,7 @@
           "mundo"
         ]
       },
-      "popularidad": 289826,
+      "popularidad": 289868,
       "favoritos": 33231,
       "etiquetas": [
         {
@@ -23363,7 +23363,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 73029,
+      "popularidad": 73046,
       "favoritos": 2338,
       "etiquetas": [
         {
@@ -23525,7 +23525,7 @@
           "final"
         ]
       },
-      "popularidad": 338259,
+      "popularidad": 338325,
       "favoritos": 48528,
       "etiquetas": [
         {
@@ -23641,7 +23641,7 @@
         "tomos": 24
       },
       "tendencia": {
-        "lectores": 0.0018,
+        "lectores": 0.002,
         "puntaje": 0,
         "dias": 8
       },
@@ -23701,7 +23701,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 56403,
+      "popularidad": 56421,
       "favoritos": 2571,
       "etiquetas": [
         {
@@ -23877,7 +23877,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 127447,
+      "popularidad": 127494,
       "favoritos": 11321,
       "etiquetas": [
         {
@@ -23988,7 +23988,7 @@
         "tomos": 40
       },
       "tendencia": {
-        "lectores": 0.0027,
+        "lectores": 0.0031,
         "puntaje": 0,
         "dias": 8
       },
@@ -24048,7 +24048,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 48551,
+      "popularidad": 48560,
       "favoritos": 2546,
       "etiquetas": [
         {
@@ -24225,7 +24225,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 48117,
+      "popularidad": 48145,
       "favoritos": 4319,
       "etiquetas": [
         {
@@ -24332,7 +24332,7 @@
       ],
       "revisada": "2026-11-24",
       "tendencia": {
-        "lectores": 0.0038,
+        "lectores": 0.0044,
         "puntaje": 0,
         "dias": 8
       }
@@ -24391,7 +24391,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 69277,
+      "popularidad": 69289,
       "favoritos": 3405,
       "etiquetas": [
         {
@@ -24501,7 +24501,7 @@
         "tomos": 28
       },
       "tendencia": {
-        "lectores": 0.0011,
+        "lectores": 0.0013,
         "puntaje": 0,
         "dias": 8
       },
@@ -24561,7 +24561,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 78074,
+      "popularidad": 78089,
       "favoritos": 7169,
       "etiquetas": [
         {
@@ -24674,7 +24674,7 @@
       ],
       "revisada": "2026-11-24",
       "tendencia": {
-        "lectores": 0.0014,
+        "lectores": 0.0016,
         "puntaje": 0,
         "dias": 8
       }
@@ -24733,7 +24733,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 26432,
+      "popularidad": 26441,
       "favoritos": 2759,
       "etiquetas": [
         {
@@ -24834,7 +24834,7 @@
         "tomos": 40
       },
       "tendencia": {
-        "lectores": 0.0046,
+        "lectores": 0.0049,
         "puntaje": 0,
         "dias": 8
       },
@@ -24894,7 +24894,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 41149,
+      "popularidad": 41163,
       "favoritos": 3621,
       "etiquetas": [
         {
@@ -25004,7 +25004,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0028,
+        "lectores": 0.0031,
         "puntaje": 0,
         "dias": 8
       },
@@ -25060,7 +25060,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 15927,
+      "popularidad": 15930,
       "favoritos": 641,
       "etiquetas": [
         {
@@ -25170,7 +25170,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0024,
+        "lectores": 0.0026,
         "puntaje": 0,
         "dias": 8
       },
@@ -25179,7 +25179,7 @@
     "108050": {
       "puntaje": {
         "valor": 77.7,
-        "votos": 2416,
+        "votos": 2422,
         "confianza": "media",
         "diferencia": 4.2,
         "comunidades": 3
@@ -25187,7 +25187,7 @@
       "fuentes": {
         "anilist": {
           "puntaje": 78,
-          "votos": 1944
+          "votos": 1950
         },
         "kitsu": {
           "puntaje": 77.1,
@@ -25199,21 +25199,21 @@
         }
       },
       "distribucion": {
-        "votos": 1944,
+        "votos": 1950,
         "gusta": 0.814,
-        "noGusta": 0.058,
-        "desviacion": 18.9,
+        "noGusta": 0.057,
+        "desviacion": 18.8,
         "division": "divididas",
         "barras": [
-          1.1,
+          1,
           0.8,
           1.3,
           2.6,
           4.4,
           8.4,
-          16.4,
-          21.6,
-          21,
+          16.5,
+          21.5,
+          21.1,
           22.4
         ]
       },
@@ -25226,7 +25226,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 9021,
+      "popularidad": 9029,
       "favoritos": 476,
       "etiquetas": [
         {
@@ -25331,7 +25331,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0037,
+        "lectores": 0.0046,
         "puntaje": 0,
         "dias": 8
       },
@@ -25391,7 +25391,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 14259,
+      "popularidad": 14264,
       "favoritos": 483,
       "etiquetas": [
         {
@@ -25501,7 +25501,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0045,
+        "lectores": 0.0049,
         "puntaje": 0,
         "dias": 8
       },
@@ -25561,7 +25561,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 161715,
+      "popularidad": 161747,
       "favoritos": 12324,
       "etiquetas": [
         {
@@ -25743,7 +25743,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 18577,
+      "popularidad": 18589,
       "favoritos": 759,
       "etiquetas": [
         {
@@ -25900,7 +25900,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 33915,
+      "popularidad": 33926,
       "favoritos": 3399,
       "etiquetas": [
         {
@@ -26000,7 +26000,7 @@
         "tomos": 13
       },
       "tendencia": {
-        "lectores": 0.0023,
+        "lectores": 0.0027,
         "puntaje": 0,
         "dias": 8
       },
@@ -26054,7 +26054,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 45939,
+      "popularidad": 45954,
       "favoritos": 1987,
       "etiquetas": [
         {
@@ -26161,7 +26161,7 @@
       ],
       "revisada": "2026-11-24",
       "tendencia": {
-        "lectores": 0.0032,
+        "lectores": 0.0035,
         "puntaje": 0,
         "dias": 8
       }
@@ -26220,7 +26220,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 38023,
+      "popularidad": 38043,
       "favoritos": 1416,
       "etiquetas": [
         {
@@ -26310,7 +26310,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0034,
+        "lectores": 0.0039,
         "puntaje": 0,
         "dias": 8
       },
@@ -26370,7 +26370,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 22591,
+      "popularidad": 22607,
       "favoritos": 1036,
       "etiquetas": [
         {
@@ -26456,7 +26456,7 @@
         "tomos": 9
       },
       "tendencia": {
-        "lectores": 0.0051,
+        "lectores": 0.0058,
         "puntaje": 0,
         "dias": 8
       },
@@ -26516,7 +26516,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 37113,
+      "popularidad": 37127,
       "favoritos": 2743,
       "etiquetas": [
         {
@@ -26606,7 +26606,7 @@
         "tomos": 14
       },
       "tendencia": {
-        "lectores": 0.0023,
+        "lectores": 0.0027,
         "puntaje": 0,
         "dias": 8
       },
@@ -26672,7 +26672,7 @@
           "final"
         ]
       },
-      "popularidad": 67239,
+      "popularidad": 67266,
       "favoritos": 4844,
       "etiquetas": [
         {
@@ -26788,7 +26788,7 @@
         "tomos": 20
       },
       "tendencia": {
-        "lectores": 0.0027,
+        "lectores": 0.0031,
         "puntaje": 0,
         "dias": 8
       },
@@ -26834,7 +26834,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 6642,
+      "popularidad": 6644,
       "favoritos": 372,
       "etiquetas": [
         {
@@ -26907,7 +26907,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0015,
+        "lectores": 0.0018,
         "puntaje": 0,
         "dias": 8
       },
@@ -26963,7 +26963,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 20337,
+      "popularidad": 20343,
       "favoritos": 1886,
       "etiquetas": [
         {
@@ -27073,7 +27073,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0027,
+        "lectores": 0.003,
         "puntaje": 0,
         "dias": 8
       },
@@ -27129,7 +27129,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 12227,
+      "popularidad": 12230,
       "favoritos": 454,
       "etiquetas": [
         {
@@ -27234,7 +27234,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0021,
+        "lectores": 0.0024,
         "puntaje": 0,
         "dias": 8
       },
@@ -27294,7 +27294,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 21690,
+      "popularidad": 21710,
       "favoritos": 1115,
       "etiquetas": [
         {
@@ -27404,7 +27404,7 @@
         "tomos": 11
       },
       "tendencia": {
-        "lectores": 0.0061,
+        "lectores": 0.0071,
         "puntaje": -0.4,
         "dias": 8
       },
@@ -27460,7 +27460,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 6926,
+      "popularidad": 6927,
       "favoritos": 329,
       "etiquetas": [
         {
@@ -27545,7 +27545,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0009,
+        "lectores": 0.001,
         "puntaje": 0,
         "dias": 8
       },
@@ -27605,7 +27605,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 22456,
+      "popularidad": 22465,
       "favoritos": 1075,
       "etiquetas": [
         {
@@ -27700,7 +27700,7 @@
         "tomos": 19
       },
       "tendencia": {
-        "lectores": 0.0031,
+        "lectores": 0.0035,
         "puntaje": 0,
         "dias": 8
       },
@@ -27760,7 +27760,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 37376,
+      "popularidad": 37396,
       "favoritos": 1521,
       "etiquetas": [
         {
@@ -27847,7 +27847,7 @@
       ],
       "revisada": "2026-11-24",
       "tendencia": {
-        "lectores": 0.0036,
+        "lectores": 0.0041,
         "puntaje": 0,
         "dias": 8
       }
@@ -27910,7 +27910,7 @@
         ],
         "critican": []
       },
-      "popularidad": 29992,
+      "popularidad": 30004,
       "favoritos": 1515,
       "etiquetas": [
         {
@@ -28021,7 +28021,7 @@
         "tomos": 27
       },
       "tendencia": {
-        "lectores": 0.0024,
+        "lectores": 0.0028,
         "puntaje": 0,
         "dias": 8
       },
@@ -28081,7 +28081,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 60899,
+      "popularidad": 60903,
       "favoritos": 2422,
       "etiquetas": [
         {
@@ -28191,7 +28191,7 @@
         "tomos": 18
       },
       "tendencia": {
-        "lectores": 0.0018,
+        "lectores": 0.0019,
         "puntaje": 0,
         "dias": 8
       },
@@ -28241,7 +28241,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 26339,
+      "popularidad": 26342,
       "favoritos": 1239,
       "etiquetas": [
         {
@@ -28423,7 +28423,7 @@
           "romance"
         ]
       },
-      "popularidad": 59095,
+      "popularidad": 59103,
       "favoritos": 2140,
       "etiquetas": [
         {
@@ -28585,7 +28585,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 28618,
+      "popularidad": 28633,
       "favoritos": 2143,
       "etiquetas": [
         {
@@ -28753,7 +28753,7 @@
           "ritmo"
         ]
       },
-      "popularidad": 108225,
+      "popularidad": 108242,
       "favoritos": 8322,
       "etiquetas": [
         {
@@ -28869,7 +28869,7 @@
         "tomos": 16
       },
       "tendencia": {
-        "lectores": 0.0015,
+        "lectores": 0.0016,
         "puntaje": 0,
         "dias": 8
       },
@@ -28925,7 +28925,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 26254,
+      "popularidad": 26267,
       "favoritos": 1553,
       "etiquetas": [
         {
@@ -29025,7 +29025,7 @@
         "tomos": 3
       },
       "tendencia": {
-        "lectores": 0.0047,
+        "lectores": 0.0052,
         "puntaje": 0,
         "dias": 8
       },
@@ -29079,7 +29079,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 41495,
+      "popularidad": 41575,
       "favoritos": 1961,
       "etiquetas": [
         {
@@ -29230,7 +29230,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 27636,
+      "popularidad": 27643,
       "favoritos": 1352,
       "etiquetas": [
         {
@@ -29347,7 +29347,7 @@
       ],
       "revisada": "2026-11-24",
       "tendencia": {
-        "lectores": 0.0035,
+        "lectores": 0.0037,
         "puntaje": 0,
         "dias": 8
       }
@@ -29402,7 +29402,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 8558,
+      "popularidad": 8559,
       "favoritos": 402,
       "etiquetas": [
         {
@@ -29558,7 +29558,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 14056,
+      "popularidad": 14066,
       "favoritos": 1273,
       "etiquetas": [
         {
@@ -29643,7 +29643,7 @@
         "tomos": 15
       },
       "tendencia": {
-        "lectores": 0.0033,
+        "lectores": 0.004,
         "puntaje": 0,
         "dias": 8
       },
@@ -29703,7 +29703,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 44733,
+      "popularidad": 44755,
       "favoritos": 4072,
       "etiquetas": [
         {
@@ -29879,7 +29879,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 39284,
+      "popularidad": 39290,
       "favoritos": 1458,
       "etiquetas": [
         {
@@ -29969,7 +29969,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0027,
+        "lectores": 0.0029,
         "puntaje": 0,
         "dias": 8
       },
@@ -30029,7 +30029,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 87243,
+      "popularidad": 87265,
       "favoritos": 7881,
       "etiquetas": [
         {
@@ -30152,7 +30152,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.0021,
+        "lectores": 0.0023,
         "puntaje": 0,
         "dias": 8
       }
@@ -30211,7 +30211,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 46546,
+      "popularidad": 46564,
       "favoritos": 3204,
       "etiquetas": [
         {
@@ -30291,7 +30291,7 @@
         "tomos": 13
       },
       "tendencia": {
-        "lectores": 0.0039,
+        "lectores": 0.0043,
         "puntaje": 0,
         "dias": 8
       },
@@ -30351,7 +30351,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 135788,
+      "popularidad": 135921,
       "favoritos": 14469,
       "etiquetas": [
         {
@@ -30468,7 +30468,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.0034,
+        "lectores": 0.0044,
         "puntaje": 0,
         "dias": 8
       }
@@ -30527,7 +30527,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 48337,
+      "popularidad": 48361,
       "favoritos": 3269,
       "etiquetas": [
         {
@@ -30627,7 +30627,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0043,
+        "lectores": 0.0048,
         "puntaje": 0,
         "dias": 8
       },
@@ -30677,7 +30677,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 7008,
+      "popularidad": 7014,
       "favoritos": 199,
       "etiquetas": [
         {
@@ -30729,7 +30729,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0062,
+        "lectores": 0.007,
         "puntaje": 0,
         "dias": 8
       },
@@ -30779,7 +30779,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 25571,
+      "popularidad": 25590,
       "favoritos": 1102,
       "etiquetas": [
         {
@@ -30869,7 +30869,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.008,
+        "lectores": 0.0087,
         "puntaje": -0.1,
         "dias": 8
       },
@@ -30929,7 +30929,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 108129,
+      "popularidad": 108151,
       "favoritos": 4906,
       "etiquetas": [
         {
@@ -31039,7 +31039,7 @@
         "tomos": 16
       },
       "tendencia": {
-        "lectores": 0.0016,
+        "lectores": 0.0018,
         "puntaje": 0,
         "dias": 8
       },
@@ -31048,7 +31048,7 @@
     "120980": {
       "puntaje": {
         "valor": 80.7,
-        "votos": 31891,
+        "votos": 31910,
         "confianza": "alta",
         "diferencia": 1.1,
         "comunidades": 4
@@ -31056,7 +31056,7 @@
       "fuentes": {
         "anilist": {
           "puntaje": 81,
-          "votos": 12244
+          "votos": 12263
         },
         "kitsu": {
           "puntaje": 81.3,
@@ -31072,7 +31072,7 @@
         }
       },
       "distribucion": {
-        "votos": 12244,
+        "votos": 12263,
         "gusta": 0.878,
         "noGusta": 0.043,
         "desviacion": 17.2,
@@ -31086,7 +31086,7 @@
           4.8,
           13,
           22.7,
-          30.1,
+          30,
           22
         ]
       },
@@ -31099,7 +31099,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 50073,
+      "popularidad": 50095,
       "favoritos": 3283,
       "etiquetas": [
         {
@@ -31209,7 +31209,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0048,
+        "lectores": 0.0053,
         "puntaje": 0,
         "dias": 8
       },
@@ -31265,7 +31265,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 20883,
+      "popularidad": 20889,
       "favoritos": 1889,
       "etiquetas": [
         {
@@ -31350,7 +31350,7 @@
         "tomos": 12
       },
       "tendencia": {
-        "lectores": 0.0044,
+        "lectores": 0.0047,
         "puntaje": 0,
         "dias": 8
       },
@@ -31410,7 +31410,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 29550,
+      "popularidad": 29562,
       "favoritos": 1464,
       "etiquetas": [
         {
@@ -31515,7 +31515,7 @@
         "tomos": 13
       },
       "tendencia": {
-        "lectores": 0.0025,
+        "lectores": 0.0029,
         "puntaje": 0,
         "dias": 8
       },
@@ -31569,7 +31569,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 46859,
+      "popularidad": 46880,
       "favoritos": 2224,
       "etiquetas": [
         {
@@ -31679,7 +31679,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0048,
+        "lectores": 0.0053,
         "puntaje": 0,
         "dias": 8
       },
@@ -31739,7 +31739,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 18810,
+      "popularidad": 18813,
       "favoritos": 813,
       "etiquetas": [
         {
@@ -31851,7 +31851,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.0028,
+        "lectores": 0.0029,
         "puntaje": 0,
         "dias": 8
       }
@@ -31859,7 +31859,7 @@
     "125291": {
       "puntaje": {
         "valor": 75.7,
-        "votos": 912,
+        "votos": 915,
         "confianza": "baja",
         "diferencia": 0,
         "comunidades": 3
@@ -31867,7 +31867,7 @@
       "fuentes": {
         "anilist": {
           "puntaje": 76,
-          "votos": 782
+          "votos": 785
         },
         "kitsu": {
           "puntaje": 74.1,
@@ -31879,9 +31879,9 @@
         }
       },
       "distribucion": {
-        "votos": 782,
-        "gusta": 0.798,
-        "noGusta": 0.072,
+        "votos": 785,
+        "gusta": 0.799,
+        "noGusta": 0.071,
         "desviacion": 20.3,
         "division": "divididas",
         "barras": [
@@ -31892,15 +31892,15 @@
           6.5,
           6.5,
           20.6,
-          17.1,
-          18.8,
+          17.2,
+          18.7,
           23.3
         ]
       },
       "resenas": {
         "n": 0
       },
-      "popularidad": 8285,
+      "popularidad": 8288,
       "favoritos": 353,
       "etiquetas": [
         {
@@ -31985,7 +31985,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0024,
+        "lectores": 0.0028,
         "puntaje": 0,
         "dias": 8
       },
@@ -32039,7 +32039,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 32430,
+      "popularidad": 32433,
       "favoritos": 888,
       "etiquetas": [
         {
@@ -32178,7 +32178,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 90877,
+      "popularidad": 90904,
       "favoritos": 4958,
       "etiquetas": [
         {
@@ -32288,7 +32288,7 @@
         "tomos": 29
       },
       "tendencia": {
-        "lectores": 0.0034,
+        "lectores": 0.0037,
         "puntaje": 0,
         "dias": 8
       },
@@ -32348,7 +32348,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 57705,
+      "popularidad": 57730,
       "favoritos": 3236,
       "etiquetas": [
         {
@@ -32514,7 +32514,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 51427,
+      "popularidad": 51449,
       "favoritos": 1747,
       "etiquetas": [
         {
@@ -32690,7 +32690,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 71295,
+      "popularidad": 71339,
       "favoritos": 4908,
       "etiquetas": [
         {
@@ -32787,7 +32787,7 @@
       ],
       "revisada": "2026-11-24",
       "tendencia": {
-        "lectores": 0.0052,
+        "lectores": 0.0058,
         "puntaje": 0,
         "dias": 8
       }
@@ -32846,7 +32846,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 22155,
+      "popularidad": 22165,
       "favoritos": 1314,
       "etiquetas": [
         {
@@ -32963,7 +32963,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.0072,
+        "lectores": 0.0076,
         "puntaje": 0.1,
         "dias": 8
       }
@@ -33022,7 +33022,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 22480,
+      "popularidad": 22486,
       "favoritos": 732,
       "etiquetas": [
         {
@@ -33102,7 +33102,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0029,
+        "lectores": 0.0032,
         "puntaje": 0,
         "dias": 8
       },
@@ -33156,7 +33156,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 26177,
+      "popularidad": 26194,
       "favoritos": 1721,
       "etiquetas": [
         {
@@ -33251,7 +33251,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0051,
+        "lectores": 0.0057,
         "puntaje": 0,
         "dias": 8
       },
@@ -33305,7 +33305,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 36482,
+      "popularidad": 36491,
       "favoritos": 1136,
       "etiquetas": [
         {
@@ -33378,7 +33378,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0028,
+        "lectores": 0.0031,
         "puntaje": 0,
         "dias": 8
       },
@@ -33438,7 +33438,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 119221,
+      "popularidad": 119253,
       "favoritos": 9306,
       "etiquetas": [
         {
@@ -33561,7 +33561,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.003,
+        "lectores": 0.0032,
         "puntaje": 0,
         "dias": 8
       }
@@ -33569,7 +33569,7 @@
     "132144": {
       "puntaje": {
         "valor": 84.6,
-        "votos": 29514,
+        "votos": 29523,
         "confianza": "alta",
         "diferencia": 3.3,
         "comunidades": 4
@@ -33577,7 +33577,7 @@
       "fuentes": {
         "anilist": {
           "puntaje": 85,
-          "votos": 10998
+          "votos": 11007
         },
         "kitsu": {
           "puntaje": 81.7,
@@ -33593,7 +33593,7 @@
         }
       },
       "distribucion": {
-        "votos": 10998,
+        "votos": 11007,
         "gusta": 0.934,
         "noGusta": 0.023,
         "desviacion": 14.5,
@@ -33620,7 +33620,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 47051,
+      "popularidad": 47100,
       "favoritos": 3282,
       "etiquetas": [
         {
@@ -33722,7 +33722,7 @@
       ],
       "revisada": "2026-11-24",
       "tendencia": {
-        "lectores": 0.0056,
+        "lectores": 0.0066,
         "puntaje": 0,
         "dias": 8
       }
@@ -33781,7 +33781,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 56790,
+      "popularidad": 56810,
       "favoritos": 4096,
       "etiquetas": [
         {
@@ -33897,7 +33897,7 @@
         "tomos": 28
       },
       "tendencia": {
-        "lectores": 0.0025,
+        "lectores": 0.0029,
         "puntaje": 0,
         "dias": 8
       },
@@ -33951,7 +33951,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 36014,
+      "popularidad": 36033,
       "favoritos": 1248,
       "etiquetas": [
         {
@@ -34031,7 +34031,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0061,
+        "lectores": 0.0066,
         "puntaje": 0,
         "dias": 8
       },
@@ -34085,7 +34085,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 21509,
+      "popularidad": 21529,
       "favoritos": 714,
       "etiquetas": [
         {
@@ -34221,7 +34221,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 41955,
+      "popularidad": 42027,
       "favoritos": 1743,
       "etiquetas": [
         {
@@ -34328,7 +34328,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.0038,
+        "lectores": 0.0055,
         "puntaje": 0,
         "dias": 8
       }
@@ -34393,7 +34393,7 @@
           "final"
         ]
       },
-      "popularidad": 66001,
+      "popularidad": 66016,
       "favoritos": 4886,
       "etiquetas": [
         {
@@ -34509,7 +34509,7 @@
         "tomos": 1
       },
       "tendencia": {
-        "lectores": 0.0026,
+        "lectores": 0.0028,
         "puntaje": 0,
         "dias": 8
       },
@@ -34518,7 +34518,7 @@
     "137280": {
       "puntaje": {
         "valor": 76.9,
-        "votos": 27278,
+        "votos": 27286,
         "confianza": "alta",
         "diferencia": 3.7,
         "comunidades": 4
@@ -34526,7 +34526,7 @@
       "fuentes": {
         "anilist": {
           "puntaje": 77,
-          "votos": 10426
+          "votos": 10434
         },
         "kitsu": {
           "puntaje": 78.8,
@@ -34542,7 +34542,7 @@
         }
       },
       "distribucion": {
-        "votos": 10426,
+        "votos": 10434,
         "gusta": 0.839,
         "noGusta": 0.048,
         "desviacion": 17.5,
@@ -34569,7 +34569,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 52489,
+      "popularidad": 52514,
       "favoritos": 2431,
       "etiquetas": [
         {
@@ -34654,7 +34654,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0042,
+        "lectores": 0.0047,
         "puntaje": 0,
         "dias": 8
       },
@@ -34708,7 +34708,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 28841,
+      "popularidad": 28863,
       "favoritos": 1298,
       "etiquetas": [
         {
@@ -34798,7 +34798,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0055,
+        "lectores": 0.0063,
         "puntaje": 0,
         "dias": 8
       },
@@ -34852,7 +34852,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 29658,
+      "popularidad": 29668,
       "favoritos": 1126,
       "etiquetas": [
         {
@@ -34947,7 +34947,7 @@
         "tomos": 5
       },
       "tendencia": {
-        "lectores": 0.004,
+        "lectores": 0.0043,
         "puntaje": 0,
         "dias": 8
       },
@@ -34997,7 +34997,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 14955,
+      "popularidad": 14961,
       "favoritos": 455,
       "etiquetas": [
         {
@@ -35067,7 +35067,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0026,
+        "lectores": 0.003,
         "puntaje": 0,
         "dias": 8
       },
@@ -35127,7 +35127,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 43707,
+      "popularidad": 43729,
       "favoritos": 3621,
       "etiquetas": [
         {
@@ -35237,7 +35237,7 @@
         "tomos": 9
       },
       "tendencia": {
-        "lectores": 0.0037,
+        "lectores": 0.0042,
         "puntaje": 0,
         "dias": 8
       },
@@ -35293,7 +35293,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 11192,
+      "popularidad": 11205,
       "favoritos": 497,
       "etiquetas": [
         {
@@ -35386,7 +35386,7 @@
       ],
       "revisada": "2026-11-24",
       "tendencia": {
-        "lectores": 0.0048,
+        "lectores": 0.006,
         "puntaje": 0,
         "dias": 8
       }
@@ -35435,7 +35435,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 11037,
+      "popularidad": 11047,
       "favoritos": 531,
       "etiquetas": [
         {
@@ -35545,7 +35545,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0061,
+        "lectores": 0.007,
         "puntaje": 0,
         "dias": 8
       },
@@ -35605,7 +35605,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 72993,
+      "popularidad": 73050,
       "favoritos": 8340,
       "etiquetas": [
         {
@@ -35721,7 +35721,7 @@
         "tomos": 10
       },
       "tendencia": {
-        "lectores": 0.0065,
+        "lectores": 0.0073,
         "puntaje": 0,
         "dias": 8
       },
@@ -35785,7 +35785,7 @@
         ],
         "critican": []
       },
-      "popularidad": 82488,
+      "popularidad": 82520,
       "favoritos": 8497,
       "etiquetas": [
         {
@@ -35901,7 +35901,7 @@
         "tomos": 24
       },
       "tendencia": {
-        "lectores": 0.0035,
+        "lectores": 0.0039,
         "puntaje": 0,
         "dias": 8
       },
@@ -35951,7 +35951,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 19172,
+      "popularidad": 19191,
       "favoritos": 589,
       "etiquetas": [
         {
@@ -36076,7 +36076,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 10324,
+      "popularidad": 10328,
       "favoritos": 654,
       "etiquetas": [
         {
@@ -36193,7 +36193,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.0028,
+        "lectores": 0.0032,
         "puntaje": 0,
         "dias": 8
       }
@@ -36246,7 +36246,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 10718,
+      "popularidad": 10732,
       "favoritos": 215,
       "etiquetas": [
         {
@@ -36373,7 +36373,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 16437,
+      "popularidad": 16450,
       "favoritos": 840,
       "etiquetas": [
         {
@@ -36539,7 +36539,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 32435,
+      "popularidad": 32455,
       "favoritos": 1439,
       "etiquetas": [
         {
@@ -36635,7 +36635,7 @@
         "tomos": 2
       },
       "tendencia": {
-        "lectores": 0.0027,
+        "lectores": 0.0033,
         "puntaje": 0.1,
         "dias": 8
       },
@@ -36695,7 +36695,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 20820,
+      "popularidad": 20843,
       "favoritos": 763,
       "etiquetas": [
         {
@@ -36850,7 +36850,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 39921,
+      "popularidad": 39935,
       "favoritos": 1426,
       "etiquetas": [
         {
@@ -36925,7 +36925,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0034,
+        "lectores": 0.0038,
         "puntaje": 0,
         "dias": 8
       },
@@ -36985,7 +36985,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 13832,
+      "popularidad": 13840,
       "favoritos": 501,
       "etiquetas": [
         {
@@ -37161,7 +37161,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 69093,
+      "popularidad": 69133,
       "favoritos": 4509,
       "etiquetas": [
         {
@@ -37278,7 +37278,7 @@
       ],
       "revisada": "2026-11-24",
       "tendencia": {
-        "lectores": 0.0042,
+        "lectores": 0.0048,
         "puntaje": 0,
         "dias": 8
       }
@@ -37331,7 +37331,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 46186,
+      "popularidad": 46216,
       "favoritos": 1784,
       "etiquetas": [
         {
@@ -37411,7 +37411,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0042,
+        "lectores": 0.0048,
         "puntaje": 0,
         "dias": 8
       },
@@ -37465,7 +37465,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 28639,
+      "popularidad": 28645,
       "favoritos": 1105,
       "etiquetas": [
         {
@@ -37560,7 +37560,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.004,
+        "lectores": 0.0042,
         "puntaje": 0,
         "dias": 8
       },
@@ -37616,7 +37616,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 12628,
+      "popularidad": 12637,
       "favoritos": 559,
       "etiquetas": [
         {
@@ -37691,7 +37691,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0059,
+        "lectores": 0.0066,
         "puntaje": -0.1,
         "dias": 8
       },
@@ -37755,7 +37755,7 @@
         ],
         "critican": []
       },
-      "popularidad": 87926,
+      "popularidad": 87959,
       "favoritos": 8205,
       "etiquetas": [
         {
@@ -37861,7 +37861,7 @@
         "tomos": 1
       },
       "tendencia": {
-        "lectores": 0.003,
+        "lectores": 0.0034,
         "puntaje": 0,
         "dias": 8
       },
@@ -37921,7 +37921,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 45998,
+      "popularidad": 46034,
       "favoritos": 2456,
       "etiquetas": [
         {
@@ -38087,7 +38087,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 45803,
+      "popularidad": 45821,
       "favoritos": 2090,
       "etiquetas": [
         {
@@ -38179,7 +38179,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.0044,
+        "lectores": 0.0048,
         "puntaje": 0,
         "dias": 8
       }
@@ -38238,7 +38238,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 55179,
+      "popularidad": 55208,
       "favoritos": 4968,
       "etiquetas": [
         {
@@ -38408,7 +38408,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 18168,
+      "popularidad": 18182,
       "favoritos": 574,
       "etiquetas": [
         {
@@ -38553,7 +38553,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 37400,
+      "popularidad": 37453,
       "favoritos": 1554,
       "etiquetas": [
         {
@@ -38643,7 +38643,7 @@
     "152128": {
       "puntaje": {
         "valor": 77.3,
-        "votos": 16826,
+        "votos": 16902,
         "confianza": "alta",
         "diferencia": 1.3,
         "comunidades": 4
@@ -38651,7 +38651,7 @@
       "fuentes": {
         "anilist": {
           "puntaje": 78,
-          "votos": 6423
+          "votos": 6499
         },
         "kitsu": {
           "puntaje": 77.4,
@@ -38667,8 +38667,8 @@
         }
       },
       "distribucion": {
-        "votos": 6423,
-        "gusta": 0.862,
+        "votos": 6499,
+        "gusta": 0.86,
         "noGusta": 0.039,
         "desviacion": 16.1,
         "division": "variadas",
@@ -38678,11 +38678,11 @@
           1.3,
           1.4,
           3.4,
-          6.5,
-          18.9,
-          28.8,
+          6.6,
+          18.8,
+          28.7,
           25.8,
-          12.7
+          12.8
         ]
       },
       "resenas": {
@@ -38694,7 +38694,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 31375,
+      "popularidad": 31396,
       "favoritos": 1221,
       "etiquetas": [
         {
@@ -38796,7 +38796,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.0054,
+        "lectores": 0.0061,
         "puntaje": 0,
         "dias": 8
       }
@@ -38849,7 +38849,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 9183,
+      "popularidad": 9239,
       "favoritos": 162,
       "etiquetas": [
         {
@@ -38963,7 +38963,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 11876,
+      "popularidad": 11884,
       "favoritos": 550,
       "etiquetas": [
         {
@@ -39107,7 +39107,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 11538,
+      "popularidad": 11547,
       "favoritos": 540,
       "etiquetas": [
         {
@@ -39204,7 +39204,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.0094,
+        "lectores": 0.0102,
         "puntaje": 0,
         "dias": 8
       }
@@ -39257,7 +39257,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 47427,
+      "popularidad": 47452,
       "favoritos": 2957,
       "etiquetas": [
         {
@@ -39374,7 +39374,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.0063,
+        "lectores": 0.0069,
         "puntaje": 0,
         "dias": 8
       }
@@ -39382,7 +39382,7 @@
     "159930": {
       "puntaje": {
         "valor": 78.6,
-        "votos": 24106,
+        "votos": 24233,
         "confianza": "alta",
         "diferencia": 2.1,
         "comunidades": 4
@@ -39390,7 +39390,7 @@
       "fuentes": {
         "anilist": {
           "puntaje": 79,
-          "votos": 8979
+          "votos": 9106
         },
         "kitsu": {
           "puntaje": 77.5,
@@ -39406,19 +39406,19 @@
         }
       },
       "distribucion": {
-        "votos": 8979,
-        "gusta": 0.865,
+        "votos": 9106,
+        "gusta": 0.864,
         "noGusta": 0.041,
         "desviacion": 16.5,
         "division": "variadas",
         "barras": [
           0.9,
-          0.6,
+          0.5,
           0.9,
           1.8,
           3.6,
           5.9,
-          16.7,
+          16.6,
           27.6,
           26.9,
           15.3
@@ -39433,7 +39433,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 43135,
+      "popularidad": 43190,
       "favoritos": 1824,
       "etiquetas": [
         {
@@ -39510,7 +39510,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.0067,
+        "lectores": 0.008,
         "puntaje": 0,
         "dias": 8
       }
@@ -39563,7 +39563,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 9607,
+      "popularidad": 9614,
       "favoritos": 208,
       "etiquetas": [
         {
@@ -39694,7 +39694,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 15721,
+      "popularidad": 15731,
       "favoritos": 573,
       "etiquetas": [
         {
@@ -39771,7 +39771,7 @@
       ],
       "revisada": "2026-11-24",
       "tendencia": {
-        "lectores": 0.0042,
+        "lectores": 0.0048,
         "puntaje": 0,
         "dias": 8
       }
@@ -39779,7 +39779,7 @@
     "163824": {
       "puntaje": {
         "valor": 79.1,
-        "votos": 25562,
+        "votos": 25591,
         "confianza": "alta",
         "diferencia": 1.5,
         "comunidades": 4
@@ -39787,7 +39787,7 @@
       "fuentes": {
         "anilist": {
           "puntaje": 79,
-          "votos": 9742
+          "votos": 9771
         },
         "kitsu": {
           "puntaje": 78.4,
@@ -39803,7 +39803,7 @@
         }
       },
       "distribucion": {
-        "votos": 9742,
+        "votos": 9771,
         "gusta": 0.873,
         "noGusta": 0.042,
         "desviacion": 16.6,
@@ -39812,10 +39812,10 @@
           0.8,
           0.6,
           1,
-          1.8,
+          1.9,
           3.4,
           5.1,
-          14.9,
+          15,
           26.4,
           28.9,
           17.1
@@ -39824,7 +39824,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 47381,
+      "popularidad": 47419,
       "favoritos": 2466,
       "etiquetas": [
         {
@@ -39916,7 +39916,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.0059,
+        "lectores": 0.0067,
         "puntaje": -0.1,
         "dias": 8
       }
@@ -39969,7 +39969,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 22789,
+      "popularidad": 22806,
       "favoritos": 889,
       "etiquetas": [
         {
@@ -40086,7 +40086,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.0085,
+        "lectores": 0.0092,
         "puntaje": 0,
         "dias": 8
       }
@@ -40135,7 +40135,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 11873,
+      "popularidad": 11885,
       "favoritos": 507,
       "etiquetas": [
         {
@@ -40207,7 +40207,7 @@
       ],
       "revisada": "2026-11-24",
       "tendencia": {
-        "lectores": 0.0076,
+        "lectores": 0.0086,
         "puntaje": 0,
         "dias": 8
       }
@@ -40260,7 +40260,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 30935,
+      "popularidad": 30957,
       "favoritos": 818,
       "etiquetas": [
         {
@@ -40395,7 +40395,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 20922,
+      "popularidad": 20931,
       "favoritos": 588,
       "etiquetas": [
         {
@@ -40459,7 +40459,7 @@
     "168843": {
       "puntaje": {
         "valor": 85.3,
-        "votos": 1569,
+        "votos": 1570,
         "confianza": "media",
         "diferencia": 2.7,
         "comunidades": 4
@@ -40467,7 +40467,7 @@
       "fuentes": {
         "anilist": {
           "puntaje": 88,
-          "votos": 740
+          "votos": 741
         },
         "kitsu": {
           "puntaje": 0,
@@ -40483,7 +40483,7 @@
         }
       },
       "distribucion": {
-        "votos": 740,
+        "votos": 741,
         "gusta": 0.969,
         "noGusta": 0.007,
         "desviacion": 12.3,
@@ -40496,15 +40496,15 @@
           1.2,
           1.2,
           10,
-          14.1,
-          36.8,
-          36.1
+          14,
+          36.7,
+          36.2
         ]
       },
       "resenas": {
         "n": 0
       },
-      "popularidad": 4130,
+      "popularidad": 4140,
       "favoritos": 355,
       "etiquetas": [
         {
@@ -40595,7 +40595,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.0088,
+        "lectores": 0.0112,
         "puntaje": 0,
         "dias": 8
       }
@@ -40654,7 +40654,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 19777,
+      "popularidad": 19793,
       "favoritos": 1073,
       "etiquetas": [
         {
@@ -40820,7 +40820,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 73312,
+      "popularidad": 73350,
       "favoritos": 4233,
       "etiquetas": [
         {
@@ -40937,7 +40937,7 @@
       ],
       "revisada": "2026-11-23",
       "tendencia": {
-        "lectores": 0.0044,
+        "lectores": 0.005,
         "puntaje": 0,
         "dias": 8
       }
@@ -40996,7 +40996,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 34793,
+      "popularidad": 34845,
       "favoritos": 1530,
       "etiquetas": [
         {
@@ -41081,7 +41081,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0071,
+        "lectores": 0.0086,
         "puntaje": 0,
         "dias": 8
       },
@@ -41135,7 +41135,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 33779,
+      "popularidad": 33817,
       "favoritos": 1744,
       "etiquetas": [
         {
@@ -41230,7 +41230,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0093,
+        "lectores": 0.0105,
         "puntaje": 0,
         "dias": 8
       },
@@ -41284,7 +41284,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 21625,
+      "popularidad": 21651,
       "favoritos": 1132,
       "etiquetas": [
         {
@@ -41394,7 +41394,7 @@
     "177706": {
       "puntaje": {
         "valor": 85.8,
-        "votos": 17740,
+        "votos": 17748,
         "confianza": "alta",
         "diferencia": 2.9,
         "comunidades": 4
@@ -41402,7 +41402,7 @@
       "fuentes": {
         "anilist": {
           "puntaje": 86,
-          "votos": 6494
+          "votos": 6502
         },
         "kitsu": {
           "puntaje": 83.5,
@@ -41418,7 +41418,7 @@
         }
       },
       "distribucion": {
-        "votos": 6494,
+        "votos": 6502,
         "gusta": 0.949,
         "noGusta": 0.02,
         "desviacion": 14,
@@ -41428,12 +41428,12 @@
           0.3,
           0.4,
           0.6,
-          1.4,
+          1.3,
           1.8,
           8.1,
           20.9,
-          37.6,
-          28.3
+          37.5,
+          28.4
         ]
       },
       "resenas": {
@@ -41445,7 +41445,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 29126,
+      "popularidad": 29162,
       "favoritos": 1705,
       "etiquetas": [
         {
@@ -41596,7 +41596,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 17396,
+      "popularidad": 17421,
       "favoritos": 419,
       "etiquetas": [
         {
@@ -41701,7 +41701,7 @@
     "180752": {
       "puntaje": {
         "valor": 79,
-        "votos": 15911,
+        "votos": 16077,
         "confianza": "alta",
         "diferencia": 2.8,
         "comunidades": 4
@@ -41709,7 +41709,7 @@
       "fuentes": {
         "anilist": {
           "puntaje": 79,
-          "votos": 5249
+          "votos": 5415
         },
         "kitsu": {
           "puntaje": 78.7,
@@ -41725,22 +41725,22 @@
         }
       },
       "distribucion": {
-        "votos": 5249,
-        "gusta": 0.902,
+        "votos": 5415,
+        "gusta": 0.904,
         "noGusta": 0.019,
         "desviacion": 13.8,
         "division": "coinciden",
         "barras": [
-          0.4,
-          0.2,
+          0.5,
+          0.1,
           0.4,
           0.9,
-          2.7,
+          2.6,
           5.1,
-          16.9,
-          32,
-          29.3,
-          12.1
+          16.7,
+          31.9,
+          29.5,
+          12.2
         ]
       },
       "resenas": {
@@ -41752,7 +41752,7 @@
         "elogian": [],
         "critican": []
       },
-      "popularidad": 31398,
+      "popularidad": 31430,
       "favoritos": 1214,
       "etiquetas": [
         {
@@ -41857,7 +41857,7 @@
         "tomos": 10
       },
       "tendencia": {
-        "lectores": 0.0082,
+        "lectores": 0.0092,
         "puntaje": -0.1,
         "dias": 8
       },
@@ -41911,7 +41911,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 20820,
+      "popularidad": 20874,
       "favoritos": 841,
       "etiquetas": [
         {
@@ -42001,7 +42001,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0153,
+        "lectores": 0.0179,
         "puntaje": 0,
         "dias": 8
       },
@@ -42010,7 +42010,7 @@
     "182066": {
       "puntaje": {
         "valor": 80.9,
-        "votos": 12125,
+        "votos": 12145,
         "confianza": "alta",
         "diferencia": 2.8,
         "comunidades": 4
@@ -42018,7 +42018,7 @@
       "fuentes": {
         "anilist": {
           "puntaje": 81,
-          "votos": 4945
+          "votos": 4965
         },
         "kitsu": {
           "puntaje": 78.4,
@@ -42034,9 +42034,9 @@
         }
       },
       "distribucion": {
-        "votos": 4945,
-        "gusta": 0.914,
-        "noGusta": 0.025,
+        "votos": 4965,
+        "gusta": 0.913,
+        "noGusta": 0.026,
         "desviacion": 15.1,
         "division": "variadas",
         "barras": [
@@ -42047,15 +42047,15 @@
           2.3,
           3.8,
           14,
-          28,
+          27.9,
           31.1,
-          18.3
+          18.2
         ]
       },
       "resenas": {
         "n": 0
       },
-      "popularidad": 26548,
+      "popularidad": 26588,
       "favoritos": 1006,
       "etiquetas": [
         {
@@ -42140,7 +42140,7 @@
         "tomos": null
       },
       "tendencia": {
-        "lectores": 0.0099,
+        "lectores": 0.0115,
         "puntaje": 0,
         "dias": 8
       },
@@ -42194,7 +42194,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 9832,
+      "popularidad": 9846,
       "favoritos": 229,
       "etiquetas": [
         {
@@ -42294,7 +42294,7 @@
     "187347": {
       "puntaje": {
         "valor": 65.4,
-        "votos": 1822,
+        "votos": 1823,
         "confianza": "media",
         "diferencia": 1.4,
         "comunidades": 4
@@ -42302,7 +42302,7 @@
       "fuentes": {
         "anilist": {
           "puntaje": 66,
-          "votos": 567
+          "votos": 568
         },
         "kitsu": {
           "puntaje": 0,
@@ -42318,28 +42318,28 @@
         }
       },
       "distribucion": {
-        "votos": 567,
-        "gusta": 0.601,
+        "votos": 568,
+        "gusta": 0.602,
         "noGusta": 0.113,
         "desviacion": 19.2,
         "division": "divididas",
         "barras": [
           1.6,
           1.4,
-          3.4,
+          3.3,
           4.9,
           12.3,
           16.2,
-          27,
-          16,
+          26.8,
+          16.2,
           9.9,
-          7.2
+          7.4
         ]
       },
       "resenas": {
         "n": 0
       },
-      "popularidad": 5113,
+      "popularidad": 5115,
       "favoritos": 89,
       "etiquetas": [
         {
@@ -42489,7 +42489,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 21109,
+      "popularidad": 21132,
       "favoritos": 1473,
       "etiquetas": [
         {
@@ -42591,7 +42591,7 @@
       ],
       "revisada": "2026-11-24",
       "tendencia": {
-        "lectores": 0.0088,
+        "lectores": 0.0099,
         "puntaje": 0,
         "dias": 8
       }
@@ -42599,7 +42599,7 @@
     "193817": {
       "puntaje": {
         "valor": 71.6,
-        "votos": 2841,
+        "votos": 2845,
         "confianza": "media",
         "diferencia": 3.5,
         "comunidades": 4
@@ -42607,7 +42607,7 @@
       "fuentes": {
         "anilist": {
           "puntaje": 70,
-          "votos": 752
+          "votos": 756
         },
         "kitsu": {
           "puntaje": 0,
@@ -42623,28 +42623,28 @@
         }
       },
       "distribucion": {
-        "votos": 752,
-        "gusta": 0.727,
-        "noGusta": 0.086,
-        "desviacion": 19.6,
+        "votos": 756,
+        "gusta": 0.725,
+        "noGusta": 0.087,
+        "desviacion": 19.7,
         "division": "divididas",
         "barras": [
           1.7,
           1.9,
-          2.8,
-          2.3,
-          7.6,
-          11,
-          26.7,
-          20.1,
+          2.9,
+          2.2,
+          7.5,
+          11.2,
+          26.6,
+          20,
           16,
-          10
+          9.9
         ]
       },
       "resenas": {
         "n": 0
       },
-      "popularidad": 7030,
+      "popularidad": 7069,
       "favoritos": 128,
       "etiquetas": [
         {
@@ -42789,7 +42789,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 7809,
+      "popularidad": 7819,
       "favoritos": 140,
       "etiquetas": [],
       "recomendaciones": [
@@ -42901,7 +42901,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 7501,
+      "popularidad": 7521,
       "favoritos": 138,
       "etiquetas": [],
       "recomendaciones": [
@@ -42946,8 +42946,8 @@
     },
     "199496": {
       "puntaje": {
-        "valor": 78.6,
-        "votos": 1897,
+        "valor": 78.7,
+        "votos": 1915,
         "confianza": "media",
         "diferencia": 0.9,
         "comunidades": 4
@@ -42955,7 +42955,7 @@
       "fuentes": {
         "anilist": {
           "puntaje": 81,
-          "votos": 724
+          "votos": 742
         },
         "kitsu": {
           "puntaje": 0,
@@ -42971,8 +42971,8 @@
         }
       },
       "distribucion": {
-        "votos": 724,
-        "gusta": 0.905,
+        "votos": 742,
+        "gusta": 0.906,
         "noGusta": 0.018,
         "desviacion": 14.5,
         "division": "coinciden",
@@ -42981,18 +42981,18 @@
           0.1,
           0.1,
           0.8,
-          2.6,
-          5.1,
-          12.7,
-          29.3,
-          30,
-          18.5
+          2.7,
+          5,
+          12.9,
+          28.7,
+          30.2,
+          18.7
         ]
       },
       "resenas": {
         "n": 0
       },
-      "popularidad": 6059,
+      "popularidad": 6084,
       "favoritos": 182,
       "etiquetas": [
         {
@@ -43103,7 +43103,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 5048,
+      "popularidad": 5061,
       "favoritos": 120,
       "etiquetas": [
         {
@@ -43243,7 +43243,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 4758,
+      "popularidad": 4776,
       "favoritos": 84,
       "etiquetas": [],
       "recomendaciones": [
