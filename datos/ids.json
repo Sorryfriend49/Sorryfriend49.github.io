@@ -280,6 +280,13 @@
       "buscado": "2026-11-17",
       "emparejador": 2
     },
+    "31517": {
+      "kitsu": "3229",
+      "mangaupdates": 65532796324,
+      "mangaupdatesTitulo": "JoJo no Kimyou na Bouken Part 1: Phantom Blood",
+      "buscado": "2026-11-25",
+      "emparejador": 2
+    },
     "31706": {
       "kitsu": "3625",
       "mangaupdates": 4507270726,
@@ -308,6 +315,13 @@
       "buscado": "2026-11-24",
       "emparejador": 2
     },
+    "33986": {
+      "kitsu": "8777",
+      "mangaupdates": 32965107278,
+      "mangaupdatesTitulo": "Deadman Wonderland",
+      "buscado": "2026-11-25",
+      "emparejador": 2
+    },
     "34632": {
       "kitsu": "9964",
       "mangaupdates": 21944750964,
@@ -329,6 +343,13 @@
       "buscado": "2026-11-17",
       "emparejador": 2
     },
+    "38967": {
+      "kitsu": "18205",
+      "mangaupdates": 52449910192,
+      "mangaupdatesTitulo": "Onanie Master Kurosawa",
+      "buscado": "2026-11-25",
+      "emparejador": 2
+    },
     "41652": {
       "kitsu": "21730",
       "mangaupdates": 64201264591,
@@ -341,6 +362,13 @@
       "mangaupdates": 17036345354,
       "mangaupdatesTitulo": "Chihayafuru",
       "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "44790": {
+      "kitsu": "25108",
+      "mangaupdates": 25082474853,
+      "mangaupdatesTitulo": "Magi - Labyrinth of Magic",
+      "buscado": "2026-11-25",
       "emparejador": 2
     },
     "46765": {
@@ -383,6 +411,13 @@
       "mangaupdates": 71290549806,
       "mangaupdatesTitulo": "Aku no Hana",
       "buscado": "2026-11-23",
+      "emparejador": 2
+    },
+    "55132": {
+      "kitsu": "18123",
+      "mangaupdates": 54773004994,
+      "mangaupdatesTitulo": "Akame ga Kiru!",
+      "buscado": "2026-11-25",
       "emparejador": 2
     },
     "55515": {
@@ -671,6 +706,13 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "87178": {
+      "kitsu": "36766",
+      "mangaupdates": 51912432379,
+      "mangaupdatesTitulo": "Boruto: Naruto Next Generations",
+      "buscado": "2026-11-25",
+      "emparejador": 2
+    },
     "87216": {
       "kitsu": "37280",
       "mangaupdates": 36271319846,
@@ -732,6 +774,13 @@
       "mangaupdates": 372275459,
       "mangaupdatesTitulo": "Dr. Stone",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "98587": {
+      "kitsu": "39242",
+      "mangaupdates": 73371651692,
+      "mangaupdatesTitulo": "Beastars",
+      "buscado": "2026-11-25",
       "emparejador": 2
     },
     "98842": {
@@ -920,6 +969,13 @@
       "mangaupdates": 42866050067,
       "mangaupdatesTitulo": "Blue Lock",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "106758": {
+      "kitsu": "54238",
+      "mangaupdates": 66280584264,
+      "mangaupdatesTitulo": "Kage no Jitsuryokusha ni Naritakute",
+      "buscado": "2026-11-25",
       "emparejador": 2
     },
     "106929": {
@@ -1276,6 +1332,13 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "126693": {
+      "kitsu": "59407",
+      "mangaupdates": 13486396165,
+      "mangaupdatesTitulo": "Choujin X",
+      "buscado": "2026-11-25",
+      "emparejador": 2
+    },
     "128067": {
       "kitsu": "58485",
       "mangaupdates": 17122182327,
@@ -1423,6 +1486,12 @@
       "buscado": "2026-11-17",
       "emparejador": 2
     },
+    "141705": {
+      "mangaupdates": 54083649331,
+      "mangaupdatesTitulo": "Reality Quest",
+      "buscado": "2026-11-25",
+      "emparejador": 2
+    },
     "141756": {
       "kitsu": "61631",
       "mangaupdates": 58993669186,
@@ -1465,6 +1534,13 @@
       "buscado": "2026-11-17",
       "emparejador": 2
     },
+    "143719": {
+      "kitsu": "64157",
+      "mangaupdates": 27616781136,
+      "mangaupdatesTitulo": "Mikadono Sanshimai wa Angai, Choroi.",
+      "buscado": "2026-11-25",
+      "emparejador": 2
+    },
     "144946": {
       "kitsu": "62553",
       "mangaupdates": 25659772773,
@@ -1500,11 +1576,25 @@
       "buscado": "2026-11-16",
       "emparejador": 2
     },
+    "147149": {
+      "kitsu": "64430",
+      "mangaupdates": 73648673800,
+      "mangaupdatesTitulo": "Suupaa no Ura de Yani Suu Hanashi",
+      "buscado": "2026-11-25",
+      "emparejador": 2
+    },
     "149332": {
       "kitsu": "63282",
       "mangaupdates": 74095324437,
       "mangaupdatesTitulo": "The Swordmaster's Son",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "149544": {
+      "kitsu": "63232",
+      "mangaupdates": 28792959847,
+      "mangaupdatesTitulo": "Ki ni Natteru Hito ga Otoko ja Nakatta",
+      "buscado": "2026-11-25",
       "emparejador": 2
     },
     "151460": {
@@ -1526,6 +1616,13 @@
       "mangaupdates": 29556692510,
       "mangaupdatesTitulo": "The Novel's Extra (2022)",
       "buscado": "2026-11-17",
+      "emparejador": 2
+    },
+    "152913": {
+      "kitsu": "74678",
+      "mangaupdates": 15319884592,
+      "mangaupdatesTitulo": "Anta to Osananajimi tte dake demo Iya nanoni!: Zekkou kara Hajimaru S-kyuu Bishoujo to no Gakuen Nariagari Seikatsu",
+      "buscado": "2026-11-25",
       "emparejador": 2
     },
     "154159": {
@@ -1609,6 +1706,13 @@
       "buscado": "2026-11-17",
       "emparejador": 2
     },
+    "169272": {
+      "kitsu": "70184",
+      "mangaupdates": 71662917900,
+      "mangaupdatesTitulo": "Mayonaka Heart Tune",
+      "buscado": "2026-11-25",
+      "emparejador": 2
+    },
     "169355": {
       "kitsu": "69379",
       "mangaupdates": 60441951323,
@@ -1642,6 +1746,13 @@
       "mangaupdates": 35590700362,
       "mangaupdatesTitulo": "The Knight Only Lives Today",
       "buscado": "2026-11-16",
+      "emparejador": 2
+    },
+    "180422": {
+      "kitsu": "72760",
+      "mangaupdates": 70802283135,
+      "mangaupdatesTitulo": "Momose Akira no Hatsukoi Hatan-chuu.",
+      "buscado": "2026-11-25",
       "emparejador": 2
     },
     "180752": {
@@ -1714,6 +1825,13 @@
       "buscado": "2026-11-24",
       "emparejador": 2
     },
+    "201855": {
+      "kitsu": "76924",
+      "mangaupdates": 59790756843,
+      "mangaupdatesTitulo": "Futari Bus",
+      "buscado": "2026-11-25",
+      "emparejador": 2
+    },
     "202718": {
       "kitsu": "77055",
       "mangaupdates": 42518075791,
@@ -1728,11 +1846,32 @@
       "buscado": "2026-11-23",
       "emparejador": 2
     },
+    "204974": {
+      "kitsu": "77218",
+      "mangaupdates": 16679365958,
+      "mangaupdatesTitulo": "Murim Psychopath",
+      "buscado": "2026-11-25",
+      "emparejador": 2
+    },
+    "207089": {
+      "kitsu": "77581",
+      "mangaupdates": 47231027345,
+      "mangaupdatesTitulo": "Became the Lout First Prince",
+      "buscado": "2026-11-25",
+      "emparejador": 2
+    },
     "214050": {
       "kitsu": "78780",
       "mangaupdates": 60245310503,
       "mangaupdatesTitulo": "I Married the Dragon I Killed",
       "buscado": "2026-11-24",
+      "emparejador": 2
+    },
+    "214315": {
+      "kitsu": "78837",
+      "mangaupdates": 61777860167,
+      "mangaupdatesTitulo": "Until No Demon Remains",
+      "buscado": "2026-11-25",
       "emparejador": 2
     },
     "214453": {
