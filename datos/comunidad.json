@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "metodo": "1.2",
-  "generado": "2026-11-26T22:07:54.211Z",
+  "generado": "2026-11-26T22:30:02.607Z",
   "fuentes": {
     "anilist": "2026-11-26",
     "kitsu": "2026-11-26",
@@ -11,7 +11,7 @@
   "mediaCatalogo": 80.3,
   "tono": {
     "metodo": "modelo",
-    "acierto": 0.808
+    "acierto": 0.811
   },
   "obras": {
     "30001": {
@@ -391,7 +391,7 @@
     "30003": {
       "puntaje": {
         "valor": 87.3,
-        "votos": 147159,
+        "votos": 147231,
         "confianza": "alta",
         "diferencia": 6.6,
         "comunidades": 4
@@ -403,7 +403,7 @@
         },
         "kitsu": {
           "puntaje": 82.7,
-          "votos": 6041
+          "votos": 6044
         },
         "mangaupdates": {
           "puntaje": 87.6,
@@ -411,7 +411,7 @@
         },
         "myanimelist": {
           "puntaje": 89.3,
-          "votos": 112695
+          "votos": 112764
         }
       },
       "distribucion": {
@@ -444,9 +444,7 @@
           "personajes",
           "arte"
         ],
-        "critican": [
-          "final"
-        ]
+        "critican": []
       },
       "popularidad": 109962,
       "favoritos": 8792,
@@ -547,9 +545,9 @@
         }
       ],
       "actividad": {
-        "semana": 562,
-        "leyendo": 14060,
-        "lectores": 0.0018,
+        "semana": 623,
+        "leyendo": 14063,
+        "lectores": 0.0019,
         "dias": 7
       },
       "resumen": {
@@ -560,15 +558,21 @@
         "fecha": "2026-11-16"
       },
       "capitulos": {
-        "ultimo": 13,
+        "ultimo": 249,
         "tomos": 22
       },
+      "evaluacion": [
+        12,
+        14,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0026,
-        "puntaje": 0,
-        "dias": 9
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0019,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "30007": {
       "puntaje": {
@@ -3340,7 +3344,7 @@
     "30104": {
       "puntaje": {
         "valor": 87.7,
-        "votos": 86682,
+        "votos": 86690,
         "confianza": "alta",
         "diferencia": 6.3,
         "comunidades": 4
@@ -3360,7 +3364,7 @@
         },
         "myanimelist": {
           "puntaje": 89.2,
-          "votos": 62716
+          "votos": 62724
         }
       },
       "distribucion": {
@@ -3490,8 +3494,8 @@
         }
       ],
       "actividad": {
-        "semana": 309,
-        "leyendo": 24137,
+        "semana": 294,
+        "leyendo": 24136,
         "lectores": 0.0014,
         "dias": 7
       },
@@ -3503,7 +3507,7 @@
         "fecha": "2026-11-17"
       },
       "capitulos": {
-        "ultimo": 8,
+        "ultimo": null,
         "tomos": 16
       },
       "evaluacion": [
@@ -3512,17 +3516,17 @@
         0,
         0
       ],
-      "revisada": "2026-11-25",
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0021,
-        "puntaje": 0,
-        "dias": 9
+        "lectores": 0.0014,
+        "puntaje": null,
+        "dias": 7
       }
     },
     "30149": {
       "puntaje": {
         "valor": 81.9,
-        "votos": 73831,
+        "votos": 73868,
         "confianza": "alta",
         "diferencia": 2,
         "comunidades": 4
@@ -3542,7 +3546,7 @@
         },
         "myanimelist": {
           "puntaje": 83,
-          "votos": 54582
+          "votos": 54619
         }
       },
       "distribucion": {
@@ -3572,8 +3576,8 @@
         "wilson": 0.505,
         "elogian": [
           "personajes",
-          "arte",
-          "accion"
+          "historia",
+          "arte"
         ],
         "critican": []
       },
@@ -3676,9 +3680,9 @@
         }
       ],
       "actividad": {
-        "semana": 284,
-        "leyendo": 6978,
-        "lectores": 0.0025,
+        "semana": 263,
+        "leyendo": 6992,
+        "lectores": 0.0024,
         "dias": 7
       },
       "resumen": {
@@ -3689,7 +3693,7 @@
         "fecha": "2026-11-23"
       },
       "capitulos": {
-        "ultimo": 18,
+        "ultimo": 66,
         "tomos": 10
       },
       "evaluacion": [
@@ -3698,9 +3702,9 @@
         2,
         4
       ],
-      "revisada": "2026-11-23",
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0025,
+        "lectores": 0.0024,
         "puntaje": null,
         "dias": 7
       }
@@ -3708,7 +3712,7 @@
     "30336": {
       "puntaje": {
         "valor": 87,
-        "votos": 94069,
+        "votos": 94078,
         "confianza": "alta",
         "diferencia": 5.8,
         "comunidades": 4
@@ -3720,7 +3724,7 @@
         },
         "kitsu": {
           "puntaje": 82.8,
-          "votos": 4316
+          "votos": 4317
         },
         "mangaupdates": {
           "puntaje": 87.7,
@@ -3728,7 +3732,7 @@
         },
         "myanimelist": {
           "puntaje": 88.6,
-          "votos": 73427
+          "votos": 73435
         }
       },
       "distribucion": {
@@ -3858,8 +3862,8 @@
         }
       ],
       "actividad": {
-        "semana": 142,
-        "leyendo": 6423,
+        "semana": 137,
+        "leyendo": 6426,
         "lectores": 0.0016,
         "dias": 7
       },
@@ -3871,7 +3875,7 @@
         "fecha": "2026-11-24"
       },
       "capitulos": {
-        "ultimo": 13,
+        "ultimo": 201,
         "tomos": 25
       },
       "evaluacion": [
@@ -3880,7 +3884,7 @@
         0,
         0
       ],
-      "revisada": "2026-11-24",
+      "revisada": "2026-11-26",
       "tendencia": {
         "lectores": 0.0016,
         "puntaje": null,
@@ -5129,7 +5133,7 @@
     "30656": {
       "puntaje": {
         "valor": 89.7,
-        "votos": 236044,
+        "votos": 236102,
         "confianza": "media",
         "diferencia": 8.4,
         "comunidades": 4
@@ -5145,11 +5149,11 @@
         },
         "mangaupdates": {
           "puntaje": 89.6,
-          "votos": 1944
+          "votos": 1945
         },
         "myanimelist": {
           "puntaje": 92.7,
-          "votos": 181172
+          "votos": 181229
         }
       },
       "distribucion": {
@@ -5257,7 +5261,7 @@
           "anilist": 46765,
           "titulo": "Kingdom",
           "tipo": "manga",
-          "votos": 263,
+          "votos": 265,
           "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx46765-KPXir4sRqJBW.png"
         },
         {
@@ -5278,13 +5282,13 @@
           "anilist": 37375,
           "titulo": "The Climber",
           "tipo": "manga",
-          "votos": 172,
+          "votos": 173,
           "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx37375-wkgev4kXhamw.png"
         }
       ],
       "actividad": {
-        "semana": 865,
-        "leyendo": 47468,
+        "semana": 819,
+        "leyendo": 47501,
         "lectores": 0.002,
         "dias": 7
       },
@@ -5296,7 +5300,7 @@
         "fecha": "2026-11-16"
       },
       "capitulos": {
-        "ultimo": 2,
+        "ultimo": 327,
         "tomos": 37
       },
       "evaluacion": [
@@ -5305,11 +5309,11 @@
         0,
         1
       ],
-      "revisada": "2026-11-24",
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0028,
-        "puntaje": 0,
-        "dias": 9
+        "lectores": 0.002,
+        "puntaje": null,
+        "dias": 7
       }
     },
     "30657": {
@@ -7064,14 +7068,14 @@
         }
       ],
       "actividad": {
-        "semana": 98,
-        "leyendo": 1820,
-        "lectores": 0.0027,
+        "semana": 90,
+        "leyendo": 1819,
+        "lectores": 0.0018,
         "dias": 7
       },
       "resumen": null,
       "capitulos": {
-        "ultimo": 134,
+        "ultimo": null,
         "tomos": 81
       },
       "evaluacion": [
@@ -7082,7 +7086,7 @@
       ],
       "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0027,
+        "lectores": 0.0018,
         "puntaje": null,
         "dias": 7
       }
@@ -10741,7 +10745,7 @@
     "55515": {
       "puntaje": {
         "valor": 84.7,
-        "votos": 119559,
+        "votos": 119613,
         "confianza": "alta",
         "diferencia": 3.8,
         "comunidades": 4
@@ -10761,7 +10765,7 @@
         },
         "myanimelist": {
           "puntaje": 85,
-          "votos": 90136
+          "votos": 90190
         }
       },
       "distribucion": {
@@ -10852,7 +10856,7 @@
           "anilist": 33006,
           "titulo": "JoJo's Bizarre Adventure Part 4: Diamond is Unbreakable",
           "tipo": "manga",
-          "votos": 254,
+          "votos": 255,
           "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx33006-uFu4BInfxXNx.png"
         },
         {
@@ -10892,9 +10896,9 @@
         }
       ],
       "actividad": {
-        "semana": 813,
-        "leyendo": 12525,
-        "lectores": 0.0023,
+        "semana": 728,
+        "leyendo": 12543,
+        "lectores": 0.0024,
         "dias": 7
       },
       "resumen": {
@@ -10905,7 +10909,7 @@
         "fecha": "2026-11-24"
       },
       "capitulos": {
-        "ultimo": 30,
+        "ultimo": 110,
         "tomos": 27
       },
       "evaluacion": [
@@ -10914,9 +10918,9 @@
         0,
         1
       ],
-      "revisada": "2026-11-24",
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0023,
+        "lectores": 0.0024,
         "puntaje": null,
         "dias": 7
       }
@@ -11196,7 +11200,7 @@
     "61499": {
       "puntaje": {
         "valor": 76,
-        "votos": 154372,
+        "votos": 154386,
         "confianza": "alta",
         "diferencia": 3.4,
         "comunidades": 4
@@ -11216,7 +11220,7 @@
         },
         "myanimelist": {
           "puntaje": 77.2,
-          "votos": 119667
+          "votos": 119681
         }
       },
       "distribucion": {
@@ -11346,14 +11350,14 @@
         }
       ],
       "actividad": {
-        "semana": 182,
-        "leyendo": 7129,
-        "lectores": 0.001,
+        "semana": 161,
+        "leyendo": 7133,
+        "lectores": 0.0012,
         "dias": 7
       },
       "resumen": null,
       "capitulos": {
-        "ultimo": 10,
+        "ultimo": 229,
         "tomos": 25
       },
       "evaluacion": [
@@ -11362,9 +11366,9 @@
         0,
         1
       ],
-      "revisada": "2026-11-24",
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.001,
+        "lectores": 0.0012,
         "puntaje": null,
         "dias": 7
       }
@@ -18172,7 +18176,7 @@
     "86770": {
       "puntaje": {
         "valor": 83,
-        "votos": 33778,
+        "votos": 33780,
         "confianza": "alta",
         "diferencia": 1.4,
         "comunidades": 4
@@ -18192,7 +18196,7 @@
         },
         "myanimelist": {
           "puntaje": 83.2,
-          "votos": 22968
+          "votos": 22970
         }
       },
       "distribucion": {
@@ -18322,9 +18326,9 @@
         }
       ],
       "actividad": {
-        "semana": 94,
-        "leyendo": 7213,
-        "lectores": 0.0013,
+        "semana": 90,
+        "leyendo": 7212,
+        "lectores": 0.0012,
         "dias": 7
       },
       "resumen": {
@@ -18335,7 +18339,7 @@
         "fecha": "2026-11-26"
       },
       "capitulos": {
-        "ultimo": 21,
+        "ultimo": 53,
         "tomos": 11
       },
       "evaluacion": [
@@ -18346,7 +18350,7 @@
       ],
       "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0013,
+        "lectores": 0.0012,
         "puntaje": null,
         "dias": 7
       }
@@ -19406,7 +19410,7 @@
     "87423": {
       "puntaje": {
         "valor": 81.2,
-        "votos": 252983,
+        "votos": 253041,
         "confianza": "alta",
         "diferencia": 4.4,
         "comunidades": 4
@@ -19418,15 +19422,15 @@
         },
         "kitsu": {
           "puntaje": 83.4,
-          "votos": 25631
+          "votos": 25637
         },
         "mangaupdates": {
           "puntaje": 79.4,
-          "votos": 878
+          "votos": 879
         },
         "myanimelist": {
           "puntaje": 81.4,
-          "votos": 174033
+          "votos": 174084
         }
       },
       "distribucion": {
@@ -19562,9 +19566,9 @@
         }
       ],
       "actividad": {
-        "semana": 288,
-        "leyendo": 26658,
-        "lectores": 0.0011,
+        "semana": 273,
+        "leyendo": 26670,
+        "lectores": 0.0012,
         "dias": 7
       },
       "resumen": {
@@ -19575,20 +19579,26 @@
         "fecha": "2026-11-16"
       },
       "capitulos": {
-        "ultimo": 1,
+        "ultimo": 181,
         "tomos": 20
       },
+      "evaluacion": [
+        6,
+        7,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0017,
-        "puntaje": 0,
-        "dias": 9
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0012,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "97553": {
       "puntaje": {
         "valor": 86,
-        "votos": 149828,
+        "votos": 149887,
         "confianza": "alta",
         "diferencia": 4.6,
         "comunidades": 4
@@ -19600,15 +19610,15 @@
         },
         "kitsu": {
           "puntaje": 83.1,
-          "votos": 5875
+          "votos": 5878
         },
         "mangaupdates": {
           "puntaje": 85,
-          "votos": 654
+          "votos": 655
         },
         "myanimelist": {
           "puntaje": 87.7,
-          "votos": 107029
+          "votos": 107084
         }
       },
       "distribucion": {
@@ -19691,7 +19701,7 @@
           "anilist": 146983,
           "titulo": "Goodbye, Eri",
           "tipo": "manga",
-          "votos": 103,
+          "votos": 104,
           "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx146983-pLf4apCkFwKL.jpg"
         },
         {
@@ -19719,14 +19729,14 @@
           "anilist": 105768,
           "titulo": "Koisuru Kiseichuu",
           "tipo": "manga",
-          "votos": 67,
+          "votos": 68,
           "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx105768-Vh1iegsU5tJq.jpg"
         }
       ],
       "actividad": {
-        "semana": 147,
-        "leyendo": 4549,
-        "lectores": 0.0016,
+        "semana": 167,
+        "leyendo": 4554,
+        "lectores": 0.0017,
         "dias": 7
       },
       "resumen": {
@@ -19737,7 +19747,7 @@
         "fecha": "2026-11-23"
       },
       "capitulos": {
-        "ultimo": 2,
+        "ultimo": 18,
         "tomos": 3
       },
       "evaluacion": [
@@ -19746,9 +19756,9 @@
         2,
         2
       ],
-      "revisada": "2026-11-23",
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0016,
+        "lectores": 0.0017,
         "puntaje": null,
         "dias": 7
       }
@@ -21824,7 +21834,7 @@
     "100230": {
       "puntaje": {
         "valor": 78.1,
-        "votos": 148649,
+        "votos": 148671,
         "confianza": "alta",
         "diferencia": 2.6,
         "comunidades": 4
@@ -21840,11 +21850,11 @@
         },
         "mangaupdates": {
           "puntaje": 76.4,
-          "votos": 651
+          "votos": 652
         },
         "myanimelist": {
           "puntaje": 79,
-          "votos": 108788
+          "votos": 108809
         }
       },
       "distribucion": {
@@ -21980,9 +21990,9 @@
         }
       ],
       "actividad": {
-        "semana": 114,
-        "leyendo": 9823,
-        "lectores": 0.001,
+        "semana": 117,
+        "leyendo": 9828,
+        "lectores": 0.0008,
         "dias": 7
       },
       "resumen": {
@@ -21993,15 +22003,21 @@
         "fecha": "2026-11-17"
       },
       "capitulos": {
-        "ultimo": 3,
+        "ultimo": 122,
         "tomos": 14
       },
+      "evaluacion": [
+        7,
+        8,
+        1,
+        1
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0012,
-        "puntaje": 0,
-        "dias": 9
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0008,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "100568": {
       "puntaje": {
@@ -22671,7 +22687,7 @@
     "100994": {
       "puntaje": {
         "valor": 81.5,
-        "votos": 119115,
+        "votos": 119167,
         "confianza": "alta",
         "diferencia": 2.1,
         "comunidades": 4
@@ -22683,7 +22699,7 @@
         },
         "kitsu": {
           "puntaje": 82,
-          "votos": 2626
+          "votos": 2627
         },
         "mangaupdates": {
           "puntaje": 79.9,
@@ -22691,7 +22707,7 @@
         },
         "myanimelist": {
           "puntaje": 82,
-          "votos": 84089
+          "votos": 84140
         }
       },
       "distribucion": {
@@ -22821,9 +22837,9 @@
         }
       ],
       "actividad": {
-        "semana": 208,
-        "leyendo": 17829,
-        "lectores": 0.0014,
+        "semana": 228,
+        "leyendo": 17851,
+        "lectores": 0.0015,
         "dias": 7
       },
       "resumen": {
@@ -22834,15 +22850,21 @@
         "fecha": "2026-11-16"
       },
       "capitulos": {
-        "ultimo": 3,
+        "ultimo": 127,
         "tomos": 13
       },
+      "evaluacion": [
+        6,
+        6,
+        1,
+        1
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.002,
-        "puntaje": 0,
-        "dias": 9
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0015,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "101233": {
       "puntaje": {
@@ -24318,7 +24340,7 @@
     "104660": {
       "puntaje": {
         "valor": 75.5,
-        "votos": 22411,
+        "votos": 22416,
         "confianza": "alta",
         "diferencia": 3.2,
         "comunidades": 4
@@ -24338,7 +24360,7 @@
         },
         "myanimelist": {
           "puntaje": 75.7,
-          "votos": 15904
+          "votos": 15909
         }
       },
       "distribucion": {
@@ -24468,14 +24490,14 @@
         }
       ],
       "actividad": {
-        "semana": 460,
-        "leyendo": 14273,
-        "lectores": 0.002,
+        "semana": 237,
+        "leyendo": 14289,
+        "lectores": 0.0019,
         "dias": 7
       },
       "resumen": null,
       "capitulos": {
-        "ultimo": 45,
+        "ultimo": null,
         "tomos": 23
       },
       "evaluacion": [
@@ -24484,11 +24506,11 @@
         0,
         0
       ],
-      "revisada": "2026-11-23",
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0027,
-        "puntaje": 0,
-        "dias": 9
+        "lectores": 0.0019,
+        "puntaje": null,
+        "dias": 7
       }
     },
     "104973": {
@@ -28797,7 +28819,7 @@
     "112275": {
       "puntaje": {
         "valor": 88.1,
-        "votos": 9541,
+        "votos": 9569,
         "confianza": "alta",
         "diferencia": 0.3,
         "comunidades": 3
@@ -28808,12 +28830,12 @@
           "votos": 3672
         },
         "mangaupdates": {
-          "puntaje": 79.6,
-          "votos": 67
+          "puntaje": 80.9,
+          "votos": 87
         },
         "myanimelist": {
           "puntaje": 88.3,
-          "votos": 5802
+          "votos": 5810
         }
       },
       "distribucion": {
@@ -28943,22 +28965,28 @@
         }
       ],
       "actividad": {
-        "semana": 61,
-        "leyendo": 6671,
-        "lectores": 0.0023,
+        "semana": 36,
+        "leyendo": 6683,
+        "lectores": 0.0021,
         "dias": 7
       },
       "resumen": null,
       "capitulos": {
-        "ultimo": 12,
+        "ultimo": 101,
         "tomos": null
       },
+      "evaluacion": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0031,
-        "puntaje": 0,
-        "dias": 9
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0021,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "112378": {
       "puntaje": {
@@ -31394,7 +31422,7 @@
     "118371": {
       "puntaje": {
         "valor": 87.8,
-        "votos": 7864,
+        "votos": 7865,
         "confianza": "alta",
         "diferencia": 4.7,
         "comunidades": 4
@@ -31414,7 +31442,7 @@
         },
         "myanimelist": {
           "puntaje": 88,
-          "votos": 5114
+          "votos": 5115
         }
       },
       "distribucion": {
@@ -31519,14 +31547,14 @@
         }
       ],
       "actividad": {
-        "semana": 116,
-        "leyendo": 5227,
-        "lectores": 0.0032,
+        "semana": 107,
+        "leyendo": 5226,
+        "lectores": 0.0031,
         "dias": 7
       },
       "resumen": null,
       "capitulos": {
-        "ultimo": 26,
+        "ultimo": null,
         "tomos": 15
       },
       "evaluacion": [
@@ -31537,7 +31565,7 @@
       ],
       "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0032,
+        "lectores": 0.0031,
         "puntaje": null,
         "dias": 7
       }
@@ -42826,20 +42854,16 @@
     },
     "168843": {
       "puntaje": {
-        "valor": 85.3,
-        "votos": 1570,
+        "valor": 86.2,
+        "votos": 1553,
         "confianza": "media",
         "diferencia": 2.7,
-        "comunidades": 4
+        "comunidades": 3
       },
       "fuentes": {
         "anilist": {
           "puntaje": 88,
           "votos": 741
-        },
-        "kitsu": {
-          "puntaje": 0,
-          "votos": 17
         },
         "mangaupdates": {
           "puntaje": 81.2,
@@ -42964,7 +42988,7 @@
       "revisada": "2026-11-23",
       "tendencia": {
         "lectores": 0.0117,
-        "puntaje": 0,
+        "puntaje": 0.9,
         "dias": 9
       }
     },
@@ -45336,20 +45360,16 @@
     },
     "187347": {
       "puntaje": {
-        "valor": 65.4,
-        "votos": 1824,
+        "valor": 66.5,
+        "votos": 1793,
         "confianza": "media",
         "diferencia": 1.4,
-        "comunidades": 4
+        "comunidades": 3
       },
       "fuentes": {
         "anilist": {
           "puntaje": 66,
           "votos": 569
-        },
-        "kitsu": {
-          "puntaje": 0,
-          "votos": 31
         },
         "mangaupdates": {
           "puntaje": 46,
@@ -45641,20 +45661,16 @@
     },
     "193817": {
       "puntaje": {
-        "valor": 71.6,
-        "votos": 2846,
+        "valor": 72.6,
+        "votos": 2807,
         "confianza": "media",
         "diferencia": 3.5,
-        "comunidades": 4
+        "comunidades": 3
       },
       "fuentes": {
         "anilist": {
           "puntaje": 70,
           "votos": 757
-        },
-        "kitsu": {
-          "puntaje": 0,
-          "votos": 39
         },
         "mangaupdates": {
           "puntaje": 65.9,
@@ -45989,20 +46005,16 @@
     },
     "199496": {
       "puntaje": {
-        "valor": 78.5,
-        "votos": 1931,
+        "valor": 80.3,
+        "votos": 1888,
         "confianza": "media",
         "diferencia": 1.1,
-        "comunidades": 4
+        "comunidades": 3
       },
       "fuentes": {
         "anilist": {
           "puntaje": 81,
           "votos": 742
-        },
-        "kitsu": {
-          "puntaje": 0,
-          "votos": 43
         },
         "mangaupdates": {
           "puntaje": 77.4,
@@ -46100,20 +46112,16 @@
     },
     "201855": {
       "puntaje": {
-        "valor": 78.8,
-        "votos": 2626,
+        "valor": 79.5,
+        "votos": 2600,
         "confianza": "media",
         "diferencia": 1,
-        "comunidades": 4
+        "comunidades": 3
       },
       "fuentes": {
         "anilist": {
           "puntaje": 79,
           "votos": 854
-        },
-        "kitsu": {
-          "puntaje": 0,
-          "votos": 26
         },
         "mangaupdates": {
           "puntaje": 70.2,
@@ -46414,20 +46422,16 @@
     },
     "203958": {
       "puntaje": {
-        "valor": 72.7,
-        "votos": 1496,
+        "valor": 75.1,
+        "votos": 1448,
         "confianza": "media",
         "diferencia": 2.2,
-        "comunidades": 4
+        "comunidades": 3
       },
       "fuentes": {
         "anilist": {
           "puntaje": 76,
           "votos": 697
-        },
-        "kitsu": {
-          "puntaje": 0,
-          "votos": 48
         },
         "mangaupdates": {
           "puntaje": 74.2,
@@ -46738,20 +46742,16 @@
     },
     "214050": {
       "puntaje": {
-        "valor": 73.3,
-        "votos": 1401,
+        "valor": 74.8,
+        "votos": 1372,
         "confianza": "media",
         "diferencia": 2.2,
-        "comunidades": 4
+        "comunidades": 3
       },
       "fuentes": {
         "anilist": {
           "puntaje": 76,
           "votos": 612
-        },
-        "kitsu": {
-          "puntaje": 0,
-          "votos": 29
         },
         "mangaupdates": {
           "puntaje": 68.6,
@@ -46884,20 +46884,16 @@
     },
     "214315": {
       "puntaje": {
-        "valor": 75.5,
-        "votos": 694,
+        "valor": 78.9,
+        "votos": 662,
         "confianza": "baja",
         "diferencia": 4,
-        "comunidades": 4
+        "comunidades": 3
       },
       "fuentes": {
         "anilist": {
           "puntaje": 81,
           "votos": 361
-        },
-        "kitsu": {
-          "puntaje": 0,
-          "votos": 32
         },
         "mangaupdates": {
           "puntaje": 68.7,
@@ -46968,20 +46964,16 @@
     },
     "214453": {
       "puntaje": {
-        "valor": 72.6,
-        "votos": 1410,
+        "valor": 75.1,
+        "votos": 1362,
         "confianza": "media",
         "diferencia": 1.5,
-        "comunidades": 4
+        "comunidades": 3
       },
       "fuentes": {
         "anilist": {
           "puntaje": 76,
           "votos": 638
-        },
-        "kitsu": {
-          "puntaje": 0,
-          "votos": 48
         },
         "mangaupdates": {
           "puntaje": 69.6,
