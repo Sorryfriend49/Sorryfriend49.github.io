@@ -1824,8 +1824,24 @@
         return partes;
     }
 
-    // Quién la creó, fechas, capítulos, tomos, géneros y etiquetas (los autores, el fin, los capítulos
-    // y los tomos vienen en la ficha)
+    // Tiempo de lectura, aproximado: en el manga, unos 45 minutos por tomo (así no importa si sus
+    // capítulos son largos o de una página); en manhwa y manhua, que se leen por capítulos, unos 5
+    // minutos por capítulo. "unas 30 horas" (de 10 horas para arriba, de 5 en 5)
+    const MINUTOS_POR_TOMO = 45;
+    const MINUTOS_POR_CAPITULO = 5;
+    function textoLectura(tipo, tomos, capitulos){
+        const minutos = tipo === 'manga' && tomos > 0 ? tomos * MINUTOS_POR_TOMO
+            : capitulos > 0 ? capitulos * MINUTOS_POR_CAPITULO : 0;
+        if (!minutos) return '';
+        if (minutos < 60) return 'menos de una hora';
+        const horas = minutos / 60;
+        if (horas < 1.5) return 'una hora';
+        if (horas < 10) return `unas ${Math.round(horas)} horas`;
+        return `unas ${formatoNumero.format(Math.round(horas / 5) * 5)} horas`;
+    }
+
+    // Quién la creó, fechas, capítulos, tomos, tiempo de lectura, géneros y etiquetas (los autores,
+    // el fin, los capítulos y los tomos vienen en la ficha)
     function pintarDatos(o, f){
         const dl = $('fichaDatos');
         dl.replaceChildren();
@@ -1847,6 +1863,8 @@
             else if (publicados.ultimo) fila(dl, 'Capítulos', numero(publicados.ultimo) + hastaAhora);
             if (f.tomos) fila(dl, 'Tomos', numero(f.tomos));
             else if (publicados.tomos) fila(dl, 'Tomos', numero(publicados.tomos) + hastaAhora);
+            const lectura = textoLectura(o.tipo, f.tomos || publicados.tomos, f.capitulos || publicados.ultimo);
+            if (lectura) fila(dl, 'Para leerla', lectura + hastaAhora);
         }
         fila(dl, 'Géneros', o.generos.map(g => GENEROS[g]).filter(Boolean).join(', '));
 
