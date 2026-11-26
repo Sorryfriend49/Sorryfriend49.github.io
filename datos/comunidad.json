@@ -1,17 +1,17 @@
 {
   "esquema": 1,
   "metodo": "1.2",
-  "generado": "2026-11-25T19:14:26.712Z",
+  "generado": "2026-11-26T09:18:32.865Z",
   "fuentes": {
-    "anilist": "2026-11-25",
-    "kitsu": "2026-11-25",
-    "mangaupdates": "2026-11-25",
-    "myanimelist": "2026-11-25"
+    "anilist": "2026-11-26",
+    "kitsu": "2026-11-26",
+    "mangaupdates": "2026-11-26",
+    "myanimelist": "2026-11-26"
   },
-  "mediaCatalogo": 80.6,
+  "mediaCatalogo": 80.3,
   "tono": {
     "metodo": "modelo",
-    "acierto": 0.79
+    "acierto": 0.808
   },
   "obras": {
     "30001": {
@@ -73,7 +73,7 @@
         "critican": []
       },
       "popularidad": 109604,
-      "favoritos": 11562,
+      "favoritos": 11564,
       "etiquetas": [
         {
           "id": "seinen",
@@ -197,7 +197,7 @@
       "tendencia": {
         "lectores": 0.0026,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "30002": {
@@ -383,9 +383,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0017,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0021,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "30003": {
@@ -566,7 +566,7 @@
       "tendencia": {
         "lectores": 0.0024,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -625,7 +625,7 @@
         "critican": []
       },
       "popularidad": 36346,
-      "favoritos": 3563,
+      "favoritos": 3564,
       "etiquetas": [
         {
           "id": "boxeo",
@@ -724,7 +724,7 @@
       "tendencia": {
         "lectores": 0.0026,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "30011": {
@@ -788,7 +788,7 @@
         ]
       },
       "popularidad": 101225,
-      "favoritos": 7661,
+      "favoritos": 7663,
       "etiquetas": [
         {
           "id": "shonen",
@@ -905,7 +905,7 @@
       "tendencia": {
         "lectores": 0.0022,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -970,7 +970,7 @@
         ]
       },
       "popularidad": 123841,
-      "favoritos": 12248,
+      "favoritos": 12253,
       "etiquetas": [
         {
           "id": "shonen",
@@ -1087,7 +1087,7 @@
       "tendencia": {
         "lectores": 0.0023,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -1152,7 +1152,7 @@
         ]
       },
       "popularidad": 237789,
-      "favoritos": 48169,
+      "favoritos": 48172,
       "etiquetas": [
         {
           "id": "piratas",
@@ -1274,9 +1274,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0019,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0024,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "30021": {
@@ -1334,7 +1334,7 @@
         "critican": []
       },
       "popularidad": 101594,
-      "favoritos": 6534,
+      "favoritos": 6536,
       "etiquetas": [
         {
           "id": "detectives",
@@ -1445,7 +1445,7 @@
       "tendencia": {
         "lectores": 0.002,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -1504,7 +1504,7 @@
         "critican": []
       },
       "popularidad": 26386,
-      "favoritos": 1500,
+      "favoritos": 1501,
       "etiquetas": [
         {
           "id": "espadas",
@@ -1606,7 +1606,7 @@
       "tendencia": {
         "lectores": 0.0014,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -1665,7 +1665,7 @@
         "critican": []
       },
       "popularidad": 43369,
-      "favoritos": 3048,
+      "favoritos": 3047,
       "etiquetas": [
         {
           "id": "demonios",
@@ -1776,7 +1776,7 @@
       "tendencia": {
         "lectores": 0.0024,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -1835,7 +1835,7 @@
         "critican": []
       },
       "popularidad": 81719,
-      "favoritos": 7967,
+      "favoritos": 7971,
       "etiquetas": [
         {
           "id": "alquimia",
@@ -1946,7 +1946,7 @@
       "tendencia": {
         "lectores": 0.0021,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -2126,7 +2126,7 @@
       "tendencia": {
         "lectores": 0.0023,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -2185,7 +2185,7 @@
         "critican": []
       },
       "popularidad": 59902,
-      "favoritos": 5807,
+      "favoritos": 5813,
       "etiquetas": [
         {
           "id": "protagonista-femenina",
@@ -2296,9 +2296,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0025,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.003,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "30042": {
@@ -2360,7 +2360,7 @@
         "critican": []
       },
       "popularidad": 55193,
-      "favoritos": 6257,
+      "favoritos": 6261,
       "etiquetas": [
         {
           "id": "artes-marciales",
@@ -2467,7 +2467,7 @@
       "tendencia": {
         "lectores": 0.0023,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -2627,7 +2627,7 @@
       "tendencia": {
         "lectores": 0.0018,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -2686,7 +2686,7 @@
         "critican": []
       },
       "popularidad": 32316,
-      "favoritos": 2488,
+      "favoritos": 2489,
       "etiquetas": [
         {
           "id": "familia-elegida",
@@ -2802,9 +2802,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0016,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0019,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "30051": {
@@ -2866,7 +2866,7 @@
         "critican": []
       },
       "popularidad": 75609,
-      "favoritos": 8865,
+      "favoritos": 8866,
       "etiquetas": [
         {
           "id": "baloncesto",
@@ -2983,7 +2983,7 @@
       "tendencia": {
         "lectores": 0.0023,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -3046,7 +3046,7 @@
         "critican": []
       },
       "popularidad": 27852,
-      "favoritos": 1473,
+      "favoritos": 1474,
       "etiquetas": [
         {
           "id": "shonen",
@@ -3163,7 +3163,7 @@
       "tendencia": {
         "lectores": 0.0018,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -3216,7 +3216,7 @@
         "n": 0
       },
       "popularidad": 35542,
-      "favoritos": 3015,
+      "favoritos": 3016,
       "etiquetas": [
         {
           "id": "shojo",
@@ -3334,7 +3334,7 @@
       "tendencia": {
         "lectores": 0.0015,
         "puntaje": 0.1,
-        "dias": 8
+        "dias": 9
       }
     },
     "30104": {
@@ -3392,7 +3392,7 @@
         "critican": []
       },
       "popularidad": 64926,
-      "favoritos": 6931,
+      "favoritos": 6932,
       "etiquetas": [
         {
           "id": "vida-familiar",
@@ -3514,9 +3514,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0014,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0019,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "30149": {
@@ -3578,7 +3578,7 @@
         "critican": []
       },
       "popularidad": 67318,
-      "favoritos": 4456,
+      "favoritos": 4457,
       "etiquetas": [
         {
           "id": "seinen",
@@ -3760,7 +3760,7 @@
         "critican": []
       },
       "popularidad": 57040,
-      "favoritos": 3618,
+      "favoritos": 3619,
       "etiquetas": [
         {
           "id": "profesores",
@@ -3942,7 +3942,7 @@
         "critican": []
       },
       "popularidad": 33491,
-      "favoritos": 1700,
+      "favoritos": 1701,
       "etiquetas": [
         {
           "id": "seinen",
@@ -4043,7 +4043,7 @@
       "tendencia": {
         "lectores": 0.0023,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -4102,7 +4102,7 @@
         "critican": []
       },
       "popularidad": 29966,
-      "favoritos": 1307,
+      "favoritos": 1304,
       "etiquetas": [
         {
           "id": "viajes",
@@ -4213,7 +4213,7 @@
       "tendencia": {
         "lectores": 0.0023,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -4276,7 +4276,7 @@
         ]
       },
       "popularidad": 88739,
-      "favoritos": 5387,
+      "favoritos": 5391,
       "etiquetas": [
         {
           "id": "horror-corporal",
@@ -4388,7 +4388,7 @@
       "tendencia": {
         "lectores": 0.0015,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -4455,7 +4455,7 @@
         ]
       },
       "popularidad": 71853,
-      "favoritos": 4337,
+      "favoritos": 4340,
       "etiquetas": [
         {
           "id": "supervivencia",
@@ -4641,7 +4641,7 @@
         "critican": []
       },
       "popularidad": 67816,
-      "favoritos": 3806,
+      "favoritos": 3808,
       "etiquetas": [
         {
           "id": "demonios",
@@ -4823,7 +4823,7 @@
         "critican": []
       },
       "popularidad": 57854,
-      "favoritos": 2650,
+      "favoritos": 2649,
       "etiquetas": [
         {
           "id": "reparto-coral",
@@ -4940,7 +4940,7 @@
       "tendencia": {
         "lectores": 0.0015,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -5005,7 +5005,7 @@
         ]
       },
       "popularidad": 141176,
-      "favoritos": 18423,
+      "favoritos": 18425,
       "etiquetas": [
         {
           "id": "historico",
@@ -5122,7 +5122,7 @@
       "tendencia": {
         "lectores": 0.0023,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -5185,7 +5185,7 @@
         "critican": []
       },
       "popularidad": 166492,
-      "favoritos": 20649,
+      "favoritos": 20652,
       "etiquetas": [
         {
           "id": "samurais",
@@ -5309,7 +5309,7 @@
       "tendencia": {
         "lectores": 0.0025,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "30657": {
@@ -5367,7 +5367,7 @@
         "critican": []
       },
       "popularidad": 51503,
-      "favoritos": 3836,
+      "favoritos": 3835,
       "etiquetas": [
         {
           "id": "paso-a-la-madurez",
@@ -5478,7 +5478,7 @@
       "tendencia": {
         "lectores": 0.0031,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -5654,7 +5654,7 @@
       "tendencia": {
         "lectores": 0.0018,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -5713,7 +5713,7 @@
         "critican": []
       },
       "popularidad": 39701,
-      "favoritos": 2911,
+      "favoritos": 2912,
       "etiquetas": [
         {
           "id": "filosofia",
@@ -5824,7 +5824,7 @@
       "tendencia": {
         "lectores": 0.003,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -5889,7 +5889,7 @@
         ]
       },
       "popularidad": 54294,
-      "favoritos": 3268,
+      "favoritos": 3269,
       "etiquetas": [
         {
           "id": "seinen",
@@ -6006,7 +6006,7 @@
       "tendencia": {
         "lectores": 0.0018,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -6065,7 +6065,7 @@
         "critican": []
       },
       "popularidad": 31011,
-      "favoritos": 1497,
+      "favoritos": 1498,
       "etiquetas": [
         {
           "id": "mafia",
@@ -6181,15 +6181,15 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0008,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0013,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "30908": {
       "puntaje": {
         "valor": 81.1,
-        "votos": 120616,
+        "votos": 120651,
         "confianza": "alta",
         "diferencia": 0.5,
         "comunidades": 4
@@ -6201,7 +6201,7 @@
         },
         "kitsu": {
           "puntaje": 81.2,
-          "votos": 5514
+          "votos": 5515
         },
         "mangaupdates": {
           "puntaje": 80.7,
@@ -6209,7 +6209,7 @@
         },
         "myanimelist": {
           "puntaje": 81.2,
-          "votos": 93874
+          "votos": 93908
         }
       },
       "distribucion": {
@@ -6241,7 +6241,7 @@
         "critican": []
       },
       "popularidad": 70606,
-      "favoritos": 4302,
+      "favoritos": 4304,
       "etiquetas": [
         {
           "id": "reparto-coral",
@@ -6306,7 +6306,7 @@
           "anilist": 144946,
           "titulo": "Gachiakuta",
           "tipo": "manga",
-          "votos": 185,
+          "votos": 186,
           "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx144946-cscic3n2SwdY.jpg"
         },
         {
@@ -6339,9 +6339,9 @@
         }
       ],
       "actividad": {
-        "semana": 323,
-        "leyendo": 9643,
-        "lectores": 0.002,
+        "semana": 352,
+        "leyendo": 9648,
+        "lectores": 0.0019,
         "dias": 7
       },
       "resumen": {
@@ -6355,12 +6355,18 @@
         "ultimo": 113,
         "tomos": null
       },
+      "evaluacion": [
+        3,
+        4,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0026,
-        "puntaje": 0,
-        "dias": 8
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0019,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "30936": {
       "puntaje": {
@@ -6421,7 +6427,7 @@
         "critican": []
       },
       "popularidad": 74394,
-      "favoritos": 5022,
+      "favoritos": 5026,
       "etiquetas": [
         {
           "id": "filosofia",
@@ -6533,7 +6539,7 @@
       "tendencia": {
         "lectores": 0.0029,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -6596,7 +6602,7 @@
         "critican": []
       },
       "popularidad": 89885,
-      "favoritos": 9184,
+      "favoritos": 9181,
       "etiquetas": [
         {
           "id": "magia",
@@ -6718,15 +6724,15 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0016,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0018,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "31224": {
       "puntaje": {
         "valor": 87.8,
-        "votos": 30302,
+        "votos": 30311,
         "confianza": "alta",
         "diferencia": 5.8,
         "comunidades": 4
@@ -6738,7 +6744,7 @@
         },
         "kitsu": {
           "puntaje": 82.8,
-          "votos": 1460
+          "votos": 1461
         },
         "mangaupdates": {
           "puntaje": 85.9,
@@ -6746,7 +6752,7 @@
         },
         "myanimelist": {
           "puntaje": 88.6,
-          "votos": 21636
+          "votos": 21644
         }
       },
       "distribucion": {
@@ -6778,7 +6784,7 @@
         "critican": []
       },
       "popularidad": 35051,
-      "favoritos": 2609,
+      "favoritos": 2606,
       "etiquetas": [
         {
           "id": "paso-a-la-madurez",
@@ -6836,7 +6842,7 @@
           "anilist": 107237,
           "titulo": "Blue Period",
           "tipo": "manga",
-          "votos": 137,
+          "votos": 138,
           "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx107237-tyQXghsKmE0t.jpg"
         },
         {
@@ -6876,9 +6882,9 @@
         }
       ],
       "actividad": {
-        "semana": 111,
-        "leyendo": 11045,
-        "lectores": 0.0012,
+        "semana": 128,
+        "leyendo": 11052,
+        "lectores": 0.0019,
         "dias": 7
       },
       "resumen": {
@@ -6892,17 +6898,23 @@
         "ultimo": 224,
         "tomos": 18
       },
+      "evaluacion": [
+        6,
+        6,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0021,
-        "puntaje": 0,
-        "dias": 8
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0019,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "31320": {
       "puntaje": {
-        "valor": 82.4,
-        "votos": 3345,
+        "valor": 82.3,
+        "votos": 3346,
         "confianza": "media",
         "diferencia": 3.5,
         "comunidades": 4
@@ -6921,8 +6933,8 @@
           "votos": 209
         },
         "myanimelist": {
-          "puntaje": 82.3,
-          "votos": 2180
+          "puntaje": 82.2,
+          "votos": 2181
         }
       },
       "distribucion": {
@@ -7052,9 +7064,9 @@
         }
       ],
       "actividad": {
-        "semana": 108,
-        "leyendo": 1819,
-        "lectores": 0.0026,
+        "semana": 98,
+        "leyendo": 1820,
+        "lectores": 0.0027,
         "dias": 7
       },
       "resumen": null,
@@ -7062,12 +7074,18 @@
         "ultimo": 134,
         "tomos": 81
       },
+      "evaluacion": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.003,
-        "puntaje": 0.1,
-        "dias": 8
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0027,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "31517": {
       "puntaje": {
@@ -7128,7 +7146,7 @@
         "critican": []
       },
       "popularidad": 49018,
-      "favoritos": 1391,
+      "favoritos": 1393,
       "etiquetas": [
         {
           "id": "shonen",
@@ -7299,7 +7317,7 @@
         "critican": []
       },
       "popularidad": 107315,
-      "favoritos": 21202,
+      "favoritos": 21203,
       "etiquetas": [
         {
           "id": "vaqueros",
@@ -7416,7 +7434,7 @@
       "tendencia": {
         "lectores": 0.0026,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -7475,7 +7493,7 @@
         "critican": []
       },
       "popularidad": 73724,
-      "favoritos": 5316,
+      "favoritos": 5318,
       "etiquetas": [
         {
           "id": "superpoderes",
@@ -7663,7 +7681,7 @@
         "critican": []
       },
       "popularidad": 58518,
-      "favoritos": 5396,
+      "favoritos": 5401,
       "etiquetas": [
         {
           "id": "filosofia",
@@ -7839,7 +7857,7 @@
         "critican": []
       },
       "popularidad": 55523,
-      "favoritos": 3147,
+      "favoritos": 3149,
       "etiquetas": [
         {
           "id": "paso-a-la-madurez",
@@ -8021,7 +8039,7 @@
         "critican": []
       },
       "popularidad": 52453,
-      "favoritos": 1425,
+      "favoritos": 1426,
       "etiquetas": [
         {
           "id": "juego-mortal",
@@ -8189,7 +8207,7 @@
         ]
       },
       "popularidad": 189646,
-      "favoritos": 21963,
+      "favoritos": 21966,
       "etiquetas": [
         {
           "id": "paso-a-la-madurez",
@@ -8306,7 +8324,7 @@
       "tendencia": {
         "lectores": 0.0022,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -8369,7 +8387,7 @@
         "critican": []
       },
       "popularidad": 75304,
-      "favoritos": 6340,
+      "favoritos": 6342,
       "etiquetas": [
         {
           "id": "montanismo",
@@ -8491,9 +8509,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.004,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0053,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "38586": {
@@ -8545,7 +8563,7 @@
         "n": 0
       },
       "popularidad": 40278,
-      "favoritos": 1349,
+      "favoritos": 1350,
       "etiquetas": [
         {
           "id": "artes-marciales",
@@ -8621,14 +8639,14 @@
       "tendencia": {
         "lectores": 0.0017,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
     "38967": {
       "puntaje": {
         "valor": 82.7,
-        "votos": 121511,
+        "votos": 121529,
         "confianza": "alta",
         "diferencia": 5.8,
         "comunidades": 4
@@ -8648,7 +8666,7 @@
         },
         "myanimelist": {
           "puntaje": 84,
-          "votos": 88665
+          "votos": 88683
         }
       },
       "distribucion": {
@@ -8757,8 +8775,8 @@
         }
       ],
       "actividad": {
-        "semana": 362,
-        "leyendo": 2866,
+        "semana": 330,
+        "leyendo": 2865,
         "lectores": 0.0046,
         "dias": 7
       },
@@ -8779,9 +8797,175 @@
         3,
         3
       ],
-      "revisada": "2026-11-25",
+      "revisada": "2026-11-26",
       "tendencia": {
         "lectores": 0.0046,
+        "puntaje": null,
+        "dias": 7
+      }
+    },
+    "39711": {
+      "puntaje": {
+        "valor": 82.5,
+        "votos": 110186,
+        "confianza": "alta",
+        "diferencia": 3.8,
+        "comunidades": 4
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 81,
+          "votos": 14455
+        },
+        "kitsu": {
+          "puntaje": 82.3,
+          "votos": 5999
+        },
+        "mangaupdates": {
+          "puntaje": 84.8,
+          "votos": 2637
+        },
+        "myanimelist": {
+          "puntaje": 83.6,
+          "votos": 87095
+        }
+      },
+      "distribucion": {
+        "votos": 14455,
+        "gusta": 0.891,
+        "noGusta": 0.026,
+        "desviacion": 15.1,
+        "division": "variadas",
+        "barras": [
+          0.4,
+          0.2,
+          0.7,
+          1.2,
+          2.9,
+          5.3,
+          14.4,
+          26.9,
+          29.7,
+          18.2
+        ]
+      },
+      "resenas": {
+        "n": 4,
+        "positivas": 4,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.51,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 45053,
+      "favoritos": 1955,
+      "etiquetas": [
+        {
+          "id": "dibujo",
+          "nombre": "Dibujo",
+          "voto": 98
+        },
+        {
+          "id": "trabajo",
+          "nombre": "Trabajo",
+          "voto": 95
+        },
+        {
+          "id": "metaficcion",
+          "nombre": "Metaficción",
+          "voto": 91
+        },
+        {
+          "id": "shonen",
+          "nombre": "Shōnen",
+          "voto": 83
+        },
+        {
+          "id": "escritura",
+          "nombre": "Escritura",
+          "voto": 82
+        },
+        {
+          "id": "educativo",
+          "nombre": "Educativo",
+          "voto": 82
+        },
+        {
+          "id": "paso-a-la-madurez",
+          "nombre": "Paso a la madurez",
+          "voto": 73
+        },
+        {
+          "id": "cultura-otaku",
+          "nombre": "Cultura otaku",
+          "voto": 60
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 107237,
+          "titulo": "Blue Period",
+          "tipo": "manga",
+          "votos": 155,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx107237-tyQXghsKmE0t.jpg"
+        },
+        {
+          "anilist": 136807,
+          "titulo": "Look Back",
+          "tipo": "manga",
+          "votos": 113,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx136807-KNfQQTRD4HUK.jpg"
+        },
+        {
+          "anilist": 118644,
+          "titulo": "Time Paradox Ghostwriter",
+          "tipo": "manga",
+          "votos": 79,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx118644-ddw1il8gSMUd.png"
+        },
+        {
+          "anilist": 138816,
+          "titulo": "Show-ha Shoten!",
+          "tipo": "manga",
+          "votos": 54,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx138816-Myks7wkC1V8x.jpg"
+        },
+        {
+          "anilist": 74307,
+          "titulo": "Blank Canvas: My So-Called Artist's Journey",
+          "tipo": "manga",
+          "votos": 26,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx74307-femphzZGNGYA.png"
+        },
+        {
+          "anilist": 102903,
+          "titulo": "Hitman",
+          "tipo": "manga",
+          "votos": 21,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx102903-fMGwzX6GKQez.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 139,
+        "leyendo": 4324,
+        "lectores": 0.0011,
+        "dias": 7
+      },
+      "resumen": null,
+      "capitulos": {
+        "ultimo": 176,
+        "tomos": 20
+      },
+      "evaluacion": [
+        4,
+        4,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
+      "tendencia": {
+        "lectores": 0.0011,
         "puntaje": null,
         "dias": 7
       }
@@ -8841,7 +9025,7 @@
         "critican": []
       },
       "popularidad": 17588,
-      "favoritos": 586,
+      "favoritos": 585,
       "etiquetas": [
         {
           "id": "escuela",
@@ -8937,7 +9121,7 @@
       "tendencia": {
         "lectores": 0.0014,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -8996,7 +9180,7 @@
         "critican": []
       },
       "popularidad": 23730,
-      "favoritos": 1884,
+      "favoritos": 1882,
       "etiquetas": [
         {
           "id": "karuta",
@@ -9114,7 +9298,7 @@
       "tendencia": {
         "lectores": 0.0023,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "44790": {
@@ -9172,7 +9356,7 @@
         "critican": []
       },
       "popularidad": 50938,
-      "favoritos": 3398,
+      "favoritos": 3401,
       "etiquetas": [
         {
           "id": "magia",
@@ -9483,7 +9667,7 @@
       "tendencia": {
         "lectores": 0.0027,
         "puntaje": -0.1,
-        "dias": 8
+        "dias": 9
       }
     },
     "51525": {
@@ -9659,7 +9843,7 @@
       "tendencia": {
         "lectores": 0.0022,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "53390": {
@@ -9723,7 +9907,7 @@
         ]
       },
       "popularidad": 229360,
-      "favoritos": 22682,
+      "favoritos": 22684,
       "etiquetas": [
         {
           "id": "distopia",
@@ -9840,7 +10024,7 @@
       "tendencia": {
         "lectores": 0.0012,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -9899,7 +10083,7 @@
         "critican": []
       },
       "popularidad": 62255,
-      "favoritos": 3629,
+      "favoritos": 3633,
       "etiquetas": [
         {
           "id": "shojo",
@@ -10076,7 +10260,7 @@
         "critican": []
       },
       "popularidad": 63458,
-      "favoritos": 3745,
+      "favoritos": 3748,
       "etiquetas": [
         {
           "id": "dioses",
@@ -10187,7 +10371,7 @@
       "tendencia": {
         "lectores": 0.0013,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -10250,7 +10434,7 @@
         "critican": []
       },
       "popularidad": 75177,
-      "favoritos": 6551,
+      "favoritos": 6553,
       "etiquetas": [
         {
           "id": "paso-a-la-madurez",
@@ -10381,7 +10565,7 @@
     "55132": {
       "puntaje": {
         "valor": 76.3,
-        "votos": 117631,
+        "votos": 117641,
         "confianza": "alta",
         "diferencia": 4.6,
         "comunidades": 4
@@ -10401,7 +10585,7 @@
         },
         "myanimelist": {
           "puntaje": 78.1,
-          "votos": 92600
+          "votos": 92610
         }
       },
       "distribucion": {
@@ -10433,7 +10617,7 @@
         "critican": []
       },
       "popularidad": 49056,
-      "favoritos": 1757,
+      "favoritos": 1758,
       "etiquetas": [
         {
           "id": "asesinos",
@@ -10531,8 +10715,8 @@
         }
       ],
       "actividad": {
-        "semana": 205,
-        "leyendo": 6314,
+        "semana": 196,
+        "leyendo": 6315,
         "lectores": 0.0015,
         "dias": 7
       },
@@ -10547,7 +10731,7 @@
         0,
         0
       ],
-      "revisada": "2026-11-25",
+      "revisada": "2026-11-26",
       "tendencia": {
         "lectores": 0.0015,
         "puntaje": null,
@@ -10615,7 +10799,7 @@
         ]
       },
       "popularidad": 63746,
-      "favoritos": 5731,
+      "favoritos": 5735,
       "etiquetas": [
         {
           "id": "paso-a-la-madurez",
@@ -10881,7 +11065,7 @@
       "tendencia": {
         "lectores": 0.0023,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -11005,7 +11189,7 @@
       "tendencia": {
         "lectores": 0.0013,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -11064,7 +11248,7 @@
         "critican": []
       },
       "popularidad": 57385,
-      "favoritos": 2695,
+      "favoritos": 2698,
       "etiquetas": [
         {
           "id": "triangulo-amoroso",
@@ -11357,7 +11541,7 @@
       "tendencia": {
         "lectores": 0.0026,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -11420,7 +11604,7 @@
         "critican": []
       },
       "popularidad": 200749,
-      "favoritos": 18884,
+      "favoritos": 18891,
       "etiquetas": [
         {
           "id": "canibalismo",
@@ -11537,7 +11721,7 @@
       "tendencia": {
         "lectores": 0.0025,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -11600,7 +11784,7 @@
         "critican": []
       },
       "popularidad": 103282,
-      "favoritos": 12128,
+      "favoritos": 12132,
       "etiquetas": [
         {
           "id": "voleibol",
@@ -11712,7 +11896,7 @@
       "tendencia": {
         "lectores": 0.0015,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -11771,7 +11955,7 @@
         "critican": []
       },
       "popularidad": 29946,
-      "favoritos": 1099,
+      "favoritos": 1097,
       "etiquetas": [
         {
           "id": "crimen",
@@ -11887,9 +12071,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0013,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0016,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "69883": {
@@ -12048,7 +12232,7 @@
       "tendencia": {
         "lectores": 0.0016,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -12209,9 +12393,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0018,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0022,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "72451": {
@@ -12269,7 +12453,7 @@
         "critican": []
       },
       "popularidad": 124657,
-      "favoritos": 8969,
+      "favoritos": 8970,
       "etiquetas": [
         {
           "id": "protagonista-femenina",
@@ -12376,9 +12560,179 @@
       "tendencia": {
         "lectores": 0.0015,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
+    },
+    "73661": {
+      "puntaje": {
+        "valor": 76.3,
+        "votos": 57631,
+        "confianza": "alta",
+        "diferencia": 4.1,
+        "comunidades": 4
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 75,
+          "votos": 10744
+        },
+        "kitsu": {
+          "puntaje": 78.2,
+          "votos": 2482
+        },
+        "mangaupdates": {
+          "puntaje": 74.1,
+          "votos": 373
+        },
+        "myanimelist": {
+          "puntaje": 77.2,
+          "votos": 44032
+        }
+      },
+      "distribucion": {
+        "votos": 10744,
+        "gusta": 0.795,
+        "noGusta": 0.058,
+        "desviacion": 18,
+        "division": "divididas",
+        "barras": [
+          0.8,
+          0.7,
+          1.7,
+          2.6,
+          5.6,
+          9.1,
+          19.8,
+          24.5,
+          20.4,
+          14.7
+        ]
+      },
+      "resenas": {
+        "n": 0
+      },
+      "popularidad": 45153,
+      "favoritos": 2187,
+      "etiquetas": [
+        {
+          "id": "fantasia-urbana",
+          "nombre": "Fantasía urbana",
+          "voto": 97
+        },
+        {
+          "id": "vampiros",
+          "nombre": "Vampiros",
+          "voto": 94
+        },
+        {
+          "id": "postapocaliptico",
+          "nombre": "Postapocalíptico",
+          "voto": 94
+        },
+        {
+          "id": "shonen",
+          "nombre": "Shōnen",
+          "voto": 84
+        },
+        {
+          "id": "guerra",
+          "nombre": "Guerra",
+          "voto": 83
+        },
+        {
+          "id": "familia-elegida",
+          "nombre": "Familia elegida",
+          "voto": 82
+        },
+        {
+          "id": "militar",
+          "nombre": "Militar",
+          "voto": 80
+        },
+        {
+          "id": "demonios",
+          "nombre": "Demonios",
+          "voto": 72
+        },
+        {
+          "id": "personajes-adolescentes",
+          "nombre": "Personajes adolescentes",
+          "voto": 68
+        },
+        {
+          "id": "venganza",
+          "nombre": "Venganza",
+          "voto": 67
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 87216,
+          "titulo": "Demon Slayer: Kimetsu no Yaiba",
+          "tipo": "manga",
+          "votos": 64,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx87216-c9bSNVD10UuD.png"
+        },
+        {
+          "anilist": 43492,
+          "titulo": "Blue Exorcist",
+          "tipo": "manga",
+          "votos": 61,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx43492-2mvXJnP6Feqq.png"
+        },
+        {
+          "anilist": 87423,
+          "titulo": "The Promised Neverland",
+          "tipo": "manga",
+          "votos": 56,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx87423-gPNtu8QbGped.jpg"
+        },
+        {
+          "anilist": 103253,
+          "titulo": "Seraph of the End: Guren Ichinose: Catastrophe at Sixteen",
+          "tipo": "manga",
+          "votos": 31,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx103253-0VtnMOZAgvfl.jpg"
+        },
+        {
+          "anilist": 53390,
+          "titulo": "Attack on Titan",
+          "tipo": "manga",
+          "votos": 25,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx53390-1RsuABC34P9D.jpg"
+        },
+        {
+          "anilist": 78151,
+          "titulo": "World Trigger",
+          "tipo": "manga",
+          "votos": 24,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx78151-o2g4GiqaiPyO.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 267,
+        "leyendo": 19510,
+        "lectores": 0.0015,
+        "dias": 7
+      },
+      "resumen": null,
+      "capitulos": {
+        "ultimo": 160,
+        "tomos": 36
+      },
+      "evaluacion": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
+      "tendencia": {
+        "lectores": 0.0015,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "74347": {
       "puntaje": {
@@ -12435,7 +12789,7 @@
         "critican": []
       },
       "popularidad": 176196,
-      "favoritos": 14308,
+      "favoritos": 14310,
       "etiquetas": [
         {
           "id": "superpoderes",
@@ -12553,7 +12907,7 @@
       "tendencia": {
         "lectores": 0.0015,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "74485": {
@@ -12611,7 +12965,7 @@
         "critican": []
       },
       "popularidad": 55699,
-      "favoritos": 1696,
+      "favoritos": 1695,
       "etiquetas": [
         {
           "id": "shonen",
@@ -12722,7 +13076,7 @@
       "tendencia": {
         "lectores": 0.0012,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -12785,7 +13139,7 @@
         "critican": []
       },
       "popularidad": 85340,
-      "favoritos": 13257,
+      "favoritos": 13258,
       "etiquetas": [
         {
           "id": "filosofia",
@@ -12902,9 +13256,155 @@
       "tendencia": {
         "lectores": 0.0028,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
+    },
+    "75757": {
+      "puntaje": {
+        "valor": 78.6,
+        "votos": 135006,
+        "confianza": "media",
+        "diferencia": 8.5,
+        "comunidades": 4
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 74,
+          "votos": 19154
+        },
+        "kitsu": {
+          "puntaje": 82.5,
+          "votos": 22017
+        },
+        "mangaupdates": {
+          "puntaje": 80.6,
+          "votos": 1385
+        },
+        "myanimelist": {
+          "puntaje": 78.9,
+          "votos": 92450
+        }
+      },
+      "distribucion": {
+        "votos": 19154,
+        "gusta": 0.784,
+        "noGusta": 0.055,
+        "desviacion": 17.1,
+        "division": "variadas",
+        "barras": [
+          0.8,
+          0.5,
+          1.5,
+          2.7,
+          5.5,
+          10.6,
+          20.7,
+          27.7,
+          19.4,
+          10.6
+        ]
+      },
+      "resenas": {
+        "n": 2,
+        "positivas": 1,
+        "negativas": 1,
+        "mixtas": 0,
+        "wilson": 0.095,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 48353,
+      "favoritos": 1526,
+      "etiquetas": [
+        {
+          "id": "comida",
+          "nombre": "Comida",
+          "voto": 96
+        },
+        {
+          "id": "escuela",
+          "nombre": "Escuela",
+          "voto": 92
+        },
+        {
+          "id": "shonen",
+          "nombre": "Shōnen",
+          "voto": 82
+        },
+        {
+          "id": "educativo",
+          "nombre": "Educativo",
+          "voto": 62
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 103252,
+          "titulo": "One Piece: Shokugeki no Sanji",
+          "tipo": "manga",
+          "votos": 33,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx103252-58RbwHibqsJY.jpg"
+        },
+        {
+          "anilist": 37887,
+          "titulo": "Toriko",
+          "tipo": "manga",
+          "votos": 19,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx37887-eYfLTjygqwK8.png"
+        },
+        {
+          "anilist": 86082,
+          "titulo": "Delicious in Dungeon",
+          "tipo": "manga",
+          "votos": 13,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx86082-MXizJxzbijdd.jpg"
+        },
+        {
+          "anilist": 87395,
+          "titulo": "Grand Blue Dreaming",
+          "tipo": "manga",
+          "votos": 12,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx87395-axsA49kSZp72.jpg"
+        },
+        {
+          "anilist": 30843,
+          "titulo": "Curry naru Shokutaku",
+          "tipo": "manga",
+          "votos": 9,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30843-7fWbHQCNxJvp.png"
+        },
+        {
+          "anilist": 31773,
+          "titulo": "Iron Wok Jan!",
+          "tipo": "manga",
+          "votos": 9,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx31773-JaOywsuEYV2s.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 97,
+        "leyendo": 10494,
+        "lectores": 0.0007,
+        "dias": 7
+      },
+      "resumen": null,
+      "capitulos": {
+        "ultimo": 315,
+        "tomos": 36
+      },
+      "evaluacion": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
+      "tendencia": {
+        "lectores": 0.0007,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "79865": {
       "puntaje": {
@@ -12961,7 +13461,7 @@
         "critican": []
       },
       "popularidad": 64932,
-      "favoritos": 3212,
+      "favoritos": 3211,
       "etiquetas": [
         {
           "id": "fugitivos",
@@ -13143,7 +13643,7 @@
         "critican": []
       },
       "popularidad": 91997,
-      "favoritos": 7500,
+      "favoritos": 7498,
       "etiquetas": [
         {
           "id": "rehabilitacion",
@@ -13250,7 +13750,7 @@
       "tendencia": {
         "lectores": 0.0014,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -13303,7 +13803,7 @@
         "n": 0
       },
       "popularidad": 56026,
-      "favoritos": 2769,
+      "favoritos": 2768,
       "etiquetas": [
         {
           "id": "artes-marciales",
@@ -13414,7 +13914,7 @@
       "tendencia": {
         "lectores": 0.002,
         "puntaje": -0.1,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -13597,7 +14097,7 @@
       "tendencia": {
         "lectores": 0.0017,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "85189": {
@@ -13655,7 +14155,7 @@
         "critican": []
       },
       "popularidad": 50066,
-      "favoritos": 3566,
+      "favoritos": 3568,
       "etiquetas": [
         {
           "id": "paso-a-la-madurez",
@@ -13772,9 +14272,357 @@
       "tendencia": {
         "lectores": 0.0016,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
+    },
+    "85215": {
+      "puntaje": {
+        "valor": 76.2,
+        "votos": 108606,
+        "confianza": "alta",
+        "diferencia": 6.6,
+        "comunidades": 4
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 74,
+          "votos": 20650
+        },
+        "kitsu": {
+          "puntaje": 77.1,
+          "votos": 5308
+        },
+        "mangaupdates": {
+          "puntaje": 80.6,
+          "votos": 1440
+        },
+        "myanimelist": {
+          "puntaje": 77.3,
+          "votos": 81208
+        }
+      },
+      "distribucion": {
+        "votos": 20650,
+        "gusta": 0.816,
+        "noGusta": 0.034,
+        "desviacion": 14.7,
+        "division": "coinciden",
+        "barras": [
+          0.4,
+          0.4,
+          0.9,
+          1.6,
+          4.7,
+          10.3,
+          25.6,
+          32.2,
+          16.9,
+          7
+        ]
+      },
+      "resenas": {
+        "n": 4,
+        "positivas": 2,
+        "negativas": 1,
+        "mixtas": 1,
+        "wilson": 0.208,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 47419,
+      "favoritos": 1252,
+      "etiquetas": [
+        {
+          "id": "militar",
+          "nombre": "Militar",
+          "voto": 97
+        },
+        {
+          "id": "seinen",
+          "nombre": "Seinen",
+          "voto": 93
+        },
+        {
+          "id": "extraterrestres",
+          "nombre": "Extraterrestres",
+          "voto": 88
+        },
+        {
+          "id": "supervivencia",
+          "nombre": "Supervivencia",
+          "voto": 84
+        },
+        {
+          "id": "guerra",
+          "nombre": "Guerra",
+          "voto": 83
+        },
+        {
+          "id": "personajes-adultos",
+          "nombre": "Personajes adultos",
+          "voto": 80
+        },
+        {
+          "id": "bucle-temporal",
+          "nombre": "Bucle temporal",
+          "voto": 80
+        },
+        {
+          "id": "armas-de-fuego",
+          "nombre": "Armas de fuego",
+          "voto": 75
+        },
+        {
+          "id": "gore",
+          "nombre": "Gore",
+          "voto": 62
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 120760,
+          "titulo": "Kaiju No.8",
+          "tipo": "manga",
+          "votos": 41,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx120760-MtXvMgujLBpe.jpg"
+        },
+        {
+          "anilist": 85736,
+          "titulo": "Re:ZERO -Starting Life in Another World- Chapter 1: A Day in the Capital",
+          "tipo": "manga",
+          "votos": 33,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx85736-ujogxQ4eWUQ4.jpg"
+        },
+        {
+          "anilist": 178096,
+          "titulo": "MAD",
+          "tipo": "manga",
+          "votos": 19,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx178096-PTBfdDYzRqGu.png"
+        },
+        {
+          "anilist": 31409,
+          "titulo": "Biomega",
+          "tipo": "manga",
+          "votos": 16,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx31409-f9us2m2zQ4qp.jpg"
+        },
+        {
+          "anilist": 69325,
+          "titulo": "Erased",
+          "tipo": "manga",
+          "votos": 14,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx69325-17ud19Cg0xIO.jpg"
+        },
+        {
+          "anilist": 86526,
+          "titulo": "Platinum End",
+          "tipo": "manga",
+          "votos": 12,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx86526-KEzZ1WkscsCy.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 115,
+        "leyendo": 1747,
+        "lectores": 0.0023,
+        "dias": 7
+      },
+      "resumen": null,
+      "capitulos": {
+        "ultimo": 17,
+        "tomos": 2
+      },
+      "evaluacion": [
+        2,
+        2,
+        0,
+        1
+      ],
+      "revisada": "2026-11-26",
+      "tendencia": {
+        "lectores": 0.0023,
+        "puntaje": null,
+        "dias": 7
+      }
+    },
+    "85307": {
+      "puntaje": {
+        "valor": 83.6,
+        "votos": 47689,
+        "confianza": "alta",
+        "diferencia": 5.8,
+        "comunidades": 4
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 83,
+          "votos": 11021
+        },
+        "kitsu": {
+          "puntaje": 82.5,
+          "votos": 3201
+        },
+        "mangaupdates": {
+          "puntaje": 78.8,
+          "votos": 218
+        },
+        "myanimelist": {
+          "puntaje": 84.6,
+          "votos": 33249
+        }
+      },
+      "distribucion": {
+        "votos": 11021,
+        "gusta": 0.912,
+        "noGusta": 0.021,
+        "desviacion": 15.2,
+        "division": "variadas",
+        "barras": [
+          0.6,
+          0.2,
+          0.6,
+          0.8,
+          2.7,
+          4,
+          11,
+          20.3,
+          32.4,
+          27.4
+        ]
+      },
+      "resenas": {
+        "n": 1,
+        "positivas": 1,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.207,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 47193,
+      "favoritos": 4225,
+      "etiquetas": [
+        {
+          "id": "fantasia-urbana",
+          "nombre": "Fantasía urbana",
+          "voto": 93
+        },
+        {
+          "id": "detectives",
+          "nombre": "Detectives",
+          "voto": 93
+        },
+        {
+          "id": "superpoderes",
+          "nombre": "Superpoderes",
+          "voto": 92
+        },
+        {
+          "id": "mafia",
+          "nombre": "Mafia",
+          "voto": 87
+        },
+        {
+          "id": "crimen",
+          "nombre": "Crimen",
+          "voto": 86
+        },
+        {
+          "id": "literatura-clasica",
+          "nombre": "Literatura clásica",
+          "voto": 83
+        },
+        {
+          "id": "personajes-masculinos",
+          "nombre": "Personajes masculinos",
+          "voto": 80
+        },
+        {
+          "id": "cute-boys-doing-cute-things",
+          "nombre": "Cute Boys Doing Cute Things",
+          "voto": 79,
+          "en": true
+        },
+        {
+          "id": "seinen",
+          "nombre": "Seinen",
+          "voto": 78
+        },
+        {
+          "id": "trabajo",
+          "nombre": "Trabajo",
+          "voto": 77
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 86568,
+          "titulo": "The Case Study of Vanitas",
+          "tipo": "manga",
+          "votos": 117,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx86568-IibEQI2zjYFl.jpg"
+        },
+        {
+          "anilist": 98544,
+          "titulo": "Moriarty the Patriot",
+          "tipo": "manga",
+          "votos": 94,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx98544-UzMzrwxRii6p.jpg"
+        },
+        {
+          "anilist": 114998,
+          "titulo": "Bungo Stray Dogs Beast",
+          "tipo": "manga",
+          "votos": 78,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx114998-JTCzDczl8eBD.jpg"
+        },
+        {
+          "anilist": 54692,
+          "titulo": "Noragami: Stray God",
+          "tipo": "manga",
+          "votos": 62,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx54692-3vWUzvrCyArN.png"
+        },
+        {
+          "anilist": 101517,
+          "titulo": "Jujutsu Kaisen",
+          "tipo": "manga",
+          "votos": 50,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx101517-H3TdM3g5ZUe9.jpg"
+        },
+        {
+          "anilist": 33031,
+          "titulo": "Pandora Hearts",
+          "tipo": "manga",
+          "votos": 29,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx33031-LzNWgqS69qAj.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 108,
+        "leyendo": 20186,
+        "lectores": 0.0014,
+        "dias": 7
+      },
+      "resumen": null,
+      "capitulos": {
+        "ultimo": 128,
+        "tomos": 28
+      },
+      "evaluacion": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
+      "tendencia": {
+        "lectores": 0.0014,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "85412": {
       "puntaje": {
@@ -13952,7 +14800,7 @@
       "tendencia": {
         "lectores": 0.0036,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -14083,7 +14931,7 @@
       "tendencia": {
         "lectores": 0.0023,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "85453": {
@@ -14204,7 +15052,7 @@
       "tendencia": {
         "lectores": 0.0024,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "85486": {
@@ -14266,7 +15114,7 @@
         "critican": []
       },
       "popularidad": 179998,
-      "favoritos": 10974,
+      "favoritos": 10972,
       "etiquetas": [
         {
           "id": "superheroes",
@@ -14383,9 +15231,165 @@
       "tendencia": {
         "lectores": 0.0011,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
+    },
+    "85564": {
+      "puntaje": {
+        "valor": 79.3,
+        "votos": 65985,
+        "confianza": "alta",
+        "diferencia": 3.2,
+        "comunidades": 4
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 78,
+          "votos": 13141
+        },
+        "kitsu": {
+          "puntaje": 79.9,
+          "votos": 2841
+        },
+        "mangaupdates": {
+          "puntaje": 77.4,
+          "votos": 733
+        },
+        "myanimelist": {
+          "puntaje": 80.6,
+          "votos": 49270
+        }
+      },
+      "distribucion": {
+        "votos": 13141,
+        "gusta": 0.855,
+        "noGusta": 0.051,
+        "desviacion": 17.7,
+        "division": "divididas",
+        "barras": [
+          1.2,
+          0.9,
+          1.2,
+          1.8,
+          3.5,
+          6,
+          15,
+          27.3,
+          26.4,
+          16.7
+        ]
+      },
+      "resenas": {
+        "n": 3,
+        "positivas": 3,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.438,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 48259,
+      "favoritos": 2226,
+      "etiquetas": [
+        {
+          "id": "isekai",
+          "nombre": "Isekai",
+          "voto": 96
+        },
+        {
+          "id": "magia",
+          "nombre": "Magia",
+          "voto": 85
+        },
+        {
+          "id": "vida-familiar",
+          "nombre": "Vida familiar",
+          "voto": 68
+        },
+        {
+          "id": "paso-a-la-madurez",
+          "nombre": "Paso a la madurez",
+          "voto": 66
+        },
+        {
+          "id": "seinen",
+          "nombre": "Seinen",
+          "voto": 62
+        },
+        {
+          "id": "rehabilitacion",
+          "nombre": "Rehabilitación",
+          "voto": 60
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 86399,
+          "titulo": "That Time I Got Reincarnated as a Slime",
+          "tipo": "manga",
+          "votos": 28,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx86399-NwbRFVh5koqc.jpg"
+        },
+        {
+          "anilist": 101521,
+          "titulo": "The Faraway Paladin",
+          "tipo": "manga",
+          "votos": 24,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b101521-5pQUbwJxVCbU.jpg"
+        },
+        {
+          "anilist": 85442,
+          "titulo": "The Rising of the Shield Hero",
+          "tipo": "manga",
+          "votos": 21,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx85442-pIcvm2OjfTjR.jpg"
+        },
+        {
+          "anilist": 110022,
+          "titulo": "Magic Stone Gourmet: Eating Magical Power Made Me The Strongest",
+          "tipo": "manga",
+          "votos": 16,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx110022-1qaIds3A78Zw.jpg"
+        },
+        {
+          "anilist": 107714,
+          "titulo": "Tensei Shite Inaka de Slowlife wo Okuritai",
+          "tipo": "manga",
+          "votos": 13,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx107714-pH1JZLgpZIlM.png"
+        },
+        {
+          "anilist": 175172,
+          "titulo": "Re:Zero kara Hajimeru Isekai Seikatsu: Dai-5 Shou - Mizu no Machi to Eiyuu no Uta",
+          "tipo": "manga",
+          "votos": 11,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b175172-IKPQAVERtLTx.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 272,
+        "leyendo": 30560,
+        "lectores": 0.0012,
+        "dias": 7
+      },
+      "resumen": null,
+      "capitulos": {
+        "ultimo": 124,
+        "tomos": 25
+      },
+      "evaluacion": [
+        3,
+        3,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
+      "tendencia": {
+        "lectores": 0.0012,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "85611": {
       "puntaje": {
@@ -14448,7 +15452,7 @@
         ]
       },
       "popularidad": 106437,
-      "favoritos": 10277,
+      "favoritos": 10280,
       "etiquetas": [
         {
           "id": "seinen",
@@ -14565,7 +15569,7 @@
       "tendencia": {
         "lectores": 0.0026,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -14624,7 +15628,7 @@
         "critican": []
       },
       "popularidad": 39293,
-      "favoritos": 2411,
+      "favoritos": 2412,
       "etiquetas": [
         {
           "id": "yuri",
@@ -14735,7 +15739,7 @@
       "tendencia": {
         "lectores": 0.0013,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -14966,7 +15970,7 @@
         "critican": []
       },
       "popularidad": 26328,
-      "favoritos": 2597,
+      "favoritos": 2596,
       "etiquetas": [
         {
           "id": "reparto-coral",
@@ -15077,7 +16081,7 @@
       "tendencia": {
         "lectores": 0.002,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -15253,7 +16257,7 @@
       "tendencia": {
         "lectores": 0.0029,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -15419,7 +16423,7 @@
       "tendencia": {
         "lectores": 0.002,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -15579,7 +16583,7 @@
       "tendencia": {
         "lectores": 0.0026,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -15642,7 +16646,7 @@
         "critican": []
       },
       "popularidad": 67331,
-      "favoritos": 7313,
+      "favoritos": 7315,
       "etiquetas": [
         {
           "id": "yuri",
@@ -15759,9 +16763,175 @@
       "tendencia": {
         "lectores": 0.0018,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
+    },
+    "86300": {
+      "puntaje": {
+        "valor": 78.3,
+        "votos": 80477,
+        "confianza": "alta",
+        "diferencia": 4.5,
+        "comunidades": 4
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 77,
+          "votos": 17160
+        },
+        "kitsu": {
+          "puntaje": 79.5,
+          "votos": 4267
+        },
+        "mangaupdates": {
+          "puntaje": 81.5,
+          "votos": 1074
+        },
+        "myanimelist": {
+          "puntaje": 78.8,
+          "votos": 57976
+        }
+      },
+      "distribucion": {
+        "votos": 17160,
+        "gusta": 0.852,
+        "noGusta": 0.024,
+        "desviacion": 14.4,
+        "division": "coinciden",
+        "barras": [
+          0.4,
+          0.2,
+          0.7,
+          1.2,
+          4.2,
+          8.2,
+          22.3,
+          31.8,
+          21.4,
+          9.7
+        ]
+      },
+      "resenas": {
+        "n": 1,
+        "positivas": 1,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.207,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 46930,
+      "favoritos": 1501,
+      "etiquetas": [
+        {
+          "id": "tomboy",
+          "nombre": "Tomboy",
+          "voto": 98
+        },
+        {
+          "id": "protagonista-femenina",
+          "nombre": "Protagonista femenina",
+          "voto": 89
+        },
+        {
+          "id": "escuela",
+          "nombre": "Escuela",
+          "voto": 80
+        },
+        {
+          "id": "humor-fisico",
+          "nombre": "Humor físico",
+          "voto": 79
+        },
+        {
+          "id": "personajes-adolescentes",
+          "nombre": "Personajes adolescentes",
+          "voto": 77
+        },
+        {
+          "id": "tsundere",
+          "nombre": "Tsundere",
+          "voto": 76
+        },
+        {
+          "id": "atletismo",
+          "nombre": "Atletismo",
+          "voto": 63
+        },
+        {
+          "id": "shonen",
+          "nombre": "Shōnen",
+          "voto": 60
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 103111,
+          "titulo": "My Senpai is Annoying",
+          "tipo": "manga",
+          "votos": 57,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx103111-SO6QbkbL6IH7.jpg"
+        },
+        {
+          "anilist": 97836,
+          "titulo": "Mousou Telepathy",
+          "tipo": "manga",
+          "votos": 55,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx97836-QDkI2xKD3q05.jpg"
+        },
+        {
+          "anilist": 106434,
+          "titulo": "Hitomi-chan is Shy With Strangers",
+          "tipo": "manga",
+          "votos": 49,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx106434-0XVrugvoaYNG.jpg"
+        },
+        {
+          "anilist": 99851,
+          "titulo": "Saotome-Senshu, Hitakakusu",
+          "tipo": "manga",
+          "votos": 34,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx99851-J0xf7R692yR5.jpg"
+        },
+        {
+          "anilist": 59211,
+          "titulo": "Monthly Girls' Nozaki-kun",
+          "tipo": "manga",
+          "votos": 32,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx59211-ltc4FW9inrms.jpg"
+        },
+        {
+          "anilist": 152855,
+          "titulo": "Ichinichi Goto ni Dere ga Fueteku Tsuntsuntsuntsuntsundere-chan",
+          "tipo": "manga",
+          "votos": 23,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx152855-iSS2mJcrDn2R.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 97,
+        "leyendo": 8162,
+        "lectores": 0.0008,
+        "dias": 7
+      },
+      "resumen": null,
+      "capitulos": {
+        "ultimo": 953,
+        "tomos": 8
+      },
+      "evaluacion": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
+      "tendencia": {
+        "lectores": 0.0008,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "86310": {
       "puntaje": {
@@ -15935,7 +17105,7 @@
       "tendencia": {
         "lectores": 0.0015,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -15994,7 +17164,7 @@
         "critican": []
       },
       "popularidad": 63102,
-      "favoritos": 4105,
+      "favoritos": 4103,
       "etiquetas": [
         {
           "id": "isekai",
@@ -16110,15 +17280,15 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0016,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.002,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "86551": {
       "puntaje": {
         "valor": 85.5,
-        "votos": 80845,
+        "votos": 80875,
         "confianza": "alta",
         "diferencia": 4.4,
         "comunidades": 4
@@ -16130,7 +17300,7 @@
         },
         "kitsu": {
           "puntaje": 82.7,
-          "votos": 3983
+          "votos": 3985
         },
         "mangaupdates": {
           "puntaje": 83.4,
@@ -16138,7 +17308,7 @@
         },
         "myanimelist": {
           "puntaje": 87.1,
-          "votos": 61603
+          "votos": 61631
         }
       },
       "distribucion": {
@@ -16170,7 +17340,7 @@
         "critican": []
       },
       "popularidad": 58779,
-      "favoritos": 4282,
+      "favoritos": 4280,
       "etiquetas": [
         {
           "id": "supervivencia",
@@ -16268,9 +17438,9 @@
         }
       ],
       "actividad": {
-        "semana": 165,
-        "leyendo": 25068,
-        "lectores": 0.0012,
+        "semana": 173,
+        "leyendo": 25075,
+        "lectores": 0.0014,
         "dias": 7
       },
       "resumen": null,
@@ -16278,12 +17448,18 @@
         "ultimo": 74,
         "tomos": 15
       },
+      "evaluacion": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0018,
-        "puntaje": 0,
-        "dias": 8
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0014,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "86559": {
       "puntaje": {
@@ -16344,7 +17520,7 @@
         "critican": []
       },
       "popularidad": 52233,
-      "favoritos": 4370,
+      "favoritos": 4369,
       "etiquetas": [
         {
           "id": "historico",
@@ -16461,7 +17637,7 @@
       "tendencia": {
         "lectores": 0.0022,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -16527,7 +17703,7 @@
         ]
       },
       "popularidad": 121033,
-      "favoritos": 13792,
+      "favoritos": 13798,
       "etiquetas": [
         {
           "id": "escuela",
@@ -16644,7 +17820,7 @@
       "tendencia": {
         "lectores": 0.0017,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -16811,9 +17987,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0015,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0019,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "86717": {
@@ -16871,7 +18047,7 @@
         "critican": []
       },
       "popularidad": 65847,
-      "favoritos": 4261,
+      "favoritos": 4262,
       "etiquetas": [
         {
           "id": "cultura-otaku",
@@ -16993,10 +18169,186 @@
         "dias": 7
       }
     },
+    "86770": {
+      "puntaje": {
+        "valor": 83,
+        "votos": 33778,
+        "confianza": "alta",
+        "diferencia": 1.4,
+        "comunidades": 4
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 83,
+          "votos": 9153
+        },
+        "kitsu": {
+          "puntaje": 82.2,
+          "votos": 1402
+        },
+        "mangaupdates": {
+          "puntaje": 81.8,
+          "votos": 255
+        },
+        "myanimelist": {
+          "puntaje": 83.2,
+          "votos": 22968
+        }
+      },
+      "distribucion": {
+        "votos": 9153,
+        "gusta": 0.93,
+        "noGusta": 0.013,
+        "desviacion": 13.3,
+        "division": "coinciden",
+        "barras": [
+          0.3,
+          0.1,
+          0.3,
+          0.5,
+          2,
+          3.7,
+          13,
+          27.8,
+          33.1,
+          19.1
+        ]
+      },
+      "resenas": {
+        "n": 6,
+        "positivas": 6,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.61,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 47263,
+      "favoritos": 2598,
+      "etiquetas": [
+        {
+          "id": "cuento-de-hadas",
+          "nombre": "Cuento de hadas",
+          "voto": 96
+        },
+        {
+          "id": "rural",
+          "nombre": "Rural",
+          "voto": 95
+        },
+        {
+          "id": "antropomorfismo",
+          "nombre": "Antropomorfismo",
+          "voto": 88
+        },
+        {
+          "id": "protagonista-femenina",
+          "nombre": "Protagonista femenina",
+          "voto": 86
+        },
+        {
+          "id": "demonios",
+          "nombre": "Demonios",
+          "voto": 82
+        },
+        {
+          "id": "vida-familiar",
+          "nombre": "Vida familiar",
+          "voto": 80
+        },
+        {
+          "id": "filosofia",
+          "nombre": "Filosofía",
+          "voto": 78
+        },
+        {
+          "id": "adopcion",
+          "nombre": "Adopción",
+          "voto": 77
+        },
+        {
+          "id": "familia-elegida",
+          "nombre": "Familia elegida",
+          "voto": 77
+        },
+        {
+          "id": "maldiciones",
+          "nombre": "Maldiciones",
+          "voto": 73
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 98263,
+          "titulo": "Witch Hat Atelier",
+          "tipo": "manga",
+          "votos": 215,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx98263-kIeaTXrAbGkj.jpg"
+        },
+        {
+          "anilist": 85435,
+          "titulo": "The Ancient Magus' Bride",
+          "tipo": "manga",
+          "votos": 116,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx85435-GEy771ZSyuO0.jpg"
+        },
+        {
+          "anilist": 74489,
+          "titulo": "Land of the Lustrous",
+          "tipo": "manga",
+          "votos": 112,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx74489-5HtDCFfut8Be.jpg"
+        },
+        {
+          "anilist": 86788,
+          "titulo": "Somali and the Forest Spirit",
+          "tipo": "manga",
+          "votos": 87,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx86788-YatwNfanR8OV.jpg"
+        },
+        {
+          "anilist": 104063,
+          "titulo": "Shadows House",
+          "tipo": "manga",
+          "votos": 63,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx104063-Fdhg8NQ7IOG0.png"
+        },
+        {
+          "anilist": 85277,
+          "titulo": "kuro",
+          "tipo": "manga",
+          "votos": 46,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx85277-uqm7IhDFAw3i.png"
+        }
+      ],
+      "actividad": {
+        "semana": 94,
+        "leyendo": 7213,
+        "lectores": 0.0013,
+        "dias": 7
+      },
+      "resumen": null,
+      "capitulos": {
+        "ultimo": 21,
+        "tomos": 11
+      },
+      "evaluacion": [
+        5,
+        5,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
+      "tendencia": {
+        "lectores": 0.0013,
+        "puntaje": null,
+        "dias": 7
+      }
+    },
     "86848": {
       "puntaje": {
         "valor": 78.9,
-        "votos": 46780,
+        "votos": 46802,
         "confianza": "alta",
         "diferencia": 2.9,
         "comunidades": 4
@@ -17016,7 +18368,7 @@
         },
         "myanimelist": {
           "puntaje": 79.3,
-          "votos": 32382
+          "votos": 32404
         }
       },
       "distribucion": {
@@ -17146,9 +18498,9 @@
         }
       ],
       "actividad": {
-        "semana": 1500,
-        "leyendo": 25506,
-        "lectores": 0.0027,
+        "semana": 1491,
+        "leyendo": 25528,
+        "lectores": 0.0025,
         "dias": 7
       },
       "resumen": null,
@@ -17156,12 +18508,18 @@
         "ultimo": 639,
         "tomos": 20
       },
+      "evaluacion": [
+        3,
+        3,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0033,
-        "puntaje": 0,
-        "dias": 8
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0025,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "86964": {
       "puntaje": {
@@ -17335,7 +18693,7 @@
       "tendencia": {
         "lectores": 0.0019,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -17522,9 +18880,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.002,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0026,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "87178": {
@@ -17582,7 +18940,7 @@
         "critican": []
       },
       "popularidad": 50529,
-      "favoritos": 1646,
+      "favoritos": 1645,
       "etiquetas": [
         {
           "id": "shonen",
@@ -17761,7 +19119,7 @@
         ]
       },
       "popularidad": 213150,
-      "favoritos": 14794,
+      "favoritos": 14804,
       "etiquetas": [
         {
           "id": "demonios",
@@ -17853,7 +19211,7 @@
       "tendencia": {
         "lectores": 0.0015,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -17912,7 +19270,7 @@
         "critican": []
       },
       "popularidad": 69574,
-      "favoritos": 7473,
+      "favoritos": 7475,
       "etiquetas": [
         {
           "id": "humor-fisico",
@@ -18034,9 +19392,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0014,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0019,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "87423": {
@@ -18100,7 +19458,7 @@
         ]
       },
       "popularidad": 135320,
-      "favoritos": 8617,
+      "favoritos": 8619,
       "etiquetas": [
         {
           "id": "personajes-infantiles",
@@ -18217,7 +19575,7 @@
       "tendencia": {
         "lectores": 0.0015,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -18282,7 +19640,7 @@
         ]
       },
       "popularidad": 86342,
-      "favoritos": 8047,
+      "favoritos": 8048,
       "etiquetas": [
         {
           "id": "filosofia",
@@ -18544,7 +19902,7 @@
       "tendencia": {
         "lectores": 0.0016,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -18609,7 +19967,7 @@
         ]
       },
       "popularidad": 108182,
-      "favoritos": 5863,
+      "favoritos": 5864,
       "etiquetas": [
         {
           "id": "escuela",
@@ -18721,14 +20079,14 @@
       "tendencia": {
         "lectores": 0.0012,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
     "98263": {
       "puntaje": {
         "valor": 86.9,
-        "votos": 58695,
+        "votos": 58764,
         "confianza": "alta",
         "diferencia": 5.1,
         "comunidades": 4
@@ -18740,15 +20098,15 @@
         },
         "kitsu": {
           "puntaje": 83,
-          "votos": 1339
+          "votos": 1340
         },
         "mangaupdates": {
           "puntaje": 82.5,
-          "votos": 394
+          "votos": 395
         },
         "myanimelist": {
           "puntaje": 87.6,
-          "votos": 40166
+          "votos": 40233
         }
       },
       "distribucion": {
@@ -18784,7 +20142,7 @@
         "critican": []
       },
       "popularidad": 85707,
-      "favoritos": 9514,
+      "favoritos": 9520,
       "etiquetas": [
         {
           "id": "brujas",
@@ -18842,49 +20200,49 @@
           "anilist": 118586,
           "titulo": "Frieren: Beyond Journey’s End",
           "tipo": "manga",
-          "votos": 402,
+          "votos": 403,
           "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx118586-CXKgWikBFQgS.jpg"
         },
         {
           "anilist": 86082,
           "titulo": "Delicious in Dungeon",
           "tipo": "manga",
-          "votos": 387,
+          "votos": 389,
           "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx86082-MXizJxzbijdd.jpg"
         },
         {
           "anilist": 86770,
           "titulo": "The Girl From the Other Side: Siúil, a Rún",
           "tipo": "manga",
-          "votos": 216,
+          "votos": 215,
           "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx86770-vjBM79Z1GVbs.jpg"
-        },
-        {
-          "anilist": 101131,
-          "titulo": "Magus of the Library",
-          "tipo": "manga",
-          "votos": 129,
-          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx101131-u4iK3v1VvfLq.jpg"
         },
         {
           "anilist": 180752,
           "titulo": "Ichi the Witch",
           "tipo": "manga",
-          "votos": 127,
+          "votos": 129,
           "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx180752-13CVO310XiEs.jpg"
+        },
+        {
+          "anilist": 101131,
+          "titulo": "Magus of the Library",
+          "tipo": "manga",
+          "votos": 128,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx101131-u4iK3v1VvfLq.jpg"
         },
         {
           "anilist": 104063,
           "titulo": "Shadows House",
           "tipo": "manga",
-          "votos": 105,
+          "votos": 104,
           "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx104063-Fdhg8NQ7IOG0.png"
         }
       ],
       "actividad": {
-        "semana": 1598,
-        "leyendo": 41141,
-        "lectores": 0.0027,
+        "semana": 1314,
+        "leyendo": 41214,
+        "lectores": 0.003,
         "dias": 7
       },
       "resumen": {
@@ -18898,16 +20256,198 @@
         "ultimo": 68,
         "tomos": 16
       },
+      "evaluacion": [
+        8,
+        8,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0037,
-        "puntaje": 0,
-        "dias": 8
+        "lectores": 0.003,
+        "puntaje": null,
+        "dias": 7
+      }
+    },
+    "98328": {
+      "puntaje": {
+        "valor": 73.6,
+        "votos": 46597,
+        "confianza": "alta",
+        "diferencia": 5.4,
+        "comunidades": 4
       },
-      "revisada": "2026-11-22"
+      "fuentes": {
+        "anilist": {
+          "puntaje": 73,
+          "votos": 11125
+        },
+        "kitsu": {
+          "puntaje": 74.7,
+          "votos": 1521
+        },
+        "mangaupdates": {
+          "puntaje": 69.3,
+          "votos": 295
+        },
+        "myanimelist": {
+          "puntaje": 74.1,
+          "votos": 33656
+        }
+      },
+      "distribucion": {
+        "votos": 11125,
+        "gusta": 0.777,
+        "noGusta": 0.063,
+        "desviacion": 17.1,
+        "division": "divididas",
+        "barras": [
+          1,
+          0.6,
+          1.9,
+          2.8,
+          5.4,
+          10.6,
+          23.7,
+          28.5,
+          18.3,
+          7.3
+        ]
+      },
+      "resenas": {
+        "n": 7,
+        "positivas": 7,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.646,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 45940,
+      "favoritos": 1302,
+      "etiquetas": [
+        {
+          "id": "extraterrestres",
+          "nombre": "Extraterrestres",
+          "voto": 100
+        },
+        {
+          "id": "superpoderes",
+          "nombre": "Superpoderes",
+          "voto": 100
+        },
+        {
+          "id": "seinen",
+          "nombre": "Seinen",
+          "voto": 95
+        },
+        {
+          "id": "antiheroe",
+          "nombre": "Antihéroe",
+          "voto": 92
+        },
+        {
+          "id": "chico-monstruo",
+          "nombre": "Chico monstruo",
+          "voto": 90
+        },
+        {
+          "id": "gore",
+          "nombre": "Gore",
+          "voto": 90
+        },
+        {
+          "id": "personajes-adultos",
+          "nombre": "Personajes adultos",
+          "voto": 80
+        },
+        {
+          "id": "distopia",
+          "nombre": "Distopía",
+          "voto": 79
+        },
+        {
+          "id": "filosofia",
+          "nombre": "Filosofía",
+          "voto": 76
+        },
+        {
+          "id": "detectives",
+          "nombre": "Detectives",
+          "voto": 70
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 30564,
+          "titulo": "Gantz",
+          "tipo": "manga",
+          "votos": 155,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30564-RbyFbLzbnKea.jpg"
+        },
+        {
+          "anilist": 105778,
+          "titulo": "Chainsaw Man",
+          "tipo": "manga",
+          "votos": 138,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx105778-euxXZEIfDY2u.png"
+        },
+        {
+          "anilist": 30401,
+          "titulo": "Parasyte",
+          "tipo": "manga",
+          "votos": 107,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30401-siY6wmwnHFi6.png"
+        },
+        {
+          "anilist": 79865,
+          "titulo": "Ajin: Demi-Human",
+          "tipo": "manga",
+          "votos": 76,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b79865-rwKmISrhJJyP.jpg"
+        },
+        {
+          "anilist": 63327,
+          "titulo": "Tokyo Ghoul",
+          "tipo": "manga",
+          "votos": 63,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx63327-glC9cDxYBja9.png"
+        },
+        {
+          "anilist": 96518,
+          "titulo": "Bokutachi ga Yarimashita",
+          "tipo": "manga",
+          "votos": 36,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx96518-9yAgOYCSJhMj.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 142,
+        "leyendo": 8992,
+        "lectores": 0.0016,
+        "dias": 7
+      },
+      "resumen": null,
+      "capitulos": {
+        "ultimo": 163,
+        "tomos": 14
+      },
+      "evaluacion": [
+        6,
+        7,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
+      "tendencia": {
+        "lectores": 0.0016,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "98397": {
       "puntaje": {
-        "valor": 80.3,
+        "valor": 80.2,
         "votos": 72044,
         "confianza": "alta",
         "diferencia": 3.9,
@@ -18964,7 +20504,7 @@
         "critican": []
       },
       "popularidad": 67506,
-      "favoritos": 3786,
+      "favoritos": 3787,
       "etiquetas": [
         {
           "id": "seinen",
@@ -19060,8 +20600,8 @@
       },
       "tendencia": {
         "lectores": 0.0033,
-        "puntaje": 0,
-        "dias": 8
+        "puntaje": -0.1,
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -19120,7 +20660,7 @@
         "critican": []
       },
       "popularidad": 90016,
-      "favoritos": 5912,
+      "favoritos": 5913,
       "etiquetas": [
         {
           "id": "postapocaliptico",
@@ -19237,7 +20777,7 @@
       "tendencia": {
         "lectores": 0.0017,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -19485,7 +21025,7 @@
         "critican": []
       },
       "popularidad": 72958,
-      "favoritos": 6729,
+      "favoritos": 6734,
       "etiquetas": [
         {
           "id": "yokai",
@@ -19769,13 +21309,324 @@
       "tendencia": {
         "lectores": 0.0034,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
+      }
+    },
+    "99324": {
+      "puntaje": {
+        "valor": 83.8,
+        "votos": 40747,
+        "confianza": "alta",
+        "diferencia": 1.6,
+        "comunidades": 4
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 84,
+          "votos": 9709
+        },
+        "kitsu": {
+          "puntaje": 82.4,
+          "votos": 1446
+        },
+        "mangaupdates": {
+          "puntaje": 82.6,
+          "votos": 429
+        },
+        "myanimelist": {
+          "puntaje": 83.8,
+          "votos": 29163
+        }
+      },
+      "distribucion": {
+        "votos": 9709,
+        "gusta": 0.921,
+        "noGusta": 0.018,
+        "desviacion": 14.5,
+        "division": "coinciden",
+        "barras": [
+          0.6,
+          0.2,
+          0.5,
+          0.6,
+          2.3,
+          3.8,
+          11.1,
+          23.7,
+          32.9,
+          24.4
+        ]
+      },
+      "resenas": {
+        "n": 2,
+        "positivas": 2,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.342,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 39005,
+      "favoritos": 3383,
+      "etiquetas": [
+        {
+          "id": "demonios",
+          "nombre": "Demonios",
+          "voto": 97
+        },
+        {
+          "id": "familia-elegida",
+          "nombre": "Familia elegida",
+          "voto": 96
+        },
+        {
+          "id": "reparto-coral",
+          "nombre": "Reparto coral",
+          "voto": 95
+        },
+        {
+          "id": "escuela",
+          "nombre": "Escuela",
+          "voto": 91
+        },
+        {
+          "id": "adopcion",
+          "nombre": "Adopción",
+          "voto": 85
+        },
+        {
+          "id": "magia",
+          "nombre": "Magia",
+          "voto": 81
+        },
+        {
+          "id": "shonen",
+          "nombre": "Shōnen",
+          "voto": 76
+        },
+        {
+          "id": "vida-familiar",
+          "nombre": "Vida familiar",
+          "voto": 75
+        },
+        {
+          "id": "isekai",
+          "nombre": "Isekai",
+          "voto": 67
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 180752,
+          "titulo": "Ichi the Witch",
+          "tipo": "manga",
+          "votos": 105,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx180752-13CVO310XiEs.jpg"
+        },
+        {
+          "anilist": 30894,
+          "titulo": "Rosario+Vampire",
+          "tipo": "manga",
+          "votos": 61,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30894-brvhN8LsZ0lP.png"
+        },
+        {
+          "anilist": 30047,
+          "titulo": "Reborn!",
+          "tipo": "manga",
+          "votos": 52,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30047-Gr8KL98hzzYT.jpg"
+        },
+        {
+          "anilist": 40010,
+          "titulo": "Beelzebub",
+          "tipo": "manga",
+          "votos": 47,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx40010-Szo3Nu7Y0wKj.png"
+        },
+        {
+          "anilist": 85486,
+          "titulo": "My Hero Academia",
+          "tipo": "manga",
+          "votos": 43,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx85486-INqnYx8gL3eX.jpg"
+        },
+        {
+          "anilist": 114960,
+          "titulo": "Mashle: Magic and Muscles",
+          "tipo": "manga",
+          "votos": 30,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx114960-pivAwNQDdiBa.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 1860,
+        "leyendo": 23925,
+        "lectores": 0.0026,
+        "dias": 7
+      },
+      "resumen": null,
+      "capitulos": {
+        "ultimo": 468,
+        "tomos": 51
+      },
+      "evaluacion": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
+      "tendencia": {
+        "lectores": 0.0026,
+        "puntaje": null,
+        "dias": 7
+      }
+    },
+    "99354": {
+      "puntaje": {
+        "valor": 68.4,
+        "votos": 7747,
+        "confianza": "alta",
+        "diferencia": 5.1,
+        "comunidades": 4
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 67,
+          "votos": 1838
+        },
+        "kitsu": {
+          "puntaje": 69.9,
+          "votos": 428
+        },
+        "mangaupdates": {
+          "puntaje": 72.1,
+          "votos": 147
+        },
+        "myanimelist": {
+          "puntaje": 68.6,
+          "votos": 5334
+        }
+      },
+      "distribucion": {
+        "votos": 1838,
+        "gusta": 0.645,
+        "noGusta": 0.072,
+        "desviacion": 16.6,
+        "division": "divididas",
+        "barras": [
+          1.1,
+          0.7,
+          2.1,
+          3.3,
+          10.9,
+          17.4,
+          29.9,
+          20.9,
+          9.6,
+          4
+        ]
+      },
+      "resenas": {
+        "n": 0
+      },
+      "popularidad": 9627,
+      "favoritos": 150,
+      "etiquetas": [
+        {
+          "id": "personajes-adultos",
+          "nombre": "Personajes adultos",
+          "voto": 74
+        },
+        {
+          "id": "oficinistas",
+          "nombre": "Oficinistas",
+          "voto": 73
+        },
+        {
+          "id": "trabajo",
+          "nombre": "Trabajo",
+          "voto": 70
+        },
+        {
+          "id": "seinen",
+          "nombre": "Seinen",
+          "voto": 60
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 114830,
+          "titulo": "Shishidou-san ni Shikararetai",
+          "tipo": "manga",
+          "votos": 22,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx114830-idmWif1MN1Zi.jpg"
+        },
+        {
+          "anilist": 103111,
+          "titulo": "My Senpai is Annoying",
+          "tipo": "manga",
+          "votos": 10,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx103111-SO6QbkbL6IH7.jpg"
+        },
+        {
+          "anilist": 103903,
+          "titulo": "Senpai Kara Me ga Hanasenai To Aru Kaishain no Nichijou",
+          "tipo": "manga",
+          "votos": 8,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx103903-7Pm6Jo1zXKuY.png"
+        },
+        {
+          "anilist": 114437,
+          "titulo": "My Awkward Senpai",
+          "tipo": "manga",
+          "votos": 7,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx114437-AfSBdZ1417ZR.jpg"
+        },
+        {
+          "anilist": 99769,
+          "titulo": "Game Yaru kara 100-en Kashite!",
+          "tipo": "manga",
+          "votos": 6,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx99769-9Xe4RvU9Wr5Q.jpg"
+        },
+        {
+          "anilist": 156858,
+          "titulo": "Kore kara Dandan Shiawase ni Natteiku Kowai Onna Joushi",
+          "tipo": "manga",
+          "votos": 5,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx156858-hpHuDjnIBN30.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 328,
+        "leyendo": 5531,
+        "lectores": 0.0021,
+        "dias": 7
+      },
+      "resumen": null,
+      "capitulos": {
+        "ultimo": 180,
+        "tomos": 10
+      },
+      "evaluacion": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
+      "tendencia": {
+        "lectores": 0.0021,
+        "puntaje": null,
+        "dias": 7
       }
     },
     "99943": {
       "puntaje": {
         "valor": 60.1,
-        "votos": 93510,
+        "votos": 93517,
         "confianza": "media",
         "diferencia": 13.3,
         "comunidades": 4
@@ -19787,15 +21638,15 @@
         },
         "kitsu": {
           "puntaje": 67.9,
-          "votos": 3101
+          "votos": 3102
         },
         "mangaupdates": {
           "puntaje": 54.6,
-          "votos": 370
+          "votos": 369
         },
         "myanimelist": {
           "puntaje": 61,
-          "votos": 68929
+          "votos": 68936
         }
       },
       "distribucion": {
@@ -19929,9 +21780,9 @@
         }
       ],
       "actividad": {
-        "semana": 1005,
-        "leyendo": 31527,
-        "lectores": 0.0008,
+        "semana": 1084,
+        "leyendo": 31536,
+        "lectores": 0.0007,
         "dias": 7
       },
       "resumen": {
@@ -19945,12 +21796,18 @@
         "ultimo": 325,
         "tomos": 47
       },
+      "evaluacion": [
+        2,
+        2,
+        7,
+        7
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.001,
-        "puntaje": -0.1,
-        "dias": 8
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0007,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "100230": {
       "puntaje": {
@@ -20130,7 +21987,7 @@
       "tendencia": {
         "lectores": 0.0011,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -20196,7 +22053,7 @@
         ]
       },
       "popularidad": 66000,
-      "favoritos": 4509,
+      "favoritos": 4508,
       "etiquetas": [
         {
           "id": "supervivencia",
@@ -20313,7 +22170,7 @@
       "tendencia": {
         "lectores": 0.0025,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -20372,7 +22229,7 @@
         "critican": []
       },
       "popularidad": 76563,
-      "favoritos": 3585,
+      "favoritos": 3584,
       "etiquetas": [
         {
           "id": "acoso-escolar",
@@ -20650,7 +22507,7 @@
       "tendencia": {
         "lectores": 0.0018,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -20709,7 +22566,7 @@
         "critican": []
       },
       "popularidad": 56943,
-      "favoritos": 3229,
+      "favoritos": 3228,
       "etiquetas": [
         {
           "id": "supervivencia",
@@ -20795,7 +22652,7 @@
       "tendencia": {
         "lectores": 0.0026,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -20854,7 +22711,7 @@
         "critican": []
       },
       "popularidad": 99596,
-      "favoritos": 6172,
+      "favoritos": 6176,
       "etiquetas": [
         {
           "id": "supervivencia",
@@ -20971,7 +22828,7 @@
       "tendencia": {
         "lectores": 0.0019,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -21030,7 +22887,7 @@
         "critican": []
       },
       "popularidad": 68818,
-      "favoritos": 2473,
+      "favoritos": 2474,
       "etiquetas": [
         {
           "id": "parodia",
@@ -21148,7 +23005,7 @@
       "tendencia": {
         "lectores": 0.0013,
         "puntaje": -0.1,
-        "dias": 8
+        "dias": 9
       }
     },
     "101517": {
@@ -21214,7 +23071,7 @@
         ]
       },
       "popularidad": 257743,
-      "favoritos": 24113,
+      "favoritos": 24116,
       "etiquetas": [
         {
           "id": "fantasia-urbana",
@@ -21331,7 +23188,7 @@
       "tendencia": {
         "lectores": 0.0022,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -21390,7 +23247,7 @@
         "critican": []
       },
       "popularidad": 36998,
-      "favoritos": 2249,
+      "favoritos": 2251,
       "etiquetas": [
         {
           "id": "escuela",
@@ -21478,7 +23335,7 @@
       "tendencia": {
         "lectores": 0.003,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "101563": {
@@ -21536,7 +23393,7 @@
         "critican": []
       },
       "popularidad": 15281,
-      "favoritos": 1282,
+      "favoritos": 1283,
       "etiquetas": [
         {
           "id": "wuxia",
@@ -21647,7 +23504,7 @@
       "tendencia": {
         "lectores": 0.0034,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -21823,7 +23680,7 @@
       "tendencia": {
         "lectores": 0.0029,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -21882,7 +23739,7 @@
         "critican": []
       },
       "popularidad": 27573,
-      "favoritos": 1163,
+      "favoritos": 1164,
       "etiquetas": [
         {
           "id": "postapocaliptico",
@@ -21988,9 +23845,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0022,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0029,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "102988": {
@@ -22052,7 +23909,7 @@
         ]
       },
       "popularidad": 119228,
-      "favoritos": 9335,
+      "favoritos": 9334,
       "etiquetas": [
         {
           "id": "delincuentes",
@@ -22164,7 +24021,7 @@
       "tendencia": {
         "lectores": 0.0013,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -22274,7 +24131,7 @@
       "tendencia": {
         "lectores": 0.0009,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -22441,9 +24298,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0019,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0025,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "104660": {
@@ -22619,7 +24476,7 @@
       "tendencia": {
         "lectores": 0.0025,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "104973": {
@@ -22677,7 +24534,7 @@
         "critican": []
       },
       "popularidad": 29943,
-      "favoritos": 1828,
+      "favoritos": 1829,
       "etiquetas": [
         {
           "id": "protagonista-femenina",
@@ -22783,9 +24640,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0025,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0032,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "105097": {
@@ -23115,7 +24972,7 @@
       "tendencia": {
         "lectores": 0.0039,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -23182,7 +25039,7 @@
         ]
       },
       "popularidad": 289868,
-      "favoritos": 33231,
+      "favoritos": 33232,
       "etiquetas": [
         {
           "id": "mazmorras",
@@ -23304,9 +25161,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0014,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0018,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "105469": {
@@ -23364,7 +25221,7 @@
         "critican": []
       },
       "popularidad": 73046,
-      "favoritos": 2338,
+      "favoritos": 2340,
       "etiquetas": [
         {
           "id": "shonen",
@@ -23526,7 +25383,7 @@
         ]
       },
       "popularidad": 338325,
-      "favoritos": 48528,
+      "favoritos": 48540,
       "etiquetas": [
         {
           "id": "demonios",
@@ -23643,7 +25500,7 @@
       "tendencia": {
         "lectores": 0.002,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -23878,7 +25735,7 @@
         "critican": []
       },
       "popularidad": 127494,
-      "favoritos": 11321,
+      "favoritos": 11328,
       "etiquetas": [
         {
           "id": "atletismo",
@@ -23990,7 +25847,7 @@
       "tendencia": {
         "lectores": 0.0031,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -24049,7 +25906,7 @@
         "critican": []
       },
       "popularidad": 48560,
-      "favoritos": 2546,
+      "favoritos": 2547,
       "etiquetas": [
         {
           "id": "chuunibyou",
@@ -24334,7 +26191,7 @@
       "tendencia": {
         "lectores": 0.0044,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "107098": {
@@ -24503,7 +26360,7 @@
       "tendencia": {
         "lectores": 0.0013,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -24562,7 +26419,7 @@
         "critican": []
       },
       "popularidad": 78089,
-      "favoritos": 7169,
+      "favoritos": 7168,
       "etiquetas": [
         {
           "id": "dibujo",
@@ -24676,7 +26533,7 @@
       "tendencia": {
         "lectores": 0.0016,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "107279": {
@@ -24836,7 +26693,7 @@
       "tendencia": {
         "lectores": 0.0049,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -25006,7 +26863,7 @@
       "tendencia": {
         "lectores": 0.0031,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -25172,7 +27029,7 @@
       "tendencia": {
         "lectores": 0.0026,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -25333,7 +27190,7 @@
       "tendencia": {
         "lectores": 0.0046,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -25503,7 +27360,7 @@
       "tendencia": {
         "lectores": 0.0049,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -25562,7 +27419,7 @@
         "critican": []
       },
       "popularidad": 161747,
-      "favoritos": 12324,
+      "favoritos": 12319,
       "etiquetas": [
         {
           "id": "vida-familiar",
@@ -25684,9 +27541,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0014,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0017,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "108952": {
@@ -25845,9 +27702,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0038,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0049,
+        "puntaje": -0.1,
+        "dias": 9
       }
     },
     "109285": {
@@ -25901,7 +27758,7 @@
         "critican": []
       },
       "popularidad": 33926,
-      "favoritos": 3399,
+      "favoritos": 3402,
       "etiquetas": [
         {
           "id": "paso-a-la-madurez",
@@ -26002,7 +27859,7 @@
       "tendencia": {
         "lectores": 0.0027,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -26055,7 +27912,7 @@
         "n": 0
       },
       "popularidad": 45954,
-      "favoritos": 1987,
+      "favoritos": 1986,
       "etiquetas": [
         {
           "id": "venganza",
@@ -26163,7 +28020,7 @@
       "tendencia": {
         "lectores": 0.0035,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "110462": {
@@ -26312,14 +28169,14 @@
       "tendencia": {
         "lectores": 0.0039,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
     "110605": {
       "puntaje": {
         "valor": 83.2,
-        "votos": 17944,
+        "votos": 17969,
         "confianza": "alta",
         "diferencia": 0.8,
         "comunidades": 4
@@ -26331,7 +28188,7 @@
         },
         "kitsu": {
           "puntaje": 82.6,
-          "votos": 506
+          "votos": 507
         },
         "mangaupdates": {
           "puntaje": 83.4,
@@ -26339,7 +28196,7 @@
         },
         "myanimelist": {
           "puntaje": 83.3,
-          "votos": 11501
+          "votos": 11525
         }
       },
       "distribucion": {
@@ -26371,7 +28228,7 @@
         "critican": []
       },
       "popularidad": 22607,
-      "favoritos": 1036,
+      "favoritos": 1037,
       "etiquetas": [
         {
           "id": "postapocaliptico",
@@ -26445,9 +28302,9 @@
         }
       ],
       "actividad": {
-        "semana": 138,
-        "leyendo": 4760,
-        "lectores": 0.0045,
+        "semana": 129,
+        "leyendo": 4772,
+        "lectores": 0.0044,
         "dias": 7
       },
       "resumen": null,
@@ -26455,17 +28312,23 @@
         "ultimo": 214,
         "tomos": 9
       },
+      "evaluacion": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0058,
-        "puntaje": 0,
-        "dias": 8
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0044,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "111189": {
       "puntaje": {
         "valor": 83.9,
-        "votos": 25680,
+        "votos": 25697,
         "confianza": "alta",
         "diferencia": 3.1,
         "comunidades": 4
@@ -26477,7 +28340,7 @@
         },
         "kitsu": {
           "puntaje": 82.4,
-          "votos": 564
+          "votos": 566
         },
         "mangaupdates": {
           "puntaje": 81.6,
@@ -26485,7 +28348,7 @@
         },
         "myanimelist": {
           "puntaje": 84.7,
-          "votos": 17292
+          "votos": 17307
         }
       },
       "distribucion": {
@@ -26595,9 +28458,9 @@
         }
       ],
       "actividad": {
-        "semana": 157,
-        "leyendo": 17133,
-        "lectores": 0.0016,
+        "semana": 200,
+        "leyendo": 17153,
+        "lectores": 0.0021,
         "dias": 7
       },
       "resumen": null,
@@ -26605,12 +28468,18 @@
         "ultimo": 37,
         "tomos": 14
       },
+      "evaluacion": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0027,
-        "puntaje": 0,
-        "dias": 8
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0021,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "111233": {
       "puntaje": {
@@ -26673,7 +28542,7 @@
         ]
       },
       "popularidad": 67266,
-      "favoritos": 4844,
+      "favoritos": 4845,
       "etiquetas": [
         {
           "id": "vampiros",
@@ -26790,7 +28659,7 @@
       "tendencia": {
         "lectores": 0.0031,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -26835,7 +28704,7 @@
         "n": 0
       },
       "popularidad": 6644,
-      "favoritos": 372,
+      "favoritos": 371,
       "etiquetas": [
         {
           "id": "boys-love",
@@ -26909,7 +28778,7 @@
       "tendencia": {
         "lectores": 0.0018,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -27075,7 +28944,7 @@
       "tendencia": {
         "lectores": 0.003,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -27236,7 +29105,7 @@
       "tendencia": {
         "lectores": 0.0024,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -27295,7 +29164,7 @@
         "critican": []
       },
       "popularidad": 21710,
-      "favoritos": 1115,
+      "favoritos": 1116,
       "etiquetas": [
         {
           "id": "intrigas-de-la-realeza",
@@ -27406,13 +29275,13 @@
       "tendencia": {
         "lectores": 0.0071,
         "puntaje": -0.4,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
     "113350": {
       "puntaje": {
-        "valor": 82.1,
+        "valor": 82,
         "votos": 2318,
         "confianza": "media",
         "diferencia": 3.1,
@@ -27461,7 +29330,7 @@
         "critican": []
       },
       "popularidad": 6927,
-      "favoritos": 329,
+      "favoritos": 328,
       "etiquetas": [
         {
           "id": "boys-love",
@@ -27546,8 +29415,8 @@
       },
       "tendencia": {
         "lectores": 0.001,
-        "puntaje": 0,
-        "dias": 8
+        "puntaje": -0.1,
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -27606,7 +29475,7 @@
         "critican": []
       },
       "popularidad": 22465,
-      "favoritos": 1075,
+      "favoritos": 1076,
       "etiquetas": [
         {
           "id": "escuela",
@@ -27702,7 +29571,7 @@
       "tendencia": {
         "lectores": 0.0035,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -27849,7 +29718,7 @@
       "tendencia": {
         "lectores": 0.0041,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "114791": {
@@ -28023,7 +29892,7 @@
       "tendencia": {
         "lectores": 0.0028,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -28193,7 +30062,7 @@
       "tendencia": {
         "lectores": 0.0019,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -28358,9 +30227,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0026,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0032,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "116186": {
@@ -28424,7 +30293,7 @@
         ]
       },
       "popularidad": 59103,
-      "favoritos": 2140,
+      "favoritos": 2139,
       "etiquetas": [
         {
           "id": "seinen",
@@ -28586,7 +30455,7 @@
         "n": 0
       },
       "popularidad": 28633,
-      "favoritos": 2143,
+      "favoritos": 2146,
       "etiquetas": [
         {
           "id": "antiheroe",
@@ -28687,9 +30556,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.003,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0039,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "117195": {
@@ -28754,7 +30623,7 @@
         ]
       },
       "popularidad": 108242,
-      "favoritos": 8322,
+      "favoritos": 8321,
       "etiquetas": [
         {
           "id": "actuacion",
@@ -28871,14 +30740,14 @@
       "tendencia": {
         "lectores": 0.0016,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
     "117324": {
       "puntaje": {
         "valor": 84.9,
-        "votos": 15227,
+        "votos": 15235,
         "confianza": "alta",
         "diferencia": 1.6,
         "comunidades": 3
@@ -28894,7 +30763,7 @@
         },
         "myanimelist": {
           "puntaje": 85.6,
-          "votos": 8898
+          "votos": 8906
         }
       },
       "distribucion": {
@@ -28995,7 +30864,7 @@
           "anilist": 56144,
           "titulo": "The Daily Lives of High School Boys",
           "tipo": "manga",
-          "votos": 30,
+          "votos": 31,
           "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx56144-9XxJWQTZFoJW.jpg"
         },
         {
@@ -29014,22 +30883,28 @@
         }
       ],
       "actividad": {
-        "semana": 106,
-        "leyendo": 15132,
-        "lectores": 0.0027,
+        "semana": 652,
+        "leyendo": 15197,
+        "lectores": 0.0044,
         "dias": 7
       },
       "resumen": null,
       "capitulos": {
-        "ultimo": 133,
+        "ultimo": 134,
         "tomos": 3
       },
+      "evaluacion": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0052,
-        "puntaje": 0,
-        "dias": 8
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0044,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "117460": {
       "puntaje": {
@@ -29080,7 +30955,7 @@
         "n": 0
       },
       "popularidad": 41575,
-      "favoritos": 1961,
+      "favoritos": 1963,
       "etiquetas": [
         {
           "id": "videojuegos",
@@ -29171,9 +31046,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0087,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0121,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "117540": {
@@ -29349,7 +31224,7 @@
       "tendencia": {
         "lectores": 0.0037,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "118269": {
@@ -29500,16 +31375,16 @@
       "revisada": "2026-11-25",
       "tendencia": {
         "lectores": 0.0012,
-        "puntaje": null,
-        "dias": 7
+        "puntaje": -0.9,
+        "dias": 9
       }
     },
     "118371": {
       "puntaje": {
         "valor": 87.8,
-        "votos": 7855,
+        "votos": 7864,
         "confianza": "alta",
-        "diferencia": 4.8,
+        "diferencia": 4.7,
         "comunidades": 4
       },
       "fuentes": {
@@ -29518,8 +31393,8 @@
           "votos": 2574
         },
         "kitsu": {
-          "puntaje": 83.2,
-          "votos": 105
+          "puntaje": 83.3,
+          "votos": 106
         },
         "mangaupdates": {
           "puntaje": 78.4,
@@ -29527,7 +31402,7 @@
         },
         "myanimelist": {
           "puntaje": 88,
-          "votos": 5106
+          "votos": 5114
         }
       },
       "distribucion": {
@@ -29599,7 +31474,7 @@
           "anilist": 98263,
           "titulo": "Witch Hat Atelier",
           "tipo": "manga",
-          "votos": 57,
+          "votos": 58,
           "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx98263-kIeaTXrAbGkj.jpg"
         },
         {
@@ -29632,9 +31507,9 @@
         }
       ],
       "actividad": {
-        "semana": 126,
-        "leyendo": 5219,
-        "lectores": 0.0026,
+        "semana": 116,
+        "leyendo": 5227,
+        "lectores": 0.0032,
         "dias": 7
       },
       "resumen": null,
@@ -29642,12 +31517,18 @@
         "ultimo": 26,
         "tomos": 15
       },
+      "evaluacion": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.004,
-        "puntaje": 0,
-        "dias": 8
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0032,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "118408": {
       "puntaje": {
@@ -29704,7 +31585,7 @@
         "critican": []
       },
       "popularidad": 44755,
-      "favoritos": 4072,
+      "favoritos": 4073,
       "etiquetas": [
         {
           "id": "protagonista-femenina",
@@ -29820,9 +31701,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0044,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0054,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "118424": {
@@ -29971,7 +31852,7 @@
       "tendencia": {
         "lectores": 0.0029,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -30030,7 +31911,7 @@
         "critican": []
       },
       "popularidad": 87265,
-      "favoritos": 7881,
+      "favoritos": 7883,
       "etiquetas": [
         {
           "id": "magia",
@@ -30154,7 +32035,7 @@
       "tendencia": {
         "lectores": 0.0023,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "119174": {
@@ -30212,7 +32093,7 @@
         "critican": []
       },
       "popularidad": 46564,
-      "favoritos": 3204,
+      "favoritos": 3207,
       "etiquetas": [
         {
           "id": "boxeo",
@@ -30293,7 +32174,7 @@
       "tendencia": {
         "lectores": 0.0043,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -30470,7 +32351,7 @@
       "tendencia": {
         "lectores": 0.0044,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "119521": {
@@ -30528,7 +32409,7 @@
         "critican": []
       },
       "popularidad": 48361,
-      "favoritos": 3269,
+      "favoritos": 3271,
       "etiquetas": [
         {
           "id": "artes-marciales",
@@ -30629,7 +32510,7 @@
       "tendencia": {
         "lectores": 0.0048,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -30731,7 +32612,7 @@
       "tendencia": {
         "lectores": 0.007,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -30780,7 +32661,7 @@
         "n": 0
       },
       "popularidad": 25590,
-      "favoritos": 1102,
+      "favoritos": 1103,
       "etiquetas": [
         {
           "id": "artes-marciales",
@@ -30871,7 +32752,7 @@
       "tendencia": {
         "lectores": 0.0087,
         "puntaje": -0.1,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -30930,7 +32811,7 @@
         "critican": []
       },
       "popularidad": 108151,
-      "favoritos": 4906,
+      "favoritos": 4905,
       "etiquetas": [
         {
           "id": "kaijus",
@@ -31041,7 +32922,7 @@
       "tendencia": {
         "lectores": 0.0018,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -31100,7 +32981,7 @@
         "critican": []
       },
       "popularidad": 50095,
-      "favoritos": 3283,
+      "favoritos": 3284,
       "etiquetas": [
         {
           "id": "artes-marciales",
@@ -31211,7 +33092,7 @@
       "tendencia": {
         "lectores": 0.0053,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -31266,7 +33147,7 @@
         "critican": []
       },
       "popularidad": 20889,
-      "favoritos": 1889,
+      "favoritos": 1888,
       "etiquetas": [
         {
           "id": "reparto-coral",
@@ -31352,7 +33233,7 @@
       "tendencia": {
         "lectores": 0.0047,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -31411,7 +33292,7 @@
         "critican": []
       },
       "popularidad": 29562,
-      "favoritos": 1464,
+      "favoritos": 1467,
       "etiquetas": [
         {
           "id": "artes-marciales",
@@ -31517,7 +33398,7 @@
       "tendencia": {
         "lectores": 0.0029,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -31681,7 +33562,7 @@
       "tendencia": {
         "lectores": 0.0053,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -31853,12 +33734,12 @@
       "tendencia": {
         "lectores": 0.0029,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "125291": {
       "puntaje": {
-        "valor": 75.7,
+        "valor": 75.6,
         "votos": 915,
         "confianza": "baja",
         "diferencia": 0,
@@ -31986,8 +33867,8 @@
       },
       "tendencia": {
         "lectores": 0.0028,
-        "puntaje": 0,
-        "dias": 8
+        "puntaje": -0.1,
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -32040,7 +33921,7 @@
         "n": 0
       },
       "popularidad": 32433,
-      "favoritos": 888,
+      "favoritos": 887,
       "etiquetas": [
         {
           "id": "politica",
@@ -32179,7 +34060,7 @@
         "critican": []
       },
       "popularidad": 90904,
-      "favoritos": 4958,
+      "favoritos": 4961,
       "etiquetas": [
         {
           "id": "asesinos",
@@ -32290,7 +34171,7 @@
       "tendencia": {
         "lectores": 0.0037,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -32349,7 +34230,7 @@
         "critican": []
       },
       "popularidad": 57730,
-      "favoritos": 3236,
+      "favoritos": 3234,
       "etiquetas": [
         {
           "id": "kuudere",
@@ -32455,9 +34336,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.002,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0027,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "126693": {
@@ -32515,7 +34396,7 @@
         "critican": []
       },
       "popularidad": 51449,
-      "favoritos": 1747,
+      "favoritos": 1749,
       "etiquetas": [
         {
           "id": "fantasia-urbana",
@@ -32691,7 +34572,7 @@
         "critican": []
       },
       "popularidad": 71339,
-      "favoritos": 4908,
+      "favoritos": 4912,
       "etiquetas": [
         {
           "id": "mazmorras",
@@ -32789,7 +34670,7 @@
       "tendencia": {
         "lectores": 0.0058,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "129210": {
@@ -32965,7 +34846,145 @@
       "tendencia": {
         "lectores": 0.0076,
         "puntaje": 0.1,
-        "dias": 8
+        "dias": 9
+      }
+    },
+    "130149": {
+      "puntaje": {
+        "valor": 73.4,
+        "votos": 11292,
+        "confianza": "alta",
+        "diferencia": 3.9,
+        "comunidades": 4
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 74,
+          "votos": 4795
+        },
+        "kitsu": {
+          "puntaje": 75.6,
+          "votos": 548
+        },
+        "mangaupdates": {
+          "puntaje": 71.7,
+          "votos": 206
+        },
+        "myanimelist": {
+          "puntaje": 72.7,
+          "votos": 5743
+        }
+      },
+      "distribucion": {
+        "votos": 4795,
+        "gusta": 0.791,
+        "noGusta": 0.057,
+        "desviacion": 17.3,
+        "division": "variadas",
+        "barras": [
+          1,
+          0.9,
+          1.5,
+          2.3,
+          5.4,
+          9.8,
+          24.4,
+          25.8,
+          19.5,
+          9.3
+        ]
+      },
+      "resenas": {
+        "n": 0
+      },
+      "popularidad": 23090,
+      "favoritos": 688,
+      "etiquetas": [
+        {
+          "id": "superpoderes",
+          "nombre": "Superpoderes",
+          "voto": 88
+        },
+        {
+          "id": "antiheroe",
+          "nombre": "Antihéroe",
+          "voto": 86
+        },
+        {
+          "id": "magia",
+          "nombre": "Magia",
+          "voto": 79
+        },
+        {
+          "id": "cultivo",
+          "nombre": "Cultivo",
+          "voto": 70
+        },
+        {
+          "id": "fantasia-urbana",
+          "nombre": "Fantasía urbana",
+          "voto": 70
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 132093,
+          "titulo": "Hero Killer",
+          "tipo": "manhwa",
+          "votos": 26,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx132093-GLS3FWShrQPV.jpg"
+        },
+        {
+          "anilist": 106929,
+          "titulo": "Eleceed",
+          "tipo": "manhwa",
+          "votos": 18,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx106929-flAUvHZDUz5v.jpg"
+        },
+        {
+          "anilist": 128882,
+          "titulo": "Jungle Juice",
+          "tipo": "manhwa",
+          "votos": 7,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx128882-UxgmKbYEjuEz.jpg"
+        },
+        {
+          "anilist": 105398,
+          "titulo": "Solo Leveling",
+          "tipo": "manhwa",
+          "votos": 5,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx105398-b673Vt5ZSuz3.jpg"
+        },
+        {
+          "anilist": 218041,
+          "titulo": "Michin Billeoni Jeongsineul Doechajeum",
+          "tipo": "manhwa",
+          "votos": 4,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx218041-GHsg9eaTZmEB.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 1106,
+        "leyendo": 14234,
+        "lectores": 0.0031,
+        "dias": 7
+      },
+      "resumen": null,
+      "capitulos": {
+        "ultimo": 262,
+        "tomos": null
+      },
+      "evaluacion": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
+      "tendencia": {
+        "lectores": 0.0031,
+        "puntaje": null,
+        "dias": 7
       }
     },
     "130229": {
@@ -33023,7 +35042,7 @@
         "critican": []
       },
       "popularidad": 22486,
-      "favoritos": 732,
+      "favoritos": 731,
       "etiquetas": [
         {
           "id": "acoso-escolar",
@@ -33104,7 +35123,7 @@
       "tendencia": {
         "lectores": 0.0032,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -33253,16 +35272,16 @@
       "tendencia": {
         "lectores": 0.0057,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
     "130511": {
       "puntaje": {
         "valor": 71.6,
-        "votos": 16110,
+        "votos": 16115,
         "confianza": "alta",
-        "diferencia": 3.9,
+        "diferencia": 4.3,
         "comunidades": 4
       },
       "fuentes": {
@@ -33271,16 +35290,16 @@
           "votos": 6869
         },
         "kitsu": {
-          "puntaje": 74.7,
-          "votos": 937
+          "puntaje": 74.6,
+          "votos": 938
         },
         "mangaupdates": {
-          "puntaje": 71.2,
+          "puntaje": 70.3,
           "votos": 311
         },
         "myanimelist": {
           "puntaje": 70.8,
-          "votos": 7993
+          "votos": 7997
         }
       },
       "distribucion": {
@@ -33306,7 +35325,7 @@
         "n": 0
       },
       "popularidad": 36491,
-      "favoritos": 1136,
+      "favoritos": 1135,
       "etiquetas": [
         {
           "id": "mazmorras",
@@ -33367,22 +35386,28 @@
         }
       ],
       "actividad": {
-        "semana": 618,
-        "leyendo": 23572,
-        "lectores": 0.0022,
+        "semana": 750,
+        "leyendo": 23594,
+        "lectores": 0.0026,
         "dias": 7
       },
       "resumen": null,
       "capitulos": {
-        "ultimo": 252,
+        "ultimo": 253,
         "tomos": null
       },
+      "evaluacion": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0031,
-        "puntaje": 0,
-        "dias": 8
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0026,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "132029": {
       "puntaje": {
@@ -33439,7 +35464,7 @@
         "critican": []
       },
       "popularidad": 119253,
-      "favoritos": 9306,
+      "favoritos": 9309,
       "etiquetas": [
         {
           "id": "yokai",
@@ -33563,7 +35588,7 @@
       "tendencia": {
         "lectores": 0.0032,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "132144": {
@@ -33621,7 +35646,7 @@
         "critican": []
       },
       "popularidad": 47100,
-      "favoritos": 3282,
+      "favoritos": 3285,
       "etiquetas": [
         {
           "id": "espadas",
@@ -33724,7 +35749,7 @@
       "tendencia": {
         "lectores": 0.0066,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "132182": {
@@ -33782,7 +35807,7 @@
         "critican": []
       },
       "popularidad": 56810,
-      "favoritos": 4096,
+      "favoritos": 4098,
       "etiquetas": [
         {
           "id": "club-escolar",
@@ -33899,14 +35924,14 @@
       "tendencia": {
         "lectores": 0.0029,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
     "135325": {
       "puntaje": {
         "valor": 77.2,
-        "votos": 18879,
+        "votos": 18899,
         "confianza": "alta",
         "diferencia": 1.4,
         "comunidades": 4
@@ -33918,15 +35943,15 @@
         },
         "kitsu": {
           "puntaje": 77.3,
-          "votos": 836
+          "votos": 835
         },
         "mangaupdates": {
           "puntaje": 76.9,
-          "votos": 376
+          "votos": 379
         },
         "myanimelist": {
           "puntaje": 76.6,
-          "votos": 10041
+          "votos": 10059
         }
       },
       "distribucion": {
@@ -34020,29 +36045,35 @@
         }
       ],
       "actividad": {
-        "semana": 2596,
-        "leyendo": 25699,
-        "lectores": 0.0053,
+        "semana": 2833,
+        "leyendo": 25753,
+        "lectores": 0.0055,
         "dias": 7
       },
       "resumen": null,
       "capitulos": {
-        "ultimo": 168,
+        "ultimo": 169,
         "tomos": null
       },
+      "evaluacion": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0066,
-        "puntaje": 0,
-        "dias": 8
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0055,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "136204": {
       "puntaje": {
         "valor": 77.1,
-        "votos": 10601,
+        "votos": 10604,
         "confianza": "alta",
-        "diferencia": 2.2,
+        "diferencia": 2.1,
         "comunidades": 4
       },
       "fuentes": {
@@ -34051,16 +36082,16 @@
           "votos": 4208
         },
         "kitsu": {
-          "puntaje": 79.1,
-          "votos": 545
+          "puntaje": 79,
+          "votos": 544
         },
         "mangaupdates": {
-          "puntaje": 78.6,
-          "votos": 336
+          "puntaje": 77.7,
+          "votos": 337
         },
         "myanimelist": {
           "puntaje": 76.9,
-          "votos": 5512
+          "votos": 5515
         }
       },
       "distribucion": {
@@ -34144,9 +36175,9 @@
         }
       ],
       "actividad": {
-        "semana": 3952,
-        "leyendo": 15386,
-        "lectores": 0.0123,
+        "semana": 3107,
+        "leyendo": 15425,
+        "lectores": 0.0076,
         "dias": 7
       },
       "resumen": null,
@@ -34160,9 +36191,9 @@
         0,
         0
       ],
-      "revisada": "2026-11-24",
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0123,
+        "lectores": 0.0076,
         "puntaje": null,
         "dias": 7
       }
@@ -34222,7 +36253,7 @@
         "critican": []
       },
       "popularidad": 42027,
-      "favoritos": 1743,
+      "favoritos": 1744,
       "etiquetas": [
         {
           "id": "mazmorras",
@@ -34330,7 +36361,7 @@
       "tendencia": {
         "lectores": 0.0055,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "136807": {
@@ -34394,7 +36425,7 @@
         ]
       },
       "popularidad": 66016,
-      "favoritos": 4886,
+      "favoritos": 4891,
       "etiquetas": [
         {
           "id": "dibujo",
@@ -34511,7 +36542,7 @@
       "tendencia": {
         "lectores": 0.0028,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -34656,7 +36687,7 @@
       "tendencia": {
         "lectores": 0.0047,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -34709,7 +36740,7 @@
         "n": 0
       },
       "popularidad": 28863,
-      "favoritos": 1298,
+      "favoritos": 1299,
       "etiquetas": [
         {
           "id": "artes-marciales",
@@ -34800,14 +36831,14 @@
       "tendencia": {
         "lectores": 0.0063,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
     "138222": {
       "puntaje": {
         "valor": 77.1,
-        "votos": 15181,
+        "votos": 15190,
         "confianza": "alta",
         "diferencia": 1.7,
         "comunidades": 4
@@ -34823,11 +36854,11 @@
         },
         "mangaupdates": {
           "puntaje": 76.7,
-          "votos": 307
+          "votos": 308
         },
         "myanimelist": {
           "puntaje": 76.4,
-          "votos": 8103
+          "votos": 8111
         }
       },
       "distribucion": {
@@ -34853,7 +36884,7 @@
         "n": 0
       },
       "popularidad": 29668,
-      "favoritos": 1126,
+      "favoritos": 1125,
       "etiquetas": [
         {
           "id": "dioses",
@@ -34936,9 +36967,9 @@
         }
       ],
       "actividad": {
-        "semana": 283,
-        "leyendo": 20192,
-        "lectores": 0.003,
+        "semana": 265,
+        "leyendo": 20225,
+        "lectores": 0.0036,
         "dias": 7
       },
       "resumen": null,
@@ -34946,12 +36977,18 @@
         "ultimo": 169,
         "tomos": 5
       },
+      "evaluacion": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0043,
-        "puntaje": 0,
-        "dias": 8
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0036,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "138366": {
       "puntaje": {
@@ -34998,7 +37035,7 @@
         "n": 0
       },
       "popularidad": 14961,
-      "favoritos": 455,
+      "favoritos": 454,
       "etiquetas": [
         {
           "id": "superpoderes",
@@ -35069,7 +37106,7 @@
       "tendencia": {
         "lectores": 0.003,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -35128,7 +37165,7 @@
         "critican": []
       },
       "popularidad": 43729,
-      "favoritos": 3621,
+      "favoritos": 3624,
       "etiquetas": [
         {
           "id": "rural",
@@ -35239,7 +37276,7 @@
       "tendencia": {
         "lectores": 0.0042,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -35388,7 +37425,7 @@
       "tendencia": {
         "lectores": 0.006,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "139741": {
@@ -35508,7 +37545,7 @@
           "anilist": 201009,
           "titulo": "The Patron of Villains",
           "tipo": "manhwa",
-          "votos": 27,
+          "votos": 28,
           "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx201009-jTY2arWw21sc.jpg"
         },
         {
@@ -35534,9 +37571,9 @@
         }
       ],
       "actividad": {
-        "semana": 273,
-        "leyendo": 6611,
-        "lectores": 0.0035,
+        "semana": 624,
+        "leyendo": 6646,
+        "lectores": 0.0064,
         "dias": 7
       },
       "resumen": null,
@@ -35544,12 +37581,18 @@
         "ultimo": 456,
         "tomos": null
       },
+      "evaluacion": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.007,
-        "puntaje": 0,
-        "dias": 8
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0064,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "140407": {
       "puntaje": {
@@ -35606,7 +37649,7 @@
         "critican": []
       },
       "popularidad": 73050,
-      "favoritos": 8340,
+      "favoritos": 8351,
       "etiquetas": [
         {
           "id": "comedia-absurda",
@@ -35723,16 +37766,16 @@
       "tendencia": {
         "lectores": 0.0073,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
     "140475": {
       "puntaje": {
-        "valor": 86.6,
-        "votos": 76825,
+        "valor": 86.5,
+        "votos": 76879,
         "confianza": "media",
-        "diferencia": 9.1,
+        "diferencia": 9,
         "comunidades": 4
       },
       "fuentes": {
@@ -35746,11 +37789,11 @@
         },
         "mangaupdates": {
           "puntaje": 78.5,
-          "votos": 312
+          "votos": 314
         },
         "myanimelist": {
-          "puntaje": 87.6,
-          "votos": 54563
+          "puntaje": 87.5,
+          "votos": 54615
         }
       },
       "distribucion": {
@@ -35821,7 +37864,7 @@
         {
           "id": "shonen",
           "nombre": "Shōnen",
-          "voto": 79
+          "voto": 75
         },
         {
           "id": "filosofia",
@@ -35851,14 +37894,14 @@
           "anilist": 132182,
           "titulo": "Blue Box",
           "tipo": "manga",
-          "votos": 180,
+          "votos": 181,
           "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx132182-maXh2QzYPrqR.jpg"
         },
         {
           "anilist": 86279,
           "titulo": "Boarding School Juliet",
           "tipo": "manga",
-          "votos": 164,
+          "votos": 165,
           "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx86279-UF065BhrwVHW.jpg"
         },
         {
@@ -35884,9 +37927,9 @@
         }
       ],
       "actividad": {
-        "semana": 4124,
-        "leyendo": 48051,
-        "lectores": 0.003,
+        "semana": 2354,
+        "leyendo": 48092,
+        "lectores": 0.0031,
         "dias": 7
       },
       "resumen": {
@@ -35900,12 +37943,18 @@
         "ultimo": 187,
         "tomos": 24
       },
+      "evaluacion": [
+        7,
+        8,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0039,
-        "puntaje": 0,
-        "dias": 8
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0031,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "141705": {
       "puntaje": {
@@ -36077,7 +38126,7 @@
         "n": 0
       },
       "popularidad": 10328,
-      "favoritos": 654,
+      "favoritos": 653,
       "etiquetas": [
         {
           "id": "yuri",
@@ -36195,7 +38244,7 @@
       "tendencia": {
         "lectores": 0.0032,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "142021": {
@@ -36480,9 +38529,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0048,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0067,
+        "puntaje": -0.1,
+        "dias": 9
       }
     },
     "142568": {
@@ -36540,7 +38589,7 @@
         "critican": []
       },
       "popularidad": 32455,
-      "favoritos": 1439,
+      "favoritos": 1444,
       "etiquetas": [
         {
           "id": "acoso-escolar",
@@ -36637,7 +38686,7 @@
       "tendencia": {
         "lectores": 0.0033,
         "puntaje": 0.1,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -36696,7 +38745,7 @@
         "critican": []
       },
       "popularidad": 20843,
-      "favoritos": 763,
+      "favoritos": 764,
       "etiquetas": [
         {
           "id": "tsundere",
@@ -36805,9 +38854,9 @@
     "143056": {
       "puntaje": {
         "valor": 74.2,
-        "votos": 18274,
+        "votos": 18286,
         "confianza": "alta",
-        "diferencia": 2.9,
+        "diferencia": 3.2,
         "comunidades": 4
       },
       "fuentes": {
@@ -36817,15 +38866,15 @@
         },
         "kitsu": {
           "puntaje": 76.3,
-          "votos": 911
+          "votos": 910
         },
         "mangaupdates": {
-          "puntaje": 74,
-          "votos": 354
+          "puntaje": 73.1,
+          "votos": 355
         },
         "myanimelist": {
           "puntaje": 73.4,
-          "votos": 9637
+          "votos": 9649
         }
       },
       "distribucion": {
@@ -36851,7 +38900,7 @@
         "n": 0
       },
       "popularidad": 39935,
-      "favoritos": 1426,
+      "favoritos": 1425,
       "etiquetas": [
         {
           "id": "antiheroe",
@@ -36914,22 +38963,28 @@
         }
       ],
       "actividad": {
-        "semana": 1933,
-        "leyendo": 27197,
-        "lectores": 0.003,
+        "semana": 1978,
+        "leyendo": 27226,
+        "lectores": 0.0031,
         "dias": 7
       },
       "resumen": null,
       "capitulos": {
-        "ultimo": 197,
+        "ultimo": 198,
         "tomos": null
       },
+      "evaluacion": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0038,
-        "puntaje": 0,
-        "dias": 8
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0031,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "143719": {
       "puntaje": {
@@ -37162,7 +39217,7 @@
         "critican": []
       },
       "popularidad": 69133,
-      "favoritos": 4509,
+      "favoritos": 4511,
       "etiquetas": [
         {
           "id": "reparto-coral",
@@ -37280,7 +39335,7 @@
       "tendencia": {
         "lectores": 0.0048,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "144957": {
@@ -37413,7 +39468,7 @@
       "tendencia": {
         "lectores": 0.0048,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -37562,7 +39617,7 @@
       "tendencia": {
         "lectores": 0.0042,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -37617,7 +39672,7 @@
         "critican": []
       },
       "popularidad": 12637,
-      "favoritos": 559,
+      "favoritos": 560,
       "etiquetas": [
         {
           "id": "urbano",
@@ -37693,7 +39748,7 @@
       "tendencia": {
         "lectores": 0.0066,
         "puntaje": -0.1,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -37756,7 +39811,7 @@
         "critican": []
       },
       "popularidad": 87959,
-      "favoritos": 8205,
+      "favoritos": 8203,
       "etiquetas": [
         {
           "id": "cine",
@@ -37863,7 +39918,7 @@
       "tendencia": {
         "lectores": 0.0034,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
@@ -37922,7 +39977,7 @@
         "critican": []
       },
       "popularidad": 46034,
-      "favoritos": 2456,
+      "favoritos": 2455,
       "etiquetas": [
         {
           "id": "seinen",
@@ -38039,6 +40094,147 @@
         "dias": 7
       }
     },
+    "148082": {
+      "puntaje": {
+        "valor": 80.3,
+        "votos": 11142,
+        "confianza": "alta",
+        "diferencia": 4.1,
+        "comunidades": 4
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 80,
+          "votos": 3049
+        },
+        "kitsu": {
+          "puntaje": 80.6,
+          "votos": 148
+        },
+        "mangaupdates": {
+          "puntaje": 76.5,
+          "votos": 115
+        },
+        "myanimelist": {
+          "puntaje": 80.5,
+          "votos": 7830
+        }
+      },
+      "distribucion": {
+        "votos": 3049,
+        "gusta": 0.885,
+        "noGusta": 0.024,
+        "desviacion": 15.2,
+        "division": "variadas",
+        "barras": [
+          0.7,
+          0.1,
+          0.7,
+          1,
+          2.9,
+          6.3,
+          17.7,
+          27,
+          26.3,
+          17.4
+        ]
+      },
+      "resenas": {
+        "n": 1,
+        "positivas": 1,
+        "negativas": 0,
+        "mixtas": 0,
+        "wilson": 0.207,
+        "elogian": [],
+        "critican": []
+      },
+      "popularidad": 15462,
+      "favoritos": 576,
+      "etiquetas": [
+        {
+          "id": "seinen",
+          "nombre": "Seinen",
+          "voto": 79
+        },
+        {
+          "id": "escuela",
+          "nombre": "Escuela",
+          "voto": 66
+        },
+        {
+          "id": "personajes-adolescentes",
+          "nombre": "Personajes adolescentes",
+          "voto": 60
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 138380,
+          "titulo": "Gals Can’t Be Kind to Otaku!?",
+          "tipo": "manga",
+          "votos": 28,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx138380-7h0RN7XRiwxg.jpg"
+        },
+        {
+          "anilist": 201773,
+          "titulo": "Haimiya Is Scary Cute",
+          "tipo": "manga",
+          "votos": 13,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx201773-ecGmhCRhfu05.jpg"
+        },
+        {
+          "anilist": 139732,
+          "titulo": "Tenkousaki no Seiso Karen na Bishoujo ga, Mukashi Danshi to Omotte Issho ni Asonda Osananajimi datta Ken",
+          "tipo": "manga",
+          "votos": 11,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx139732-q0LY7boA5cO9.jpg"
+        },
+        {
+          "anilist": 154877,
+          "titulo": "Love Come Manga ni Haitte Shimatta node, Oshi no Make Heroine wo Zenryoku de Shiawase ni Suru",
+          "tipo": "manga",
+          "votos": 8,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx154877-3nNeXxt6xGu5.jpg"
+        },
+        {
+          "anilist": 100807,
+          "titulo": "Bottom-tier Character Tomozaki",
+          "tipo": "manga",
+          "votos": 6,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx100807-zgNgjsRdCTHG.jpg"
+        },
+        {
+          "anilist": 132664,
+          "titulo": "Yumemiru Danshi wa Genjitsushugisha",
+          "tipo": "manga",
+          "votos": 4,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx132664-JToaSpWFE3Jk.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 632,
+        "leyendo": 10241,
+        "lectores": 0.0047,
+        "dias": 7
+      },
+      "resumen": null,
+      "capitulos": {
+        "ultimo": 46,
+        "tomos": 7
+      },
+      "evaluacion": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
+      "tendencia": {
+        "lectores": 0.0047,
+        "puntaje": null,
+        "dias": 7
+      }
+    },
     "149332": {
       "puntaje": {
         "valor": 78.7,
@@ -38088,7 +40284,7 @@
         "n": 0
       },
       "popularidad": 45821,
-      "favoritos": 2090,
+      "favoritos": 2089,
       "etiquetas": [
         {
           "id": "regresion-de-edad",
@@ -38181,7 +40377,7 @@
       "tendencia": {
         "lectores": 0.0048,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "149544": {
@@ -38239,7 +40435,7 @@
         "critican": []
       },
       "popularidad": 55208,
-      "favoritos": 4968,
+      "favoritos": 4971,
       "etiquetas": [
         {
           "id": "protagonista-femenina",
@@ -38356,6 +40552,166 @@
       "revisada": "2026-11-25",
       "tendencia": {
         "lectores": 0.0044,
+        "puntaje": null,
+        "dias": 7
+      }
+    },
+    "150378": {
+      "puntaje": {
+        "valor": 76.2,
+        "votos": 24443,
+        "confianza": "alta",
+        "diferencia": 7.4,
+        "comunidades": 4
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 76,
+          "votos": 6281
+        },
+        "kitsu": {
+          "puntaje": 76.6,
+          "votos": 276
+        },
+        "mangaupdates": {
+          "puntaje": 69.2,
+          "votos": 107
+        },
+        "myanimelist": {
+          "puntaje": 76.4,
+          "votos": 17779
+        }
+      },
+      "distribucion": {
+        "votos": 6281,
+        "gusta": 0.834,
+        "noGusta": 0.029,
+        "desviacion": 15.5,
+        "division": "variadas",
+        "barras": [
+          0.5,
+          0.4,
+          0.8,
+          1.2,
+          5.1,
+          8.6,
+          21.8,
+          28.2,
+          22.5,
+          11
+        ]
+      },
+      "resenas": {
+        "n": 0
+      },
+      "popularidad": 45492,
+      "favoritos": 1772,
+      "etiquetas": [
+        {
+          "id": "fantasia-urbana",
+          "nombre": "Fantasía urbana",
+          "voto": 96
+        },
+        {
+          "id": "protagonista-femenina",
+          "nombre": "Protagonista femenina",
+          "voto": 93
+        },
+        {
+          "id": "horror-corporal",
+          "nombre": "Horror corporal",
+          "voto": 92
+        },
+        {
+          "id": "shonen",
+          "nombre": "Shōnen",
+          "voto": 89
+        },
+        {
+          "id": "chico-monstruo",
+          "nombre": "Chico monstruo",
+          "voto": 84
+        },
+        {
+          "id": "crimen",
+          "nombre": "Crimen",
+          "voto": 73
+        },
+        {
+          "id": "pandillas",
+          "nombre": "Pandillas",
+          "voto": 63
+        },
+        {
+          "id": "antropomorfismo",
+          "nombre": "Antropomorfismo",
+          "voto": 60
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 105778,
+          "titulo": "Chainsaw Man",
+          "tipo": "manga",
+          "votos": 93,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx105778-euxXZEIfDY2u.png"
+        },
+        {
+          "anilist": 169355,
+          "titulo": "Kagurabachi",
+          "tipo": "manga",
+          "votos": 93,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx169355-5pqzh1Wb4NOQ.png"
+        },
+        {
+          "anilist": 101517,
+          "titulo": "Jujutsu Kaisen",
+          "tipo": "manga",
+          "votos": 76,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx101517-H3TdM3g5ZUe9.jpg"
+        },
+        {
+          "anilist": 144946,
+          "titulo": "Gachiakuta",
+          "tipo": "manga",
+          "votos": 69,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx144946-cscic3n2SwdY.jpg"
+        },
+        {
+          "anilist": 98466,
+          "titulo": "Kemono Jihen",
+          "tipo": "manga",
+          "votos": 42,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx98466-sMigmqzZx6yS.jpg"
+        },
+        {
+          "anilist": 54903,
+          "titulo": "GANGSTA.",
+          "tipo": "manga",
+          "votos": 35,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx54903-baYFVNmwM28v.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 299,
+        "leyendo": 18681,
+        "lectores": 0.0024,
+        "dias": 7
+      },
+      "resumen": null,
+      "capitulos": {
+        "ultimo": 39,
+        "tomos": 6
+      },
+      "evaluacion": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
+      "tendencia": {
+        "lectores": 0.0024,
         "puntaje": null,
         "dias": 7
       }
@@ -38554,7 +40910,7 @@
         "n": 0
       },
       "popularidad": 37453,
-      "favoritos": 1554,
+      "favoritos": 1555,
       "etiquetas": [
         {
           "id": "espadas",
@@ -38798,13 +41154,13 @@
       "tendencia": {
         "lectores": 0.0061,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "152913": {
       "puntaje": {
         "valor": 67.8,
-        "votos": 3672,
+        "votos": 3682,
         "confianza": "media",
         "diferencia": 1,
         "comunidades": 4
@@ -38824,7 +41180,7 @@
         },
         "myanimelist": {
           "puntaje": 68,
-          "votos": 2358
+          "votos": 2368
         }
       },
       "distribucion": {
@@ -38900,9 +41256,9 @@
         }
       ],
       "actividad": {
-        "semana": 480,
-        "leyendo": 6574,
-        "lectores": 0.0061,
+        "semana": 883,
+        "leyendo": 6627,
+        "lectores": 0.0114,
         "dias": 7
       },
       "resumen": null,
@@ -38916,9 +41272,9 @@
         0,
         0
       ],
-      "revisada": "2026-11-25",
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0061,
+        "lectores": 0.0114,
         "puntaje": null,
         "dias": 7
       }
@@ -39052,9 +41408,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0044,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.006,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "154258": {
@@ -39206,7 +41562,7 @@
       "tendencia": {
         "lectores": 0.0102,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "159441": {
@@ -39258,7 +41614,7 @@
         "n": 0
       },
       "popularidad": 47452,
-      "favoritos": 2957,
+      "favoritos": 2959,
       "etiquetas": [
         {
           "id": "supervivencia",
@@ -39376,7 +41732,7 @@
       "tendencia": {
         "lectores": 0.0069,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "159930": {
@@ -39434,7 +41790,7 @@
         "critican": []
       },
       "popularidad": 43190,
-      "favoritos": 1824,
+      "favoritos": 1825,
       "etiquetas": [
         {
           "id": "magia",
@@ -39512,13 +41868,13 @@
       "tendencia": {
         "lectores": 0.008,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "160693": {
       "puntaje": {
         "valor": 74,
-        "votos": 3567,
+        "votos": 3571,
         "confianza": "media",
         "diferencia": 2.1,
         "comunidades": 4
@@ -39538,7 +41894,7 @@
         },
         "myanimelist": {
           "puntaje": 72.9,
-          "votos": 1606
+          "votos": 1610
         }
       },
       "distribucion": {
@@ -39627,9 +41983,9 @@
         }
       ],
       "actividad": {
-        "semana": 1157,
-        "leyendo": 6958,
-        "lectores": 0.0059,
+        "semana": 1240,
+        "leyendo": 6972,
+        "lectores": 0.0065,
         "dias": 7
       },
       "resumen": null,
@@ -39643,9 +41999,9 @@
         0,
         0
       ],
-      "revisada": "2026-11-24",
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0059,
+        "lectores": 0.0065,
         "puntaje": null,
         "dias": 7
       }
@@ -39773,7 +42129,7 @@
       "tendencia": {
         "lectores": 0.0048,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "163824": {
@@ -39825,7 +42181,7 @@
         "n": 0
       },
       "popularidad": 47419,
-      "favoritos": 2466,
+      "favoritos": 2467,
       "etiquetas": [
         {
           "id": "regresion-de-edad",
@@ -39918,7 +42274,7 @@
       "tendencia": {
         "lectores": 0.0067,
         "puntaje": -0.1,
-        "dias": 8
+        "dias": 9
       }
     },
     "164857": {
@@ -39970,7 +42326,7 @@
         "n": 0
       },
       "popularidad": 22806,
-      "favoritos": 889,
+      "favoritos": 891,
       "etiquetas": [
         {
           "id": "mazmorras",
@@ -40088,7 +42444,7 @@
       "tendencia": {
         "lectores": 0.0092,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "167372": {
@@ -40209,7 +42565,7 @@
       "tendencia": {
         "lectores": 0.0086,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "167649": {
@@ -40505,7 +42861,7 @@
         "n": 0
       },
       "popularidad": 4140,
-      "favoritos": 355,
+      "favoritos": 356,
       "etiquetas": [
         {
           "id": "antropomorfismo",
@@ -40597,15 +42953,15 @@
       "tendencia": {
         "lectores": 0.0112,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "169272": {
       "puntaje": {
         "valor": 84.2,
-        "votos": 13541,
+        "votos": 13549,
         "confianza": "alta",
-        "diferencia": 5.2,
+        "diferencia": 6.4,
         "comunidades": 4
       },
       "fuentes": {
@@ -40619,11 +42975,11 @@
         },
         "mangaupdates": {
           "puntaje": 78.4,
-          "votos": 99
+          "votos": 100
         },
         "myanimelist": {
           "puntaje": 84.8,
-          "votos": 9464
+          "votos": 9471
         }
       },
       "distribucion": {
@@ -40743,9 +43099,9 @@
         }
       ],
       "actividad": {
-        "semana": 1034,
-        "leyendo": 11143,
-        "lectores": 0.0042,
+        "semana": 1313,
+        "leyendo": 11153,
+        "lectores": 0.0044,
         "dias": 7
       },
       "resumen": null,
@@ -40759,9 +43115,9 @@
         0,
         0
       ],
-      "revisada": "2026-11-25",
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0042,
+        "lectores": 0.0044,
         "puntaje": null,
         "dias": 7
       }
@@ -40821,7 +43177,7 @@
         "critican": []
       },
       "popularidad": 73350,
-      "favoritos": 4233,
+      "favoritos": 4237,
       "etiquetas": [
         {
           "id": "espadas",
@@ -40939,7 +43295,163 @@
       "tendencia": {
         "lectores": 0.005,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
+      }
+    },
+    "169734": {
+      "puntaje": {
+        "valor": 69.7,
+        "votos": 4494,
+        "confianza": "media",
+        "diferencia": 1.1,
+        "comunidades": 4
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 69,
+          "votos": 1435
+        },
+        "kitsu": {
+          "puntaje": 72.2,
+          "votos": 92
+        },
+        "mangaupdates": {
+          "puntaje": 60.6,
+          "votos": 90
+        },
+        "myanimelist": {
+          "puntaje": 70.1,
+          "votos": 2877
+        }
+      },
+      "distribucion": {
+        "votos": 1435,
+        "gusta": 0.7,
+        "noGusta": 0.063,
+        "desviacion": 17.3,
+        "division": "divididas",
+        "barras": [
+          1.3,
+          1,
+          1.5,
+          2.6,
+          8.4,
+          15.3,
+          29.3,
+          19.8,
+          14.8,
+          6.1
+        ]
+      },
+      "resenas": {
+        "n": 0
+      },
+      "popularidad": 11354,
+      "favoritos": 193,
+      "etiquetas": [
+        {
+          "id": "personajes-adultos",
+          "nombre": "Personajes adultos",
+          "voto": 80
+        },
+        {
+          "id": "gyarus",
+          "nombre": "Gyarus",
+          "voto": 80
+        },
+        {
+          "id": "oficinistas",
+          "nombre": "Oficinistas",
+          "voto": 80
+        },
+        {
+          "id": "matrimonio",
+          "nombre": "Matrimonio",
+          "voto": 75
+        },
+        {
+          "id": "protagonista-femenina",
+          "nombre": "Protagonista femenina",
+          "voto": 66
+        },
+        {
+          "id": "seinen",
+          "nombre": "Seinen",
+          "voto": 60
+        },
+        {
+          "id": "incest",
+          "nombre": "Incest",
+          "voto": 60,
+          "en": true
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 159308,
+          "titulo": "Boku to Gal ga Fuufu ni Naru made",
+          "tipo": "manga",
+          "votos": 19,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx159308-lF8SqGR2VeKE.jpg"
+        },
+        {
+          "anilist": 111403,
+          "titulo": "Hokkaido Gals Are Super Adorable!",
+          "tipo": "manga",
+          "votos": 17,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx111403-Dbes2Il844xa.jpg"
+        },
+        {
+          "anilist": 168348,
+          "titulo": "Torima Minshuku Yadori Tekina!",
+          "tipo": "manga",
+          "votos": 15,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx168348-iiANl3IjRFTK.jpg"
+        },
+        {
+          "anilist": 98112,
+          "titulo": "Gal Gohan",
+          "tipo": "manga",
+          "votos": 6,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx98112-9GdZ02taEM0n.jpg"
+        },
+        {
+          "anilist": 101583,
+          "titulo": "My Dress-Up Darling",
+          "tipo": "manga",
+          "votos": 6,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx101583-VI1PT2QGGT8W.jpg"
+        },
+        {
+          "anilist": 174752,
+          "titulo": "Inaka no Kuro Gal JK to Kekkon Shimashita",
+          "tipo": "manga",
+          "votos": 5,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx174752-9bfhrP7KekhY.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 547,
+        "leyendo": 7230,
+        "lectores": 0.004,
+        "dias": 7
+      },
+      "resumen": null,
+      "capitulos": {
+        "ultimo": 65,
+        "tomos": 6
+      },
+      "evaluacion": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
+      "tendencia": {
+        "lectores": 0.004,
+        "puntaje": null,
+        "dias": 7
       }
     },
     "170400": {
@@ -40997,7 +43509,7 @@
         "critican": []
       },
       "popularidad": 34845,
-      "favoritos": 1530,
+      "favoritos": 1534,
       "etiquetas": [
         {
           "id": "espadas",
@@ -41083,16 +43595,16 @@
       "tendencia": {
         "lectores": 0.0086,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
     },
     "172619": {
       "puntaje": {
         "valor": 82.2,
-        "votos": 19959,
+        "votos": 20011,
         "confianza": "alta",
-        "diferencia": 3.4,
+        "diferencia": 3.5,
         "comunidades": 4
       },
       "fuentes": {
@@ -41101,16 +43613,16 @@
           "votos": 7205
         },
         "kitsu": {
-          "puntaje": 79.2,
-          "votos": 529
+          "puntaje": 79.1,
+          "votos": 528
         },
         "mangaupdates": {
           "puntaje": 81.6,
-          "votos": 398
+          "votos": 402
         },
         "myanimelist": {
           "puntaje": 82.6,
-          "votos": 11827
+          "votos": 11876
         }
       },
       "distribucion": {
@@ -41136,7 +43648,7 @@
         "n": 0
       },
       "popularidad": 33817,
-      "favoritos": 1744,
+      "favoritos": 1745,
       "etiquetas": [
         {
           "id": "escuela",
@@ -41219,9 +43731,9 @@
         }
       ],
       "actividad": {
-        "semana": 4424,
-        "leyendo": 25052,
-        "lectores": 0.0074,
+        "semana": 5000,
+        "leyendo": 25157,
+        "lectores": 0.0088,
         "dias": 7
       },
       "resumen": null,
@@ -41229,12 +43741,154 @@
         "ultimo": 133,
         "tomos": null
       },
+      "evaluacion": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0105,
-        "puntaje": 0,
-        "dias": 8
+        "lectores": 0.0088,
+        "puntaje": null,
+        "dias": 7
+      }
+    },
+    "174790": {
+      "puntaje": {
+        "valor": 79.2,
+        "votos": 7474,
+        "confianza": "alta",
+        "diferencia": 0.3,
+        "comunidades": 3
       },
-      "revisada": "2026-11-22"
+      "fuentes": {
+        "anilist": {
+          "puntaje": 79,
+          "votos": 2461
+        },
+        "mangaupdates": {
+          "puntaje": 73.8,
+          "votos": 78
+        },
+        "myanimelist": {
+          "puntaje": 79.3,
+          "votos": 4935
+        }
+      },
+      "distribucion": {
+        "votos": 2461,
+        "gusta": 0.887,
+        "noGusta": 0.015,
+        "desviacion": 14.1,
+        "division": "coinciden",
+        "barras": [
+          0.4,
+          0,
+          0.5,
+          0.6,
+          3.1,
+          6.7,
+          20.3,
+          28.9,
+          24.8,
+          14.7
+        ]
+      },
+      "resenas": {
+        "n": 0
+      },
+      "popularidad": 14752,
+      "favoritos": 481,
+      "etiquetas": [
+        {
+          "id": "animales",
+          "nombre": "Animales",
+          "voto": 77
+        },
+        {
+          "id": "escuela",
+          "nombre": "Escuela",
+          "voto": 73
+        },
+        {
+          "id": "kuudere",
+          "nombre": "Kuudere",
+          "voto": 68
+        },
+        {
+          "id": "personajes-adolescentes",
+          "nombre": "Personajes adolescentes",
+          "voto": 65
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 173062,
+          "titulo": "Walking Home with You",
+          "tipo": "manga",
+          "votos": 37,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx173062-PH1Lix703MdU.jpg"
+        },
+        {
+          "anilist": 169904,
+          "titulo": "Tsumiki Ogami's Not-So-Ordinary Life",
+          "tipo": "manga",
+          "votos": 20,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx169904-6gvkXMNpq66N.jpg"
+        },
+        {
+          "anilist": 105641,
+          "titulo": "The Girl I Like Forgot Her Glasses",
+          "tipo": "manga",
+          "votos": 19,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx105641-17QzwtypyRxU.jpg"
+        },
+        {
+          "anilist": 180422,
+          "titulo": "Akira Failing in Love",
+          "tipo": "manga",
+          "votos": 11,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx180422-dRRQ8aeSAYum.jpg"
+        },
+        {
+          "anilist": 112981,
+          "titulo": "Kubo Won't Let Me Be Invisible",
+          "tipo": "manga",
+          "votos": 10,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx112981-lI95vW7wk8Nv.jpg"
+        },
+        {
+          "anilist": 137714,
+          "titulo": "Are You a Landmine, Chihara-san?",
+          "tipo": "manga",
+          "votos": 9,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx137714-L9dXZ1uhfVBz.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 725,
+        "leyendo": 8892,
+        "lectores": 0.0071,
+        "dias": 7
+      },
+      "resumen": null,
+      "capitulos": {
+        "ultimo": 39,
+        "tomos": 7
+      },
+      "evaluacion": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
+      "tendencia": {
+        "lectores": 0.0071,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "175946": {
       "puntaje": {
@@ -41386,9 +44040,9 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.0102,
-        "puntaje": null,
-        "dias": 7
+        "lectores": 0.0133,
+        "puntaje": 0,
+        "dias": 9
       }
     },
     "177706": {
@@ -41446,7 +44100,7 @@
         "critican": []
       },
       "popularidad": 29162,
-      "favoritos": 1705,
+      "favoritos": 1708,
       "etiquetas": [
         {
           "id": "bucle-temporal",
@@ -41537,7 +44191,153 @@
       ],
       "revisada": "2026-11-25",
       "tendencia": {
-        "lectores": 0.007,
+        "lectores": 0.0094,
+        "puntaje": 0,
+        "dias": 9
+      }
+    },
+    "179445": {
+      "puntaje": {
+        "valor": 75.9,
+        "votos": 16364,
+        "confianza": "alta",
+        "diferencia": 4.3,
+        "comunidades": 4
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 76,
+          "votos": 5118
+        },
+        "kitsu": {
+          "puntaje": 78.2,
+          "votos": 100
+        },
+        "mangaupdates": {
+          "puntaje": 73.9,
+          "votos": 157
+        },
+        "myanimelist": {
+          "puntaje": 75.9,
+          "votos": 10989
+        }
+      },
+      "distribucion": {
+        "votos": 5118,
+        "gusta": 0.809,
+        "noGusta": 0.065,
+        "desviacion": 18.8,
+        "division": "divididas",
+        "barras": [
+          1.6,
+          0.9,
+          1.7,
+          2.3,
+          4.7,
+          7.9,
+          19.3,
+          26.1,
+          20.7,
+          14.9
+        ]
+      },
+      "resenas": {
+        "n": 0
+      },
+      "popularidad": 34764,
+      "favoritos": 1300,
+      "etiquetas": [
+        {
+          "id": "superpoderes",
+          "nombre": "Superpoderes",
+          "voto": 95
+        },
+        {
+          "id": "fantasia-urbana",
+          "nombre": "Fantasía urbana",
+          "voto": 80
+        },
+        {
+          "id": "guerra",
+          "nombre": "Guerra",
+          "voto": 79
+        },
+        {
+          "id": "demonios",
+          "nombre": "Demonios",
+          "voto": 79
+        },
+        {
+          "id": "mazmorras",
+          "nombre": "Mazmorras",
+          "voto": 79
+        },
+        {
+          "id": "nigromancia",
+          "nombre": "Nigromancia",
+          "voto": 79
+        },
+        {
+          "id": "universidad",
+          "nombre": "Universidad",
+          "voto": 65
+        },
+        {
+          "id": "magia",
+          "nombre": "Magia",
+          "voto": 60
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 137280,
+          "titulo": "I’m the Max-Level Newbie",
+          "tipo": "manhwa",
+          "votos": 7,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx137280-juUL79K7f9s7.png"
+        },
+        {
+          "anilist": 119257,
+          "titulo": "Omniscient Reader",
+          "tipo": "manhwa",
+          "votos": 5,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx119257-Pi21aq3ey9GG.jpg"
+        },
+        {
+          "anilist": 144957,
+          "titulo": "The World After the Fall",
+          "tipo": "manhwa",
+          "votos": 4,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx144957-h0qIwRwxOEdg.jpg"
+        },
+        {
+          "anilist": 110462,
+          "titulo": "Tomb Raider King",
+          "tipo": "manhwa",
+          "votos": 3,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx110462-okQFIoSFvb4L.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 2190,
+        "leyendo": 21676,
+        "lectores": 0.0046,
+        "dias": 7
+      },
+      "resumen": null,
+      "capitulos": {
+        "ultimo": 74,
+        "tomos": null
+      },
+      "evaluacion": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
+      "tendencia": {
+        "lectores": 0.0046,
         "puntaje": null,
         "dias": 7
       }
@@ -41701,9 +44501,9 @@
     "180752": {
       "puntaje": {
         "valor": 79,
-        "votos": 16077,
+        "votos": 16118,
         "confianza": "alta",
-        "diferencia": 2.8,
+        "diferencia": 2.7,
         "comunidades": 4
       },
       "fuentes": {
@@ -41713,15 +44513,15 @@
         },
         "kitsu": {
           "puntaje": 78.7,
-          "votos": 182
+          "votos": 183
         },
         "mangaupdates": {
-          "puntaje": 76.3,
-          "votos": 110
+          "puntaje": 76.4,
+          "votos": 112
         },
         "myanimelist": {
           "puntaje": 79.1,
-          "votos": 10370
+          "votos": 10408
         }
       },
       "distribucion": {
@@ -41753,7 +44553,7 @@
         "critican": []
       },
       "popularidad": 31430,
-      "favoritos": 1214,
+      "favoritos": 1215,
       "etiquetas": [
         {
           "id": "magia",
@@ -41806,14 +44606,14 @@
           "anilist": 98263,
           "titulo": "Witch Hat Atelier",
           "tipo": "manga",
-          "votos": 127,
+          "votos": 129,
           "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx98263-kIeaTXrAbGkj.jpg"
         },
         {
           "anilist": 99324,
           "titulo": "Welcome to Demon School! Iruma-kun",
           "tipo": "manga",
-          "votos": 104,
+          "votos": 105,
           "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx99324-huvqo1tmm4pl.jpg"
         },
         {
@@ -41846,29 +44646,35 @@
         }
       ],
       "actividad": {
-        "semana": 1770,
-        "leyendo": 17229,
-        "lectores": 0.0076,
+        "semana": 3231,
+        "leyendo": 17297,
+        "lectores": 0.0073,
         "dias": 7
       },
       "resumen": null,
       "capitulos": {
         "ultimo": 107,
-        "tomos": 10
+        "tomos": 11
       },
+      "evaluacion": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0092,
-        "puntaje": -0.1,
-        "dias": 8
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0073,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "180891": {
       "puntaje": {
         "valor": 82.2,
-        "votos": 9201,
+        "votos": 9244,
         "confianza": "alta",
-        "diferencia": 7.6,
+        "diferencia": 7.9,
         "comunidades": 4
       },
       "fuentes": {
@@ -41877,16 +44683,16 @@
           "votos": 3761
         },
         "kitsu": {
-          "puntaje": 77.1,
+          "puntaje": 76.8,
           "votos": 284
         },
         "mangaupdates": {
           "puntaje": 84.7,
-          "votos": 283
+          "votos": 284
         },
         "myanimelist": {
           "puntaje": 81.8,
-          "votos": 4873
+          "votos": 4915
         }
       },
       "distribucion": {
@@ -41912,7 +44718,7 @@
         "n": 0
       },
       "popularidad": 20874,
-      "favoritos": 841,
+      "favoritos": 845,
       "etiquetas": [
         {
           "id": "artes-marciales",
@@ -41990,22 +44796,28 @@
         }
       ],
       "actividad": {
-        "semana": 4436,
-        "leyendo": 15492,
-        "lectores": 0.0124,
+        "semana": 5133,
+        "leyendo": 15595,
+        "lectores": 0.0144,
         "dias": 7
       },
       "resumen": null,
       "capitulos": {
-        "ultimo": 122,
+        "ultimo": 129,
         "tomos": null
       },
+      "evaluacion": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0179,
-        "puntaje": 0,
-        "dias": 8
-      },
-      "revisada": "2026-11-22"
+        "lectores": 0.0144,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "182066": {
       "puntaje": {
@@ -42142,16 +44954,235 @@
       "tendencia": {
         "lectores": 0.0115,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       },
       "revisada": "2026-11-22"
+    },
+    "182139": {
+      "puntaje": {
+        "valor": 75.7,
+        "votos": 2291,
+        "confianza": "media",
+        "diferencia": 3.6,
+        "comunidades": 4
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 77,
+          "votos": 1016
+        },
+        "kitsu": {
+          "puntaje": 73.4,
+          "votos": 117
+        },
+        "mangaupdates": {
+          "puntaje": 75.7,
+          "votos": 116
+        },
+        "myanimelist": {
+          "puntaje": 74.5,
+          "votos": 1042
+        }
+      },
+      "distribucion": {
+        "votos": 1016,
+        "gusta": 0.812,
+        "noGusta": 0.048,
+        "desviacion": 17.8,
+        "division": "divididas",
+        "barras": [
+          1.5,
+          0.1,
+          1,
+          2.3,
+          5.9,
+          8.1,
+          20.2,
+          24.3,
+          21.7,
+          15.1
+        ]
+      },
+      "resenas": {
+        "n": 0
+      },
+      "popularidad": 6672,
+      "favoritos": 136,
+      "etiquetas": [],
+      "recomendaciones": [
+        {
+          "anilist": 155950,
+          "titulo": "Auto Hunting With My Clones",
+          "tipo": "manhwa",
+          "votos": 12,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx155950-NlCbjhoUWUrd.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 1308,
+        "leyendo": 5096,
+        "lectores": 0.0121,
+        "dias": 7
+      },
+      "resumen": null,
+      "capitulos": {
+        "ultimo": 107,
+        "tomos": null
+      },
+      "evaluacion": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
+      "tendencia": {
+        "lectores": 0.0121,
+        "puntaje": null,
+        "dias": 7
+      }
+    },
+    "183285": {
+      "puntaje": {
+        "valor": 76.2,
+        "votos": 3396,
+        "confianza": "media",
+        "diferencia": 3.2,
+        "comunidades": 4
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 77,
+          "votos": 1531
+        },
+        "kitsu": {
+          "puntaje": 78.3,
+          "votos": 123
+        },
+        "mangaupdates": {
+          "puntaje": 76.1,
+          "votos": 138
+        },
+        "myanimelist": {
+          "puntaje": 75.1,
+          "votos": 1604
+        }
+      },
+      "distribucion": {
+        "votos": 1531,
+        "gusta": 0.842,
+        "noGusta": 0.042,
+        "desviacion": 16.9,
+        "division": "variadas",
+        "barras": [
+          1.2,
+          0.3,
+          1.2,
+          1.5,
+          4.7,
+          6.9,
+          19,
+          29,
+          22.9,
+          13.3
+        ]
+      },
+      "resenas": {
+        "n": 0
+      },
+      "popularidad": 9568,
+      "favoritos": 207,
+      "etiquetas": [
+        {
+          "id": "artes-marciales",
+          "nombre": "Artes marciales",
+          "voto": 79
+        },
+        {
+          "id": "espadas",
+          "nombre": "Espadas",
+          "voto": 66
+        },
+        {
+          "id": "wuxia",
+          "nombre": "Wuxia",
+          "voto": 66
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 180891,
+          "titulo": "Absolute Regression",
+          "tipo": "manhwa",
+          "votos": 13,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx180891-ZBbyOWSYI41R.jpg"
+        },
+        {
+          "anilist": 175946,
+          "titulo": "Myst, Might, Mayhem",
+          "tipo": "manhwa",
+          "votos": 10,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx175946-2JKP3rRr3LMa.jpg"
+        },
+        {
+          "anilist": 120980,
+          "titulo": "Nano Machine",
+          "tipo": "manhwa",
+          "votos": 7,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx120980-RZ9WLd0o9hyo.jpg"
+        },
+        {
+          "anilist": 164222,
+          "titulo": "Chronicles of the Demon Faction",
+          "tipo": "manhwa",
+          "votos": 7,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx164222-9wzDZENmjYtc.jpg"
+        },
+        {
+          "anilist": 169148,
+          "titulo": "Hwangjeui Geom",
+          "tipo": "manhwa",
+          "votos": 3,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx169148-0B0rQSddFhe4.jpg"
+        },
+        {
+          "anilist": 188216,
+          "titulo": "Regression of the Yong Clan Heir",
+          "tipo": "manhwa",
+          "votos": 3,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx188216-mTtOB8nOl1iO.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 1117,
+        "leyendo": 6710,
+        "lectores": 0.0109,
+        "dias": 7
+      },
+      "resumen": null,
+      "capitulos": {
+        "ultimo": 119,
+        "tomos": null
+      },
+      "evaluacion": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
+      "tendencia": {
+        "lectores": 0.0109,
+        "puntaje": null,
+        "dias": 7
+      }
     },
     "183376": {
       "puntaje": {
         "valor": 77,
-        "votos": 3638,
+        "votos": 3646,
         "confianza": "media",
-        "diferencia": 3.3,
+        "diferencia": 3.6,
         "comunidades": 4
       },
       "fuentes": {
@@ -42160,8 +45191,8 @@
           "votos": 1654
         },
         "kitsu": {
-          "puntaje": 74.7,
-          "votos": 143
+          "puntaje": 74.4,
+          "votos": 144
         },
         "mangaupdates": {
           "puntaje": 74.8,
@@ -42169,7 +45200,7 @@
         },
         "myanimelist": {
           "puntaje": 76.4,
-          "votos": 1681
+          "votos": 1688
         }
       },
       "distribucion": {
@@ -42268,9 +45299,9 @@
         }
       ],
       "actividad": {
-        "semana": 2430,
-        "leyendo": 7536,
-        "lectores": 0.0103,
+        "semana": 2162,
+        "leyendo": 7562,
+        "lectores": 0.011,
         "dias": 7
       },
       "resumen": null,
@@ -42284,9 +45315,9 @@
         0,
         0
       ],
-      "revisada": "2026-11-24",
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0103,
+        "lectores": 0.011,
         "puntaje": null,
         "dias": 7
       }
@@ -42490,7 +45521,7 @@
         "n": 0
       },
       "popularidad": 21132,
-      "favoritos": 1473,
+      "favoritos": 1476,
       "etiquetas": [
         {
           "id": "personajes-adultos",
@@ -42593,7 +45624,7 @@
       "tendencia": {
         "lectores": 0.0099,
         "puntaje": 0,
-        "dias": 8
+        "dias": 9
       }
     },
     "193817": {
@@ -42744,7 +45775,7 @@
     "194523": {
       "puntaje": {
         "valor": 74.9,
-        "votos": 2465,
+        "votos": 2468,
         "confianza": "media",
         "diferencia": 2.1,
         "comunidades": 4
@@ -42755,16 +45786,16 @@
           "votos": 1155
         },
         "kitsu": {
-          "puntaje": 74.6,
+          "puntaje": 74.1,
           "votos": 109
         },
         "mangaupdates": {
-          "puntaje": 71.3,
+          "puntaje": 70.5,
           "votos": 96
         },
         "myanimelist": {
           "puntaje": 73.9,
-          "votos": 1105
+          "votos": 1108
         }
       },
       "distribucion": {
@@ -42790,7 +45821,7 @@
         "n": 0
       },
       "popularidad": 7819,
-      "favoritos": 140,
+      "favoritos": 141,
       "etiquetas": [],
       "recomendaciones": [
         {
@@ -42830,14 +45861,14 @@
         }
       ],
       "actividad": {
-        "semana": 1659,
-        "leyendo": 5838,
-        "lectores": 0.012,
+        "semana": 1775,
+        "leyendo": 5871,
+        "lectores": 0.0141,
         "dias": 7
       },
       "resumen": null,
       "capitulos": {
-        "ultimo": 78,
+        "ultimo": 79,
         "tomos": null
       },
       "evaluacion": [
@@ -42846,9 +45877,9 @@
         0,
         0
       ],
-      "revisada": "2026-11-23",
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.012,
+        "lectores": 0.0141,
         "puntaje": null,
         "dias": 7
       }
@@ -42946,10 +45977,10 @@
     },
     "199496": {
       "puntaje": {
-        "valor": 78.7,
-        "votos": 1915,
+        "valor": 78.5,
+        "votos": 1931,
         "confianza": "media",
-        "diferencia": 0.9,
+        "diferencia": 1.1,
         "comunidades": 4
       },
       "fuentes": {
@@ -42959,15 +45990,15 @@
         },
         "kitsu": {
           "puntaje": 0,
-          "votos": 42
+          "votos": 43
         },
         "mangaupdates": {
           "puntaje": 77.4,
           "votos": 50
         },
         "myanimelist": {
-          "puntaje": 80.1,
-          "votos": 1081
+          "puntaje": 79.9,
+          "votos": 1096
         }
       },
       "distribucion": {
@@ -43032,9 +46063,9 @@
         }
       ],
       "actividad": {
-        "semana": 550,
-        "leyendo": 3665,
-        "lectores": 0.0243,
+        "semana": 718,
+        "leyendo": 3703,
+        "lectores": 0.0237,
         "dias": 7
       },
       "resumen": null,
@@ -43048,9 +46079,9 @@
         0,
         0
       ],
-      "revisada": "2026-11-24",
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0243,
+        "lectores": 0.0237,
         "puntaje": null,
         "dias": 7
       }
@@ -43058,7 +46089,7 @@
     "201855": {
       "puntaje": {
         "valor": 78.8,
-        "votos": 2623,
+        "votos": 2626,
         "confianza": "media",
         "diferencia": 1,
         "comunidades": 4
@@ -43078,7 +46109,7 @@
         },
         "myanimelist": {
           "puntaje": 80,
-          "votos": 1704
+          "votos": 1707
         }
       },
       "distribucion": {
@@ -43104,7 +46135,7 @@
         "n": 0
       },
       "popularidad": 5061,
-      "favoritos": 120,
+      "favoritos": 121,
       "etiquetas": [
         {
           "id": "rural",
@@ -43172,9 +46203,9 @@
         }
       ],
       "actividad": {
-        "semana": 1066,
-        "leyendo": 3332,
-        "lectores": 0.0184,
+        "semana": 1182,
+        "leyendo": 3337,
+        "lectores": 0.0163,
         "dias": 7
       },
       "resumen": null,
@@ -43188,16 +46219,16 @@
         0,
         0
       ],
-      "revisada": "2026-11-25",
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0184,
+        "lectores": 0.0163,
         "puntaje": null,
         "dias": 7
       }
     },
     "202718": {
       "puntaje": {
-        "valor": 72.2,
+        "valor": 72.1,
         "votos": 1472,
         "confianza": "media",
         "diferencia": 1.9,
@@ -43279,6 +46310,96 @@
         "dias": 7
       }
     },
+    "203800": {
+      "puntaje": {
+        "valor": 71.5,
+        "votos": 1600,
+        "confianza": "media",
+        "diferencia": 1.2,
+        "comunidades": 4
+      },
+      "fuentes": {
+        "anilist": {
+          "puntaje": 72,
+          "votos": 719
+        },
+        "kitsu": {
+          "puntaje": 72.3,
+          "votos": 61
+        },
+        "mangaupdates": {
+          "puntaje": 67.5,
+          "votos": 58
+        },
+        "myanimelist": {
+          "puntaje": 70.8,
+          "votos": 762
+        }
+      },
+      "distribucion": {
+        "votos": 719,
+        "gusta": 0.75,
+        "noGusta": 0.063,
+        "desviacion": 17.3,
+        "division": "divididas",
+        "barras": [
+          0.8,
+          0.7,
+          1.9,
+          2.8,
+          6,
+          12.8,
+          25.6,
+          23.6,
+          16.7,
+          9
+        ]
+      },
+      "resenas": {
+        "n": 0
+      },
+      "popularidad": 5378,
+      "favoritos": 84,
+      "etiquetas": [
+        {
+          "id": "dragones",
+          "nombre": "Dragones",
+          "voto": 80
+        }
+      ],
+      "recomendaciones": [
+        {
+          "anilist": 122110,
+          "titulo": "Appaga Nomu Kangham",
+          "tipo": "manhwa",
+          "votos": 4,
+          "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx122110-o0Iby97jrARX.jpg"
+        }
+      ],
+      "actividad": {
+        "semana": 925,
+        "leyendo": 3978,
+        "lectores": 0.0129,
+        "dias": 7
+      },
+      "resumen": null,
+      "capitulos": {
+        "ultimo": 70,
+        "tomos": null
+      },
+      "evaluacion": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "revisada": "2026-11-26",
+      "tendencia": {
+        "lectores": 0.0129,
+        "puntaje": null,
+        "dias": 7
+      }
+    },
     "203958": {
       "puntaje": {
         "valor": 72.7,
@@ -43327,8 +46448,8 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 5064,
-      "favoritos": 96,
+      "popularidad": 5078,
+      "favoritos": 95,
       "etiquetas": [],
       "recomendaciones": [
         {
@@ -43380,7 +46501,7 @@
     "204974": {
       "puntaje": {
         "valor": 76.1,
-        "votos": 2037,
+        "votos": 2041,
         "confianza": "media",
         "diferencia": 4.2,
         "comunidades": 4
@@ -43391,7 +46512,7 @@
           "votos": 963
         },
         "kitsu": {
-          "puntaje": 74.6,
+          "puntaje": 73.9,
           "votos": 80
         },
         "mangaupdates": {
@@ -43400,7 +46521,7 @@
         },
         "myanimelist": {
           "puntaje": 74.3,
-          "votos": 893
+          "votos": 897
         }
       },
       "distribucion": {
@@ -43425,7 +46546,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 7568,
+      "popularidad": 7598,
       "favoritos": 176,
       "etiquetas": [
         {
@@ -43475,8 +46596,8 @@
         }
       ],
       "actividad": {
-        "semana": 2243,
-        "leyendo": 5508,
+        "semana": 2177,
+        "leyendo": 5527,
         "lectores": 0.023,
         "dias": 7
       },
@@ -43491,7 +46612,7 @@
         0,
         0
       ],
-      "revisada": "2026-11-25",
+      "revisada": "2026-11-26",
       "tendencia": {
         "lectores": 0.023,
         "puntaje": null,
@@ -43546,8 +46667,8 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 7147,
-      "favoritos": 108,
+      "popularidad": 7166,
+      "favoritos": 109,
       "etiquetas": [],
       "recomendaciones": [
         {
@@ -43651,7 +46772,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 5898,
+      "popularidad": 5930,
       "favoritos": 92,
       "etiquetas": [
         {
@@ -43752,7 +46873,7 @@
     "214315": {
       "puntaje": {
         "valor": 75.5,
-        "votos": 691,
+        "votos": 694,
         "confianza": "baja",
         "diferencia": 4,
         "comunidades": 4
@@ -43760,7 +46881,7 @@
       "fuentes": {
         "anilist": {
           "puntaje": 81,
-          "votos": 358
+          "votos": 361
         },
         "kitsu": {
           "puntaje": 0,
@@ -43776,8 +46897,8 @@
         }
       },
       "distribucion": {
-        "votos": 358,
-        "gusta": 0.899,
+        "votos": 361,
+        "gusta": 0.9,
         "noGusta": 0.011,
         "desviacion": 13.7,
         "division": "coinciden",
@@ -43787,17 +46908,17 @@
           0.6,
           0.3,
           2.2,
-          6.7,
-          17,
-          21.8,
-          35.8,
-          15.4
+          6.6,
+          17.2,
+          21.3,
+          36.3,
+          15.2
         ]
       },
       "resenas": {
         "n": 0
       },
-      "popularidad": 3065,
+      "popularidad": 3087,
       "favoritos": 45,
       "etiquetas": [],
       "recomendaciones": [
@@ -43835,8 +46956,8 @@
     },
     "214453": {
       "puntaje": {
-        "valor": 72.7,
-        "votos": 1395,
+        "valor": 72.6,
+        "votos": 1410,
         "confianza": "media",
         "diferencia": 1.5,
         "comunidades": 4
@@ -43851,12 +46972,12 @@
           "votos": 48
         },
         "mangaupdates": {
-          "puntaje": 70.3,
-          "votos": 83
+          "puntaje": 69.6,
+          "votos": 85
         },
         "myanimelist": {
           "puntaje": 74.5,
-          "votos": 626
+          "votos": 639
         }
       },
       "distribucion": {
@@ -43881,7 +47002,7 @@
       "resenas": {
         "n": 0
       },
-      "popularidad": 5880,
+      "popularidad": 5894,
       "favoritos": 62,
       "etiquetas": [
         {
@@ -43914,14 +47035,14 @@
         }
       ],
       "actividad": {
-        "semana": 1555,
-        "leyendo": 4642,
-        "lectores": 0.0385,
+        "semana": 1897,
+        "leyendo": 4696,
+        "lectores": 0.0296,
         "dias": 7
       },
       "resumen": null,
       "capitulos": {
-        "ultimo": 26,
+        "ultimo": 25,
         "tomos": null
       },
       "evaluacion": [
@@ -43930,9 +47051,9 @@
         0,
         0
       ],
-      "revisada": "2026-11-23",
+      "revisada": "2026-11-26",
       "tendencia": {
-        "lectores": 0.0385,
+        "lectores": 0.0296,
         "puntaje": null,
         "dias": 7
       }

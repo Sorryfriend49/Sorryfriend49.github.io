@@ -1,6 +1,6 @@
 {
   "esquema": 1,
-  "actualizado": "2026-11-25",
+  "actualizado": "2026-11-26",
   "fuente": "AniList (https://anilist.co): títulos, géneros, fechas, portadas, puntaje, popularidad, dónde leer, orden de lectura y anime. Este archivo se genera solo a partir de catalogo.json (scripts/catalogo.mjs): para agregar o quitar obras, edita catalogo.json.",
   "obras": [
     {
@@ -3633,7 +3633,7 @@
       "tomos": null,
       "autores": [
         {
-          "nombre": "Hanjung Worya",
+          "nombre": "Hanjungwollya",
           "rol": "historia original",
           "nativo": "한중월야"
         },
@@ -21420,7 +21420,7 @@
       "tomos": null,
       "autores": [
         {
-          "nombre": "Hanjung Worya",
+          "nombre": "Hanjungwollya",
           "rol": "historia original",
           "nativo": "한중월야"
         },
@@ -23249,7 +23249,7 @@
       "tomos": null,
       "autores": [
         {
-          "nombre": "Hanjung Worya",
+          "nombre": "Hanjungwollya",
           "rol": "historia original",
           "nativo": "한중월야"
         },
@@ -23823,7 +23823,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 76,
-          "popularidad": 5880
+          "popularidad": 5894
         }
       },
       "agregada": "2026-11-23"
@@ -25405,7 +25405,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 76,
-          "popularidad": 5898
+          "popularidad": 5930
         }
       },
       "agregada": "2026-11-24"
@@ -27268,7 +27268,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 78,
-          "popularidad": 7568
+          "popularidad": 7598
         }
       },
       "agregada": "2026-11-25"
@@ -27344,7 +27344,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 81,
-          "popularidad": 3065
+          "popularidad": 3087
         }
       },
       "agregada": "2026-11-25"
@@ -27718,7 +27718,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 74,
-          "popularidad": 7147
+          "popularidad": 7166
         }
       },
       "agregada": "2026-11-25"
@@ -29102,6 +29102,2004 @@
             "sitio": "Prime Video",
             "url": "https://www.primevideo.com/detail/0PXZCO5NGDNH8OWTJIDTEB8IEF/ref=atv_dp_season_select_s1"
           }
+        ]
+      }
+    },
+    {
+      "id": "welcome-to-demon-school-iruma-kun",
+      "titulo": "Welcome to Demon School! Iruma-kun",
+      "titulos": {
+        "romaji": "Mairimashita! Iruma-kun",
+        "ingles": "Welcome to Demon School! Iruma-kun",
+        "nativo": "魔入りました！入間くん"
+      },
+      "sinonimos": [
+        "入间同学入魔了",
+        "Welcome to Demon School, Iruma-kun!",
+        "Iruma w szkole demonów",
+        "อิรุมะคุง พจญในแดนปีศาจ!",
+        "Iruma giá đáo!",
+        "Iruma-kun en el instituto demoníaco",
+        "Iruma à l’école des démons",
+        "入間同學入魔了！ "
+      ],
+      "tipo": "manga",
+      "estado": "en-publicacion",
+      "inicio": "2017-03-02",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Osamu Nishi",
+          "rol": "historia y arte",
+          "nativo": "西修"
+        }
+      ],
+      "generos": [
+        "comedia",
+        "fantasia"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx99324-huvqo1tmm4pl.jpg",
+      "color": "#5dbbe4",
+      "ids": {
+        "anilist": 99324,
+        "mal": 104241
+      },
+      "enlaces": [
+        {
+          "sitio": "Kodansha USA",
+          "url": "https://kodansha.us/series/welcome-to-demon-school-iruma-kun/",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Champion Cross",
+          "url": "https://championcross.jp/series/8016373c7a6b3",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 84,
+          "popularidad": 39005
+        }
+      },
+      "agregada": "2026-11-26",
+      "lectura": {
+        "relacionadas": [
+          {
+            "anilist": 125537,
+            "titulo": "Houkago no! Iruma-kun",
+            "tipo": "manga",
+            "anio": 2020,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx125537-yIqAHIh06l2Q.jpg",
+            "relacion": "historia paralela"
+          },
+          {
+            "anilist": 130735,
+            "titulo": "Welcome to Demon School! Iruma-kun Devilish Tales : Kalego’s Story",
+            "tipo": "manga",
+            "anio": 2021,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx130735-IeRjtVRCXVTu.jpg",
+            "relacion": "historia paralela"
+          },
+          {
+            "anilist": 116339,
+            "titulo": "Makai no Shuyaku wa Wareware da!",
+            "tipo": "manga",
+            "anio": 2020,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx116339-qlH4kJaTLkKD.jpg",
+            "relacion": "spin-off"
+          },
+          {
+            "anilist": 167422,
+            "titulo": "Welcome to Demon School! Iruma-kun: IruMafia Edition",
+            "tipo": "manga",
+            "anio": 2023,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx167422-ftim3QXOI7by.jpg",
+            "relacion": "spin-off"
+          }
+        ],
+        "masRelacionadas": 1
+      },
+      "anime": {
+        "obras": [
+          {
+            "anilist": 107693,
+            "titulo": "Welcome to Demon School! Iruma-kun",
+            "formato": "serie",
+            "anio": 2019,
+            "episodios": 23
+          },
+          {
+            "anilist": 116338,
+            "titulo": "Welcome to Demon School! Iruma-kun Season 2",
+            "formato": "serie",
+            "anio": 2021,
+            "episodios": 21
+          },
+          {
+            "anilist": 139092,
+            "titulo": "Welcome to Demon School! Iruma-kun Season 3",
+            "formato": "serie",
+            "anio": 2022,
+            "episodios": 21
+          },
+          {
+            "anilist": 184492,
+            "titulo": "Welcome to Demon School! Iruma-kun Season 4",
+            "formato": "serie",
+            "anio": 2026,
+            "episodios": 24
+          },
+          {
+            "anilist": 217427,
+            "titulo": "Mairimashita! Iruma-kun Movie",
+            "formato": "película",
+            "anio": 2027,
+            "estado": "por estrenar"
+          }
+        ],
+        "estrenado": true,
+        "ver": [
+          {
+            "sitio": "Crunchyroll",
+            "url": "https://www.crunchyroll.com/welcome-to-demon-school-iruma-kun"
+          },
+          {
+            "sitio": "Netflix",
+            "url": "https://www.netflix.com/title/81194192"
+          }
+        ]
+      }
+    },
+    {
+      "id": "solo-leveling-ragnarok",
+      "titulo": "Solo Leveling: Ragnarok",
+      "titulos": {
+        "romaji": "Na Honjaman Level Up: Ragnarok",
+        "ingles": "Solo Leveling: Ragnarok",
+        "nativo": "나 혼자만 레벨업 : 라그나로크"
+      },
+      "sinonimos": [
+        "俺だけレベルアップな件〜ラグナロク〜",
+        "我独自升级 : 诸神黄昏"
+      ],
+      "tipo": "manhwa",
+      "estado": "en-publicacion",
+      "inicio": "2024-07-31",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Daul",
+          "rol": "historia original",
+          "nativo": "다울"
+        },
+        {
+          "nombre": "Do Dang",
+          "rol": "historia",
+          "nativo": "당도"
+        },
+        {
+          "nombre": "JIN",
+          "rol": "arte"
+        },
+        {
+          "nombre": "REDICE",
+          "rol": "arte",
+          "nativo": "레드아이스"
+        }
+      ],
+      "generos": [
+        "accion",
+        "aventura",
+        "fantasia"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx179445-ho0nb7baJ1a5.jpg",
+      "color": "#5d86f1",
+      "ids": {
+        "anilist": 179445,
+        "mal": 172429
+      },
+      "enlaces": [
+        {
+          "sitio": "Tapas",
+          "url": "https://tapas.io/series/solo-leveling-ragnarok/info",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Manta",
+          "url": "https://manta.net/en/series/solo-leveling-ragnarok?seriesId=4007",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Webnovel",
+          "url": "https://www.webnovel.com/comic/solo-leveling-ragnarok_34123390308141901",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Tappytoon",
+          "url": "https://www.tappytoon.com/en/book/solo-leveling-ragnarok",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Yen Press",
+          "url": "https://yenpress.com/series/solo-leveling-ragnarok-comic",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Kakao Webtoon",
+          "url": "https://webtoon.kakao.com/content/나-혼자만-레벨업-라그나로크/4172",
+          "idioma": "ko",
+          "tipo": "original"
+        },
+        {
+          "sitio": "KakaoPage",
+          "url": "https://page.kakao.com/content/64612703",
+          "idioma": "ko",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 76,
+          "popularidad": 34764
+        }
+      },
+      "agregada": "2026-11-26",
+      "lectura": {
+        "orden": [
+          {
+            "anilist": 105398,
+            "titulo": "Solo Leveling",
+            "tipo": "manhwa",
+            "anio": 2018,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx105398-b673Vt5ZSuz3.jpg"
+          },
+          {
+            "anilist": 179445
+          }
+        ]
+      }
+    },
+    {
+      "id": "learning-to-love-my-cat-like-classmate",
+      "titulo": "Learning to Love My Cat-like Classmate",
+      "titulos": {
+        "romaji": "Tonari no Neko to Koi Shirazu",
+        "ingles": "Learning to Love My Cat-like Classmate",
+        "nativo": "となりの猫と恋知らず"
+      },
+      "sinonimos": [
+        "The Feline Neighbor and the Unversed-in-Love",
+        "Une fille si féline",
+        "옆자리 고양이와 순수남",
+        "Tonaneko",
+        "Tonarino Nekoto Koishirazu",
+        "不識鄰座貓咪和戀愛情感",
+        "Tonaneko - Meine katzenhafte Mitschülerin",
+        "The Deskmate Cat and the Love Novice"
+      ],
+      "tipo": "manga",
+      "estado": "en-publicacion",
+      "inicio": "2023-11-21",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Akinoko",
+          "rol": "historia y arte",
+          "nativo": "あきのこ"
+        }
+      ],
+      "generos": [
+        "comedia",
+        "romance",
+        "recuentos-de-la-vida"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx174790-7wZ1sDAhcofd.jpg",
+      "color": "#c9e4f1",
+      "ids": {
+        "anilist": 174790,
+        "mal": 165770
+      },
+      "enlaces": [
+        {
+          "sitio": "Manga UP!",
+          "url": "https://global.manga-up.com/manga/580",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Nico Nico Seiga",
+          "url": "https://manga.nicovideo.jp/comic/73191",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Manga UP!",
+          "url": "https://www.manga-up.com/titles/1269",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 79,
+          "popularidad": 14752
+        }
+      },
+      "agregada": "2026-11-26"
+    },
+    {
+      "id": "absolute-reign",
+      "titulo": "Absolute Reign",
+      "titulos": {
+        "romaji": "Jeoldaegullim",
+        "ingles": "Absolute Reign",
+        "nativo": "절대군림"
+      },
+      "sinonimos": [
+        "Absolute Dominion",
+        "绝代君临",
+        "絕代君臨",
+        "天下君臨～江湖を覇せし者～",
+        "เซียนพิชิตหล้า"
+      ],
+      "tipo": "manhwa",
+      "estado": "en-publicacion",
+      "inicio": "2024-09-27",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Yeong-Hun Jang",
+          "rol": "historia original",
+          "nativo": "장영훈"
+        },
+        {
+          "nombre": "Si-Dae Park",
+          "rol": "historia y arte",
+          "nativo": "박시대"
+        }
+      ],
+      "generos": [
+        "accion",
+        "fantasia"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx183285-ZfemXvC1AHGk.jpg",
+      "color": "#f15d50",
+      "ids": {
+        "anilist": 183285,
+        "mal": 174691
+      },
+      "enlaces": [
+        {
+          "sitio": "WEBTOON",
+          "url": "https://www.webtoons.com/en/action/absolute-reign/list?title_no=7366",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Naver Webtoon",
+          "url": "https://comic.naver.com/webtoon/list?titleId=832677",
+          "idioma": "ko",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Naver Series",
+          "url": "https://series.naver.com/comic/detail.series?productNo=11652534",
+          "idioma": "ko",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 77,
+          "popularidad": 9568
+        }
+      },
+      "agregada": "2026-11-26"
+    },
+    {
+      "id": "my-gyaru-wifes-secrets",
+      "titulo": "My Gyaru Wife's Secrets",
+      "titulos": {
+        "romaji": "Gal Yome no Himitsu",
+        "ingles": "My Gyaru Wife's Secrets",
+        "nativo": "ギャル嫁の秘密"
+      },
+      "sinonimos": [
+        "Personne ne connaît ma femme comme moi"
+      ],
+      "tipo": "manga",
+      "estado": "en-publicacion",
+      "inicio": "2023-09-26",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Kudu",
+          "rol": "historia y arte",
+          "nativo": "クドゥー"
+        }
+      ],
+      "generos": [
+        "comedia",
+        "romance"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx169734-vNvdPkieV0Xi.jpg",
+      "color": "#e41a5d",
+      "ids": {
+        "anilist": 169734,
+        "mal": 163267
+      },
+      "enlaces": [
+        {
+          "sitio": "Ganma!",
+          "url": "https://ganma.jp/galyome",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Nico Nico Seiga",
+          "url": "https://manga.nicovideo.jp/comic/69068",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 69,
+          "popularidad": 11354
+        }
+      },
+      "agregada": "2026-11-26"
+    },
+    {
+      "id": "my-avatars-path-to-greatness",
+      "titulo": "My Avatars’ Path to Greatness",
+      "titulos": {
+        "romaji": "Nae Bunsini Geomuri Doeeoganda",
+        "ingles": "My Avatars’ Path to Greatness",
+        "nativo": "내 분신이 거물이 되어간다"
+      },
+      "sinonimos": [
+        "All My Alter Egos Are Tycoons",
+        "My Alter Ego's Path to Greatness",
+        "Sovereign of the Infinite Clones",
+        "分身封神中"
+      ],
+      "tipo": "manhwa",
+      "estado": "en-publicacion",
+      "inicio": "2024-09-24",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Silheom Sample",
+          "rol": "historia original",
+          "nativo": "실험샘플"
+        },
+        {
+          "nombre": "LICO",
+          "rol": "historia"
+        },
+        {
+          "nombre": "Hansa",
+          "rol": "arte",
+          "nativo": "한사"
+        }
+      ],
+      "generos": [
+        "accion",
+        "aventura",
+        "fantasia"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx182139-2skHo9YMWUk0.jpg",
+      "color": "#5daef1",
+      "ids": {
+        "anilist": 182139,
+        "mal": 174687
+      },
+      "enlaces": [
+        {
+          "sitio": "WEBTOON",
+          "url": "https://www.webtoons.com/en/fantasy/my-avatars-path-to-greatness/list?title_no=7111",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Naver Webtoon",
+          "url": "https://comic.naver.com/webtoon/list?titleId=832667",
+          "idioma": "ko",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Naver Series",
+          "url": "https://series.naver.com/comic/detail.series?productNo=11649634",
+          "idioma": "ko",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 77,
+          "popularidad": 6672
+        }
+      },
+      "agregada": "2026-11-26"
+    },
+    {
+      "id": "i-made-friends-with-the-second-prettiest-girl-in-my-class",
+      "titulo": "I Made Friends with the Second Prettiest Girl in My Class",
+      "titulos": {
+        "romaji": "Class de 2-banme ni Kawaii Onnanoko to Tomodachi ni Natta",
+        "ingles": "I Made Friends with the Second Prettiest Girl in My Class",
+        "nativo": "クラスで２番目に可愛い女の子と友だちになった"
+      },
+      "sinonimos": [
+        "I Became Friends with the Second Cutest Girl in My Class",
+        "我和班上第二可愛的女生成為朋友"
+      ],
+      "tipo": "manga",
+      "estado": "en-publicacion",
+      "inicio": "2022-07-27",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Takata",
+          "rol": "historia original",
+          "nativo": "たかた"
+        },
+        {
+          "nombre": "Rin Ono",
+          "rol": "historia y arte",
+          "nativo": "尾野凛"
+        }
+      ],
+      "generos": [
+        "comedia",
+        "romance"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx148082-kW0qmds2laKs.jpg",
+      "color": null,
+      "ids": {
+        "anilist": 148082,
+        "mal": 149804
+      },
+      "enlaces": [
+        {
+          "sitio": "Yen Press",
+          "url": "https://yenpress.com/series/i-made-friends-with-the-second-prettiest-girl-in-my-class",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Kadocomi",
+          "url": "https://comic-walker.com/contents/detail/KDCW_MF02203170010000_68",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Pixiv Comic",
+          "url": "https://comic.pixiv.net/works/8612",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Nico Nico Seiga",
+          "url": "https://manga.nicovideo.jp/comic/59139",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 80,
+          "popularidad": 15462
+        }
+      },
+      "agregada": "2026-11-26",
+      "anime": {
+        "obras": [
+          {
+            "anilist": 169580,
+            "titulo": "I Made Friends with the Second Prettiest Girl in My Class",
+            "formato": "serie",
+            "anio": 2026,
+            "episodios": 12
+          }
+        ],
+        "estrenado": true,
+        "ver": [
+          {
+            "sitio": "Crunchyroll",
+            "url": "https://www.crunchyroll.com/series/GT00371673"
+          }
+        ]
+      }
+    },
+    {
+      "id": "villain-to-kill",
+      "titulo": "Villain to Kill",
+      "titulos": {
+        "romaji": "Villain to Kill",
+        "ingles": "Villain to Kill",
+        "nativo": "빌런투킬"
+      },
+      "sinonimos": [
+        "Un villano para matar",
+        "反派绝杀",
+        "反派絕殺"
+      ],
+      "tipo": "manhwa",
+      "estado": "en-publicacion",
+      "inicio": "2021-02-15",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Pyupin",
+          "rol": "historia",
+          "nativo": "퓨핀"
+        },
+        {
+          "nombre": "Eun-Ji",
+          "rol": "arte",
+          "nativo": "은지"
+        }
+      ],
+      "generos": [
+        "accion",
+        "sobrenatural"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b130149-y63hveWF28Sb.jpg",
+      "color": "#950303",
+      "ids": {
+        "anilist": 130149,
+        "mal": 147191
+      },
+      "enlaces": [
+        {
+          "sitio": "WEBTOON",
+          "url": "https://www.webtoons.com/es/action/villain-to-kill/list?title_no=3695",
+          "idioma": "es",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "WEBTOON",
+          "url": "https://www.webtoons.com/en/action/villain-to-kill/list?title_no=2857",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Naver Series",
+          "url": "https://series.naver.com/comic/detail.nhn?productNo=5923894",
+          "idioma": "ko",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Naver Webtoon",
+          "url": "https://comic.naver.com/webtoon/list?titleId=765156",
+          "idioma": "ko",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 74,
+          "popularidad": 23090
+        }
+      },
+      "agregada": "2026-11-26"
+    },
+    {
+      "id": "dragonnap",
+      "titulo": "Dragonnap",
+      "titulos": {
+        "romaji": "Dragon-eul Yugoehada",
+        "ingles": "Dragonnap",
+        "nativo": "드래곤을 유괴하다"
+      },
+      "sinonimos": [
+        "Kidnapped Dragons",
+        "Sequestrando Dragões",
+        "ドラゴンを誘拐する",
+        "誘拐巨龍",
+        "พลพรรคคนลักมังกร"
+      ],
+      "tipo": "manhwa",
+      "estado": "en-publicacion",
+      "inicio": "2025-12-09",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Yuju",
+          "rol": "historia original",
+          "nativo": "유주"
+        },
+        {
+          "nombre": "Jin-Hyeong Choi",
+          "rol": "historia",
+          "nativo": "최진형"
+        },
+        {
+          "nombre": "Juhwangsae",
+          "rol": "arte",
+          "nativo": "주황새"
+        }
+      ],
+      "generos": [
+        "accion",
+        "fantasia"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx203800-i7vFEWkQSUzn.jpg",
+      "color": "#28aef1",
+      "ids": {
+        "anilist": 203800,
+        "mal": 189336
+      },
+      "enlaces": [
+        {
+          "sitio": "Tapas",
+          "url": "https://tapas.io/series/dragonnap/info",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Kakao Webtoon",
+          "url": "https://webtoon.kakao.com/content/드래곤을-유괴하다/4699",
+          "idioma": "ko",
+          "tipo": "original"
+        },
+        {
+          "sitio": "KakaoPage",
+          "url": "https://page.kakao.com/content/68187457",
+          "idioma": "ko",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 72,
+          "popularidad": 5359
+        }
+      },
+      "agregada": "2026-11-26"
+    },
+    {
+      "id": "the-greatest-lady-boss-takizawasan",
+      "titulo": "The Greatest Lady Boss \"Takizawasan\"",
+      "titulos": {
+        "romaji": "Bijin Onna Joushi Takizawa-san",
+        "ingles": "The Greatest Lady Boss \"Takizawasan\"",
+        "nativo": "美人女上司滝沢さん"
+      },
+      "sinonimos": [
+        "Beautiful Female Superior Takizawa-san",
+        "My Beautiful Boss. Takizawa-san"
+      ],
+      "tipo": "manga",
+      "estado": "en-publicacion",
+      "inicio": "2016-08-12",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "YanBARU",
+          "rol": "historia y arte",
+          "nativo": "やんBARU"
+        }
+      ],
+      "generos": [
+        "comedia",
+        "romance",
+        "recuentos-de-la-vida"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx99354-5u1LmbbVDpp2.jpg",
+      "color": "#f1c928",
+      "ids": {
+        "anilist": 99354,
+        "mal": 108520
+      },
+      "enlaces": [
+        {
+          "sitio": "Nico Nico Seiga",
+          "url": "https://manga.nicovideo.jp/comic/22778",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Kadocomi",
+          "url": "https://comic-walker.com/contents/detail/KDCW_FS01000048010000_68/",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 67,
+          "popularidad": 9627
+        }
+      },
+      "agregada": "2026-11-26"
+    },
+    {
+      "id": "food-wars-shokugeki-no-soma",
+      "titulo": "Food Wars!: Shokugeki no Soma",
+      "titulos": {
+        "romaji": "Shokugeki no Souma",
+        "ingles": "Food Wars!: Shokugeki no Soma",
+        "nativo": "食戟のソーマ"
+      },
+      "sinonimos": [
+        "Kulinarne pojedynki"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "2012-11-26",
+      "fin": "2019-06-17",
+      "capitulos": 324,
+      "tomos": 36,
+      "autores": [
+        {
+          "nombre": "Yuki Morisaki",
+          "rol": "historia",
+          "nativo": "森崎友紀"
+        },
+        {
+          "nombre": "Yuuto Tsukuda",
+          "rol": "historia",
+          "nativo": "附田祐斗"
+        },
+        {
+          "nombre": "Shun Saeki",
+          "rol": "arte",
+          "nativo": "佐伯俊"
+        }
+      ],
+      "generos": [
+        "comedia",
+        "drama"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx75757-5H35Qy1zGRHI.png",
+      "color": "#f1a150",
+      "ids": {
+        "anilist": 75757,
+        "mal": 45757
+      },
+      "enlaces": [
+        {
+          "sitio": "MANGA Plus",
+          "url": "https://mangaplus.shueisha.co.jp/titles/100013",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/shonenjump/chapters/food-wars",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "MANGA MILLION",
+          "url": "https://mangamillion.shueisha.co.jp/en/title/1027",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/food-wars",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Shonen Jump",
+          "url": "https://www.shonenjump.com/j/rensai/soma.html",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 74,
+          "popularidad": 48353
+        }
+      },
+      "agregada": "2026-11-26",
+      "lectura": {
+        "orden": [
+          {
+            "anilist": 75757
+          },
+          {
+            "anilist": 110338,
+            "titulo": "Food Wars!: Shokugeki no Soma ~Le Dessert~",
+            "tipo": "manga",
+            "anio": 2019,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx110338-wrElOiEUMuga.jpg"
+          }
+        ],
+        "relacionadas": [
+          {
+            "anilist": 86160,
+            "titulo": "Food Wars!: L'etoile",
+            "tipo": "manga",
+            "anio": 2015,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx86160-6yu4P2EfXBCy.jpg",
+            "relacion": "spin-off"
+          }
+        ]
+      },
+      "anime": {
+        "obras": [
+          {
+            "anilist": 20923,
+            "titulo": "Food Wars!",
+            "formato": "serie",
+            "anio": 2015,
+            "episodios": 24
+          },
+          {
+            "anilist": 21518,
+            "titulo": "Food Wars! The Second Plate",
+            "formato": "serie",
+            "anio": 2016,
+            "episodios": 13
+          },
+          {
+            "anilist": 99255,
+            "titulo": "Food Wars! The Third Plate",
+            "formato": "serie",
+            "anio": 2017,
+            "episodios": 12
+          },
+          {
+            "anilist": 100773,
+            "titulo": "Food Wars! The Third Plate: Totsuki Train Arc",
+            "formato": "serie",
+            "anio": 2018,
+            "episodios": 12
+          },
+          {
+            "anilist": 109963,
+            "titulo": "Food Wars! The Fourth Plate",
+            "formato": "serie",
+            "anio": 2019,
+            "episodios": 12
+          }
+        ],
+        "estrenado": true,
+        "mas": 4,
+        "ver": [
+          {
+            "sitio": "Crunchyroll",
+            "url": "https://www.crunchyroll.com/food-wars-shokugeki-no-soma"
+          },
+          {
+            "sitio": "Netflix",
+            "url": "https://www.netflix.com/title/80182054"
+          },
+          {
+            "sitio": "Prime Video",
+            "url": "https://www.amazon.com/Sacred-Mother-of-Kyosuke/dp/B073GKRFC2/ref=sr_1_1?dchild=1&keywords=food+wars&qid=1617825503&s=instant-video&sr=1-1&tag=harshabalani-20"
+          },
+          {
+            "sitio": "HIDIVE",
+            "url": "https://www.hidive.com/tv/food-wars"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mushoku-tensei-jobless-reincarnation",
+      "titulo": "Mushoku Tensei: Jobless Reincarnation",
+      "titulos": {
+        "romaji": "Mushoku Tensei: Isekai Ittara Honki Dasu",
+        "ingles": "Mushoku Tensei: Jobless Reincarnation",
+        "nativo": "無職転生 ～異世界行ったら本気だす～"
+      },
+      "sinonimos": [
+        "Mushoku Tensei: Uma segunda chance"
+      ],
+      "tipo": "manga",
+      "estado": "en-publicacion",
+      "inicio": "2014-05-02",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Rifujin na Magonote",
+          "rol": "historia original",
+          "nativo": "理不尽な孫の手"
+        },
+        {
+          "nombre": "Yuka Fujikawa",
+          "rol": "historia y arte",
+          "nativo": "藤川祐華"
+        }
+      ],
+      "generos": [
+        "aventura",
+        "drama",
+        "fantasia"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85564-egXRASF0x9B9.jpg",
+      "color": "#e4ae0d",
+      "ids": {
+        "anilist": 85564,
+        "mal": 70259
+      },
+      "enlaces": [
+        {
+          "sitio": "Seven Seas Entertainment",
+          "url": "https://sevenseasentertainment.com/series/mushoku-tensei-jobless-reincarnation/",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Kadocomi",
+          "url": "https://comic-walker.com/contents/detail/KDCW_MF01000009010000_68/",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Pixiv Comic",
+          "url": "https://comic.pixiv.net/works/1239",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 78,
+          "popularidad": 48259
+        }
+      },
+      "agregada": "2026-11-26",
+      "lectura": {
+        "relacionadas": [
+          {
+            "anilist": 142989,
+            "titulo": "Mushoku Tensei: Isekai Ittara Honki Dasu - Shitsui no Majutsushi-hen",
+            "tipo": "manga",
+            "anio": 2021,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx142989-jYDNHLwdER70.png",
+            "relacion": "historia paralela"
+          }
+        ]
+      },
+      "anime": {
+        "obras": [
+          {
+            "anilist": 108465,
+            "titulo": "Mushoku Tensei: Jobless Reincarnation",
+            "formato": "serie",
+            "anio": 2021,
+            "episodios": 11
+          },
+          {
+            "anilist": 127720,
+            "titulo": "Mushoku Tensei: Jobless Reincarnation Cour 2",
+            "formato": "serie",
+            "anio": 2021,
+            "episodios": 12
+          },
+          {
+            "anilist": 141534,
+            "titulo": "Mushoku Tensei: Jobless Reincarnation Cour 2 - Eris the Goblin Slayer",
+            "formato": "especial",
+            "anio": 2022
+          },
+          {
+            "anilist": 146065,
+            "titulo": "Mushoku Tensei: Jobless Reincarnation Season 2",
+            "formato": "serie",
+            "anio": 2023,
+            "episodios": 13
+          },
+          {
+            "anilist": 166873,
+            "titulo": "Mushoku Tensei: Jobless Reincarnation Season 2 Part 2",
+            "formato": "serie",
+            "anio": 2024,
+            "episodios": 12
+          }
+        ],
+        "estrenado": true,
+        "ver": [
+          {
+            "sitio": "Crunchyroll",
+            "url": "https://www.crunchyroll.com/mushoku-tensei-jobless-reincarnation"
+          },
+          {
+            "sitio": "Netflix",
+            "url": "https://www.netflix.com/title/80987039"
+          }
+        ]
+      }
+    },
+    {
+      "id": "all-you-need-is-kill",
+      "titulo": "All You Need Is Kill",
+      "titulos": {
+        "romaji": "All You Need Is Kill",
+        "ingles": "All You Need Is Kill",
+        "nativo": "All You Need Is Kill"
+      },
+      "sinonimos": [
+        "オール ユー ニード イズ キル",
+        "All You Need Is Kill - Öldür Yeter",
+        "All You Need Is Kill - Stačí jen zabíjet",
+        "All you need is kill - Cuộc chiến luân hồi",
+        "Edge of Tomorrow",
+        "AYNK"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "2014-01-09",
+      "fin": "2014-05-29",
+      "capitulos": 17,
+      "tomos": 2,
+      "autores": [
+        {
+          "nombre": "Hiroshi Sakurazaka",
+          "rol": "historia original",
+          "nativo": "洋桜坂"
+        },
+        {
+          "nombre": "Takeshi Obata",
+          "rol": "historia y arte",
+          "nativo": "小畑健"
+        }
+      ],
+      "generos": [
+        "accion",
+        "drama",
+        "mecha",
+        "psicologico",
+        "romance",
+        "ciencia-ficcion"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85215-Uo4ZWJS1s8BH.png",
+      "color": "#0d3578",
+      "ids": {
+        "anilist": 85215,
+        "mal": 62887
+      },
+      "enlaces": [
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/shonenjump/chapters/all-you-need-is-kill-manga",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Norma Editorial",
+          "url": "https://www.normaeditorial.com/ficha/manga/all-you-need-is-kill-integral",
+          "idioma": "es",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/all-you-need-is-kill",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Tonari no Young Jump",
+          "url": "https://tonarinoyj.jp/episode/13932016480028987117",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Piccoma",
+          "url": "https://piccoma.com/web/product/25402?etype=episode",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 74,
+          "popularidad": 47419
+        }
+      },
+      "agregada": "2026-11-26",
+      "anime": {
+        "obras": [
+          {
+            "anilist": 187892,
+            "titulo": "ALL YOU NEED IS KILL",
+            "formato": "película",
+            "anio": 2026
+          }
+        ],
+        "estrenado": true
+      }
+    },
+    {
+      "id": "the-girl-from-the-other-side-siuil-a-run",
+      "titulo": "The Girl From the Other Side: Siúil, a Rún",
+      "titulos": {
+        "romaji": "Totsukuni no Shoujo",
+        "ingles": "The Girl From the Other Side: Siúil, a Rún",
+        "nativo": "とつくにの少女"
+      },
+      "sinonimos": [
+        "Foreign Girl",
+        "Siúil, a Rún",
+        "Dziewczynka w Krainie Przeklętych",
+        "A Menina do Outro Lado",
+        "L'enfant et le maudit",
+        "La Pequeña Forastera: Siúil, a Rún",
+        "Девочка из Чужеземья",
+        "Cô gái nơi Xứ ngoài",
+        "Дівчинка з того боку",
+        "A Menina Que Veio do Outro Lado"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "2015-09-05",
+      "fin": "2021-03-05",
+      "capitulos": 53,
+      "tomos": 11,
+      "autores": [
+        {
+          "nombre": "Nagabe",
+          "rol": "historia y arte",
+          "nativo": "ながべ"
+        }
+      ],
+      "generos": [
+        "drama",
+        "fantasia",
+        "misterio"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx86770-vjBM79Z1GVbs.jpg",
+      "color": null,
+      "ids": {
+        "anilist": 86770,
+        "mal": 93972
+      },
+      "enlaces": [
+        {
+          "sitio": "Seven Seas Entertainment",
+          "url": "https://sevenseasentertainment.com/series/the-girl-from-the-other-side-siuil-a-run/",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Magcomi",
+          "url": "https://magcomi.com/episode/10834108156763618273",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Comico",
+          "url": "https://www.comico.jp/magazine_comic/33168",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Piccoma",
+          "url": "https://piccoma.com/web/product/40675?etype=episode",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 83,
+          "popularidad": 47263
+        }
+      },
+      "agregada": "2026-11-26",
+      "lectura": {
+        "relacionadas": [
+          {
+            "anilist": 147358,
+            "titulo": "The Girl from the Other Side: Siúil, a Rún - ordinary -",
+            "tipo": "manga",
+            "anio": 2022,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx147358-lnZ5VoE2rCnG.png",
+            "relacion": "historia paralela"
+          },
+          {
+            "anilist": 148177,
+            "titulo": "The Girl From the Other Side: Siúil, a Rún – [dear.] Side Stories",
+            "tipo": "manga",
+            "anio": 2022,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx148177-bxnY06JlnT84.jpg",
+            "relacion": "historia paralela"
+          }
+        ]
+      },
+      "anime": {
+        "obras": [
+          {
+            "anilist": 108354,
+            "titulo": "The Girl From the Other Side: Siúil, a Rún",
+            "formato": "OVA",
+            "anio": 2019
+          },
+          {
+            "anilist": 130550,
+            "titulo": "The Girl from the Other Side",
+            "formato": "OVA",
+            "anio": 2022
+          }
+        ],
+        "estrenado": true,
+        "ver": [
+          {
+            "sitio": "Crunchyroll",
+            "url": "https://www.crunchyroll.com/the-girl-from-the-other-side"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bungo-stray-dogs",
+      "titulo": "Bungo Stray Dogs",
+      "titulos": {
+        "romaji": "Bungou Stray Dogs",
+        "ingles": "Bungo Stray Dogs",
+        "nativo": "文豪ストレイドッグス"
+      },
+      "sinonimos": [
+        "Literary Stray Dogs",
+        "Bezpańscy literaci",
+        "文豪野犬",
+        "Проза бродячих псов",
+        "คณะประพันธกรจรจัด",
+        "Văn hào lưu lạc",
+        "문호 스트레이독스",
+        "文豪Stray Dogs"
+      ],
+      "tipo": "manga",
+      "estado": "en-publicacion",
+      "inicio": "2012-12-04",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Kafka Asagiri",
+          "rol": "historia",
+          "nativo": "朝霧カフカ"
+        },
+        {
+          "nombre": "Harukawa35",
+          "rol": "arte",
+          "nativo": "春河35"
+        }
+      ],
+      "generos": [
+        "accion",
+        "drama",
+        "misterio",
+        "sobrenatural"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85307-23PaGq5FakEV.png",
+      "color": null,
+      "ids": {
+        "anilist": 85307,
+        "mal": 56529
+      },
+      "enlaces": [
+        {
+          "sitio": "Yen Press",
+          "url": "https://yenpress.com/series/bungo-stray-dogs",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Pixiv Comic",
+          "url": "https://comic.pixiv.net/works/2195",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Kadocomi",
+          "url": "https://comic-walker.com/contents/detail/KDCW_KS02000024010000_68/",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 83,
+          "popularidad": 47193
+        }
+      },
+      "agregada": "2026-11-26",
+      "lectura": {
+        "relacionadas": [
+          {
+            "anilist": 107519,
+            "titulo": "Bungo Stray Dogs: Another Story - Yukito Ayatsuji vs. Natsuhiko Kyougoku",
+            "tipo": "manga",
+            "anio": 2017,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx107519-8NtL9puBSp50.jpg",
+            "relacion": "historia paralela"
+          },
+          {
+            "anilist": 104030,
+            "titulo": "Bungo Stray Dogs: Dead Apple",
+            "tipo": "manga",
+            "anio": 2018,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx104030-KSBHOdns0PPV.jpg",
+            "relacion": "historia paralela"
+          },
+          {
+            "anilist": 87401,
+            "titulo": "Bungo Stray Dogs: Wan!",
+            "tipo": "manga",
+            "anio": 2015,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx87401-4x8Sj5F18wtd.jpg",
+            "relacion": "spin-off"
+          }
+        ]
+      },
+      "anime": {
+        "obras": [
+          {
+            "anilist": 21311,
+            "titulo": "Bungo Stray Dogs",
+            "formato": "serie",
+            "anio": 2016,
+            "episodios": 12
+          },
+          {
+            "anilist": 21679,
+            "titulo": "Bungo Stray Dogs 2",
+            "formato": "serie",
+            "anio": 2016,
+            "episodios": 12
+          },
+          {
+            "anilist": 103223,
+            "titulo": "Bungo Stray Dogs 3",
+            "formato": "serie",
+            "anio": 2019,
+            "episodios": 12
+          },
+          {
+            "anilist": 141249,
+            "titulo": "Bungo Stray Dogs 4",
+            "formato": "serie",
+            "anio": 2023,
+            "episodios": 13
+          },
+          {
+            "anilist": 163263,
+            "titulo": "Bungo Stray Dogs 5",
+            "formato": "serie",
+            "anio": 2023,
+            "episodios": 11
+          }
+        ],
+        "estrenado": true,
+        "mas": 1,
+        "ver": [
+          {
+            "sitio": "Crunchyroll",
+            "url": "https://www.crunchyroll.com/bungo-stray-dogs"
+          },
+          {
+            "sitio": "Netflix",
+            "url": "https://www.netflix.com/title/80132126"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tomo-chan-is-a-girl",
+      "titulo": "Tomo-chan is a Girl!",
+      "titulos": {
+        "romaji": "Tomo-chan wa Onnanoko!",
+        "ingles": "Tomo-chan is a Girl!",
+        "nativo": "トモちゃんは女の子!"
+      },
+      "sinonimos": [
+        "Tomo-chan wa Onna no ko!"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "2015-04-07",
+      "fin": "2019-07-14",
+      "capitulos": 961,
+      "tomos": 8,
+      "autores": [
+        {
+          "nombre": "Fumita Yanagida",
+          "rol": "historia y arte",
+          "nativo": "柳田史太"
+        }
+      ],
+      "generos": [
+        "comedia",
+        "romance",
+        "recuentos-de-la-vida"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx86300-VQWRaxoTXciF.jpg",
+      "color": null,
+      "ids": {
+        "anilist": 86300,
+        "mal": 92149
+      },
+      "enlaces": [
+        {
+          "sitio": "Seven Seas Entertainment",
+          "url": "https://sevenseasentertainment.com/series/tomo-chan-is-a-girl/",
+          "idioma": "en",
+          "tipo": "tomos"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 77,
+          "popularidad": 46930
+        }
+      },
+      "agregada": "2026-11-26",
+      "anime": {
+        "obras": [
+          {
+            "anilist": 151806,
+            "titulo": "Tomo-chan Is a Girl!",
+            "formato": "serie",
+            "anio": 2023,
+            "episodios": 13
+          }
+        ],
+        "estrenado": true,
+        "ver": [
+          {
+            "sitio": "Crunchyroll",
+            "url": "https://www.crunchyroll.com/tomo-chan-is-a-girl"
+          },
+          {
+            "sitio": "Netflix",
+            "url": "https://www.netflix.com/title/81680192"
+          }
+        ]
+      }
+    },
+    {
+      "id": "jagaaan",
+      "titulo": "Jagaaan",
+      "titulos": {
+        "romaji": "Jagaaaaaan",
+        "ingles": "Jagaaan",
+        "nativo": "ジャガーン"
+      },
+      "sinonimos": [
+        "คลั่งล้างคลั่ง",
+        "Jagaan",
+        "Джяґааан"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "2017-02-06",
+      "fin": "2021-11-08",
+      "capitulos": 163,
+      "tomos": 14,
+      "autores": [
+        {
+          "nombre": "Muneyuki Kaneshiro",
+          "rol": "historia",
+          "nativo": "金城宗幸"
+        },
+        {
+          "nombre": "Kensuke Nishida",
+          "rol": "arte",
+          "nativo": "にしだけんすけ"
+        }
+      ],
+      "generos": [
+        "accion",
+        "drama",
+        "terror",
+        "misterio",
+        "sobrenatural"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx98328-Ays4xVxR1lMU.jpg",
+      "color": "#d61a43",
+      "ids": {
+        "anilist": 98328,
+        "mal": 104314
+      },
+      "enlaces": [
+        {
+          "sitio": "Piccoma",
+          "url": "https://piccoma.com/web/product/5114?etype=episode",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Big Comics",
+          "url": "https://bigcomics.jp/series/8785abd024d23/new",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 73,
+          "popularidad": 45940
+        }
+      },
+      "agregada": "2026-11-26"
+    },
+    {
+      "id": "gokurakugai",
+      "titulo": "Gokurakugai",
+      "titulos": {
+        "romaji": "Gokurakugai",
+        "ingles": "Gokurakugai",
+        "nativo": "極楽街"
+      },
+      "sinonimos": [
+        "โกคุราคุไก สุขาวดีสีเลือด",
+        "極樂街"
+      ],
+      "tipo": "manga",
+      "estado": "en-publicacion",
+      "inicio": "2022-07-04",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Yuto Sano",
+          "rol": "historia y arte",
+          "nativo": "佐乃夕斗"
+        }
+      ],
+      "generos": [
+        "accion",
+        "fantasia",
+        "sobrenatural"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx150378-cClKErwmvgsv.jpg",
+      "color": "#d69378",
+      "ids": {
+        "anilist": 150378,
+        "mal": 147874
+      },
+      "enlaces": [
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/shonenjump/chapters/gokurakugai",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "MANGA Plus",
+          "url": "https://mangaplus.shueisha.co.jp/titles/100230",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/gokurakugai",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Shonen Jump Plus",
+          "url": "https://shonenjumpplus.com/episode/9324103627278944648",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 76,
+          "popularidad": 45492
+        }
+      },
+      "agregada": "2026-11-26"
+    },
+    {
+      "id": "seraph-of-the-end-vampire-reign",
+      "titulo": "Seraph of the End: Vampire Reign",
+      "titulos": {
+        "romaji": "Owari no Seraph",
+        "ingles": "Seraph of the End: Vampire Reign",
+        "nativo": "終わりのセラフ"
+      },
+      "sinonimos": [
+        "OwaSera",
+        "Seraph of the End: Serafin dni ostatnich",
+        "Seraph of the End: Kıyamet Meleği",
+        "เทวทูตแห่งโลกมืด",
+        "종말의 세라프"
+      ],
+      "tipo": "manga",
+      "estado": "en-publicacion",
+      "inicio": "2012-09-03",
+      "fin": "2026-12-04",
+      "capitulos": null,
+      "tomos": 37,
+      "autores": [
+        {
+          "nombre": "Takaya Kagami",
+          "rol": "historia",
+          "nativo": "鏡貴也"
+        },
+        {
+          "nombre": "Yamato Yamamoto",
+          "rol": "arte",
+          "nativo": "山本ヤマト"
+        }
+      ],
+      "generos": [
+        "accion",
+        "drama",
+        "misterio",
+        "sobrenatural"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx73661-PJX2JcBAUYCx.png",
+      "color": "#e4f15d",
+      "ids": {
+        "anilist": 73661,
+        "mal": 43661
+      },
+      "enlaces": [
+        {
+          "sitio": "MANGA Plus",
+          "url": "https://mangaplus.shueisha.co.jp/titles/100024",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/shonenjump/chapters/seraph-of-the-end",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "MANGA MILLION",
+          "url": "https://mangamillion.shueisha.co.jp/en/title/1093",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/manga-books/seraph-of-the-end/series/312/section/62427/more",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Shonen Jump Plus",
+          "url": "https://shonenjumpplus.com/episode/13932016480029012591",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Piccoma",
+          "url": "https://piccoma.com/web/product/4222?etype=episode",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 75,
+          "popularidad": 45153
+        }
+      },
+      "agregada": "2026-11-26",
+      "anime": {
+        "obras": [
+          {
+            "anilist": 20829,
+            "titulo": "Seraph of the End: Vampire Reign",
+            "formato": "serie",
+            "anio": 2015,
+            "episodios": 12
+          },
+          {
+            "anilist": 21483,
+            "titulo": "Seraph of the End: Vampire Reign - Owaranai Seraph",
+            "formato": "especial",
+            "anio": 2015,
+            "episodios": 9
+          },
+          {
+            "anilist": 20993,
+            "titulo": "Seraph of the End: Battle in Nagoya",
+            "formato": "serie",
+            "anio": 2015,
+            "episodios": 12
+          },
+          {
+            "anilist": 21586,
+            "titulo": "Seraph of the End: Kyuuketsuki Shahal",
+            "formato": "OVA",
+            "anio": 2016
+          }
+        ],
+        "estrenado": true,
+        "ver": [
+          {
+            "sitio": "Netflix",
+            "url": "https://www.netflix.com/title/80200989"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bakuman",
+      "titulo": "Bakuman。",
+      "titulos": {
+        "romaji": "Bakuman.",
+        "ingles": "Bakuman。",
+        "nativo": "バクマン。"
+      },
+      "sinonimos": [
+        "Бакуман",
+        "바쿠만",
+        "爆漫王"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "2008-08-08",
+      "fin": "2012-04-23",
+      "capitulos": 176,
+      "tomos": 20,
+      "autores": [
+        {
+          "nombre": "Tsugumi Ooba",
+          "rol": "historia",
+          "nativo": "大場つぐみ"
+        },
+        {
+          "nombre": "Takeshi Obata",
+          "rol": "arte",
+          "nativo": "小畑健"
+        }
+      ],
+      "generos": [
+        "comedia",
+        "drama",
+        "romance",
+        "recuentos-de-la-vida"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx39711-tjPWXT1AW321.jpg",
+      "color": null,
+      "ids": {
+        "anilist": 39711,
+        "mal": 9711
+      },
+      "enlaces": [
+        {
+          "sitio": "MANGA Plus",
+          "url": "https://mangaplus.shueisha.co.jp/titles/200002",
+          "idioma": "es",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/shonenjump/chapters/bakuman",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "MANGA Plus",
+          "url": "https://mangaplus.shueisha.co.jp/titles/100002",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "MANGA MILLION",
+          "url": "https://mangamillion.shueisha.co.jp/en/title/94",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/bakuman",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Shonen Jump Plus",
+          "url": "https://shonenjumpplus.com/episode/10833519556325021897",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Piccoma",
+          "url": "https://piccoma.com/web/product/4424?etype=episode",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 81,
+          "popularidad": 45053
+        }
+      },
+      "agregada": "2026-11-26",
+      "lectura": {
+        "orden": [
+          {
+            "anilist": 86513,
+            "titulo": "Bakuman. Bangai-hen",
+            "tipo": "manga",
+            "anio": 2015,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/56513-2gseZiOnor7K.jpg"
+          },
+          {
+            "anilist": 39711
+          }
+        ],
+        "relacionadas": [
+          {
+            "anilist": 51274,
+            "titulo": "Otter No. 11",
+            "tipo": "manga",
+            "formato": "one-shot",
+            "anio": 2010,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/21274.jpg",
+            "relacion": "historia paralela"
+          }
+        ]
+      },
+      "anime": {
+        "obras": [
+          {
+            "anilist": 7674,
+            "titulo": "Bakuman.",
+            "formato": "serie",
+            "anio": 2010,
+            "episodios": 25
+          },
+          {
+            "anilist": 10030,
+            "titulo": "Bakuman. 2",
+            "formato": "serie",
+            "anio": 2011,
+            "episodios": 25
+          },
+          {
+            "anilist": 12365,
+            "titulo": "Bakuman. 3",
+            "formato": "serie",
+            "anio": 2012,
+            "episodios": 25
+          }
+        ],
+        "estrenado": true,
+        "otros": [
+          "Hulu",
+          "Tubi TV"
         ]
       }
     }
