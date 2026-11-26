@@ -18327,7 +18327,13 @@
         "lectores": 0.0013,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores destacan la espectacular calidad artística y la atmósfera profunda de la obra. Señalan que el desarrollo de los personajes es muy cautivador y que la narrativa se enfoca en la fragilidad de las relaciones. El manga se describe como un cuento de hadas oscuro y cautivador.",
+        "resenas": 6,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-26"
+      },
       "capitulos": {
         "ultimo": 21,
         "tomos": 11
@@ -20427,7 +20433,13 @@
         "lectores": 0.0016,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores destacan la calidad del arte y la acción intensa de la obra, comparándola con títulos populares. Mencionan que la historia presenta personajes interesantes y un sistema de poder bien desarrollado. Además, se señala que la narrativa es cautivadora desde el inicio.",
+        "resenas": 7,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-26"
+      },
       "capitulos": {
         "ultimo": 163,
         "tomos": 14
