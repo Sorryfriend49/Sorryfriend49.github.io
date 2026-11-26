@@ -2,8 +2,14 @@
    FROZEN PROJECT: página de una obra (obra/<id>/, la arma scripts/paginas.mjs)
    El botón Compartir: en el celular abre el menú de compartir del sistema; en el PC copia
    el enlace y lo avisa. Sin JavaScript el botón no aparece (la página se ve igual).
+   Y si una portada no carga, se quita (queda el color de la obra de fondo, como en la ficha).
 =================================== */
 (() => {
+    document.querySelectorAll('.ficha-pagina img').forEach(img => {
+        if (img.complete && !img.naturalWidth) img.remove();
+        else img.addEventListener('error', () => img.remove(), { once: true });
+    });
+
     const boton = document.getElementById('compartir');
     const aviso = document.getElementById('avisoCompartir');
     if (!boton || !aviso) return;

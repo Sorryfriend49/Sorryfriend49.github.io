@@ -23,7 +23,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import {
     METODO, combinarPuntajes, analizarDistribucion, analizarResenas, calcularTendencia, coincidencia, elegirSerie,
     normalizarTitulo, redondear, capitulosDeMangaUpdates, frasesConTemas, tonosConPalabras, evaluarTono, sumarEvaluaciones, aciertoEquilibrado,
-    analizarActividad, prepararEtiquetas, prepararRecomendaciones
+    analizarActividad, prepararEtiquetas, prepararRecomendaciones, capitulosPlausibles, juntarCapitulos, fuentesConPuntaje
 } from './analisis.mjs';
 import { crearClasificador } from './tono.mjs';
 import { necesitaResumen, VERSION_RESUMEN, MIN_RESENAS_RESUMEN } from './resumenes.mjs';
@@ -149,30 +149,53 @@ async function traerDetalles(pedir, id){
 }
 
 /* ---------- Kitsu (se encuentra con el ID de AniList o el de MyAnimeList) ---------- */
-function datosKitsu(manga){
+// Kitsu no calcula el promedio hasta juntar suficientes votos: llega null (antes se leía como 0)
+export function datosKitsu(manga){
     if (!manga || !manga.attributes) return null;
     const votos = Object.values(manga.attributes.ratingFrequencies || {}).reduce((a, b) => a + Number(b || 0), 0);
-    const puntaje = Number(manga.attributes.averageRating);
-    if (!votos || !Number.isFinite(puntaje)) return null;
+    const promedio = manga.attributes.averageRating;
+    const puntaje = promedio === null || promedio === undefined || promedio === '' ? NaN : Number(promedio);
+    if (!votos || !Number.isFinite(puntaje) || puntaje <= 0) return null;
     return { puntaje: redondear(puntaje, 1), votos };
+}
+
+// Capítulos y tomos según Kitsu (suele tenerlos de las obras en pausa o terminadas, como Vagabond)
+export function capitulosKitsu(manga){
+    const a = (manga && manga.attributes) || {};
+    return capitulosPlausibles({ ultimo: a.chapterCount, tomos: a.volumeCount });
 }
 
 async function traerKitsu(pedir, obra, guardado){
     const encabezados = { headers: { Accept: 'application/vnd.api+json' } };
     if (guardado && guardado.kitsu){
         const r = await pedir(`${KITSU}/manga/${guardado.kitsu}`, encabezados);
-        return { id: guardado.kitsu, datos: datosKitsu(r.data) };
+        return { id: guardado.kitsu, datos: datosKitsu(r.data), capitulos: capitulosKitsu(r.data) };
     }
     const intentos = [['anilist/manga', obra.ids.anilist], ['myanimelist/manga', obra.ids.mal]].filter(([, id]) => id);
     for (const [sitio, id] of intentos){
         const r = await pedir(`${KITSU}/mappings?filter[externalSite]=${sitio}&filter[externalId]=${id}&include=item`, encabezados);
         const manga = (r.included || []).find(i => i.type === 'manga');
-        if (manga) return { id: manga.id, datos: datosKitsu(manga) };
+        if (manga) return { id: manga.id, datos: datosKitsu(manga), capitulos: capitulosKitsu(manga) };
     }
     return { id: null, datos: null };
 }
 
 /* ---------- MangaUpdates (no tiene el ID de AniList: se busca por título, año y tipo) ---------- */
+// La serie fijada a mano en catalogo.json ("mangaupdates"): su número, o el código de su dirección
+// (en https://www.mangaupdates.com/series/lzjwjkf/... es "lzjwjkf", que es ese número en base 36)
+export function mangaUpdatesManual(obra){
+    const valor = obra && obra.mangaupdates;
+    if (typeof valor === 'number' && Number.isSafeInteger(valor) && valor > 0) return valor;
+    if (typeof valor !== 'string') return null;
+    const texto = valor.trim().toLowerCase();
+    if (/^\d+$/.test(texto)) return Number(texto);
+    if (/^[0-9a-z]{1,12}$/.test(texto)){
+        const numero = parseInt(texto, 36);
+        return Number.isSafeInteger(numero) ? numero : null;
+    }
+    return null;
+}
+
 function datosMangaUpdates(serie){
     const puntaje = Number(serie && serie.bayesian_rating);
     const votos = Number(serie && serie.rating_votes);
@@ -280,6 +303,21 @@ export async function ejecutar({
         todas,
         faltaResumen: previo => necesitaResumen(previo.resenas, previo.resumen && previo.resumen.version === VERSION_RESUMEN ? previo.resumen : null, fecha)
     });
+    // También hoy, aunque no les toque: las que tienen algo por corregir (una MangaUpdates fijada a
+    // mano en catalogo.json distinta de la guardada, o un número de capítulos imposible)
+    const porCorregir = obras.filter(o => {
+        const id = String(o.ids.anilist);
+        if (eleccion.ids.has(id)) return false;
+        const guardado = ids.obras[id] || {};
+        const previo = (anterior.obras || {})[id];
+        const fijada = mangaUpdatesManual(o);
+        const manual = Boolean(fijada) && String(guardado.mangaupdates) !== String(fijada);
+        const capitulos = previo && previo.capitulos;
+        const imposibles = Boolean(capitulos && capitulos.ultimo && !(capitulosPlausibles(capitulos) || {}).ultimo);
+        return manual || imposibles;
+    });
+    porCorregir.forEach(o => eleccion.ids.add(String(o.ids.anilist)));
+    if (porCorregir.length) registro(`Además se renuevan ${porCorregir.length} para corregir sus datos: ${porCorregir.map(o => o.titulo).join(', ')}.`);
     const respaldo = typeof anterior.generado === 'string' ? anterior.generado.slice(0, 10) : null;
     const { nueva, atrasada, delDia, sinResumen } = eleccion.motivos;
     registro(todas
@@ -312,12 +350,13 @@ export async function ejecutar({
 
         // Hoy no le toca: lo de AniList al día y lo demás como quedó la última vez
         if (!eleccion.ids.has(id)){
-            const otras = Object.fromEntries(Object.entries(previo.fuentes || {}).filter(([nombre]) => nombre !== 'anilist'));
-            const fuentesHoy = fuentes.anilist ? { anilist: fuentes.anilist, ...otras } : { ...(previo.fuentes || {}) };
+            const otras = Object.fromEntries(Object.entries(fuentesConPuntaje(previo.fuentes)).filter(([nombre]) => nombre !== 'anilist'));
+            const fuentesHoy = fuentes.anilist ? { anilist: fuentes.anilist, ...otras } : fuentesConPuntaje(previo.fuentes);
             resultado[id] = {
                 ...previo,
                 puntaje: combinarPuntajes(fuentesHoy, mediaCatalogo),
                 fuentes: fuentesHoy,
+                capitulos: capitulosPlausibles(previo.capitulos),
                 distribucion: distribucion || previo.distribucion || null,
                 popularidad: m.popularity || previo.popularidad || null,
                 favoritos: m.favourites || previo.favoritos || null,
@@ -342,15 +381,26 @@ export async function ejecutar({
         if (kitsu){
             if (kitsu.id) guardado.kitsu = kitsu.id;
             if (kitsu.datos) fuentes.kitsu = kitsu.datos;
-        } else if (previo.fuentes && previo.fuentes.kitsu) fuentes.kitsu = previo.fuentes.kitsu;
+        } else if (previo.fuentes && previo.fuentes.kitsu && previo.fuentes.kitsu.puntaje > 0) fuentes.kitsu = previo.fuentes.kitsu;
 
+        // MangaUpdates fijada a mano en catalogo.json (cuando la búsqueda elige otra versión de la obra):
+        // se usa esa, y lo que se guardó de la anterior no se reusa
+        const manual = mangaUpdatesManual(obra);
+        const cambioManual = Boolean(manual) && String(guardado.mangaupdates) !== String(manual);
+        if (manual){
+            if (cambioManual) delete guardado.mangaupdatesTitulo;
+            guardado.mangaupdates = manual;
+            guardado.emparejador = EMPAREJADOR;
+        }
         // Si la obra se emparejó con una regla vieja, se vuelve a buscar (y su dato anterior no se reusa)
-        const emparejadaAlDia = (guardado.emparejador || 1) >= EMPAREJADOR;
-        if (!emparejadaAlDia){ delete guardado.mangaupdates; delete guardado.mangaupdatesTitulo; delete guardado.buscado; }
+        const emparejadaAlDia = (guardado.emparejador || 1) >= EMPAREJADOR && !cambioManual;
+        if ((guardado.emparejador || 1) < EMPAREJADOR){ delete guardado.mangaupdates; delete guardado.mangaupdatesTitulo; delete guardado.buscado; }
         const mu = await intentar('mangaupdates', () => traerMangaUpdates(pedir, obra, guardado, fecha));
-        // Capítulos y tomos publicados hasta ahora (AniList no los da mientras la obra sigue saliendo)
-        let capitulos = (emparejadaAlDia && previo.capitulos) || null;
+        // Capítulos y tomos publicados hasta ahora (AniList no los da mientras la obra sigue saliendo):
+        // los de MangaUpdates y, si los tiene, los de Kitsu (el mayor número creíble)
+        let capitulos = (emparejadaAlDia && capitulosPlausibles(previo.capitulos)) || null;
         if (mu) capitulos = mu.capitulos || (mu.id ? capitulos : null);
+        capitulos = juntarCapitulos(capitulos, kitsu && kitsu.capitulos);
         if (mu){
             if (mu.id){ guardado.mangaupdates = mu.id; guardado.mangaupdatesTitulo = mu.titulo; }
             guardado.buscado = mu.buscado;
@@ -358,7 +408,7 @@ export async function ejecutar({
             if (mu.datos) fuentes.mangaupdates = mu.datos;
             if (mu.nueva) registro(`  ${obra.titulo} → MangaUpdates: "${mu.titulo}" (${mu.anio || 'sin año'}, ${mu.votos || 0} votos)`);
             else if (!mu.id && mu.buscado === fecha) registro(`  ${obra.titulo} → no está en MangaUpdates`);
-        } else if (emparejadaAlDia && previo.fuentes && previo.fuentes.mangaupdates) fuentes.mangaupdates = previo.fuentes.mangaupdates;
+        } else if (emparejadaAlDia && previo.fuentes && previo.fuentes.mangaupdates && previo.fuentes.mangaupdates.puntaje > 0) fuentes.mangaupdates = previo.fuentes.mangaupdates;
 
         if (malActivo){
             try {

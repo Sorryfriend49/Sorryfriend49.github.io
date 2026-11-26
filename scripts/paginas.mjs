@@ -222,7 +222,8 @@ function datosDeLaObra(o, f, contexto){
     const autores = (f && Array.isArray(f.autores) ? f.autores : []).filter(a => a && a.nombre);
     if (autores.length) fila('Creado por', textoAutores(autores));
     fila('Salió', textoFecha(o.inicio));
-    if (f && f.fin) fila('Terminó', textoFecha(f.fin));
+    // Si ya tiene fecha para su final (Seraph of the End: 4 de diciembre de 2026), «Termina»
+    if (f && f.fin) fila(String(f.fin) > contexto.hoy ? 'Termina' : 'Terminó', textoFecha(f.fin));
     // Capítulos y tomos: los de AniList si ya terminó; si sigue saliendo, los publicados hasta ahora
     const c = (f && f.comunidad) || {};
     const publicados = c.publicados || {};
@@ -494,7 +495,7 @@ export function armarPagina(o, f, contexto){
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap">
     ${html`<link rel="stylesheet" href="/${contexto.estilos}">`}
-    <script src="/obra.js?v=1" defer></script>
+    <script src="/obra.js?v=2" defer></script>
 </head>
 
 <body class="pagina-obra">
@@ -582,7 +583,7 @@ export function obrasDeLaLista(lista){
         .filter(o => o && o.id && o.titulo && esWeb(o.portada) && TIPOS[o.tipo] && Array.isArray(o.generos) && ID_VALIDO.test(o.id) && o.ids);
 }
 
-export function armarContexto(lista, obras, estilos = 'styles.css'){
+export function armarContexto(lista, obras, estilos = 'styles.css', hoy = new Date().toISOString().slice(0, 10)){
     const lectores = o => op(o).lectores || 0;
     return {
         porId: new Map(obras.map(o => [o.id, o])),
@@ -590,7 +591,8 @@ export function armarContexto(lista, obras, estilos = 'styles.css'){
         etiquetas: new Map(Object.entries((lista && lista.etiquetas) || {}).map(([id, e]) => [id, { nombre: (e && e.nombre) || id, en: Boolean(e && e.en) }])),
         puesto: new Map([...obras].sort((a, b) => lectores(b) - lectores(a)).map((o, i) => [o.id, i + 1])),
         total: obras.length,
-        estilos
+        estilos,
+        hoy
     };
 }
 
@@ -602,7 +604,7 @@ export async function escribirPaginas({ raiz, hoy = new Date().toISOString().sli
     // La misma versión de los estilos que usa index.html, para que el navegador no use una vieja
     const indice = await leerTexto(ruta('index.html'));
     const version = (indice.match(/styles\.css\?v=(\d+)/) || [])[1];
-    const contexto = armarContexto(lista, obras, version ? `styles.css?v=${version}` : 'styles.css');
+    const contexto = armarContexto(lista, obras, version ? `styles.css?v=${version}` : 'styles.css', hoy);
 
     const antes = leerMapa(await leerTexto(ruta('sitemap.xml')));
     const fechas = new Map();

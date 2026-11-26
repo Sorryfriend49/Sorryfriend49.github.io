@@ -32,7 +32,7 @@ export const redondear = (n, decimales = 0) => {
    fuentes: { anilist: { puntaje: 0-100, votos }, kitsu: {...}, ... } */
 export function combinarPuntajes(fuentes, mediaCatalogo){
     const validas = Object.values(fuentes || {})
-        .filter(f => f && Number.isFinite(f.puntaje) && Number.isFinite(f.votos) && f.votos > 0);
+        .filter(f => f && Number.isFinite(f.puntaje) && f.puntaje > 0 && Number.isFinite(f.votos) && f.votos > 0);
     if (!validas.length) return null;
 
     let suma = PESO_PREVIO * mediaCatalogo;
@@ -448,16 +448,40 @@ export function elegirSerie(obra, resultados){
     return mejor ? mejor.registro : null;
 }
 
+// Las fuentes con un puntaje de verdad (Kitsu daba 0 cuando todavía no tenía promedio)
+export const fuentesConPuntaje = fuentes => Object.fromEntries(Object.entries(fuentes || {})
+    .filter(([, f]) => f && Number.isFinite(f.puntaje) && f.puntaje > 0));
+
 /* ---------- Capítulos y tomos publicados, según MangaUpdates ----------
    "latest_chapter" es el último capítulo que salió; algunos webtoons lo cuentan por temporada,
    así que también se leen los números de "N Chapters" y "N Volumes" de su estado
-   (por ejemplo "652 Chapters (Ongoing)") y se usa el mayor. */
+   (por ejemplo "652 Chapters (Ongoing)") y se usa el mayor.
+   Ojo: a veces su "último capítulo" es el de una edición nueva y no el de la obra (Vagabond
+   decía 2 con 37 tomos publicados). Por eso pasa por capitulosPlausibles. */
 export function capitulosDeMangaUpdates(serie){
     if (!serie) return null;
     const estado = String(serie.status || '');
     const numeros = patron => [...estado.matchAll(patron)].map(m => Number(m[1])).filter(n => Number.isFinite(n) && n > 0 && n < 100000);
     const ultimo = Math.max(0, Number(serie.latest_chapter) || 0, ...numeros(/(\d+)\s+chapters?\b/gi));
     const tomos = Math.max(0, ...numeros(/(\d+)\s+volumes?\b/gi));
-    if (!ultimo && !tomos) return null;
-    return { ultimo: ultimo || null, tomos: tomos || null };
+    return capitulosPlausibles({ ultimo, tomos });
+}
+
+/* Se descarta un número de capítulos imposible: menos capítulos que tomos, o menos de 2 por tomo
+   desde el tercero (un tomo trae de 3 a 12 capítulos; los de una página, muchos más). Mejor no
+   mostrar los capítulos que mostrar unos que no son (los tomos sí se quedan). */
+export function capitulosPlausibles(c){
+    if (!c) return null;
+    const numero = x => Number.isFinite(Number(x)) && Number(x) > 0 ? Number(x) : null;
+    const tomos = numero(c.tomos);
+    let ultimo = numero(c.ultimo);
+    if (ultimo && tomos && (ultimo < tomos || (tomos >= 3 && ultimo < 2 * tomos))) ultimo = null;
+    return ultimo || tomos ? { ultimo, tomos } : null;
+}
+
+// Capítulos y tomos de varias fuentes (MangaUpdates y Kitsu): el mayor número creíble de cada uno
+export function juntarCapitulos(...fuentes){
+    const validas = fuentes.map(capitulosPlausibles).filter(Boolean);
+    const mayor = clave => Math.max(0, ...validas.map(c => c[clave] || 0)) || null;
+    return capitulosPlausibles({ ultimo: mayor('ultimo'), tomos: mayor('tomos') });
 }

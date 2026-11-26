@@ -45,7 +45,7 @@ export const EDITORIALES = {
 const CONSULTA = `query ($ids: [Int], $p: Int) { Page(page: $p, perPage: ${POR_PAGINA}) { pageInfo { hasNextPage }
     media(id_in: $ids, type: MANGA) { id idMal isAdult countryOfOrigin status chapters volumes genres synonyms
         title { romaji english native } startDate { year month day } endDate { year month day }
-        coverImage { large color } meanScore popularity
+        coverImage { extraLarge large color } meanScore popularity
         staff(sort: [RELEVANCE, ROLE], perPage: 8) { edges { role node { name { full native } } } }
         externalLinks { site type language url isDisabled notes } } } }`;
 
@@ -157,14 +157,22 @@ export function prepararObra(m, entrada){
         enlaces: prepararEnlaces(m.externalLinks, tipo),
         comunidad: { anilist: { puntaje: m.meanScore || null, popularidad: m.popularity || 0 } }
     };
+    // Portada grande: la página la saca de la mediana (cambiando /cover/medium/ por /cover/large/), pero
+    // algunas portadas viejas de AniList no tienen versión grande (Dr. Stone, Ajin…): su "extraLarge" es
+    // la mediana. Entonces se guarda aparte, para que la ficha y la vista previa al compartir no queden
+    // sin imagen. (Con "portadaGrande" en catalogo.json se puede fijar a mano.)
+    const extraGrande = m.coverImage && m.coverImage.extraLarge;
+    if (extraGrande && obra.portada && extraGrande !== obra.portada.replace('/cover/medium/', '/cover/large/')) obra.portadaGrande = extraGrande;
     if (entrada.portadaGrande) obra.portadaGrande = entrada.portadaGrande;
+    // MangaUpdates fijada a mano, si la búsqueda automática elige otra versión de la obra (ver comunidad.mjs)
+    if (entrada.mangaupdates) obra.mangaupdates = entrada.mangaupdates;
     if (entrada.agregada) obra.agregada = entrada.agregada;      // el día en que llegó al catálogo (Inicio: «Nuevas»)
     return obra;
 }
 
 // catalogo.json con una obra por línea, para que sea fácil de editar a mano
 export async function escribirCatalogo(ruta, lista, entradas){
-    const campos = e => Object.fromEntries(['anilist', 'id', 'titulo', 'agregada', 'portadaGrande'].filter(k => e[k] != null).map(k => [k, e[k]]));
+    const campos = e => Object.fromEntries(['anilist', 'id', 'titulo', 'agregada', 'portadaGrande', 'mangaupdates'].filter(k => e[k] != null).map(k => [k, e[k]]));
     const otros = Object.entries(lista).filter(([k]) => k !== 'obras').map(([k, v]) => `  ${JSON.stringify(k)}: ${JSON.stringify(v)},`);
     const texto = ['{', ...otros, '  "obras": [', entradas.map(e => '    ' + JSON.stringify(campos(e))).join(',\n'), '  ]', '}', ''].join('\n');
     await writeFile(ruta, texto);

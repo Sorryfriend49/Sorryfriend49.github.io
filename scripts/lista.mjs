@@ -18,6 +18,7 @@
 import { readFile, writeFile, mkdir, readdir, rm } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { capitulosPlausibles, fuentesConPuntaje } from './analisis.mjs';
 
 export const CARPETA_FICHAS = 'datos/fichas';
 const PORTADAS = 'https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/';
@@ -102,6 +103,9 @@ export function armarLista(catalogo, comunidad){
         const deLaObra = (c && Array.isArray(c.etiquetas)) ? c.etiquetas : [];
         deLaObra.forEach(e => { if (e && e.id && !etiquetas[e.id]) etiquetas[e.id] = sinVacios({ nombre: e.nombre, en: e.en ? true : null }); });
         const actividad = (c && c.actividad) || {};
+        // Capítulos publicados hasta ahora (MangaUpdates o Kitsu), sin los imposibles
+        const publicados = capitulosPlausibles(c && c.capitulos);
+        const fuentes = fuentesConPuntaje(c && c.fuentes);
         // Lo que la página necesita sin abrir la ficha (los géneros van siempre, aunque estén vacíos)
         obras.push({ ...sinVacios({
             id: o.id,
@@ -117,7 +121,7 @@ export function armarLista(catalogo, comunidad){
             anime: o.anime && o.anime.estrenado ? 1 : null,
             // Capítulos (filtro «Extensión»): los de AniList si ya terminó; si sigue saliendo, los
             // publicados hasta ahora según MangaUpdates (lo mismo que dice la ficha)
-            cap: o.capitulos || (c && c.capitulos && c.capitulos.ultimo) || null,
+            cap: o.capitulos || (publicados && publicados.ultimo) || null,
             generos: o.generos,
             portada: typeof o.portada === 'string' && o.portada.startsWith(PORTADAS) ? o.portada.slice(PORTADAS.length) : o.portada,
             portadaGrande: o.portadaGrande,
@@ -128,7 +132,7 @@ export function armarLista(catalogo, comunidad){
                 puntaje: c && c.puntaje && Number.isFinite(c.puntaje.valor) ? c.puntaje.valor : (Number.isFinite(anilist.puntaje) ? anilist.puntaje : null),
                 votos: c && c.puntaje ? c.puntaje.votos : null,
                 confianza: c && c.puntaje ? c.puntaje.confianza : null,
-                fuentes: c && c.puntaje ? Object.keys(c.fuentes || {}) : null,      // de qué comunidades sale el puntaje
+                fuentes: c && c.puntaje ? Object.keys(fuentes) : null,      // de qué comunidades sale el puntaje
                 lectores: (c && c.popularidad) || anilist.popularidad || null,
                 semana: Number.isFinite(actividad.semana) ? actividad.semana : null,
                 leyendo: actividad.leyendo || null,
@@ -151,13 +155,13 @@ export function armarLista(catalogo, comunidad){
             lectura: o.lectura,
             anime: o.anime ? sinVacios({ obras: o.anime.obras, mas: o.anime.mas, ver: o.anime.ver, otros: o.anime.otros }) : null,
             comunidad: c ? sinVacios({
-                fuentes: c.fuentes,
+                fuentes,
                 distribucion: c.distribucion,
                 resenas: c.resenas,
                 resumen: c.resumen,
                 etiquetas: deLaObra,
                 recomendaciones: c.recomendaciones,
-                publicados: c.capitulos,
+                publicados,
                 revisada: c.revisada
             }) : null
         }));
@@ -181,9 +185,13 @@ export function textoLista(lista){
 }
 
 // Una ficha cambió "de verdad" si cambia algo más que lo que AniList mueve cada día
+// (también si entra o sale una comunidad, aunque sus números sean de los que cambian a diario)
 export function cambioDeVerdad(nueva, vieja){
     if (!vieja) return true;
-    const quitar = f => JSON.stringify({ ...f, comunidad: f.comunidad ? Object.fromEntries(Object.entries(f.comunidad).filter(([k]) => !CAMBIAN_CADA_DIA.includes(k))) : null });
+    const quitar = f => JSON.stringify({ ...f, comunidad: f.comunidad ? {
+        ...Object.fromEntries(Object.entries(f.comunidad).filter(([k]) => !CAMBIAN_CADA_DIA.includes(k))),
+        comunidades: Object.keys(f.comunidad.fuentes || {}).sort()
+    } : null });
     return quitar(nueva) !== quitar(vieja);
 }
 

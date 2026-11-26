@@ -1851,7 +1851,8 @@
             dl.append(crear('dt', null, 'Creado por'), dd);
         }
         fila(dl, 'Salió', textoFecha(o.inicio));
-        if (f && f.fin) fila(dl, 'Terminó', textoFecha(f.fin));
+        // Si ya tiene fecha para su final (Seraph of the End: 4 de diciembre de 2026), «Termina»
+        if (f && f.fin) fila(dl, String(f.fin) > new Date().toISOString().slice(0, 10) ? 'Termina' : 'Terminó', textoFecha(f.fin));
         // Capítulos y tomos: los de AniList si ya terminó; si sigue saliendo, los publicados
         // hasta ahora según MangaUpdates (los actualiza la tarea de lunes a viernes)
         const c = (f && f.comunidad) || {};

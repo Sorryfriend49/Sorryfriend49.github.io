@@ -64,6 +64,7 @@ Las obras nuevas entran solas, pero también se puede hacer a mano en `catalogo.
 - **Agregar:** busca la obra en AniList, copia el número de su enlace (en `https://anilist.co/manga/105398/Solo-Leveling` es `105398`) y agrega al final `{ "anilist": 105398 }`.
 - **Quitar:** borra su línea. Si había entrado sola, no vuelve.
 - **Que nunca entre sola:** pon su número en `"excluidas"`.
+- **Corregir su MangaUpdates:** si quedó unida a otra versión de la obra (pasa con las que tienen un remake), pon en su línea `"mangaupdates"` con el código de la serie correcta, el de su dirección (en `https://www.mangaupdates.com/series/lzjwjkf/...` es `"lzjwjkf"`). La tarea, que corre sola al guardar `catalogo.json`, la corrige.
 
 La tarea de GitHub completa el resto (título, autores, géneros, portada, capítulos y dónde leer) y publica la página.
 

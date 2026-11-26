@@ -1,5 +1,5 @@
 {
-  "_ayuda": "Lista de obras del catálogo. De lunes a viernes entran solas hasta 20 obras nuevas (scripts/nuevas.mjs). Para agregar una a mano, busca la obra en AniList (por ejemplo https://anilist.co/manga/105398/Solo-Leveling), copia su número (105398) y agrégala al final como { \"anilist\": 105398 }. Para quitar una, borra su línea: si había entrado sola, no vuelve. Para que una obra nunca entre sola, pon su número en \"excluidas\", por ejemplo [105398, 30013]. La tarea de GitHub completa el resto (título, géneros, portada, capítulos y dónde leer) y publica la página. \"id\", \"titulo\" y \"agregada\" (el día en que llegó) se llenan solos la primera vez; puedes cambiar \"titulo\" si quieres otro nombre, pero no cambies \"id\" (es parte de los enlaces a cada obra).",
+  "_ayuda": "Lista de obras del catálogo. De lunes a viernes entran solas hasta 20 obras nuevas (scripts/nuevas.mjs). Para agregar una a mano, busca la obra en AniList (por ejemplo https://anilist.co/manga/105398/Solo-Leveling), copia su número (105398) y agrégala al final como { \"anilist\": 105398 }. Para quitar una, borra su línea: si había entrado sola, no vuelve. Para que una obra nunca entre sola, pon su número en \"excluidas\", por ejemplo [105398, 30013]. La tarea de GitHub completa el resto (título, géneros, portada, capítulos y dónde leer) y publica la página. \"id\", \"titulo\" y \"agregada\" (el día en que llegó) se llenan solos la primera vez; puedes cambiar \"titulo\" si quieres otro nombre, pero no cambies \"id\" (es parte de los enlaces a cada obra). Si una obra quedó unida a otra versión en MangaUpdates (pasa con las que tienen remake), pon en \"mangaupdates\" el código de la serie correcta, el que sale en su dirección (en https://www.mangaupdates.com/series/lzjwjkf/... es \"lzjwjkf\").",
   "excluidas": [],
   "obras": [
     {"anilist":105778,"id":"chainsaw-man","titulo":"Chainsaw Man"},
@@ -40,7 +40,7 @@
     {"anilist":116353,"id":"the-devil-butler","titulo":"The Devil Butler"},
     {"anilist":85850,"id":"19-tian","titulo":"19 Tian","portadaGrande":"https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b85850-C9jxTZSRutBw.png"},
     {"anilist":117324,"id":"nan-hao-shang-feng","titulo":"Nan Hao Shang Feng"},
-    {"anilist":112275,"id":"heaven-officials-blessing","titulo":"Heaven Official's Blessing"},
+    {"anilist":112275,"id":"heaven-officials-blessing","titulo":"Heaven Official's Blessing","mangaupdates":"lzjwjkf"},
     {"anilist":142287,"id":"i-am-the-fated-villain","titulo":"I Am The Fated Villain"},
     {"anilist":30012,"id":"bleach","titulo":"Bleach"},
     {"anilist":86635,"id":"kaguya-sama-love-is-war","titulo":"Kaguya-sama: Love is War"},
