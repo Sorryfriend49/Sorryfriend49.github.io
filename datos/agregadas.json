@@ -21,6 +21,11 @@
       "origen": "popular",
       "titulo": "Claymore"
     },
+    "30912": {
+      "fecha": "2026-11-27",
+      "origen": "popular",
+      "titulo": "Tomie"
+    },
     "31517": {
       "fecha": "2026-11-25",
       "origen": "popular",
@@ -46,6 +51,11 @@
       "origen": "popular",
       "titulo": "Deadman Wonderland"
     },
+    "38848": {
+      "fecha": "2026-11-27",
+      "origen": "popular",
+      "titulo": "Sun-Ken Rock"
+    },
     "38967": {
       "fecha": "2026-11-25",
       "origen": "popular",
@@ -55,6 +65,16 @@
       "fecha": "2026-11-26",
       "origen": "popular",
       "titulo": "Bakuman。"
+    },
+    "43492": {
+      "fecha": "2026-11-27",
+      "origen": "popular",
+      "titulo": "Blue Exorcist"
+    },
+    "44440": {
+      "fecha": "2026-11-27",
+      "origen": "popular",
+      "titulo": "I Am a Hero"
     },
     "44790": {
       "fecha": "2026-11-25",
@@ -111,15 +131,35 @@
       "origen": "popular",
       "titulo": "Bungo Stray Dogs"
     },
+    "85316": {
+      "fecha": "2026-11-27",
+      "origen": "popular",
+      "titulo": "Dead Dead Demon's Dededede Destruction"
+    },
     "85564": {
       "fecha": "2026-11-26",
       "origen": "popular",
       "titulo": "Mushoku Tensei: Jobless Reincarnation"
     },
+    "85802": {
+      "fecha": "2026-11-27",
+      "origen": "popular",
+      "titulo": "Domestic Girlfriend"
+    },
     "85849": {
       "fecha": "2026-11-24",
       "origen": "popular",
       "titulo": "ReLIFE"
+    },
+    "85911": {
+      "fecha": "2026-11-27",
+      "origen": "popular",
+      "titulo": "Tomodachi Game"
+    },
+    "86136": {
+      "fecha": "2026-11-27",
+      "origen": "popular",
+      "titulo": "Happiness"
     },
     "86300": {
       "fecha": "2026-11-26",
@@ -176,6 +216,11 @@
       "origen": "popular",
       "titulo": "Don't Toy With Me, Miss Nagatoro"
     },
+    "101177": {
+      "fecha": "2026-11-27",
+      "origen": "popular",
+      "titulo": "Fly Me to the Moon"
+    },
     "105097": {
       "fecha": "2026-11-23",
       "origen": "tendencia",
@@ -195,6 +240,11 @@
       "fecha": "2026-11-25",
       "origen": "popular",
       "titulo": "The Eminence in Shadow"
+    },
+    "112981": {
+      "fecha": "2026-11-27",
+      "origen": "popular",
+      "titulo": "Kubo Won't Let Me Be Invisible"
     },
     "116186": {
       "fecha": "2026-11-24",
@@ -276,6 +326,11 @@
       "origen": "tendencia",
       "titulo": "Anta to Osananajimitte dake demo Iyananoni!: Zekkou kara Hajimaru S-kyuu Bishoujo to no Gakuen Nariagari Seikatsu"
     },
+    "159655": {
+      "fecha": "2026-11-27",
+      "origen": "tendencia",
+      "titulo": "Kusunoki’s Flunking Her High School Glow-Up"
+    },
     "160693": {
       "fecha": "2026-11-24",
       "origen": "tendencia",
@@ -321,6 +376,11 @@
       "origen": "tendencia",
       "titulo": "My Avatars’ Path to Greatness"
     },
+    "182852": {
+      "fecha": "2026-11-27",
+      "origen": "tendencia",
+      "titulo": "Shut up, Evil Dragon, I Don't Want to Raise A Child with You Anymore"
+    },
     "183285": {
       "fecha": "2026-11-26",
       "origen": "tendencia",
@@ -330,6 +390,16 @@
       "fecha": "2026-11-24",
       "origen": "tendencia",
       "titulo": "Chronicles of a Doomed Prodigy"
+    },
+    "184347": {
+      "fecha": "2026-11-27",
+      "origen": "tendencia",
+      "titulo": "Bad Born Blood"
+    },
+    "184502": {
+      "fecha": "2026-11-27",
+      "origen": "tendencia",
+      "titulo": "The Academy’s Sashimi Sword Master"
     },
     "187347": {
       "fecha": "2026-11-24",
@@ -351,10 +421,20 @@
       "origen": "tendencia",
       "titulo": "Chronicles of the Lazy Sovereign"
     },
+    "199222": {
+      "fecha": "2026-11-27",
+      "origen": "tendencia",
+      "titulo": "Rebirth of the Divine Demon"
+    },
     "199496": {
       "fecha": "2026-11-24",
       "origen": "tendencia",
       "titulo": "FOG LAND"
+    },
+    "201009": {
+      "fecha": "2026-11-27",
+      "origen": "tendencia",
+      "titulo": "The Patron of Villains"
     },
     "201855": {
       "fecha": "2026-11-25",
@@ -365,6 +445,16 @@
       "fecha": "2026-11-24",
       "origen": "tendencia",
       "titulo": "How to Survive as a Wandering Knight"
+    },
+    "202986": {
+      "fecha": "2026-11-27",
+      "origen": "tendencia",
+      "titulo": "Too Many Heroes for the Demon Lord"
+    },
+    "203154": {
+      "fecha": "2026-11-27",
+      "origen": "estreno",
+      "titulo": "Vampire Lord-ro Saneun Beop"
     },
     "203800": {
       "fecha": "2026-11-26",
@@ -385,6 +475,16 @@
       "fecha": "2026-11-25",
       "origen": "estreno",
       "titulo": "Became the Lout First Prince"
+    },
+    "210414": {
+      "fecha": "2026-11-27",
+      "origen": "estreno",
+      "titulo": "Na Honja EX-geup Sohwansu"
+    },
+    "211510": {
+      "fecha": "2026-11-27",
+      "origen": "estreno",
+      "titulo": "The Otherworldly Family Man"
     },
     "214050": {
       "fecha": "2026-11-24",

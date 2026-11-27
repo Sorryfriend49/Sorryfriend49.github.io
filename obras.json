@@ -1,6 +1,6 @@
 {
   "esquema": 1,
-  "actualizado": "2026-11-26",
+  "actualizado": "2026-11-27",
   "fuente": "AniList (https://anilist.co): títulos, géneros, fechas, portadas, puntaje, popularidad, dónde leer, orden de lectura y anime. Este archivo se genera solo a partir de catalogo.json (scripts/catalogo.mjs): para agregar o quitar obras, edita catalogo.json.",
   "obras": [
     {
@@ -16565,6 +16565,12 @@
           "url": "https://www.eccediciones.com/catalogo/manga/romantico/el-leon-de-marzo",
           "idioma": "es",
           "tipo": "tomos"
+        },
+        {
+          "sitio": "Manga Park",
+          "url": "https://manga-park.com/title/192",
+          "idioma": "ja",
+          "tipo": "original"
         }
       ],
       "comunidad": {
@@ -23832,7 +23838,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 76,
-          "popularidad": 5894
+          "popularidad": 5911
         }
       },
       "agregada": "2026-11-23"
@@ -25414,7 +25420,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 76,
-          "popularidad": 5930
+          "popularidad": 5951
         }
       },
       "agregada": "2026-11-24"
@@ -27278,7 +27284,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 78,
-          "popularidad": 7598
+          "popularidad": 7616
         }
       },
       "agregada": "2026-11-25"
@@ -27354,7 +27360,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 81,
-          "popularidad": 3087
+          "popularidad": 3107
         }
       },
       "agregada": "2026-11-25"
@@ -27736,7 +27742,7 @@
       "comunidad": {
         "anilist": {
           "puntaje": 74,
-          "popularidad": 7166
+          "popularidad": 7194
         }
       },
       "agregada": "2026-11-25"
@@ -29624,7 +29630,6 @@
       ],
       "generos": [
         "accion",
-        "aventura",
         "fantasia"
       ],
       "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx182139-2skHo9YMWUk0.jpg",
@@ -31119,6 +31124,1770 @@
         "otros": [
           "Hulu",
           "Tubi TV"
+        ]
+      }
+    },
+    {
+      "id": "too-many-heroes-for-the-demon-lord",
+      "titulo": "Too Many Heroes for the Demon Lord",
+      "titulos": {
+        "romaji": "Mawanginde Yongsaga Neomu Maneum",
+        "ingles": "Too Many Heroes for the Demon Lord",
+        "nativo": "마왕인데 용사가 너무 많음"
+      },
+      "sinonimos": [
+        "The Demon King Overrun by Heroes",
+        "I’m the Demon King, but There Are Too Many Heroes",
+        "Le Roi Démon submergé par les héros",
+        "天才魔王的逆襲"
+      ],
+      "tipo": "manhwa",
+      "estado": "en-publicacion",
+      "inicio": "2025-11-27",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Mirip",
+          "rol": "historia original",
+          "nativo": "미립"
+        },
+        {
+          "nombre": "Seon-Ung Yun",
+          "rol": "historia",
+          "nativo": "윤선웅"
+        },
+        {
+          "nombre": "Gojae",
+          "rol": "arte",
+          "nativo": "고재"
+        }
+      ],
+      "generos": [
+        "accion",
+        "fantasia"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx202986-0wn84aV9jlHq.jpg",
+      "color": "#e46b43",
+      "ids": {
+        "anilist": 202986,
+        "mal": 189030
+      },
+      "enlaces": [
+        {
+          "sitio": "WEBTOON",
+          "url": "https://www.webtoons.com/en/action/too-many-heroes-for-the-demon-lord/list?title_no=9702",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Naver Webtoon",
+          "url": "https://comic.naver.com/webtoon/list?titleId=845002",
+          "idioma": "ko",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Naver Series",
+          "url": "https://series.naver.com/comic/detail.series?productNo=13430584",
+          "idioma": "ko",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 78,
+          "popularidad": 9287
+        }
+      },
+      "agregada": "2026-11-27"
+    },
+    {
+      "id": "the-academys-sashimi-sword-master",
+      "titulo": "The Academy’s Sashimi Sword Master",
+      "titulos": {
+        "romaji": "Sashimi Han Jaruro Academy-reul Ssipeomeokeum",
+        "ingles": "The Academy’s Sashimi Sword Master",
+        "nativo": "사시미 한 자루로 아카데미를 씹어먹음"
+      },
+      "sinonimos": [
+        "Conquering the Academy with Just a Sashimi Knife",
+        "I Took Over the Academy with a Single Sashimi Knife",
+        "刺身刀英雄橫掃學院",
+        "ชำแหละอะคาเดมีด้วยมีดแล่ปลา",
+        "刺身刀制霸英雄学院"
+      ],
+      "tipo": "manhwa",
+      "estado": "en-publicacion",
+      "inicio": "2024-08-28",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Tangahuru",
+          "rol": "historia original",
+          "nativo": "탕아후루"
+        },
+        {
+          "nombre": "GMAN",
+          "rol": "historia y arte"
+        }
+      ],
+      "generos": [
+        "accion",
+        "fantasia"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx184502-uu4QoBUwEfNH.jpg",
+      "color": "#50f1fe",
+      "ids": {
+        "anilist": 184502,
+        "mal": 174162
+      },
+      "enlaces": [
+        {
+          "sitio": "WEBTOON",
+          "url": "https://www.webtoons.com/en/fantasy/the-academys-sashimi-sword-master/list?title_no=7206",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Naver Webtoon",
+          "url": "https://comic.naver.com/webtoon/list?titleId=829875",
+          "idioma": "ko",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Naver Series",
+          "url": "https://series.naver.com/comic/detail.series?productNo=11540563",
+          "idioma": "ko",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 75,
+          "popularidad": 16901
+        }
+      },
+      "agregada": "2026-11-27"
+    },
+    {
+      "id": "the-otherworldly-family-man",
+      "titulo": "The Otherworldly Family Man",
+      "titulos": {
+        "romaji": "Isegyeseo Yubunamdoen Sseol",
+        "ingles": "The Otherworldly Family Man",
+        "nativo": "이세계서 유부남된 썰"
+      },
+      "sinonimos": [
+        "I Became A Married Man in Another World",
+        "Comment je me suis marié dans un autre monde",
+        "Familienvater in einer anderen Welt",
+        "ชีวิตแต่งงานของผมในต่างโลก"
+      ],
+      "tipo": "manhwa",
+      "estado": "en-publicacion",
+      "inicio": "2026-04-27",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Berhera",
+          "rol": "historia original",
+          "nativo": "베르헤라"
+        },
+        {
+          "nombre": "Fantera",
+          "rol": "historia",
+          "nativo": "판테라"
+        },
+        {
+          "nombre": "Team Forestive",
+          "rol": "historia",
+          "nativo": "팀 포레스티브"
+        },
+        {
+          "nombre": "Hye-Ryeong Kim",
+          "rol": "arte",
+          "nativo": "김혜령"
+        }
+      ],
+      "generos": [
+        "fantasia",
+        "recuentos-de-la-vida"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx211510-6DsPrnzmNZSY.jpg",
+      "color": "#e4bb43",
+      "ids": {
+        "anilist": 211510,
+        "mal": 193207
+      },
+      "enlaces": [
+        {
+          "sitio": "WEBTOON",
+          "url": "https://www.webtoons.com/en/fantasy/the-otherworldly-family-man/list?title_no=10750",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Naver Webtoon",
+          "url": "https://comic.naver.com/webtoon/list?titleId=850103",
+          "idioma": "ko",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Naver Series",
+          "url": "https://series.naver.com/comic/detail.series?productNo=13922134",
+          "idioma": "ko",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 75,
+          "popularidad": 4753
+        }
+      },
+      "agregada": "2026-11-27"
+    },
+    {
+      "id": "the-patron-of-villains",
+      "titulo": "The Patron of Villains",
+      "titulos": {
+        "romaji": "Akdangdeurui Huwonjaga Doeeotda",
+        "ingles": "The Patron of Villains",
+        "nativo": "악당들의 후원자가 되었다"
+      },
+      "sinonimos": [
+        "Raising Villains the Right Way",
+        "I Became a Patron of Villains",
+        "我成了反派们的金主",
+        "成為反派惡角的贊助者",
+        "ปั้นตัวร้ายจนกลายเป็นลาสต์บอส"
+      ],
+      "tipo": "manhwa",
+      "estado": "en-publicacion",
+      "inicio": "2025-10-23",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Bomhanbangul",
+          "rol": "historia original",
+          "nativo": "봄한방울"
+        },
+        {
+          "nombre": "Namisa",
+          "rol": "historia",
+          "nativo": "남이사"
+        },
+        {
+          "nombre": "Jogen",
+          "rol": "arte",
+          "nativo": "조겐"
+        }
+      ],
+      "generos": [
+        "accion",
+        "fantasia"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx201009-jTY2arWw21sc.jpg",
+      "color": "#d61a50",
+      "ids": {
+        "anilist": 201009,
+        "mal": 188109
+      },
+      "enlaces": [
+        {
+          "sitio": "WEBTOON",
+          "url": "https://www.webtoons.com/en/fantasy/the-patron-of-villains/list?title_no=9321",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Naver Series",
+          "url": "https://series.naver.com/comic/detail.series?productNo=13285922",
+          "idioma": "ko",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Naver Webtoon",
+          "url": "https://comic.naver.com/webtoon/list?titleId=844063",
+          "idioma": "ko",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 79,
+          "popularidad": 17410
+        }
+      },
+      "agregada": "2026-11-27"
+    },
+    {
+      "id": "bad-born-blood",
+      "titulo": "Bad Born Blood",
+      "titulos": {
+        "romaji": "Bad Born Blood",
+        "ingles": "Bad Born Blood",
+        "nativo": "배드 본 블러드"
+      },
+      "sinonimos": [
+        "壞骨之血",
+        "坏骨之血",
+        "バッドボーンブラッド"
+      ],
+      "tipo": "manhwa",
+      "estado": "en-publicacion",
+      "inicio": "2024-11-13",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Baeksugwijok",
+          "rol": "historia original",
+          "nativo": "백수귀족"
+        },
+        {
+          "nombre": "Bak-Sae Ho",
+          "rol": "historia",
+          "nativo": "호박새"
+        },
+        {
+          "nombre": "D-Park",
+          "rol": "arte"
+        }
+      ],
+      "generos": [
+        "accion",
+        "drama",
+        "ciencia-ficcion"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx184347-lDVGEttgQHbY.jpg",
+      "color": "#e43550",
+      "ids": {
+        "anilist": 184347,
+        "mal": 176244
+      },
+      "enlaces": [
+        {
+          "sitio": "WEBTOON",
+          "url": "https://www.webtoons.com/en/action/bad-born-blood/list?title_no=7208",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Naver Webtoon",
+          "url": "https://comic.naver.com/webtoon/list?titleId=833388",
+          "idioma": "ko",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Naver Series",
+          "url": "https://series.naver.com/comic/detail.series?productNo=11762937",
+          "idioma": "ko",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 78,
+          "popularidad": 12722
+        }
+      },
+      "agregada": "2026-11-27"
+    },
+    {
+      "id": "kusunokis-flunking-her-high-school-glow-up",
+      "titulo": "Kusunoki’s Flunking Her High School Glow-Up",
+      "titulos": {
+        "romaji": "Kusunoki-san wa Koukou Debut ni Shippaishiteiru",
+        "ingles": "Kusunoki’s Flunking Her High School Glow-Up",
+        "nativo": "楠木さんは高校デビューに失敗している"
+      },
+      "sinonimos": [
+        "Kusunoki-san Failed to Debut in High School",
+        "She Is (Not) a Cool Girl (in High School)",
+        "쿠스노키는 이미지 변신에 실패하고 있다"
+      ],
+      "tipo": "manga",
+      "estado": "en-publicacion",
+      "inicio": "2022-10-21",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Mitsuki Mii",
+          "rol": "historia y arte",
+          "nativo": "みいみつき"
+        }
+      ],
+      "generos": [
+        "comedia",
+        "romance"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx159655-Kv58QINz1rXm.jpg",
+      "color": "#e45d6b",
+      "ids": {
+        "anilist": 159655,
+        "mal": 156835
+      },
+      "enlaces": [
+        {
+          "sitio": "Kodansha USA",
+          "url": "https://kodansha.us/series/kusunokis-flunking-her-high-school-glow-up/",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Pixiv Comic",
+          "url": "https://comic.pixiv.net/works/8789",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Nico Nico Seiga",
+          "url": "https://manga.nicovideo.jp/comic/61727",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Comic Days",
+          "url": "https://comic-days.com/episode/4855956445078356676",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Pocket Magazine",
+          "url": "https://pocket.shonenmagazine.com/title/02118/episode/371666",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 69,
+          "popularidad": 11696
+        }
+      },
+      "agregada": "2026-11-27",
+      "anime": {
+        "obras": [
+          {
+            "anilist": 214368,
+            "titulo": "Kusunoki-san wa Koukou Debut ni Shippaishiteiru",
+            "formato": "serie",
+            "estado": "por estrenar"
+          }
+        ]
+      }
+    },
+    {
+      "id": "vampire-lord-ro-saneun-beop",
+      "titulo": "Vampire Lord-ro Saneun Beop",
+      "titulos": {
+        "romaji": "Vampire Lord-ro Saneun Beop",
+        "ingles": null,
+        "nativo": "뱀파이어 로드로 사는 법"
+      },
+      "sinonimos": [
+        "Crimson Reset",
+        "How to Live as a Vampire Lord"
+      ],
+      "tipo": "manhwa",
+      "estado": "en-publicacion",
+      "inicio": "2025-12-06",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Hyeong-Jun Kim",
+          "rol": "historia original",
+          "nativo": "김형준"
+        },
+        {
+          "nombre": "Moksu",
+          "rol": "historia",
+          "nativo": "목수"
+        },
+        {
+          "nombre": "STOUT",
+          "rol": "arte",
+          "nativo": "스타우트"
+        }
+      ],
+      "generos": [
+        "accion",
+        "fantasia"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx203154-hrncPJICVIok.jpg",
+      "color": "#f15d86",
+      "ids": {
+        "anilist": 203154,
+        "mal": 189262
+      },
+      "enlaces": [
+        {
+          "sitio": "KakaoPage",
+          "url": "https://page.kakao.com/content/68131425",
+          "idioma": "ko",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Kakao Webtoon",
+          "url": "https://webtoon.kakao.com/content/뱀파이어-로드로-사는-법/4696",
+          "idioma": "ko",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 76,
+          "popularidad": 4900
+        }
+      },
+      "agregada": "2026-11-27"
+    },
+    {
+      "id": "rebirth-of-the-divine-demon",
+      "titulo": "Rebirth of the Divine Demon",
+      "titulos": {
+        "romaji": "Sinma Hwansaeng",
+        "ingles": "Rebirth of the Divine Demon",
+        "nativo": "신마 환생"
+      },
+      "sinonimos": [
+        "神魔換世"
+      ],
+      "tipo": "manhwa",
+      "estado": "en-publicacion",
+      "inicio": "2025-09-25",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Yobi",
+          "rol": "historia original",
+          "nativo": "요비"
+        },
+        {
+          "nombre": "Double D",
+          "rol": "historia",
+          "nativo": "더블디"
+        },
+        {
+          "nombre": "Dongdongi",
+          "rol": "arte",
+          "nativo": "동동이"
+        }
+      ],
+      "generos": [
+        "accion",
+        "fantasia"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx199222-z8kz9BhvX67E.jpg",
+      "color": "#d66b1a",
+      "ids": {
+        "anilist": 199222,
+        "mal": 191003
+      },
+      "enlaces": [
+        {
+          "sitio": "WEBTOON",
+          "url": "https://www.webtoons.com/en/action/rebirth-of-the-divine-demon/list?title_no=9507",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Naver Webtoon",
+          "url": "https://comic.naver.com/webtoon/list?titleId=843194",
+          "idioma": "ko",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Naver Series",
+          "url": "https://series.naver.com/comic/detail.series?productNo=13085692",
+          "idioma": "ko",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 72,
+          "popularidad": 2581
+        }
+      },
+      "agregada": "2026-11-27"
+    },
+    {
+      "id": "na-honja-ex-geup-sohwansu",
+      "titulo": "Na Honja EX-geup Sohwansu",
+      "titulos": {
+        "romaji": "Na Honja EX-geup Sohwansu",
+        "ingles": null,
+        "nativo": "나 혼자 EX급 소환수"
+      },
+      "sinonimos": [
+        "Only I Have an EX-Grade Summon",
+        "I Alone Am an EX-Class Summoner"
+      ],
+      "tipo": "manhwa",
+      "estado": "en-publicacion",
+      "inicio": "2026-04-10",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Je-Yeol Im",
+          "rol": "historia original",
+          "nativo": "임제열"
+        },
+        {
+          "nombre": "Studio Inus",
+          "rol": "historia y arte",
+          "nativo": "스튜디오 이너스"
+        }
+      ],
+      "generos": [
+        "accion",
+        "fantasia"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx210414-q29hf8AeUoVc.png",
+      "color": "#93e493",
+      "ids": {
+        "anilist": 210414,
+        "mal": 192469
+      },
+      "enlaces": [
+        {
+          "sitio": "KakaoPage",
+          "url": "https://page.kakao.com/content/68303310",
+          "idioma": "ko",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Kakao Webtoon",
+          "url": "https://webtoon.kakao.com/content/나-혼자-EX급-소환수/4828",
+          "idioma": "ko",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 74,
+          "popularidad": 3357
+        }
+      },
+      "agregada": "2026-11-27"
+    },
+    {
+      "id": "shut-up-evil-dragon-i-dont-want-to-raise-a-child-with-you-anymore",
+      "titulo": "Shut up, Evil Dragon, I Don't Want to Raise A Child with You Anymore",
+      "titulos": {
+        "romaji": "Bizui Elong Wo Bu Xiang Zai Gen Ni Dai Haizi Le",
+        "ingles": "Shut up, Evil Dragon, I Don't Want to Raise A Child with You Anymore",
+        "nativo": "闭嘴恶龙我不想再跟你带孩子了"
+      },
+      "sinonimos": [
+        "元ドラゴンスレイヤーは専業パパになる"
+      ],
+      "tipo": "manhua",
+      "estado": "en-publicacion",
+      "inicio": "2024-08-23",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Naixi Weiwei Jiang",
+          "rol": "historia original",
+          "nativo": "奶昔尾尾酱"
+        },
+        {
+          "nombre": "Xi Mi",
+          "rol": "historia",
+          "nativo": "西米"
+        },
+        {
+          "nombre": "Man Shi Ju Shi",
+          "rol": "arte",
+          "nativo": "漫诗居士"
+        }
+      ],
+      "generos": [
+        "accion",
+        "drama",
+        "fantasia",
+        "romance"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b182852-zJr1AdWQWBsa.jpg",
+      "color": "#e45d86",
+      "ids": {
+        "anilist": 182852,
+        "mal": null
+      },
+      "enlaces": [],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 75,
+          "popularidad": 7172
+        }
+      },
+      "portadaGrande": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b182852-zJr1AdWQWBsa.jpg",
+      "agregada": "2026-11-27"
+    },
+    {
+      "id": "happiness",
+      "titulo": "Happiness",
+      "titulos": {
+        "romaji": "Happiness",
+        "ingles": "Happiness",
+        "nativo": "ハピネス"
+      },
+      "sinonimos": [
+        "해피니스"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "2015-02-09",
+      "fin": "2019-03-09",
+      "capitulos": 50,
+      "tomos": 10,
+      "autores": [
+        {
+          "nombre": "Shuuzou Oshimi",
+          "rol": "historia y arte",
+          "nativo": "押見修造"
+        }
+      ],
+      "generos": [
+        "drama",
+        "terror",
+        "sobrenatural"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx86136-CJRGk54qB6Ev.jpg",
+      "color": "#fe5078",
+      "ids": {
+        "anilist": 86136,
+        "mal": 85173
+      },
+      "enlaces": [
+        {
+          "sitio": "K MANGA",
+          "url": "https://kmanga.kodansha.com/title/10105/episode/336137",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Omoi",
+          "url": "https://www.omoi.com/series/happiness",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Kodansha USA",
+          "url": "https://kodansha.us/series/happiness/",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Pocket Magazine",
+          "url": "https://pocket.shonenmagazine.com/episode/13932016480029113137",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 73,
+          "popularidad": 43620
+        }
+      },
+      "agregada": "2026-11-27"
+    },
+    {
+      "id": "domestic-girlfriend",
+      "titulo": "Domestic Girlfriend",
+      "titulos": {
+        "romaji": "Domestic na Kanojo",
+        "ingles": "Domestic Girlfriend",
+        "nativo": "ドメスティックな彼女"
+      },
+      "sinonimos": [
+        "Dome x Kano",
+        "家有女友",
+        "חברה ביתית",
+        "บทเรียนรักเส้นทางหัวใจ",
+        "Love X Dilemma"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "2014-04-23",
+      "fin": "2020-06-10",
+      "capitulos": 299,
+      "tomos": 28,
+      "autores": [
+        {
+          "nombre": "Kei Sasuga",
+          "rol": "historia y arte",
+          "nativo": "流石景"
+        }
+      ],
+      "generos": [
+        "drama",
+        "romance",
+        "recuentos-de-la-vida"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85802-lh7gZHgQmliE.png",
+      "color": "#e43578",
+      "ids": {
+        "anilist": 85802,
+        "mal": 70941
+      },
+      "enlaces": [
+        {
+          "sitio": "K MANGA",
+          "url": "https://kmanga.kodansha.com/title/10101/episode/328538",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Omoi",
+          "url": "https://www.omoi.com/series/domestic-girlfriend",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "MangaPlaza",
+          "url": "https://mangaplaza.com/title/0303001722/",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Kodansha USA",
+          "url": "https://kodansha.us/series/domestic-girlfriend/",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Pocket Magazine",
+          "url": "https://pocket.shonenmagazine.com/episode/13932016480029113059",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Comic Days",
+          "url": "https://comic-days.com/episode/10834108156636987196",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 68,
+          "popularidad": 43441
+        }
+      },
+      "agregada": "2026-11-27",
+      "lectura": {
+        "relacionadas": [
+          {
+            "anilist": 163094,
+            "titulo": "Domestic na Kanojo: Koushiki Usui Hon",
+            "tipo": "manga",
+            "anio": 2020,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx163094-qWo8TQdZsKqm.jpg",
+            "relacion": "spin-off"
+          },
+          {
+            "anilist": 125470,
+            "titulo": "Domestic na Isekai Teni",
+            "tipo": "manga",
+            "formato": "one-shot",
+            "anio": 2020,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx125470-bARIEf1uh1Qz.png",
+            "relacion": "spin-off"
+          }
+        ]
+      },
+      "anime": {
+        "obras": [
+          {
+            "anilist": 103139,
+            "titulo": "Domestic Girlfriend",
+            "formato": "serie",
+            "anio": 2019,
+            "episodios": 12
+          }
+        ],
+        "estrenado": true,
+        "ver": [
+          {
+            "sitio": "Crunchyroll",
+            "url": "https://www.crunchyroll.com/domestic-girlfriend"
+          },
+          {
+            "sitio": "HIDIVE",
+            "url": "https://www.hidive.com/tv/domestic-girlfriend"
+          }
+        ]
+      }
+    },
+    {
+      "id": "blue-exorcist",
+      "titulo": "Blue Exorcist",
+      "titulos": {
+        "romaji": "Ao no Exorcist",
+        "ingles": "Blue Exorcist",
+        "nativo": "青の祓魔師"
+      },
+      "sinonimos": [
+        "Ao no Futsumashi",
+        "The Blue Magic Exorcist",
+        "青の祓魔師(エクソシスト)",
+        "청의 엑소시스트",
+        "青之驅魔師"
+      ],
+      "tipo": "manga",
+      "estado": "en-publicacion",
+      "inicio": "2009-04-01",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Kazue Katou",
+          "rol": "historia y arte",
+          "nativo": "加藤和恵"
+        }
+      ],
+      "generos": [
+        "accion",
+        "sobrenatural"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx43492-2mvXJnP6Feqq.png",
+      "color": "#f18650",
+      "ids": {
+        "anilist": 43492,
+        "mal": 13492
+      },
+      "enlaces": [
+        {
+          "sitio": "MANGA Plus",
+          "url": "https://mangaplus.shueisha.co.jp/titles/100005",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/shonenjump/chapters/blue-exorcist",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "MANGA MILLION",
+          "url": "https://mangamillion.shueisha.co.jp/en/title/88",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/blue-exorcist",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Piccoma",
+          "url": "https://piccoma.com/web/product/4134?etype=episode",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 76,
+          "popularidad": 43360
+        }
+      },
+      "agregada": "2026-11-27",
+      "lectura": {
+        "relacionadas": [
+          {
+            "anilist": 85269,
+            "titulo": "The Melancholy of Yukio Okumura, a Businessman Exorcist",
+            "tipo": "manga",
+            "anio": 2013,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx85269-hbuaiN2EwpNz.jpg",
+            "relacion": "spin-off"
+          }
+        ]
+      },
+      "anime": {
+        "obras": [
+          {
+            "anilist": 9919,
+            "titulo": "Blue Exorcist",
+            "formato": "serie",
+            "anio": 2011,
+            "episodios": 25
+          },
+          {
+            "anilist": 11737,
+            "titulo": "Blue Exorcist: The Movie",
+            "formato": "película",
+            "anio": 2012
+          },
+          {
+            "anilist": 21861,
+            "titulo": "Blue Exorcist: Kyoto Saga",
+            "formato": "serie",
+            "anio": 2017,
+            "episodios": 12
+          },
+          {
+            "anilist": 158931,
+            "titulo": "Blue Exorcist -Shimane Illuminati Saga-",
+            "formato": "serie",
+            "anio": 2024,
+            "episodios": 12
+          },
+          {
+            "anilist": 176311,
+            "titulo": "Blue Exorcist -Beyond the Snow Saga-",
+            "formato": "serie",
+            "anio": 2024,
+            "episodios": 12
+          }
+        ],
+        "estrenado": true,
+        "mas": 2,
+        "ver": [
+          {
+            "sitio": "Crunchyroll",
+            "url": "https://www.crunchyroll.com/blue-exorcist"
+          },
+          {
+            "sitio": "Netflix",
+            "url": "https://www.netflix.com/title/80169943"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tomodachi-game",
+      "titulo": "Tomodachi Game",
+      "titulos": {
+        "romaji": "Tomodachi Game",
+        "ingles": "Tomodachi Game",
+        "nativo": "トモダチゲーム"
+      },
+      "sinonimos": [
+        "Friend Game",
+        "친구게임",
+        "โทโมดาจิ เกมมิตรภาพ",
+        "Tomodachi Game: Los juegos de la amistad",
+        "Przyjacielskie rozgrywki",
+        "Friends Games"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "2013-12-09",
+      "fin": "2024-08-08",
+      "capitulos": 130,
+      "tomos": 26,
+      "autores": [
+        {
+          "nombre": "Mikoto Yamaguchi",
+          "rol": "historia",
+          "nativo": "山口ミコト"
+        },
+        {
+          "nombre": "Yuuki Satou",
+          "rol": "arte",
+          "nativo": "佐藤友生"
+        }
+      ],
+      "generos": [
+        "drama",
+        "misterio",
+        "psicologico"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85911-Z6xE67IxevPA.jpg",
+      "color": "#e45086",
+      "ids": {
+        "anilist": 85911,
+        "mal": 62795
+      },
+      "enlaces": [
+        {
+          "sitio": "K MANGA",
+          "url": "https://kmanga.kodansha.com/title/10018/episode/316163",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Pocket Magazine",
+          "url": "https://pocket.shonenmagazine.com/episode/13932016480029113131",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Comic Days",
+          "url": "https://comic-days.com/episode/10834108156636913830",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Piccoma",
+          "url": "https://piccoma.com/web/product/4669?etype=episode",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 82,
+          "popularidad": 43312
+        }
+      },
+      "agregada": "2026-11-27",
+      "anime": {
+        "obras": [
+          {
+            "anilist": 141014,
+            "titulo": "Tomodachi Game",
+            "formato": "serie",
+            "anio": 2022,
+            "episodios": 12
+          }
+        ],
+        "estrenado": true,
+        "ver": [
+          {
+            "sitio": "Crunchyroll",
+            "url": "https://www.crunchyroll.com/tomodachi-game"
+          },
+          {
+            "sitio": "Disney+",
+            "url": "https://www.disneyplus.com/series/tomodachi-game/3yAkVZXo1tzj"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sun-ken-rock",
+      "titulo": "Sun-Ken Rock",
+      "titulos": {
+        "romaji": "Sun-Ken Rock",
+        "ingles": "Sun-Ken Rock",
+        "nativo": "サンケンロック"
+      },
+      "sinonimos": [
+        "Sun Ken Rock",
+        "Trigun: The Lost Plant"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "2006-04-24",
+      "fin": "2016-02-22",
+      "capitulos": 181,
+      "tomos": 25,
+      "autores": [
+        {
+          "nombre": "Boichi",
+          "rol": "historia y arte",
+          "nativo": "ボウイチ"
+        }
+      ],
+      "generos": [
+        "accion",
+        "comedia",
+        "drama"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx38848-hOSCdwE8xjYl.jpg",
+      "color": "#f1c90d",
+      "ids": {
+        "anilist": 38848,
+        "mal": 8848
+      },
+      "enlaces": [
+        {
+          "sitio": "Piccoma",
+          "url": "https://piccoma.com/web/product/378?etype=episode",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 76,
+          "popularidad": 43310
+        }
+      },
+      "agregada": "2026-11-27",
+      "lectura": {
+        "relacionadas": [
+          {
+            "anilist": 63899,
+            "titulo": "Sun-Ken Rock Gaiden - Yumin",
+            "tipo": "manga",
+            "anio": 2010,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/33899.jpg",
+            "relacion": "historia paralela"
+          },
+          {
+            "anilist": 64657,
+            "titulo": "Yumin ni Gomeshi wo Tabe Sasetai",
+            "tipo": "manga",
+            "anio": 2011,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx64657-Lr6TZaQdkC9E.png",
+            "relacion": "historia paralela"
+          },
+          {
+            "anilist": 64869,
+            "titulo": "Sun-ken Rock Gaiden - Dango Knight",
+            "tipo": "manga",
+            "anio": 2011,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/34869.jpg",
+            "relacion": "spin-off"
+          }
+        ]
+      }
+    },
+    {
+      "id": "i-am-a-hero",
+      "titulo": "I Am a Hero",
+      "titulos": {
+        "romaji": "I Am a Hero",
+        "ingles": "I Am a Hero",
+        "nativo": "アイアムアヒーロー"
+      },
+      "sinonimos": [
+        "Ben Bir Kahramanım",
+        "Ja sam heroj"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "2009-04-20",
+      "fin": "2021-12-10",
+      "capitulos": 265,
+      "tomos": 22,
+      "autores": [
+        {
+          "nombre": "Kengo Hanazawa",
+          "rol": "historia y arte",
+          "nativo": "花沢健吾"
+        }
+      ],
+      "generos": [
+        "accion",
+        "terror",
+        "psicologico"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx44440-oLFibAj4TvM7.jpg",
+      "color": null,
+      "ids": {
+        "anilist": 44440,
+        "mal": 14440
+      },
+      "enlaces": [],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 74,
+          "popularidad": 43295
+        }
+      },
+      "agregada": "2026-11-27",
+      "lectura": {
+        "relacionadas": [
+          {
+            "anilist": 95378,
+            "titulo": "I Am a Hero in OSAKA",
+            "tipo": "manga",
+            "anio": 2015,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx95378-l86wrYAMNMzT.jpg",
+            "relacion": "spin-off"
+          },
+          {
+            "anilist": 102250,
+            "titulo": "I Am a Hero in NAGASAKI",
+            "tipo": "manga",
+            "anio": 2016,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx102250-s72S5kfAsDYi.jpg",
+            "relacion": "spin-off"
+          },
+          {
+            "anilist": 104238,
+            "titulo": "I Am a Hero in IBARAKI",
+            "tipo": "manga",
+            "anio": 2016,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx104238-OZQIBF2Rxqvk.jpg",
+            "relacion": "spin-off"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kubo-wont-let-me-be-invisible",
+      "titulo": "Kubo Won't Let Me Be Invisible",
+      "titulos": {
+        "romaji": "Kubo-san wa Mob wo Yurusanai",
+        "ingles": "Kubo Won't Let Me Be Invisible",
+        "nativo": "久保さんは僕を許さない"
+      },
+      "sinonimos": [
+        " Kubo-san wa Boku (Mobu) wo Yurusanai",
+        "久保同學不放過我",
+        "Kubo-san Doesn't Leave Me Be (a Mob)",
+        "คุณคุโบะไม่ยอมให้ผมเป็นตัวประกอบ",
+        "Kubo no me deja ser invisible",
+        "쿠보 양은 나를 내버려두지 않아"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "2019-10-24",
+      "fin": "2023-03-02",
+      "capitulos": 158,
+      "tomos": 12,
+      "autores": [
+        {
+          "nombre": "Nene Yukimori",
+          "rol": "historia y arte",
+          "nativo": "雪森寧々"
+        }
+      ],
+      "generos": [
+        "comedia",
+        "romance",
+        "recuentos-de-la-vida"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx112981-lI95vW7wk8Nv.jpg",
+      "color": "#e44393",
+      "ids": {
+        "anilist": 112981,
+        "mal": 122448
+      },
+      "enlaces": [
+        {
+          "sitio": "MANGA Plus",
+          "url": "https://mangaplus.shueisha.co.jp/titles/200089",
+          "idioma": "es",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "MANGA Plus",
+          "url": "https://mangaplus.shueisha.co.jp/titles/100170",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/shonenjump/chapters/kubo-wont-let-me-be-invisible",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "Shonen Jump Plus",
+          "url": "https://shonenjumpplus.com/episode/13933686331692600972",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 78,
+          "popularidad": 43214
+        }
+      },
+      "agregada": "2026-11-27",
+      "anime": {
+        "obras": [
+          {
+            "anilist": 148969,
+            "titulo": "Kubo Won't Let Me Be Invisible",
+            "formato": "serie",
+            "anio": 2023,
+            "episodios": 12
+          }
+        ],
+        "estrenado": true,
+        "ver": [
+          {
+            "sitio": "HIDIVE",
+            "url": "https://www.hidive.com/tv/kubo-wont-let-me-be-invisible"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tomie",
+      "titulo": "Tomie",
+      "titulos": {
+        "romaji": "Tomie",
+        "ingles": "Tomie",
+        "nativo": "富江"
+      },
+      "sinonimos": [
+        "Томіе"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "1987-02-01",
+      "fin": "1999-02",
+      "capitulos": 13,
+      "tomos": 1,
+      "autores": [
+        {
+          "nombre": "Junji Itou",
+          "rol": "historia y arte",
+          "nativo": "伊藤潤二"
+        }
+      ],
+      "generos": [
+        "drama",
+        "fantasia",
+        "terror",
+        "sobrenatural",
+        "suspenso"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30912-LzqytEFBrqUM.jpg",
+      "color": "#d6281a",
+      "ids": {
+        "anilist": 30912,
+        "mal": 912
+      },
+      "enlaces": [
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/vizmanga/chapters/tomie",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/read/manga/tomie-complete-deluxe-edition/product/4988",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Pixiv Comic",
+          "url": "https://comic.pixiv.net/works/7570",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 76,
+          "popularidad": 42845
+        }
+      },
+      "agregada": "2026-11-27",
+      "lectura": {
+        "orden": [
+          {
+            "anilist": 30912
+          },
+          {
+            "anilist": 145612,
+            "titulo": "Tomie: Again",
+            "tipo": "manga",
+            "anio": 2001,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b145612-J1zra7vnJuLh.jpg"
+          }
+        ],
+        "relacionadas": [
+          {
+            "anilist": 109860,
+            "titulo": "Miirareta Souichi",
+            "tipo": "manga",
+            "formato": "one-shot",
+            "anio": 2011,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b109860-vycpjy9HZGaL.png",
+            "relacion": "historia paralela"
+          },
+          {
+            "anilist": 124984,
+            "titulo": "Tomie: Nottori",
+            "tipo": "manga",
+            "anio": 2018,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b124984-h4aTb2ghnMuF.jpg",
+            "relacion": "historia paralela"
+          },
+          {
+            "anilist": 179432,
+            "titulo": "Tomie: Control",
+            "tipo": "manga",
+            "formato": "one-shot",
+            "anio": 2024,
+            "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b179432-TYPDWsSHIuTV.png",
+            "relacion": "historia paralela"
+          }
+        ]
+      },
+      "anime": {
+        "obras": [
+          {
+            "anilist": 99940,
+            "titulo": "Junji Ito Collection",
+            "formato": "serie",
+            "anio": 2018,
+            "episodios": 12
+          },
+          {
+            "anilist": 101016,
+            "titulo": "Junji Ito Collection: Tomie",
+            "formato": "OVA",
+            "anio": 2018,
+            "episodios": 2
+          },
+          {
+            "anilist": 150653,
+            "titulo": "Junji Ito Maniac: Japanese Tales of the Macabre",
+            "formato": "serie",
+            "anio": 2023,
+            "episodios": 12
+          }
+        ],
+        "estrenado": true,
+        "ver": [
+          {
+            "sitio": "Crunchyroll",
+            "url": "https://www.crunchyroll.com/junji-ito-collection"
+          },
+          {
+            "sitio": "Netflix",
+            "url": "https://www.netflix.com/title/81295011"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fly-me-to-the-moon",
+      "titulo": "Fly Me to the Moon",
+      "titulos": {
+        "romaji": "Tonikaku Kawaii",
+        "ingles": "Fly Me to the Moon",
+        "nativo": "トニカクカワイイ"
+      },
+      "sinonimos": [
+        "Tonikaku Cawaii",
+        "Generally Cute",
+        "จะยังไงภรรยาของผมก็น่ารัก",
+        "Fly me to the moon - Tóm lại là em dễ thương, được chưa?",
+        "總之就是很可愛",
+        "总之就是非常可爱",
+        "Così carina. Fly me to the moon",
+        "Beni Ay'a Götür"
+      ],
+      "tipo": "manga",
+      "estado": "en-publicacion",
+      "inicio": "2018-02-14",
+      "fin": null,
+      "capitulos": null,
+      "tomos": null,
+      "autores": [
+        {
+          "nombre": "Kenjirou Hata",
+          "rol": "historia y arte",
+          "nativo": "畑健二郎"
+        }
+      ],
+      "generos": [
+        "comedia",
+        "romance",
+        "recuentos-de-la-vida"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx101177-FjjD5UWB3C3t.png",
+      "color": "#c9f1f1",
+      "ids": {
+        "anilist": 101177,
+        "mal": 112589
+      },
+      "enlaces": [
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/vizmanga/chapters/fly-me-to-the-moon",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/fly-me-to-the-moon",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Sunday Webry",
+          "url": "https://www.sunday-webry.com/detail.php?title_id=534",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Pixiv Comic",
+          "url": "https://comic.pixiv.net/works/6157",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 80,
+          "popularidad": 42286
+        }
+      },
+      "agregada": "2026-11-27",
+      "anime": {
+        "obras": [
+          {
+            "anilist": 116267,
+            "titulo": "TONIKAWA: Over The Moon For You",
+            "formato": "serie",
+            "anio": 2020,
+            "episodios": 12
+          },
+          {
+            "anilist": 127371,
+            "titulo": "TONIKAWA: Over The Moon For You ~SNS~",
+            "formato": "OVA",
+            "anio": 2021
+          },
+          {
+            "anilist": 141212,
+            "titulo": "TONIKAWA: Over The Moon For You ~Uniform~",
+            "formato": "especial",
+            "anio": 2022
+          },
+          {
+            "anilist": 141208,
+            "titulo": "TONIKAWA: Over The Moon For You Season 2",
+            "formato": "serie",
+            "anio": 2023,
+            "episodios": 12
+          },
+          {
+            "anilist": 166104,
+            "titulo": "TONIKAWA: Over The Moon For You ~High School Days~",
+            "formato": "serie",
+            "anio": 2023,
+            "episodios": 4
+          }
+        ],
+        "estrenado": true,
+        "ver": [
+          {
+            "sitio": "Crunchyroll",
+            "url": "https://www.crunchyroll.com/tonikawa-over-the-moon-for-you"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dead-dead-demons-dededede-destruction",
+      "titulo": "Dead Dead Demon's Dededede Destruction",
+      "titulos": {
+        "romaji": "Dead Dead Demon's Dededededestruction",
+        "ingles": "Dead Dead Demon's Dededede Destruction",
+        "nativo": "デッドデッドデーモンズデデデデデストラクション"
+      },
+      "sinonimos": [
+        "DDDD"
+      ],
+      "tipo": "manga",
+      "estado": "terminado",
+      "inicio": "2014-04-28",
+      "fin": "2022-02-28",
+      "capitulos": 101,
+      "tomos": 12,
+      "autores": [
+        {
+          "nombre": "Inio Asano",
+          "rol": "historia y arte",
+          "nativo": "浅野いにお"
+        }
+      ],
+      "generos": [
+        "comedia",
+        "drama",
+        "ciencia-ficcion",
+        "recuentos-de-la-vida"
+      ],
+      "portada": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85316-EGrSrwSMeOxd.jpg",
+      "color": "#50bbe4",
+      "ids": {
+        "anilist": 85316,
+        "mal": 70801
+      },
+      "enlaces": [
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/vizmanga/chapters/dead-dead-demons-dededede-destru",
+          "idioma": "en",
+          "tipo": "leer"
+        },
+        {
+          "sitio": "VIZ",
+          "url": "https://www.viz.com/dead-dead-demon-s-dededede-destruction",
+          "idioma": "en",
+          "tipo": "tomos"
+        },
+        {
+          "sitio": "Big Comics",
+          "url": "https://bigcomicbros.net/work/6211/",
+          "idioma": "ja",
+          "tipo": "original"
+        },
+        {
+          "sitio": "Manga One",
+          "url": "https://manga-one.com/manga/2099/chapter/first",
+          "idioma": "ja",
+          "tipo": "original"
+        }
+      ],
+      "comunidad": {
+        "anilist": {
+          "puntaje": 82,
+          "popularidad": 41869
+        }
+      },
+      "agregada": "2026-11-27",
+      "anime": {
+        "obras": [
+          {
+            "anilist": 146609,
+            "titulo": "Dead Dead Demon's Dededededestruction Zenshou",
+            "formato": "película",
+            "anio": 2024
+          },
+          {
+            "anilist": 177697,
+            "titulo": "DEAD DEAD DEMONS DEDEDEDE DESTRUCTION",
+            "formato": "serie",
+            "anio": 2024,
+            "episodios": 18
+          },
+          {
+            "anilist": 176218,
+            "titulo": "Dead Dead Demon's Dededededestruction Koushou",
+            "formato": "película",
+            "anio": 2024
+          }
+        ],
+        "estrenado": true,
+        "ver": [
+          {
+            "sitio": "Crunchyroll",
+            "url": "https://crunchyroll.com/series/G8DHV7827"
+          }
         ]
       }
     }
