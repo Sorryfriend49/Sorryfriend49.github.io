@@ -15526,7 +15526,13 @@
         "lectores": 0.0009,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores destacan la calidad de la historia, los personajes y el arte, describiéndola como una mezcla cautivadora de géneros. A varios les parece que la obra logra explorar temas profundos mientras sigue la vida cotidiana de los protagonistas. Algunos señalan que el ritmo puede ser un punto a considerar en la lectura.",
+        "resenas": 10,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-27"
+      },
       "capitulos": {
         "ultimo": 100,
         "tomos": 12
@@ -16830,7 +16836,13 @@
         "lectores": 0.0007,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores destacan el componente emotivo y el desarrollo de los personajes, describiéndolo como una montaña rusa de sentimientos. Sin embargo, hay opiniones divididas, ya que varios lectores critican la historia y el desenlace de la obra. Algunos señalan que el final fue decepcionante a pesar de los momentos románticos.",
+        "resenas": 21,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-27"
+      },
       "capitulos": {
         "ultimo": 276,
         "tomos": 28
@@ -17329,7 +17341,13 @@
         "lectores": 0.0016,
         "dias": 7
       },
-      "resumen": null,
+      "resumen": {
+        "texto": "Los lectores destacan la profundidad de los juegos y el desarrollo de los personajes, señalando cómo sus lazos son constantemente puestos a prueba. Aprecian la imprevisibilidad de la trama y la excelente construcción de los personajes. La obra es elogiada por su escritura meticulosa y su capacidad para enganchar desde el inicio.",
+        "resenas": 6,
+        "modelo": "Gemma 4",
+        "version": 1,
+        "fecha": "2026-11-27"
+      },
       "capitulos": {
         "ultimo": 129,
         "tomos": 26
